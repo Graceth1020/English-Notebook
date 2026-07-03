@@ -1,0 +1,3 @@
+[submodule "themes/_upstream"]
+	path = themes/_upstream
+	url = https://github.com/Graceth1020/hexo-notebook-theme.git
