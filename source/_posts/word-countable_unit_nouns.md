@@ -1,10 +1,11 @@
 ---
-title: countable uncountable noun
+title: Countable Unit Nouns
 date: 2026-06-01 21:35:05
 tags:
   - word-usage
   - grammar
-tag_tree: Words/Countable-Uncountable
+  - singular and plural
+tag_tree: Words/Singular and Plural/
 ---
 
 # Countable Unit Nouns & Sentences

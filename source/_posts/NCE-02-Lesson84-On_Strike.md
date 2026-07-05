@@ -3,8 +3,8 @@ title: NCE-02 Lesson 84 On strike
 date: 2026-05-15 20:32:05
 tags:
   - NCE-02
-  - lesson
-tag_tree: NCE-02/Lessons
+  - Composition
+tag_tree: NCE-02/Lessons/Composition
 ---
 
 ## ordinary version:

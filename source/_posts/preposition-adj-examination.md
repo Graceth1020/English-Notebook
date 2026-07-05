@@ -1,11 +1,10 @@
 ---
-title: NCE-02 Preposition adj examination
+title: Preposition adj examination
 date: 2026-06-04 18:15:05
 tags:
-  - NCE-02
   - exam
   - preposition
-tag_tree: NCE-02/Practice/Exams/Preposition-Adj
+tag_tree: Practice/Exams/Preposition
 ---
 
 ---

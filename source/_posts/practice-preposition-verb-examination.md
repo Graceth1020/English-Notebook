@@ -1,11 +1,10 @@
 ---
-title: NCE-02 Preposition verb examination
+title: Preposition verb examination
 date: 2026-06-18 18:15:05
 tags:
-  - NCE-02
   - exam
   - preposition
-tag_tree: NCE-02/Practice/Exams/Preposition-Verb
+tag_tree: Practice/Exams/Preposition
 ---
 
 ---

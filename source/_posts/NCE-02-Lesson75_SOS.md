@@ -3,8 +3,8 @@ title: NCE-02 Lesson 75 SOS
 date: 2026-04-11 21:32:05
 tags:
   - NCE-02
-  - lesson
-tag_tree: NCE-02/Lessons
+  - Composition
+tag_tree: NCE-02/Lessons/Composition
 ---
 
 ## ordinary version:

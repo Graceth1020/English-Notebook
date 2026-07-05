@@ -3,8 +3,8 @@ title: NCE-02 Lesson 77 A Successful Operation
 date: 2026-04-13 21:32:05
 tags:
   - NCE-02
-  - lesson
-tag_tree: NCE-02/Lessons
+  - Composition
+tag_tree: NCE-02/Lessons/Composition
 ---
 ## ordinary version:
 

@@ -1,6 +1,6 @@
 ---
-title: Usage of change words
-date: 2026-06-08 22:35:05
+title: Usage of adverbial clauses of cause
+date: 2026-07-05 16:25:05
 tags:
   - word-usage
 tag_tree: Words/Confused
