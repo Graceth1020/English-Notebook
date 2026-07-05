@@ -5,7 +5,7 @@ tags:
   - word-usage
   - grammar
   - singular and plural
-tag_tree: Words/Singular and Plural/
+tag_tree: Words/Singular and Plural
 ---
 
 ### Part 1: The Golden Rule (and the Exception)

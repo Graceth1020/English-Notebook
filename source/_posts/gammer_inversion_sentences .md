@@ -1,6 +1,6 @@
 ---
 title: Knowledge points of inversion sentences
-date: 2026-07-05 16:25:05
+date: 2026-07-05 16:25:06
 tags:
   - grammar
 tag_tree: Grammar
