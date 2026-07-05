@@ -1,0 +1,37 @@
+# ============================================================
+# Theme override config — Hexo auto-merges this with the
+# theme's own _config.yml.
+# ============================================================
+
+# === Site branding ===
+brand: "English Notebook"
+description: "Personal English Learning Notes"
+
+# === Navigation menu ===
+menu:
+  Tags: /
+  Home: /blog
+  Archive: /archives
+#  Home: /tags
+#  Tags: /tags
+#  Archive: /archives
+
+# === Social links ===
+social:
+  github: https://github.com/Graceth1020/English-Notebook
+  twitter: ""
+
+# === Tag tree ===
+tag_tree:
+  enable: true
+  expand_level: 0
+
+# === Homepage post list ===
+index:
+  posts_per_page: 10
+  show_excerpt: true
+  excerpt_length: 150
+
+# === Footer copyright ===
+copyright:
+  since: 2026
