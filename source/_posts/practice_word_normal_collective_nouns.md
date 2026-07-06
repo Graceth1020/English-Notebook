@@ -3,8 +3,8 @@ title: Practice normal collective nouns
 date: 2026-07-05 16:10:05
 tags:
   - exam
-  - nouns
-tag_tree: Practice/Exams/Nouns
+  - verbs
+tag_tree: Practice/Exams/Word/Verbs
 ---
 
 #### Exercise A: Choose the correct verb.

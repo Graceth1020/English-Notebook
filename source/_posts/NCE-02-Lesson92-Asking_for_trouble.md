@@ -1,5 +1,5 @@
 ---
-title: NCE-02 Lesson 91 Three man in a boat
+title: NCE-02 Lesson 92 Asking for trouble
 date: 2026-07-02 20:32:05
 tags:
   - NCE-02
