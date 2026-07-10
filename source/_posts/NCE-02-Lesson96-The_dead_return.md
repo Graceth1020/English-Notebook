@@ -1,6 +1,6 @@
 ---
 title: NCE-02 Lesson 96 The dead return
-date: 2026-07-08 20:36:05
+date: 2026-07-10 20:36:05
 tags:
   - NCE-02
   - Composition
