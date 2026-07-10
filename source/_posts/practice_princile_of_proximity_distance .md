@@ -1,5 +1,5 @@
 ---
-title: Knowledge points of principle of Proximity and the principle of Distance
+title: Practice of principle of Proximity and the principle of Distance
 date: 2026-07-05 16:25:05
 tags:
    - exam
