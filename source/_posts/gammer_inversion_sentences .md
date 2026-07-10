@@ -1,5 +1,5 @@
 ---
-title: Knowledge points of inversion sentences
+title: Inversion sentences
 date: 2026-07-05 16:25:06
 tags:
   - grammar

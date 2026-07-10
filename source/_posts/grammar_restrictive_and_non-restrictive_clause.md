@@ -3,7 +3,7 @@ title: restrictive clause and non-restrictive clause
 date: 2026-07-09 21:32:05
 tags:
   - grammar
-tag_tree: Grammar/Questions
+tag_tree: Grammar
 ---
 
 This is a very important distinction in English grammar. Let me break it down with **clear rules** and **visual examples**.
