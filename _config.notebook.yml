@@ -25,6 +25,7 @@ social:
 tag_tree:
   enable: true
   expand_level: 0
+  mode: folder           # folder —— 从 _posts/ 文件夹路径生成; frontmatter —— 从文章 front-matter 读取 tag_tree
 
 # === Homepage post list ===
 index:

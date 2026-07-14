@@ -3,7 +3,7 @@ title: adverbial clauses
 date: 2026-07-10 16:25:06
 tags:
   - grammar
-tag_tree: Grammar
+tag_tree: Grammar/Adverbial Clause
 ------
 
 An **adverbial clause** is a group of words with a subject and a verb that acts like an **adverb**—it modifies a verb, an adjective, or another adverb by answering questions like *when, where, why, how, under what condition*, etc.
