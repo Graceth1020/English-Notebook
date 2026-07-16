@@ -4,8 +4,7 @@ date: 2026-06-04 18:15:05
 tags:
   - exam
   - preposition
-tag_tree: Practice/Exams/Preposition
----
+tag_tree: Practice/Exams/Prepositio
 
 ---
 
@@ -23,11 +22,10 @@ tag_tree: Practice/Exams/Preposition
 | **of** | afraid of, ahead of, aware of, capable of, careful of, careful with, certain of, conscious of, envious of, fond of, guilty of, ignorant of, independent of, jealous of, kind of, kind to, north of, south of, east of, west of, short of, shy of, sure of, worthy of | 24 |
 | **to** | close to, contrary to, cruel to, dear to, equal to, faithful to, fatal to, harmful to, identical to, indifferent to, inferior to, liable to, new to, obedient to, obvious to, polite to, previous to, rude to, sensitive to, similar to, useful to | 21 |
 
-**总计：101个独立短语条目**---
+**总计：101个独立短语条目**
 
 
-### 📝 练习题（101个填空）---
-
+### 📝 练习题（101个填空）
 
 #### Section 1（第1-10题）
 
@@ -49,7 +47,7 @@ tag_tree: Practice/Exams/Preposition
 
 9. She felt somewhat reluctant __ leaving her tenured position to start her own business.
 
-10. The elderly man was reluctant __ share his wartime experiences, even with his grandchildren.---
+10. The elderly man was reluctant __ share his wartime experiences, even with his grandchildren.
 
 
 ##### ✅ Section 1 答案
@@ -73,7 +71,9 @@ tag_tree: Practice/Exams/Preposition
 7. 侦探在发现几处矛盾之后，高度怀疑证人的可信度。
 8. 刚从一场鼓舞人心的会议回来，这位年轻科学家对探索新的研究途径充满热情。
 9. 对于辞去终身职位去创业，她感到有些勉强。
-10. 那位老人不愿与他的孙辈分享他的战争经历。---
+10. 那位老人不愿与他的孙辈分享他的战争经历。
+
+---
 
 
 #### Section 2（第11-20题）
@@ -96,7 +96,7 @@ tag_tree: Practice/Exams/Preposition
 
 19. The scholarship recipient was incredibly grateful __ her benefactor for making her education possible.
 
-20. After years of rigorous training, she is fully qualified __ the prestigious international competition.---
+20. After years of rigorous training, she is fully qualified __ the prestigious international competition.
 
 
 ##### ✅ Section 2 答案
@@ -120,7 +120,9 @@ tag_tree: Practice/Exams/Preposition
 17. 经过几次改造后，这座旧仓库最终被认为适合改建成现代艺术画廊。
 18. 在事故中幸存下来后，她深深地感激救她的消防员们。
 19. 那位奖学金获得者对她的恩人让她能够接受教育而感激不尽。
-20. 经过多年的严格训练，她完全有资格参加那个 prestigious 的国际比赛。---
+20. 经过多年的严格训练，她完全有资格参加那个 prestigious 的国际比赛。
+
+---
 
 
 #### Section 3（第21-30题）
@@ -143,7 +145,7 @@ tag_tree: Practice/Exams/Preposition
 
 29. Your passport remains valid __ six months after your intended departure date.
 
-30. The survival of the orphaned cubs was entirely dependent __ their mother's relentless hunting.---
+30. The survival of the orphaned cubs was entirely dependent __ their mother's relentless hunting.
 
 
 ##### ✅ Section 3 答案
@@ -167,7 +169,9 @@ tag_tree: Practice/Exams/Preposition
 27. 目睹了奇迹般的康复后，病人 deeply 感激医疗团队。
 28. 这位心怀感激的病人写了一封衷心的信，感谢他在住院期间受到的善意。
 29. 您的护照在您计划离境日期之后六个月内仍然有效。
-30. 这些 orphaned cubs 的生存 entirely 依赖它们母亲不懈的捕猎。---
+30. 这些 orphaned cubs 的生存 entirely 依赖它们母亲不懈的捕猎。
+
+---
 
 
 #### Section 4（第31-40题）
@@ -190,7 +194,7 @@ tag_tree: Practice/Exams/Preposition
 
 39. Having grown up in a remote village, the elderly woman was surprisingly familiar __ the latest smartphone applications.
 
-40. The scent of freshly baked bread was strangely familiar __ him, evoking childhood memories he had long forgotten.---
+40. The scent of freshly baked bread was strangely familiar __ him, evoking childhood memories he had long forgotten.
 
 
 ##### ✅ Section 4 答案
@@ -214,7 +218,9 @@ tag_tree: Practice/Exams/Preposition
 37. 证人的证词与监控摄像头 captured 的视频证据并不完全一致。
 38. 经过多年的挣扎，这位艺术家终于学会满足于她简朴而宁静的生活。
 39. 尽管在偏远村庄长大，那位老妇人 surprisingly 熟悉最新的智能手机应用。
-40. 新鲜出炉的面包香味对他 strangely 熟悉，唤起了他久违的童年记忆。---
+40. 新鲜出炉的面包香味对他 strangely 熟悉，唤起了他久违的童年记忆。
+
+---
 
 
 #### Section 5（第41-50题）
@@ -237,7 +243,7 @@ tag_tree: Practice/Exams/Preposition
 
 49. Having undergone extensive training, the administrative assistant proved highly efficient __ managing the executive's chaotic schedule.
 
-50. The master chef is truly expert __ preparing delicate French pastries.---
+50. The master chef is truly expert __ preparing delicate French pastries.
 
 
 ##### ✅ Section 5 答案
@@ -261,7 +267,9 @@ tag_tree: Practice/Exams/Preposition
 47. 这位 novice 游泳者 undeniably bad 于协调他的呼吸和划水动作。
 48. 这位年轻的魔术师 remarkably clever 于表演让整个观众 amazed 的 sleight-of-hand 把戏。
 49. 经过 extensive 的 training，这位行政助理证明了自己 highly efficient 于管理 executive 的 chaotic 日程。
-50. 这位 master chef truly expert 于准备 delicate 的法式 pastries。---
+50. 这位 master chef truly expert 于准备 delicate 的法式 pastries。
+
+---
 
 
 #### Section 6（第51-60题）
@@ -284,7 +292,7 @@ tag_tree: Practice/Exams/Preposition
 
 59. The talented calligrapher is also incredibly skillful __ wielding traditional Chinese brush painting techniques.
 
-60. The timid child has always been afraid __ speaking in front of large crowds.---
+60. The timid child has always been afraid __ speaking in front of large crowds.
 
 
 ##### ✅ Section 6 答案
@@ -308,7 +316,9 @@ tag_tree: Practice/Exams/Preposition
 57. 这位 elderly 会计师 frustratingly slow 于适应 newly implemented 的数字记账系统。
 58. 经过 countless 小时的练习，这位 martial artist remarkably skillful 于执行复杂的技巧。
 59. 这位 talented 书法家 also incredibly skillful 于 wield 传统的 Chinese brush painting 技巧。
-60. 这位 timid 孩子一直害怕在大庭广众面前说话。---
+60. 这位 timid 孩子一直害怕在大庭广众面前说话。
+
+---
 
 
 #### Section 7（第61-70题）
@@ -331,7 +341,7 @@ tag_tree: Practice/Exams/Preposition
 
 69. The court found the corporation guilty __ concealing critical safety information from the public.
 
-70. The young child was completely ignorant __ the dangers lurking in the seemingly harmless playground.---
+70. The young child was completely ignorant __ the dangers lurking in the seemingly harmless playground.
 
 
 ##### ✅ Section 7 答案
@@ -355,7 +365,9 @@ tag_tree: Practice/Exams/Preposition
 67. 她忍不住感到 envious 于同事在同一领域的 effortless 成功。
 68. 在书籍环绕的环境中长大，这位教授 remains genuinely fond 于收集 rare 的首版书籍。
 69. 法院认定该公司 guilty 于向公众隐瞒关键的安全信息。
-70. 这个年幼的孩子 completely ignorant 于那个看似无害的 playground 中 lurking 的危险。---
+70. 这个年幼的孩子 completely ignorant 于那个看似无害的 playground 中 lurking 的危险。
+
+---
 
 
 #### Section 8（第71-80题）
@@ -378,7 +390,7 @@ tag_tree: Practice/Exams/Preposition
 
 79. Having spent their entire budget on equipment, the expedition team was desperately short __ drinking water.
 
-80. The introverted artist has always been somewhat shy __ promoting her own work in public exhibitions.---
+80. The introverted artist has always been somewhat shy __ promoting her own work in public exhibitions.
 
 
 ##### ✅ Section 8 答案
@@ -402,7 +414,9 @@ tag_tree: Practice/Exams/Preposition
 77. 这片肥沃的农业谷地 extends east 于 mountain range。
 78. 这片 vast 沙漠向西 extends 数百英里 beyond 这片 oasis。
 79. 把全部预算花在设备上之后，这支探险队 desperately short 了饮用水。
-80. 这位 introverted 艺术家有些 shy 于在公共展览中 promote 自己的作品。---
+80. 这位 introverted 艺术家有些 shy 于在公共展览中 promote 自己的作品。
+
+---
 
 
 #### Section 9（第81-90题）
@@ -425,7 +439,7 @@ tag_tree: Practice/Exams/Preposition
 
 89. The undetected structural flaw proved fatal __ the spacecraft during its reentry into the atmosphere.
 
-90. The prolonged exposure to direct sunlight can be extremely harmful __ your skin, accelerating the aging process.---
+90. The prolonged exposure to direct sunlight can be extremely harmful __ your skin, accelerating the aging process.
 
 
 ##### ✅ Section 9 答案
@@ -449,7 +463,9 @@ tag_tree: Practice/Exams/Preposition
 87. 根据新宪法，所有公民在法律面前被视为 equal，无论他们的社会地位如何。
 88. 尽管面临广告商的 intense 压力，这位记者 remained faithful 于揭露 inconvenient 的真相。
 89. 未被发现的 structural flaw 被证明是 fatal 于这艘航天器的 atmosphere reentry 过程的。
-90. 长期暴露在 direct sunlight 下可能 extremely harmful 于你的皮肤，加速 aging 过程。---
+90. 长期暴露在 direct sunlight 下可能 extremely harmful 于你的皮肤，加速 aging 过程。
+
+---
 
 
 #### Section 10（第91-101题）
@@ -478,7 +494,7 @@ tag_tree: Practice/Exams/Preposition
 
 102. The newly developed synthetic material is remarkably similar __ natural silk in both texture and appearance.
 
-103. The detailed user manual proved genuinely useful __ novice technicians setting up the complex equipment.---
+103. The detailed user manual proved genuinely useful __ novice technicians setting up the complex equipment.
 
 
 ##### ✅ Section 10 答案
@@ -507,7 +523,9 @@ tag_tree: Practice/Exams/Preposition
 100. 那位筋疲力尽的女服务员后悔 rude 于只想要一杯水的顾客。
 101. 这只搜救犬 incredibly sensitive 于人类完全会忽略的 subtle 环境线索。
 102. 这种 newly developed 的合成材料 remarkably similar 于天然丝绸，在 texture 和 appearance 上都是。
-103. 这本详细的用户手册证明 genuinely useful 于那些设置复杂设备的 novice 技术人员。---
+103. 这本详细的用户手册证明 genuinely useful 于那些设置复杂设备的 novice 技术人员。
+
+---
 
 
 **所有短语已完整覆盖：**
