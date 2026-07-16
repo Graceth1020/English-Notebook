@@ -6,82 +6,162 @@ tags:
 tag_tree: Grammar/Adverbial Clause
 ------
 
-## The 12 Most Common Time Conjunctions
-
-| Conjunction | Meaning | Example |
-|-------------|---------|---------|
-| **when** | at that moment | *I'll call you **when I arrive**.* |
-| **while** | during that time | *She read **while he cooked**.* |
-| **as** | at the same time as | *He waved **as he left**.* |
-| **after** | following that time | *We ate **after they left**.* |
-| **before** | prior to that time | *Finish your homework **before you go out**.* |
-| **until / till** | up to that time | *Wait here **until I come back**.* |
-| **since** | from that time until now | *I've lived here **since I was born**.* |
-| **as soon as** | immediately after | *Call me **as soon as you get home**.* |
-| **once** | after (with a sense of "now that") | *Once you start, you can't stop.* |
-| **whenever** | every time | *She smiles **whenever she sees me**.* |
-| **by the time** | before or at that time | *By the time we arrived, they had left.* |
-| **every time** | each time | *Every time I eat spicy food, I sneeze.* |
+This note covers conjunctions that are **often confused** because they can sometimes feel conditional, even when they are actually expressing time, reason, or concession.
 
 ---
 
-## Fixed Collocations (Common Phrases)
+## 1. "As Long As" – Time or Condition?
 
-These are phrases native speakers use all the time in daily life:
+| Meaning | Type | Example | Swap Test |
+|---------|------|---------|-----------|
+| **For the whole duration that...** (How long?) | **TIME** | *I'll stay here **as long as** you need me.* | Can swap with *while / until* |
+| **On the condition that...** (Only if) | **CONDITION** | *I'll help you **as long as** you pay me back.* | Can swap with *if / only if* |
 
-| Scene | Common Time Phrase |
-|-------|-------------------|
-| **Phone calls** | *"Call me **as soon as** you get this."* / *"I'll call you **when** I'm free."* |
-| **Meetings** | *"**Before we start**, let me introduce myself."* / *"We'll take a break **after** this session."* |
-| **Cooking** | *"Stir the sauce **while** the pasta cooks."* / *"**Once** it boils, reduce the heat."* |
-| **Travel** | *"**By the time** we get there, it'll be dark."* / *"**Whenever** you travel, pack light."* |
-| **School** | *"**As soon as** the bell rings, class is over."* / *"Study **before** the test."* |
-| **Shopping** | *"**When** you're done, bring the cart to the front."* / *"**While** you're at the store, buy milk."* |
+**Quick Test:** Ask yourself: *"Am I measuring time (how long) or setting a requirement (what must happen)?"*
 
 ---
 
-## The Most Important Grammar Rule (Don't Forget!)
+## 2. "Once" – Time or Condition?
 
-**In time clauses about the future, use PRESENT TENSE — NOT "will."**
+| Meaning | Type | Example | Swap Test |
+|---------|------|---------|-----------|
+| **After / from the moment that...** | **TIME** | *Once you start the engine, the car moves.* | Can swap with *after / as soon as* |
+| **If / provided that...** (rare, informal) | **CONDITION** | *Once you're ready, we can go.* (very mild condition) | Usually still time-based |
 
-| ✅ Correct | ❌ Wrong |
-|-----------|---------|
-| *I'll tell him **when he comes**.* | *I'll tell him when he **will come**.* |
-| *We'll eat **after she arrives**.* | *We'll eat after she **will arrive**.* |
-| *Call me **as soon as you get** home.* | *Call me as soon as you **will get** home.* |
-
-**Exception:** You can use *will* in a time clause **if** it's the main clause's action:
-- ❌ *When I will see him, I'll tell him.* (Wrong)
-- ✅ *I'll tell him **when** I see him.* (Correct — only one "will" in the main clause)
+**Note:** In modern English, *once* is **almost always a time conjunction**. It means "after that moment." Even when it sounds like a condition (e.g., *Once you're ready...*), it still implies "at the time when you are ready" — so it's still time.
 
 ---
 
-## Common Confusing Word Pairs for Time Clauses
+## 3. "When" – Time or Condition?
 
-| Confusing Pair | Example | Difference |
-|----------------|---------|------------|
-| **when vs. while** | *I was cooking **when** the phone rang.* vs. *I cooked **while** she watched TV.* | **When** = a short moment; **while** = a longer ongoing action. |
-| **after vs. once** | *We left **after** they arrived.* vs. *We left **once** they arrived.* | Same meaning, but **once** implies "and then immediately" or "now that." |
-| **until vs. by the time** | *I'll wait **until** you come.* vs. *I'll leave **by the time** you come.* | **Until** = continue up to that point; **by the time** = before or at that point (something else happens). |
-| **as soon as vs. when** | *I'll call **as soon as** I arrive.* vs. *I'll call **when** I arrive.* | **As soon as** = immediately; **when** = at that time (could be immediate or later). |
+| Meaning | Type | Example | Swap Test |
+|---------|------|---------|-----------|
+| **At that specific time** | **TIME** | *I'll call you **when** I arrive.* | Can swap with *at the time that* |
+| **If / whenever** (general facts) | **CONDITION-LIKE** | *When you heat water, it boils.* | Means "if" in general truths |
+
+**Note:** In **general facts** or **zero conditionals**, *when* can mean *if* (e.g., *When water freezes, it expands*). But in future-specific sentences, it's strictly time.
 
 ---
 
-## Summary — All Time Conjunctions at a Glance
+## 4. "While" – Time or Contrast?
 
-| Conjunction | Use | Example |
-|-------------|-----|---------|
-| **when** | specific moment | *He smiled when he saw me.* |
-| **while** | during a continuous action | *She read while eating.* |
-| **as** | two actions at the same time | *He waved as he left.* |
-| **after** | one thing following another | *We ate after they left.* |
-| **before** | one thing preceding another | *Wash your hands before eating.* |
-| **until/till** | up to that point | *Stay here until I return.* |
-| **since** | from a past point until now | *I've been here since morning.* |
-| **as soon as** | immediately after | *Call as soon as you land.* |
-| **once** | after (with a sense of "when") | *Once you try it, you'll love it.* |
-| **whenever** | every time | *She comes whenever she can.* |
-| **by the time** | before or at that point | *By the time I arrived, it was over.* |
-| **every time** | each occasion | *Every time I see her, she smiles.* |
+| Meaning | Type | Example | Swap Test |
+|---------|------|---------|-----------|
+| **During the time that...** | **TIME** | *She read **while** he cooked.* | Can swap with *during the time* |
+| **Whereas / although** (contrast) | **CONCESSION** | *While I like tea, I prefer coffee.* | Can swap with *although / whereas* |
+
+**Note:** When *while* means "whereas," it is NOT a time clause. It's a **concession/contrast clause**.
+
+---
+
+## 5. "Since" – Time or Reason?
+
+| Meaning | Type | Example | Swap Test |
+|---------|------|---------|-----------|
+| **From that past time until now** | **TIME** | *I've lived here **since** 2010.* | Answers "Since when?" |
+| **Because / given that** | **REASON** | *Since you're here, let's start.* | Can swap with *because / as* |
+
+**Note:** This is one of the most confusing pairs. If the verb is **present perfect** (*have lived, have known*), it's almost always **time**. If the verb is **present** and gives a reason, it's **reason**.
+
+---
+
+## 6. "So Long As" – Condition Only (Not Time)
+
+| Meaning | Type | Example |
+|---------|------|---------|
+| **Only if / on the condition that** | **CONDITION** | *You can go out, **so long as** you come back early.* |
+
+**Note:** *So long as* is **always conditional** — it never means duration. It's a more formal version of *as long as* (condition).
+
+---
+
+## 7. "If" – Condition Only (Never Time)
+
+| Meaning | Type | Example |
+|---------|------|---------|
+| **On the condition that** | **CONDITION** | *If it rains, we'll cancel the trip.* |
+| **Whether** (indirect question) | **NOUN CLAUSE** | *I don't know **if** he's coming.* |
+
+**Note:** *If* is never a time conjunction. It always introduces a condition or an indirect question.
+
+---
+
+## 8. "Unless" – Condition Only (Negative Condition)
+
+| Meaning | Type | Example |
+|---------|------|---------|
+| **If not / except if** | **CONDITION** | *You won't pass **unless** you study.* (= if you don't study) |
+
+**Note:** *Unless* is **always conditional** — it means "except if."
+
+---
+
+## 9. "Provided That" / "Providing That" – Condition Only
+
+| Meaning | Type | Example |
+|---------|------|---------|
+| **On the condition that** | **CONDITION** | *We'll go hiking, **provided that** the weather is good.* |
+
+**Note:** These are formal and **always conditional**.
+
+---
+
+## 10. "In Case" – Time or Condition?
+
+| Meaning | Type | Example | Swap Test |
+|---------|------|---------|-----------|
+| **Because something might happen** (precaution) | **REASON / CONDITION** | *Take an umbrella **in case** it rains.* | Means "because it might rain" |
+| **If** (in American English, rare) | **CONDITION** | *In case you need help, call me.* | Can swap with *if* |
+
+**Note:** In British English, *in case* is mainly a **reason clause** (precaution). In American English, it can also mean *if*.
+
+---
+
+## Quick Reference Table
+
+| Conjunction | Main Use | Can Be Conditional? | Can Be Time? |
+|-------------|----------|---------------------|--------------|
+| **as long as** | Time OR Condition | ✅ Yes | ✅ Yes |
+| **so long as** | Condition only | ✅ Yes | ❌ No |
+| **once** | Time (almost always) | ❌ Rarely | ✅ Yes |
+| **when** | Time (or zero conditional) | ⚠️ Only in general facts | ✅ Yes |
+| **while** | Time OR Contrast | ❌ No | ✅ Yes |
+| **since** | Time OR Reason | ❌ No | ✅ Yes |
+| **if** | Condition only | ✅ Yes | ❌ No |
+| **unless** | Condition only | ✅ Yes | ❌ No |
+| **provided that** | Condition only | ✅ Yes | ❌ No |
+| **in case** | Reason (precaution) | ⚠️ Sometimes (US) | ❌ No |
+
+---
+
+## Final Summary – The One Rule to Remember
+
+> **If the conjunction can be replaced by *"if"* without changing the meaning → it's CONDITIONAL.**  
+> **If it can be replaced by *"when / while / until / after"* → it's TIME.**  
+> **If it can be replaced by *"because"* → it's REASON.**  
+> **If it can be replaced by *"although"* → it's CONCESSION.**
+
+---
+
+## Practice Sentences (Test Yourself)
+
+Identify the type (Time / Condition / Reason / Concession) for each:
+
+1. *I'll wait here **until** you come back.*
+2. *You can borrow my car **as long as** you drive carefully.*
+3. *Since I was tired, I went to bed early.*
+4. *While I understand your point, I disagree.*
+5. *Once you open the box, you can't return it.*
+6. *I'll bring my raincoat **in case** it rains.*
+
+---
+
+**Answers:**
+1. Time (until)
+2. Condition (as long as = if/only if)
+3. Reason (since = because)
+4. Concession (while = although)
+5. Time (once = after)
+6. Reason (in case = because it might)
 
 ---

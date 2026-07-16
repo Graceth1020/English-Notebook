@@ -32,7 +32,9 @@ tag_tree: Practice/Exams/Preposition
 
 9. The patient was confined __ a wheelchair due to his severe medical condition.
 
-10. The professor refused to comment __ the controversial political issue.---
+10. The professor refused to comment __ the controversial political issue.
+
+---
 
 
 ##### ✅ Section 1 答案
@@ -56,7 +58,9 @@ tag_tree: Practice/Exams/Preposition
 7. 这位年轻企业家踏上了一段雄心勃勃的旅程，要彻底改变这个行业。
 8. 悲伤的寡妇继续希望有一个奇迹能救活她的丈夫。
 9. 由于严重的健康状况，该患者被限制在轮椅上。
-10. 教授拒绝对这个有争议的政治问题发表评论。---
+10. 教授拒绝对这个有争议的政治问题发表评论。
+
+---
 
 
 #### Section 2（第11-20题）
@@ -79,7 +83,9 @@ tag_tree: Practice/Exams/Preposition
 
 19. The archaeologist pointed __ the ancient inscription and explained its significance.
 
-20. The new employee was gradually employed __ various aspects of the production process.---
+20. The new employee was gradually employed __ various aspects of the production process.
+
+---
 
 
 ##### ✅ Section 2 答案
@@ -103,7 +109,9 @@ tag_tree: Practice/Exams/Preposition
 17. 研究团队目前正在试验治疗罕见疾病的新方法。
 18. 该公司决定在人工智能研究上大举投资。
 19. 考古学家指向古代铭文并解释了它的意义。
-20. 新员工逐渐被安排从事生产流程的各个方面。---
+20. 新员工逐渐被安排从事生产流程的各个方面。
+
+---
 
 
 #### Section 3（第21-30题）
@@ -126,7 +134,9 @@ tag_tree: Practice/Exams/Preposition
 
 29. The scholar spent years working __ the translation of the ancient manuscript.
 
-30. The charity organization received generous donations __ various corporations.---
+30. The charity organization received generous donations __ various corporations.
+
+---
 
 
 ##### ✅ Section 3 答案
@@ -150,7 +160,9 @@ tag_tree: Practice/Exams/Preposition
 27. 全国上下都为敬爱的国王的逝世而哀悼。
 28. 政府呼吁立即采取行动应对环境危机。
 29. 这位学者花了多年时间从事古代手稿的翻译工作。
-30. 该慈善组织收到了来自多家企业的慷慨捐赠。---
+30. 该慈善组织收到了来自多家企业的慷慨捐赠。
+
+---
 
 
 #### Section 4（第31-40题）
@@ -173,7 +185,9 @@ tag_tree: Practice/Exams/Preposition
 
 39. The diplomat was threatened __ assassination by extremist groups.
 
-40. The scientist's findings correspond __ the predictions of the theoretical model.---
+40. The scientist's findings correspond __ the predictions of the theoretical model.
+
+---
 
 
 ##### ✅ Section 4 答案
@@ -197,7 +211,9 @@ tag_tree: Practice/Exams/Preposition
 37. 这两种文化在社会规范方面形成了鲜明的对比。
 38. 国际社会必须应对日益严重的难民危机。
 39. 这位外交官受到了极端组织的暗杀威胁。
-40. 科学家的发现与理论模型的预测相符。---
+40. 科学家的发现与理论模型的预测相符。
+
+---
 
 
 #### Section 5（第41-50题）
@@ -220,7 +236,9 @@ tag_tree: Practice/Exams/Preposition
 
 49. The manager blamed the failure __ the lack of communication between departments.
 
-50. The doctor assured the patient __ a full recovery within three months.---
+50. The doctor assured the patient __ a full recovery within three months.
+
+---
 
 
 ##### ✅ Section 5 答案
@@ -244,7 +262,9 @@ tag_tree: Practice/Exams/Preposition
 47. 这名叛逆的士兵拒绝服从上级的权威。
 48. 这家报纸为昨天头版中误导性的标题道歉。
 49. 经理将失败归咎于部门之间缺乏沟通。
-50. 医生向病人保证在三个月内会完全康复。---
+50. 医生向病人保证在三个月内会完全康复。
+
+---
 
 
 #### Section 6（第51-60题）
@@ -267,7 +287,9 @@ tag_tree: Practice/Exams/Preposition
 
 59. The philosopher often wondered __ the fundamental nature of human existence.
 
-60. The factory owner was confronted __ demands for higher wages from the workers.---
+60. The factory owner was confronted __ demands for higher wages from the workers.
+
+---
 
 
 ##### ✅ Section 6 答案
@@ -291,7 +313,9 @@ tag_tree: Practice/Exams/Preposition
 57. 市长祝贺冠军队的出色表现。
 58. 由于预算削减，公司解雇了该部门的几名员工。
 59. 这位哲学家常常思考人类存在的基本性质。
-60. 工厂主面临工人们提出的加薪要求。---
+60. 工厂主面临工人们提出的加薪要求。
+
+---
 
 
 #### Section 7（第61-70题）
@@ -314,7 +338,9 @@ tag_tree: Practice/Exams/Preposition
 
 69. The students are busy preparing __ the final examination next month.
 
-70. The researchers have been searching __ a breakthrough treatment for years.---
+70. The researchers have been searching __ a breakthrough treatment for years.
+
+---
 
 
 ##### ✅ Section 7 答案
@@ -338,7 +364,9 @@ tag_tree: Practice/Exams/Preposition
 67. 这位志愿者帮助老年居民组织他们的日常活动。
 68. 政府禁止公民在没有许可证的情况下携带枪支。
 69. 学生们正忙于准备下个月的期末考试。
-70. 研究人员多年来一直在寻找突破性的治疗方法。---
+70. 研究人员多年来一直在寻找突破性的治疗方法。
+
+---
 
 
 #### Section 8（第71-80题）
@@ -361,7 +389,9 @@ tag_tree: Practice/Exams/Preposition
 
 79. The researchers drew valuable conclusions __ the extensive data collected.
 
-80. The witness refused to comply __ the investigator's request for additional information.---
+80. The witness refused to comply __ the investigator's request for additional information.
+
+---
 
 
 ##### ✅ Section 8 答案
@@ -385,7 +415,9 @@ tag_tree: Practice/Exams/Preposition
 77. 游客们对山顶上令人叹为观止的景色惊叹不已。
 78. 新政策遵循一套与其前身完全不同的原则来运作。
 79. 研究人员从收集到的大量数据中得出了有价值的结论。
-80. 证人拒绝配合调查员提供额外信息的要求。---
+80. 证人拒绝配合调查员提供额外信息的要求。
+
+---
 
 
 #### Section 9（第81-90题）
@@ -408,7 +440,9 @@ tag_tree: Practice/Exams/Preposition
 
 89. The government's new policy aims to separate administrative power __ judicial power.
 
-90. The company has decided to economize __ office supplies to reduce operating costs.---
+90. The company has decided to economize __ office supplies to reduce operating costs.
+
+---
 
 
 ##### ✅ Section 9 答案
@@ -432,7 +466,9 @@ tag_tree: Practice/Exams/Preposition
 87. 这位CEO以公司创新文化和充满活力的团队为荣。
 88. 病人开始对从罕见疾病中康复感到绝望。
 89. 政府的新政策旨在将行政权与司法权分离。
-90. 公司决定节约办公用品开支以降低运营成本。---
+90. 公司决定节约办公用品开支以降低运营成本。
+
+---
 
 
 #### Section 10（第91-100题）
@@ -455,7 +491,9 @@ tag_tree: Practice/Exams/Preposition
 
 99. The charity organization appealed __ the public for donations to support disaster relief.
 
-100. The success of the project depends __ the cooperation of every team member.---
+100. The success of the project depends __ the cooperation of every team member.
+
+---
 
 
 ##### ✅ Section 10 答案
@@ -479,7 +517,9 @@ tag_tree: Practice/Exams/Preposition
 97. 新规定适用于所有员工，不论其资历深浅。
 98. 游客误把陌生人的包当成了自己的然后走开了。
 99. 该慈善组织呼吁公众捐款支持救灾工作。
-100. 项目的成功取决于每个团队成员的合作。---
+100. 项目的成功取决于每个团队成员的合作。
+
+---
 
 
 #### Section 11（第101-110题）
@@ -502,7 +542,9 @@ tag_tree: Practice/Exams/Preposition
 
 109. The children took obvious delight __ building sandcastles on the beach.
 
-110. The heroic soldier was willing to sacrifice himself __ his country's freedom.---
+110. The heroic soldier was willing to sacrifice himself __ his country's freedom.
+
+---
 
 
 ##### ✅ Section 11 答案
@@ -526,7 +568,9 @@ tag_tree: Practice/Exams/Preposition
 107. 许多古代文明相信多神和超自然力量。
 108. 这所大学鼓励学生分享集体研究的成果。
 109. 孩子们显然很喜欢在海滩上堆沙堡。
-110. 这位英勇的士兵愿意为国家的自由牺牲自己。---
+110. 这位英勇的士兵愿意为国家的自由牺牲自己。
+
+---
 
 
 #### Section 12（第111-120题）
@@ -549,7 +593,9 @@ tag_tree: Practice/Exams/Preposition
 
 119. The old man complained __ the poor quality of the apartment's heating system.
 
-120. The mother warned her children __ the dangers of playing near the railway tracks.---
+120. The mother warned her children __ the dangers of playing near the railway tracks.
+
+---
 
 
 ##### ✅ Section 12 答案
@@ -573,7 +619,9 @@ tag_tree: Practice/Exams/Preposition
 117. 这位哲学家毕生致力于探索意识的本质。
 118. 该公司决定投资可再生能源项目。
 119. 这位老人抱怨公寓供暖系统的质量很差。
-120. 母亲警告她的孩子们在铁轨附近玩耍的危险。---
+120. 母亲警告她的孩子们在铁轨附近玩耍的危险。
+
+---
 
 
 #### Section 13（第121-133题）
@@ -602,7 +650,9 @@ tag_tree: Practice/Exams/Preposition
 
 132. The manager threatened the employees __ dismissal if they continued to strike.
 
-133. The international community has reacted strongly __ the country's military actions.---
+133. The international community has reacted strongly __ the country's military actions.
+
+---
 
 
 ##### ✅ Section 13 答案
@@ -631,7 +681,9 @@ tag_tree: Practice/Exams/Preposition
 130. 委员会以道德理由反对该提案。
 131. 患者同意接受实验性手术。
 132. 经理威胁员工如果他们继续罢工就解雇他们。
-133. 国际社会对该国的军事行动做出了强烈反应。---
+133. 国际社会对该国的军事行动做出了强烈反应。
+
+---
 
 
 ### 📋 完整短语覆盖核对表
