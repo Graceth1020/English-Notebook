@@ -13,7 +13,6 @@ tag_tree: Phrase/Fixed collocation
 | :--- | :--- | :--- |
 | **knock down** | 1. To cause someone or something to fall to the ground. <br> 2. To demolish a building or structure. <br> 3. To reduce a price (informal). | 1. The wind **knocked down** several trees. <br> 2. They're **knocking down** the old factory. <br> 3. The seller **knocked down** the price by 20%. |
 | **knock out** | 1. To make someone unconscious. <br> 2. To defeat in a competition (especially a tournament). <br> 3. To impress or amaze someone greatly. <br> 4. To produce or create something quickly (informal). | 1. The boxer **knocked out** his opponent. <br> 2. The team was **knocked out** in the first round. <br> 3. Her performance **knocked me out** – it was fantastic! <br> 4. The writer **knocked out** a novel in a month. |
-| **knock over** | 1. To accidentally cause something to fall from a vertical position. <br> 2. To rob or burglarize a place (
 
 ---
 

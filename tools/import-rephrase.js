@@ -146,6 +146,34 @@ function parseDay(course, file) {
   return { stem, dayNum: +m[1], date, title, folder: relFolder(file), body: body.join('\n').trim() };
 }
 
+function htmlEscape(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderReviewCards(rows) {
+  return '<div class="review-cards">\n' + rows.map(function (r) {
+    const fields = [
+      ['中文', r.zh],
+      ['My rephrase', r.rephrase],
+      ['Corrected version', r.corrected],
+      ['Notes', r.notes],
+      ['Notes 中文', r.notesZh]
+    ].filter(function (f) { return f[1]; }).map(function (f) {
+      return '<div class="review-field"><span class="review-label">' + f[0] + '</span>' +
+        '<span class="review-value">' + htmlEscape(f[1]) + '</span></div>';
+    }).join('');
+    return '<div class="review-card">' +
+      '<div class="review-card-head"><span class="review-num">' + r.n + '</span>' +
+      '<p class="review-original">' + htmlEscape(r.original) + '</p></div>' +
+      (fields ? '<div class="review-card-body">' + fields + '</div>' : '') +
+      '</div>';
+  }).join('\n') + '\n</div>';
+}
+
 function parseSummary(course, file) {
   const m = DAY_RE.exec(path.basename(file));
   const stem = path.basename(file).replace(/\.md$/, '');
@@ -154,14 +182,38 @@ function parseSummary(course, file) {
   let title = 'Day ' + m[1];
   let first = true;
   const body = [];
+  let inReview = false;
+  let tableDone = false;
+  const rows = [];
   for (const line of lines) {
     if (line.startsWith('# ') && first) {
       title = line.slice(2).trim();
       first = false;
       continue;
     }
+    if (!tableDone && /^##\s*the sentences and my rephrases/i.test(line)) {
+      inReview = true;
+      body.push(line);
+      continue;
+    }
+    if (inReview) {
+      if (line.trim().startsWith('|')) {
+        const cells = line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(function (c) { return c.trim(); });
+        const isSep = cells.every(function (c) { return /^[\s:-]*$/.test(c); });
+        if (cells.length >= 7 && !isSep && /^\d+$/.test(cells[0])) {
+          rows.push({ n: cells[0], original: cells[1], zh: cells[2], rephrase: cells[3], corrected: cells[4], notes: cells[5], notesZh: cells[6] });
+        }
+        continue;
+      }
+      if (line.trim() === '') continue;
+      if (rows.length) body.push(renderReviewCards(rows));
+      rows.length = 0;
+      inReview = false;
+      tableDone = true;
+    }
     body.push(line);
   }
+  if (inReview && rows.length) body.push(renderReviewCards(rows));
   return { stem, dayNum: +m[1], date, title, folder: relFolder(file), body: body.join('\n').trim() };
 }
 
