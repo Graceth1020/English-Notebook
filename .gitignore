@@ -9,5 +9,14 @@ _multiconfig.yml
 .idea/
 .claude/
 
-# Theme symlink/junction — local only; re-create via setup script
+# Theme symlink/junction - local only; re-create via setup script
 /themes/notebook
+
+# Rephrase source material that is not published
+raw/
+
+# Generated rephrase/notes site content (recreated by scripts/import-rephrase.js)
+source/_posts/Rephrase/
+source/rephrase/
+source/notes/
+source/_data/rephrase.json

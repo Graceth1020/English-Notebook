@@ -1,5 +1,5 @@
 # ============================================================
-# Theme override config — Hexo auto-merges this with the
+# Theme override config - Hexo auto-merges this with the
 # theme's own _config.yml.
 # ============================================================
 
@@ -9,12 +9,11 @@ description: "Personal English Learning Notes"
 
 # === Navigation menu ===
 menu:
-  Tags: /
   Home: /blog
+  Rephrase: /rephrase
+  Notes: /notes
+  Tags: /
   Archive: /archives
-#  Home: /tags
-#  Tags: /tags
-#  Archive: /archives
 
 # === Social links ===
 social:
@@ -25,7 +24,7 @@ social:
 tag_tree:
   enable: true
   expand_level: 0
-  mode: folder           # folder —— 从 _posts/ 文件夹路径生成; frontmatter —— 从文章 front-matter 读取 tag_tree
+  mode: folder           # folder - from _posts/ folder path; frontmatter - from tag_tree field
 
 # === Homepage post list ===
 index:

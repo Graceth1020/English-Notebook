@@ -1,0 +1,4 @@
+interface:
+  display_name: "English Rephrase Practice"
+  short_description: "Daily rephrase drills with review and blog summaries"
+  default_prompt: "Use $english-rephrase-practice to clean this subtitle file and give me today's 10 sentences to rephrase."

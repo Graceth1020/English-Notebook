@@ -33,6 +33,9 @@ jobs:
       - name: Create theme symlink
         run: ln -s _upstream/hexo-theme-notebook themes/notebook
 
+      - name: Import rephrase content
+        run: node tools/import-rephrase.js
+
       - name: Build Hexo site
         run: npx hexo generate
 

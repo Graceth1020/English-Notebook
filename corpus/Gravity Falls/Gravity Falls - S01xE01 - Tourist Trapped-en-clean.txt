@@ -1,0 +1,218 @@
+1. [E] It's getting closer! | 它越来越近了！
+2. [H] The girl about to puke is my sister Mabel. | 那个快要吐出来的女孩是我妹妹梅宝。
+3. [H] You may be wondering what we're doing in a golf cart fleeing from a creature of unimaginable horror. | 你可能想知道我们为什么开着一辆高尔夫球车，逃离一个难以想象的可怕生物。
+4. [H] Rest assured, there's a perfectly logical explanation. | 放心，这有一个完全合理的解释。
+5. [M] Let's rewind. | 让我们倒回去。
+6. [M] Our parents decided we could use some fresh air. | 我们的父母觉得我们该去呼吸点新鲜空气。
+7. [H] They shipped us up north to a sleepy town called Gravity Falls, Oregon, to stay at our great-uncle's place in the woods. | 他们把我们送到北部一个叫重力泉的宁静小镇，住进我们叔公在森林里的房子。
+8. [E] This attic is amazing! | 这个阁楼太棒了！
+9. [M] My sister tended to look on the bright side of things. | 我妹妹总是往好的方面看。
+10. [M] But I was having a hard time getting used to our new surroundings. | 但我一直很难适应新环境。
+11. [E] It was worth it. | 值了。
+12. [H] The real mystery was why anyone came. | 真正的谜团是为什么还会有人来。
+13. [H] Ladies and gentlemen, behold, the sascrotch! | 女士们先生们，请看，萨斯克罗奇！
+14. [E] Oh, my gosh! | 哦，我的天啊！
+15. [E] And guess who had to work there. | 猜猜谁得在那儿干活。
+16. [E] No touching the merchandise! | 不许碰商品！
+17. [M] It looked like it was gonna be the same boring routine all summer, until one fateful day... | 看起来整个夏天都会是同样的无聊日常，直到命中注定的那一天……
+18. [E] He's looking at it! He's looking at it! | 他在看它！他在看它！
+19. [E] "Do you like me? | “你喜欢我吗？
+20. [H] I know you're going through your whole "boy crazy" phase, but I think you're kind of overdoing it with the "crazy" part. | 我知道你正处于“花痴”阶段，但我觉得你把“痴”这个部分做得有点过头了。
+21. [E] Come on, Dipper! | 别这样啦，迪普！
+22. [E] This is our first summer away from home. | 这是我们第一次离家过暑假。
+23. [M] It's my big chance to have an epic summer romance. | 这是我谈一场轰轰烈烈的夏日恋爱的绝佳机会。
+24. [M] Yeah, but do you need to flirt with every guy you meet? | 是啊，但你有必要跟每个遇到的男生调情吗？
+25. [E] My name is Mabel, but you can call me the girl of your dreams. | 我叫梅宝，但你可以叫我你梦中的女孩。
+26. [E] I'm joking! | 我开玩笑的！
+27. [E] Oh, my gosh, you like turtles? | 哦，天啊，你喜欢乌龟吗？
+28. [E] I like turtles too. What is happening here? | 我也喜欢乌龟。这到底是怎么回事？
+29. [H] Come one, come all, to the mattress prince's kingdom of savings! | 快来，都来看看，床垫王子的省钱王国！
+30. [M] Mock all you want, brother, but I got a good feeling about this summer. | 尽情嘲笑吧，兄弟，但我对这个夏天有种好预感。
+31. [H] I wouldn't be surprised if the man of my dreams walked through that door right now. | 就算我梦中的男人现在就走进那扇门，我也不会惊讶。
+32. [E] Oh! Oh! Not good. | 哦！哦！不妙。
+33. [M] All right, look alive, people. | 好了，打起精神来，各位。
+34. [M] I need someone to go hammer up these signs in the spooky part of the forest. | 我需要有人去森林阴森的地方把这些牌子钉起来。
+35. [E] Uh, also not it. | 呃，也不是我。
+36. [M] Nobody asked you, Soos. | 没人问你，苏斯。
+37. [E] I know, and I'm comfortable with that. | 我知道，而且我能接受。
+38. [M] Wendy! I need you to put up this sign! | 温蒂！我需要你去把这个牌子挂起来！
+39. [M] I'd fire all of you if I could. | 要是能的话，我把你们全炒了。
+40. [M] Grunkle Stan, whenever I'm in those woods I feel like I'm being watched. | 斯坦叔公，每次我在那片林子里，都感觉被人盯着。
+41. [M] I'm being watched. | 我被监视了。
+42. [E] Something weird is going on in this town. | 这个镇上有怪事正在发生。
+43. [H] Just today my mosquito bites spelled out "beware." | 就在今天，我的蚊子包拼出了“小心”两个字。
+44. [H] That says "bewarb." | 那拼的是“贝瓦布”。
+45. [H] Look, kid, the whole "monsters in the forest" thing is just local legend drummed up by guys like me to sell merch to guys like that. | 听着，孩子，整个“森林里有怪物”的说法只是像我这样的人编出来卖货给那种人的地方传说。
+46. [E] So quit being so paranoid! | 所以别这么疑神疑鬼了！
+47. [E] Nobody ever believes anything I say. | 我说什么从来都没人信。
+48. [H] It's hard to believe it's been six years since I began studying the strange and wondrous secrets of Gravity Falls, Oregon. | 很难相信，我研究俄勒冈州重力泉的奇异秘密已经六年了。
+49. [E] What is all this? | 这都是什么？
+50. [H] Unfortunately, my suspicions have been confirmed. | 不幸的是，我的怀疑得到了证实。
+51. [M] I must hide this book before he finds it. | 我必须在他找到这本书之前把它藏起来。
+52. [M] Remember, in Gravity Falls, there is no one you can trust. | 记住，在重力泉，没有人值得信任。
+53. [M] No one you can trust... | 没有人可以信任……
+54. [M] Whatcha readin'? Some nerd thing? | 你在读什么？什么书呆子读物？
+55. [M] Are you actually not gonna show me? | 你真的不打算给我看吗？
+56. [E] Let's go somewhere private. | 我们找个没人的地方吧。
+57. [E] It's amazing! | 太棒了！
+58. [M] Grunkle Stan said I was being paranoid, but according to this book, Gravity Falls has this secret dark side. | 斯坦叔公说我疑神疑鬼，但根据这本书，重力泉有个隐秘的黑暗面。
+59. [E] Whoa! Shut up! | 哇！不会吧！（闭嘴！）
+60. [H] After a certain point, the pages just stop, like the guy who was writing it mysteriously disappeared. | 写到某个地方之后，书页就断了，好像写书的人神秘消失了。
+61. [M] Well, time to spill the beans. | 好吧，是时候说出真相了。
+62. [M] This girl's got a date. Whoo whoo! | 这姑娘有约会了。呜呼！
+63. [E] Let me get this straight. | 让我把话说清楚。
+64. [E] What can I say? | 我能说什么呢？
+65. [E] I guess I'm just irresistible! | 我想我就是让人无法抗拒吧！
+66. [M] What you readin' there, Soos! | 你在那儿读什么呢，苏斯！
+67. [M] I was just catchin' up on, uh... | 我只是在补读……呃……
+68. [E] Say hello to my new boyfriend! | 跟我的新男友打个招呼吧！
+69. [M] How's it hangin'? | 最近怎么样？
+70. [H] We met at the cemetery. He's really deep. | 我们是在墓地认识的。他很有深度。
+71. [H] Ooh! Little muscle there. | 哦！还有一点小肌肉呢。
+72. [E] Are you bleeding, Norman? | 你在流血吗，诺曼？
+73. [E] Oh! I love jam! | 哦！我超爱果酱！
+74. [E] Look at this! | 看看这个！
+75. [M] So, you wanna go hold hands or... whatever? | 那你想去牵牵手还是……随便怎样？
+76. [M] Don't wait up! | 不用等我！
+77. [H] Did somebody say "cromby"? What is that, "cromby"? | 有人说了“克朗比”吗？那是什么，“克朗比”？
+78. [M] It's not even a word. You're losin' your mind. | 那根本不是一个词。你疯了吧。
+79. [E] You scallywag! | 你这个淘气鬼！
+80. [M] Is my sister really dating a zombie, or am I just going nuts? | 我妹妹真的在跟僵尸约会，还是我疯了？
+81. [M] It's a dilemma, to be sure. | 这确实是个两难的问题。
+82. [H] I couldn't help but overhear you talking aloud to yourself in this empty room. | 我忍不住听到你在这个空房间里自言自语。
+83. [E] He's gotta be a zombie, right? | 他肯定是僵尸，对吧？
+84. [H] Hmm. How many brains did you see the guy eat? | 嗯。你看到那家伙吃了多少脑子？
+85. [M] Look, dude, I believe you. | 听着，哥们，我相信你。
+86. [M] I'm always noticing weird stuff in this town. | 我总是能在这个镇上注意到奇怪的东西。
+87. [M] Like the mailman? Pretty sure that dude's a werewolf. | 比如邮递员？我挺确定那家伙是狼人。
+88. [E] But you gotta have evidence. | 但你得有证据。
+89. [M] Otherwise people are gonna think you're a major league cuckoo clock. | 不然大家会觉得你是个彻头彻尾的疯子。
+90. [E] As always, Soos, you're right. | 和往常一样，苏斯，你是对的。
+91. [M] My wisdom is both a blessing and a curse. | 我的智慧既是福气也是负担。
+92. [E] Soos! The portable toilets are clogged again! | 苏斯！移动厕所又堵了！
+93. [E] My sister could be in trouble. | 我妹妹可能有危险。
+94. [M] It was time to get some evidence. | 是时候去找点证据了。
+95. [E] I'd seen enough. | 我已经看得够多了。
+96. [E] Mabel, we've gotta talk about Norman. | 梅宝，我们得谈谈诺曼的事。
+97. [E] Isn't he the best? | 他是不是最棒的？
+98. [E] Check out this giant smooch mark he gave me! | 看看他给我留下的这个大亲亲印！
+99. [E] I'm trying to tell you that Norman is not what he seems! | 我正想告诉你，诺曼不是他看起来的样子！
+100. [E] You think he might be a vampire? | 你觉得他可能是吸血鬼吗？
+101. [E] That would be so awesome! | 那也太酷了！
+102. [M] Guess again, sister. | 再猜猜吧，妹妹。
+103. [E] Oh, wait. I'm sorry. | 哦，等等。对不起。
+104. [E] That is not funny, Dipper. | 这一点都不好笑，迪普。
+105. [E] I'm not joking! | 我不是在开玩笑！
+106. [H] The bleeding, the limp, he never blinks! Have you noticed that? | 他流血、一瘸一拐，而且从来不眨眼！你注意到没有？
+107. [H] Maybe he's blinking when you're blinking. | 也许他是趁你眨眼的时候才眨眼的。
+108. [M] Mabel, remember what the book said about Gravity Falls? | 梅宝，还记得书里说重力泉的事吗？
+109. [M] "Trust no one"! | “不要相信任何人”！
+110. [E] What about me, huh? Why can't you trust me? | 那我呢，嗯？你为什么不能相信我？
+111. [H] He's gonna eat your brain! | 他会吃掉你的脑子！
+112. [E] Dipper, listen to me. | 迪普，听我说。
+113. [M] Norman and I are going on a date at five o'clock, and I'm gonna be adorable, and he's gonna be dreamy. | 诺曼和我五点钟有约会，我会可爱得不行，他会帅得不行。
+114. [H] And I'm not gonna let you ruin it with one of your crazy conspiracies! | 我不会让你用你那疯狂阴谋论毁掉这一切的！
+115. [E] Ohh. What am I gonna do? | 哦。我该怎么办？
+116. [E] Hey, Norman. How do I look? | 嘿，诺曼。我看起来怎么样？
+117. [E] You always know what to say! | 你总是知道该说什么！
+118. [E] Soos is right. | 苏斯说得对。
+119. [E] I don't have any real evidence. | 我没有任何真正的证据。
+120. [E] I guess I can be kind of paranoid sometimes. | 我想我有时候是有点多疑。
+121. [E] Wait! What?! | 等等！什么？！
+122. [E] I was right! Oh, my god! | 我是对的！天啊！
+123. [M] For the fifth time, it's not an actual face! | 我说第五遍了，那不是真的脸！
+124. [E] Finally, we're alone. | 终于，只剩我们俩了。
+125. [M] I need to borrow the golf cart so I can save my sister from a zombie! | 我得借一下高尔夫球车，这样才能把我妹妹从僵尸手里救出来！
+126. [E] Try not to hit any pedestrians. | 尽量别撞到行人。
+127. [E] Dude, it's me, Soos. | 兄弟，是我，苏斯。
+128. [M] Thanks for the zombies. | 谢谢你准备的僵尸。
+129. [M] And this is in case you see a pinata. | 这个是为了以防你遇到皮纳塔。
+130. [M] Better safe than sorry! | 小心总比后悔好！
+131. [E] There's something I should tell you. | 有件事我应该告诉你。
+132. [E] Oh, Norman! You can tell me anything! | 哦，诺曼！你什么都可以告诉我！
+133. [M] All right, just don't freak out, okay? | 好吧，别吓到，好吗？
+134. [M] Just keep an open mind. Be cool. | 保持开放的心态。冷静点。
+135. [E] Is this weird? Is this too weird? | 这奇怪吗？是不是太奇怪了？
+136. [E] You need to sit down? | 你需要坐下来吗？
+137. [E] R-right. I'll explain. | 好……好吧，我来解释。
+138. [M] So, we're gnomes, first off, get that one out of the way. | 那么，我们是地精，首先，先把这点说清楚。
+139. [E] I'm sorry, I always forget your name. | 抱歉，我总是忘了你的名字。
+140. [M] Anyways, long story short, us gnomes have been lookin' for a new queen. Right, guys? | 总之，长话短说，我们地精一直在寻找一位新女王。对吧，伙计们？
+141. [M] So whaddya say? | 那你怎么说？
+142. [H] Will you join us in holy matri-gnome-y? | 你愿意加入我们的神圣地精婚姻吗？
+143. [M] Can't talk today. | 今天没法说话。
+144. [M] I'm sorry, guys, you're really sweet, but I'm a girl and you're gnomes. | 对不起，伙计们，你们人很好，但我是女孩，而你们是地精。
+145. [M] And it's like, "what?!" | 然后我就一脸“啥？！”
+146. [E] We understand. We'll never forget you, Mabel. | 我们理解。我们永远不会忘记你，梅宝。
+147. [H] Because we're gonna kidnap you! | 因为我们要绑架你！
+148. [E] Don't worry, Mabel! I'll save you from that zombie! | 别担心，梅宝！我会把你从那个僵尸手里救出来！
+149. [E] Hold on! | 等一下！
+150. [H] The more you struggle, the more awkward this is gonna be for everybody. | 你越挣扎，大家就越尴尬。
+151. [E] Let go of me! | 放开我！
+152. [E] What the heck is goin' on here?! | 这到底怎么回事？！
+153. [E] And they're total jerks! | 而且他们完全是混蛋！
+154. [M] Gnomes? Huh. I was way off. | 地精？哈，我猜得差远了。
+155. [E] Oh, come on! | 哦，拜托！
+156. [E] Hey! Let go of my sister! | 嘿！放开我妹妹！
+157. [M] Hey there! Um, ya know, this is all really just a big misunderstanding, ya see? | 嘿，你好！呃，你懂的，这一切真的只是个天大的误会，明白吗？
+158. [E] Your sister's not in danger. | 你妹妹没有危险。
+159. [H] She's just marrying all one thousand of us and becoming our gnome queen for all eternity. | 她只是要嫁给我们全部一千个地精，成为我们永世的女王。
+160. [H] You guys are butt-faces! | 你们这些蠢蛋！
+161. [E] Give her back right now, or else! | 马上把她还回来，否则后果自负！
+162. [M] You think you can stop us, boy? | 你觉得你能阻止我们吗，小子？
+163. [M] You have no idea what we're capable of. | 你根本不知道我们的本事。
+164. [M] The gnomes are a powerful race! | 地精是一个强大的种族！
+165. [H] Do not trifle with the gnomes! | 别招惹我们地精！
+166. [M] He's getting away with our queen! | 他带着我们的女王跑了！
+167. [M] You've messed with the wrong creatures, boy. | 你惹错对象了，小子。
+168. [H] Gnomes of the forest... Assemble! | 森林的地精们……集合！
+169. [M] Hurry! Before they come after us! | 快！趁他们还没追上来！
+170. [E] I wouldn't worry about it. | 我不会为这事担心的。
+171. [H] You see their little legs? Suckers are tiny. | 看到他们的小短腿了吗？那帮家伙小得很。
+172. [E] All right, teamwork, guys! Like we practiced. | 好了，大家配合起来！就像我们练习的那样。
+173. [E] I'll save you, Dipper! | 我会救你的，迪普！
+174. [E] Don't mention it. | 不客气。
+175. [E] Look out! | 小心！
+176. [E] Stay back, man! | 退后，哥们！
+177. [E] Where's Grunkle Stan? | 斯坦叔公在哪？
+178. [H] The world's most distracting object! | 全世界最能分散注意力的东西！
+179. [M] Just try to look away, you can't! | 你试试别看，你做不到的！
+180. [E] I can't even remember what I was talkin' about. | 我都不记得我刚才在说什么了。
+181. [M] It's the end of the line, kids. | 你们到头了，孩子们。
+182. [M] Mabel, marry us before we do something crazy! | 梅宝，在我们做出疯狂的事情之前，嫁给我们吧！
+183. [E] There's gotta be a way out of this! | 肯定有办法摆脱这个局面的！
+184. [E] Mabel, don't do this! Are you crazy? | 梅宝，别这样！你疯了吗？
+185. [E] Dipper, just this once... Trust me. | 迪普，就这一次……相信我。
+186. [M] There we go, watch those fingers, Mike. | 好了，小心你的手指，迈克。
+187. [H] Bada-bing, bada-bam! | 搞定，完美收工！
+188. [M] Now let's get you back into the forest, honey! | 现在让我们把你带回森林里去吧，亲爱的！
+189. [H] You may now kiss the bride. | 现在你可以亲吻新娘了。
+190. [M] Well, uh, don't mind if I do. | 那，呃，我就不客气了。
+191. [E] Hey, wait a minute! | 嘿，等一下！
+192. [E] Whoa, whoa! What's going on? | 哇，哇！怎么回事？
+193. [E] That's for lying to me! | 这是惩罚你对我撒谎！
+194. [E] That's for breaking my heart! | 这是惩罚你伤我的心！
+195. [M] I'll... get you back for this! | 我会……跟你算这笔账的！
+196. [H] Who's giving orders? I need orders! | 谁在下命令？我需要命令！
+197. [E] Anyone else wants some? | 还有谁想要的吗？
+198. [E] I'm sorry for ignoring your advice. | 对不起，我没听你的建议。
+199. [M] You really were just looking out for me. | 你确实是在为我着想。
+200. [E] Oh, don't be like that. | 哦，别这样嘛。
+201. [H] You saved our butts back there. | 刚才你救了我们一命。
+202. [M] Look on the bright side, maybe the next one will be a vampire. | 往好处想，也许下一个会是吸血鬼。
+203. [E] You're just saying that. | 你只是说说而已。
+204. [H] Awkward sibling hug? | 来个尴尬的兄妹拥抱？
+205. [M] Sheesh! You two get hit by a bus or somethin'? | 哎呀！你俩是被公交车撞了还是怎么的？
+206. [M] Wouldn't you know it? | 真没想到吧？
+207. [M] Um, I accidentally overstocked some inventory, so how's about each of you take one item from the gift shop on the house? | 呃，我不小心进货进多了，不如你们每人从礼品店免费拿一件东西，怎么样？
+208. [E] What's the catch? | 有什么附加条件？
+209. [M] The catch is do it before I change my mind. Now take something. | 条件就是在我改主意之前赶紧拿。现在，拿一件吧。
+210. [M] That oughta do the trick. | 那应该能解决问题。
+211. [M] Wouldn't you rather have a doll or something? | 你难道不更想要个娃娃之类的东西吗？
+212. [E] Fair enough. | 有道理。
+213. [H] This journal told me there was no one in Gravity Falls I could trust. But when you battle a hundred gnomes side-by-side with someone, you realize that they've probably always got your back. | 这本日志告诉我，在重力泉没有我可以信任的人。但当你和一个人并肩对抗一百个地精时，你会意识到，他们可能一直都在支持你。
+214. [E] Hey, Mabel, could you get the light? | 嘿，梅宝，你能开一下灯吗？
+215. [E] I'm on it. | 我来处理。
+216. [E] It worked! | 成功了！
+217. [M] Our uncle told us there was nothing strange about this town. | 我们的叔公告诉我们这个镇上没有什么奇怪的事。
+218. [H] But who knows what other secrets are waiting to be unlocked? | 但谁知道还有什么别的秘密等着被揭开呢？
