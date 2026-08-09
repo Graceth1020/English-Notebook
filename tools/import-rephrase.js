@@ -157,18 +157,19 @@ function htmlEscape(s) {
 function renderReviewCards(rows) {
   return '<div class="review-cards">\n' + rows.map(function (r) {
     const fields = [
-      ['中文', r.zh],
-      ['My rephrase', r.rephrase],
-      ['Corrected version', r.corrected],
-      ['Notes', r.notes],
-      ['Notes 中文', r.notesZh]
+      ['中文', r.zh, true],
+      ['My rephrase', r.rephrase, false],
+      ['Corrected version', r.corrected, false],
+      ['Notes', r.notes, false],
+      ['Notes 中文', r.notesZh, true]
     ].filter(function (f) { return f[1]; }).map(function (f) {
-      return '<div class="review-field"><span class="review-label">' + f[0] + '</span>' +
+      return '<div class="review-field' + (f[2] ? ' review-zh' : '') + '"><span class="review-label">' + f[0] + '</span>' +
         '<span class="review-value">' + htmlEscape(f[1]) + '</span></div>';
     }).join('');
     return '<div class="review-card">' +
       '<div class="review-card-head"><span class="review-num">' + r.n + '</span>' +
-      '<p class="review-original">' + htmlEscape(r.original) + '</p></div>' +
+      '<p class="review-original">' + htmlEscape(r.original) + '</p>' +
+      '<button type="button" class="card-zh-toggle" data-card-zh="true">Show 中文</button></div>' +
       (fields ? '<div class="review-card-body">' + fields + '</div>' : '') +
       '</div>';
   }).join('\n') + '\n</div>';
@@ -337,6 +338,7 @@ function buildCourse(course) {
         day_num: p.dayNum,
         tags: ['Rephrase', 'Summaries'],
         day_path: p.day_path,
+        zh_toggle: true,
       }) + '\n\n' + p.body + '\n'
     );
     return p;
@@ -386,7 +388,7 @@ function buildTrees(courses, root) {
         const segments = [c.name].concat(f.folder ? f.folder.split('/') : []);
         addTreeNode(trees.corpus, segments, {
           name: f.file.replace(/-clean\.txt$/i, ''),
-          url: root + 'rephrase/corpus/' + c.slug + '/?file=' + encodeURIComponent(f.file),
+          url: root + 'rephrase/corpus/' + c.slug + '/' + slugify(f.file.replace(/-clean\.txt$/i, '')) + '/',
           count: f.count,
         });
       }
@@ -430,9 +432,24 @@ function main() {
   for (const c of courses) {
     if (!c.corpus) continue;
     corpusMap[c.slug] = c.corpus;
+    const listLines = ['# ' + c.name + ' - Corpus', ''];
+    for (const cf of c.corpus.files) {
+      const fileSlug = slugify(cf.file.replace(/-clean\.txt$/i, ''));
+      writeFile(
+        path.join(SOURCE, 'rephrase', 'corpus', c.slug, fileSlug, 'index.md'),
+        frontmatter({
+          title: cf.file.replace(/-clean\.txt$/i, ''),
+          layout: 'corpus',
+          corpus_key: c.slug,
+          corpus_file: cf.file,
+        }) + '\n'
+      );
+      listLines.push('- [' + cf.file.replace(/-clean\.txt$/i, '') + '](' + root + 'rephrase/corpus/' + c.slug + '/' + fileSlug + '/)');
+    }
+    listLines.push('');
     writeFile(
       path.join(SOURCE, 'rephrase', 'corpus', c.slug, 'index.md'),
-      frontmatter({ title: c.name + ' - Corpus', layout: 'corpus', corpus_key: c.slug }) + '\n'
+      frontmatter({ title: c.name + ' - Corpus', layout: 'page' }) + '\n\n' + listLines.join('\n') + '\n'
     );
   }
 
