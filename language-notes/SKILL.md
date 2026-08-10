@@ -41,6 +41,10 @@ notes/
 └── summary/     summary-YYYY-MM-DD.md
 ```
 
+Rephrase-linked notes live one level deeper:
+`notes/rephrase/<course>/day-XX-YYYYMMDD.md` (one file per practice day,
+associated with that day's rephrase summary).
+
 Every daily file holds one entry per request in this shape:
 
 ```markdown
@@ -120,6 +124,42 @@ Read today's daily files across all five command folders, count the entries in e
 ### Help
 
 When asked what the skill can do, list the commands with short usage examples. Save no file.
+
+## Linking Notes to Rephrase Practice
+
+The rephrase practice skill generates daily batches
+(`days/<course>/.../day-XX-YYYYMMDD.md`) and summaries. To attach a language
+note to a specific practice day, add a day reference to a command:
+
+- `/define <word> from day <N>`
+- `/parse <sentence or sentence number> from day <N>`
+- `/compare <A> and <B> from day <N>`
+- `/rephrase <sentence or sentence number> from day <N>`
+
+Resolution rules:
+
+1. Locate the day file: search `days/*/*/day-<N>-*.md`; prefer today's date,
+   otherwise the latest date. A full stem such as `day-02-20260810` is used
+   directly.
+2. For `/define <word>`, find the word inside one of the day's numbered
+   sentences and include that sentence as a `Sentence` field.
+3. For `/parse`, `/compare`, and `/rephrase`, a number refers to the numbered
+   sentence in the day file; otherwise use the quoted text.
+4. Save with the append script plus `--course` and `--day`. The script adds
+   the `Course` and `Day` fields automatically:
+
+```bash
+python scripts/append_note.py --command define --course "Gravity Falls" --day day-02-20260810 --field "**Word**=..." --field ...
+```
+
+5. If the word or sentence is not found in the day, fall back to the normal
+   daily file under `notes/<command>/` and tell the user.
+
+Day-linked entries are summarized by the rephrase day summary, not by the
+`/summary` command (which reads only the five daily command files). They are
+also published as a separate page per practice day
+(`rephrase/notes/<slug>/<stem>/` on the blog), linked from both the day page
+and the summary page.
 
 ## Append Script
 

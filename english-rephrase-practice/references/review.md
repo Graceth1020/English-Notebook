@@ -53,9 +53,16 @@ Rules for feedback:
   generic ("Nice use of the phrasal verb" beats "Good job").
 - Explain the error in one or two sentences; do not lecture.
 - Give exactly one model version, phrased the way a native speaker would
-  actually say it.
+  actually say it. Use a word or phrase substitute only when a natural
+  equivalent exists (for example "contest" -> "competition", "cheer up" ->
+  "lift ...'s spirits"). If no natural substitute exists, keep the original
+  wording (for example "There's no such thing as"). The model must preserve
+  the original meaning exactly and must not add content that is not in the
+  original sentence.
 - If several valid versions exist, mention the alternative in one line.
-- If a rephrase is already good, say so and mark it "no change needed".
+- If a rephrase is already good, say so and mark it "no change needed". If a
+  natural substitute exists, add one alternative in one line so the row still
+  teaches something.
 - In the daily summary, every incorrect or unnatural rephrase must include a
   corrected sentence, and table notes must explain the issue in plain words
   (category plus what is wrong), never a bare label like "wordy".

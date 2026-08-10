@@ -108,6 +108,11 @@ Deliver to the user:
   10 sentences and their pattern tags; `-N` marks a later round on the same
   date (`-2`, `-3`, ...)
 - A short note on today's focus and difficulty tier
+- A note that they can call the language-notes skill on today's sentences
+  (`/define <word> from day <N>`, `/parse <sentence> from day <N>`);
+  day-linked entries are saved to `notes/rephrase/<course>/day-XX-YYYYMMDD.md`
+  and published as a per-day notes page, linked from both the day page and
+  the summary page
 
 Ask the learner to rephrase each sentence in their own words, keeping the
 meaning, and to send the 10 versions back in the same numbered order. The
@@ -120,20 +125,27 @@ file (one version per numbered sentence, or "pass") and sends it back.
 
 Review each rephrase with the checklist and feedback format in
 `references/review.md`: what worked, what to fix, why, and one natural model
-version. Calibrate difficulty for the next day based on how many rephrases
-needed major fixes. A blank rephrase means the learner does not know how to
-answer: explain the meaning, give one model version with a short why, and
-record it as `don't know` (see "Blank Answers" in `references/review.md`).
+version built with word substitutes only where natural equivalents exist
+(see `references/review.md`). Calibrate difficulty for the next day based on
+how many rephrases needed major fixes. A blank rephrase means the learner
+does not know how to answer: explain the meaning, give one model version with
+a short why, and record it as `don't know` (see "Blank Answers" in
+`references/review.md`).
 
 ### 4. Write the daily summary
 
 Write the blog-style markdown summary using `references/summary.md`. The
 summary must contain the original sentences, the learner's rephrase versions,
-the corrections and suggestions, and a section on how the day's practice
-builds speaking skills. The summary must contain no opening pleasantries,
-interactive or motivational filler, or emojis (see "Forbidden Content" in
-`references/summary.md`). Include Chinese translation columns in the summary
-table for each original sentence and for each note. Save it as
+the corrections and suggestions, a list of common phrases and fixed sentence
+structures from the exercise, and a section on how the day's practice builds
+speaking skills. Corrected versions use word substitutes only where natural
+equivalents exist and never change the original meaning. The summary must
+contain no opening pleasantries, interactive or motivational filler, or
+emojis (see "Forbidden Content" in `references/summary.md`). Include Chinese
+translation columns in the summary table for each original sentence and for
+each note. If `notes/rephrase/<course>/day-XX-YYYYMMDD.md` exists for the
+day, add a `## Notes from This Round` section linking the day's notes page
+(see `references/summary.md`). Save it as
 `summaries/<course>/day-XX-YYYYMMDD.md`.
 
 ### 5. Track progress

@@ -38,6 +38,8 @@ const DAY_RE = /^day-(\d+)-(\d{8})(?:-(\d+))?\.md$/;
 const CORPUS_LINE_RE = /^(\d+)\.\s*\[([EMH])\]\s*(.+?)\s*(?:\|\s*(.*))?$/;
 const NOTE_FILE_RE = /^[a-z]+-\d{4}-\d{2}-\d{2}\.md$/;
 
+let DAY_NOTES_MAP = {}; // course -> dayStem -> [day-linked notes]
+
 function slugify(s) {
   return String(s).toLowerCase()
     .replace(/[^\p{L}\p{N}]+/gu, '-')
@@ -154,8 +156,25 @@ function htmlEscape(s) {
     .replace(/"/g, '&quot;');
 }
 
+function stripNotesSection(lines) {
+  const out = [];
+  let skipping = false;
+  for (const line of lines) {
+    if (/^##\s*notes from this round/i.test(line.trim())) {
+      skipping = true;
+      continue;
+    }
+    if (skipping) {
+      if (/^##\s/.test(line.trim())) skipping = false;
+      else continue;
+    }
+    out.push(line);
+  }
+  return out;
+}
+
 function renderReviewCards(rows) {
-  return '<div class="review-cards">\n' + rows.map(function (r) {
+    return '<div class="review-cards">\n' + rows.map(function (r) {
     const fields = [
       ['中文', r.zh, true],
       ['My rephrase', r.rephrase, false],
@@ -172,7 +191,7 @@ function renderReviewCards(rows) {
       '<button type="button" class="card-zh-toggle" data-card-zh="true">Show 中文</button></div>' +
       (fields ? '<div class="review-card-body">' + fields + '</div>' : '') +
       '</div>';
-  }).join('\n') + '\n</div>';
+    }).join('\n') + '\n</div>\n';
 }
 
 function parseSummary(course, file) {
@@ -215,7 +234,7 @@ function parseSummary(course, file) {
     body.push(line);
   }
   if (inReview && rows.length) body.push(renderReviewCards(rows));
-  return { stem, dayNum: +m[1], date, title, folder: relFolder(file), body: body.join('\n').trim() };
+  return { stem, dayNum: +m[1], date, title, folder: relFolder(file), body: stripNotesSection(body).join('\n').trim() };
 }
 
 function parseCourseCorpus(course) {
@@ -248,6 +267,7 @@ function parseNotes() {
   const notes = [];
   const types = readDir(path.join(ROOT, 'notes')).filter((d) => d.isDirectory());
   for (const type of types) {
+    if (type.name === 'rephrase') continue;
     const typeDir = path.join(ROOT, 'notes', type.name);
     for (const f of readDir(typeDir)) {
       if (!f.isFile() || !NOTE_FILE_RE.test(f.name)) continue;
@@ -289,6 +309,70 @@ function parseNotes() {
   return notes.sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time));
 }
 
+function inferNoteType(fields) {
+  if (fields['Word']) return 'define';
+  if (fields['Input'] && fields['Output']) return 'translate';
+  if (fields['Original'] && fields['Versions']) return 'rephrase';
+  if (fields['Sentence 1'] && fields['Sentence 2']) return 'compare';
+  if (fields['Sentence']) return 'parse';
+  return 'note';
+}
+
+function parseDayNotes() {
+  const out = [];
+  const base = path.join(ROOT, 'notes', 'rephrase');
+  for (const dir of readDir(base)) {
+    if (!dir.isDirectory()) continue;
+    const courseDir = path.join(base, dir.name);
+    for (const f of walkFiles(courseDir)) {
+      if (!DAY_RE.test(path.basename(f))) continue;
+      const dayStem = path.basename(f).replace(/\.md$/, '');
+      const content = readText(path.join(courseDir, f));
+      for (const block of content.split(/\r?\n(?=## )/)) {
+        const head = /^##\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})/.exec(block);
+        if (!head) continue;
+        const fields = {};
+        const examples = [];
+        let inExamples = false;
+        for (const raw of block.split(/\r?\n/)) {
+          const line = raw.trim();
+          if (!line || line.startsWith('##')) continue;
+          const kv = /^-\s+\*\*(.+?)\*\*:\s*(.*)$/.exec(line) || /^-\s*([^:]+):\s*(.*)$/.exec(line);
+          if (kv) {
+            const key = kv[1].trim();
+            const value = kv[2].trim();
+            if (inExamples) inExamples = false;
+            if (/^examples?$/i.test(key)) {
+              inExamples = true;
+            } else if (value) {
+              fields[key] = value;
+            }
+            continue;
+          }
+          if (inExamples) {
+            const ex = /^-\s+(.+)$/.exec(line);
+            if (ex) {
+              examples.push(ex[1]);
+              continue;
+            }
+            inExamples = false;
+          }
+        }
+        out.push({
+          type: inferNoteType(fields),
+          date: head[1],
+          time: head[2],
+          fields: Object.assign({ Course: dir.name, Day: dayStem }, fields),
+          examples,
+          course: dir.name,
+          day: dayStem,
+        });
+      }
+    }
+  }
+  return out.sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time));
+}
+
 function siteRoot() {
   try {
     const cfg = readText(path.join(ROOT, '_config.yml'));
@@ -300,17 +384,57 @@ function siteRoot() {
   return '/';
 }
 
+function renderDayNotes(notes, stem, root, slug, hasDay, hasSummary) {
+  const lines = [];
+  lines.push('Day: ' + stem);
+  lines.push('');
+  lines.push('Entries: ' + notes.length);
+  lines.push('');
+  const links = [];
+  if (hasDay) links.push('[Practice page](' + root + 'rephrase/days/' + slug + '/' + stem + '/)');
+  if (hasSummary) links.push('[Summary](' + root + 'rephrase/summaries/' + slug + '/' + stem + '/)');
+  if (links.length) {
+    lines.push(links.join(' | '));
+    lines.push('');
+  }
+  for (const n of notes) {
+    const title = n.fields.Word || n.fields.Sentence || n.fields.Original || (n.type + ' note');
+    const titleKey = n.fields.Word ? 'Word' : n.fields.Sentence ? 'Sentence' : n.fields.Original ? 'Original' : '';
+    lines.push('## ' + n.type + ': ' + title);
+    lines.push('');
+    lines.push('_' + n.date + ' ' + n.time + '_');
+    lines.push('');
+    for (const key of Object.keys(n.fields)) {
+      if (key === 'Course' || key === 'Day' || key === titleKey || /^examples?$/i.test(key)) continue;
+      lines.push('- **' + key + '**: ' + n.fields[key]);
+    }
+    if (n.examples && n.examples.length) {
+      lines.push('- **Examples**:');
+      for (const ex of n.examples) lines.push('  - ' + ex);
+    }
+    lines.push('');
+  }
+  return lines.join('\n').trim();
+}
+
 function buildCourse(course) {
   const slug = slugify(course);
+  const root = siteRoot();
   const days = walkFiles(path.join(ROOT, 'days', course))
     .filter((f) => DAY_RE.test(path.basename(f)));
   const summaries = walkFiles(path.join(ROOT, 'summaries', course))
     .filter((f) => DAY_RE.test(path.basename(f)));
+  const dayNotesForCourse = DAY_NOTES_MAP[course] || {};
 
   const dayPosts = days.map((file) => {
     const p = parseDay(course, file);
     p.hasSummary = summaries.includes(file);
     p.summary_path = p.hasSummary ? 'rephrase/summaries/' + slug + '/' + p.stem + '/' : undefined;
+    const notesForDay = dayNotesForCourse[p.stem];
+    let body = p.body;
+    if (notesForDay && notesForDay.length) {
+      body = body + '\n\n## Notes\n\n[Day notes](' + root + 'rephrase/notes/' + slug + '/' + p.stem + '/)';
+    }
     writeFile(
       path.join(POSTS, 'Rephrase', 'Days', course, posix(path.dirname(file)), p.stem + '.md'),
       frontmatter({
@@ -320,7 +444,7 @@ function buildCourse(course) {
         day_num: p.dayNum,
         tags: ['Rephrase', 'Days'],
         summary_path: p.summary_path,
-      }) + '\n\n' + p.body + '\n'
+      }) + '\n\n' + body + '\n'
     );
     return p;
   });
@@ -329,6 +453,21 @@ function buildCourse(course) {
     const p = parseSummary(course, file);
     p.hasDay = days.includes(file);
     p.day_path = p.hasDay ? 'rephrase/days/' + slug + '/' + p.stem + '/' : undefined;
+    const notesForDay = dayNotesForCourse[p.stem];
+    let body = p.body;
+    if (notesForDay && notesForDay.length) {
+      const lines = [
+        '## Notes from This Round',
+        '',
+        '[Open the day notes page](' + root + 'rephrase/notes/' + slug + '/' + p.stem + '/)',
+        '',
+      ];
+      for (const n of notesForDay) {
+        const title = n.fields.Word || n.fields.Sentence || n.fields.Original || (n.type + ' note');
+        lines.push('- [' + n.type + '] ' + title + ' (' + n.date + ' ' + n.time + ')');
+      }
+      body = body + '\n\n' + lines.join('\n');
+    }
     writeFile(
       path.join(POSTS, 'Rephrase', 'Summaries', course, posix(path.dirname(file)), p.stem + '.md'),
       frontmatter({
@@ -339,16 +478,43 @@ function buildCourse(course) {
         tags: ['Rephrase', 'Summaries'],
         day_path: p.day_path,
         zh_toggle: true,
-      }) + '\n\n' + p.body + '\n'
+      }) + '\n\n' + body + '\n'
     );
     return p;
   });
+
+  const notesPosts = [];
+  for (const stem of Object.keys(dayNotesForCourse)) {
+    const notes = dayNotesForCourse[stem];
+    if (!notes || !notes.length) continue;
+    const m = DAY_RE.exec(stem + '.md');
+    if (!m) continue;
+    const dayFile = days.find((f) => path.basename(f).replace(/\.md$/, '') === stem);
+    const folder = dayFile ? posix(path.dirname(dayFile)) : '';
+    const hasDay = days.includes(dayFile);
+    const hasSummary = summaries.includes(dayFile);
+    const body = renderDayNotes(notes, stem, root, slug, hasDay, hasSummary);
+    writeFile(
+      path.join(POSTS, 'Rephrase', 'Notes', course, folder, stem + '.md'),
+      frontmatter({
+        title: 'Day ' + parseInt(m[1], 10) + ' Notes - ' + course,
+        date: fmtDate(m[2]) + ' 12:00:00',
+        permalink: 'rephrase/notes/' + slug + '/' + stem + '/',
+        day_num: +m[1],
+        tags: ['Rephrase', 'Notes'],
+        day_path: hasDay ? 'rephrase/days/' + slug + '/' + stem + '/' : undefined,
+        summary_path: hasSummary ? 'rephrase/summaries/' + slug + '/' + stem + '/' : undefined,
+      }) + '\n\n' + body + '\n'
+    );
+    notesPosts.push({ stem, dayNum: +m[1], date: fmtDate(m[2]) });
+  }
 
   return {
     name: course,
     slug,
     days: dayPosts,
     summaries: summaryPosts,
+    notes: notesPosts,
     corpus: parseCourseCorpus(course),
   };
 }
@@ -425,6 +591,13 @@ function main() {
       if (dir.isDirectory()) names.add(dir.name);
     }
   }
+  const dayNotes = parseDayNotes();
+  DAY_NOTES_MAP = {};
+  for (const n of dayNotes) {
+    DAY_NOTES_MAP[n.course] = DAY_NOTES_MAP[n.course] || {};
+    DAY_NOTES_MAP[n.course][n.day] = DAY_NOTES_MAP[n.course][n.day] || [];
+    DAY_NOTES_MAP[n.course][n.day].push(n);
+  }
   for (const name of [...names].sort()) courses.push(buildCourse(name));
 
   const root = siteRoot();
@@ -463,7 +636,7 @@ function main() {
     frontmatter({ title: 'Language Notes', layout: 'notes' }) + '\n'
   );
 
-  const notes = parseNotes();
+  const notes = parseNotes().concat(dayNotes);
   writeFile(
     path.join(DATA_DIR, 'rephrase.json'),
     JSON.stringify({

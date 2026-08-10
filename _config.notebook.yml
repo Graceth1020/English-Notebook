@@ -9,11 +9,11 @@ description: "Personal English Learning Notes"
 
 # === Navigation menu ===
 menu:
-  Home: /blog
+  Home: null
+  Archive: null
   Rephrase: /rephrase
   Notes: /notes
   Tags: /
-  Archive: /archives
 
 # === Social links ===
 social:

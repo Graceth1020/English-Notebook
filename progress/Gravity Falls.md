@@ -1,6 +1,6 @@
 # Practice Progress - Gravity Falls
 
-Source: Gravity Falls - S01xE02 - The Legend of the Gobblewonker-en.srt | Current day: 2
+Source: Gravity Falls - S01xE02 - The Legend of the Gobblewonker-en.srt | Current day: 6
 Difficulty trend: Tier 1 -> Tier 3 (S01E01); carries over to S01E02
 
 ## Overview
@@ -385,6 +385,8 @@ fixes). New episode, day numbering restarts at 1.
 | Day | Date | Level | Major fixes | Passed | Focus |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 2026-08-09 | Tier 2 | 3/10 | 0 | Phrasal verbs and fixed phrases |
+| 2 | 2026-08-10 | Tier 2 | 4/10 | 0 | Discourse markers and hedging |
+| 3 | 2026-08-10 | Tier 2 | 2/10 | 0 | Well/so openers and fixed phrases |
 
 ## Day 1 (2026-08-09) - The Legend of the Gobblewonker
 
@@ -409,3 +411,51 @@ Strengths: phrasal verbs kept intact and natural ("figure this out", "cheer
 you up").
 Next day: stay in Tier 2 ([M]); revisit tag questions, "might as well", and
 "no such thing as", then add discourse markers.
+
+## Day 2 (2026-08-10) - The Legend of the Gobblewonker
+
+Level: Tier 2 ([M]) | Focus: discourse markers and hedging
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | promise: swear + gonna | major | "family interest" shifts the meaning of "family fun" |
+| 2 | hedge: I think + actually | minor | gerund after "what he wants to do is" |
+| 3 | well + deadpan | good | "it" for "that" natural |
+| 4 | discourse marker: you see | don't know | blank; model: "You get what I'm doing here?" |
+| 5 | I don't know + relative clause | minor | "supposed that" wrong pattern |
+| 6 | but seriously + on it | major | idiom "on it" replaced with "looking at it" |
+| 7 | hedging stack + worth it | major | "worth of doing" collocation |
+| 8 | maybe + after all | major | missing verb "was" |
+| 9 | casual tag: all right? | good | "so difficult" natural |
+| 10 | well + so much for | good | "competition" natural |
+
+Repeated errors: fixed chunks broken or misread ("on it", "worth of doing",
+"family fun"); missing copula under hedge (line 8); "supposed that" pattern.
+Strengths: natural word substitutes ("competition", "so difficult", "it",
+"honestly"); four of ten natural or minor.
+Next day: stay in Tier 2 ([M]); add "well"/"so" openers and more phrasal
+verbs; revisit "worth doing" and idioms.
+
+## Day 3 (2026-08-10) - The Legend of the Gobblewonker
+
+Level: Tier 2 ([M]) | Focus: well/so openers and fixed phrases
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | so + or what? | repeated | copied the original; "toss" alternative |
+| 2 | well + when you get to be ... nobody | major | agreement: "nobody focus" -> "focuses" |
+| 3 | well + time to + get back to | major | missing verb: "to back to work" -> "to get back to work" |
+| 4 | so... + ever | good | "tell ... about" natural |
+| 5 | worth it + imagine + conditional | repeated | copied the original; "shot" alternative |
+| 6 | there's no way + gonna | good | "It's impossible that" keeps meaning |
+| 7 | contrast: can ... but can't | minor | "forbidden" too formal; "no touching" |
+| 8 | there has to be + way out | minor | "way to leave" drifts from "way out of this" |
+| 9 | I'm not sure + that clause | good | "I don't think" natural |
+| 10 | conditional threat | minor | "quit" for "leave"; "immediately" formal |
+
+Repeated errors: none carried over from Day 2; two verbatim copies; small
+grammar slips around good substitutes (agreement, missing "get").
+Strengths: best round of the episode, 2/10 major; substitutes landing
+("become", "must be", "I don't think", "tell about").
+Next day: stay in Tier 2 ([M]); longer [M] sentences with more phrasal
+verbs; keep "no way" and "or what?" frames in play.

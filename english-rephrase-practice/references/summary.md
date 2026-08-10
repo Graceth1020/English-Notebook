@@ -57,10 +57,22 @@ speaking. Mention the focus pattern.>
 <Pick the 2-3 most instructive corrections. For each, show the original,
 the learner's version, the model version, and a one-sentence "why".>
 
-## Patterns I Can Use Today
+## Common Phrases and Fixed Structures
 
-<A short list of 3-5 reusable chunks from today, ready to drop into everyday
-speech. Example: "I wasn't sure if... so I just went for it.">
+<A bullet list of the common phrases and fixed sentence structures that
+appeared in this exercise: fixed expressions, collocations, and reusable
+sentence frames, each with a short example from today's sentences or model
+versions. Example bullets:
+- "I might as well ..." - "With this rain, I might as well stay home."
+- "There's no such thing as ..." - "There's no such thing as a free lunch."
+- tag-question frame - "You didn't forget the tickets, did you?">
+
+## Notes from This Round
+
+<Optional: if the learner used the language-notes skill on today's sentences,
+link the day's notes page and list the entries briefly. On the blog the
+notes are published as a separate page and linked from both the day page and
+the summary page.>
 
 ## How This Builds Speaking
 
@@ -83,13 +95,27 @@ using two of today's patterns in a real conversation.>
   day file. Add a row for it in `summaries/<course>/index.md`.
 - Keep the intro and the "How This Builds Speaking" section to 2-4 sentences.
 - Every row whose rephrase is incorrect or unnatural must show a corrected
-  sentence in the "Corrected version" column. Rows that are already good say
-  "No change needed".
+  sentence in the "Corrected version" column. Corrected versions use word or
+  phrase substitutes only when a natural equivalent exists (for example
+  "contest" -> "competition"); if no natural substitute exists, keep the
+  original wording. The corrected version must preserve the original meaning
+  exactly and must not add content that is not in the original sentence.
+  Rows that are already good say "No change needed"; if a natural substitute
+  exists, add "; alternative: <model>".
 - When the best corrected version is exactly the original sentence, mark it
   clearly so it does not look like an error: write
   "Same as original: the original was already the best natural form", and
   make the note explain what moved away from it. The original is the target
   form; the learner's version drifted, and coming back is the fix.
+- Every summary includes a "Common Phrases and Fixed Structures" section: a
+  bullet list of the fixed expressions and reusable sentence frames that
+  appeared in the exercise, each with a short example.
+- If `notes/rephrase/<course>/day-XX-YYYYMMDD.md` exists, add a
+  `## Notes from This Round` section after `## Common Phrases and Fixed
+  Structures` that links the day's notes page and lists each entry (the
+  word, sentence, or pattern it covers). The blog import publishes the notes
+  as a separate page per day (`rephrase/notes/<slug>/<stem>/`) and adds
+  links from both the day page and the summary page.
 - Add a Chinese translation of the original sentence in the "中文" column.
   Translate the sentence as spoken, not word for word.
 - Add a Chinese translation of the note in the "Notes 中文" column, next to

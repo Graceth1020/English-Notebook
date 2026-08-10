@@ -27,6 +27,14 @@ def parse_args(argv):
         "--timestamp",
         help="YYYY-MM-DD or YYYY-MM-DD HH:MM; defaults to the current local time",
     )
+    parser.add_argument(
+        "--course",
+        help="course name for a rephrase-linked note (used with --day)",
+    )
+    parser.add_argument(
+        "--day",
+        help="day file stem such as day-02-20260810; saves to notes/rephrase/<course>/<day>.md",
+    )
     return parser.parse_args(argv)
 
 
@@ -79,10 +87,20 @@ def main(argv=None):
             value = sys.stdin.read()
         fields.append((key, value))
 
+    if args.day and not args.course:
+        raise SystemExit("error: --course is required when --day is given")
+    if args.day:
+        fields.insert(0, ("**Day**", args.day))
+        fields.insert(0, ("**Course**", args.course))
+
     date_str, ts = parse_timestamp(args.timestamp)
     root = pathlib.Path(args.root)
-    target_dir = root / "notes" / args.command
-    target = target_dir / "{}-{}.md".format(args.command, date_str)
+    if args.day:
+        target_dir = root / "notes" / "rephrase" / args.course
+        target = target_dir / "{}.md".format(args.day)
+    else:
+        target_dir = root / "notes" / args.command
+        target = target_dir / "{}-{}.md".format(args.command, date_str)
 
     entry_lines = ["## {}".format(ts)]
     for key, value in fields:
