@@ -387,6 +387,8 @@ fixes). New episode, day numbering restarts at 1.
 | 1 | 2026-08-09 | Tier 2 | 3/10 | 0 | Phrasal verbs and fixed phrases |
 | 2 | 2026-08-10 | Tier 2 | 4/10 | 0 | Discourse markers and hedging |
 | 3 | 2026-08-10 | Tier 2 | 2/10 | 0 | Well/so openers and fixed phrases |
+| 4 | 2026-08-10 | Tier 2 | 3/10 | 0 | Keep phrasal verbs and idioms intact |
+| 5 | 2026-08-11 | Tier 2/3 | 2/10 | 0 | Humor and emphasis; no verbatim copies |
 
 ## Day 1 (2026-08-09) - The Legend of the Gobblewonker
 
@@ -459,3 +461,57 @@ Strengths: best round of the episode, 2/10 major; substitutes landing
 ("become", "must be", "I don't think", "tell about").
 Next day: stay in Tier 2 ([M]); longer [M] sentences with more phrasal
 verbs; keep "no way" and "or what?" frames in play.
+
+## Day 4 (2026-08-10) - The Legend of the Gobblewonker
+
+Level: Tier 2 ([M]) | Focus: longer [M] sentences with phrasal verbs and
+fixed phrases
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | gonna + list of who/what | minor | "will be" fine, but "just" (only-us) lost |
+| 2 | keep (someone) company | minor | "accompany" too formal |
+| 3 | throw away | minor | "out of the boat" adds a location; "chucked" |
+| 4 | supposed to + -ing question | minor | "should" asks advice; "shouldn't you" closer |
+| 5 | tell me + wh-question | major | "become success" needs "successful" |
+| 6 | ditch over nothing | major | spelling "abandoned"; "abandon" literary |
+| 7 | all you gotta do is | minor | "point and shot" -> "shoot" (base form) |
+| 8 | if it makes you feel any better | major | "got" (already have) vs "gotta take" (future) |
+| 9 | catch someone's fancy | minor | idiom flattened to "attract his attention" |
+| 10 | so I guess + negative question | minor | "presume" formal; question became statement |
+
+Strengths: all ten answered, no blanks, no verbatim copies; frames like "All
+you need to do", "Should you be doing lookout?", "So I thought maybe"
+landed naturally.
+Repeated errors: phrasal verbs and idioms replaced with formal or plainer
+words (accompany, abandon, attract his attention, presume); small grammar
+slips around otherwise good substitutes ("point and shot", "become
+success"); one tense/meaning shift ("got" vs "gotta take").
+Next day: start the [M]+[H] stretch; longer [M] with early [H] humor and
+emphasis, keep phrasal verbs and idioms intact.
+
+## Day 5 (2026-08-11) - The Legend of the Gobblewonker
+
+Level: Tier 2/3 ([M] + early [H]) | Focus: humor, emphasis, keep phrasal
+verbs and idioms intact
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | what did I tell you about + -ing | repeated | copied the original; "didn't I tell you not to" |
+| 2 | chop up + to smithereens | good | "cut up" natural; exaggeration survived |
+| 3 | hyperbole: one million percent | major | "I'm agree" grammar; "totally" flattens the joke |
+| 4 | you see? + exactly why | repeated | copied the original; "the exact reason" |
+| 5 | humor: pun on miss | repeated | copied the original; rebuilt as "thinks about me / hitting her target" |
+| 6 | how right you were + piece of work | major | function drift: decision vs execution |
+| 7 | hedge + echo question | repeated | copied the original; "could" keeps the echo |
+| 8 | in retrospect + a bit + contrived | minor | "artificial" is fake; "forced" is closer |
+| 9 | the lengths + go through | good | "have no idea how hard ... try" natural |
+| 10 | bet frame + at the top of my lungs | minor | spelling: "eys" -> "eyes" |
+
+Strengths: lines 2 and 9 fully natural; "a real piece of work" kept intact;
+"in hindsight" landed as a natural swap.
+Repeated errors: four verbatim copies (1, 4, 5, 7) - the round's real
+problem; plus "I'm agree" (verb after "am") and one function drift
+(decision vs execution).
+Next day: stay in the [M]+[H] stretch; bring echo questions and joke frames
+back as fresh sentences; rephrase rather than copy.
