@@ -7,3 +7,5 @@
 | day-03-20260810.md | 2026-08-10 | Tier 2 | 2/10 | Well/so openers and fixed phrases |
 | day-04-20260810.md | 2026-08-10 | Tier 2 | 3/10 | Longer [M] with phrasal verbs and idioms |
 | day-05-20260811.md | 2026-08-11 | Tier 2/3 | 2/10 | Humor, emphasis, no verbatim copies |
+| day-06-20260812.md | 2026-08-12 | Tier 2/3 | 3/10 | Word precision in jokes; retry idioms |
+| day-07-20260812.md | 2026-08-12 | Tier 2/3 | 1/10 | Longer [H]; retry dismissive and deadpan |

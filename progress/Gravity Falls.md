@@ -389,6 +389,8 @@ fixes). New episode, day numbering restarts at 1.
 | 3 | 2026-08-10 | Tier 2 | 2/10 | 0 | Well/so openers and fixed phrases |
 | 4 | 2026-08-10 | Tier 2 | 3/10 | 0 | Keep phrasal verbs and idioms intact |
 | 5 | 2026-08-11 | Tier 2/3 | 2/10 | 0 | Humor and emphasis; no verbatim copies |
+| 6 | 2026-08-12 | Tier 2/3 | 3/10 | 0 | Word precision in jokes; retry idioms |
+| 7 | 2026-08-12 | Tier 2/3 | 1/10 | 0 | Longer [H]; retry dismissive and deadpan |
 
 ## Day 1 (2026-08-09) - The Legend of the Gobblewonker
 
@@ -515,3 +517,55 @@ problem; plus "I'm agree" (verb after "am") and one function drift
 (decision vs execution).
 Next day: stay in the [M]+[H] stretch; bring echo questions and joke frames
 back as fresh sentences; rephrase rather than copy.
+
+## Day 6 (2026-08-12) - The Legend of the Gobblewonker
+
+Level: Tier 2/3 ([M] + early [H]) | Focus: echo questions and jokes rebuilt
+fresh; word precision
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | echo challenge: you call that + noun? | repeated | copied again; "that's supposed to be ...?" |
+| 2 | emphasis: that's some + noun | major | "precise" is exact; "quality" is good/meaningful |
+| 3 | humor: exaggerated warning | minor | "extremely dangerous" drops the comedy |
+| 4 | who needs 'em? | don't know | blank; taught: dismissive rhetorical |
+| 5 | say + clause | good | "appears" natural; frame intact |
+| 6 | it's funny because | major | "fantastic" breaks the deadpan joke |
+| 7 | what's the big idea? | major | function: challenge vs clarification |
+| 8 | pop into my head | don't know | blank; taught: sudden idea |
+| 9 | bet frame | minor | "bet with you" extra; "I bet you five bucks" |
+| 10 | why-because pun | good | "big bill" pun kept; passive natural |
+
+Strengths: verbatim copies down from 4 to 1; the pun and bet frame rebuilt;
+"appears" landed naturally.
+Repeated errors: two don't-know idioms taught (who needs 'em, pop into my
+head); word-precision slips in jokes and emphasis ("fantastic" for "funny",
+"precise" for "quality"); one function drift ("what do you mean").
+Next day: stay in the [M]+[H] stretch; retry "who needs 'em" and "pop into
+my head" as fresh sentences; watch word precision inside jokes.
+
+## Day 7 (2026-08-12) - The Legend of the Gobblewonker
+
+Level: Tier 2/3 ([M] + early [H]) | Focus: comebacks, deadpan, and formal
+comedy; word precision
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | high and mighty comeback | don't know | blank; taught: "full of yourself" |
+| 2 | deadpan prediction | repeated | copied; "minor character" |
+| 3 | formal comedy: I authorize | minor | "grant" ok; "demand" too strong |
+| 4 | deadpan: normally sounds like | don't know | blank; taught with model |
+| 5 | I don't often do this, but | good | "think I need to" + "prize" natural |
+| 6 | should be + -ing | minor | "should write" loses the ongoing sense |
+| 7 | realization: I guess the real X is | major | agreement: "you two is" -> "are" |
+| 8 | spend + time + -ing | repeated | copied; "track down" |
+| 9 | save your sympathy | repeated | copied; "don't waste your pity" |
+| 10 | run-in with | minor | "conflict" formal and heavy |
+
+Strengths: major fixes at 1/10, the best of the episode; line 5 fully
+natural; word-precision swaps close on 3 and 10.
+Repeated errors: three verbatim copies on short punchlines (2, 8, 9); two
+don't-know idioms taught (high and mighty, whale noises); one agreement
+slip ("you two is"); register drift ("conflict").
+Next day: stay in the [M]+[H] stretch; move into longer [H] lines with
+multi-clause humor; retry dismissive and deadpan frames fresh.

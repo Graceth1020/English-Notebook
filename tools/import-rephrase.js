@@ -207,7 +207,7 @@ function parseSummary(course, file) {
   const rows = [];
   for (const line of lines) {
     if (line.startsWith('# ') && first) {
-      title = line.slice(2).trim();
+      title = line.slice(2).trim() + ' - Summary';
       first = false;
       continue;
     }
