@@ -391,6 +391,7 @@ fixes). New episode, day numbering restarts at 1.
 | 5 | 2026-08-11 | Tier 2/3 | 2/10 | 0 | Humor and emphasis; no verbatim copies |
 | 6 | 2026-08-12 | Tier 2/3 | 3/10 | 0 | Word precision in jokes; retry idioms |
 | 7 | 2026-08-12 | Tier 2/3 | 1/10 | 0 | Longer [H]; retry dismissive and deadpan |
+| 8 | 2026-08-13 | Tier 2/3 | 1/10 | 0 | Long [H] lines; rebuild fixed phrases |
 
 ## Day 1 (2026-08-09) - The Legend of the Gobblewonker
 
@@ -569,3 +570,30 @@ don't-know idioms taught (high and mighty, whale noises); one agreement
 slip ("you two is"); register drift ("conflict").
 Next day: stay in the [M]+[H] stretch; move into longer [H] lines with
 multi-clause humor; retry dismissive and deadpan frames fresh.
+
+## Day 8 (2026-08-13) - The Legend of the Gobblewonker
+
+Level: Tier 2/3 ([M] + [H]) | Focus: longer [H] lines, keep fixed phrases
+and long shapes
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | sarcastic contrast: you could ... or you could | don't know | blank; taught with model |
+| 2 | long contrast + ditch + in order to | don't know | blank; taught with model |
+| 3 | look + parenthetical + advice | minor | reorder natural; "have to" vs "you want to" |
+| 4 | deadpan: the thing about that is | major | "you are seeing" breaks the "ya see" filler |
+| 5 | formal comedy: granted/co-granted | minor | "approved/co-approved" keeps the pun |
+| 6 | I like those odds | repeated | copied; "I'll take those odds" |
+| 7 | hang out with + realization | minor | "grasped" formal; "realized" natural |
+| 8 | I thought ... were off + -ing | repeated | near copy; "figured" |
+| 9 | playful challenge | good | full "have you" question natural |
+| 10 | long story | repeated | copied; "It's a long story" |
+
+Strengths: line 3 reordered the parenthetical aside naturally; line 9 built
+the full question form; major fixes held at 1/10.
+Repeated errors: the two longest [H] lines went blank; three verbatim copies
+on short fixed phrases; one garbled deadpan frame ("you are seeing");
+"grasp" too formal for "realize".
+Next day: move fully into the [H] block; bring "you could ... or you could"
+and the "nothing ... except when" contrast back in shorter forms; rebuild
+fixed phrases instead of copying.

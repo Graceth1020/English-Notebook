@@ -9,3 +9,4 @@
 | day-05-20260811.md | 2026-08-11 | Tier 2/3 | 2/10 | Humor, emphasis, no verbatim copies |
 | day-06-20260812.md | 2026-08-12 | Tier 2/3 | 3/10 | Word precision in jokes; retry idioms |
 | day-07-20260812.md | 2026-08-12 | Tier 2/3 | 1/10 | Longer [H]; retry dismissive and deadpan |
+| day-08-20260813.md | 2026-08-13 | Tier 2/3 | 1/10 | Long [H] lines; rebuild fixed phrases |
