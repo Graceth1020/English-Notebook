@@ -10,3 +10,5 @@
 | day-06-20260812.md | 2026-08-12 | Tier 2/3 | 3/10 | Word precision in jokes; retry idioms |
 | day-07-20260812.md | 2026-08-12 | Tier 2/3 | 1/10 | Longer [H]; retry dismissive and deadpan |
 | day-08-20260813.md | 2026-08-13 | Tier 2/3 | 1/10 | Long [H] lines; rebuild fixed phrases |
+| day-09-20260814.md | 2026-08-14 | Tier 3 | 0/10 | Hard block opens clean |
+| day-10-20260814.md | 2026-08-14 | Tier 3 | 5/10 | Fixed phrases and verb precision in [H] |

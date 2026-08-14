@@ -24,3 +24,10 @@ Tier 3 with 1/10 major fixes, so this episode starts at [M] and moves into
 | 6 | day-06-20260812.md | 8, 17, 24, 39, 46, 68, 100, 111, 127, 131 |
 | 7 | day-07-20260812.md | 32, 44, 60, 74, 80, 81, 110, 121, 123, 124 |
 | 8 | day-08-20260813.md | 38, 78, 84, 88, 62, 129, 122, 120, 126, 130 |
+| 9 | day-09-20260814.md | 65, 115, 45, 55, 82, 101, 99, 85, 95, 18 |
+| 10 | day-10-20260814.md | 2, 11, 12, 16, 27, 36, 61, 64, 73, 114 |
+
+Episode complete after Day 10: all 20 [H] sentences were practiced. The
+remaining unused corpus lines (1, 3, 4, 6, 15, 19, 29, 31, 35, 41, 42, 48,
+49, 51, 56, 59, 66, 69, 72, 86, 89, 91, 96, 97, 98, 103, 104, 106, 113,
+117, 119) are [E]/[M] and were not practiced because the exercise ended.

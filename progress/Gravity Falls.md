@@ -1,6 +1,6 @@
 # Practice Progress - Gravity Falls
 
-Source: Gravity Falls - S01xE02 - The Legend of the Gobblewonker-en.srt | Current day: 6
+Source: Gravity Falls - S01xE02 - The Legend of the Gobblewonker-en.srt | Current day: 10 (episode complete)
 Difficulty trend: Tier 1 -> Tier 3 (S01E01); carries over to S01E02
 
 ## Overview
@@ -392,6 +392,8 @@ fixes). New episode, day numbering restarts at 1.
 | 6 | 2026-08-12 | Tier 2/3 | 3/10 | 0 | Word precision in jokes; retry idioms |
 | 7 | 2026-08-12 | Tier 2/3 | 1/10 | 0 | Longer [H]; retry dismissive and deadpan |
 | 8 | 2026-08-13 | Tier 2/3 | 1/10 | 0 | Long [H] lines; rebuild fixed phrases |
+| 9 | 2026-08-14 | Tier 3 | 0/10 | 2 | Hard block opens clean |
+| 10 | 2026-08-14 | Tier 3 | 5/10 | 2 | Fixed phrases and verb precision in [H] |
 
 ## Day 1 (2026-08-09) - The Legend of the Gobblewonker
 
@@ -597,3 +599,56 @@ on short fixed phrases; one garbled deadpan frame ("you are seeing");
 Next day: move fully into the [H] block; bring "you could ... or you could"
 and the "nothing ... except when" contrast back in shorter forms; rebuild
 fixed phrases instead of copying.
+
+## Day 9 (2026-08-14) - The Legend of the Gobblewonker
+
+Level: Tier 3 ([H]) | Focus: grand comedy set pieces; register and parallel
+structure
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | formal comedy: burning question + longs to ask | minor | "really want to" plain; "dying to ask" |
+| 2 | parallel: like when ... or when ... | minor | both halves held; order wobbled in first half |
+| 3 | side character + do you ever | good | "minor character" natural |
+| 4 | parallel roles | passed | too easy; alternatives given |
+| 5 | repetition emphasis | passed | too easy; alternatives given |
+| 6 | dramatic echo + revenge | don't know | blank; taught: "they're out for revenge" |
+| 7 | anything for ... | good | "fishing friends" natural |
+| 8 | secret from ... to another | repeated | copied; "what's said between ... stays between" |
+| 9 | why would that ...?! | minor | "could" asks possibility; "would" is sarcastic |
+| 10 | all of a sudden | minor | missing article: "a relationship" |
+
+Strengths: zero major fixes, the best round of the episode; the long robot
+confession held both examples; two passes on owned frames; fixed phrases
+survived ("anything for", "all of a sudden").
+Repeated errors: none carried over; small polish only: register inside the
+romantic joke, one parallel wobble, "could" vs "would", and one missing
+article.
+Next day: stay in the [H] block; keep register and parallel structure as
+the focus with the remaining punchlines.
+
+## Day 10 (2026-08-14) - The Legend of the Gobblewonker
+
+Level: Tier 3 ([H]) | Focus: challenges, offers, and old-timer banter
+
+| # | Pattern | Verdict | Note |
+| --- | --- | --- | --- |
+| 1 | dramatic declaration | passed | too easy; "So you know what that means, right?" |
+| 2 | principle statement | major | grammar: "anything" in affirmative; collocation "cause anything bad" |
+| 3 | sensory claim | don't know | blank; taught: "feel sharper" for "heightened" |
+| 4 | bragging challenge | minor | "show" (demonstrate) vs "teach" (lesson) |
+| 5 | casual verdict: got ourselves a | major | function drift: verdict vs presence ("there's ... here") |
+| 6 | offer: could totally | major | verb: "bring" vs "use/borrow" |
+| 7 | formal comedy: permission to | minor | fixed phrase replaced with bureaucratic "approval" |
+| 8 | dramatic dismissal | major | word choice: "betrayers" rare; "look for" weaker than "find" |
+| 9 | playful insult | passed | too easy; "Zeus, you little scoundrel!" |
+| 10 | storytelling: in my day | major | fixed phrase flattened to "during my life" |
+
+Repeated errors: after a clean Day 9, the round regressed: fixed phrases
+flattened into plainer words ("during my life", "approval", "betrayers") and
+the wrong verb in an offer ("bring" for "use"); one blank returned on a
+short [H] line.
+Course complete: The Legend of the Gobblewonker finished in 10 rounds. All
+hard [H] sentences were practiced; the remaining corpus lines are [E]/[M]
+and were not practiced because the exercise ended. Next: a new episode or
+new course starts at Day 1.

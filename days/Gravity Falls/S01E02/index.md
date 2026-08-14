@@ -10,3 +10,5 @@
 | day-06-20260812.md | 2026-08-12 | Tier 2/3 | completed |
 | day-07-20260812.md | 2026-08-12 | Tier 2/3 | completed |
 | day-08-20260813.md | 2026-08-13 | Tier 2/3 | completed |
+| day-09-20260814.md | 2026-08-14 | Tier 3 | completed |
+| day-10-20260814.md | 2026-08-14 | Tier 3 | completed |
