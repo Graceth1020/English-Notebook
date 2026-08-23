@@ -75,9 +75,11 @@ After each day's review, note in `progress.md`:
 - Which error patterns repeated
 - Which patterns the learner handled well
 
-Adjust the next day accordingly: if most rephrases were strong, move to the
-next tier; if the same error repeats, select sentences that practice that
-pattern again.
+Adjust the next day accordingly: if most rephrases were strong, move from
+Tier 1 (`[M]`) into Tier 2 (`[H]`); if the same error repeats, stay on the
+current tier and select sentences that practice that pattern again. Never
+drop below `[M]`: easy everyday lines are outside this practice, so a hard
+day is repeated with different `[M]` sentences instead.
 
 ## Passed Sentences
 
@@ -112,27 +114,27 @@ the level is right; rising counts mean slow down.
 # Practice Progress - <course>
 
 Source: <raw file name> | Current day: N
-Difficulty trend: Tier 1 -> Tier 1 (steady)
+Difficulty trend: M -> M (steady)
 
 ## Overview
 
 | Day | Date | Level | Major fixes | Passed | Focus |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 2026-08-03 | Tier 1 | 2/10 | 1 | Keep meaning and register |
+| 1 | 2026-08-03 | M | 2/10 | 1 | Keep meaning and register |
 
 ## Day 1 (2026-08-03) - <source>
 
-Level: Tier 1 | Focus: <focus>
+Level: M | Focus: <focus>
 
 | # | Pattern | Verdict | Note |
 | --- | --- | --- | --- |
-| 1 | reaction phrase | good | no change needed |
+| 1 | discourse marker | good | no change needed |
 | 2 | phrasal verb | major | collocation: "suspicious about" |
-| 3 | greeting | passed | too easy |
+| 3 | hedging phrase | passed | too easy |
 | ... | ... | ... | ... |
 
 Repeated errors: <list>
-Next day: <level>, focus on <pattern>
+Next day: <level: M or H>, focus on <pattern>
 ```
 
 Verdict values: `good` (natural, no change), `minor` (small fix), `major`

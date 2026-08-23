@@ -1,6 +1,6 @@
 ---
 name: english-rephrase-practice
-description: Turn English subtitle or text files into a daily rephrasing practice routine for improving spoken and written expression. Cleans raw text (SRT, VTT, TXT, transcripts), analyzes colloquial sentence patterns, selects 10 practice sentences per day with increasing difficulty, reviews the learner's rephrase attempts with corrections and suggestions, and writes a blog-style markdown summary each day. Use when the user wants to practice rephrasing sentences from movies, shows, podcasts, articles, or any English text; wants a cleaned sentence list from a subtitle/text file; wants daily English expression practice; wants their rephrase versions corrected with suggestions; or wants a daily practice summary.
+description: Turn English subtitle or text files into a daily rephrasing practice routine for improving spoken and written expression. Cleans raw text (SRT, VTT, TXT, transcripts), analyzes colloquial sentence patterns, selects 10 medium or hard practice sentences per day with increasing difficulty, reviews the learner's rephrase attempts with corrections and suggestions, and writes a blog-style markdown summary each day. Use when the user wants to practice rephrasing sentences from movies, shows, podcasts, articles, or any English text; wants a cleaned sentence list from a subtitle/text file; wants daily English expression practice; wants their rephrase versions corrected with suggestions; or wants a daily practice summary.
 ---
 
 # English Rephrase Practice
@@ -11,6 +11,10 @@ Turn imported English text into a daily rephrasing routine: clean the file,
 select 10 practice sentences per day, review the learner's rephrases, and
 publish a blog-style daily summary. Serve a learner whose reading/listening
 is strong (C1) but whose active expression is B1-B2.
+
+Practice covers two difficulty tiers only: medium (`[M]`) and hard (`[H]`).
+Easy everyday lines are dropped during cleaning and never selected for a
+practice day.
 
 ## Language Rule
 
@@ -81,25 +85,31 @@ Then apply the corpus rule before saving the final file:
 1. Filter out non-dialogue content: sound effects, screams, chants, pure
    interjections, and sentence fragments. The script drops most of these
    mechanically; review the output and remove what it missed.
-2. Extract only sentences with common oral sentence patterns: reactions,
-   suggestions, questions, phrasal verbs, idioms, discourse markers, hedging,
-   and everyday statements. Drop narration and one-off lines that teach no
-   transferable pattern, and drop sentences with no meaningful rephrasing
-   challenge (formulaic greetings, one-word reactions, trivial statements).
-3. Tag each kept line `[E]` (easy everyday), `[M]` (medium), or `[H]`
-   (hard), and keep the file sorted by the order the sentences appear in
-   the original subtitles, so reading the corpus follows the story.
+2. Extract only sentences with common oral sentence patterns: idioms,
+   phrasal verbs, discourse markers, conditionals, hedging, reported speech,
+   emphasis structures, humor, and sarcasm. Drop narration and one-off lines
+   that teach no transferable pattern, and drop sentences with no meaningful
+   rephrasing challenge (formulaic greetings, one-word reactions, trivial
+   statements).
+3. Keep only medium and hard sentences. Tag each kept line `[M]` (medium) or
+   `[H]` (hard) and drop easy everyday lines entirely: short high-frequency
+   phrases whose only rephrasing is an obvious word swap ("You look great.",
+   "I have no idea.", "So how are you doing?") never enter the corpus. Keep
+   the file sorted by the order the sentences appear in the original
+   subtitles, so reading the corpus follows the story.
 
 See `references/selection.md` for the pattern categories and tagging rules.
 
 ### 2. Analyze patterns and plan the days
 
 The corpus is in subtitle order, so select day batches across it by
-difficulty tag: start with `[E]` sentences, move into `[M]`, then `[H]`,
-and record the used corpus line numbers in `days/<course>/plan.md`. Tag
-each sentence with the colloquial pattern it teaches and write the day's
-batch file. See `references/selection.md` for pattern categories, selection
-criteria, and the `days/<course>/day-XX.md` format.
+difficulty tag: start with `[M]` sentences, then move into `[H]`, and record
+the used corpus line numbers in `days/<course>/plan.md`. Practice covers the
+medium and hard tiers only; if an older corpus file still carries `[E]` lines,
+skip them when selecting a day's batch. Tag each sentence with the colloquial
+pattern it teaches and write the day's batch file. See
+`references/selection.md` for pattern categories, selection criteria, and the
+`days/<course>/day-XX.md` format.
 
 Deliver to the user:
 
@@ -107,7 +117,7 @@ Deliver to the user:
 - Today's batch file (`days/<course>/day-XX-YYYYMMDD[-N].md`) with exactly
   10 sentences and their pattern tags; `-N` marks a later round on the same
   date (`-2`, `-3`, ...)
-- A short note on today's focus and difficulty tier
+- A short note on today's focus and difficulty tier (`[M]` or `[H]`)
 - A note that they can call the language-notes skill on today's sentences
   (`/define <word> from day <N>`, `/parse <sentence> from day <N>`);
   day-linked entries are saved to `notes/rephrase/<course>/day-XX-YYYYMMDD.md`

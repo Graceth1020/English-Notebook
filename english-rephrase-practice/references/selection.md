@@ -18,21 +18,29 @@ The final cleaned file must be built with three steps, in order:
    reactions ("What?!", "A zombie?"), and trivial statements ("It's jam.").
    A sentence belongs in the corpus only if it can be said another way and
    the alternative teaches something.
-3. Tag each line `[E]` (easy everyday), `[M]` (medium), or `[H]` (hard),
-   but keep the file sorted by the order the sentences appear in the
-   original subtitles, so reading the corpus follows the story. Append a
-   natural Chinese translation after each sentence, separated by ` | `, so
-   every line reads `<n>. [<tag>] <English sentence> | <Chinese
-   translation>`.
+3. Keep medium and hard sentences only, and tag each line `[M]` (medium) or
+   `[H]` (hard). Easy everyday lines are dropped at this step, not tagged:
+   if the only rephrasing available is an obvious one-word swap, the sentence
+   does not belong in the corpus. Keep the file sorted by the order the
+   sentences appear in the original subtitles, so reading the corpus follows
+   the story. Append a natural Chinese translation after each sentence,
+   separated by ` | `, so every line reads `<n>. [<tag>] <English sentence>
+   | <Chinese translation>`.
 
 Tag meanings:
 
-- `[E]`: short, high-frequency everyday patterns - reactions, greetings,
-  suggestions, simple questions, everyday statements (Tier 1)
 - `[M]`: idioms, phrasal verbs, discourse markers, conditionals, hedging,
-  reported speech (Tier 2)
-- `[H]`: humor, sarcasm, emphasis structures, long or multi-pattern
-  sentences (Tier 3)
+  reported speech, and everyday statements that carry a reusable frame
+  (Tier 1)
+- `[H]`: humor, sarcasm, emphasis structures, register shifts, long or
+  multi-pattern sentences (Tier 2)
+
+Dropped (no tag): short, high-frequency lines with no rephrasing headroom -
+greetings, one-word reactions, bare acknowledgements, and simple statements
+such as "You look great.", "I have no idea.", or "So how are you doing?".
+An older corpus file may still contain `[E]` lines from before this rule;
+leave the file as it is and skip those lines when selecting practice
+sentences.
 
 ## Analyze the Corpus for Colloquial Patterns
 
@@ -59,6 +67,7 @@ Write a short pattern tag next to each selected sentence (for example
 
 Choose sentences that:
 
+- Are `[M]` or `[H]`; easy everyday lines are never selected
 - Contain a reusable pattern (phrasal verb, idiom, connective, structure) the
   learner can transfer to their own speech
 - Have rephrasing headroom: more than one natural way to say the same thing
@@ -79,22 +88,24 @@ Prefer to skip:
 
 ## Difficulty Progression
 
-The corpus file stays in subtitle order; progression lives in the difficulty
-tags. Select day batches across the corpus by tag, starting with `[E]`
-sentences, then `[M]`, then `[H]`, and record the used corpus line numbers
-in `days/<course>/plan.md`. Progression is per-source and carries over
-between sources when the learner continues from a previous day.
+Practice runs on two tiers only: medium and hard. The corpus file stays in
+subtitle order; progression lives in the difficulty tags. Select day batches
+across the corpus by tag, starting with `[M]` sentences, then moving into
+`[H]`, and record the used corpus line numbers in `days/<course>/plan.md`.
+Progression is per-source and carries over between sources when the learner
+continues from a previous day.
 
-E (Tier 1): high-frequency everyday patterns. Greetings, small talk,
-contractions, common phrasal verbs, basic question and suggestion forms.
-Every sentence should be immediately useful in daily conversation.
+M (Tier 1): idioms, phrasal verbs, discourse markers, conditionals, opinion
+and hedging phrases, reported speech, and reactions with a reusable frame.
+Sentences may need a one-line context note.
 
-M (Tier 2): idioms, discourse markers, conditionals, opinion and hedging
-phrases, and reactions. Sentences may need a one-line context note.
-
-H (Tier 3): nuance, register shifts, humor, sarcasm, emphasis structures, and
+H (Tier 2): nuance, register shifts, humor, sarcasm, emphasis structures, and
 combinations of two or more patterns in one sentence. Include occasional
 longer sentences that require rephrasing in multiple ways.
+
+A mixed day is allowed once the learner is comfortable: fill it with `[M]`
+sentences plus two or three `[H]` sentences rather than dropping back to
+easier material, because easy material is no longer part of the practice.
 
 If the learner's rephrase accuracy stays high (most sentences need only minor
 fixes), move through tiers faster. If they struggle, slow down and repeat
@@ -105,9 +116,9 @@ similar patterns instead of pushing forward.
 For each source, plan all days up front:
 
 1. Decide the total number of days from the cleaned corpus size (10 sentences
-   per day, from the script's estimate).
+   per day, from the script's estimate), counting only `[M]` and `[H]` lines.
 2. Assign each day's 10 sentences from the pattern-tagged pool, starting with
-   Tier 1 and moving into Tier 2 and Tier 3.
+   Tier 1 (`[M]`) and moving into Tier 2 (`[H]`).
 3. Keep a `days/<course>/day-XX-YYYYMMDD.md` file per practice round in this
    format (the date is the practice date, for example `day-01-20260804.md`):
    `XX` is the session number and keeps incrementing across rounds; if more
@@ -118,7 +129,7 @@ For each source, plan all days up front:
 ```markdown
 # Day 1 - <source name>
 
-Source: <file name> | Difficulty: Tier 1 (everyday patterns)
+Source: <file name> | Difficulty: Tier 1 (M - reusable spoken patterns)
 
 Context: <one-line note about the scene or text, optional>
 

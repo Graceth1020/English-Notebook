@@ -37,7 +37,7 @@ and write nothing else.
 ```markdown
 # Day 1 - <source name>: <one-line theme>
 
-Date: <date> | Source: <file name> | Level: Tier 1
+Date: <date> | Source: <file name> | Level: M (or H)
 
 ## Today's Practice
 
@@ -84,7 +84,8 @@ using two of today's patterns in a real conversation.>
 
 ## Tomorrow's Preview
 
-<One sentence: what tier/patterns are next.>
+<One sentence: whether the next round stays on M or moves to H, and which
+patterns are next.>
 ```
 
 ## Writing Notes
