@@ -1,0 +1,3311 @@
+{
+  "title": "Lisa Su (AMD CEO) - Stanford GSB View From The Top",
+  "url": "https://www.youtube.com/watch?v=C4GM7_Cf0N4",
+  "duration_ms": 2858539,
+  "sentences": [
+    {
+      "start": 4830,
+      "turn_start": true,
+      "text": "Lisa, welcome to Stanford.",
+      "n": 1,
+      "time": "0:04",
+      "words": 4
+    },
+    {
+      "start": 6809,
+      "turn_start": true,
+      "text": "Wonderful, it's so great to be here.",
+      "n": 2,
+      "time": "0:06",
+      "words": 7
+    },
+    {
+      "start": 8731,
+      "turn_start": true,
+      "text": "It is a pleasure and an even greater honor to have you with us here today.",
+      "n": 3,
+      "time": "0:08",
+      "words": 16
+    },
+    {
+      "start": 12308,
+      "turn_start": true,
+      "text": "Thank you.",
+      "n": 4,
+      "time": "0:12",
+      "words": 2
+    },
+    {
+      "start": 13209,
+      "turn_start": true,
+      "text": "Many of us have followed your career and your transformation of AMD, and we're excited to get to know you better.",
+      "n": 5,
+      "time": "0:13",
+      "words": 21
+    },
+    {
+      "start": 19433,
+      "turn_start": false,
+      "text": "So I'd like to To cover your upbringing, your leadership and management principles, the current state of AI, and your outlook for the future.",
+      "n": 6,
+      "time": "0:19",
+      "words": 24
+    },
+    {
+      "start": 27518,
+      "turn_start": false,
+      "text": "How does that sound?",
+      "n": 7,
+      "time": "0:27",
+      "words": 4
+    },
+    {
+      "start": 28292,
+      "turn_start": true,
+      "text": "That sounds wonderful, thank you.",
+      "n": 8,
+      "time": "0:28",
+      "words": 5
+    },
+    {
+      "start": 29178,
+      "turn_start": true,
+      "text": "Great, so you were born in Taiwan, and immigrated to New York with your parents at the age of two.",
+      "n": 9,
+      "time": "0:29",
+      "words": 20
+    },
+    {
+      "start": 37222,
+      "turn_start": false,
+      "text": "What was it like growing up at the nexus of two cultures?",
+      "n": 10,
+      "time": "0:37",
+      "words": 12
+    },
+    {
+      "start": 40095,
+      "turn_start": false,
+      "text": "And how did your parents influence you?",
+      "n": 11,
+      "time": "0:40",
+      "words": 7
+    },
+    {
+      "start": 41993,
+      "turn_start": true,
+      "text": "Yeah, absolutely, so as you said, I was born in Taiwan, and my parents, my dad came to the United States for graduate school, so he brought the family with us.",
+      "n": 12,
+      "time": "0:41",
+      "words": 31
+    },
+    {
+      "start": 53628,
+      "turn_start": false,
+      "text": "And as some of you may imagine, with typical Asian upbringing, it was all about school, more school, how can you do good, and those kinds of things.",
+      "n": 13,
+      "time": "0:53",
+      "words": 28
+    },
+    {
+      "start": 64267,
+      "turn_start": false,
+      "text": "But look I think I was very lucky because I had the, sort of my parents really encourage me to always be pretty ambitious, and want to do great things, and that's kind of followed me through my life.",
+      "n": 14,
+      "time": "1:04",
+      "words": 39
+    },
+    {
+      "start": 82230,
+      "turn_start": true,
+      "text": "I'm sure many of us can relate to the schooling pressure, and that kind of-",
+      "n": 15,
+      "time": "1:22",
+      "words": 15
+    },
+    {
+      "start": 86182,
+      "turn_start": true,
+      "text": "It's school and piano.",
+      "n": 16,
+      "time": "1:26",
+      "words": 4
+    },
+    {
+      "start": 87864,
+      "turn_start": true,
+      "text": "Right.",
+      "n": 17,
+      "time": "1:27",
+      "words": 1
+    },
+    {
+      "start": 87864,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 18,
+      "time": "1:27",
+      "words": 1
+    },
+    {
+      "start": 87864,
+      "turn_start": true,
+      "text": "Those are the two things that most Asian kids have to go through.",
+      "n": 19,
+      "time": "1:27",
+      "words": 13
+    },
+    {
+      "start": 91540,
+      "turn_start": false,
+      "text": "Same. [LAUGH]",
+      "n": 20,
+      "time": "1:31",
+      "words": 2
+    },
+    {
+      "start": 91540,
+      "turn_start": true,
+      "text": "And so that ambition then brought you to MIT, where you completed three degrees, an undergraduate, Masters, and a PhD.",
+      "n": 21,
+      "time": "1:31",
+      "words": 20
+    },
+    {
+      "start": 102552,
+      "turn_start": false,
+      "text": "So you're just missing an MBA.",
+      "n": 22,
+      "time": "1:42",
+      "words": 6
+    },
+    {
+      "start": 104125,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 23,
+      "time": "1:44",
+      "words": 1
+    },
+    {
+      "start": 104125,
+      "turn_start": true,
+      "text": "That doesn't seem to have held you back, though.",
+      "n": 24,
+      "time": "1:44",
+      "words": 9
+    },
+    {
+      "start": 106949,
+      "turn_start": false,
+      "text": "[LAUGH] Now, what drew you towards a career in semiconductors and building chips, as opposed to academia or any other career?",
+      "n": 25,
+      "time": "1:46",
+      "words": 21
+    },
+    {
+      "start": 116177,
+      "turn_start": true,
+      "text": "Yeah, absolutely.",
+      "n": 26,
+      "time": "1:56",
+      "words": 2
+    },
+    {
+      "start": 117211,
+      "turn_start": false,
+      "text": "So, when I was a kid, I was really curious about how things worked.",
+      "n": 27,
+      "time": "1:57",
+      "words": 14
+    },
+    {
+      "start": 123304,
+      "turn_start": false,
+      "text": "And my brother would have, sort of his toy remote controlled car would be going through our hallway and it would stop working.",
+      "n": 28,
+      "time": "2:03",
+      "words": 23
+    },
+    {
+      "start": 134044,
+      "turn_start": false,
+      "text": "And I'd be like, why did it stop working?",
+      "n": 29,
+      "time": "2:14",
+      "words": 9
+    },
+    {
+      "start": 135864,
+      "turn_start": false,
+      "text": "I was just very curious about that.",
+      "n": 30,
+      "time": "2:15",
+      "words": 7
+    },
+    {
+      "start": 138427,
+      "turn_start": false,
+      "text": "And so I've always wanted to kind of tinker with things, that was what was interesting.",
+      "n": 31,
+      "time": "2:18",
+      "words": 16
+    },
+    {
+      "start": 143785,
+      "turn_start": false,
+      "text": "So during high school, I was very focused on math and science, and so I went to MIT.",
+      "n": 32,
+      "time": "2:23",
+      "words": 18
+    },
+    {
+      "start": 149088,
+      "turn_start": false,
+      "text": "And sometimes, and maybe you guys can relate to this, careers are very much by chance, right?",
+      "n": 33,
+      "time": "2:29",
+      "words": 17
+    },
+    {
+      "start": 155440,
+      "turn_start": false,
+      "text": "I'd like to think that you planned everything out minute by minute, but it's usually not like that.",
+      "n": 34,
+      "time": "2:35",
+      "words": 18
+    },
+    {
+      "start": 159877,
+      "turn_start": false,
+      "text": "And so, it just happened that in my freshman year I was looking for a job, like everyone is looking for a part-time job.",
+      "n": 35,
+      "time": "2:39",
+      "words": 24
+    },
+    {
+      "start": 166822,
+      "turn_start": false,
+      "text": "And the part-time job that I got was working in a semiconductor lab.",
+      "n": 36,
+      "time": "2:46",
+      "words": 13
+    },
+    {
+      "start": 170734,
+      "turn_start": false,
+      "text": "And so, I had to put on a bunny suit for the first time.",
+      "n": 37,
+      "time": "2:50",
+      "words": 14
+    },
+    {
+      "start": 175469,
+      "turn_start": false,
+      "text": "And I was basically doing grunt work for graduate student and running some of it's experiments.",
+      "n": 38,
+      "time": "2:55",
+      "words": 16
+    },
+    {
+      "start": 180275,
+      "turn_start": false,
+      "text": "And I thought it was so amazing that you could actually put on, sort of, a tiny little chip, so much power.",
+      "n": 39,
+      "time": "3:00",
+      "words": 22
+    },
+    {
+      "start": 190959,
+      "turn_start": false,
+      "text": "And at that time, it wasn't anything like it is today.",
+      "n": 40,
+      "time": "3:10",
+      "words": 11
+    },
+    {
+      "start": 193918,
+      "turn_start": false,
+      "text": "But that's kind of how I fell in love with semiconductors.",
+      "n": 41,
+      "time": "3:13",
+      "words": 11
+    },
+    {
+      "start": 196665,
+      "turn_start": false,
+      "text": "And it just became the thing that I ended up doing throughout my undergraduate and graduate career.",
+      "n": 42,
+      "time": "3:16",
+      "words": 17
+    },
+    {
+      "start": 203485,
+      "turn_start": true,
+      "text": "I love that.",
+      "n": 43,
+      "time": "3:23",
+      "words": 3
+    },
+    {
+      "start": 204032,
+      "turn_start": false,
+      "text": "And so you continue to pursue that passion, upon graduation you joined Texas Instruments and then IBM, where you rose up the ranks to become director of emerging products.",
+      "n": 44,
+      "time": "3:24",
+      "words": 29
+    },
+    {
+      "start": 213990,
+      "turn_start": false,
+      "text": "Following that, you then joined Frisco Semiconductor as CTO.",
+      "n": 45,
+      "time": "3:33",
+      "words": 9
+    },
+    {
+      "start": 218696,
+      "turn_start": false,
+      "text": "So how did you manage to transition from being an engineer, focused on building products, to then becoming a people manager.",
+      "n": 46,
+      "time": "3:38",
+      "words": 21
+    },
+    {
+      "start": 225845,
+      "turn_start": true,
+      "text": "Well, it sounds like you have studied my resume to great extent.",
+      "n": 47,
+      "time": "3:45",
+      "words": 12
+    },
+    {
+      "start": 229818,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 48,
+      "time": "3:49",
+      "words": 1
+    },
+    {
+      "start": 229818,
+      "turn_start": true,
+      "text": "[LAUGH] Thank you for that.",
+      "n": 49,
+      "time": "3:49",
+      "words": 5
+    },
+    {
+      "start": 237042,
+      "turn_start": false,
+      "text": "Sort of, leaving graduate school with a PhD, one has to decide what do you want to do.",
+      "n": 50,
+      "time": "3:57",
+      "words": 18
+    },
+    {
+      "start": 244445,
+      "turn_start": false,
+      "text": "In my case, it was whether I wanted to go into industry, or whether I wanted to be a professor in academia.",
+      "n": 51,
+      "time": "4:04",
+      "words": 22
+    },
+    {
+      "start": 252204,
+      "turn_start": false,
+      "text": "And I can say, for sure, that I thought being a professor was actually going to be very hard.",
+      "n": 52,
+      "time": "4:12",
+      "words": 19
+    },
+    {
+      "start": 260286,
+      "turn_start": false,
+      "text": "The idea of always being on the cutting edge of research and that kind of thing.",
+      "n": 53,
+      "time": "4:20",
+      "words": 16
+    },
+    {
+      "start": 265702,
+      "turn_start": false,
+      "text": "So I didn't think that was going to be my superpower.",
+      "n": 54,
+      "time": "4:25",
+      "words": 11
+    },
+    {
+      "start": 268379,
+      "turn_start": false,
+      "text": "I thought that building products and working on real-world things, what I've enjoyed the most in what I do is like the work that we're doing with chips and products.",
+      "n": 55,
+      "time": "4:28",
+      "words": 30
+    },
+    {
+      "start": 283701,
+      "turn_start": false,
+      "text": "You can actually go and you can walk down to Best Buy and see some of the products that that we build.",
+      "n": 56,
+      "time": "4:43",
+      "words": 22
+    },
+    {
+      "start": 289173,
+      "turn_start": false,
+      "text": "Or you can walk into Lawrence Livermore National Labs, and look at big super computers, but you can actually see and feel and touch those types of things.",
+      "n": 57,
+      "time": "4:49",
+      "words": 28
+    },
+    {
+      "start": 298898,
+      "turn_start": false,
+      "text": "So yeah, I think those are the reasons that I first got into engineering.",
+      "n": 58,
+      "time": "4:58",
+      "words": 14
+    },
+    {
+      "start": 302706,
+      "turn_start": false,
+      "text": "And to your question of, engineering versus business, or engineering versus people management.",
+      "n": 59,
+      "time": "5:02",
+      "words": 13
+    },
+    {
+      "start": 309866,
+      "turn_start": false,
+      "text": "Again, I'd like to say that I grew up at IBM, that was the place where I spent a good part of my, I was at Texas Instruments for a little less than a year.",
+      "n": 60,
+      "time": "5:09",
+      "words": 35
+    },
+    {
+      "start": 321307,
+      "turn_start": false,
+      "text": "But frankly, I live in Texas now, but the first time I lived in Texas was, whatever, 30 plus years ago.",
+      "n": 61,
+      "time": "5:21",
+      "words": 21
+    },
+    {
+      "start": 328074,
+      "turn_start": false,
+      "text": "Texas wasn't for me at that point in time, so I moved back to New York, where my parents and my family were.",
+      "n": 62,
+      "time": "5:28",
+      "words": 23
+    },
+    {
+      "start": 335732,
+      "turn_start": false,
+      "text": "And I was at IBM for about 13 years or so.",
+      "n": 63,
+      "time": "5:35",
+      "words": 11
+    },
+    {
+      "start": 338098,
+      "turn_start": false,
+      "text": "And what I like to believe is, the ability to kind of learn at each step was what really helped me in my career.",
+      "n": 64,
+      "time": "5:38",
+      "words": 24
+    },
+    {
+      "start": 347791,
+      "turn_start": false,
+      "text": "And so,, the nice thing about my early career is, I was lucky enough to have bosses who asked me all the time, what do you want to be when you grow up?",
+      "n": 65,
+      "time": "5:47",
+      "words": 33
+    },
+    {
+      "start": 357864,
+      "turn_start": false,
+      "text": "And I was like, I don't know, let me think about, what do I want to be when I grow up?",
+      "n": 66,
+      "time": "5:57",
+      "words": 21
+    },
+    {
+      "start": 361447,
+      "turn_start": false,
+      "text": "And the opportunity to manage people or manage projects was very interesting, because I viewed, hey, as one person, as a researcher, you can get so much done.",
+      "n": 67,
+      "time": "6:01",
+      "words": 28
+    },
+    {
+      "start": 374215,
+      "turn_start": false,
+      "text": "But hey, if you have a little team of 10 people, you can actually get so much more done, and it gets to 50 people or 100 people, then so much more.",
+      "n": 68,
+      "time": "6:14",
+      "words": 32
+    },
+    {
+      "start": 381942,
+      "turn_start": false,
+      "text": "So yes, there was a lot of, let's call it learning on the job, but that was what I was able to do in that period of time.",
+      "n": 69,
+      "time": "6:21",
+      "words": 28
+    },
+    {
+      "start": 389490,
+      "turn_start": false,
+      "text": "And I will say, for the record, I've always thought I should get an MBA.",
+      "n": 70,
+      "time": "6:29",
+      "words": 15
+    },
+    {
+      "start": 395288,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 71,
+      "time": "6:35",
+      "words": 1
+    },
+    {
+      "start": 395288,
+      "turn_start": true,
+      "text": "And I just ran out of time.",
+      "n": 72,
+      "time": "6:35",
+      "words": 7
+    },
+    {
+      "start": 399433,
+      "turn_start": false,
+      "text": "You have to schedule two years in your life to get an MBA.",
+      "n": 73,
+      "time": "6:39",
+      "words": 13
+    },
+    {
+      "start": 402901,
+      "turn_start": false,
+      "text": "And at some point you become too old to get an MBA.",
+      "n": 74,
+      "time": "6:42",
+      "words": 12
+    },
+    {
+      "start": 405650,
+      "turn_start": false,
+      "text": "So it was, I'm sorry, John Carter, did I say that?",
+      "n": 75,
+      "time": "6:45",
+      "words": 11
+    },
+    {
+      "start": 409235,
+      "turn_start": false,
+      "text": "Is that okay for me to say?",
+      "n": 76,
+      "time": "6:49",
+      "words": 7
+    },
+    {
+      "start": 410349,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 77,
+      "time": "6:50",
+      "words": 1
+    },
+    {
+      "start": 410349,
+      "turn_start": true,
+      "text": "So, the truth is there was just a lot of on-the-job training.",
+      "n": 78,
+      "time": "6:50",
+      "words": 12
+    },
+    {
+      "start": 416224,
+      "turn_start": false,
+      "text": "And the beauty of career development is when you get a chance to try something new and learn, whether it's people management, or business, or managing larger projects.",
+      "n": 79,
+      "time": "6:56",
+      "words": 28
+    },
+    {
+      "start": 428434,
+      "turn_start": false,
+      "text": "I had a lot of opportunities to learn.",
+      "n": 80,
+      "time": "7:08",
+      "words": 8
+    },
+    {
+      "start": 430225,
+      "turn_start": true,
+      "text": "Right, well, I think it's never too late, and we'd love to have you.",
+      "n": 81,
+      "time": "7:10",
+      "words": 14
+    },
+    {
+      "start": 432662,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 82,
+      "time": "7:12",
+      "words": 1
+    },
+    {
+      "start": 432662,
+      "turn_start": true,
+      "text": "And I think it's rare to see someone with mastery of both building products and people management.",
+      "n": 83,
+      "time": "7:12",
+      "words": 17
+    },
+    {
+      "start": 440710,
+      "turn_start": false,
+      "text": "And those are two really difficult problems.",
+      "n": 84,
+      "time": "7:20",
+      "words": 7
+    },
+    {
+      "start": 443475,
+      "turn_start": false,
+      "text": "You've said yourself that you like hard problems, so what's your approach to solving hard problems and how do you push through in the face of setbacks?",
+      "n": 85,
+      "time": "7:23",
+      "words": 27
+    },
+    {
+      "start": 452088,
+      "turn_start": true,
+      "text": "Well, I think the most important thing for all of us is to have a deep curiosity of just solving problems, that's my view of the world.",
+      "n": 86,
+      "time": "7:32",
+      "words": 27
+    },
+    {
+      "start": 464247,
+      "turn_start": false,
+      "text": "When I think about, in the early part of my career, some of the most difficult things, the first product I ever worked on was a product that was a microprocessor.",
+      "n": 87,
+      "time": "7:44",
+      "words": 31
+    },
+    {
+      "start": 476520,
+      "turn_start": false,
+      "text": "And we were just about to announce the process Officer and nothing worked.",
+      "n": 88,
+      "time": "7:56",
+      "words": 13
+    },
+    {
+      "start": 481784,
+      "turn_start": false,
+      "text": "I mean, the trip did not work.",
+      "n": 89,
+      "time": "8:01",
+      "words": 7
+    },
+    {
+      "start": 485637,
+      "turn_start": false,
+      "text": "We didn't know why it didn't work, but the company was about to announce it.",
+      "n": 90,
+      "time": "8:05",
+      "words": 15
+    },
+    {
+      "start": 489707,
+      "turn_start": false,
+      "text": "And you think, that's terrible, that's very stressful.",
+      "n": 91,
+      "time": "8:09",
+      "words": 8
+    },
+    {
+      "start": 494733,
+      "turn_start": false,
+      "text": "But actually what it is, is it allows you to really galvanize teams on really opening up every ounce of creativity you have.",
+      "n": 92,
+      "time": "8:14",
+      "words": 23
+    },
+    {
+      "start": 505431,
+      "turn_start": false,
+      "text": "To figure out, okay, how are we going to figure out why is this not working and how do we move, the projects forward?",
+      "n": 93,
+      "time": "8:25",
+      "words": 24
+    },
+    {
+      "start": 513513,
+      "turn_start": false,
+      "text": "And so that's what I do as the beauty of hard problems.",
+      "n": 94,
+      "time": "8:33",
+      "words": 12
+    },
+    {
+      "start": 517285,
+      "turn_start": false,
+      "text": "You can work on anything in life.",
+      "n": 95,
+      "time": "8:37",
+      "words": 7
+    },
+    {
+      "start": 520360,
+      "turn_start": false,
+      "text": "But when you work on a really hard problem or in a company context, when you work on, let's call it, the most important projects.",
+      "n": 96,
+      "time": "8:40",
+      "words": 25
+    },
+    {
+      "start": 528107,
+      "turn_start": false,
+      "text": "You can garner an incredible amount of just resources, creativity, focus that will allow you to do something that you wouldn't imagine possible.",
+      "n": 97,
+      "time": "8:48",
+      "words": 23
+    },
+    {
+      "start": 542530,
+      "turn_start": false,
+      "text": "And that's what I believe is the most important thing managers do or leaders do.",
+      "n": 98,
+      "time": "9:02",
+      "words": 15
+    },
+    {
+      "start": 548303,
+      "turn_start": false,
+      "text": "What leaders do is they actually bring teams together to do something that the nobody thought was possible.",
+      "n": 99,
+      "time": "9:08",
+      "words": 18
+    },
+    {
+      "start": 555824,
+      "turn_start": false,
+      "text": "And that's what I enjoy about the world that we're in.",
+      "n": 100,
+      "time": "9:15",
+      "words": 11
+    },
+    {
+      "start": 559249,
+      "turn_start": false,
+      "text": "Is that you're working on problems that are super interesting and quite impactful to the industry.",
+      "n": 101,
+      "time": "9:19",
+      "words": 16
+    },
+    {
+      "start": 567058,
+      "turn_start": false,
+      "text": "And you're also working on something that someone hasn't done before.",
+      "n": 102,
+      "time": "9:27",
+      "words": 11
+    },
+    {
+      "start": 571287,
+      "turn_start": true,
+      "text": "I love that, I think that's something we can all take away, looking for the hardest problems and finding the creativity and focus to solve them.",
+      "n": 103,
+      "time": "9:31",
+      "words": 26
+    },
+    {
+      "start": 578214,
+      "turn_start": false,
+      "text": "Now at the GSB, we learn a lot about hiring and retaining great talent, but something that is less spoken about is recognizing underestimated talent.",
+      "n": 104,
+      "time": "9:38",
+      "words": 25
+    },
+    {
+      "start": 587784,
+      "turn_start": false,
+      "text": "So Lisa, have you ever made a bet on someone that's been historically overlooked, and how did that go?",
+      "n": 105,
+      "time": "9:47",
+      "words": 19
+    },
+    {
+      "start": 594489,
+      "turn_start": true,
+      "text": "Well, I like to say that again, our job as leaders is to give people opportunities.",
+      "n": 106,
+      "time": "9:54",
+      "words": 16
+    },
+    {
+      "start": 602112,
+      "turn_start": false,
+      "text": "You can't guarantee anybody's success, but you certainly can help identify sort of the people who have a lot of potential.",
+      "n": 107,
+      "time": "10:02",
+      "words": 21
+    },
+    {
+      "start": 612568,
+      "turn_start": false,
+      "text": "And I'm also a big believer in that leadership is something that you learn and something that you train, it's not something that you're born with.",
+      "n": 108,
+      "time": "10:12",
+      "words": 26
+    },
+    {
+      "start": 619877,
+      "turn_start": false,
+      "text": "Actually, you learn through lots and lots of different experiences.",
+      "n": 109,
+      "time": "10:19",
+      "words": 10
+    },
+    {
+      "start": 625240,
+      "turn_start": false,
+      "text": "And so yes, hey, somebody took a chance on me, right?",
+      "n": 110,
+      "time": "10:25",
+      "words": 11
+    },
+    {
+      "start": 627918,
+      "turn_start": false,
+      "text": "Somebody decided when I was a kid that I should get these different experiences.",
+      "n": 111,
+      "time": "10:27",
+      "words": 14
+    },
+    {
+      "start": 635018,
+      "turn_start": false,
+      "text": "Probably the most intimidating experience that I had was, I was at idea maybe about five years, which was relatively, sort of still new in my career.",
+      "n": 112,
+      "time": "10:35",
+      "words": 27
+    },
+    {
+      "start": 648865,
+      "turn_start": false,
+      "text": "I was working on interesting projects, I had done a few interesting projects.",
+      "n": 113,
+      "time": "10:48",
+      "words": 13
+    },
+    {
+      "start": 653026,
+      "turn_start": false,
+      "text": "And one day I got a call and said, hey, can you come down to Armonk, we'd like you to meet Lou Gerstner.",
+      "n": 114,
+      "time": "10:53",
+      "words": 23
+    },
+    {
+      "start": 660697,
+      "turn_start": false,
+      "text": "And Lou Gerstner was the chair and CEO of AMD at the time.",
+      "n": 115,
+      "time": "11:00",
+      "words": 13
+    },
+    {
+      "start": 665519,
+      "turn_start": false,
+      "text": "And I'm like, why?",
+      "n": 116,
+      "time": "11:05",
+      "words": 4
+    },
+    {
+      "start": 666647,
+      "turn_start": false,
+      "text": "Why would he want to talk to me?",
+      "n": 117,
+      "time": "11:06",
+      "words": 8
+    },
+    {
+      "start": 669473,
+      "turn_start": false,
+      "text": "That was a very weird thing.",
+      "n": 118,
+      "time": "11:09",
+      "words": 6
+    },
+    {
+      "start": 671941,
+      "turn_start": false,
+      "text": "And they're like, yes, we would like you to be his technical assistant.",
+      "n": 119,
+      "time": "11:11",
+      "words": 13
+    },
+    {
+      "start": 676052,
+      "turn_start": false,
+      "text": "So my job was to actually teach Lou about technology.",
+      "n": 120,
+      "time": "11:16",
+      "words": 10
+    },
+    {
+      "start": 682251,
+      "turn_start": false,
+      "text": "He was not a technical person, but he was running the technical company, and he wanted to learn about some of the latest and greatest technology things, and I was like, wow.",
+      "n": 121,
+      "time": "11:22",
+      "words": 32
+    },
+    {
+      "start": 694801,
+      "turn_start": false,
+      "text": "I didn't realize this is what I went to school for.",
+      "n": 122,
+      "time": "11:34",
+      "words": 11
+    },
+    {
+      "start": 697059,
+      "turn_start": false,
+      "text": "But the truth was, it was an opportunity for me to observe what life was like as the top of company of global scale and size, and I learned so much just from observing.",
+      "n": 123,
+      "time": "11:37",
+      "words": 34
+    },
+    {
+      "start": 712574,
+      "turn_start": false,
+      "text": "And so I view that as somebody took a chance on me, it's one of the most impactful experiences of my career in terms of just understanding what life would be like as a CEO.",
+      "n": 124,
+      "time": "11:52",
+      "words": 35
+    },
+    {
+      "start": 728397,
+      "turn_start": false,
+      "text": "And so it's our jobs as leaders to take chances on people as well.",
+      "n": 125,
+      "time": "12:08",
+      "words": 14
+    },
+    {
+      "start": 732931,
+      "turn_start": false,
+      "text": "And that usually means that you put somebody in a job that you're not 100% sure that they can do, but you surround them with lots and lots of support so that they can be successful.",
+      "n": 126,
+      "time": "12:12",
+      "words": 36
+    },
+    {
+      "start": 744764,
+      "turn_start": false,
+      "text": "And, yeah, that is part of a real important part of team development, people development.",
+      "n": 127,
+      "time": "12:24",
+      "words": 15
+    },
+    {
+      "start": 750850,
+      "turn_start": false,
+      "text": "The other thing is just doing lots of different things, like being able to every couple of years, take on a different experience.",
+      "n": 128,
+      "time": "12:30",
+      "words": 23
+    },
+    {
+      "start": 759715,
+      "turn_start": false,
+      "text": "With every experience you learn so much, so many different experiences help really round out the overall career capabilities.",
+      "n": 129,
+      "time": "12:39",
+      "words": 19
+    },
+    {
+      "start": 771684,
+      "turn_start": true,
+      "text": "It's really interesting you say that, at the GSB, we learn that leadership is something that can be trained and a set of behaviors, rather than something you're inherently born with, so it's really reassuring.",
+      "n": 130,
+      "time": "12:51",
+      "words": 35
+    },
+    {
+      "start": 780924,
+      "turn_start": false,
+      "text": "Now, one more point on your resume, but it's the last one, I promise.",
+      "n": 131,
+      "time": "13:00",
+      "words": 14
+    },
+    {
+      "start": 783999,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 132,
+      "time": "13:03",
+      "words": 1
+    },
+    {
+      "start": 783999,
+      "turn_start": true,
+      "text": "Now, following Freescale Semiconductor, you then joined AMD as senior vice president, helping the company expand beyond PC into gaming and embedded devices.",
+      "n": 133,
+      "time": "13:03",
+      "words": 23
+    },
+    {
+      "start": 796101,
+      "turn_start": false,
+      "text": "Within two years, you were then appointed CEO of the company.",
+      "n": 134,
+      "time": "13:16",
+      "words": 11
+    },
+    {
+      "start": 799248,
+      "turn_start": false,
+      "text": "So bring us back to the moment when you got the call from the board, how did it feel and how did you do it?",
+      "n": 135,
+      "time": "13:19",
+      "words": 25
+    },
+    {
+      "start": 808221,
+      "turn_start": true,
+      "text": "Yeah, so good question.",
+      "n": 136,
+      "time": "13:28",
+      "words": 4
+    },
+    {
+      "start": 810107,
+      "turn_start": false,
+      "text": "Let me kind of give you the context, right?",
+      "n": 137,
+      "time": "13:30",
+      "words": 9
+    },
+    {
+      "start": 812473,
+      "turn_start": false,
+      "text": "If I give you the context I kind of was a self-proclaimed semiconductor person.",
+      "n": 138,
+      "time": "13:32",
+      "words": 14
+    },
+    {
+      "start": 818974,
+      "turn_start": false,
+      "text": "This was going to be my profession of my career.",
+      "n": 139,
+      "time": "13:38",
+      "words": 10
+    },
+    {
+      "start": 821708,
+      "turn_start": false,
+      "text": "I had a great run at Freescale Semiconductor, it was my first opportunity in the C-suite.",
+      "n": 140,
+      "time": "13:41",
+      "words": 16
+    },
+    {
+      "start": 829216,
+      "turn_start": false,
+      "text": "So I was CTO of the company and then I ran one of the larger businesses.",
+      "n": 141,
+      "time": "13:49",
+      "words": 16
+    },
+    {
+      "start": 833261,
+      "turn_start": false,
+      "text": "And then I was like hey, I need to try something different and I joined AMD and many people said at the time, why would you join AMD?",
+      "n": 142,
+      "time": "13:53",
+      "words": 28
+    },
+    {
+      "start": 843373,
+      "turn_start": false,
+      "text": "What would make you join AMD?",
+      "n": 143,
+      "time": "14:03",
+      "words": 6
+    },
+    {
+      "start": 845257,
+      "turn_start": false,
+      "text": "I actually had mentors in my career saying, I don't think that that's a good move Lisa.",
+      "n": 144,
+      "time": "14:05",
+      "words": 17
+    },
+    {
+      "start": 851448,
+      "turn_start": false,
+      "text": "And I was very puzzled, I didn't understand, why would anybody say that.",
+      "n": 145,
+      "time": "14:11",
+      "words": 13
+    },
+    {
+      "start": 855294,
+      "turn_start": false,
+      "text": "I thought AMD was a very interesting company, but it was a company that had sort of a track record of not perfect execution.",
+      "n": 146,
+      "time": "14:15",
+      "words": 24
+    },
+    {
+      "start": 864199,
+      "turn_start": false,
+      "text": "There were years that AMD did very well, there were years that AMD didn't do very well, and as a result, it was always viewed as hey, interesting, but not one of the top companies out there.",
+      "n": 147,
+      "time": "14:24",
+      "words": 37
+    },
+    {
+      "start": 877940,
+      "turn_start": false,
+      "text": "And I viewed it as hey, look, what was important to me was to lead a company that mattered, a company that would matter in the industry.",
+      "n": 148,
+      "time": "14:37",
+      "words": 27
+    },
+    {
+      "start": 889007,
+      "turn_start": false,
+      "text": "And I felt I am a little bit biased here, but processors are kind of the brains of most things the idea that semiconductors are now important.",
+      "n": 149,
+      "time": "14:49",
+      "words": 27
+    },
+    {
+      "start": 898032,
+      "turn_start": false,
+      "text": "30 years ago, semiconductors were not quite as important, people are like, what's a semiconductor, why is that important?",
+      "n": 150,
+      "time": "14:58",
+      "words": 19
+    },
+    {
+      "start": 904108,
+      "turn_start": false,
+      "text": "Now nobody doubts why semiconductors are so important, whether you're talking about businesses, economies, national security, all of those things, so that's why I joined AMD.",
+      "n": 151,
+      "time": "15:04",
+      "words": 26
+    },
+    {
+      "start": 915314,
+      "turn_start": false,
+      "text": "And the opportunity at that time was a industry that was going through just a ton of transition.",
+      "n": 152,
+      "time": "15:15",
+      "words": 18
+    },
+    {
+      "start": 923445,
+      "turn_start": false,
+      "text": "So, if you think about the tech world, there are these large transitions, whether you're talking about the internet era, or you're talking about mainframe going to PCs or you're talking about PCs going to mobile.",
+      "n": 153,
+      "time": "15:23",
+      "words": 36
+    },
+    {
+      "start": 938892,
+      "turn_start": false,
+      "text": "All of these major transition means there's a different set of winners and there are also going to be some losers.",
+      "n": 154,
+      "time": "15:38",
+      "words": 21
+    },
+    {
+      "start": 946745,
+      "turn_start": false,
+      "text": "And at the time, this was back in 2012, 2013, 2014, this was the time when Pacs were viewed as potentially being losers, when mobile was Was becoming very prominent, and that's where AMD was, so we were kind of at a crossroads, frankly, we were at a crossroads for a company that was in transition.",
+      "n": 155,
+      "time": "15:46",
+      "words": 56
+    },
+    {
+      "start": 968510,
+      "turn_start": false,
+      "text": "The industry was in transition, the company was in transition, and the leadership was in transition.",
+      "n": 156,
+      "time": "16:08",
+      "words": 16
+    },
+    {
+      "start": 974403,
+      "turn_start": false,
+      "text": "So I joined in 2012 to run the business units, there was no concept of business units, PNLs, those kinds of things, so there was a lot of transformation to be done there.",
+      "n": 157,
+      "time": "16:14",
+      "words": 33
+    },
+    {
+      "start": 984483,
+      "turn_start": false,
+      "text": "I had a great partner as CTO, Mark Papermaster has been my partner on this journey, and I became COO in 2014, so I thought, hey, that's great, this is wonderful, I'm getting to run larger pieces of the company.",
+      "n": 158,
+      "time": "16:24",
+      "words": 40
+    },
+    {
+      "start": 1000810,
+      "turn_start": false,
+      "text": "And I was surprised that six months after I became COO, I got a call from our chairman of the board, and he said, it's time Lisa and I'm like, really, that seems really kind of quick, [LAUGH].",
+      "n": 159,
+      "time": "16:40",
+      "words": 38
+    },
+    {
+      "start": 1017149,
+      "turn_start": false,
+      "text": "And look, I think the moral of the story is you never know ,you can't plan these things to any precision, but what was clear was that we had to transition some of our strategy as a company, and we were ready for a change.",
+      "n": 160,
+      "time": "16:57",
+      "words": 45
+    },
+    {
+      "start": 1039736,
+      "turn_start": false,
+      "text": "And I was very honored to be asked to be CEO and it was never a doubt that this was like my dream job so my dream job, going to school and through all these years was to have the opportunity to lead a semiconductor company.",
+      "n": 161,
+      "time": "17:19",
+      "words": 46
+    },
+    {
+      "start": 1057756,
+      "turn_start": false,
+      "text": "And now I had that opportunity so that was back in October, 2014 and some things I remember very well.",
+      "n": 162,
+      "time": "17:37",
+      "words": 20
+    },
+    {
+      "start": 1067685,
+      "turn_start": true,
+      "text": "Well, it definitely wasn't easy when you joined the helm, the company was at the brink of bankruptcy, and the share price was hovering at around $3 under your leadership at its peak,AMD shares topped $200.",
+      "n": 163,
+      "time": "17:47",
+      "words": 36
+    },
+    {
+      "start": 1084066,
+      "turn_start": false,
+      "text": "So how did you balance between defensive leadership, which involved cost cutting and focusing on the core, with offensive leadership, which involved diversifying product lines and taking bolder bets?",
+      "n": 164,
+      "time": "18:04",
+      "words": 29
+    },
+    {
+      "start": 1096382,
+      "turn_start": true,
+      "text": "Yeah, well, I think it's fairly clear in tech there's no such thing as cutting yourself to be a winner, of course, balance sheets are very important and P&Ls are very important.",
+      "n": 165,
+      "time": "18:16",
+      "words": 32
+    },
+    {
+      "start": 1111764,
+      "turn_start": false,
+      "text": "But what was really important, I think, for us, it was to decide, what do we want to be when we grow up, like, what does grape look like, and for us, it was deciding what was important.",
+      "n": 166,
+      "time": "18:31",
+      "words": 38
+    },
+    {
+      "start": 1125872,
+      "turn_start": false,
+      "text": "One of the things that I like to say about the semiconductor industry or technology in general is the decisions that we make today, you will really see the impact three to five years down the road.",
+      "n": 167,
+      "time": "18:45",
+      "words": 37
+    },
+    {
+      "start": 1138658,
+      "turn_start": false,
+      "text": "It is all about making the right bets and for AMD at the time as I said, we were at a crossroads, and we were needing to make a decision of what do we want to be when we grow up?",
+      "n": 168,
+      "time": "18:58",
+      "words": 41
+    },
+    {
+      "start": 1150301,
+      "turn_start": false,
+      "text": "At the time, the most interesting sector, frankly, was mobile smartphones were taking off, everyone was like, Lisa, why aren't we building mobile chips?",
+      "n": 169,
+      "time": "19:10",
+      "words": 24
+    },
+    {
+      "start": 1160669,
+      "turn_start": false,
+      "text": "And we thought about it, actually we sized it, we looked at it, we spent quite a bit of time looking at it, and we realized that, yes, that is a good business, but that actually is not a good business for us, because that's not fundamentally what we are best at.",
+      "n": 170,
+      "time": "19:20",
+      "words": 52
+    },
+    {
+      "start": 1175745,
+      "turn_start": false,
+      "text": "Fundamentally what we were best at, what I believed we could be best at, is building the highest performance computing out there, it was a bet on high performance computing.",
+      "n": 171,
+      "time": "19:35",
+      "words": 30
+    },
+    {
+      "start": 1187574,
+      "turn_start": false,
+      "text": "And there are many reasons for that, you can look at what your competition looks like, you can look at what the technology landscape looks like, you can look at where you think the markets are going.",
+      "n": 172,
+      "time": "19:47",
+      "words": 37
+    },
+    {
+      "start": 1200467,
+      "turn_start": false,
+      "text": "But if I kind of summarize there's probably a few basic things, right?",
+      "n": 173,
+      "time": "20:00",
+      "words": 13
+    },
+    {
+      "start": 1204131,
+      "turn_start": false,
+      "text": "You want to make sure that as a company that you're in markets that are large enough especially picking markets where you see there is sort of industry transformations coming industry inflections coming.",
+      "n": 174,
+      "time": "20:04",
+      "words": 33
+    },
+    {
+      "start": 1219179,
+      "turn_start": false,
+      "text": "And then where the company has some secret sauce, and so our secret sauce was when you had to build high performance computers.",
+      "n": 175,
+      "time": "20:19",
+      "words": 23
+    },
+    {
+      "start": 1227090,
+      "turn_start": false,
+      "text": "And I knew that my job as a COO at the time was to lay out that vision, but then also give our team enough time to fully realize that vision, because nothing changes quickly.",
+      "n": 176,
+      "time": "20:27",
+      "words": 35
+    },
+    {
+      "start": 1243404,
+      "turn_start": false,
+      "text": "We had to set the expectation look, this is going to take three to five years, it's going to take us three product generations.",
+      "n": 177,
+      "time": "20:43",
+      "words": 24
+    },
+    {
+      "start": 1250987,
+      "turn_start": false,
+      "text": "We actually had to start from scratch our products, but we knew exactly where we wanted to go, and at the time, there was a big industry inflection coming, which was Moore's law was slowing down.",
+      "n": 178,
+      "time": "20:50",
+      "words": 36
+    },
+    {
+      "start": 1261997,
+      "turn_start": false,
+      "text": "All of you have probably heard about Moore's law, Moore's law was the idea that, basically, continuing to double the amount of capability reduce the price every two years.",
+      "n": 179,
+      "time": "21:01",
+      "words": 29
+    },
+    {
+      "start": 1276516,
+      "turn_start": false,
+      "text": "Moore's Law was essentially slowing down, and there was going to be new technologies that would make a difference and that's what we were going to bet on in terms of going forward.",
+      "n": 180,
+      "time": "21:16",
+      "words": 33
+    },
+    {
+      "start": 1285417,
+      "turn_start": false,
+      "text": "So I think the key with any, people call it a turnaround, yes, maybe I call it more you have to kind of see where the future is going and try to align your resources and your focus with where the future is going.",
+      "n": 181,
+      "time": "21:25",
+      "words": 44
+    },
+    {
+      "start": 1300600,
+      "turn_start": true,
+      "text": "Right, and other than a technological change, there was also a cultural shift within the company, were there any key decisions you made that helped change AMD's internal mindset from being an underdog to an industry leader?",
+      "n": 182,
+      "time": "21:40",
+      "words": 37
+    },
+    {
+      "start": 1314829,
+      "turn_start": true,
+      "text": "Yeah, I think the key thing with any company culture or any team culture is it's not necessarily what you write down but it's actually what people see and feel every day in terms of day to day operation.",
+      "n": 183,
+      "time": "21:54",
+      "words": 39
+    },
+    {
+      "start": 1331172,
+      "turn_start": false,
+      "text": "And so from the AMD culture standpoint what I'd like to believe is that everybody in the company is here because we love pushing the bleeding edge of technology.",
+      "n": 184,
+      "time": "22:11",
+      "words": 29
+    },
+    {
+      "start": 1343547,
+      "turn_start": false,
+      "text": "If you want to join AMD, that's why you join, is because you want to be at the cutting edge of technology, you're probably going to work harder than most, you're probably going to take a good amount of risk on how you get that done.",
+      "n": 185,
+      "time": "22:23",
+      "words": 46
+    },
+    {
+      "start": 1357424,
+      "turn_start": false,
+      "text": "But I also believe very much in a learning culture, which is we learn from everything that we do, actually, we learn more from our mistakes than we learn from our successes.",
+      "n": 186,
+      "time": "22:37",
+      "words": 32
+    },
+    {
+      "start": 1368222,
+      "turn_start": false,
+      "text": "Because with every product launch, we can say, hey, we could have done that a little bit better, with every new generation, we think about, what will I want to do differently in the future, and that's very much who we are.",
+      "n": 187,
+      "time": "22:48",
+      "words": 42
+    },
+    {
+      "start": 1380627,
+      "turn_start": false,
+      "text": "I think we are a learning culture, we are a very collaborative culture, but at the end of the day, we like to win, and it's about having the best technology and the best products out there.",
+      "n": 188,
+      "time": "23:00",
+      "words": 37
+    },
+    {
+      "start": 1391285,
+      "turn_start": true,
+      "text": "I love that, a learning culture is something we can all take home with us, now, I want to shift over to talking a bit about the industry and AI, the semiconductor industry is as much a geopolitical story as it is a technological one.",
+      "n": 189,
+      "time": "23:11",
+      "words": 45
+    },
+    {
+      "start": 1405736,
+      "turn_start": false,
+      "text": "So how do you navigate an environment where policy decisions such as tariffs, ship subsidies and export controls can make or break an industry leader?",
+      "n": 190,
+      "time": "23:25",
+      "words": 25
+    },
+    {
+      "start": 1416040,
+      "turn_start": true,
+      "text": "Well, I think the world has changed in a way that we're in a industry where having the best technology can make such a difference.",
+      "n": 191,
+      "time": "23:36",
+      "words": 25
+    },
+    {
+      "start": 1431275,
+      "turn_start": false,
+      "text": "And like I said, it can make a difference in terms of getting a competitive edge in companies, and it can make a difference about a competitive edge in companies.",
+      "n": 192,
+      "time": "23:51",
+      "words": 30
+    },
+    {
+      "start": 1440250,
+      "turn_start": false,
+      "text": "Countries, and so it's just part of the industry that we're in.",
+      "n": 193,
+      "time": "24:00",
+      "words": 12
+    },
+    {
+      "start": 1444105,
+      "turn_start": false,
+      "text": "I think the key is to have very good clarity on we are a US company.",
+      "n": 194,
+      "time": "24:04",
+      "words": 16
+    },
+    {
+      "start": 1451500,
+      "turn_start": false,
+      "text": "Clearly, there have been a lot of conversations and discussions over the last five, seven, eight years, in terms of just how important the technology is and ensuring that the technology isn't used for, let's call it, not the purposes that are aligned with US interests.",
+      "n": 195,
+      "time": "24:11",
+      "words": 46
+    },
+    {
+      "start": 1474659,
+      "turn_start": false,
+      "text": "But I also think the market is super large and there's a way to really balance both, and that's what we try to do.",
+      "n": 196,
+      "time": "24:34",
+      "words": 24
+    },
+    {
+      "start": 1481973,
+      "turn_start": false,
+      "text": "I'd like to say we are a global company in the sense that we operate across every part of the world.",
+      "n": 197,
+      "time": "24:41",
+      "words": 21
+    },
+    {
+      "start": 1488998,
+      "turn_start": false,
+      "text": "But as it relates to critical technology, we're very much focused on ensuring that we're compliant with all of the US regulations.",
+      "n": 198,
+      "time": "24:48",
+      "words": 22
+    },
+    {
+      "start": 1497254,
+      "turn_start": false,
+      "text": "And in some sense, I'd like to view it as we are a very interested party in helping understand what is the best way to satisfy both interests, and that's what we do.",
+      "n": 199,
+      "time": "24:57",
+      "words": 33
+    },
+    {
+      "start": 1509328,
+      "turn_start": true,
+      "text": "So see it as an opportunity as well, I like that.",
+      "n": 200,
+      "time": "25:09",
+      "words": 11
+    },
+    {
+      "start": 1511486,
+      "turn_start": true,
+      "text": "Yes, it's really, really important to have your voice heard, particularly in an area that is so complicated, right?",
+      "n": 201,
+      "time": "25:11",
+      "words": 19
+    },
+    {
+      "start": 1519591,
+      "turn_start": false,
+      "text": "It's really hard to figure out where the boundaries should be and companies need to step up and be part of that conversation.",
+      "n": 202,
+      "time": "25:19",
+      "words": 23
+    },
+    {
+      "start": 1527071,
+      "turn_start": true,
+      "text": "Now, AMD has doubled down on inference rather than training, expecting inference to make up the majority of AI workloads for the future.",
+      "n": 203,
+      "time": "25:27",
+      "words": 23
+    },
+    {
+      "start": 1535774,
+      "turn_start": false,
+      "text": "So could you walk us through what the key technological and market signals have been, that has led AMD towards that decision?",
+      "n": 204,
+      "time": "25:35",
+      "words": 22
+    },
+    {
+      "start": 1542075,
+      "turn_start": false,
+      "text": "And maybe for those of us that are less well versed in what training and inferences maybe, perhaps, if we could trouble you to explain that.",
+      "n": 205,
+      "time": "25:42",
+      "words": 26
+    },
+    {
+      "start": 1548448,
+      "turn_start": true,
+      "text": "Yeah, and again, maybe let me take a step back and just give a little bit of a landscape of where we are in technology today.",
+      "n": 206,
+      "time": "25:48",
+      "words": 26
+    },
+    {
+      "start": 1556246,
+      "turn_start": false,
+      "text": "It is an incredibly exciting time in technology today.",
+      "n": 207,
+      "time": "25:56",
+      "words": 9
+    },
+    {
+      "start": 1561980,
+      "turn_start": false,
+      "text": "If you had asked me 5 years ago the rate and pace of AI adoption that we've seen over the last 18 months, I mean, it's extraordinary.",
+      "n": 208,
+      "time": "26:01",
+      "words": 27
+    },
+    {
+      "start": 1569276,
+      "turn_start": false,
+      "text": "I mean, this is the most important sort of technology advance of the last 50 plus years.",
+      "n": 209,
+      "time": "26:09",
+      "words": 17
+    },
+    {
+      "start": 1575847,
+      "turn_start": false,
+      "text": "And what's different about it is so many people can be touched by it, and that's kind of what generative AI has done, right?",
+      "n": 210,
+      "time": "26:15",
+      "words": 24
+    },
+    {
+      "start": 1584702,
+      "turn_start": false,
+      "text": "AI has been around forever.",
+      "n": 211,
+      "time": "26:24",
+      "words": 5
+    },
+    {
+      "start": 1586284,
+      "turn_start": false,
+      "text": "It's been around for the longest time, but it was actually pretty hard to really get AI into our business flows.",
+      "n": 212,
+      "time": "26:26",
+      "words": 21
+    },
+    {
+      "start": 1595774,
+      "turn_start": false,
+      "text": "That's kind of what's different today, is that now you can see how AI can be adopted in many different ways.",
+      "n": 213,
+      "time": "26:35",
+      "words": 21
+    },
+    {
+      "start": 1601648,
+      "turn_start": false,
+      "text": "So this comment about training versus inference, look, I'm actually a believer in there's no one type of AI.",
+      "n": 214,
+      "time": "26:41",
+      "words": 19
+    },
+    {
+      "start": 1608451,
+      "turn_start": false,
+      "text": "You're going to see AI permeate every part of our lives, whether you talk about the largest cloud environments, which are important today, or you talk about your environments at the edge.",
+      "n": 215,
+      "time": "26:48",
+      "words": 32
+    },
+    {
+      "start": 1622305,
+      "turn_start": false,
+      "text": "When you think about industrial AI or robotics, or you think about personal AI, AI PCs, AI in your phones, I think you're going to see AI in all of those places.",
+      "n": 216,
+      "time": "27:02",
+      "words": 32
+    },
+    {
+      "start": 1632263,
+      "turn_start": false,
+      "text": "And our goal in life is to make sure that we have the right computing for the right applications.",
+      "n": 217,
+      "time": "27:12",
+      "words": 19
+    },
+    {
+      "start": 1639988,
+      "turn_start": false,
+      "text": "So to your question about inference versus training, I think that is a little bit more in terms of the tactics of a given year.",
+      "n": 218,
+      "time": "27:19",
+      "words": 25
+    },
+    {
+      "start": 1649632,
+      "turn_start": false,
+      "text": "I would step back from that and say, at the end of the day, you're going to have these amazing large language models that are out there, these foundational models.",
+      "n": 219,
+      "time": "27:29",
+      "words": 30
+    },
+    {
+      "start": 1659040,
+      "turn_start": false,
+      "text": "Some of them are going to be open, some of them are going to be closed.",
+      "n": 220,
+      "time": "27:39",
+      "words": 16
+    },
+    {
+      "start": 1662952,
+      "turn_start": false,
+      "text": "And then you're going to have many other models as well.",
+      "n": 221,
+      "time": "27:42",
+      "words": 11
+    },
+    {
+      "start": 1665675,
+      "turn_start": false,
+      "text": "You're going to have medium-size models, you're going to have smaller-size models, you're going to have models that can run on your phone that will give you personal AI capability.",
+      "n": 222,
+      "time": "27:45",
+      "words": 30
+    },
+    {
+      "start": 1673788,
+      "turn_start": false,
+      "text": "And the compute that you need for each of those is somewhat different.",
+      "n": 223,
+      "time": "27:53",
+      "words": 13
+    },
+    {
+      "start": 1677826,
+      "turn_start": false,
+      "text": "And our vision at AMD is that we can really create the right compute for each one of those environments, and that's really what we're focused on.",
+      "n": 224,
+      "time": "27:57",
+      "words": 27
+    },
+    {
+      "start": 1687194,
+      "turn_start": true,
+      "text": "That's very helpful, thank you.",
+      "n": 225,
+      "time": "28:07",
+      "words": 5
+    },
+    {
+      "start": 1688925,
+      "turn_start": false,
+      "text": "I'd like to talk a little bit about AMD software as well.",
+      "n": 226,
+      "time": "28:08",
+      "words": 12
+    },
+    {
+      "start": 1691875,
+      "turn_start": false,
+      "text": "So some have said that AMD is the Android to Nvidia's Apple, more open, more flexible, but slightly less easy to integrate.",
+      "n": 227,
+      "time": "28:11",
+      "words": 22
+    },
+    {
+      "start": 1702275,
+      "turn_start": false,
+      "text": "So could you walk us through your decision to make AMD software open-source, and how you convince major AI players that AMD is flexibility outweighs Nvidia's verticalization?",
+      "n": 228,
+      "time": "28:22",
+      "words": 27
+    },
+    {
+      "start": 1713061,
+      "turn_start": true,
+      "text": "Yeah, well, look, first of all, I would say Nvidia is a great company, and they certainly have a very capable [COUGH] AI end-to-end capability.",
+      "n": 229,
+      "time": "28:33",
+      "words": 25
+    },
+    {
+      "start": 1727540,
+      "turn_start": false,
+      "text": "I think our view is a little bit different.",
+      "n": 230,
+      "time": "28:47",
+      "words": 9
+    },
+    {
+      "start": 1730200,
+      "turn_start": false,
+      "text": "Again, I view that you're going to have AI end-to-end in different compute sizes, there's no one size fits all in AI and the open capability is just part of AMD's DNA, that's who we are.",
+      "n": 231,
+      "time": "28:50",
+      "words": 36
+    },
+    {
+      "start": 1748964,
+      "turn_start": false,
+      "text": "We believe in letting our customers and our partners choose what is the best component in each spot.",
+      "n": 232,
+      "time": "29:08",
+      "words": 18
+    },
+    {
+      "start": 1757090,
+      "turn_start": false,
+      "text": "Now, what that means is we do take on some extra work in terms of interoperability, we absolutely take on extra work.",
+      "n": 233,
+      "time": "29:17",
+      "words": 22
+    },
+    {
+      "start": 1764326,
+      "turn_start": false,
+      "text": "However, we believe in the end, we'll get a much larger developer ecosystem as part of that, and so that has been our mantra.",
+      "n": 234,
+      "time": "29:24",
+      "words": 24
+    },
+    {
+      "start": 1772423,
+      "turn_start": false,
+      "text": "And what you'll see in AI today is we're in a race to get to the next great app or the next big wave of usability, people want to make it as simple as possible.",
+      "n": 235,
+      "time": "29:32",
+      "words": 35
+    },
+    {
+      "start": 1787338,
+      "turn_start": false,
+      "text": "And that's what we're working on, is how do we make access to AI as simple as possible as you go forward.",
+      "n": 236,
+      "time": "29:47",
+      "words": 22
+    },
+    {
+      "start": 1794580,
+      "turn_start": true,
+      "text": "Thank you.",
+      "n": 237,
+      "time": "29:54",
+      "words": 2
+    },
+    {
+      "start": 1795679,
+      "turn_start": false,
+      "text": "Now, recently, companies like DeepSeek have been able to train their models at a fraction of the cost of US-based players.",
+      "n": 238,
+      "time": "29:55",
+      "words": 21
+    },
+    {
+      "start": 1803693,
+      "turn_start": false,
+      "text": "So what does this mean for the huge amounts of AI infrastructure investment?",
+      "n": 239,
+      "time": "30:03",
+      "words": 13
+    },
+    {
+      "start": 1807748,
+      "turn_start": false,
+      "text": "And what does this mean for AMD?",
+      "n": 240,
+      "time": "30:07",
+      "words": 7
+    },
+    {
+      "start": 1809608,
+      "turn_start": true,
+      "text": "Well, first of all, I think what's been most interesting about DeepSeek over the last month or so, it's an example of how innovation can really spark new thinking.",
+      "n": 241,
+      "time": "30:09",
+      "words": 29
+    },
+    {
+      "start": 1821790,
+      "turn_start": false,
+      "text": "People didn't expect it.",
+      "n": 242,
+      "time": "30:21",
+      "words": 4
+    },
+    {
+      "start": 1822766,
+      "turn_start": false,
+      "text": "So put aside the exact detail of how much did they spend single digit millions or double digit millions on training?",
+      "n": 243,
+      "time": "30:22",
+      "words": 21
+    },
+    {
+      "start": 1829836,
+      "turn_start": false,
+      "text": "I think that's actually a secondary point.",
+      "n": 244,
+      "time": "30:29",
+      "words": 7
+    },
+    {
+      "start": 1833721,
+      "turn_start": false,
+      "text": "The primary point is you have a new model, an open model that had some very innovative ways of putting things together based on what other people have done.",
+      "n": 245,
+      "time": "30:33",
+      "words": 29
+    },
+    {
+      "start": 1843829,
+      "turn_start": false,
+      "text": "And now it's spurred more excitement, frankly, because that's what's happened.",
+      "n": 246,
+      "time": "30:43",
+      "words": 11
+    },
+    {
+      "start": 1847726,
+      "turn_start": false,
+      "text": "In the last month, people are like, okay, well, that's interesting, that's what DeepSeek did.",
+      "n": 247,
+      "time": "30:47",
+      "words": 15
+    },
+    {
+      "start": 1852000,
+      "turn_start": false,
+      "text": "Now, how do I take and build upon what you saw in DeepSeek and make it applicable to my world?",
+      "n": 248,
+      "time": "30:52",
+      "words": 20
+    },
+    {
+      "start": 1860062,
+      "turn_start": false,
+      "text": "And so you're seeing many derivatives of this come about.",
+      "n": 249,
+      "time": "31:00",
+      "words": 10
+    },
+    {
+      "start": 1864992,
+      "turn_start": false,
+      "text": "Again, put aside some of the market volatility, I think the market is way overly sensitive [LAUGH] to things that happen.",
+      "n": 250,
+      "time": "31:04",
+      "words": 21
+    },
+    {
+      "start": 1876292,
+      "turn_start": false,
+      "text": "Today, what we're seeing is innovation sparks more innovation.",
+      "n": 251,
+      "time": "31:16",
+      "words": 9
+    },
+    {
+      "start": 1880916,
+      "turn_start": false,
+      "text": "And frankly, making AI more accessible, cheaper, more broadly adopted, will only give us more uses of AI.",
+      "n": 252,
+      "time": "31:20",
+      "words": 18
+    },
+    {
+      "start": 1889821,
+      "turn_start": false,
+      "text": "I truly believe that we are at the very, very early beginnings of AI adoption.",
+      "n": 253,
+      "time": "31:29",
+      "words": 15
+    },
+    {
+      "start": 1897808,
+      "turn_start": false,
+      "text": "What you have today is good, but it's still quite primitive compared to what I think is possible, and we just need to have more cycles of learning in the process.",
+      "n": 254,
+      "time": "31:37",
+      "words": 31
+    },
+    {
+      "start": 1910534,
+      "turn_start": true,
+      "text": "You've always had a really clear idea of what you want to be when you grow up, and so you've met many milestones with impeccable execution while others have stumbled.",
+      "n": 255,
+      "time": "31:50",
+      "words": 30
+    },
+    {
+      "start": 1920684,
+      "turn_start": false,
+      "text": "So looking forward, what are the key strategic and execution risks that keep you up at night for AMD?",
+      "n": 256,
+      "time": "32:00",
+      "words": 19
+    },
+    {
+      "start": 1926775,
+      "turn_start": true,
+      "text": "Well, I will perhaps differ with you a little bit about, I don't know if I can say, I always knew what I wanted to be when I grew up.",
+      "n": 257,
+      "time": "32:06",
+      "words": 30
+    },
+    {
+      "start": 1934887,
+      "turn_start": false,
+      "text": "I think companies and people have sort of a five year trajectory.",
+      "n": 258,
+      "time": "32:14",
+      "words": 12
+    },
+    {
+      "start": 1942211,
+      "turn_start": false,
+      "text": "I used to say to people, hey, don't tell me what you want to be in 20 years.",
+      "n": 259,
+      "time": "32:22",
+      "words": 18
+    },
+    {
+      "start": 1947750,
+      "turn_start": false,
+      "text": "What is a good milestone for you in five years?",
+      "n": 260,
+      "time": "32:27",
+      "words": 10
+    },
+    {
+      "start": 1950850,
+      "turn_start": false,
+      "text": "Because you can kind of see five years, right?",
+      "n": 261,
+      "time": "32:30",
+      "words": 9
+    },
+    {
+      "start": 1952569,
+      "turn_start": false,
+      "text": "Five years is not two, two is too short.",
+      "n": 262,
+      "time": "32:32",
+      "words": 9
+    },
+    {
+      "start": 1955769,
+      "turn_start": false,
+      "text": "And ten is maybe a little bit long, because so much changes.",
+      "n": 263,
+      "time": "32:35",
+      "words": 12
+    },
+    {
+      "start": 1959925,
+      "turn_start": false,
+      "text": "So I answer that question is, what do I want to achieve?",
+      "n": 264,
+      "time": "32:39",
+      "words": 12
+    },
+    {
+      "start": 1966847,
+      "turn_start": false,
+      "text": "I think we are at a place where computing continues to be something that can drive fundamental productivity across our lives, across businesses, across the world.",
+      "n": 265,
+      "time": "32:46",
+      "words": 26
+    },
+    {
+      "start": 1981732,
+      "turn_start": false,
+      "text": "And I want AMD to be a very major player in unlocking that compute for the world.",
+      "n": 266,
+      "time": "33:01",
+      "words": 17
+    },
+    {
+      "start": 1989804,
+      "turn_start": false,
+      "text": "And some of the things that I see as opportunities for us, we think about AI as, I think about it in two aspects.",
+      "n": 267,
+      "time": "33:09",
+      "words": 24
+    },
+    {
+      "start": 2001050,
+      "turn_start": false,
+      "text": "One is sort of how do we make our businesses more productive?",
+      "n": 268,
+      "time": "33:21",
+      "words": 12
+    },
+    {
+      "start": 2004685,
+      "turn_start": false,
+      "text": "How do we make our lives more productive?",
+      "n": 269,
+      "time": "33:24",
+      "words": 8
+    },
+    {
+      "start": 2006317,
+      "turn_start": false,
+      "text": "You can see opportunities for that.",
+      "n": 270,
+      "time": "33:26",
+      "words": 6
+    },
+    {
+      "start": 2009125,
+      "turn_start": false,
+      "text": "But the more interesting thing is, how do we use the technology to fundamentally change either business processes, business models?",
+      "n": 271,
+      "time": "33:29",
+      "words": 20
+    },
+    {
+      "start": 2019029,
+      "turn_start": false,
+      "text": "Or even more importantly, solving some of the world's, I like to say I like to work on technology that solves some of the world's most important problems.",
+      "n": 272,
+      "time": "33:39",
+      "words": 28
+    },
+    {
+      "start": 2028120,
+      "turn_start": false,
+      "text": "Like AI can help solve many of those.",
+      "n": 273,
+      "time": "33:48",
+      "words": 8
+    },
+    {
+      "start": 2032503,
+      "turn_start": false,
+      "text": "And I think about, what can AI do in healthcare?",
+      "n": 274,
+      "time": "33:52",
+      "words": 10
+    },
+    {
+      "start": 2035055,
+      "turn_start": false,
+      "text": "What can AI do with drug discovery?",
+      "n": 275,
+      "time": "33:55",
+      "words": 7
+    },
+    {
+      "start": 2036888,
+      "turn_start": false,
+      "text": "What can we do with climate change?",
+      "n": 276,
+      "time": "33:56",
+      "words": 7
+    },
+    {
+      "start": 2040309,
+      "turn_start": false,
+      "text": "And these things when you take a technology that's fundamentally very capable and put it on turbocharge to solve some of these things.",
+      "n": 277,
+      "time": "34:00",
+      "words": 23
+    },
+    {
+      "start": 2048908,
+      "turn_start": false,
+      "text": "And frankly, we haven't solved yet.",
+      "n": 278,
+      "time": "34:08",
+      "words": 6
+    },
+    {
+      "start": 2050205,
+      "turn_start": false,
+      "text": "Even though we have a lot of smart researchers and a lot of great computing, it still takes years to solve some of these problems.",
+      "n": 279,
+      "time": "34:10",
+      "words": 25
+    },
+    {
+      "start": 2057921,
+      "turn_start": false,
+      "text": "If we can take years down to months or weeks, now, we're talking about the power of technology.",
+      "n": 280,
+      "time": "34:17",
+      "words": 18
+    },
+    {
+      "start": 2064190,
+      "turn_start": false,
+      "text": "So, those are some interesting milestones for the next five years.",
+      "n": 281,
+      "time": "34:24",
+      "words": 11
+    },
+    {
+      "start": 2068973,
+      "turn_start": true,
+      "text": "Right, well, while we're on the topic of milestones in the future, we're joined by many MBA students, most of whom were born at the cusp of the Internet and are now graduating on the cusp of the AI revolution.",
+      "n": 282,
+      "time": "34:28",
+      "words": 40
+    },
+    {
+      "start": 2080370,
+      "turn_start": false,
+      "text": "So you've also said that AI is the most transformative technology you've seen in your career.",
+      "n": 283,
+      "time": "34:40",
+      "words": 16
+    },
+    {
+      "start": 2085070,
+      "turn_start": false,
+      "text": "And some have said that today will be the slowest day of AI development for the rest of our lives.",
+      "n": 284,
+      "time": "34:45",
+      "words": 20
+    },
+    {
+      "start": 2090323,
+      "turn_start": false,
+      "text": "So with that in mind, what's next and how should we prepare?",
+      "n": 285,
+      "time": "34:50",
+      "words": 12
+    },
+    {
+      "start": 2094558,
+      "turn_start": true,
+      "text": "Well, I think what's next is we should expect that the only constant is change, and things will continue to progress at a very fast rate.",
+      "n": 286,
+      "time": "34:54",
+      "words": 26
+    },
+    {
+      "start": 2106324,
+      "turn_start": false,
+      "text": "So I do believe in this notion of especially for you guys, you guys are super lucky because you are at a place where, I think we're at the beginning of a wave.",
+      "n": 287,
+      "time": "35:06",
+      "words": 33
+    },
+    {
+      "start": 2118317,
+      "turn_start": false,
+      "text": "And it really is about just always being in that learning mode, right?",
+      "n": 288,
+      "time": "35:18",
+      "words": 13
+    },
+    {
+      "start": 2126108,
+      "turn_start": false,
+      "text": "I view any education as not job training, you didn't get an MBA for job training, I didn't get a PhD for job training.",
+      "n": 289,
+      "time": "35:26",
+      "words": 24
+    },
+    {
+      "start": 2135768,
+      "turn_start": false,
+      "text": "You get these degrees to learn how to think, to learn how to solve problems, to learn how to really kind of see the future.",
+      "n": 290,
+      "time": "35:35",
+      "words": 25
+    },
+    {
+      "start": 2146105,
+      "turn_start": false,
+      "text": "And so that's what I would view as sort of my comments to this team.",
+      "n": 291,
+      "time": "35:46",
+      "words": 15
+    },
+    {
+      "start": 2151613,
+      "turn_start": false,
+      "text": "What I've learned over the last 18 months is incredible.",
+      "n": 292,
+      "time": "35:51",
+      "words": 10
+    },
+    {
+      "start": 2156847,
+      "turn_start": false,
+      "text": "And every day I'm learning something new about how the technology is going to be used, how our customers are using technology, how we can, actually, I really like the idea of one plus one is greater than three.",
+      "n": 293,
+      "time": "35:56",
+      "words": 39
+    },
+    {
+      "start": 2171633,
+      "turn_start": false,
+      "text": "So how do you take, let's call it the power of our expert knowledge, which is in hardware, software systems, together with our partners who are great in applications, and sort of the end user capabilities?",
+      "n": 294,
+      "time": "36:11",
+      "words": 36
+    },
+    {
+      "start": 2187058,
+      "turn_start": false,
+      "text": "And marry that together to build one plus one is greater than three.",
+      "n": 295,
+      "time": "36:27",
+      "words": 13
+    },
+    {
+      "start": 2190825,
+      "turn_start": true,
+      "text": "Right, and so if we take that change, will be a constant.",
+      "n": 296,
+      "time": "36:30",
+      "words": 12
+    },
+    {
+      "start": 2195501,
+      "turn_start": false,
+      "text": "How do you stay focused yet nimble at the same time and executing on your kind of five-year milestone?",
+      "n": 297,
+      "time": "36:35",
+      "words": 19
+    },
+    {
+      "start": 2201756,
+      "turn_start": true,
+      "text": "Well, I think the key is to always, you have to have a very clear sort of roadmap of what you want to do.",
+      "n": 298,
+      "time": "36:41",
+      "words": 24
+    },
+    {
+      "start": 2211341,
+      "turn_start": false,
+      "text": "But you have to enable yourself to get input into whether you're doing the right thing.",
+      "n": 299,
+      "time": "36:51",
+      "words": 16
+    },
+    {
+      "start": 2216514,
+      "turn_start": false,
+      "text": "Agility is super important in today's world.",
+      "n": 300,
+      "time": "36:56",
+      "words": 7
+    },
+    {
+      "start": 2220303,
+      "turn_start": false,
+      "text": "I think you see it in just how fast things are changing.",
+      "n": 301,
+      "time": "37:00",
+      "words": 12
+    },
+    {
+      "start": 2225351,
+      "turn_start": false,
+      "text": "I mean, I think the power of social media, the power of just the cycles that it used to be for research and for new products to come out, is now much, much shorter.",
+      "n": 302,
+      "time": "37:05",
+      "words": 34
+    },
+    {
+      "start": 2238814,
+      "turn_start": false,
+      "text": "Because you don't go through quite the same incubation times of before.",
+      "n": 303,
+      "time": "37:18",
+      "words": 12
+    },
+    {
+      "start": 2245696,
+      "turn_start": false,
+      "text": "And so, yeah, I think it is about continuing to be very agile and nimble.",
+      "n": 304,
+      "time": "37:25",
+      "words": 15
+    },
+    {
+      "start": 2249654,
+      "turn_start": false,
+      "text": "And what we have certainly seen in the process is that collaboration is a big piece of that.",
+      "n": 305,
+      "time": "37:29",
+      "words": 18
+    },
+    {
+      "start": 2258638,
+      "turn_start": false,
+      "text": "I learned from every single conversation that I have with our customers, with our partners, with industry folks.",
+      "n": 306,
+      "time": "37:38",
+      "words": 18
+    },
+    {
+      "start": 2267002,
+      "turn_start": false,
+      "text": "And that helps us align on what are the next big things that one needs to do?",
+      "n": 307,
+      "time": "37:47",
+      "words": 17
+    },
+    {
+      "start": 2272055,
+      "turn_start": true,
+      "text": "We're exited to see what AMD will do next.",
+      "n": 308,
+      "time": "37:52",
+      "words": 9
+    },
+    {
+      "start": 2274660,
+      "turn_start": false,
+      "text": "Now before we open up for the audience Q&A, I have one more question for you.",
+      "n": 309,
+      "time": "37:54",
+      "words": 16
+    },
+    {
+      "start": 2278655,
+      "turn_start": false,
+      "text": "The theme for this year's view from the top is reading your mark.",
+      "n": 310,
+      "time": "37:58",
+      "words": 13
+    },
+    {
+      "start": 2281950,
+      "turn_start": false,
+      "text": "So one question we have for all speakers is, Lisa, how would you like to be remembered?",
+      "n": 311,
+      "time": "38:01",
+      "words": 17
+    },
+    {
+      "start": 2286890,
+      "turn_start": true,
+      "text": "[LAUGH] I would love for people to remember AMD as building some of the most important technology in the world.",
+      "n": 312,
+      "time": "38:06",
+      "words": 20
+    },
+    {
+      "start": 2293988,
+      "turn_start": true,
+      "text": "I love that.",
+      "n": 313,
+      "time": "38:13",
+      "words": 3
+    },
+    {
+      "start": 2294925,
+      "turn_start": false,
+      "text": "Now we'll open up audience Q&A.",
+      "n": 314,
+      "time": "38:14",
+      "words": 6
+    },
+    {
+      "start": 2296493,
+      "turn_start": false,
+      "text": "There's a couple of mics running around.",
+      "n": 315,
+      "time": "38:16",
+      "words": 7
+    },
+    {
+      "start": 2298205,
+      "turn_start": false,
+      "text": "If you're selected, please state your name, your Stanford affiliation, and then your question.",
+      "n": 316,
+      "time": "38:18",
+      "words": 14
+    },
+    {
+      "start": 2304332,
+      "turn_start": true,
+      "text": "Hi, Lisa.",
+      "n": 317,
+      "time": "38:24",
+      "words": 2
+    },
+    {
+      "start": 2304964,
+      "turn_start": false,
+      "text": "My name is Josh Miner, I'm an MBA 1, and before this I was at AMD for the last four years, so it's great to see you again.",
+      "n": 318,
+      "time": "38:24",
+      "words": 28
+    },
+    {
+      "start": 2311371,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 319,
+      "time": "38:31",
+      "words": 1
+    },
+    {
+      "start": 2311371,
+      "turn_start": true,
+      "text": "This is not a planted question, I promise you.",
+      "n": 320,
+      "time": "38:31",
+      "words": 9
+    },
+    {
+      "start": 2315043,
+      "turn_start": true,
+      "text": "[LAUGH]",
+      "n": 321,
+      "time": "38:35",
+      "words": 1
+    },
+    {
+      "start": 2315043,
+      "turn_start": true,
+      "text": "I have no idea what he's going to ask.",
+      "n": 322,
+      "time": "38:35",
+      "words": 9
+    },
+    {
+      "start": 2318443,
+      "turn_start": true,
+      "text": "You mentioned that AI today is good, but still quite primitive.",
+      "n": 323,
+      "time": "38:38",
+      "words": 11
+    },
+    {
+      "start": 2322270,
+      "turn_start": false,
+      "text": "What are some of the technological advancements that you are most excited about in the next few years on that hardware/software side?",
+      "n": 324,
+      "time": "38:42",
+      "words": 22
+    },
+    {
+      "start": 2328479,
+      "turn_start": true,
+      "text": "Yeah, well, when I say that it's good, but it could be better.",
+      "n": 325,
+      "time": "38:48",
+      "words": 13
+    },
+    {
+      "start": 2333697,
+      "turn_start": false,
+      "text": "Look, I think we've all experienced what ChatGPT or DeepSeek or any of these models can do.",
+      "n": 326,
+      "time": "38:53",
+      "words": 17
+    },
+    {
+      "start": 2339984,
+      "turn_start": false,
+      "text": "And now we've added these reasoning capabilities, which is also pretty impressive.",
+      "n": 327,
+      "time": "38:59",
+      "words": 12
+    },
+    {
+      "start": 2345897,
+      "turn_start": false,
+      "text": "But I think there are two vectors that still need a lot of work.",
+      "n": 328,
+      "time": "39:05",
+      "words": 14
+    },
+    {
+      "start": 2350880,
+      "turn_start": false,
+      "text": "One is there is a view of if we can get the cost down, sort of the cost per inference query or the longer your query.",
+      "n": 329,
+      "time": "39:10",
+      "words": 26
+    },
+    {
+      "start": 2358923,
+      "turn_start": false,
+      "text": "If you have to wait a few seconds or maybe sometimes 30 seconds or 60 seconds, you may not like that.",
+      "n": 330,
+      "time": "39:18",
+      "words": 21
+    },
+    {
+      "start": 2364839,
+      "turn_start": false,
+      "text": "You want to be able to get it such that it is instant information.",
+      "n": 331,
+      "time": "39:24",
+      "words": 14
+    },
+    {
+      "start": 2369021,
+      "turn_start": false,
+      "text": "And then the other thing is you want to make sure that it's accurate, right?",
+      "n": 332,
+      "time": "39:29",
+      "words": 15
+    },
+    {
+      "start": 2371796,
+      "turn_start": false,
+      "text": "And I know we believe it's gotten so much better in the last 18 months, but you still are not 100% sure that it's accurate.",
+      "n": 333,
+      "time": "39:31",
+      "words": 25
+    },
+    {
+      "start": 2382524,
+      "turn_start": false,
+      "text": "And so there's a lot of work that can still be done in terms of really taking the output of these models and turning them into something you've heard about.",
+      "n": 334,
+      "time": "39:42",
+      "words": 30
+    },
+    {
+      "start": 2393084,
+      "turn_start": false,
+      "text": "Maybe the comment about agents, and having lots and lots of agents.",
+      "n": 335,
+      "time": "39:53",
+      "words": 12
+    },
+    {
+      "start": 2397402,
+      "turn_start": false,
+      "text": "That is super exciting, because that's how.",
+      "n": 336,
+      "time": "39:57",
+      "words": 7
+    },
+    {
+      "start": 2400070,
+      "turn_start": false,
+      "text": "How you really get AI to not just give you information, but be able to take on some tasks on its own, but you really need to ensure that it does it right?",
+      "n": 337,
+      "time": "40:00",
+      "words": 33
+    },
+    {
+      "start": 2408784,
+      "turn_start": false,
+      "text": "And so that's that there's so much work in those areas going on right now that I think will continue to advance and progress going forward.",
+      "n": 338,
+      "time": "40:08",
+      "words": 26
+    },
+    {
+      "start": 2417302,
+      "turn_start": true,
+      "text": "Thanks so much for coming, my name is Derek, I'm an MBA one.",
+      "n": 339,
+      "time": "40:17",
+      "words": 13
+    },
+    {
+      "start": 2419900,
+      "turn_start": false,
+      "text": "I'm also from Taiwan, so a huge inspiration to me, and my question is, Apple, earlier today, announced a $500 billion plan to bring AI server assembly back to the US, especially under the current administration.",
+      "n": 340,
+      "time": "40:19",
+      "words": 36
+    },
+    {
+      "start": 2434341,
+      "turn_start": false,
+      "text": "How do you view the future of semiconductor manufacturing here in the US, and more importantly, what role does Taiwan, to play in that process?",
+      "n": 341,
+      "time": "40:34",
+      "words": 25
+    },
+    {
+      "start": 2441466,
+      "turn_start": true,
+      "text": "Yeah, I think it's a very much top of mind point.",
+      "n": 342,
+      "time": "40:41",
+      "words": 11
+    },
+    {
+      "start": 2447114,
+      "turn_start": false,
+      "text": "And I think the top of mind point for everyone, whether you're talking about US or Taiwan or the European countries is, everyone wants resiliency in their supply chain.",
+      "n": 343,
+      "time": "40:47",
+      "words": 29
+    },
+    {
+      "start": 2460206,
+      "turn_start": false,
+      "text": "And you want to believe that no matter what happens, you have access to the most important components locally in region.",
+      "n": 344,
+      "time": "41:00",
+      "words": 21
+    },
+    {
+      "start": 2469460,
+      "turn_start": false,
+      "text": "And so US manufacturing continues to be a very big topic of conversation.",
+      "n": 345,
+      "time": "41:09",
+      "words": 13
+    },
+    {
+      "start": 2476665,
+      "turn_start": false,
+      "text": "I'm a big believer proponent that we need to bring more semi the conductor manufacturing back to the United States.",
+      "n": 346,
+      "time": "41:16",
+      "words": 20
+    },
+    {
+      "start": 2483493,
+      "turn_start": false,
+      "text": "I'm also a big believer in you can't do it overnight.",
+      "n": 347,
+      "time": "41:23",
+      "words": 11
+    },
+    {
+      "start": 2486304,
+      "turn_start": false,
+      "text": "There are reasons that the supply chain became much, much more efficient for Taiwan.",
+      "n": 348,
+      "time": "41:26",
+      "words": 14
+    },
+    {
+      "start": 2491656,
+      "turn_start": false,
+      "text": "Taiwan today still has the vast majority of all advanced semiconductors, but more of it will move and it's the right thing to do because you need resiliency in the supply chain.",
+      "n": 349,
+      "time": "41:31",
+      "words": 32
+    },
+    {
+      "start": 2501663,
+      "turn_start": false,
+      "text": "So I think with the CHIPS Act that was put in place a few years ago, and then certainly the Trump administration, the new administration is very focused on bringing more manufacturing and investment back to the U.S., I think we're going to see that happen.",
+      "n": 350,
+      "time": "41:41",
+      "words": 46
+    },
+    {
+      "start": 2515860,
+      "turn_start": false,
+      "text": "It'll just take a little bit of time.",
+      "n": 351,
+      "time": "41:55",
+      "words": 8
+    },
+    {
+      "start": 2519552,
+      "turn_start": true,
+      "text": "I'm Iconecas I'm a principal at future ventures at Deep Tech VC, second year, MBA.",
+      "n": 352,
+      "time": "41:59",
+      "words": 15
+    },
+    {
+      "start": 2524260,
+      "turn_start": false,
+      "text": "There's talk of a potential over build in data centers.",
+      "n": 353,
+      "time": "42:04",
+      "words": 10
+    },
+    {
+      "start": 2527114,
+      "turn_start": false,
+      "text": "Microsoft has started to lease their data centers rather than buy, for example.",
+      "n": 354,
+      "time": "42:07",
+      "words": 13
+    },
+    {
+      "start": 2530392,
+      "turn_start": false,
+      "text": "Do you think there is a bubble in this space, and how do you hedge for that case?",
+      "n": 355,
+      "time": "42:10",
+      "words": 18
+    },
+    {
+      "start": 2534584,
+      "turn_start": true,
+      "text": "Yeah, I look at this on a much longer time scale, versus a very tactical time scale.",
+      "n": 356,
+      "time": "42:14",
+      "words": 17
+    },
+    {
+      "start": 2541529,
+      "turn_start": false,
+      "text": "I think on the longer time scale, we need more data centers and we need more power.",
+      "n": 357,
+      "time": "42:21",
+      "words": 17
+    },
+    {
+      "start": 2547282,
+      "turn_start": false,
+      "text": "And frankly, the largest inhibitor over the last 18 months for perhaps even more progress was just the entire supply chain was not ready.",
+      "n": 358,
+      "time": "42:27",
+      "words": 24
+    },
+    {
+      "start": 2558976,
+      "turn_start": false,
+      "text": "We needed more chips.",
+      "n": 359,
+      "time": "42:38",
+      "words": 4
+    },
+    {
+      "start": 2560040,
+      "turn_start": false,
+      "text": "We needed more power, we needed more data centers, and as a result there's more build happening in that area.",
+      "n": 360,
+      "time": "42:40",
+      "words": 20
+    },
+    {
+      "start": 2567820,
+      "turn_start": false,
+      "text": "From my perspective, we are at a place where compute is still the scaling laws would say that more compute will get you better answers and will allow you to to get the technology more adopted, you know, across the across the world.",
+      "n": 361,
+      "time": "42:47",
+      "words": 43
+    },
+    {
+      "start": 2587659,
+      "turn_start": false,
+      "text": "So am more of a bullish on that than not",
+      "n": 362,
+      "time": "43:07",
+      "words": 10
+    },
+    {
+      "start": 2591941,
+      "turn_start": true,
+      "text": "Benji Wolverton, first year undergrad.",
+      "n": 363,
+      "time": "43:11",
+      "words": 5
+    },
+    {
+      "start": 2596046,
+      "turn_start": false,
+      "text": "So Jensen was here two weeks ago, and I asked a question about the kind of monopoly they have on all the kind of hardware used for pre training.",
+      "n": 364,
+      "time": "43:16",
+      "words": 29
+    },
+    {
+      "start": 2605599,
+      "turn_start": false,
+      "text": "Does AMD plan to try and challenge Nvidia on this?",
+      "n": 365,
+      "time": "43:25",
+      "words": 10
+    },
+    {
+      "start": 2609257,
+      "turn_start": false,
+      "text": "And if so, what's the timeline?",
+      "n": 366,
+      "time": "43:29",
+      "words": 6
+    },
+    {
+      "start": 2611391,
+      "turn_start": true,
+      "text": "So let me say I do not believe that there will ever be a case where there's only one technology that's used for something.",
+      "n": 367,
+      "time": "43:31",
+      "words": 24
+    },
+    {
+      "start": 2620823,
+      "turn_start": false,
+      "text": "And look, pre-training is very important, training in general is very important.",
+      "n": 368,
+      "time": "43:40",
+      "words": 12
+    },
+    {
+      "start": 2625371,
+      "turn_start": false,
+      "text": "So, I was going to say Michael to your question earlier.",
+      "n": 369,
+      "time": "43:45",
+      "words": 11
+    },
+    {
+      "start": 2628736,
+      "turn_start": false,
+      "text": "I view this as a continuum between inference, training, reinforcement learning, all of these things require very fundamental similar technologies.",
+      "n": 370,
+      "time": "43:48",
+      "words": 20
+    },
+    {
+      "start": 2642514,
+      "turn_start": false,
+      "text": "So, today there's quite a bit of training that's being done on AMD but you'll see a lot more as we go forward.",
+      "n": 371,
+      "time": "44:02",
+      "words": 23
+    },
+    {
+      "start": 2649244,
+      "turn_start": true,
+      "text": "I'm studying at Stanford for Ignite program, my question is, so since it's just a big chance for AI,do you think it's a good chance for students to start up their own business after graduation duration, or you think it's good challenge for to work for big companies?",
+      "n": 372,
+      "time": "44:09",
+      "words": 48
+    },
+    {
+      "start": 2663532,
+      "turn_start": true,
+      "text": "Yeah, I think there's no one right answer to that, I depends on the person.",
+      "n": 373,
+      "time": "44:23",
+      "words": 15
+    },
+    {
+      "start": 2669161,
+      "turn_start": false,
+      "text": "I think there are benefits to starting your own company, if you want to, if you have a great idea.",
+      "n": 374,
+      "time": "44:29",
+      "words": 20
+    },
+    {
+      "start": 2675678,
+      "turn_start": false,
+      "text": "And you know, certainly, you know, Silicon Valley is a place where lots of startups have been super successful.",
+      "n": 375,
+      "time": "44:35",
+      "words": 19
+    },
+    {
+      "start": 2680997,
+      "turn_start": false,
+      "text": "A.I. is an area where there are lots of startups.",
+      "n": 376,
+      "time": "44:40",
+      "words": 10
+    },
+    {
+      "start": 2682798,
+      "turn_start": false,
+      "text": "Then you have the opportunity to get the funding and support and a lot of mentorship and capability.",
+      "n": 377,
+      "time": "44:42",
+      "words": 18
+    },
+    {
+      "start": 2689261,
+      "turn_start": false,
+      "text": "And there's also lots of advantages to working for a big company.",
+      "n": 378,
+      "time": "44:49",
+      "words": 12
+    },
+    {
+      "start": 2693934,
+      "turn_start": false,
+      "text": "In my world, I've had the opportunity to try so many different things that would be hard to do in a startup environment, and you know, I've learned along the way.",
+      "n": 379,
+      "time": "44:53",
+      "words": 31
+    },
+    {
+      "start": 2705450,
+      "turn_start": false,
+      "text": "So it really depends on what what makes you tick.",
+      "n": 380,
+      "time": "45:05",
+      "words": 10
+    },
+    {
+      "start": 2708346,
+      "turn_start": false,
+      "text": "I will say that I've had a lot of opportunities throughout my career to potentially run smaller companies.",
+      "n": 381,
+      "time": "45:08",
+      "words": 18
+    },
+    {
+      "start": 2714224,
+      "turn_start": false,
+      "text": "And for me, the important thing wasn't I had to get.",
+      "n": 382,
+      "time": "45:14",
+      "words": 11
+    },
+    {
+      "start": 2719318,
+      "turn_start": false,
+      "text": "Get to CEO as fast as possible, like that was not the motivation.",
+      "n": 383,
+      "time": "45:19",
+      "words": 13
+    },
+    {
+      "start": 2723826,
+      "turn_start": false,
+      "text": "I thought I would like to be a CEO, but that wasn't my motivation.",
+      "n": 384,
+      "time": "45:23",
+      "words": 14
+    },
+    {
+      "start": 2727148,
+      "turn_start": false,
+      "text": "My motivation was to work in something where I could make a big difference on the industry.",
+      "n": 385,
+      "time": "45:27",
+      "words": 17
+    },
+    {
+      "start": 2734165,
+      "turn_start": false,
+      "text": "And so for that, I needed a bigger company, because I didn't think I was going to find that in a.",
+      "n": 386,
+      "time": "45:34",
+      "words": 21
+    },
+    {
+      "start": 2739080,
+      "turn_start": false,
+      "text": "A startup, at least to start with.",
+      "n": 387,
+      "time": "45:39",
+      "words": 7
+    },
+    {
+      "start": 2740767,
+      "turn_start": false,
+      "text": "But then again, there's some great examples here in the you know, sort of the, if you look at the, the pipeline of companies that have come up, come out of Stanford, if you look at the pipeline of companies in AI today where you know, people are making tremendous difference, I think either are great options.",
+      "n": 388,
+      "time": "45:40",
+      "words": 57
+    },
+    {
+      "start": 2757346,
+      "turn_start": true,
+      "text": "Thank God.",
+      "n": 389,
+      "time": "45:57",
+      "words": 2
+    },
+    {
+      "start": 2758659,
+      "turn_start": true,
+      "text": "Thank you so much.",
+      "n": 390,
+      "time": "45:58",
+      "words": 4
+    },
+    {
+      "start": 2759243,
+      "turn_start": false,
+      "text": "It's been really fun.",
+      "n": 391,
+      "time": "45:59",
+      "words": 4
+    },
+    {
+      "start": 2760837,
+      "turn_start": false,
+      "text": "It's a view from the top tradition to end with a couple of rapid fire questions.",
+      "n": 392,
+      "time": "46:00",
+      "words": 16
+    },
+    {
+      "start": 2764543,
+      "turn_start": false,
+      "text": "So I'm going to ask you a question and you say the first thought that comes to your mind.",
+      "n": 393,
+      "time": "46:04",
+      "words": 19
+    },
+    {
+      "start": 2767687,
+      "turn_start": true,
+      "text": "Okay.",
+      "n": 394,
+      "time": "46:07",
+      "words": 1
+    },
+    {
+      "start": 2770287,
+      "turn_start": true,
+      "text": "What is one hobby that most people don't know about you?",
+      "n": 395,
+      "time": "46:10",
+      "words": 11
+    },
+    {
+      "start": 2774232,
+      "turn_start": true,
+      "text": "Well, I do like to box for exercise and, I also greatly enjoy Texas Hold'em.",
+      "n": 396,
+      "time": "46:14",
+      "words": 15
+    },
+    {
+      "start": 2782446,
+      "turn_start": false,
+      "text": "[LAUGH] So my sales guys like to play Texas Hold'em with me.",
+      "n": 397,
+      "time": "46:22",
+      "words": 12
+    },
+    {
+      "start": 2786238,
+      "turn_start": true,
+      "text": "I would not want to be on the other side of the table with you.",
+      "n": 398,
+      "time": "46:26",
+      "words": 15
+    },
+    {
+      "start": 2790216,
+      "turn_start": false,
+      "text": "If you weren't leading AMD, what would you be doing?",
+      "n": 399,
+      "time": "46:30",
+      "words": 10
+    },
+    {
+      "start": 2793166,
+      "turn_start": true,
+      "text": "Hopefully improving my golf handicap.",
+      "n": 400,
+      "time": "46:33",
+      "words": 5
+    },
+    {
+      "start": 2796852,
+      "turn_start": false,
+      "text": "My handicap has gotten worse as I've become CEO, so I'd have to have it go the other way again.",
+      "n": 401,
+      "time": "46:36",
+      "words": 20
+    },
+    {
+      "start": 2801141,
+      "turn_start": false,
+      "text": ".",
+      "n": 402,
+      "time": "46:41",
+      "words": 1
+    },
+    {
+      "start": 2802203,
+      "turn_start": true,
+      "text": "Yes, I wouldn't mind an invitation someday if somebody wants to invite me.",
+      "n": 403,
+      "time": "46:42",
+      "words": 13
+    },
+    {
+      "start": 2806805,
+      "turn_start": true,
+      "text": "What is one piece of tech you can't live without?",
+      "n": 404,
+      "time": "46:46",
+      "words": 10
+    },
+    {
+      "start": 2810965,
+      "turn_start": true,
+      "text": "I think as all, we're all stuck to our phone, but probably the thing that I really like is I've really gotten used to using spotify on my phone and it's really nice to be able to kind of carry your stuff everywhere you go so yeah.",
+      "n": 405,
+      "time": "46:50",
+      "words": 47
+    },
+    {
+      "start": 2828896,
+      "turn_start": true,
+      "text": "What is one piece of advice should be broadcast across Stanford?",
+      "n": 406,
+      "time": "47:08",
+      "words": 11
+    },
+    {
+      "start": 2834746,
+      "turn_start": false,
+      "text": "I would say dream big right dream big I mean you guys are like this is the time to have a big, bold, audacious dream and follow your dreams.",
+      "n": 407,
+      "time": "47:14",
+      "words": 29
+    },
+    {
+      "start": 2848258,
+      "turn_start": true,
+      "text": "And finally, one word to describe AMD's future?",
+      "n": 408,
+      "time": "47:28",
+      "words": 8
+    },
+    {
+      "start": 2851530,
+      "turn_start": true,
+      "text": "Phenomenal.",
+      "n": 409,
+      "time": "47:31",
+      "words": 1
+    },
+    {
+      "start": 2852608,
+      "turn_start": true,
+      "text": "Lisa, it's been an absolute privilege.",
+      "n": 410,
+      "time": "47:32",
+      "words": 6
+    },
+    {
+      "start": 2853731,
+      "turn_start": false,
+      "text": ".",
+      "n": 411,
+      "time": "47:33",
+      "words": 1
+    },
+    {
+      "start": 2853731,
+      "turn_start": false,
+      "text": "Thank you so much.",
+      "n": 412,
+      "time": "47:33",
+      "words": 4
+    },
+    {
+      "start": 2856972,
+      "turn_start": false,
+      "text": "Thank you.",
+      "n": 413,
+      "time": "47:36",
+      "words": 2
+    }
+  ]
+}

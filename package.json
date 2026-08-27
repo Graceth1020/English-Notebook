@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "node tools/import-rephrase.js && hexo generate",
+    "build": "node tools/import-rephrase.js && node tools/import-coach.js && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "preview": "node tools/import-rephrase.js && hexo server"
+    "preview": "node tools/import-rephrase.js && node tools/import-coach.js && hexo server"
   },
   "hexo": {
     "version": "8.1.2"

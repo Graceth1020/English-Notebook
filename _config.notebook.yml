@@ -11,6 +11,7 @@ description: "Personal English Learning Notes"
 menu:
   Home: null
   Archive: null
+  Coach: /coach
   Rephrase: /rephrase
   Notes: /notes
   Tags: /
@@ -35,3 +36,4 @@ index:
 # === Footer copyright ===
 copyright:
   since: 2026
+

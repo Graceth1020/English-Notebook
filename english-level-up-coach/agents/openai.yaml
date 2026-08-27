@@ -1,0 +1,4 @@
+interface:
+  display_name: "English Level-Up Coach"
+  short_description: "20-30 min English lessons with one goal, error log, and weekly review"
+  default_prompt: "Use $english-level-up-coach to start today's lesson."

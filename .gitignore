@@ -20,3 +20,12 @@ source/_posts/Rephrase/
 source/rephrase/
 source/notes/
 source/_data/rephrase.json
+
+# Generated coach site content (recreated by tools/import-coach.js)
+source/_posts/Coach/
+source/coach/
+source/_data/coach.json
+
+# Raw dropped material
+coach/inbox/
+

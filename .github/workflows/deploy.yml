@@ -36,6 +36,9 @@ jobs:
       - name: Import rephrase content
         run: node tools/import-rephrase.js
 
+      - name: Import coach content
+        run: node tools/import-coach.js
+
       - name: Build Hexo site
         run: npx hexo generate
 
