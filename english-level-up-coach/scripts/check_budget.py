@@ -12,11 +12,11 @@ from __future__ import annotations
 import re
 import sys
 
-# Three turns, one learner reply each, no retries. A fourth turn is added only when
-# the learner asks, which raises the word cap; pass --turns-allowed 4 in that case.
+# Two turns, one learner reply each, no retries. A third turn is added only when
+# the learner asks, which raises the word cap; pass --turns-allowed 3 in that case.
 CAPS = {
     "coach_words": 900,
-    "turns": 3,
+    "turns": 2,
     "fixes_per_reply": 3,
     "retries": 0,
 }
@@ -69,7 +69,7 @@ def main() -> int:
     check("turns", turns, turns_allowed, "learner did not ask for an extra turn")
     if turns:
         per_turn = round(turn_coach_words / turns)
-        check("coach words per turn", per_turn, CAPS["coach_words"] // CAPS["turns"], "shorten corrections")
+        check("coach words per turn", per_turn, 300, "shorten corrections")
         retries = max(0, attempts - turns)
         check("retries (extra replies)", retries, CAPS["retries"],
               "one reply per turn; correct and move on")
@@ -151,9 +151,15 @@ def main() -> int:
         ok = False
     print(f"  [{flag}] elliptical '-> ...' replacements: {ellipsis} (must be 0)")
 
+    # Each turn carries fixed coach overhead (prompt + fixes + model + native verdict) that does
+    # not shrink when turns are cut, while the learner's volume does. So the ratio cap scales with
+    # turn count: 4:1 at three turns, 5:1 at two. Tightening it further would only delete
+    # corrections, which is the opposite of the intent.
+    ratio_cap = 5 if turns <= 2 else 4
     ratio = turn_coach_words / max(learner_words, 1)
-    print(f"  [{'OK  ' if ratio <= 4 else 'OVER'}] coach:learner word ratio: {ratio:.1f}:1 (aim <= 4:1)")
-    if ratio > 4:
+    print(f"  [{'OK  ' if ratio <= ratio_cap else 'OVER'}] coach:learner word ratio: {ratio:.1f}:1 "
+          f"(aim <= {ratio_cap}:1 at {turns} turns)")
+    if ratio > ratio_cap:
         ok = False
 
     print(f"\n  learner words: {learner_words} across {attempts} reply/replies")

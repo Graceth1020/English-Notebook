@@ -23,11 +23,12 @@ Arc reference: `english-level-up-coach/references/curriculum.md`
 | 02 | 1 | 2026-08-25 | Give your own number and hold it | Lisa Su seg 8 (29:55-32:35) | 3 turns | reviewed |
 | 03 | 1 | 2026-08-26 | Report bad news: impact first, no apology | Lisa Su seg 6 (23:25-25:25) | 3 turns | reviewed |
 | 04 | 1 | 2026-08-27 | Answer first, explain second | Lisa Su seg 12 (42:10-45:50) | 3 turns | reviewed |
+| 05 | 1 | 2026-08-28 | Hold a position when challenged | Lisa Su seg 5 (18:04-23:15) | 2 turns | reviewed |
 
 ## Active Material
 
 - `coach/materials/lisa-su-stanford/` - Stanford interview with Lisa Su (AMD CEO),
-  47:38, split into 13 segments in `series.md`. Segments 6, 7, 8, 12 used for Lessons 03, 01, 02, 04.
+  47:38, split into 13 segments in `series.md`. Segments 5, 6, 7, 8, 12 used for Lessons 05, 03, 01, 02, 04.
 
 ## Carried-Over Error Focus
 
@@ -51,9 +52,10 @@ Seeded in `coach/errors.md` from the learner's earlier rephrase practice
   learner's wording; reordering advice goes on its own line. Lesson files hold teaching
   content only - no process meta-commentary.
 - Site renders with `marked.breaks: false`, so hard-wrapped source reflows as prose.
-- Volume: **3 turns per lesson, one reply each, no retries.** Each turn is a fresh
-  scenario; the coach corrects the single reply, gives a model sentence, and moves on.
-  A fourth turn is added only when the learner asks during the session.
+- Volume: **2 turns per lesson, one reply each, no retries** (changed from 3 after
+  Lesson 05). Each turn is a fresh scenario; the coach corrects the single reply, gives a
+  model sentence, and moves on. A third turn is added only when the learner asks during
+  the session.
 - Listening input comes only from the learner's own video material; no audio is
   generated. Lesson material carries `?t=` links for re-listening.
 - Weekly review lesson (every 6th session) is driven by

@@ -1,4 +1,4 @@
 interface:
   display_name: "Language Notes"
-  short_description: "Daily English notes: translate, define, parse, compare"
+  short_description: "Daily English notes: translate, spoken, define, parse, compare"
   default_prompt: "Use $language-notes to translate this sentence into English: 今天天气很好"

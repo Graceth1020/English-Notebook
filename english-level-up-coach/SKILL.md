@@ -29,7 +29,7 @@ bank. Read `references/lesson-format.md` before teaching any lesson. Read
    files, wrap Chinese in `<details><summary>中文说明</summary>...</details>`.
 2. **One lesson = 20-30 minutes of the learner's time, one single small goal.**
    Name the goal explicitly ("Today: only how to disagree naturally"). Never
-   stack goals. Budget **~750 coach words, 3 turns, 3 fixes per reply, 6 logged
+   stack goals. Budget **~900 coach words, 2 turns, 3 fixes per reply, 6 logged
    errors** - a lesson the learner needs two hours to read has failed regardless
    of content quality. **One learner reply per turn and no retries**: correct it,
    give the model, move on. See the hard caps in

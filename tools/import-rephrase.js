@@ -311,6 +311,7 @@ function parseNotes() {
 
 function inferNoteType(fields) {
   if (fields['Word']) return 'define';
+  if (fields['Input'] && fields['Expressions']) return 'spoken';
   if (fields['Input'] && fields['Output']) return 'translate';
   if (fields['Original'] && fields['Versions']) return 'rephrase';
   if (fields['Sentence 1'] && fields['Sentence 2']) return 'compare';

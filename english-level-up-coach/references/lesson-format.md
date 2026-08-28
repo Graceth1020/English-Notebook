@@ -10,7 +10,7 @@ on the spot.
 | --- | --- | --- | --- |
 | 1. Warm-up | 2 | ~60 | One quick exchange; recycle a prior error |
 | 2. Input | 4-5 | ~250 | 3-4 target lines, minimal commentary |
-| 3. Dialogue | 10-12 | ~200 per turn | Three turns, one reply each |
+| 3. Dialogue | 8-10 | ~200 per turn | Two turns, one reply each |
 | 4. Recap | 2-3 | ~200 | The three closing sections |
 
 **Hard caps per lesson.** Exceeding these makes the lesson unusable even when the
@@ -18,9 +18,9 @@ content is good:
 
 - **Coach words: ~750 total.** The learner reads at a fraction of native speed;
   1800 words of feedback is a reading assignment, not a conversation.
-- **Turns: 3, one learner reply each.** Three prompts, three replies, three
-  corrections - then the recap. Do not open a fourth turn unprompted; the learner
-  adds one only by asking ("再加一轮" / "add another turn").
+- **Turns: 2, one learner reply each.** Two prompts, two replies, two corrections -
+  then the recap. Do not open a third turn unprompted; the learner adds one only by
+  asking ("再加一轮" / "add another turn").
 - **Fixes: at most 3 per learner reply**, and at most **8 logged errors per
   lesson**. Beyond that nothing is retained and the error log becomes noise.
 - **Retries: none.** Each turn gets exactly one learner reply. Correct it, give the
@@ -30,10 +30,11 @@ content is good:
 - **One inline comment per fix.** No sub-bullets, no "smaller ones" list, no
   alternative phrasings beyond a single model.
 
-A lesson should end in 20-30 minutes of the learner's time. If the coach is
-writing more than the learner, the lesson has failed. Aim for rough parity: the
-learner's three replies should be comparable in volume to the coach's prompts and
-corrections.
+A lesson should end in 20-30 minutes of the learner's time. If the coach is writing far
+more than the learner, the lesson has failed. The coach:learner ratio inside the turns
+should stay at or under **5:1 for a two-turn lesson** (4:1 if a third turn is added) - each
+turn carries fixed overhead that does not shrink when turns are cut, so the cap scales with
+turn count rather than forcing corrections to be deleted.
 
 ### What to drop first when over budget
 
@@ -41,7 +42,7 @@ corrections.
 2. P3 polish items - articles, minor word order, stylistic variety.
 3. Praise beyond one specific clause.
 4. Chinese glosses for anything not genuinely abstract.
-5. The third turn - two solid turns beat three rushed ones.
+5. Depth of the second turn's correction - one solid turn beats two rushed ones.
 
 Never drop: the single P1 fix per turn, the learner's verbatim reply in the file,
 or the recap.
@@ -88,14 +89,15 @@ Each turn:
    same skill - do not re-run the same prompt.
 6. Move to the next turn.
 
-Plan **3 turns** from the workplace scenario bank, escalating: a lower-stakes prompt
+Plan **2 turns** from the workplace scenario bank, escalating: a lower-stakes prompt
 first, then one with real pressure - pushing back against seniority, cost, or a false
-assumption. Each turn is a fresh scenario, so the same skill gets three independent
+assumption. Each turn is a fresh scenario, so the same skill gets two independent
 attempts instead of one prompt drilled repeatedly.
 
 Because there are no retries, each turn must stand alone: the learner's single reply
-is the whole performance, and the correction plus model closes it. Sequence the turns
-so a miss in turn 1 has somewhere to be re-attempted naturally in turn 2 or 3.
+is the whole performance, and the correction plus model closes it. With only two turns,
+turn 1 should be the lower-stakes version of the skill and turn 2 the one under real
+pressure, so a miss in turn 1 has somewhere to be re-attempted.
 
 Follow-ups matter more than fresh prompts. If a reply is vague, ask *"what would
 you actually say to them?"* rather than moving on. Stay on one scenario for two

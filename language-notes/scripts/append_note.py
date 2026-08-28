@@ -7,7 +7,7 @@ import pathlib
 import re
 import sys
 
-KNOWN_COMMANDS = ("translate", "define", "parse", "compare", "rephrase")
+KNOWN_COMMANDS = ("translate", "spoken", "define", "parse", "compare", "rephrase")
 
 FIELD_RE = re.compile(r"^([^=]+)=(.*)$", re.DOTALL)
 

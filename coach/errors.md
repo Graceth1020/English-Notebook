@@ -54,9 +54,15 @@ Rows are resolved only after the correct form appears unprompted.
 | E046 | passive missing be (will send / will not be sent) | grammar | all notifications backlogged will send by a task | will be sent by a task | 03 | 1 | open | 2026-08-29 |
 | E047 | over-explains before answering the question asked | function | The code change had been completed. But during the testing... | No - I held it. ... QA sign-off by Friday. | 03 | 1 | open | 2026-08-29 |
 | E048 | impact on as a verb | calque | In order not to impact on the production environment | I didn't want to break prod | 03 | 1 | open | 2026-08-29 |
-| E049 | states a decision as a preference (I prefer...) | function | I prefer to use PostgreSQL for the audit-log service | Postgres. | 04 | 1 | open | 2026-08-30 |
+| E049 | states a decision as a preference (I prefer...) | function | I prefer to use PostgreSQL for the audit-log service | Postgres. | 04 | 2 | open | 2026-09-04 |
 | E050 | deference undoes own stated position | tone | I work for the company, not the company works for me | that's where I'd add the most value here | 04 | 1 | open | 2026-08-30 |
 | E051 | need not to (formal + wrong to) | grammar | we need not to deploy a new database service | we don't need to deploy a new database service | 04 | 1 | open | 2026-08-30 |
 | E052 | I'm glad (pleased) vs I'd be glad (willing) | grammar | I'm also glad to learn anything new on backend | I'd be glad to pick up whatever's new | 04 | 1 | open | 2026-08-30 |
 | E053 | passive receive hides the blocker | function | If I can receive the spec this week | If legal gets me the spec this week | 04 | 1 | open | 2026-08-30 |
 | E054 | ordinal dates without the | grammar | will be done by 10th ... by 25th | by the 10th ... by the 25th | 04 | 1 | open | 2026-08-30 |
+| E055 | dismisses a senior's experience instead of conceding the concern | tone | Your pass experience is right, but it's not suited for our system | That's fair, and I'd rather not migrate under pressure either - but our numbers are different | 05 | 1 | open | 2026-08-31 |
+| E056 | empty framing verb around a number | function | 2M rows a day is given according to our current situation | We're at 2M rows a day, and monthly partitions handle that | 05 | 1 | open | 2026-08-31 |
+| E057 | as vs as for | preposition | As the bottleneck on write throughput problem | As for the write-throughput bottleneck | 05 | 1 | open | 2026-08-31 |
+| E058 | have the ability to (heavy paraphrase of can) | collocation | doesn't have strong ability to support mutil-table queries | doesn't do multi-table queries well | 05 | 1 | open | 2026-08-31 |
+| E059 | concedes a premise wholesale instead of splitting it | function | Audit logs are exactly the write-heavy, schema-flexible workload document stores are built for | Agreed on the schema flexibility - but our schema is fixed | 05 | 1 | open | 2026-08-31 |
+| E060 | dangling to solve / to do at clause end | grammar | we can design a new solution like backup old data regularly to solve | we can partition and archive old data | 05 | 1 | open | 2026-08-31 |
