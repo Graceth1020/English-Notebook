@@ -354,6 +354,51 @@ scaffolding - no numbered prompt lists, no blank answer slots, no homework
 section, no separate correction round outside the turns. Corrections live inside
 the turn that produced them.
 
+## Logging an Error So It Can Be Drilled Later
+
+Every logged error becomes a drill card on the `/coach` page, and the learner meets it weeks
+later with no memory of the conversation. A row must be **answerable on its own**.
+
+Rows are filed by **what the learner must produce**, never by the linguistic name of the
+mistake. This matters: a row tagged `phrasal-verb` pulls the answer towards a list of words
+(`go through / push back / move out`), which cannot be rehearsed. A row tagged `act` forces a
+whole reply, which can.
+
+| Bucket | The card asks for | Model length |
+| --- | --- | --- |
+| `act` | a real situation; the learner says a whole reply | 2-4 sentences |
+| `phrasing` | a situation; the learner says one natural sentence | 1 sentence |
+| `form` | a broken sentence; the learner says it corrected | 1 sentence |
+
+```bash
+python scripts/coach_log.py add --bucket act --skill "push back with your own number" \
+  --situation "Your manager says the fix should take two days. You know it needs a week." \
+  --say "I'd put it closer to a week" \
+  --model "I'd put it closer to a week. The code itself is a two-day job, but it touches \
+the notification path, so most of the time goes into testing." \
+  --hint "Lead with your number, then the reason." \
+  --trap "two days is not enough" --lesson NN
+```
+
+- **`--skill` names the ability, not the mistake.** `push back with your own number`, not
+  `pushes back without giving own number`. The first can be practised; the second can only
+  be recognised.
+- **`--situation` is required.** One line, from the learner's point of view. Rows without it
+  are excluded from the drill.
+- **`--model` is the whole thing to say out loud** - never a slash-separated menu of options
+  and never an instruction. If several expressions belong together, put them in one `act`
+  model that uses all of them in context.
+- **`--say` is the key expression** being tested, shown beside the model after the reveal.
+- **`--trap` is the old wrong version.** It stays hidden until the reveal for `act` and
+  `phrasing` rows, because reading your own error first rehearses the error. For `form`
+  rows it is the question itself, so it is shown up front.
+
+Only log a pattern the learner has produced **more than once**, or that is clearly a
+transferable habit. One-off slips inflate the queue and crowd out the real backlog.
+
+Test before logging: *if I saw only the situation and the hint, could I produce the model?*
+If not, the row is a note, not a drill item.
+
 ## Weekly Review Lesson
 
 Every sixth session. Same shape, but the dialogue prompts are built from the

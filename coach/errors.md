@@ -1,68 +1,31 @@
 # Error Log
 
-Errors the learner actually produced, with the natural version and a
-spaced review date. `Hits` counts how many times the pattern recurred.
-Rows are resolved only after the correct form appears unprompted.
+Patterns the learner actually produced more than once, rewritten as drillable
+cards. Rows are grouped by what you must produce when the card comes up:
 
-| ID | Pattern | Category | You said | Say instead | Lesson | Hits | Status | Next review |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| E001 | function drift: rephrases the idea, not the act | function | let me figure it out (for 'get this straight') | Let me get this straight - you're saying X? | seed | 2 | open | 2026-08-31 |
-| E002 | phrasal verb goes blank | phrasal-verb | (no attempt) | go through / push back / move out / follow up | seed | 3 | open | 2026-09-10 |
-| E003 | fixed phrase flattened to plain words | fixed-phrase | during my life | back in my day | seed | 1 | open | 2026-08-27 |
-| E004 | bookish register in speech | register | method / approval / moreover | way / sign-off / and also | seed | 2 | open | 2026-09-03 |
-| E005 | Chinese calque | calque | my heart / make it | I'd love that / I'm on it | seed | 3 | open | 2026-09-10 |
-| E006 | collocation: wrong verb for noun | collocation | play a joke / greet to / cause anything bad | pull a prank / say hi to / cause any problems | seed | 1 | open | 2026-08-27 |
-| E007 | copies the prompt verbatim | other | (returns source sentence) | rebuild the frame in your own words | seed | 3 | open | 2026-09-10 |
-| E008 | article with uncountable noun | grammar | a long-term backend developing experience / a large scale traffic | solid backend experience / large-scale traffic | 01 | 3 | open | 2026-09-10 |
-| E009 | ineffective vs inefficient | other | The select query SQL is ineffective | the query is inefficient | 01 | 1 | open | 2026-08-27 |
-| E010 | question for issue/problem | calque | the core question is on the application layer | the root cause is in the application layer | 01 | 1 | open | 2026-08-27 |
-| E011 | purpose clause: in order for X to Y | grammar | in order the system can easily migrate a microservice architecture | so that we can migrate to microservices later | 01 | 2 | open | 2026-09-01 |
-| E012 | pushes back without giving own number | function | two days is not enough | I'd put it closer to a week | 01 | 3 | open | 2026-09-10 |
-| E013 | will + adjective, missing 'be' | grammar | I'll happy to accept it | I'd be happy to go with your call | 01 | 2 | open | 2026-09-03 |
-| E014 | premature capitulation in disagreement | tone | If you stick to your thought, I'll happy to accept it | Happy to talk it through if you still prefer inheritance | 01 | 2 | open | 2026-09-01 |
-| E015 | be + adjective: 'I am worry' | grammar | I am worry about the scale of team | I'm worried about the size of the team | 01 | 1 | open | 2026-08-27 |
-| E016 | circular proposal: restates what you argued against | other | design our system by using microservice concepts ... to migrate to microservice architecture | keep it a modular monolith with clean boundaries | 01 | 1 | open | 2026-08-27 |
-| E017 | over-apologizing / self-diminishing opener | tone | I'm sorry for making misunderstanding | Sorry, I wasn't clear - let me put it differently | 01 | 3 | open | 2026-09-11 |
-| E018 | answers a different question than the one asked | function | (asked what we avoid paying for; answered who owns which module) | name the specific cost avoided, then add the extra benefit | 01 | 1 | open | 2026-08-27 |
-| E019 | plural after 'each of' | grammar | each of our four teammate | each of the four of us / each of our four teammates | 01 | 1 | open | 2026-08-27 |
-| E020 | broken correlative: the more X, the -er Y | grammar | The more services we have, the long call chain it will | the more services we add, the longer the call chain gets | 01 | 1 | open | 2026-08-28 |
-| E021 | calque: meet a problem | calque | two problems we'll meet | two problems we'd run into / hit | 01 | 1 | open | 2026-08-28 |
-| E022 | imprecise technical term | register | network delay | network latency | 01 | 1 | open | 2026-08-28 |
-| E023 | same thought WITH you (preposition) | preposition | I had the same thought with you | I thought the same thing / the same as you | 01 | 1 | open | 2026-08-28 |
-| E024 | word repetition in one sentence | register | The logic of querying issues has significant issues | the query logic has a real problem | 01 | 1 | open | 2026-08-28 |
-| E025 | vague fix instead of naming the fix | function | optimizing the application layer code | batching it into a single query with a join | 01 | 1 | open | 2026-08-28 |
-| E026 | exceptional for unusual/abnormal | calque | this exceptional metric | that spike / those numbers looked off | 01 | 1 | open | 2026-08-28 |
-| E027 | demonstrative + plural mismatch | grammar | See this code snippets | Take a look at this snippet / these snippets | 01 | 1 | open | 2026-08-28 |
-| E028 | gives mechanism but omits effort estimate | function | using a batch query. Like each batch contains only 500 orders. | batch it in chunks of 500 - about half a day | 01 | 2 | open | 2026-09-01 |
-| E029 | concedes their number then contradicts it | function | Two days is enough for correcting the code logic. However, the logic here is very complicated. | Two days covers the code change itself, but not the testing around it | 02 | 1 | open | 2026-08-28 |
-| E030 | calque: related influence / analyze the influence | calque | analyze the related influence | check what else it affects / trace the downstream impact | 02 | 1 | open | 2026-08-28 |
-| E031 | restates the number instead of justifying it | function | Two days is too short and a week is enough. | cut the restatement; give the reason instead | 02 | 1 | open | 2026-08-28 |
-| E032 | overly forceful modal: 'we must' | register | we must trace the downstream impact | we'd need to / we also have to | 02 | 1 | open | 2026-08-28 |
-| E033 | at the same time as filler | calque | trace the downstream impact at the same time | (drop it) / on top of that | 02 | 1 | open | 2026-08-28 |
-| E034 | gerund vs infinitive as subject | grammar | Add a new channel will bring some complexity | Adding a new channel would bring / That would add | 02 | 1 | open | 2026-08-28 |
-| E035 | no number for the new scope | function | It seems a week is too short to complete this | SMS is about three days on its own | 02 | 1 | open | 2026-08-28 |
-| E036 | hedge stack weakens a firm position | tone | It seems a week is too short | A week doesn't cover SMS | 02 | 1 | open | 2026-08-28 |
-| E037 | reuses coach's model phrasing verbatim | other | I'd rather ship the batching fix this week and complete the SMS ticket next week | rebuild in own words; borrow the frame, not the sentence | 02 | 1 | open | 2026-08-28 |
-| E038 | justifies estimate by own inadequacy, not the work | tone | I just touch this system for half a year, I should analyze the downstream impact carefully. So a week is a more reasonable length for me. | The week isn't about speed - it's what the change touches | 02 | 2 | open | 2026-09-02 |
-| E039 | present simple for duration (needs present perfect) | grammar | I just touch this system for half a year | I've only been working on this system for six months | 02 | 1 | open | 2026-08-28 |
-| E040 | professional for skilled/experienced | calque | she is really more professional than me | she knows this system better than I do | 02 | 1 | open | 2026-08-28 |
-| E041 | cost vs take for time | calque | he will cost a week | it'll take a week | 02 | 1 | open | 2026-08-28 |
-| E042 | so that (result) used for purpose/need | grammar | will be changed so that I should confirm | changes, so we need to confirm | 02 | 1 | open | 2026-08-28 |
-| E043 | generic 'he' for unknown person | register | No matter who does this job, he will... | whoever does it / anyone doing this | 02 | 1 | open | 2026-08-28 |
-| E044 | it's my fault to do (instead of should have + p.p.) | fixed-phrase | It's my fault not to flag it | I should have flagged it Monday | 03 | 1 | open | 2026-08-29 |
-| E045 | promises character instead of a mechanism | function | I'll never make such a mistake whenever the same situation happens | From now on, if I turn anything off in prod, I'll post it the same day | 03 | 1 | open | 2026-08-29 |
-| E046 | passive missing be (will send / will not be sent) | grammar | all notifications backlogged will send by a task | will be sent by a task | 03 | 1 | open | 2026-08-29 |
-| E047 | over-explains before answering the question asked | function | The code change had been completed. But during the testing... | No - I held it. ... QA sign-off by Friday. | 03 | 1 | open | 2026-08-29 |
-| E048 | impact on as a verb | calque | In order not to impact on the production environment | I didn't want to break prod | 03 | 1 | open | 2026-08-29 |
-| E049 | states a decision as a preference (I prefer...) | function | I prefer to use PostgreSQL for the audit-log service | Postgres. | 04 | 2 | open | 2026-09-04 |
-| E050 | deference undoes own stated position | tone | I work for the company, not the company works for me | that's where I'd add the most value here | 04 | 1 | open | 2026-08-30 |
-| E051 | need not to (formal + wrong to) | grammar | we need not to deploy a new database service | we don't need to deploy a new database service | 04 | 1 | open | 2026-08-30 |
-| E052 | I'm glad (pleased) vs I'd be glad (willing) | grammar | I'm also glad to learn anything new on backend | I'd be glad to pick up whatever's new | 04 | 1 | open | 2026-08-30 |
-| E053 | passive receive hides the blocker | function | If I can receive the spec this week | If legal gets me the spec this week | 04 | 1 | open | 2026-08-30 |
-| E054 | ordinal dates without the | grammar | will be done by 10th ... by 25th | by the 10th ... by the 25th | 04 | 1 | open | 2026-08-30 |
-| E055 | dismisses a senior's experience instead of conceding the concern | tone | Your pass experience is right, but it's not suited for our system | That's fair, and I'd rather not migrate under pressure either - but our numbers are different | 05 | 1 | open | 2026-08-31 |
-| E056 | empty framing verb around a number | function | 2M rows a day is given according to our current situation | We're at 2M rows a day, and monthly partitions handle that | 05 | 1 | open | 2026-08-31 |
-| E057 | as vs as for | preposition | As the bottleneck on write throughput problem | As for the write-throughput bottleneck | 05 | 1 | open | 2026-08-31 |
-| E058 | have the ability to (heavy paraphrase of can) | collocation | doesn't have strong ability to support mutil-table queries | doesn't do multi-table queries well | 05 | 1 | open | 2026-08-31 |
-| E059 | concedes a premise wholesale instead of splitting it | function | Audit logs are exactly the write-heavy, schema-flexible workload document stores are built for | Agreed on the schema flexibility - but our schema is fixed | 05 | 1 | open | 2026-08-31 |
-| E060 | dangling to solve / to do at clause end | grammar | we can design a new solution like backup old data regularly to solve | we can partition and archive old data | 05 | 1 | open | 2026-08-31 |
+- `act`     - a real situation; you say a whole reply, 2-4 sentences
+- `phrasing`- a situation; you say one natural sentence
+- `form`    - a broken sentence; you say it corrected
+
+`Skill` names the ability, not the mistake. `Model` is the full thing to say out
+loud. `Say` is the key expression being tested. `Trap` is the old wrong version
+and is hidden until after the reveal, so reading it never rehearses the error.
+Rows resolve only after the correct form appears unprompted.
+
+| ID | Bucket | Skill | Situation | Say | Model | Hint | Trap | Lesson | Hits | Status | Next |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| E002 | act | use phrasal verbs across a whole reply | Your teammate sends their design doc plus a request to add SMS this sprint. You will read the doc today, you are rejecting SMS for this sprint, and you will come back to them after. Reply on Slack. | go through / push back / move out / follow up | Sure - I'll go through the doc this afternoon. On SMS though, I've got to push back: it needs phone validation and retry logic, so I'd rather move it out to next sprint. I'll follow up once I've read the doc. | Four two-word verbs: review it / reject it / postpone it / come back to them. | used plain verbs - review, refuse, delay, contact | seed | 3 | open | 2026-08-30 |
+| E007 | act | rebuild the idea in your own words | You were given a model answer for pushing back on a deadline. Now your PM asks the same question in a real meeting. Answer without reusing the model wording. | rebuild the frame in your own words | Realistically that's a week, not two days. The change touches the notification path, so I need time to make sure nothing double-fires. | Keep the structure - number first, reason second. Change every word. | repeated the model sentence back word for word | seed | 3 | open | 2026-08-30 |
+| E014 | act | accept a call but leave the door open | You argued for composition; a senior engineer still wants inheritance. Accept their decision without closing the discussion. | Happy to talk it through if you still prefer inheritance | Fair enough - let's go with inheritance for now. Happy to talk it through again if the provider list grows; that's the case where composition would pay off. | Accept the call, then name the condition that would reopen it. | If you stick to your thought, I'll happy to accept it | 01 | 2 | open | 2026-08-30 |
+| E028 | act | give the mechanism and the timeline together | You are proposing a batching fix for a slow query. Your manager asks how long it will take. Answer with both parts. | batch it in chunks of 500 - about half a day | We batch the expiry query in chunks of 500 instead of firing one query per order. That's about half a day to write, plus a day of testing. | Mechanism alone invites "and how long?". Give both in one breath. | using a batch query. Like each batch contains only 500 orders. | 01 | 2 | open | 2026-08-30 |
+| E049 | act | state a decision, not a preference | Your tech lead asks for your call on Postgres vs Mongo for the audit-log service. Give your decision. | Postgres. | Postgres. The logs are append-only with a fixed schema, and reporting needs multi-table joins. We already run it in production, so there's no new service to operate. | They asked for a call. Lead with the answer word, then the reasons. | I prefer to use PostgreSQL for the audit-log service | 04 | 2 | open | 2026-08-30 |
+| E001 | phrasing | check understanding with a fixed frame | A colleague finishes walking through their sprint plan and you lost the middle part. Confirm the whole thing from the start. | Let me get this straight - you're saying X? | Let me get this straight - you're saying we ship the API first, then migrate the data next sprint? | One fixed frame means "confirm my understanding". It is not "figure out". | let me figure it out | seed | 2 | open | 2026-08-30 |
+| E004 | phrasing | swap written words for spoken ones | In standup you want to say the PM approved a better method, and add one more point in favour. Say it the way people actually talk. | way / sign-off / and also | We got the PM's sign-off on a better way to do it - and also, it saves us a migration. | method -> way. approval -> sign-off. moreover -> and also. | method / approval / moreover | seed | 2 | open | 2026-08-30 |
+| E005 | phrasing | accept an invitation naturally | A colleague invites you to the team dinner on Friday. You want to go. What do you say? | I'd love that | I'd love that - count me in. | English separates the feeling from the action. Do not translate 心动 directly. | translated 我心动了 word for word | seed | 3 | open | 2026-08-30 |
+| E008 | form | no article with an uncountable noun | You are describing your background and the traffic your system handles. | solid backend experience / large-scale traffic | I've got solid backend experience, and we handle large-scale traffic. | experience and traffic are uncountable here - drop the article. | I have a long-term backend developing experience and we handle a large scale traffic | 01 | 3 | open | 2026-08-30 |
+| E011 | form | so that + clause for purpose | You are explaining why you want clean module boundaries now. | so that we can migrate to microservices later | I'd keep the module boundaries clean now, so that we can migrate to microservices later without a rewrite. | "in order" needs "for X to Y". Simpler: just use "so that". | in order the system can easily migrate a microservice architecture | 01 | 2 | open | 2026-08-30 |
+| E013 | form | be + adjective after will / would | You are closing a disagreement and accepting the other person's call. | I'd be happy to go with your call | I'd be happy to go with your call on this one. | happy is an adjective - it needs "be" after will or would. | I'll happy to accept it | 01 | 2 | open | 2026-08-30 |
+| E038 | act | justify an estimate by the work, not yourself | Your PM says a senior colleague could do this in two days. You still need a week. Explain why without mentioning your own experience level. | The week isn't about speed - it's what the change touches | The week isn't about speed - it's what the change touches. Anyone doing this has to verify the downstream jobs don't double-fire, and that's where the time goes. | Talk about the change. Never about how long you've been on the team. | I just touch this system for half a year, so a week is reasonable for me | 02 | 2 | resolved | - |
+| E012 | act | push back with your own number | Your manager says the fix should take two days. You have analysed it and it needs a week. Respond. | I'd put it closer to a week | I'd put it closer to a week. The code itself is a two-day job, but it touches the notification path, so most of the time goes into testing that nobody gets double-notified. | Lead with your number, then the reason. Never only reject theirs. | two days is not enough | 01 | 3 | resolved | - |
+| E017 | act | clarify without apologizing | A colleague misread your proposal and asks what you actually meant. Correct the misunderstanding without apologizing for their reading. | Sorry, I wasn't clear - let me put it differently | Sorry, I wasn't clear - let me put it differently. I'm not saying we drop microservices. I'm saying we keep a modular monolith now so we can split it cleanly later. | Own the clarity, not their comprehension. One short sorry, then move on. | I'm sorry for making misunderstanding | 01 | 3 | resolved | - |
+| E047 | act | answer first, explain second | Your manager asks whether the batching fix went out yesterday. It did not - you found a bug during testing. Answer. | No - I held it. | No - I held it. Testing showed some users getting double-notified, so I didn't want to ship it. The fix is in review and it goes out Friday. | Yes or no inside the first three words. Explanation after, never before. | The code change had been completed. But during the testing... | 03 | 2 | resolved | - |

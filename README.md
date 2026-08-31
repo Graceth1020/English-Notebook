@@ -2,16 +2,117 @@
 
 Personal English learning notes powered by [hexo-notebook-theme](https://github.com/Graceth1020/hexo-notebook-theme).
 
-## Rephrase practice site
+This repo holds both the **practice data** and the **Codex skills** that
+produce it. The skills live here so they are versioned alongside the notes
+they write; `~/.codex/skills/` only contains links pointing back at these
+directories (see [Skills](#skills)).
 
-Content in `days/`, `summaries/`, `corpus/`, and `notes/` is imported into the
-Hexo source tree by `tools/import-rephrase.js` at build time (and locally via
-`npm run preview`). New courses and days are produced by the
-`english-rephrase-practice` skill; word/phrase notes by the `language-notes`
-skill. Push to `main` and GitHub Actions rebuilds and deploys the site.
+## Layout
+
+| Path | What it is |
+| --- | --- |
+| `days/`, `summaries/`, `corpus/`, `progress/` | Rephrase practice material and per-day results |
+| `notes/` | Word/phrase notes (`define`, `parse`, `spoken`, `compare`, ...) |
+| `coach/` | 12-week course: `plan.md`, `errors.md`, `lessons/`, `materials/` |
+| `chat/` | Daily small-talk sessions: `index.md`, `errors.md`, `chunks.md`, `sessions/`, `summaries/` |
+| `raw/` | Unpublished source material (subtitles, transcripts) - gitignored |
+| `tools/` | Build-time importers that generate the Hexo source tree |
+| `source/`, `themes/`, `_config*.yml` | Hexo site |
+
+## Skills
+
+Four skills are developed in this repo. Each is a normal Codex skill
+directory (`SKILL.md`, `agents/openai.yaml`, `references/`, `scripts/`).
+
+| Skill | Use it for | Writes to |
+| --- | --- | --- |
+| `english-level-up-coach` | Structured 20-30 min lessons on a 12-week plan; weekly error review | `coach/` |
+| `english-daily-chat` | One relaxed small-talk topic a day, ~5 exchanges, gentle correction, daily summary | `chat/` |
+| `english-rephrase-practice` | Daily rephrasing drills built from subtitles or transcripts | `days/`, `summaries/`, `corpus/` |
+| `language-notes` | One-off translate / define / parse / compare lookups | `notes/` |
+
+`english-level-up-coach` and `english-daily-chat` share error data: the chat
+skill's `chat_log.py` can read and update `coach/errors.md` using qualified
+IDs (`coach:E012` vs `chat:E003`), so a mistake logged in a lesson can
+resurface in a chat session.
+
+### Installing the skills
+
+Codex discovers skills in `~/.codex/skills/`. Rather than keeping a second
+copy there, link each one:
+
+```powershell
+# Windows (junction, no admin rights needed)
+$repo = "D:\project\personal\English-Notebook"
+foreach ($n in "english-daily-chat","english-level-up-coach","english-rephrase-practice","language-notes") {
+  New-Item -ItemType Junction -Path "$env:USERPROFILE\.codex\skills\$n" -Target "$repo\$n"
+}
+```
+
+```bash
+# macOS / Linux
+repo=~/project/personal/English-Notebook
+for n in english-daily-chat english-level-up-coach english-rephrase-practice language-notes; do
+  ln -s "$repo/$n" ~/.codex/skills/"$n"
+done
+```
+
+One copy, one source of truth: edit a skill here and Codex picks it up
+immediately, and the change is committed alongside the notes it affects.
+
+## Published site
+
+`days/`, `summaries/`, `corpus/`, and `notes/` are imported into the Hexo
+source tree by `tools/import-rephrase.js`, `coach/` by `tools/import-coach.js`,
+and `chat/` by `tools/import-chat.js`, at build time (and locally via
+`npm run preview`).
+Push to `main` and GitHub Actions rebuilds and deploys the site.
 
 - Day pages link directly to their matching summary pages (and back).
 - Corpus pages filter by difficulty (E/M/H) and search.
 - The notes page renders all note entries as searchable cards.
+
+Generated output under `source/` is gitignored and recreated on every build;
+the top-level data directories are the source of truth.
+
+### The chat pages
+
+`chat/` is imported by `tools/import-chat.js` into a dashboard at `/chat` plus
+one page per session.
+
+A conversation page reads as a chat log, but every answer of yours starts
+collapsed behind a **看答案** button, showing only the Chinese cue. Say your
+version out loud first, then reveal - the original and the natural version
+appear together, never separately. Reading your own mistake before producing
+the sentence just rehearses the mistake, which is also why the recall drill on
+the dashboard hides it until you grade yourself.
+
+The drill has two decks. `整轮复述` gives a Chinese cue and asks for the whole
+answer; `单点` drills one collocation.
+
+**Neither drill saves anything** - not on `/chat`, not on `/coach`. No
+`localStorage`, no cookies. The tally lasts until you reload.
+
+This is deliberate. Grading yourself ("I knew that") is a much weaker signal
+than producing an expression unprompted in a real conversation, and the record
+that counts is already in `chat/chunks.md`, `chat/errors.md`, and
+`coach/errors.md` - written by the skills and tracked in git. A browser-side
+scoreboard would compete with that while being worth less, and the published
+site has no authentication to protect it.
+
+What survives is the data that is real: `/coach` still orders cards by `hits`
+from `errors.md`, and `/chat` reshuffles its deck on every visit.
+
+Chunks still in circulation are **counted but not listed**. They are seeded
+into upcoming topics silently, and reading them beforehand would invalidate
+the test - only chunks you already own are shown.
+
+## Local development
+
+```bash
+npm install          # first time; see setup.bat / setup.sh for the theme junction
+npm run preview      # import content + hexo server
+npm run build        # import content + hexo generate
+```
 
 - [Update theme](UPDATE_THEME.md)

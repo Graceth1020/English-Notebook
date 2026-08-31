@@ -1,0 +1,4 @@
+interface:
+  display_name: "English Daily Chat"
+  short_description: "Daily ~10-exchange English small talk with gentle fixes and a summary"
+  default_prompt: "Use $english-daily-chat to start today's chat."

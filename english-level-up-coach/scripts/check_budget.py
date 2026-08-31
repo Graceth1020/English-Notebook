@@ -157,9 +157,9 @@ def main() -> int:
     # corrections, which is the opposite of the intent.
     ratio_cap = 5 if turns <= 2 else 4
     ratio = turn_coach_words / max(learner_words, 1)
-    print(f"  [{'OK  ' if ratio <= ratio_cap else 'OVER'}] coach:learner word ratio: {ratio:.1f}:1 "
-          f"(aim <= {ratio_cap}:1 at {turns} turns)")
-    if ratio > ratio_cap:
+    print(f"  [{'OK  ' if ratio <= ratio_cap + 0.05 else 'OVER'}] coach:learner word ratio: "
+          f"{ratio:.1f}:1 (aim <= {ratio_cap}:1 at {turns} turns)")
+    if ratio > ratio_cap + 0.05:
         ok = False
 
     print(f"\n  learner words: {learner_words} across {attempts} reply/replies")

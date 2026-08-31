@@ -60,6 +60,13 @@ evidence says otherwise, and probe them early.
 | Phrasal verbs blank | No attempt when a phrasal verb is needed | `push back`, `follow up`, `sign off` |
 | Copying the prompt | Returns the source sentence nearly verbatim | Treat as no output; re-prompt |
 
+These names describe what to **notice** in the moment. They are deliberately not the
+categories used in `coach/errors.md`, which is filed by what the learner must **produce**
+when the card resurfaces (`act` / `phrasing` / `form`). Diagnosing with a word-class label
+and then logging with it produces unusable cards - a `phrasal-verb` row becomes a list of
+verbs instead of a sentence. Diagnose here, log with a bucket. See
+`references/lesson-format.md`.
+
 ## Workplace-Specific Sensitivities
 
 For a developer heading into a multinational team, these carry outsized weight

@@ -52,6 +52,20 @@ Seeded in `coach/errors.md` from the learner's earlier rephrase practice
   learner's wording; reordering advice goes on its own line. Lesson files hold teaching
   content only - no process meta-commentary.
 - Site renders with `marked.breaks: false`, so hard-wrapped source reflows as prose.
+- Review method: the `/coach` page has a **Recall Drill** with two modes, chosen by category.
+  **Produce** (function, tone, register, calque, fixed-phrase, collocation, phrasal-verb - 39
+  rows) shows only the *situation* and hides the learner's old sentence until after the reveal,
+  because reading your own error first rehearses it. **Repair** (grammar, preposition, other -
+  21 rows) shows the broken phrase, since that is the question. Hints come in two layers - the
+  thinking cue, then the opening word or two - and taking one is recorded. Self-mark is
+  three-way: clean / needed the hint / missed. Category is hidden until the answer is shown.
+  Queue weight: `hits*10 + miss*25 + hinted*12 + 8 if never drilled - ok*6`, and the due pool
+  always includes patterns with 2+ hits even when their spaced date is in the future. Marks
+  live in `localStorage` (`coachDrill.v1`), so `coach/errors.md` stays the source of truth.
+- `coach/errors.md` has a **Prompt** column (the situation being answered - a card must be
+  answerable without the lesson file) and a **Hint** column (the thinking cue). Every new
+  error needs a real prompt; produce-mode rows should carry a hint for recurring patterns.
+  `You said` must be a sayable fragment and `Say instead` the actual words.
 - Volume: **2 turns per lesson, one reply each, no retries** (changed from 3 after
   Lesson 05). Each turn is a fresh scenario; the coach corrects the single reply, gives a
   model sentence, and moves on. A third turn is added only when the learner asks during

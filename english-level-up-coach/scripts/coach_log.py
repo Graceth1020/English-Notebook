@@ -6,8 +6,11 @@ on a spaced schedule (3, 7, 16, 30 days) and are resolved only when the learner
 produces the correct form unprompted.
 
 Usage:
-  coach_log.py add --pattern "flat disagreement" --category function \
-      --said "I don't think so." --fix "I see it a bit differently." --lesson 01
+  coach_log.py add --bucket act --skill "push back with your own number" \
+      --situation "Your manager says two days; you need a week." \
+      --say "I'd put it closer to a week" \
+      --model "I'd put it closer to a week. The code is two days, but ..." \
+      --trap "two days is not enough" --lesson 01
   coach_log.py due [--top 8] [--as-of YYYY-MM-DD]
   coach_log.py hit --id E003          # seen again (reset interval, count++)
   coach_log.py resolve --id E003
@@ -21,13 +24,14 @@ import os
 import re
 import sys
 
-CATEGORIES = (
-    "function", "calque", "register", "collocation", "fixed-phrase",
-    "phrasal-verb", "grammar", "preposition", "tone", "unknown", "other",
-)
+# Buckets are named for what the learner must PRODUCE when the card comes up,
+# not for the linguistic category of the mistake. Naming a row "phrasal-verb"
+# pulled the answer towards a list of words; naming it "act" forces a whole reply.
+BUCKETS = ("act", "phrasing", "form")
 INTERVALS = [3, 7, 16, 30]
-HEADER = "| ID | Pattern | Category | You said | Say instead | Lesson | Hits | Status | Next review |"
-SEP = "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+HEADER = ("| ID | Bucket | Skill | Situation | Say | Model | Hint | Trap | Lesson | Hits "
+          "| Status | Next |")
+SEP = "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
 ROW_RE = re.compile(r"^\|\s*(E\d+)\s*\|(.*)\|\s*$")
 
 
@@ -52,11 +56,13 @@ def read_rows(path: str) -> tuple[list[str], list[dict]]:
             m = ROW_RE.match(line)
             if m:
                 cells = [c.strip() for c in line.strip().strip("|").split("|")]
-                if len(cells) >= 9:
+                if len(cells) >= 12:
                     rows.append({
-                        "id": cells[0], "pattern": cells[1], "category": cells[2],
-                        "said": cells[3], "fix": cells[4], "lesson": cells[5],
-                        "hits": cells[6], "status": cells[7], "next": cells[8],
+                        "_ord": len(rows),
+                        "id": cells[0], "bucket": cells[1], "skill": cells[2],
+                        "situation": cells[3], "say": cells[4], "model": cells[5],
+                        "hint": cells[6], "trap": cells[7], "lesson": cells[8],
+                        "hits": cells[9], "status": cells[10], "next": cells[11],
                     })
                 continue
             if line.strip().startswith("|"):
@@ -71,20 +77,26 @@ def write_rows(path: str, preamble: list[str], rows: list[dict]) -> None:
         preamble = [
             "# Error Log",
             "",
-            "Errors the learner actually produced, with the natural version and a",
-            "spaced review date. `Hits` counts how many times the pattern recurred.",
-            "Rows are resolved only after the correct form appears unprompted.",
+            "Patterns the learner produced more than once, as drillable cards.",
+            "`Bucket` is what you must produce: act (a whole reply), phrasing (one",
+            "sentence), form (the corrected sentence). `Skill` names the ability, not",
+            "the mistake. `Model` is the full thing to say out loud. `Trap` is the old",
+            "wrong version, hidden until after the reveal.",
+            "Rows resolve only after the correct form appears unprompted.",
             "",
         ]
     while preamble and not preamble[-1].strip():
         preamble.pop()
     lines = preamble + ["", HEADER, SEP]
     order = {"open": 0, "resolved": 1}
-    rows = sorted(rows, key=lambda r: (order.get(r["status"], 0), r["id"]))
+    # Preserve the hand-maintained bucket grouping; only sink resolved rows.
+    rows = sorted(rows, key=lambda r: (order.get(r["status"], 0),
+                                       r.get("_ord", 1 << 30)))
     for r in rows:
         lines.append(
-            f"| {r['id']} | {r['pattern']} | {r['category']} | {r['said']} | "
-            f"{r['fix']} | {r['lesson']} | {r['hits']} | {r['status']} | {r['next']} |"
+            f"| {r['id']} | {r['bucket']} | {r['skill']} | {r['situation']} | {r['say']} | "
+            f"{r['model']} | {r.get('hint','')} | {r['trap']} | {r['lesson']} | {r['hits']} | "
+            f"{r['status']} | {r['next']} |"
         )
     lines.append("")
     with open(path, "w", encoding="utf-8") as fh:
@@ -104,15 +116,17 @@ def cmd_add(a, root):
     path = log_path(root)
     pre, rows = read_rows(path)
     for r in rows:
-        if r["pattern"].lower() == a.pattern.lower() and r["status"] == "open":
-            print(f"[warn] pattern already logged as {r['id']}; recording a hit")
+        if r["skill"].lower() == a.skill.lower() and r["status"] == "open":
+            print(f"[warn] skill already logged as {r['id']}; recording a hit")
             a.id = r["id"]
             return cmd_hit(a, root)
     eid = next_id(rows)
     rows.append({
-        "id": eid, "pattern": esc(a.pattern), "category": a.category,
-        "said": esc(a.said), "fix": esc(a.fix), "lesson": esc(a.lesson or "-"),
-        "hits": "1", "status": "open", "next": schedule(1, today(a.as_of)),
+        "id": eid, "bucket": a.bucket, "skill": esc(a.skill),
+        "situation": esc(a.situation), "say": esc(a.say), "model": esc(a.model),
+        "hint": esc(a.hint or ""), "trap": esc(a.trap),
+        "lesson": esc(a.lesson or "-"), "hits": "1", "status": "open",
+        "next": schedule(1, today(a.as_of)),
     })
     write_rows(path, pre, rows)
     print(f"[OK] {eid} added -> {path}")
@@ -166,9 +180,9 @@ def cmd_due(a, root):
         return 0
     print(f"{len(due)} due as of {now.isoformat()}:")
     for when, r in due[: a.top]:
-        print(f"  {r['id']} [{r['category']}] {r['pattern']} (hits {r['hits']}, due {when})")
-        print(f"       said: {r['said']}")
-        print(f"        fix: {r['fix']}")
+        print(f"  {r['id']} [{r['bucket']}] {r['skill']} (hits {r['hits']}, due {when})")
+        print(f"  situation: {r['situation']}")
+        print(f"      model: {r['model']}")
     return 0
 
 
@@ -179,7 +193,7 @@ def cmd_list(a, root):
         print("No entries.")
         return 0
     for r in rows:
-        print(f"{r['id']} [{r['status']}] {r['category']}: {r['pattern']} "
+        print(f"{r['id']} [{r['status']}] {r['bucket']}: {r['skill']} "
               f"(hits {r['hits']}, next {r['next']})")
     return 0
 
@@ -192,10 +206,18 @@ def main() -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("add"); p.set_defaults(fn=cmd_add)
-    p.add_argument("--pattern", required=True)
-    p.add_argument("--category", default="other", choices=CATEGORIES)
-    p.add_argument("--said", default="")
-    p.add_argument("--fix", default="")
+    p.add_argument("--skill", required=True,
+                   help="the ability being trained, e.g. 'push back with your own number'")
+    p.add_argument("--bucket", default="phrasing", choices=BUCKETS)
+    p.add_argument("--hint", default="",
+                   help="thinking cue revealed before the answer in the recall drill")
+    p.add_argument("--situation", default="",
+                   help="the situation to answer - required for the card to be "
+                        "answerable out of context")
+    p.add_argument("--say", default="", help="the key expression being tested")
+    p.add_argument("--model", default="",
+                   help="the full thing to say out loud; for act rows, 2-4 sentences")
+    p.add_argument("--trap", default="", help="the wrong version, hidden until reveal")
     p.add_argument("--lesson", default="-")
 
     p = sub.add_parser("hit"); p.set_defaults(fn=cmd_hit)

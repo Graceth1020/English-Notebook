@@ -75,7 +75,7 @@ other skills).
 ```text
 coach/
   plan.md                       12-week plan, phase status, lesson ledger
-  errors.md                     error log: pattern, evidence, status, review dates
+  errors.md                     drill cards: bucket, skill, situation, model, review dates
   inbox/                        raw dropped material (gitignored if large)
   materials/<slug>/
     transcript.md               timestamped sentences, re-listenable links
@@ -130,13 +130,23 @@ access. The learner supplies transcript files or text.
 
 ## Logging and Review
 
-Append every confirmed error to `coach/errors.md` with the learner's actual
-wording, the fix, and a category:
+Append confirmed errors to `coach/errors.md`. File a row by **what the learner must
+produce** - `act` (a whole reply), `phrasing` (one sentence), `form` (the corrected
+sentence) - never by the linguistic name of the mistake:
 
 ```bash
-python scripts/coach_log.py add --pattern "<short name>" --category <cat> \
-  --said "<what they wrote>" --fix "<natural version>" --lesson <NN>
+python scripts/coach_log.py add --bucket <act|phrasing|form> \
+  --skill "<the ability, e.g. push back with your own number>" \
+  --situation "<the situation being answered>" \
+  --say "<key expression>" --model "<the full thing to say out loud>" \
+  --hint "<thinking cue>" --trap "<what they wrote>" --lesson <NN>
 ```
+
+`--situation` is what makes a row answerable weeks later in the `/coach` recall drill; rows
+without it are skipped. `--model` must be the actual words - for `act` rows, 2-4 sentences -
+never a slash-separated menu like `go through / push back / move out` and never an
+instruction like `rebuild it in your own words`. Log a pattern only once it has recurred.
+See `references/lesson-format.md`.
 
 Query what is due for the weekly review lesson:
 

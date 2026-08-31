@@ -26,6 +26,14 @@ source/_posts/Coach/
 source/coach/
 source/_data/coach.json
 
+# Generated chat site content (recreated by tools/import-chat.js)
+source/_posts/Chat/
+source/chat/
+source/_data/chat.json
+
 # Raw dropped material
 coach/inbox/
 
+# Python bytecode from skill scripts
+__pycache__/
+*.pyc

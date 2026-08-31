@@ -182,11 +182,11 @@ function parseErrors() {
     if (!/^\|\s*E\d+\s*\|/.test(line)) continue;
     const cells = line.trim().replace(/^\|/, '').replace(/\|$/, '')
       .split('|').map((c) => c.trim().replace(/\\\|/g, '|'));
-    if (cells.length < 9) continue;
+    if (cells.length < 12) continue;
     out.push({
-      id: cells[0], pattern: cells[1], category: cells[2], said: cells[3],
-      fix: cells[4], lesson: cells[5], hits: +cells[6] || 1,
-      status: cells[7], next: cells[8],
+      id: cells[0], bucket: cells[1], skill: cells[2], situation: cells[3],
+      say: cells[4], model: cells[5], hint: cells[6], trap: cells[7],
+      lesson: cells[8], hits: +cells[9] || 1, status: cells[10], next: cells[11],
     });
   }
   return out;
@@ -377,8 +377,40 @@ const DASH_STYLE = `
 .coach-err{border:1px solid #e3e8ef;border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#fff}
 .coach-err.due{border-left:4px solid #f59e0b}
 .coach-err.resolved{opacity:.55}
+.coach-err .ctx{color:#666;font-size:.88em;margin:2px 0 6px}
 .coach-err .said{color:#b91c1c;font-family:ui-monospace,monospace;font-size:.9em}
 .coach-err .fix{color:#047857;font-family:ui-monospace,monospace;font-size:.9em}
+.drill{border:1px solid #dbe3ef;border-radius:12px;padding:16px 18px;margin:1em 0;background:#fff}
+.drill-top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.drill-top .coach-tag{margin-left:0}
+.drill-top .grow{flex:1 1 auto}
+.drill-q{font-size:.9em;color:#888;margin-bottom:4px}
+.drill-prompt{font-size:1.02em;line-height:1.6;padding:10px 14px;border-left:3px solid #3b82f6;background:#f6f9ff;border-radius:0 8px 8px 0}
+.drill-said{color:#b91c1c;font-family:ui-monospace,monospace;font-size:1.02em;line-height:1.6}
+.drill-hint{color:#888;font-size:.85em;margin-top:8px}
+.drill-ask{color:#3b82f6;font-size:.85em;font-weight:600;margin-top:8px}
+.drill-key{margin-top:10px;font-size:.9em;color:#555}
+.drill-key code{background:#f1f5f9;padding:2px 6px;border-radius:4px}
+.drill-was{margin-top:10px;font-size:.9em;color:#b91c1c;opacity:.8}
+.drill-ans{margin-top:14px;padding-top:12px;border-top:1px dashed #dbe3ef}
+.drill-ans .fix{color:#047857;font-family:ui-monospace,monospace;font-size:1.02em;line-height:1.6}
+.drill-btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.drill-btns button{padding:7px 16px;border:1px solid #dbe3ef;border-radius:8px;background:#fff;cursor:pointer;font:inherit;font-size:.9em}
+.drill-btns button.primary{background:#3b82f6;border-color:#3b82f6;color:#fff}
+.drill-btns button.good{border-color:#047857;color:#047857}
+.drill-btns button.bad{border-color:#b91c1c;color:#b91c1c}
+.drill-bar{height:6px;border-radius:3px;background:#eceff3;overflow:hidden;margin-top:12px}
+.drill-bar i{display:block;height:100%;background:#3b82f6}
+.drill-done{text-align:center;padding:10px 0}
+.drill-score{font-size:1.6em;font-weight:700}
+html[data-theme="dark"] .drill{background:#1d232b;border-color:#2e3640}
+html[data-theme="dark"] .drill-btns button{background:#20262e;border-color:#333c47;color:#aeb8c2}
+html[data-theme="dark"] .drill-btns button.primary{background:#6ba3f5;border-color:#6ba3f5;color:#0d1420}
+html[data-theme="dark"] .drill-prompt{background:#1a2230;border-left-color:#6ba3f5}
+html[data-theme="dark"] .drill-said{color:#fca5a5}
+html[data-theme="dark"] .drill-ans{border-top-color:#333c47}
+html[data-theme="dark"] .drill-ans .fix{color:#6ee7b7}
+html[data-theme="dark"] .drill-bar{background:#2b333c}
 .coach-filters{display:flex;flex-wrap:wrap;gap:8px;margin:1em 0}
 .coach-filters button{padding:5px 12px;border:1px solid #dbe3ef;border-radius:999px;background:#fff;cursor:pointer;font:inherit;font-size:.85em}
 .coach-filters button.on{background:#3b82f6;border-color:#3b82f6;color:#fff}
@@ -389,8 +421,12 @@ html[data-theme="dark"] .coach-stat,html[data-theme="dark"] .coach-phase,
 html[data-theme="dark"] .coach-err{background:#1d232b;border-color:#2e3640}
 html[data-theme="dark"] .coach-bar{background:#262e37}
 html[data-theme="dark"] .coach-filters button{background:#20262e;border-color:#333c47;color:#aeb8c2}
+html[data-theme="dark"] .coach-err .ctx{color:#98a2ae}
 html[data-theme="dark"] .coach-err .said{color:#fca5a5}
 html[data-theme="dark"] .coach-err .fix{color:#6ee7b7}
+html[data-theme="dark"] .drill-key{color:#98a2ae}
+html[data-theme="dark"] .drill-key code{background:#2a323c}
+html[data-theme="dark"] .drill-was{color:#fca5a5}
 </style>`;
 
 const DASH_SCRIPT = `
@@ -445,23 +481,24 @@ const DASH_SCRIPT = `
   var filter = 'due';
   function renderErrs(){
     var list = filter==='all'?errs:(filter==='due'?due:open.filter(function(e){
-      return e.category===filter; }));
+      return e.bucket===filter; }));
     var box = el('coachErrors');
     if (!box) return;
     if (!list.length){ box.innerHTML = '<p>Nothing here.</p>'; return; }
     box.innerHTML = list.map(function(e){
       var isDue = e.next && e.next!=='-' && e.next<=today && e.status!=='resolved';
       return '<div class="coach-err '+(e.status==='resolved'?'resolved':(isDue?'due':''))+'">'+
-        '<b>'+esc(e.id)+'</b> '+esc(e.pattern)+
-        '<span class="coach-tag">'+esc(e.category)+'</span>'+
+        '<b>'+esc(e.id)+'</b> '+esc(e.skill)+
+        '<span class="coach-tag">'+esc(e.bucket)+'</span>'+
         '<span class="coach-tag">hits '+e.hits+'</span>'+
         (isDue?'<span class="coach-tag">due</span>':'')+
-        '<div class="said">&times; '+esc(e.said)+'</div>'+
-        '<div class="fix">&check; '+esc(e.fix)+'</div></div>';
+        (e.situation?'<div class="ctx">'+esc(e.situation)+'</div>':'')+
+        '<div class="said">&times; '+esc(e.trap)+'</div>'+
+        '<div class="fix">&check; '+esc(e.model||e.say)+'</div></div>';
     }).join('');
   }
   var cats = {};
-  open.forEach(function(e){ cats[e.category]=(cats[e.category]||0)+1; });
+  open.forEach(function(e){ cats[e.bucket]=(cats[e.bucket]||0)+1; });
   var fb = el('coachFilters');
   if (fb){
     var btns = [['due','Due ('+due.length+')'],['all','All ('+errs.length+')']]
@@ -478,6 +515,203 @@ const DASH_SCRIPT = `
     });
   }
   renderErrs();
+
+  // ---- Recall drill. The bucket decides the mode: act and phrasing show only the
+  // situation and hide the old wording until after the reveal, because reading your own
+  // error first rehearses it; form shows the broken sentence, which is the question. ----
+  // Nothing is persisted. Self-grading ("I knew that") is a far weaker signal than
+  // producing the form unprompted in a real lesson, and the authoritative record is
+  // already coach/errors.md - written by the skill, tracked in git. A second,
+  // self-reported scoreboard in the browser would compete with it while being worth
+  // less, and the published site has no authentication to protect it. dstats lives
+  // for the lifetime of the page and is deliberately lost on reload.
+  var dstats = {};
+
+  var drill = { queue: [], i: 0, shown: false, hint: 0, right: 0, hinted: 0, wrong: 0, scope: 'due' };
+
+  function buildQueue(){
+    var pool;
+    if (drill.scope === 'due'){
+      // "Due" must always include the patterns that actually keep recurring (hits >= 2) and
+      // anything missed in an earlier drill, even when their spaced date is still in the
+      // future - otherwise the queue fills with one-off slips while the real backlog waits.
+      var ids = {};
+      pool = [];
+      due.forEach(function(e){ ids[e.id] = 1; pool.push(e); });
+      open.forEach(function(e){
+        if (ids[e.id]) return;
+        if ((parseInt(e.hits,10) || 1) >= 2) pool.push(e);
+      });
+    } else {
+      pool = open;
+    }
+    if (!pool.length) pool = open;
+    // Weight by hits - how often the pattern actually recurred in lessons. That comes
+    // from errors.md and is real evidence, so it still drives the order. Anything the
+    // learner clicked in a previous sitting is gone by design, so it cannot.
+    // A row with no recorded situation cannot be answered out of context - keep it in the
+    // log for reference, but never put it in the drill.
+    pool = pool.filter(function(e){
+      return e.situation && e.situation.length > 3 && answerOf(e); });
+    var scored = pool.map(function(e){
+      var st = dstats[e.id] || {};
+      var w = (parseInt(e.hits,10) || 1) * 10;
+      // Within one sitting a missed card should come back before a clean one.
+      if (st.miss) w += st.miss * 25;
+      if (st.hinted) w += st.hinted * 12;
+      if (st.ok) w -= st.ok * 6;
+      return { e: e, w: w + Math.random() * 5 };
+    });
+    scored.sort(function(a,b){ return b.w - a.w; });
+    drill.queue = scored.slice(0, 10).map(function(x){ return x.e; });
+    drill.i = 0; drill.shown = false; drill.hint = 0;
+    drill.right = 0; drill.hinted = 0; drill.wrong = 0;
+  }
+
+  // The bucket already states what to produce, so the drill reads it directly: act and
+  // phrasing ask you to build an answer, form hands you a broken sentence to repair.
+  function isProduce(e){ return e.bucket !== 'form'; }
+  function answerOf(e){ return e.model || e.say || ''; }
+
+  // Layer 2 hint: the first word or two of the answer - never more than a third of it, so a
+  // short answer like "rebuild the frame in your own words" is not simply handed over.
+  function openingOf(fix){
+    var f = String(fix||'').trim();
+    var w = f.split(/\\s+/);
+    if (w.length <= 2) return w[0].slice(0, Math.max(1, Math.ceil(w[0].length/2))) + '...';
+    var n = Math.max(1, Math.min(2, Math.floor(w.length / 3)));
+    return w.slice(0, n).join(' ') + ' ...';
+  }
+
+  function renderDrill(){
+    var box = el('coachDrill');
+    if (!box) return;
+    if (!drill.queue.length){
+      box.innerHTML = '<div class="drill"><p>Nothing to drill - no open errors.</p></div>';
+      return;
+    }
+    if (drill.i >= drill.queue.length){
+      var tot = drill.right + drill.hinted + drill.wrong;
+      box.innerHTML = '<div class="drill"><div class="drill-done">' +
+        '<div class="drill-score">' + drill.right + ' / ' + tot + '</div>' +
+        '<p><b>' + drill.right + '</b> clean &middot; <b>' + drill.hinted +
+        '</b> with a hint &middot; <b>' + drill.wrong + '</b> missed</p>' +
+        '<p>' + (drill.right >= tot * 0.8 ? 'Strong recall.' :
+          drill.wrong > tot / 2 ? 'These need another pass. Say them out loud, not in your head.' :
+          'The hinted ones come back first while this sitting lasts.') + '</p>' +
+        '<div class="drill-btns" style="justify-content:center">' +
+        '<button class="primary" data-d="again">Drill again</button></div></div></div>';
+      return;
+    }
+    var e = drill.queue[drill.i];
+    var st = dstats[e.id] || {};
+    var produce = isProduce(e);
+    var isAct = e.bucket === 'act';
+    var answer = answerOf(e);
+    var h = drill.hint;   // 0 none, 1 approach, 2 opening
+    var hintText = e.hint || e.skill;
+
+    box.innerHTML = '<div class="drill">' +
+      '<div class="drill-top">' +
+        '<span class="coach-tag">' +
+          (isAct ? 'whole reply' : produce ? 'one sentence' : 'fix it') + '</span>' +
+        (drill.shown ? '<b>' + esc(e.id) + '</b>' +
+          '<span class="coach-tag">' + esc(e.skill) + '</span>' +
+          '<span class="coach-tag">hits ' + esc(e.hits) + '</span>' +
+          (st.miss ? '<span class="coach-tag">missed ' + st.miss +
+            'x this sitting</span>' : '') : '') +
+        '<span class="grow"></span>' +
+        '<small>' + (drill.i + 1) + ' / ' + drill.queue.length + '</small>' +
+      '</div>' +
+      '<div class="drill-q">Situation</div>' +
+      '<div class="drill-prompt">' + esc(e.situation || e.skill) + '</div>' +
+      // Repair mode needs the broken sentence - it IS the question. Produce mode hides the
+      // trap until after the reveal, because reading your own error first rehearses it.
+      (produce ? '' :
+        '<div class="drill-q" style="margin-top:12px">Fix this</div>' +
+        '<div class="drill-said">' + esc(e.trap) + '</div>') +
+      (produce ? '<div class="drill-ask">' +
+        (isAct ? 'Say a full reply - 2 to 4 sentences.' : 'Say one natural sentence.') +
+        '</div>' : '') +
+      (h >= 1 && !drill.shown ?
+        '<div class="drill-layer"><b>Hint</b> ' + esc(hintText) + '</div>' : '') +
+      (h >= 2 && !drill.shown ?
+        '<div class="drill-layer"><b>Opening</b> <code>' + esc(openingOf(answer)) +
+        '</code></div>' : '') +
+      (drill.shown ? '' : '<div class="drill-hint">Say your answer out loud, then reveal.</div>') +
+      (drill.shown ?
+        '<div class="drill-ans"><div class="drill-q">Say this</div>' +
+        '<div class="fix">' + esc(answer) + '</div>' +
+        (e.say && e.model ? '<div class="drill-key">Key expression: <code>' +
+          esc(e.say) + '</code></div>' : '') +
+        (produce && e.trap ? '<div class="drill-was">You said before: ' +
+          esc(e.trap) + '</div>' : '') +
+        '<div class="drill-q" style="margin-top:8px">' + esc(e.skill) +
+        (e.lesson && e.lesson !== '-' ? ' &middot; lesson ' + esc(e.lesson) : '') +
+        '</div></div>' : '') +
+      '<div class="drill-btns">' +
+        (drill.shown ?
+          '<button class="good" data-d="ok">Got it clean</button>' +
+          (h > 0 ? '<button data-d="hinted">Needed the hint</button>' : '') +
+          '<button class="bad" data-d="miss">Missed it</button>' :
+          (h < 2 ? '<button data-d="hint">Hint</button>' : '') +
+          '<button class="primary" data-d="show">Show answer</button>' +
+          '<button data-d="skip">Skip</button>') +
+      '</div>' +
+      '<div class="drill-bar"><i style="width:' +
+        Math.round(drill.i / drill.queue.length * 100) + '%"></i></div>' +
+    '</div>';
+  }
+
+  var db = el('coachDrill');
+  if (db){
+    db.addEventListener('click', function(ev){
+      var b = ev.target.closest('button[data-d]');
+      if (!b) return;
+      var act = b.getAttribute('data-d');
+      var e = drill.queue[drill.i];
+      function advance(){ drill.i++; drill.shown = false; drill.hint = 0; }
+      if (act === 'hint'){ drill.hint = Math.min(2, drill.hint + 1); }
+      else if (act === 'show'){ drill.shown = true; }
+      else if (act === 'again'){ buildQueue(); }
+      else if (act === 'skip'){ advance(); }
+      else if (act === 'ok' || act === 'miss' || act === 'hinted'){
+        var st = dstats[e.id] || { ok:0, miss:0, hinted:0 };
+        st.seen = (st.seen||0) + 1;
+        if (act === 'ok'){ st.ok = (st.ok||0) + 1; drill.right++; }
+        else if (act === 'hinted'){ st.hinted = (st.hinted||0) + 1; drill.hinted++; }
+        else { st.miss = (st.miss||0) + 1; drill.wrong++; }
+        st.last = today;
+        dstats[e.id] = st;
+        advance();
+      }
+      renderDrill();
+    });
+    var ds = el('coachDrillScope');
+    if (ds) ds.addEventListener('click', function(ev){
+      var b = ev.target.closest('button[data-s]'); if (!b) return;
+      drill.scope = b.getAttribute('data-s');
+      Array.prototype.forEach.call(ds.querySelectorAll('button'), function(x){
+        x.classList.toggle('on', x===b); });
+      buildQueue(); renderDrill();
+    });
+    // h = hint, space = show, then 1 / 2 / 3 = clean / hinted / missed
+    document.addEventListener('keydown', function(ev){
+      if (!drill.queue.length || drill.i >= drill.queue.length) return;
+      if (/^(INPUT|TEXTAREA|SELECT)$/.test((ev.target.tagName||''))) return;
+      var hit = null;
+      if (!drill.shown && (ev.key === 'h' || ev.key === 'H')) hit = 'hint';
+      else if (!drill.shown && (ev.key === ' ' || ev.key === 'Enter')) hit = 'show';
+      else if (drill.shown && ev.key === '1') hit = 'ok';
+      else if (drill.shown && ev.key === '2') hit = 'hinted';
+      else if (drill.shown && ev.key === '3') hit = 'miss';
+      if (!hit) return;
+      ev.preventDefault();
+      var btn = db.querySelector('button[data-d="' + hit + '"]');
+      if (btn) btn.click();
+    });
+    buildQueue(); renderDrill();
+  }
 
   var mm = el('coachMaterials');
   if (mm) mm.innerHTML = (D.materials||[]).map(function(m){
@@ -726,6 +960,25 @@ function writeMaterialPages(materials, root) {
   }
 }
 
+// The dashboard script is assembled inside a template literal, where a single backslash is
+// consumed by JS before the regex ever sees it: /\\s+/ silently becomes /s+/ in the output.
+// That yields a page which parses as HTML but dies on load, so syntax-check every emitted
+// script here instead of discovering it in the browser.
+function assertScriptParses(label, html) {
+  const bodies = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+  for (const body of bodies) {
+    if (!body.trim()) continue;
+    // Only skip the pure data blocks. Matching with includes() also skipped the dashboard
+    // script, which *reads* window.COACH_DATA - that is how the guard missed a live bug.
+    if (/^\s*window\.(COACH|MATERIAL)_DATA\s*=/.test(body)) continue;
+    try {
+      new Function(body);
+    } catch (err) {
+      throw new Error(label + ': generated script does not parse -> ' + err.message);
+    }
+  }
+}
+
 function main() {
   ensureClean();
   if (!fs.existsSync(COACH)) {
@@ -813,9 +1066,26 @@ function main() {
     '## Phases',
     '<div id="coachPhases"></div>',
     '',
+    '## Recall Drill',
+    '',
+    'You get the **situation**, not your old sentence. Say your answer out loud, then reveal. ' +
+      'Stuck? Take a hint - it is recorded, so hinted items come back sooner.',
+    '',
+    'Keys: `h` hint &middot; `space` show answer &middot; `1` clean &middot; `2` needed the hint ' +
+      '&middot; `3` missed.',
+    '',
+    'This is a scratch pad: **nothing is saved**, and the tally resets when you reload.',
+    'Grading yourself is a far weaker signal than producing the form unprompted in a',
+    'lesson, so the record that counts is the one the skill keeps in `coach/errors.md` -',
+    'not anything you click here. Card order still follows `hits`, which is real.',
+    '<div id="coachDrillScope" class="coach-filters">' +
+      '<button data-s="due" class="on">Due only</button>' +
+      '<button data-s="all">All open</button></div>',
+    '<div id="coachDrill"></div>',
+    '',
     '## Error Log',
     '',
-    'Errors you actually produced, with the natural version. Orange = due for review.',
+    'Patterns you produced more than once, with the full thing to say. Orange = due.',
     '<div id="coachFilters" class="coach-filters"></div>',
     '<div id="coachErrors"></div>',
     '',
@@ -833,6 +1103,7 @@ function main() {
     DASH_SCRIPT,
     '',
   ].join('\n');
+  assertScriptParses('coach dashboard', page);
   writeFile(path.join(SOURCE, 'coach', 'index.md'), page);
 
   const transcripts = materials.filter((m) => m.sentences);
