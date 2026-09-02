@@ -39,6 +39,9 @@ jobs:
       - name: Import coach content
         run: node tools/import-coach.js
 
+      - name: Import chat content
+        run: node tools/import-chat.js
+
       - name: Build Hexo site
         run: npx hexo generate
 

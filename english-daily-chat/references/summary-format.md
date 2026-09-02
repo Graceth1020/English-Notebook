@@ -38,9 +38,31 @@ needed a single small change.
   is speakable.
 - When a turn needed nothing, still give the rewrite line and say it was already
   natural, so silence is never ambiguous.
-- Include every repair that came up, including ones skipped during the chat
-  because of the per-turn fix cap. Mark those `(caught after the fact)` so the
-  record is honest about what was said in the moment.
+- **One row per difference, no exceptions and no cap.** Read the rewrite against
+  the original clause by clause; anything that is not identical gets a row. There
+  is no fix budget any more, in the chat or here, so nothing has an excuse to be
+  absorbed silently.
+- Where the learner's original was already correct and the rewrite is merely
+  livelier, label the row `optional` and say so in the `Why` cell - *yours is
+  fine, this is just more spoken*. The learner must be able to separate "I was
+  wrong" from "there is a snappier option" without asking.
+- Repairs recovered after the chat ended - because the learner asked, or because
+  the clause-by-clause read caught them - are marked `(caught after the fact)` so
+  the record is honest about what was said in the moment.
+- **Two things need no row**, because they are the rewrite being speech rather
+  than the rewrite disagreeing: mechanical contractions (`You are` -> `You're`,
+  `cannot` -> `can't`) and punctuation or sentence-boundary joins. Everything else
+  needs one, down to a dropped `I think`.
+- **The rewrite stays one polished, speakable version**, so the learner has a
+  single target sentence to say out loud - `optional` upgrades are applied there
+  like any other change. The row is what does the disclosing: its `Why` cell must
+  state that the original was already fine, so the learner can see at a glance
+  which changes he needed and which he merely could have made.
+- **One exception where the original goes back in: chunk-planting.** If a change
+  exists only to work a banked expression into the learner's mouth, revert it.
+  `a good way to relax` -> `an easy way to switch off` on Day 07 was this, and it
+  fails twice over - a correct phrase was overwritten, and a chunk handed to the
+  learner trains recognition, which is already his strength.
 - Number the exchanges as the session file does, and skip `[meta]` Chinese
   questions - they were never exchanges.
 
@@ -177,17 +199,48 @@ every word is correct.
 **Do not upgrade beyond reach.** Stay near their level. Replacing their sentence
 with C2 phrasing produces something they cannot reuse, and reuse is the point.
 
+**Do not downgrade either, and think twice before restyling what was already
+right.** The pressure while rewriting is to make the whole sentence sound like one
+voice, and that quietly rewrites correct phrases to fit. `a key part` became
+`a big part` on Day 06 - both are natural, so nothing was repaired; a register
+preference was applied to a phrase the learner had got right, and he had to ask
+why his own correct English had been changed. The same happened on Day 07 twice in
+one session: `but I just want to sleep` -> `and I still just want to sleep`, and
+`a good way to relax` -> `an easy way to switch off`.
+
+Such a change is now allowed, but only on terms: it must appear as its own
+`optional` row whose `Why` cell states that the original was fine. Prefer keeping
+theirs. A rewrite full of optional rows is a rewrite that stopped being their
+sentence.
+
+The test to apply to every word of a rewrite: **is this word here because the
+original was wrong, or because I preferred mine?** If the second, either put
+theirs back or ship it as an `optional` row - never leave it unexplained. This
+matters more than it looks: when correct phrasing gets swapped for no stated
+reason, the learner cannot tell which of their instincts to trust, and the ones
+that were already right are the most expensive to shake.
+
+**Never use a rewrite to plant a due chunk.** `switch off` was pushed into a Day
+07 rewrite over a perfectly good `relax`, which both broke this rule and wasted the
+chunk: an expression handed to the learner is recognition practice, and recognition
+is already his strength. Chunks are recalled by engineering a later opening that
+needs them, never by insertion.
+
 **Fold in the repairs.** Every change listed in `What changed` should be visible in
 the rewrite, and the rewrite should contain no changes that are not listed.
 
-This second half is the one that gets broken. It is easy to write a good rewrite
-and then list only the two or three most interesting repairs, leaving the rest to
-be absorbed silently. Do not: an unlisted change is a sentence altered with no
+This second half is the one that gets broken, and until Day 07 the format itself
+guaranteed it: the chat allowed at most three fixes per turn, while this file
+demanded that every difference be listed. A turn with seven differences could not
+satisfy both, so four went unexplained. The cap is gone for exactly this reason -
+see `correction-style.md`, "No Fix Budget". There is now no legitimate reason for
+an unlisted change.
+
+Day 05 exchange 2 shipped this way - `my ticket is migrating` and `test carefully`
+were both repaired in the rewrite and neither was listed, and `test carefully` was
+the session's second occurrence. An unlisted change is a sentence altered with no
 reason given, and if that change is the *second* occurrence of a habit, the record
-loses the only evidence that it is a habit rather than a slip. Day 05 exchange 2
-shipped this way - `my ticket is migrating` and `test carefully` were both
-repaired in the rewrite and neither was listed, and `test carefully` was the
-session's second occurrence.
+loses the only evidence that it is a habit rather than a slip.
 
 Repairs recovered this way are still worth adding after the fact; mark them
 `(caught after the fact)` like any other. `tools/import-chat.js` checks for it:
@@ -211,13 +264,42 @@ actually be said.
 ## Multiple Repairs on One Line
 
 List them in the order they appear in the sentence, numbered, one table row each,
-with a single `Native:` verdict at the end of the exchange. Repairs recovered
-after the session - because the fix cap was full, or the learner asked a follow-up
-question - carry a marker in the Label cell:
+with a single `Native:` verdict at the end of the exchange. Six rows on one
+exchange is fine and honest; three rows with four silent changes is not. Repairs
+recovered after the session - because the learner asked a follow-up question, or
+because a later clause-by-clause read caught them - carry a marker in the Label
+cell:
 
 ```markdown
 | 2 | the commuting time | my commute | calque (caught after the fact) | ... | ... |
 ```
+
+Labels available in the table: `wrong`, `awkward`, `bookish`, `calque`,
+`optional`, and `unchanged`. The label must be **one word before any
+parenthesis** - it becomes a CSS class on the site, so `(no change - reverted)`
+emits a broken class while `unchanged (reverted)` works. A row whose `You wrote`
+and `Natural` cells are identical is a deliberate note, not a repair, and the
+importer skips it when building drill cards.
+
+## Describing How The Conversation Went
+
+`What We Talked About` is the one part of the summary that is prose rather than
+evidence, so it is where the write-up can quietly editorialise. Two failure modes,
+both from real sessions:
+
+**Do not score the learner's earlier position.** When a conversation pushes someone
+off their first answer, it is tempting to write that the first answer collapsed.
+Usually it did not - it was true but incomplete, or it named a symptom rather than a
+cause. Day 08 said his three reasons "fell over when pushed"; in fact all three were
+accurate and all three were downstream of a constraint he named two exchanges later.
+Describe what the earlier answer *was*, not how badly it lost.
+
+**Do not use vocabulary in the write-up that the chat did not use.** The learner
+rereads this file, and an idiom that appears only here is one he has to stop and ask
+about. Either keep the prose plain, or if a vivid phrase genuinely earns its place,
+bank it - the Day 08 question about 站不住 produced three usable expressions
+(`hold up`, `a symptom not the reason`, `downstream of`), which is a good outcome but
+was not a planned one.
 
 ## Why This Shape
 

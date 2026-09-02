@@ -380,6 +380,8 @@ const DASH_STYLE = `
 .chat-tag.awkward{background:#ffedd5;color:#c2410c}
 .chat-tag.bookish{background:#fef9c3;color:#a16207}
 .chat-tag.register{background:#fef9c3;color:#a16207}
+.chat-tag.calque{background:#fae8ff;color:#a21caf}
+.chat-tag.unchanged{background:#e0f2fe;color:#0369a1}
 .chat-tag.optional{background:#f1f5f9;color:#64748b}
 .chat-tag.clean{background:#dcfce7;color:#15803d}
 .chat-filters{display:flex;flex-wrap:wrap;gap:8px;margin:1em 0}
@@ -931,6 +933,9 @@ function buildCards(days) {
         const to = (c.natural || '').trim();
         if (!from || !to) continue;
         if (/^\(?nothing\)?$/i.test(from) || /^\(?nothing\)?$/i.test(to)) continue;
+        // A row documenting that nothing changed - a reverted swap, or a note on
+        // where a phrase came from - has no recall answer, so it is not a card.
+        if (from === to) continue;
         cards.push({
           key: 'P' + d.day + '.' + t.n + '.' + c.n,
           mode: 'point',

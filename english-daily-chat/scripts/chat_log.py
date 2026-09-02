@@ -48,6 +48,12 @@ Usage:
   chat_log.py chunks [--status open|owned]
   chat_log.py chunk-sheet [--out PATH]        # grouped personal phrasebook
 
+  chat_log.py pattern-next                     # which structure to drill today
+  chat_log.py pattern-add --pattern "with X doing" --gap "..." --day 08
+  chat_log.py pattern-drilled --id P001        # drill done -> recognition only
+  chat_log.py pattern-used --id P001           # unprompted in chat -> owned at 2
+  chat_log.py patterns [--status open|drilled|owned]
+
   chat_log.py log-session --day 01 --topic "Weekend routines" \
       --category daily --turns 5 --fixes 5 --status done
 
@@ -134,12 +140,12 @@ IDX_PREAMBLE = [
 ]
 
 
-CHUNK_HEADER = ("| ID | Chunk | Means | Example | Day | Tried | Used | "
+CHUNK_HEADER = ("| ID | Chunk | Kind | Means | Example | Day | Tried | Used | "
                 "Status | Next review |")
-CHUNK_SEP = "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+CHUNK_SEP = "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
 CHUNK_ROW_RE = re.compile(r"^\|\s*(C\d+)\s*\|")
-CHUNK_FIELDS = ["id", "chunk", "gloss", "example", "day", "tried", "used",
-                "status", "next"]
+CHUNK_FIELDS = ["id", "chunk", "kind", "gloss", "example", "day", "tried",
+                "used", "status", "next"]
 CHUNK_PREAMBLE = [
     "# Chunk Bank",
     "",
@@ -148,9 +154,27 @@ CHUNK_PREAMBLE = [
     "`Used` counts unprompted productions in a new context. A chunk becomes",
     "`owned` at two unprompted uses - reading it once is recognition, producing it",
     "a day later is recall.",
+    "",
+    "`Kind` splits the bank by how a chunk can be practised:",
+    "",
+    "- `phrase` - a fixed expression (`wired`, `sold out`). A topic can be built so",
+    "  that this is the only natural answer, so it belongs in the seeding rotation.",
+    "- `frame` - a sentence pattern (`the thing is, ...`, `with X doing`). Seeding",
+    "  cannot reach it: the learner can always express the same idea another way and",
+    "  be correct, so there is nothing to correct and nothing to force. Frames are",
+    "  excluded from `chunks-due` and practised in a pattern drill instead.",
+    "",
     "Maintained by scripts/chat_log.py - do not hand-edit.",
 ]
 OWNED_AT = 2
+
+# One session may bank at most this many chunks. Day 07 banked 8 and Day 08
+# banked 9, against 0 chunks ever reaching `owned` - the bank was growing far
+# faster than it could be consumed, and seeding slots per session are fixed at
+# 4-5. A cap forces the summary to name the few expressions actually worth
+# owning rather than every nice phrase that appeared.
+DAILY_CHUNK_CAP = 4
+CHUNK_KINDS = ("phrase", "frame")
 
 
 def chunks_path(root: str) -> str:
@@ -333,8 +357,56 @@ def write_index(root, preamble, rows):
                 IDX_HEADER, IDX_SEP, rows, IDX_FIELDS)
 
 
+CHUNK_FIELDS_LEGACY = ["id", "chunk", "gloss", "example", "day", "tried",
+                       "used", "status", "next"]
+
+# Frames were banked before `Kind` existed and cannot be told apart by shape:
+# a bracketed slot does NOT make something a frame. `be really into (something)`
+# is a fixed phrase that happens to take an object, and a topic can absolutely be
+# built to demand it. A frame is a pattern that changes how the whole sentence is
+# assembled, which is why no opening can force one - the learner can express the
+# same idea with ordinary clauses and be entirely correct.
+#
+# Kept deliberately short and explicit. Guessing wrong here removes a chunk from
+# the seeding rotation silently, which is the failure this column exists to fix.
+LEGACY_FRAMES = {
+    "C043",   # the thing is, ...        - discourse frame for raising an issue
+    "C052",   # ..., though              - sentence-final connector position
+}
+
+
+def classify_chunk(row) -> str:
+    """Classify a row banked before the Kind column existed."""
+    return "frame" if row["id"] in LEGACY_FRAMES else "phrase"
+
+
 def read_chunks(root):
-    return read_table(chunks_path(root), CHUNK_ROW_RE, CHUNK_FIELDS)
+    """Read the chunk bank, upgrading rows written before `Kind` existed.
+
+    read_table discards any row with fewer cells than the field list, so simply
+    widening CHUNK_FIELDS would have silently dropped all 57 banked rows. Each
+    row is parsed against whichever layout its cell count matches.
+    """
+    path = chunks_path(root)
+    if not os.path.exists(path):
+        return [], []
+    preamble: list[str] = []
+    rows: list[dict] = []
+    with open(path, encoding="utf-8") as fh:
+        for line in fh.read().splitlines():
+            if CHUNK_ROW_RE.match(line):
+                cells = [c.strip() for c in line.strip().strip("|").split("|")]
+                if len(cells) >= len(CHUNK_FIELDS):
+                    rows.append(dict(zip(CHUNK_FIELDS, cells)))
+                elif len(cells) >= len(CHUNK_FIELDS_LEGACY):
+                    row = dict(zip(CHUNK_FIELDS_LEGACY, cells))
+                    row["kind"] = classify_chunk(row)
+                    rows.append(row)
+                continue
+            if line.strip().startswith("|"):
+                continue
+            preamble.append(line)
+    return preamble, rows
 
 
 def write_chunks(root, preamble, rows):
@@ -519,15 +591,40 @@ def cmd_add_chunk(a):
     if existing:
         print(f"[warn] already banked as {existing['id']}: {existing['chunk']}")
         return 0
+
+    # A session may bank at most DAILY_CHUNK_CAP chunks. Without this the bank
+    # grows faster than the 4-5 seeding slots a session has, which is how 57
+    # chunks accumulated with none reaching `owned`.
+    day = esc(a.day) or "-"
+    if day != "-":
+        same_day = [r for r in rows if r.get("day") == day]
+        if len(same_day) >= DAILY_CHUNK_CAP and not a.force:
+            print(f"[refused] day {day} already banked {len(same_day)} chunks "
+                  f"(cap {DAILY_CHUNK_CAP}): "
+                  + ", ".join(f"{r['id']} {r['chunk']}" for r in same_day))
+            print("  Pick the ones actually worth owning, or --force with a "
+                  "reason recorded in the session file.")
+            return 1
+        if len(same_day) >= DAILY_CHUNK_CAP:
+            print(f"[warn] --force: day {day} now holds {len(same_day) + 1} "
+                  f"chunks, over the cap of {DAILY_CHUNK_CAP}")
+
+    kind = (a.kind or "phrase").strip().lower()
+    if kind not in CHUNK_KINDS:
+        print(f"[error] --kind must be one of {', '.join(CHUNK_KINDS)}")
+        return 1
+
     cid = next_chunk_id(rows)
     rows.append({
-        "id": cid, "chunk": esc(a.chunk), "gloss": esc(a.gloss),
-        "example": esc(a.example), "day": esc(a.day) or "-",
+        "id": cid, "chunk": esc(a.chunk), "kind": kind, "gloss": esc(a.gloss),
+        "example": esc(a.example), "day": day,
         "tried": "0", "used": "0", "status": "open",
         "next": schedule(1, today(a.as_of)),
     })
     write_chunks(a.root, pre, rows)
-    print(f"[OK] {cid} banked -> {chunks_path(a.root)}")
+    print(f"[OK] {cid} banked ({kind}) -> {chunks_path(a.root)}")
+    if kind == "frame":
+        print("  frame: excluded from chunks-due; add a pattern drill instead")
     return 0
 
 
@@ -535,8 +632,17 @@ def cmd_chunks_due(a):
     pre, rows = read_chunks(a.root)
     now = today(a.as_of)
     due = []
+    frames = 0
     for r in rows:
         if r["status"] == "owned":
+            continue
+        # Frames are unreachable by seeding: any idea they express can be said
+        # correctly another way, so there is no opening that forces one and no
+        # error to correct when it is avoided. Three of them (C009/C010/C012)
+        # were seeded twice each and produced zero times. They belong to
+        # `pattern-next` instead.
+        if r.get("kind") == "frame" and not a.include_frames:
+            frames += 1
             continue
         try:
             when = dt.date.fromisoformat(r["next"])
@@ -546,6 +652,9 @@ def cmd_chunks_due(a):
             due.append((when, r))
     if not due:
         print("No chunks due; seed from errors only.")
+        if frames:
+            print(f"({frames} frame chunk(s) skipped - drill those with "
+                  f"pattern-next)")
         return 0
     # Oldest first, then fewest unprompted uses: the ones that never came back
     # on their own need the engineered opening most.
@@ -558,6 +667,8 @@ def cmd_chunks_due(a):
               f"(tried {r['tried']}, used {r['used']}/{OWNED_AT}, due {when})")
         if r["example"] and r["example"] != "-":
             print(f"       e.g. {r['example']}")
+    if frames:
+        print(f"({frames} frame chunk(s) not seedable - drill with pattern-next)")
     if a.mark_tried:
         for _, r in picked:
             r["tried"] = str(int(r["tried"] or 0) + 1)
@@ -691,6 +802,164 @@ def cmd_log_session(a):
     return 0
 
 
+# --------------------------------------------------------------------------
+# Pattern drills
+#
+# A separate track from the daily chat. Patterns are structures the learner does
+# not reach for, which seeding cannot fix: any idea a pattern expresses can be
+# said correctly with ordinary clauses, so there is no opening that forces one
+# and no error to correct when it is avoided. They are drilled explicitly, one
+# pattern per session, on request after the daily five exchanges.
+# --------------------------------------------------------------------------
+
+PATTERN_HEADER = ("| ID | Pattern | Gap | Example | Found | Drills | Used | "
+                  "Status | Next review |")
+PATTERN_SEP = "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+PATTERN_ROW_RE = re.compile(r"^\|\s*(P\d+)\s*\|")
+PATTERN_FIELDS = ["id", "pattern", "gap", "example", "found", "drills", "used",
+                  "status", "next"]
+PATTERN_OWNED_AT = 2
+
+
+def patterns_path(root: str) -> str:
+    return os.path.join(root, "patterns", "inventory.md")
+
+
+def read_patterns(root):
+    return read_table(patterns_path(root), PATTERN_ROW_RE, PATTERN_FIELDS)
+
+
+def write_patterns(root, preamble, rows):
+    order = {"open": 0, "drilled": 1, "owned": 2}
+    rows = sorted(rows, key=lambda r: (order.get(r["status"], 0), r["id"]))
+    write_table(patterns_path(root), preamble, [], PATTERN_HEADER, PATTERN_SEP,
+                rows, PATTERN_FIELDS)
+
+
+def find_pattern(rows, raw):
+    key = raw.strip().upper()
+    for r in rows:
+        if r["id"].upper() == key:
+            return r
+    low = raw.strip().lower()
+    for r in rows:
+        if r["pattern"].strip().lower() == low:
+            return r
+    return None
+
+
+def cmd_pattern_add(a):
+    pre, rows = read_patterns(a.root)
+    if find_pattern(rows, a.pattern):
+        print(f"[warn] already logged: {a.pattern}")
+        return 0
+    n = max((int(r["id"][1:]) for r in rows if r["id"][1:].isdigit()), default=0)
+    pid = f"P{n + 1:03d}"
+    rows.append({
+        "id": pid, "pattern": esc(a.pattern), "gap": esc(a.gap),
+        "example": esc(a.example), "found": esc(a.day) or "-",
+        "drills": "0", "used": "0", "status": "open",
+        "next": schedule(1, today(a.as_of)),
+    })
+    write_patterns(a.root, pre, rows)
+    print(f"[OK] {pid} logged -> {patterns_path(a.root)}")
+    return 0
+
+
+def cmd_pattern_next(a):
+    """Pick the pattern to drill, and allocate the next session number."""
+    pre, rows = read_patterns(a.root)
+    if not rows:
+        print("No patterns logged yet; add one with pattern-add.")
+        return 0
+    now = today(a.as_of)
+
+    def due_on(r):
+        try:
+            return dt.date.fromisoformat(r["next"])
+        except ValueError:
+            return now
+
+    # Never drilled first, then whatever is most overdue. A pattern at 0 drills
+    # is a gap that has never once been addressed, which beats revisiting one.
+    live = [r for r in rows if r["status"] != "owned"]
+    if not live:
+        print("Every logged pattern is owned. Nothing to drill.")
+        return 0
+    live.sort(key=lambda r: (int(r["drills"] or 0), due_on(r), r["id"]))
+    pick = live[0]
+
+    used = [r for r in rows if r["status"] == "owned"]
+    n = 0
+    sess = os.path.join(a.root, "patterns", "summaries")
+    if os.path.isdir(sess):
+        for f in os.listdir(sess):
+            m = re.match(r"^pattern-(\d+)-", f)
+            if m:
+                n = max(n, int(m.group(1)))
+    date = now.isoformat()
+    stem = f"pattern-{n + 1:02d}-{date.replace('-', '')}"
+
+    print(f"drill: {n + 1:02d}")
+    print(f"date: {date}")
+    print(f"pattern: {pick['id']} {pick['pattern']}")
+    print(f"gap: {pick['gap']}")
+    if pick["example"] and pick["example"] != "-":
+        print(f"example: {pick['example']}")
+    print(f"drills so far: {pick['drills']} | unprompted uses: "
+          f"{pick['used']}/{PATTERN_OWNED_AT} | status: {pick['status']}")
+    print(f"session: patterns/sessions/{stem}.md")
+    print(f"summary: patterns/summaries/{stem}.md")
+    print(f"({len(live)} pattern(s) not yet owned, {len(used)} owned)")
+    return 0
+
+
+def cmd_pattern_drilled(a):
+    """Record a completed drill. This can never reach `owned`."""
+    pre, rows = read_patterns(a.root)
+    r = find_pattern(rows, a.id)
+    if not r:
+        print(f"[error] no such pattern: {a.id}")
+        return 1
+    r["drills"] = str(int(r["drills"] or 0) + 1)
+    if r["status"] == "open":
+        r["status"] = "drilled"
+    r["next"] = schedule(int(r["drills"]), today(a.as_of))
+    write_patterns(a.root, pre, rows)
+    print(f"[OK] {r['id']} drills={r['drills']} status={r['status']} "
+          f"next={r['next']}")
+    print("  a drill trains recognition only - `owned` comes from unprompted "
+          "use in a daily chat")
+    return 0
+
+
+def cmd_pattern_used(a):
+    """Unprompted production in a normal chat. This is the only route to owned."""
+    pre, rows = read_patterns(a.root)
+    r = find_pattern(rows, a.id)
+    if not r:
+        print(f"[error] no such pattern: {a.id}")
+        return 1
+    r["used"] = str(int(r["used"] or 0) + 1)
+    if int(r["used"]) >= PATTERN_OWNED_AT:
+        r["status"] = "owned"
+    r["next"] = schedule(int(r["used"]) + 2, today(a.as_of))
+    write_patterns(a.root, pre, rows)
+    print(f"[OK] {r['id']} used={r['used']}/{PATTERN_OWNED_AT} "
+          f"status={r['status']}")
+    return 0
+
+
+def cmd_patterns(a):
+    _, rows = read_patterns(a.root)
+    for r in rows:
+        if a.status and r["status"] != a.status:
+            continue
+        print(f"{r['id']:5} [{r['status']:7}] drills={r['drills']} "
+              f"used={r['used']}/{PATTERN_OWNED_AT}  {r['pattern']}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -732,11 +1001,18 @@ def main() -> int:
     p.add_argument("--gloss", default="", help="what it means / when it is used")
     p.add_argument("--example", default="")
     p.add_argument("--day", default="-")
+    p.add_argument("--kind", default="phrase", choices=list(CHUNK_KINDS),
+                   help="phrase = seedable fixed expression; "
+                        "frame = sentence pattern, drilled not seeded")
+    p.add_argument("--force", action="store_true",
+                   help=f"bank past the per-day cap of {DAILY_CHUNK_CAP}")
 
     p = common(sub.add_parser("chunks-due")); p.set_defaults(fn=cmd_chunks_due)
     p.add_argument("--top", type=int, default=4)
     p.add_argument("--mark-tried", action="store_true",
                    help="record that these were seeded into today's topic")
+    p.add_argument("--include-frames", action="store_true",
+                   help="also list frame chunks, which seeding cannot reach")
 
     p = common(sub.add_parser("used")); p.set_defaults(fn=cmd_used)
     p.add_argument("--id", required=True, help="C004 or the chunk text")
@@ -749,6 +1025,24 @@ def main() -> int:
 
     p = common(sub.add_parser("chunk-sheet")); p.set_defaults(fn=cmd_chunk_sheet)
     p.add_argument("--out", help="default: <root>/chat/chunk-sheet.md")
+
+    p = common(sub.add_parser("pattern-next")); p.set_defaults(fn=cmd_pattern_next)
+
+    p = common(sub.add_parser("pattern-add")); p.set_defaults(fn=cmd_pattern_add)
+    p.add_argument("--pattern", required=True, help="the structure itself")
+    p.add_argument("--gap", default="", help="why it is missing / what it buys")
+    p.add_argument("--example", default="")
+    p.add_argument("--day", default="-", help="chat day where the gap showed")
+
+    p = common(sub.add_parser("pattern-drilled"))
+    p.set_defaults(fn=cmd_pattern_drilled)
+    p.add_argument("--id", required=True, help="P001 or the pattern text")
+
+    p = common(sub.add_parser("pattern-used")); p.set_defaults(fn=cmd_pattern_used)
+    p.add_argument("--id", required=True, help="P001 or the pattern text")
+
+    p = common(sub.add_parser("patterns")); p.set_defaults(fn=cmd_patterns)
+    p.add_argument("--status", choices=["open", "drilled", "owned"], default=None)
 
     p = common(sub.add_parser("log-session")); p.set_defaults(fn=cmd_log_session)
     p.add_argument("--day", required=True)

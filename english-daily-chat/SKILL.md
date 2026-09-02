@@ -49,11 +49,14 @@ toward everyday life, with occasional work-and-collaboration topics. See
 
 1. **Chat first, correct second.** Every Codex turn reacts to what the learner
    actually said before any feedback appears. Never lead with a correction.
-2. **Fix budget scales with what the learner wrote.** One or two sentences ->
-   **one fix**. Three sentences or more -> **up to three fixes**, and only if the
-   turn genuinely contains that many worth naming. Never pad to reach the cap,
-   never add "you could also say" alternatives, and let the rest go to the
-   summary. Each fix is one `↪` line with no sub-bullets.
+2. **No fix cap - name every repair.** If the rewrite changes it, a `↪` line
+   says why. There is no per-turn limit, because a limit and rule 7 cannot both
+   hold: once the slots run out the remaining differences get absorbed silently
+   into `Say the whole thing:`, which is exactly the failure the learner caught on
+   Day 05, 06 and 07. Still never pad - a repair exists because something was off,
+   not to fill a line. Order them `[wrong]` > `[awkward]` > `[bookish]` >
+   `[calque]`, one `↪` line each, no sub-bullets. If a turn genuinely produced
+   six repairs, give six; the honest count is the signal.
 3. **Never leave silence ambiguous.** End every Codex turn with a one-word
    `Native:` verdict, even when nothing needs fixing. The only exception is a
    Chinese meta question (rule 10).
@@ -75,8 +78,18 @@ toward everyday life, with occasional work-and-collaboration topics. See
    gloss only for a genuinely abstract distinction, wrapped in
    `<details><summary>中文说明</summary>...</details>`. The Chinese columns in
    the daily summary are the one planned exception.
-7. **Correct only what the learner actually wrote.** Never invent an error, and
-   never silently rewrite English that was already fine.
+7. **Every difference is accounted for, and preferences are labelled as such.**
+   Never invent an error. This is hardest inside `Say the whole thing:`: rewriting
+   a whole turn pulls every clause toward one voice, and correct phrases get
+   restyled on the way. Read the rewrite against the original clause by clause and
+   give every single difference a `↪` line - there is no budget to run out of
+   (rule 2). Where the learner's version was already fine, the rewrite may still
+   offer a livelier one, but it must be marked `[optional]` and say so plainly:
+   *your version is fine, this is just more spoken*. An upgrade sold as a repair
+   teaches the learner to distrust their own correct English. Four of these
+   shipped unlabelled - `figure out` (Day 05), `a key part` (Day 06), `but` ->
+   `and still` and `a good way to relax` (Day 07) - and the learner had to ask
+   about every one.
 8. **Do not ask the learner to repeat a repair.** The model phrasing carries it,
    and drilling it on the spot only trains recognition. Recall is trained instead
    by engineering a later opening that needs the expression, without hinting -
@@ -99,7 +112,8 @@ Read `references/correction-style.md` before giving any feedback, and
 <1-3 sentences of genuine reaction, then the question or task for this turn>
 
 ↪ [awkward] "what you said" → "natural version" — <=1 short clause of why
-↪ [bookish] "..." → "..." — ...          (only when the turn ran 3+ sentences)
+↪ [bookish] "..." → "..." — ...          (one line per difference, no cap)
+↪ [optional] "..." → "..." — yours is fine, this is just more spoken
 
 **Say the whole thing:**
 > <the learner's entire turn, rewritten as a native would say it>
@@ -191,11 +205,12 @@ own next turn. That mistake was made on Day 05 and the learner caught it.
        --example "Keeping the boundary is on me." --day 02
    ```
 
-   Bank 3-5 chunks per session, drawn from the natural versions and from Codex's
-   own turns - only expressions the learner actually needed today, never generic
-   idioms. Banking 3-5 while seeding 3-4 keeps the bank cycling in about three
-   sessions, which is roughly where forgetting sets in; the error log deliberately
-   grows more slowly than the chunk bank.
+   Bank **at most 4** chunks per session - `add-chunk` refuses a fifth - drawn from
+   the natural versions and from Codex's own turns, and only expressions the
+   learner actually needed today. Pass `--kind frame` for a sentence pattern
+   rather than a fixed phrase; frames are excluded from seeding and drilled
+   instead. See "Four chunks a session" below for what to cut when there are more
+   candidates than slots, which there usually are.
 
 5. **Close with the summary.** Write `chat/summaries/day-XX-YYYYMMDD.md` per
    `references/summary-format.md`, then record the row:
@@ -210,6 +225,17 @@ own next turn. That mistake was made on Day 05 and the learner caught it.
    grouped sheet: `chunk-sheet`. It groups by the session that produced each
    chunk rather than alphabetically, because a chunk is recalled through the
    situation it came from, not from a word list.
+
+   If the session revealed a **structure** the learner never reaches for, log it
+   now with `pattern-add` and say nothing during the chat. Do not teach it inline:
+   the flat version was correct, and stopping to offer a better construction turns
+   a conversation into a lesson.
+
+6. **Pattern drill, only if asked.** The learner may say they want to carry on with
+   a structure drill. That is a separate track with its own rules - stop here and
+   read `references/pattern-drills.md`. It does not extend the five exchanges, does
+   not touch the chunk rotation, and material for it comes from every previous day,
+   not only today's.
 
 ## Hidden Review
 
@@ -275,6 +301,105 @@ Codex used it first in the same exchange, or when the learner was hinted at. A
 false `owned` is worse than a slow one, because it removes the chunk from
 circulation while it is still recognition-only.
 
+### Bank the mechanism, not just the phrase
+
+Some repairs are not a phrase the learner failed to know - they are a slot the
+learner did not know exists. `the business` -> `the business **side**` is not a
+vocabulary gap; every word was already known. Chinese leaves the aspect implicit
+(业务这一块), and English requires an explicit noun for it: *side*, *part*,
+*end*, or a `-wise` suffix.
+
+Banking the single phrase teaches one phrase. Naming the mechanism transfers,
+because the next occurrence will be a different word in the same slot - *the
+technical side*, *on our end*, *the hard part*, *time-wise*.
+
+So when a repair adds or removes **structure** rather than swapping wording:
+
+- Write the `Means` cell as the rule, not the translation. `C031` reads *"an
+  ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit"* -
+  not *"business side = 业务方面"*.
+- Put a contrast in the `Example`, so the slot is visible: *"The business side, I'd
+  say - not the coding side."*
+- Count it `used` when the learner fills the slot **with any correct word**, not
+  only the banked one. Producing *the technical side* unprompted proves the
+  mechanism landed; insisting on the exact phrase would measure memorisation
+  instead.
+
+This class of error is the hardest to self-correct, because the sentence feels
+finished. It never triggers the feeling that something is wrong - it just sounds
+slightly off to a native and fine to the learner. Those are worth a row even when
+the fix looks trivial.
+
+### Four chunks a session, no more
+
+`add-chunk` refuses a fifth chunk on the same day. The cap exists because the
+bank was growing far faster than it could be consumed: Day 07 banked 8 and Day 08
+banked 9, against **57 chunks and none ever reaching `owned`**, while a session
+has only 4-5 seeding slots. Banking everything that sounded nice guaranteed most
+rows would never be seeded at all.
+
+So the summary has to choose. Cut, in this order:
+
+- **Near-duplicates.** Day 07 banked `unwind` and `wear me out` separately; one
+  slot would have done.
+- **Anything Codex invented on the spot.** `a weeknight thing` was phrasing built
+  for that sentence, not an expression waiting to be owned.
+- **Whatever the learner is unlikely to need again this month.** A chunk that
+  cannot plausibly recur is a row that will be `tried` forever.
+
+`--force` exists, but it prints a warning and the reason belongs in the session
+file.
+
+### `phrase` vs `frame`
+
+The `Kind` column splits the bank by whether seeding can reach an item at all:
+
+| Kind | Example | Seedable? |
+| --- | --- | --- |
+| `phrase` | `wired`, `sold out`, `know it inside out` | Yes - a topic can make it the only natural answer |
+| `frame` | `the thing is, ...`, `..., though` | **No** |
+
+A frame cannot be seeded, and this is not a tuning problem. Any idea a frame
+expresses can be said correctly with ordinary clauses, so there is no opening that
+forces one and **nothing to correct when it is avoided** - Non-Negotiable 7
+forbids rewriting a correct sentence. A frame is never wrong, only absent.
+
+`chunks-due` therefore skips frames and prints a count of what it skipped. They
+belong to the pattern-drill track below.
+
+A bracketed slot does **not** make something a frame: `be really into (something)`
+is a fixed phrase that takes an object, and a topic can absolutely demand it.
+
+## Pattern Drills
+
+A second track, run only when the learner asks - normally after the day's five
+exchanges are done. One structure per session, drilled explicitly, with material
+taken from the learner's own sentences across all previous days.
+
+This exists because structural gaps are invisible to everything else in the
+skill. The learner produced 45 grammatical exchanges without once using
+`with + X + doing`; nothing was ever wrong, so no error row could be written -
+`chat/errors.md` requires a `You said` cell and there was no faulty sentence to
+put in it.
+
+```bash
+python scripts/chat_log.py pattern-next --root <project-root>
+python scripts/chat_log.py pattern-add --pattern "..." --gap "..." --day 08
+python scripts/chat_log.py pattern-drilled --id P001    # after the drill
+python scripts/chat_log.py pattern-used --id P001       # unprompted in a chat
+```
+
+Log a pattern with `pattern-add` whenever a daily chat shows a structure the
+learner never reaches for. Do not interrupt the chat to teach it.
+
+**`drilled` is not `owned`, by design.** Ten out of ten in a drill only proves the
+structure was available while it was the announced subject of the exercise - which
+is recognition, and recognition is already this learner's strength. Only two
+unprompted productions in a normal five-exchange chat earn `owned`, so the daily
+chat is the exam and the drill is the teaching.
+
+Read `references/pattern-drills.md` before running one.
+
 ## Files
 
 All paths are relative to the project root Codex is working in (for this
@@ -284,11 +409,22 @@ learner, the English notebook repo). Create what is missing.
 chat/
 ├── index.md                        one row per session: day, date, topic, turns, fixes, status
 ├── errors.md                       accumulated errors with spaced review dates
-├── chunks.md                       banked expressions with tried/used counts
+├── chunks.md                       banked expressions with kind + tried/used counts
 ├── chunk-sheet.md                  generated phrasebook, grouped by session
 ├── sessions/day-XX-YYYYMMDD.md     full transcript with the inline fixes
 └── summaries/day-XX-YYYYMMDD.md    daily summary
+
+patterns/
+├── inventory.md                    one row per structural gap, with drills/used counts
+├── sessions/pattern-NN-YYYYMMDD.md drill transcript
+└── summaries/pattern-NN-YYYYMMDD.md drill summary
 ```
+
+`patterns/` is the second track and shares no data with `chat/` - no common
+schedule, no shared counters. The only connection is the promotion gate: a
+pattern reaches `owned` solely through `pattern-used`, which is logged from a
+daily chat session. `inventory.md` is maintained by `chat_log.py`; do not
+hand-edit it.
 
 `index.md` doubles as the used-topic record, so the topic pool itself stays in
 `references/topics.md` and is never copied into the project. `index.md`,
@@ -332,3 +468,8 @@ paraphrased here becomes a wrong record there.
 parses the summaries into conversation pages and recall drills. The summary
 layout is therefore a machine contract - see the Machine Contract section of
 `references/summary-format.md` before changing it.
+
+`patterns/` is published the same way by `tools/import-patterns.js`, and the drill
+summary format in `references/pattern-drills.md` is a contract in exactly the same
+sense. Both importers run from `npm run build`. Change the format and the importer
+in the same commit; a mismatch shows up as a quietly missing card, not an error.
