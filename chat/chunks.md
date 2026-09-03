@@ -9,10 +9,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Chunk | Kind | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C001 | couldn't put it down | phrase | a book too good to stop reading | I started it Friday night and couldn't put it down. | 01 | 3 | 0 | open | 2026-09-03 |
+| C001 | couldn't put it down | phrase | a book too good to stop reading | I started it Friday night and couldn't put it down. | 01 | 5 | 0 | open | 2026-09-06 |
 | C002 | be really into (something) | phrase | be passionate about it | I was really into suspense novels. | 01 | 2 | 1 | open | 2026-09-07 |
 | C003 | flush out your system | phrase | the health idea of clearing the body | A big glass of water flushes out your system. | 01 | 1 | 1 | open | 2026-09-06 |
-| C004 | get through (a book/task) | phrase | finish it at pace | I got through it in three nights. | 01 | 3 | 0 | open | 2026-09-03 |
+| C004 | get through (a book/task) | phrase | finish it at pace | I got through it in three nights. | 01 | 5 | 0 | open | 2026-09-06 |
 | C005 | a luxury | phrase | something you can rarely afford the time for | Reading for two hours straight is a luxury now. | 01 | 1 | 1 | open | 2026-09-07 |
 | C006 | it comes down to (X) | phrase | name the real cause, casually | Honestly, it just comes down to time. | 01 | 1 | 1 | open | 2026-09-06 |
 | C007 | That's on me | phrase | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 0 | 0 | open | 2026-09-05 |
@@ -27,12 +27,12 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C016 | get something off (a platform) | phrase | find/take content from an app or site | I got this recipe off Rednote. | 03 | 1 | 1 | open | 2026-09-09 |
 | C017 | all sorts | phrase | spoken replacement for 'various' / 'all kinds' | People post all sorts on there. | 03 | 3 | 0 | open | 2026-09-05 |
 | C018 | sold out | phrase | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 3 | 0 | open | 2026-09-05 |
-| C019 | get in the zone | phrase | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 0 | 0 | open | 2026-09-03 |
-| C020 | talk it through | phrase | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 0 | 0 | open | 2026-09-03 |
-| C021 | that's what pays | phrase | name the thing that earns the money | The business side is what pays. | 04 | 0 | 0 | open | 2026-09-03 |
-| C022 | buy that | phrase | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 0 | 0 | open | 2026-09-03 |
-| C023 | heads-down time | phrase | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 0 | 0 | open | 2026-09-03 |
-| C024 | I'd put it closer to (a week) | phrase | counter an estimate with your own number | I'd put it closer to a week. | 05 | 0 | 0 | open | 2026-09-03 |
+| C019 | get in the zone | phrase | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 2 | 0 | open | 2026-09-06 |
+| C020 | talk it through | phrase | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 2 | 0 | open | 2026-09-06 |
+| C021 | that's what pays | phrase | name the thing that earns the money | The business side is what pays. | 04 | 1 | 0 | open | 2026-09-03 |
+| C022 | buy that | phrase | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 0 | open | 2026-09-06 |
+| C023 | heads-down time | phrase | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 2 | 0 | open | 2026-09-06 |
+| C024 | I'd put it closer to (a week) | phrase | counter an estimate with your own number | I'd put it closer to a week. | 05 | 1 | 0 | open | 2026-09-03 |
 | C025 | that's after the fact | phrase | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 0 | 0 | open | 2026-09-03 |
 | C026 | talk something through | phrase | discuss it properly, to a conclusion | We talked it through last week. | 05 | 0 | 0 | open | 2026-09-03 |
 | C027 | all in | phrase | totalling everything up | So all in, I'd put it at a week. | 05 | 0 | 0 | open | 2026-09-03 |
@@ -66,3 +66,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C055 | that doesn't hold up | phrase | the reason sounds fine but collapses under one question - 站不住脚 | He said it was a budget issue, but that doesn't really hold up. | 08 | 0 | 0 | open | 2026-09-05 |
 | C056 | that's a symptom, not the reason | phrase | distinguishes what you can see from what is causing it | The retries are a symptom, not the reason. | 08 | 0 | 0 | open | 2026-09-05 |
 | C057 | that's downstream of (X) | phrase | caused by something further up - the root-cause phrase natives use at work | All three of those are downstream of the same constraint. | 08 | 0 | 0 | open | 2026-09-05 |
+| C058 | in a way that sticks | phrase | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 0 | 0 | open | 2026-09-06 |
+| C059 | run it past (someone) | phrase | get a second opinion on a decision before committing | I'd run it past a colleague first. | 09 | 0 | 0 | open | 2026-09-06 |
+| C060 | keep an eye on (X) | phrase | watch an ongoing trend - replaces 'look for the frontier technology' | I'd keep an eye on where the tech is going. | 09 | 0 | 0 | open | 2026-09-06 |
+| C061 | outside my own field | phrase | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 0 | 0 | open | 2026-09-06 |
