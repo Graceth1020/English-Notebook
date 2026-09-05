@@ -14,8 +14,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C003 | flush out your system | phrase | the health idea of clearing the body | A big glass of water flushes out your system. | 01 | 1 | 1 | open | 2026-09-06 |
 | C004 | get through (a book/task) | phrase | finish it at pace | I got through it in three nights. | 01 | 5 | 0 | open | 2026-09-06 |
 | C005 | a luxury | phrase | something you can rarely afford the time for | Reading for two hours straight is a luxury now. | 01 | 1 | 1 | open | 2026-09-07 |
-| C006 | it comes down to (X) | phrase | name the real cause, casually | Honestly, it just comes down to time. | 01 | 1 | 1 | open | 2026-09-06 |
-| C007 | That's on me | phrase | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 0 | 0 | open | 2026-09-05 |
+| C007 | That's on me | phrase | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 1 | 1 | open | 2026-09-11 |
 | C008 | stay focused | phrase | keep concentrating (fixed phrase) | I turn off my console to stay focused. | 02 | 1 | 1 | open | 2026-09-07 |
 | C009 | I get more say over (X) | phrase | claim control in natural speech | I get more say over my own hours. | 02 | 3 | 1 | open | 2026-09-09 |
 | C010 | work from home | phrase | remote work - never 'at home' | I worked from home all through COVID. | 02 | 4 | 0 | open | 2026-09-05 |
@@ -29,16 +28,16 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C018 | sold out | phrase | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 3 | 0 | open | 2026-09-05 |
 | C019 | get in the zone | phrase | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 2 | 0 | open | 2026-09-06 |
 | C020 | talk it through | phrase | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 2 | 0 | open | 2026-09-06 |
-| C021 | that's what pays | phrase | name the thing that earns the money | The business side is what pays. | 04 | 1 | 0 | open | 2026-09-03 |
+| C021 | that's what pays | phrase | name the thing that earns the money | The business side is what pays. | 04 | 3 | 0 | open | 2026-09-07 |
 | C022 | buy that | phrase | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 0 | open | 2026-09-06 |
 | C023 | heads-down time | phrase | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 2 | 0 | open | 2026-09-06 |
-| C024 | I'd put it closer to (a week) | phrase | counter an estimate with your own number | I'd put it closer to a week. | 05 | 1 | 0 | open | 2026-09-03 |
-| C025 | that's after the fact | phrase | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 0 | 0 | open | 2026-09-03 |
-| C026 | talk something through | phrase | discuss it properly, to a conclusion | We talked it through last week. | 05 | 0 | 0 | open | 2026-09-03 |
-| C027 | all in | phrase | totalling everything up | So all in, I'd put it at a week. | 05 | 0 | 0 | open | 2026-09-03 |
-| C028 | let's aim to (ship it Wednesday) | phrase | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 0 | 0 | open | 2026-09-03 |
-| C029 | for what it's worth | phrase | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 0 | 0 | open | 2026-09-03 |
-| C030 | still hasn't (done X) by then | phrase | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 0 | 0 | open | 2026-09-03 |
+| C024 | I'd put it closer to (a week) | phrase | counter an estimate with your own number | I'd put it closer to a week. | 05 | 3 | 0 | open | 2026-09-07 |
+| C025 | that's after the fact | phrase | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 2 | 0 | open | 2026-09-07 |
+| C026 | talk something through | phrase | discuss it properly, to a conclusion | We talked it through last week. | 05 | 2 | 0 | open | 2026-09-07 |
+| C027 | all in | phrase | totalling everything up | So all in, I'd put it at a week. | 05 | 1 | 1 | open | 2026-09-11 |
+| C028 | let's aim to (ship it Wednesday) | phrase | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 2 | 0 | open | 2026-09-07 |
+| C029 | for what it's worth | phrase | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 2 | 0 | open | 2026-09-07 |
+| C030 | still hasn't (done X) by then | phrase | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 0 | open | 2026-09-07 |
 | C031 | the business side / the technical side | phrase | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 0 | 0 | open | 2026-09-04 |
 | C032 | it makes no difference to | phrase | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 0 | 0 | open | 2026-09-04 |
 | C033 | company culture | phrase | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 0 | 0 | open | 2026-09-04 |
@@ -63,10 +62,15 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C052 | ..., though (sentence-final) | frame | the spoken 'However' - goes on the end, never the front | The traffic can be brutal, though. | 08 | 0 | 0 | open | 2026-09-05 |
 | C053 | my parents' place | phrase | where your parents live - not 'where my parents live' | I'd work from my parents' place. | 08 | 0 | 0 | open | 2026-09-05 |
 | C054 | I only get back twice a year | phrase | frequency in the verb, not in 'chances' | I only get back twice a year. | 08 | 0 | 0 | open | 2026-09-05 |
-| C055 | that doesn't hold up | phrase | the reason sounds fine but collapses under one question - 站不住脚 | He said it was a budget issue, but that doesn't really hold up. | 08 | 0 | 0 | open | 2026-09-05 |
-| C056 | that's a symptom, not the reason | phrase | distinguishes what you can see from what is causing it | The retries are a symptom, not the reason. | 08 | 0 | 0 | open | 2026-09-05 |
-| C057 | that's downstream of (X) | phrase | caused by something further up - the root-cause phrase natives use at work | All three of those are downstream of the same constraint. | 08 | 0 | 0 | open | 2026-09-05 |
+| C055 | that doesn't hold up | phrase | the reason sounds fine but collapses under one question - 站不住脚 | He said it was a budget issue, but that doesn't really hold up. | 08 | 1 | 0 | open | 2026-09-07 |
+| C056 | that's a symptom, not the reason | phrase | distinguishes what you can see from what is causing it | The retries are a symptom, not the reason. | 08 | 1 | 0 | open | 2026-09-07 |
+| C057 | that's downstream of (X) | phrase | caused by something further up - the root-cause phrase natives use at work | All three of those are downstream of the same constraint. | 08 | 1 | 0 | open | 2026-09-07 |
 | C058 | in a way that sticks | phrase | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 0 | 0 | open | 2026-09-06 |
 | C059 | run it past (someone) | phrase | get a second opinion on a decision before committing | I'd run it past a colleague first. | 09 | 0 | 0 | open | 2026-09-06 |
 | C060 | keep an eye on (X) | phrase | watch an ongoing trend - replaces 'look for the frontier technology' | I'd keep an eye on where the tech is going. | 09 | 0 | 0 | open | 2026-09-06 |
 | C061 | outside my own field | phrase | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 0 | 0 | open | 2026-09-06 |
+| C062 | sort out (how X works) | phrase | work something out / get it straightened out - he produced this in a first draft then edited it away | I need a day to sort out how the sending works. | 10 | 0 | 0 | open | 2026-09-07 |
+| C063 | get my head around (X) | phrase | come to understand something complex yourself - not 'make it clear' | I need a day to get my head around the sending logic. | 10 | 0 | 0 | open | 2026-09-07 |
+| C064 | backed up (a queue) | phrase | unable to drain - not 'blocked', which implies something deliberate | The queue was backed up for two hours. | 10 | 0 | 0 | open | 2026-09-07 |
+| C065 | Fair point. | phrase | concede cleanly with no apology, then give the new number | Fair point. Wednesday works. | 10 | 0 | 0 | open | 2026-09-07 |
+| C006 | it comes down to (X) | phrase | name the real cause, casually | Honestly, it just comes down to time. | 01 | 2 | 2 | owned | - |

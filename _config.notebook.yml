@@ -9,20 +9,21 @@ description: "Personal English Learning Notes"
 
 # === Navigation menu ===
 # A nested value renders as a dropdown (one level only). The practice tracks
-# are grouped so the nav stays short as skills are added; /learning is the
-# group's landing page and carries the numbers for every track.
+# are grouped so the nav stays short as skills are added; the Learning hub is
+# the site's front page and carries the numbers for every track, so Overview
+# points at / rather than a separate landing page.
 menu:
   Home: null
   Archive: null
   Learning:
-    Overview: /learning
+    Overview: /
     Daily Chat: /chat
     Coach: /coach
     Patterns: /patterns
     Form Drills: /form
     Rephrase: /rephrase
     Language Notes: /notes
-  Tags: /
+  Tags: /tags
 
 # === Social links ===
 social:

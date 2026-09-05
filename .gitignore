@@ -41,7 +41,9 @@ source/_posts/Form/
 source/form/
 source/_data/form.json
 
-# Generated learning hub (recreated by tools/import-learning.js, runs last)
+# Generated learning hub (recreated by tools/import-learning.js, runs last).
+# It writes the site's front page, so source/index.md is generated too.
+source/index.md
 source/learning/
 source/_data/learning.json
 

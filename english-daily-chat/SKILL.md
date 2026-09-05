@@ -103,6 +103,17 @@ toward everyday life, with occasional work-and-collaboration topics. See
    log entry, and it does not advance the exchange count. Only English attempts
    at the topic count toward the five.
 
+11. **A drilled pattern's first appearance is praised, never corrected.** Check
+   `patterns --status drilled` at the start of every session. When one of those
+   structures turns up in the learner's English, it is the only evidence a drill
+   ever produces, and it gets a `[good]` line plus `pattern-used --id P0NN` - even
+   when the register is a shade formal for chat. Correcting a first successful
+   recall teaches avoidance of the exact structure the drill was built to install.
+   Register can be raised the *second* time it appears. On Day 09 `P001`
+   (*With AI developing quickly, ...*) was produced unprompted one day after its
+   drill, labelled `bookish`, and rewritten into an ordinary clause - which
+   punished the learner for doing precisely what the pattern system asks.
+
 Read `references/correction-style.md` before giving any feedback, and
 `references/summary-format.md` before writing the daily summary.
 
@@ -114,6 +125,7 @@ Read `references/correction-style.md` before giving any feedback, and
 ↪ [awkward] "what you said" → "natural version" — <=1 short clause of why
 ↪ [bookish] "..." → "..." — ...          (one line per difference, no cap)
 ↪ [optional] "..." → "..." — yours is fine, this is just more spoken
+↪ [good] "with everyone booking at once" — P001, first unprompted use (no rewrite)
 
 **Say the whole thing:**
 > <the learner's entire turn, rewritten as a native would say it>
@@ -145,7 +157,15 @@ own next turn. That mistake was made on Day 05 and the learner caught it.
    python scripts/chat_log.py recent-topics --root <project-root>
    python scripts/chat_log.py chunks-due --root <project-root> --top 4
    python scripts/chat_log.py due --root <project-root> --top 2
+   python scripts/chat_log.py patterns --root <project-root> --status drilled
    ```
+
+   **The `drilled` patterns matter as much as the due chunks, and are handled the
+   opposite way.** A pattern cannot be seeded - the same idea is always expressible
+   with ordinary clauses and still be correct - so a drill's only proof is the
+   structure appearing unprompted in a real answer. Read the list before the chat
+   starts so those structures are recognised on sight, and log any that appear with
+   `pattern-used --id P0NN`.
 
    `due` merges both error logs and prints qualified ids (`coach:E012`,
    `chat:E003`). Prefer coach rows when both are available, and prefer high

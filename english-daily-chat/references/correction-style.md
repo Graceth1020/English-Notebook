@@ -40,6 +40,7 @@ Sort every fix into exactly one label and show it inline:
 | `[calque]` | Grammatical, but built on a Chinese frame | Fix |
 | `[optional]` | The learner's version was **already correct**; this is only livelier | Allowed, but must be marked and worded as optional |
 | `unchanged` | Summary-only. A note on a phrase that was deliberately *not* altered | Use when reverting a past over-correction, or flagging a phrase the learner got from Codex |
+| `good` | A structure under active drill, produced unprompted | Praise it, do not rewrite it, and log `pattern-used` |
 
 `unchanged` exists so the record can show a decision not to change something -
 a reverted over-correction, or an expression the learner echoed back from Codex's
@@ -89,6 +90,27 @@ Prioritize the recurring, transferable habits:
   the effect.
 - **Prepositions in high-frequency frames** - `discuss about`, `depends of`,
   `arrive to`.
+
+## Drilled Patterns Outrank Register
+
+Run `patterns --status drilled` before the session. Anything on that list is a
+sentence structure the learner has practised deliberately and is now trying to use
+for real, and **it is exempt from register criticism on its first appearance.**
+
+The reason is asymmetry of cost. A slightly formal structure used correctly costs
+nothing - a listener does not blink. Being corrected the first time you successfully
+reach for a new structure costs the structure: the next instinct is to fall back on
+the ordinary clause that never gets flagged. And since a pattern cannot be seeded,
+there may not be a next appearance to correct.
+
+`P001` (*with + X + doing/done*) was drilled on Day 08 and appeared unprompted on
+Day 09 as *With AI developing quickly, ...*. It was labelled `bookish` and rewritten.
+The structure was correct, the register was defensible for a technology-trend
+sentence, and the learner had to ask whether he had done something wrong.
+
+So: `[good]` line, no rewrite, `pattern-used --id P0NN`. If the register genuinely
+does not fit, wait for the second occurrence and address it then, when the structure
+is no longer fragile.
 
 ## What To Ignore
 

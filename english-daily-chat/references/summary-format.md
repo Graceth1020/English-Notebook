@@ -275,11 +275,27 @@ cell:
 ```
 
 Labels available in the table: `wrong`, `awkward`, `bookish`, `calque`,
-`optional`, and `unchanged`. The label must be **one word before any
+`optional`, `unchanged`, and `good`. The label must be **one word before any
 parenthesis** - it becomes a CSS class on the site, so `(no change - reverted)`
 emits a broken class while `unchanged (reverted)` works. A row whose `You wrote`
 and `Natural` cells are identical is a deliberate note, not a repair, and the
 importer skips it when building drill cards.
+
+## Patterns Section
+
+When the session included a structure from the pattern inventory, add a `## Patterns`
+section before `## My Errors This Session`. A pattern is not a chunk and does not
+belong in `Chunk Recall`: a chunk can be seeded by building the right opening, while
+a pattern cannot be, because the same idea is always expressible with ordinary clauses
+and still be correct.
+
+So a pattern's only evidence is unprompted appearance, and the section records exactly
+that - which pattern, which exchange, the sentence verbatim, and the resulting count.
+Use a `good` row in the exchange's own table too, with the `Natural` cell identical to
+what the learner wrote, so the transcript shows it was deliberately left alone.
+
+Never count a pattern as a fix. Day 09 reported 14 fixes when one of them was `P001`
+being wrongly corrected; the real number was 13.
 
 ## Describing How The Conversation Went
 

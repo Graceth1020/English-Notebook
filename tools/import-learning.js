@@ -1,12 +1,20 @@
 #!/usr/bin/env node
 /**
- * Build the Learning hub at /learning from the other importers' output.
+ * Build the Learning hub, the site's front page, from the other importers'
+ * output.
  *
  * The nav had grown one tab per skill (Coach, Chat, Patterns, Form, Rephrase,
  * Notes) which is one tab per implementation detail rather than per user
- * intent. They are now grouped under a single "Learning" menu, and this page is
- * that group's landing page: one card per track, with the numbers that answer
+ * intent. They are now grouped under a single "Learning" menu, and this hub is
+ * where the site opens: one card per track, with the numbers that answer
  * "where am I and what is due today" without opening five dashboards.
+ *
+ * It writes source/index.md, i.e. the root URL, rather than a /learning page.
+ * The root previously held a second copy of the tag tree that /tags already
+ * serves, so the landing page was spending the most valuable URL on a
+ * duplicate. Because the file is generated it is gitignored like every other
+ * importer output - a checkout that has not run `npm run import` has no home
+ * page, which is the same deal the track dashboards already make.
  *
  * Unlike the other importers this one does NOT parse the markdown sources. It
  * reads source/_data/*.json, which the other importers have already written, so
@@ -25,6 +33,9 @@ const SOURCE = path.join(ROOT, 'source');
 const DATA_DIR = path.join(SOURCE, '_data');
 
 const GENERATED = [
+  path.join(SOURCE, 'index.md'),
+  // The hub used to live at /learning. Keep deleting that directory so a tree
+  // built before the move does not keep serving a stale second copy.
   path.join(SOURCE, 'learning'),
   path.join(DATA_DIR, 'learning.json'),
 ];
@@ -333,7 +344,7 @@ function main() {
     SCRIPT,
     '',
   ].join('\n');
-  writeFile(path.join(SOURCE, 'learning', 'index.md'), page);
+  writeFile(path.join(SOURCE, 'index.md'), page);
 
   const due = tracks.reduce((n, t) => n + (t.due || 0), 0);
   console.log('Learning hub: ' + tracks.length + ' track(s), ' + due + ' item(s) due.');

@@ -14,4 +14,5 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 06 | 2026-09-01 | Being reachable after hours | opinion | 5 | 17 | done | [summary](summaries/day-06-20260901.md) |
 | 07 | 2026-09-02 | The thing you keep meaning to start | daily | 5 | 22 | done | [summary](summaries/day-07-20260902.md) |
 | 08 | 2026-09-02 | Holidays, and the ones nobody enjoys | culture | 5 | 22 | done | [summary](summaries/day-08-20260902.md) |
-| 09 | 2026-09-03 | A year's salary and no boss | hypothetical | 5 | 14 | done | [summary](summaries/day-09-20260903.md) |
+| 09 | 2026-09-03 | A year's salary and no boss | hypothetical | 5 | 13 | done | [summary](summaries/day-09-20260903.md) |
+| 10 | 2026-09-04 | The incident review | work | 5 | 17 | done | [summary](summaries/day-10-20260904.md) |

@@ -35,7 +35,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 2 | open | 2026-09-08 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | singular countable noun with no article | grammar | In Chinese workplace | In China / In the Chinese workplace | 06 | 4 | open | 2026-10-03 |
+| E031 | singular countable noun with no article | grammar | In Chinese workplace | In China / In the Chinese workplace | 06 | 5 | open | 2026-10-04 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | open | 2026-09-05 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
@@ -46,11 +46,16 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | open | 2026-09-05 |
 | E040 | chances for opportunities to do something | calque | I just have two chances to go back home | I only get back twice a year | 08 | 1 | open | 2026-09-05 |
 | E041 | once for every time | calque | I need to spend eight hours once | that's eight hours in the car every time | 08 | 1 | open | 2026-09-05 |
-| E042 | I don't buy that used to mean I can't | function | I don't buy that. Now I have a full-time job. | I can't, though. I've got a full-time job. | 08 | 1 | open | 2026-09-05 |
+| E042 | I don't buy that used to mean I can't | function | I don't buy that. Now I have a full-time job. | I can't, though. I've got a full-time job. | 08 | 2 | open | 2026-09-11 |
 | E043 | However / a serious problem in speech | register | However, the traffic can be a serious problem | The traffic can be brutal though | 08 | 1 | open | 2026-09-05 |
 | E044 | noun + about for a purpose-built thing | calque | a system about learning | a learning system | 09 | 1 | open | 2026-09-06 |
 | E045 | With X doing Y absolute construction in speech | register | With AI developing quickly, ... | AI's moving so fast that ... | 09 | 1 | open | 2026-09-06 |
 | E046 | professional for a tool instead of specialised | collocation | a professional LLM | a specialised model | 09 | 1 | open | 2026-09-06 |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | open | 2026-09-06 |
 | E048 | form/style for format, and good for you as a verdict | calque | it's the form style ... it's good for you | it comes down to the format ... that's what makes the difference | 09 | 1 | open | 2026-09-06 |
+| E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 1 | open | 2026-09-07 |
+| E050 | code-identifier English in speech | register | the send SMS logic / the fixing ticket | how we send SMS / the fix | 10 | 1 | open | 2026-09-07 |
+| E051 | answer then immediately reverse it | function | The monitoring didn't fire. Actually, the monitor had caught the errors | It fired, but the alert never got out | 10 | 1 | open | 2026-09-07 |
+| E052 | make X clear for understanding it yourself | collocation | make the sending logic clear | get my head around the sending logic | 10 | 1 | open | 2026-09-07 |
+| E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | open | 2026-09-07 |
 | E002 | run into vs be into | collocation | I really ran into suspense novels. | I was really into suspense novels. | 01 | 1 | resolved | - |

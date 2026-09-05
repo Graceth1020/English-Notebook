@@ -86,16 +86,76 @@ rather than the conversation.
 ## The One-Sentence Test Worth Teaching
 
 For `with + X + doing/done`, and adaptable to most patterns: pull the noun out and
-make a small sentence, then look at what follows `be`.
+make a small sentence, then take whatever follows `be`.
 
 ```
-everyone  ->  everyone IS BOOKING      active   -> -ing
-tickets   ->  tickets ARE SOLD OUT     passive  -> -ed
+everyone  ->  everyone IS BOOKING           ->  with everyone booking
+tickets   ->  tickets ARE SOLD OUT          ->  with the tickets sold out
+provider  ->  provider IS BEING SWAPPED     ->  with the provider being swapped
+parents   ->  parents ARE four hours away   ->  with my parents four hours away
 ```
 
 Whatever sits after `be` is what goes after `with`. This avoids naming
 active/passive at all, and it is the kind of rule a learner can actually run at
 speaking speed.
+
+Note the fourth line. The rule is **"take what follows `be`"**, not "add a
+participle" - `four hours away` is not a verb form and transfers unchanged. The
+second slot accepts anything that can follow `be`: a participle, an adjective
+(`with the window open`), a location or adverb (`with the boss away`), a
+prepositional phrase (`with a coat on`), or an infinitive (`with so much to do`).
+Teaching it as a participle rule makes three quarters of its real uses look like
+exceptions.
+
+### Two gaps in that test, both found by the learner
+
+The test only covers sentences built on `be`, and Drill 01 hit both blind spots.
+
+**1. `have` collapses into `with`, with nothing added.** `I've got so much I'm
+trying to learn` has no `be` at all, so the test simply does not run. `with`
+already carries the meaning of `have`, which absorbs the verb:
+
+```
+I've got a rig               ->  with a rig
+I've got so much to learn    ->  with so much to learn
+I have two kids              ->  with two kids
+```
+
+So the full rule is two branches, and the second one has to be stated explicitly
+or the learner reasonably reaches for `with me trying to learn so much` - which is
+grammatical, but repeats a subject the main clause already has, and `with` exists
+to introduce a *different* subject from the main clause. Where the subject is the
+same, English drops `with` and fronts a bare participle instead: *Sitting in the
+library, I can focus* - never *With me sitting in the library, I can focus*.
+
+**2. A faster signal than active/passive: does a noun follow the participle?**
+
+```
+with the change touching the core logic     -> object follows, so -ing
+with the core logic touched                 -> nothing follows, so -ed
+```
+
+A past participle is passive and passive cannot take an object - the object has
+already been promoted to subject. So **if a noun follows the participle, the form
+is `-ing`, with no thinking about voice at all.** This is worth teaching before
+the active/passive framing, because counting what comes after is mechanical and
+survives speaking speed, whereas deciding who acts on what does not.
+
+The same content, seen from either end, is what makes this click:
+
+| Sentence | `with` subject | Form | Why |
+| --- | --- | --- | --- |
+| With **the core logic** touched | the logic | `touched` | nothing follows it |
+| With **the change** touching the core logic | the change | `touching` | an object follows |
+
+## Give The Learner The Test, Not The Verdict
+
+Both gaps above were found by the learner asking why a specific answer was what it
+was, not by the drill. That is the useful signal: a test the learner can run is
+worth more than a set of correct answers, and its edges only show when they push
+on it. So when a drill item is missed, name the test and let them retry inside the
+same round - and when they push back on the test itself, that is the drill working
+rather than an interruption.
 
 ## Recording It
 
