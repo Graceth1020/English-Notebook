@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "node tools/import-rephrase.js && node tools/import-coach.js && node tools/import-chat.js && node tools/import-patterns.js && hexo generate",
+    "build": "npm run import && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "preview": "node tools/import-rephrase.js && node tools/import-coach.js && node tools/import-chat.js && node tools/import-patterns.js && hexo server"
+    "preview": "npm run import && hexo server",
+    "import": "node tools/import-rephrase.js && node tools/import-coach.js && node tools/import-chat.js && node tools/import-patterns.js && node tools/import-form-drills.js && node tools/import-learning.js"
   },
   "hexo": {
     "version": "8.1.2"

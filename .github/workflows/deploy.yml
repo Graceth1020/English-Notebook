@@ -33,14 +33,8 @@ jobs:
       - name: Create theme symlink
         run: ln -s _upstream/hexo-theme-notebook themes/notebook
 
-      - name: Import rephrase content
-        run: node tools/import-rephrase.js
-
-      - name: Import coach content
-        run: node tools/import-coach.js
-
-      - name: Import chat content
-        run: node tools/import-chat.js
+      - name: Import content
+        run: npm run import
 
       - name: Build Hexo site
         run: npx hexo generate

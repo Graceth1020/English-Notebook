@@ -45,6 +45,25 @@ git add themes/_upstream
 git commit -m "update theme"
 ```
 
+## Check the Junction Points Into the Repo
+
+`themes/notebook` must resolve to `themes/_upstream/hexo-theme-notebook` inside
+this repo, because that is what CI builds from (the workflow creates the symlink
+itself). If it points at a checkout elsewhere on disk, local builds silently use
+different theme code than the deployed site.
+
+```powershell
+(Get-Item themes\notebook -Force).Target    # expect ...\English-Notebook\themes\_upstream\hexo-theme-notebook
+```
+
+To repoint it:
+
+```powershell
+Remove-Item -LiteralPath themes\notebook -Force     # removes the link only, not the target
+New-Item -ItemType Junction -Path themes\notebook `
+         -Target themes\_upstream\hexo-theme-notebook
+```
+
 ## First Time on a Fresh Clone
 
 ```bash

@@ -8,14 +8,20 @@ brand: "English Notebook"
 description: "Personal English Learning Notes"
 
 # === Navigation menu ===
+# A nested value renders as a dropdown (one level only). The practice tracks
+# are grouped so the nav stays short as skills are added; /learning is the
+# group's landing page and carries the numbers for every track.
 menu:
   Home: null
   Archive: null
-  Coach: /coach
-  Chat: /chat
-  Patterns: /patterns
-  Rephrase: /rephrase
-  Notes: /notes
+  Learning:
+    Overview: /learning
+    Daily Chat: /chat
+    Coach: /coach
+    Patterns: /patterns
+    Form Drills: /form
+    Rephrase: /rephrase
+    Language Notes: /notes
   Tags: /
 
 # === Social links ===

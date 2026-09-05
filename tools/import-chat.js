@@ -344,9 +344,12 @@ function parseTable(file, idRe, keys) {
   return out;
 }
 
+// Column order is the contract with chat_log.py's CHUNK_FIELDS; `kind` sits
+// between the chunk and its gloss, and omitting it here shifted every later
+// field by one (status read the day number, so nothing ever counted as owned).
 function parseChunks() {
   return parseTable('chunks.md', /^C\d+$/,
-    ['id', 'chunk', 'means', 'example', 'day', 'tried', 'used', 'status', 'next'])
+    ['id', 'chunk', 'kind', 'means', 'example', 'day', 'tried', 'used', 'status', 'next'])
     .map((r) => ({ ...r, tried: +r.tried || 0, used: +r.used || 0 }));
 }
 
@@ -381,7 +384,9 @@ const DASH_STYLE = `
 .chat-tag.bookish{background:#fef9c3;color:#a16207}
 .chat-tag.register{background:#fef9c3;color:#a16207}
 .chat-tag.calque{background:#fae8ff;color:#a21caf}
+.chat-tag.collocation{background:#ffe4e6;color:#be123c}
 .chat-tag.unchanged{background:#e0f2fe;color:#0369a1}
+.chat-tag.good{background:#dcfce7;color:#15803d}
 .chat-tag.optional{background:#f1f5f9;color:#64748b}
 .chat-tag.clean{background:#dcfce7;color:#15803d}
 .chat-filters{display:flex;flex-wrap:wrap;gap:8px;margin:1em 0}

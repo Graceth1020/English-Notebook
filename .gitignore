@@ -31,6 +31,20 @@ source/_posts/Chat/
 source/chat/
 source/_data/chat.json
 
+# Generated pattern-drill site content (recreated by tools/import-patterns.js)
+source/_posts/Patterns/
+source/patterns/
+source/_data/patterns.json
+
+# Generated form-drill site content (recreated by tools/import-form-drills.js)
+source/_posts/Form/
+source/form/
+source/_data/form.json
+
+# Generated learning hub (recreated by tools/import-learning.js, runs last)
+source/learning/
+source/_data/learning.json
+
 # Raw dropped material
 coach/inbox/
 
