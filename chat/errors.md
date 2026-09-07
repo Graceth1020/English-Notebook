@@ -35,7 +35,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 2 | open | 2026-09-08 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | singular countable noun with no article | grammar | In Chinese workplace | In China / In the Chinese workplace | 06 | 5 | open | 2026-10-04 |
+| E031 | singular countable noun with no article | grammar | In Chinese workplace | In China / In the Chinese workplace | 06 | 7 | open | 2026-10-06 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | open | 2026-09-05 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
@@ -58,4 +58,6 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E051 | answer then immediately reverse it | function | The monitoring didn't fire. Actually, the monitor had caught the errors | It fired, but the alert never got out | 10 | 1 | open | 2026-09-07 |
 | E052 | make X clear for understanding it yourself | collocation | make the sending logic clear | get my head around the sending logic | 10 | 1 | open | 2026-09-07 |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | open | 2026-09-07 |
+| E054 | awesome as an all-purpose verdict | collocation | it is so awesome that I couldn't put it down / That's awesome. / They are awesome. | it's so good ... / that's the fun part / they're that good | 11 | 3 | open | 2026-09-22 |
+| E055 | object dropped after a transitive verb | grammar | I have to test carefully / We talked this though / I enjoy every time | I've got to test it properly / We talked it through / I enjoy it every time | 05 | 7 | open | 2026-10-06 |
 | E002 | run into vs be into | collocation | I really ran into suspense novels. | I was really into suspense novels. | 01 | 1 | resolved | - |

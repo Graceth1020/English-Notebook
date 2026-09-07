@@ -112,6 +112,72 @@ So: `[good]` line, no rewrite, `pattern-used --id P0NN`. If the register genuine
 does not fit, wait for the second occurrence and address it then, when the structure
 is no longer fragile.
 
+## Never Change the Strength of a Claim
+
+A rewrite may change how something is said. It may not change **how strongly the
+learner committed to it**. Certainty, obligation, willingness and scheduling are
+content, not register, and swapping them silently rewrites the learner's position
+while pretending to polish their grammar.
+
+The reference case is Day 11: *I plan to finish it* became *I'm hoping to get
+through it*. `plan` is an intention with a schedule behind it; `hoping to` is one
+the speaker may not manage. Nothing in the table mentioned it - that row was about
+`season` -> `quarter` - so the learner had to ask why his own commitment had been
+downgraded. It has been reverted.
+
+Pairs that are **not** interchangeable, in either direction:
+
+| Stronger | Weaker |
+| --- | --- |
+| I plan to / I'm going to | I'm hoping to / I'd like to |
+| I will | I'd probably |
+| I have to / I've got to | I should / I might need to |
+| It is | It's kind of / It's a bit |
+| Definitely | Pretty much / more or less |
+
+A scan of 255 correction rows found ten rewrites that added a hedge (`just`,
+`kind of`, `pretty much`, `a bit`) the learner had not used. Most were harmless
+spoken texture. Three changed the claim. The ratio is the problem: once hedging
+becomes a reflex of the rewriting style, the learner cannot tell which of his own
+positions survived.
+
+Two rules follow:
+
+1. **If the strength changes, it gets its own row**, labelled `optional` or
+   `register`, saying plainly that the original was correct and this is softer or
+   firmer. Then the learner can refuse it.
+2. **A banked chunk never justifies the change.** `get through` was named in that
+   same exchange and then pushed into the rewrite over a perfectly good `finish`.
+   Chunk-planting is already forbidden by `summary-format.md`; doing it while also
+   weakening a commitment is the same mistake twice.
+
+There is a simple test. Read the rewrite back and ask: **would the learner be
+willing to be held to this sentence?** If it promises less than what he wrote, it
+is not a correction.
+
+## One-Offs Do Not Become Drills
+
+A correction that has happened **once** is a correction, not a habit, and the
+right home for it is the summary table and nothing else.
+
+`every time when I get in the zone` (Day 11) is the reference case. It looks like
+a classic doubled-connector calque, so the instinct was to build a drill around
+it - but 255 correction rows contain exactly one instance, and zero instances of
+`although ... but` or `because ... so`. Drilling it would have produced another
+perfect score measuring a rule the learner already knows, which is the same trap
+`chat:E031` fell into.
+
+The test before promoting anything to a drill or an error row:
+
+| Occurrences in the corpus | What it gets |
+| --- | --- |
+| 1 | a table row in that day's summary |
+| 2-3 | an error row, seeded in conversation |
+| 4+, one mechanism | a drill axis or a dedicated instrument |
+
+Count first. `chat:E055` (dropped object) earned its axis with 7 occurrences
+across 3 days; `every time when` earned a table row.
+
 ## What To Ignore
 
 Leave these alone **in the rewrite**, which is what keeps them off the list:

@@ -344,13 +344,39 @@ function parseTable(file, idRe, keys) {
   return out;
 }
 
-// Column order is the contract with chat_log.py's CHUNK_FIELDS; `kind` sits
-// between the chunk and its gloss, and omitting it here shifted every later
-// field by one (status read the day number, so nothing ever counted as owned).
+// Column order is the contract with chat_log.py's CHUNK_FIELDS; `kind` and
+// `scene` sit between the chunk and its gloss, and omitting either here shifts
+// every later field by one (status reads the day number, so nothing ever counts
+// as owned). This has now broken twice - once for `kind`, once for `scene` - so
+// the header is verified rather than trusted.
+const CHUNK_COLS = ['id', 'chunk', 'kind', 'scene', 'means', 'example', 'day',
+  'tried', 'used', 'status', 'next'];
+
 function parseChunks() {
-  return parseTable('chunks.md', /^C\d+$/,
-    ['id', 'chunk', 'kind', 'means', 'example', 'day', 'tried', 'used', 'status', 'next'])
+  assertChunkHeader();
+  return parseTable('chunks.md', /^C\d+$/, CHUNK_COLS)
     .map((r) => ({ ...r, tried: +r.tried || 0, used: +r.used || 0 }));
+}
+
+/** Fail loudly on a schema change instead of importing shifted data. */
+function assertChunkHeader() {
+  const file = path.join(CHAT, 'chunks.md');
+  if (!fs.existsSync(file)) return;
+  const line = fs.readFileSync(file, 'utf8').split(/\r?\n/)
+    .find((l) => /^\|\s*ID\s*\|/i.test(l));
+  if (!line) return;
+  const got = line.trim().replace(/^\|/, '').replace(/\|$/, '')
+    .split('|').map((c) => c.trim().toLowerCase());
+  const want = ['id', 'chunk', 'kind', 'scene', 'means', 'example', 'day',
+    'tried', 'used', 'status', 'next review'];
+  const same = got.length === want.length &&
+    want.every((w, i) => got[i] === w);
+  if (!same) {
+    throw new Error('chunks.md header changed - update CHUNK_COLS in ' +
+      'tools/import-chat.js to match chat_log.py CHUNK_FIELDS.\n' +
+      '  expected: ' + want.join(' | ') + '\n' +
+      '  found:    ' + got.join(' | '));
+  }
 }
 
 function parseErrors() {
@@ -674,7 +700,7 @@ const DASH_SCRIPT = `
   if (pr && chunks.length){
     var pct = Math.round(owned / chunks.length * 100);
     pr.innerHTML = '<div class="chat-bar"><i style="width:' + pct + '%"></i></div>' +
-      '<small>A chunk counts as owned after two unprompted uses in a new context.</small>';
+      '<small>Two unprompted uses make a chunk <b>pending</b>; <b>owned</b> needs a third in a different scene.</small>';
   }
 
   // ---- drill ----
@@ -835,13 +861,19 @@ const DASH_SCRIPT = `
   var cb = el('chatChunks');
   if (cb){
     var own = chunks.filter(function(c){ return c.status === 'owned'; });
+    var waiting = chunks.filter(function(c){ return c.status === 'pending'; });
     var pending = chunks.length - own.length;
     cb.innerHTML = (own.length ? own.map(function(c){
       return '<div class="chat-card owned"><b>' + esc(c.chunk) + '</b>' +
         '<span class="chat-tag">day ' + esc(c.day) + '</span>' +
         '<div class="ctx">' + esc(c.means) + '</div>' +
         '<div class="fix">' + esc(c.example) + '</div></div>';
-    }).join('') : '<div class="chat-card"><p>Nothing owned yet. A chunk needs two ' +
+    }).join('') + (waiting.length ? '<p style="margin-top:1em"><b>' +
+      waiting.length + ' pending</b> - produced twice, waiting on one more use ' +
+      'in a different scene: ' + waiting.map(function(c){
+        return '<code>' + esc(c.chunk) + '</code>';
+      }).join(', ') + '</p>' : '')
+    : '<div class="chat-card"><p>Nothing owned yet. A chunk needs two ' +
       'unprompted uses in a new context.</p></div>') +
       (pending ? '<div class="chat-card"><b>' + pending + ' still in circulation</b>' +
         '<div class="ctx">Deliberately not listed - they are seeded into topics ' +

@@ -48,6 +48,19 @@ Fixed, so that results are comparable across drills:
 | `tense` | Time-frame consistency across a whole turn; hypotheticals; past narration |
 | `article` | Articles, and the countable/uncountable judgement behind them |
 | `form` | Which verb shape belongs in the slot - bare vs `-ing` vs `-ed` vs participle |
+| `object` | Whether a transitive verb got its object at all |
+
+`object` was added after Drill 02, on 7 occurrences across Days 04, 05 and 11:
+*I have to test carefully*, *We talked this though last week*, *Ship this by next
+Wednesday*, *we still got to check the result*, *I enjoy every time...*. It is
+kept separate from `form` deliberately - `form` is about which shape a verb takes,
+while this is about whether an argument is present at all. Folding them together
+would make the `form` column mean two things and the matrix unreadable.
+
+The cause is transfer, not ignorance: Chinese drops an object that is recoverable
+from context, English does not. 测一下 needs no object; *test* does. So the drill
+prompt should invite sentences about doing things to something already named -
+which is why Day 05, a whole session about a ticket, produced three in one go.
 
 `form` is deliberately **not** "irregular verbs". Ten sessions of corpus produced
 zero irregular-verb errors - `bought`, `caught`, `ran into`, `got round to` were all
@@ -98,14 +111,27 @@ with nothing learned from the first.
 One round, one answer, three or four sentences. Do not accept a one-sentence answer -
 the whole design depends on there being enough material for the axes to fail in.
 
+**Hand a short answer back before marking it.** If a round asked for five or six
+sentences and got four, ask for the rest and mark the completed version. This is a
+measurement rule, not a strictness rule: fewer clauses means fewer chances for each
+axis to fail, so a short round quietly understates the error rate while looking
+like an ordinary row in the matrix.
+
+Drill 03 is the cost of not doing this. Round 2 came in at three sentences and
+Round 3 at four against a brief of five or six with five named time points, two of
+which were skipped. Both rounds still carried misses - Round 2 had an article error
+in three sentences - so the numbers are real but the denominators are wrong, and
+they are not comparable with the rounds that ran to length.
+
 ## Marking
 
-Per round, one line per axis, always all three even when clean:
+Per round, one line per axis, always all four even when clean:
 
 ```
 tense   -> ok
 article -> "combine the efficiency" -> "combine that efficiency" (uncountable)
 form    -> ok
+object  -> "I have to test carefully" -> "test it properly"
 ```
 
 Out-of-scope observations may be mentioned **once**, explicitly flagged as not
@@ -121,7 +147,7 @@ parses it, so the anchors are a contract.
 ```markdown
 # Form Drill <NN> - <what the session was about>
 
-Date: <YYYY-MM-DD> | Axes: tense, article, form | Rounds: <N> | Clean: <N>/<N*3>
+Date: <YYYY-MM-DD> | Axes: tense, article, form, object | Rounds: <N> | Clean: <N>/<N*4>
 
 ## Why This Was Run
 
@@ -139,6 +165,7 @@ Date: <YYYY-MM-DD> | Axes: tense, article, form | Rounds: <N> | Clean: <N>/<N*3>
 **tense:** ok
 **article:** "combine the efficiency" -> "combine that efficiency"
 **form:** "how to combine ... rather than coding" -> "combining ... rather than coding"
+**object:** ok
 
 **Note:** <optional, out-of-scope, stated as not counted>
 
@@ -148,11 +175,11 @@ Date: <YYYY-MM-DD> | Axes: tense, article, form | Rounds: <N> | Clean: <N>/<N*3>
 
 ## Matrix
 
-| Round | Difficulty | tense | article | form |
-| --- | --- | --- | --- | --- |
-| 1 | easy | miss | ok | ok |
-| 2 | medium | ok | miss | miss |
-| 3 | hard | ok | ok | ok |
+| Round | Difficulty | tense | article | form | object |
+| --- | --- | --- | --- | --- | --- |
+| 1 | easy | miss | ok | ok | ok |
+| 2 | medium | ok | miss | miss | miss |
+| 3 | hard | ok | ok | ok | ok |
 
 ## What It Showed
 
@@ -165,7 +192,7 @@ absence.>
 ```
 
 Anchors the importer matches: `## Round <N> - <label>`, `**Prompt:**`,
-`**中文：**`, `**He wrote:**`, `**tense:**`, `**article:**`, `**form:**`,
+`**中文：**`, `**He wrote:**`, `**tense:**`, `**article:**`, `**form:**`, `**object:**`,
 `**Note:**`, `---` between rounds, and the `## Matrix` table.
 
 An axis line reading exactly `ok` is clean. Anything else is a miss, and the text is

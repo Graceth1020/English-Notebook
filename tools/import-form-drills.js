@@ -36,8 +36,26 @@ const GENERATED = [
 
 const DRILL_RE = /^form-(\d+)-(\d{8})(?:-[a-z0-9-]+)?\.md$/;
 
-/** Fixed, so results stay comparable across drills. */
-const AXES = ['tense', 'article', 'form'];
+/**
+ * Fixed, so results stay comparable across drills. `object` joined after Drill 02
+ * on 7 corpus occurrences (Days 04/05/11) and is deliberately not folded into
+ * `form`: `form` is which shape a verb takes, `object` is whether the argument is
+ * there at all. Older drills simply have no `object` line and render as an em
+ * dash, which is why axisState distinguishes `none` from `ok`.
+ */
+const AXES = ['tense', 'article', 'form', 'object'];
+
+/**
+ * The drill number an axis started being marked from. A drill that ran before its
+ * introduction has no line for it, and that is not a missing line - it is an axis
+ * that was not being watched. Back-filling `ok` would invent three clean results
+ * that were never observed, so those cells render as an em dash instead.
+ */
+const AXIS_SINCE = { tense: 1, article: 1, form: 1, object: 3 };
+
+function axisApplies(axis, drillNo) {
+  return parseInt(drillNo, 10) >= (AXIS_SINCE[axis] || 1);
+}
 
 const problems = [];
 function complain(msg) { problems.push(msg); }
@@ -149,6 +167,7 @@ function parseDrill(dir, base) {
         complain(base + ' round ' + round.n + ': no "**He wrote:**" line.');
       }
       for (const a of AXES) {
+        if (!axisApplies(a, m[1])) continue;
         if (!round.axes[a]) {
           complain(base + ' round ' + round.n + ': no "**' + a +
             ':**" line - every axis must be stated, even when clean.');
@@ -255,6 +274,8 @@ function parseDrill(dir, base) {
       const r = rounds.find((x) => x.n === +c[0]);
       if (!r) continue;
       AXES.forEach((a, i) => {
+        if (!axisApplies(a, m[1])) return;
+        if (c[i + 2] === undefined) return;
         const stated = axisState(c[i + 2] === 'ok' ? 'ok' : 'x');
         if (stated !== axisState(r.axes[a])) {
           complain(base + ' round ' + r.n + ': Matrix says ' + a + '=' + c[i + 2] +

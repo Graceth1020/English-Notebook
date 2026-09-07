@@ -321,6 +321,53 @@ Codex used it first in the same exchange, or when the learner was hinted at. A
 false `owned` is worse than a slow one, because it removes the chunk from
 circulation while it is still recognition-only.
 
+**A hint carries over to the next day.** Day 11 opened with the three targets
+named out loud; the learner used all three correctly and none could be credited,
+because a chunk named yesterday and produced today cannot be told apart from one
+that was actually internalised. Wait for it to appear in a session where it was
+never mentioned.
+
+### Scene scheduling beats seeding technique
+
+Every chunk carries a `Scene`, and a chunk is only reachable when the day's topic
+sits in it. This is the single biggest lever in the whole skill, and it was found
+the hard way: ten consecutive sessions on work topics left every reading chunk
+untouched, `couldn't put it down` was seeded five times with zero production, and
+then it appeared in the first minute of the first reading topic ever run. Three
+reading/leisure chunks landed in that one session.
+
+The failure mode it prevents is misreading a scheduling problem as a quality
+problem. With 19 chunks seeded and never produced, the obvious reading was that
+they were bad chunks that should be retired. They were not; they were simply
+unreachable.
+
+So `chunks-due` names the scene holding the largest stalled cluster before it
+lists anything, and the topic is built for that scene:
+
+```bash
+python scripts/chat_log.py chunks-due --root <project-root> --top 4
+```
+
+Discourse markers (`for what it's worth`, `the thing is`, `Fair point`) have scene
+`general` on purpose - they fit anywhere, so scheduling never blocks them.
+
+### `owned` requires a different scene
+
+Two unprompted uses promote a chunk to **`pending`**, not `owned`. Both uses may
+have happened on home ground, in topics chosen to reach it - which is exactly what
+a good session looks like, and exactly what a false positive looks like too.
+
+`owned` needs one further unprompted use in a **different scene**:
+
+```bash
+python scripts/chat_log.py confirm --root <project-root> --id C012 --scene work
+```
+
+The command refuses a same-scene confirmation unless `--force`, which is only for
+a mislabelled scene. This is the pattern-drill principle applied to chunks: a
+result obtained inside the exercise built to produce it is not proof of
+portability. The daily chat is still the exam, and now the chat has an exam too.
+
 ### Bank the mechanism, not just the phrase
 
 Some repairs are not a phrase the learner failed to know - they are a slot the
@@ -349,6 +396,17 @@ This class of error is the hardest to self-correct, because the sentence feels
 finished. It never triggers the feeling that something is wrong - it just sounds
 slightly off to a native and fine to the learner. Those are worth a row even when
 the fix looks trivial.
+
+### The bank is frozen until the backlog moves
+
+As of Day 11 the bank holds 68 chunks against 1 `owned`, with 32 never seeded.
+**Bank nothing new** until roughly half the bank has movement (`used` >= 1), no
+matter how good the expression is. The learner called this himself, and the
+arithmetic supports him: at 4 banked and ~1.5 credited per session the backlog
+grows faster than it clears, and every added row dilutes the seeding slots.
+
+Exception: a chunk the learner explicitly asks to bank. Those come from him
+noticing a gap, and they carry a much higher hit rate than ones Codex picks.
 
 ### Four chunks a session, no more
 

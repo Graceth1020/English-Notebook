@@ -140,12 +140,15 @@ IDX_PREAMBLE = [
 ]
 
 
-CHUNK_HEADER = ("| ID | Chunk | Kind | Means | Example | Day | Tried | Used | "
-                "Status | Next review |")
-CHUNK_SEP = "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+CHUNK_HEADER = ("| ID | Chunk | Kind | Scene | Means | Example | Day | Tried | "
+                "Used | Status | Next review |")
+CHUNK_SEP = ("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | "
+             "--- |")
 CHUNK_ROW_RE = re.compile(r"^\|\s*(C\d+)\s*\|")
-CHUNK_FIELDS = ["id", "chunk", "kind", "gloss", "example", "day", "tried",
-                "used", "status", "next"]
+CHUNK_FIELDS = ["id", "chunk", "kind", "scene", "gloss", "example", "day",
+                "tried", "used", "status", "next"]
+CHUNK_FIELDS_NOSCENE = ["id", "chunk", "kind", "gloss", "example", "day",
+                        "tried", "used", "status", "next"]
 CHUNK_PREAMBLE = [
     "# Chunk Bank",
     "",
@@ -168,6 +171,17 @@ CHUNK_PREAMBLE = [
 ]
 OWNED_AT = 2
 
+# A chunk reaching OWNED_AT inside a topic built to pull for it has been produced
+# under favourable conditions. `owned` is the only measurement in this skill worth
+# trusting, so it now requires one further unprompted appearance in a session
+# whose scene is NOT the chunk's own - recorded with `confirm`. Until then the
+# row sits at `pending` and stays in circulation.
+#
+# Day 11 is why: eight chunks were credited in one session on a topic chosen to
+# reach them, two of which promoted straight to `owned`. That is a real result and
+# also exactly the shape a false positive takes.
+CONFIRM_SCENE_MUST_DIFFER = True
+
 # One session may bank at most this many chunks. Day 07 banked 8 and Day 08
 # banked 9, against 0 chunks ever reaching `owned` - the bank was growing far
 # faster than it could be consumed, and seeding slots per session are fixed at
@@ -175,6 +189,46 @@ OWNED_AT = 2
 # owning rather than every nice phrase that appeared.
 DAILY_CHUNK_CAP = 4
 CHUNK_KINDS = ("phrase", "frame")
+
+# The scene a chunk lives in. Day 11 established that topic scheduling, not chunk
+# quality, was what stalled the bank: `couldn't put it down` was seeded 5 times
+# with zero production across ten sessions whose topics were almost all work, then
+# landed on the first reading topic it ever met. So a chunk is only reachable when
+# the day's topic sits in its scene, and `chunks-due` groups by scene rather than
+# printing a flat date-ordered list.
+SCENES = (
+    "reading", "work", "commute", "health", "food", "shopping", "games",
+    "family", "travel", "study", "money", "general",
+)
+
+# Keyword -> scene, checked against the chunk text and its gloss. Deliberately
+# small: a wrong guess is cheap to override with --scene, and `general` is the
+# honest answer for anything that fits anywhere.
+SCENE_HINTS = (
+    ("reading", ("book", "read", "novel", "put it down", "page", "chapter")),
+    ("work", ("ticket", "deploy", "estimate", "meeting", "colleague", "boss",
+              "salary", "job", "team", "sprint", "queue", "provider", "code",
+              "monitor", "shipped", "business", "career", "employ")),
+    ("commute", ("commute", "traffic", "train", "drive", "bus", "office")),
+    ("health", ("sleep", "wired", "tired", "exhaust", "wear", "health",
+                "exercise", "gym", "body", "flush")),
+    ("food", ("eat", "drink", "coffee", "tea", "water", "food", "meal")),
+    ("shopping", ("buy", "shop", "sold out", "stock", "price", "mall")),
+    ("games", ("game", "play", "rig", "setup", "zone")),
+    ("family", ("parent", "family", "home", "kid", "holiday")),
+    ("travel", ("trip", "flight", "hotel", "ticket for", "abroad")),
+    ("study", ("learn", "study", "course", "skill", "practice", "remember")),
+    ("money", ("cost", "cheap", "expensive", "budget", "pay", "money")),
+)
+
+
+def infer_scene(chunk: str, gloss: str = "") -> str:
+    """Best-effort scene from the chunk text. `general` when nothing matches."""
+    hay = (chunk + " " + (gloss or "")).lower()
+    for scene, words in SCENE_HINTS:
+        if any(w in hay for w in words):
+            return scene
+    return "general"
 
 
 def chunks_path(root: str) -> str:
@@ -398,9 +452,15 @@ def read_chunks(root):
                 cells = [c.strip() for c in line.strip().strip("|").split("|")]
                 if len(cells) >= len(CHUNK_FIELDS):
                     rows.append(dict(zip(CHUNK_FIELDS, cells)))
+                elif len(cells) >= len(CHUNK_FIELDS_NOSCENE):
+                    # Banked before `Scene` existed: infer it once, here.
+                    row = dict(zip(CHUNK_FIELDS_NOSCENE, cells))
+                    row["scene"] = infer_scene(row["chunk"], row.get("gloss"))
+                    rows.append(row)
                 elif len(cells) >= len(CHUNK_FIELDS_LEGACY):
                     row = dict(zip(CHUNK_FIELDS_LEGACY, cells))
                     row["kind"] = classify_chunk(row)
+                    row["scene"] = infer_scene(row["chunk"], row.get("gloss"))
                     rows.append(row)
                 continue
             if line.strip().startswith("|"):
@@ -410,7 +470,7 @@ def read_chunks(root):
 
 
 def write_chunks(root, preamble, rows):
-    order = {"open": 0, "owned": 1}
+    order = {"open": 0, "pending": 1, "owned": 2}
     rows = sorted(rows, key=lambda r: (order.get(r["status"], 0), r["id"]))
     write_table(chunks_path(root), preamble, CHUNK_PREAMBLE,
                 CHUNK_HEADER, CHUNK_SEP, rows, CHUNK_FIELDS)
@@ -614,9 +674,18 @@ def cmd_add_chunk(a):
         print(f"[error] --kind must be one of {', '.join(CHUNK_KINDS)}")
         return 1
 
+    scene = (getattr(a, "scene", None) or "").strip().lower()
+    if scene and scene not in SCENES:
+        print(f"[error] --scene must be one of {', '.join(SCENES)}")
+        return 1
+    if not scene:
+        scene = infer_scene(a.chunk, a.gloss)
+        print(f"[note] scene inferred as `{scene}` - override with --scene")
+
     cid = next_chunk_id(rows)
     rows.append({
-        "id": cid, "chunk": esc(a.chunk), "kind": kind, "gloss": esc(a.gloss),
+        "id": cid, "chunk": esc(a.chunk), "kind": kind, "scene": scene,
+        "gloss": esc(a.gloss),
         "example": esc(a.example), "day": day,
         "tried": "0", "used": "0", "status": "open",
         "next": schedule(1, today(a.as_of)),
@@ -635,6 +704,8 @@ def cmd_chunks_due(a):
     frames = 0
     for r in rows:
         if r["status"] == "owned":
+            continue
+        if a.scene and (r.get("scene") or "general") != a.scene:
             continue
         # Frames are unreachable by seeding: any idea they express can be said
         # correctly another way, so there is no opening that forces one and no
@@ -659,12 +730,57 @@ def cmd_chunks_due(a):
     # Oldest first, then fewest unprompted uses: the ones that never came back
     # on their own need the engineered opening most.
     due.sort(key=lambda t: (t[0], int(t[1]["used"] or 0)))
-    picked = due[: a.top]
-    print(f"{len(due)} chunks due as of {now.isoformat()} - build the topic so "
-          f"these are the natural answer, and do not hint:")
+
+    # Which scene has the most stalled chunks? That is the topic to build, and it
+    # is the actual lesson of Day 11: ten sessions of work topics left every
+    # reading chunk untouched, and the first reading topic cleared three of them
+    # in one go. Scheduling beats seeding technique.
+    by_scene: dict[str, list] = {}
+    for when, r in due:
+        by_scene.setdefault(r.get("scene") or "general", []).append((when, r))
+    ranked = sorted(by_scene.items(),
+                    key=lambda kv: (-len(kv[1]), kv[1][0][0]))
+
+    print(f"{len(due)} chunks due as of {now.isoformat()} across "
+          f"{len(ranked)} scene(s).")
+    if not a.scene:
+        best, items = ranked[0]
+        print(f"\n>> Build today's topic in scene `{best}` - {len(items)} due "
+              f"chunk(s) live there, the largest cluster.")
+        print("   A chunk is only reachable when the topic sits in its scene.")
+        print("\n   Stalled chunks per scene:")
+        for scene, items in ranked:
+            zero = sum(1 for _, r in items if int(r["used"] or 0) == 0)
+            print(f"     {scene:10s} {len(items):3d} due, {zero:3d} never "
+                  f"produced")
+
+    pend = [(w, r) for w, r in due if r["status"] == "pending"]
+    if pend:
+        print(f"\n   {len(pend)} pending chunk(s) - produced twice, awaiting "
+              f"one use in a DIFFERENT scene:")
+        for _, r in pend:
+            print(f"     {r['id']} \"{r['chunk']}\" (home `"
+                  f"{r.get('scene', 'general')}`)")
+
+    scope = [t for t in due if not a.scene or True]
+    if a.scene:
+        picked = scope[: a.top]
+    else:
+        # Take from the recommended scene first, then fill from anywhere.
+        best_items = ranked[0][1]
+        picked = best_items[: a.top]
+        if len(picked) < a.top:
+            for t in due:
+                if t not in picked:
+                    picked.append(t)
+                if len(picked) >= a.top:
+                    break
+
+    print(f"\n   Seed these {len(picked)}, and do not hint:")
     for when, r in picked:
         print(f"  {r['id']} \"{r['chunk']}\" = {r['gloss']} "
-              f"(tried {r['tried']}, used {r['used']}/{OWNED_AT}, due {when})")
+              f"(scene {r.get('scene', 'general')}, tried {r['tried']}, "
+              f"used {r['used']}/{OWNED_AT}, due {when})")
         if r["example"] and r["example"] != "-":
             print(f"       e.g. {r['example']}")
     if frames:
@@ -678,23 +794,81 @@ def cmd_chunks_due(a):
 
 
 def cmd_used(a):
-    """Unprompted production in a new context."""
+    """Unprompted production in a new context.
+
+    Reaching OWNED_AT no longer promotes straight to `owned`. It promotes to
+    `pending`, which means "produced twice, but both times on home ground".
+    Confirmation is a third appearance in a session whose scene differs - see
+    cmd_confirm and the CONFIRM_SCENE_MUST_DIFFER note.
+    """
     pre, rows = read_chunks(a.root)
     r = find_chunk(rows, a.id)
     if not r:
         print(f"[ERROR] no such chunk: {a.id}", file=sys.stderr)
         return 1
+    if r["status"] == "owned":
+        print(f"[warn] {r['id']} is already owned; nothing to do")
+        return 0
     used = int(r["used"] or 0) + 1
     r["used"] = str(used)
     if int(r["tried"] or 0) < used:
         r["tried"] = str(used)
     if used >= OWNED_AT:
-        r["status"], r["next"] = "owned", "-"
-        print(f"[OK] {r['id']} used={used} -> owned ({r['chunk']})")
+        r["status"] = "pending"
+        r["next"] = schedule(used + 1, today(a.as_of))
+        print(f"[OK] {r['id']} used={used} -> pending ({r['chunk']})")
+        print(f"     needs one unprompted use outside scene "
+              f"`{r.get('scene', 'general')}` to become owned - "
+              f"`confirm --id {r['id']} --scene <other>`")
     else:
         r["next"] = schedule(used + 1, today(a.as_of))
         print(f"[OK] {r['id']} used={used}/{OWNED_AT} next={r['next']}")
     write_chunks(a.root, pre, rows)
+    return 0
+
+
+def cmd_confirm(a):
+    """Promote a `pending` chunk to `owned` from a different scene.
+
+    The whole point is that the scene must differ, so the scene of the session
+    where it appeared is required rather than optional.
+    """
+    pre, rows = read_chunks(a.root)
+    r = find_chunk(rows, a.id)
+    if not r:
+        print(f"[ERROR] no such chunk: {a.id}", file=sys.stderr)
+        return 1
+    if r["status"] == "owned":
+        print(f"[warn] {r['id']} is already owned")
+        return 0
+    if r["status"] != "pending":
+        print(f"[ERROR] {r['id']} is `{r['status']}`, not `pending` - it has "
+              f"{r['used']} use(s) and needs {OWNED_AT} before it can be "
+              f"confirmed. Use `used` instead.", file=sys.stderr)
+        return 1
+
+    here = (a.scene or "").strip().lower()
+    if here not in SCENES:
+        print(f"[ERROR] --scene must be one of {', '.join(SCENES)}",
+              file=sys.stderr)
+        return 1
+    home = (r.get("scene") or "general").strip().lower()
+    if CONFIRM_SCENE_MUST_DIFFER and here == home and not a.force:
+        print(f"[refused] {r['id']} lives in scene `{home}` and this use was "
+              f"also in `{home}`.", file=sys.stderr)
+        print("  A third use on home ground is not evidence the chunk is "
+              "portable - that is exactly what `pending` exists to catch.")
+        print("  Wait for a topic in another scene, or --force if the scene "
+              "label is simply wrong.")
+        return 1
+
+    used = int(r["used"] or 0) + 1
+    r["used"], r["status"], r["next"] = str(used), "owned", "-"
+    if int(r["tried"] or 0) < used:
+        r["tried"] = str(used)
+    write_chunks(a.root, pre, rows)
+    note = " (--force, same scene)" if here == home else f" (in `{here}`, home `{home}`)"
+    print(f"[OK] {r['id']} confirmed -> owned{note}: {r['chunk']}")
     return 0
 
 
@@ -819,6 +993,17 @@ PATTERN_ROW_RE = re.compile(r"^\|\s*(P\d+)\s*\|")
 PATTERN_FIELDS = ["id", "pattern", "gap", "example", "found", "drills", "used",
                   "status", "next"]
 PATTERN_OWNED_AT = 2
+
+# A chunk reaching OWNED_AT inside a topic built to pull for it has been produced
+# under favourable conditions. `owned` is the only measurement in this skill worth
+# trusting, so it now requires one further unprompted appearance in a session
+# whose scene is NOT the chunk's own - recorded with `confirm`. Until then the
+# row sits at `pending` and stays in circulation.
+#
+# Day 11 is why: eight chunks were credited in one session on a topic chosen to
+# reach them, two of which promoted straight to `owned`. That is a real result and
+# also exactly the shape a false positive takes.
+CONFIRM_SCENE_MUST_DIFFER = True
 
 
 def patterns_path(root: str) -> str:
@@ -1001,6 +1186,8 @@ def main() -> int:
     p.add_argument("--gloss", default="", help="what it means / when it is used")
     p.add_argument("--example", default="")
     p.add_argument("--day", default="-")
+    p.add_argument("--scene", choices=SCENES, default=None,
+                   help="the situation it belongs to; inferred when omitted")
     p.add_argument("--kind", default="phrase", choices=list(CHUNK_KINDS),
                    help="phrase = seedable fixed expression; "
                         "frame = sentence pattern, drilled not seeded")
@@ -1009,10 +1196,22 @@ def main() -> int:
 
     p = common(sub.add_parser("chunks-due")); p.set_defaults(fn=cmd_chunks_due)
     p.add_argument("--top", type=int, default=4)
+    p.add_argument("--scene", choices=SCENES, default=None,
+                   help="only chunks in this scene; omit to get a "
+                        "scene recommendation")
     p.add_argument("--mark-tried", action="store_true",
                    help="record that these were seeded into today's topic")
     p.add_argument("--include-frames", action="store_true",
                    help="also list frame chunks, which seeding cannot reach")
+
+    p = common(sub.add_parser("confirm")); p.set_defaults(fn=cmd_confirm)
+    p.add_argument("--id", required=True)
+    p.add_argument("--scene", required=True,
+                   help="scene of the session where it appeared; must differ "
+                        "from the chunk's home scene")
+    p.add_argument("--force", action="store_true",
+                   help="allow same-scene confirmation (only when the stored "
+                        "scene label is wrong)")
 
     p = common(sub.add_parser("used")); p.set_defaults(fn=cmd_used)
     p.add_argument("--id", required=True, help="C004 or the chunk text")
@@ -1021,7 +1220,8 @@ def main() -> int:
     p.add_argument("--id", required=True, help="C004 or the chunk text")
 
     p = common(sub.add_parser("chunks")); p.set_defaults(fn=cmd_chunks)
-    p.add_argument("--status", default="all", choices=["all", "open", "owned"])
+    p.add_argument("--status", default="all",
+                   choices=["all", "open", "pending", "owned"])
 
     p = common(sub.add_parser("chunk-sheet")); p.set_defaults(fn=cmd_chunk_sheet)
     p.add_argument("--out", help="default: <root>/chat/chunk-sheet.md")

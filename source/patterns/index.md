@@ -63,9 +63,11 @@ structure was available while it was the announced subject. Promotion to
 <tr><td><code>P002</code></td><td><b>object pronoun after a preposition (with me / for him)</b><br><small>wrote 'with I trying to learn'; nouns hide it, only pronouns expose it</small></td><td>0</td><td>0/2</td><td><span class="pt-st open">open</span></td><td>2026-09-05</td></tr>
 <tr><td><code>P001</code></td><td><b>with + X + doing/done</b><br><small>packs a secondary fact into the main sentence instead of a separate short clause; never used in 45 exchanges</small></td><td>1</td><td>1/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-20</td></tr>
 <tr><td><code>P003</code></td><td><b>purpose nouns (a learning system, not a system for learning)</b><br><small>reaches for 'a platform where we can...' or a bare noun; never stacks the purpose noun in front. 0 uses in 45 exchanges</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-07</td></tr>
+<tr><td><code>P004</code></td><td><b>the more X, the more Y (correlative comparative)</b><br><small>says two separate sentences or an if-clause for a proportional link; 0 uses in 55 exchanges across 11 days</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-10</td></tr>
 </tbody></table>
 
 ## Drills
 
 - [Pattern 01 - with + X + doing/done](/English-Notebook/patterns/drills/pattern-01-20260902/) &middot; 2026-09-02 &middot; 11 items &middot; 10/11 correct
 - [Pattern 02 - purpose nouns](/English-Notebook/patterns/drills/pattern-02-20260904/) &middot; 2026-09-04 &middot; 12 items &middot; 10/12 correct
+- [Pattern 03 - the more X, the more Y](/English-Notebook/patterns/drills/pattern-03-20260906/) &middot; 2026-09-06 &middot; 12 items &middot; 11/12 correct

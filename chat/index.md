@@ -16,3 +16,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 08 | 2026-09-02 | Holidays, and the ones nobody enjoys | culture | 5 | 22 | done | [summary](summaries/day-08-20260902.md) |
 | 09 | 2026-09-03 | A year's salary and no boss | hypothetical | 5 | 13 | done | [summary](summaries/day-09-20260903.md) |
 | 10 | 2026-09-04 | The incident review | work | 5 | 17 | done | [summary](summaries/day-10-20260904.md) |
+| 11 | 2026-09-06 | Weekends, libraries, and Clean Code | daily | 5 | 23 | done | [summary](summaries/day-11-20260906.md) |
