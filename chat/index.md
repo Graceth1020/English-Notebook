@@ -17,3 +17,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 09 | 2026-09-03 | A year's salary and no boss | hypothetical | 5 | 13 | done | [summary](summaries/day-09-20260903.md) |
 | 10 | 2026-09-04 | The incident review | work | 5 | 17 | done | [summary](summaries/day-10-20260904.md) |
 | 11 | 2026-09-06 | Weekends, libraries, and Clean Code | daily | 5 | 23 | done | [summary](summaries/day-11-20260906.md) |
+| 12 | 2026-09-08 | Project plan / interruptions and focus time | work | 5 | 12 | done | [summary](summaries/day-12-20260908.md) |

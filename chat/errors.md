@@ -33,15 +33,15 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E026 | bare imperative to a superior | tone | Ship this by next Wednesday. | Let's aim to ship it next Wednesday. | 05 | 1 | open | 2026-09-03 |
 | E027 | test/verb without an object, plus carefully for properly | collocation | I have to test carefully | I've got to test it properly | 05 | 2 | open | 2026-09-07 |
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
-| E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 2 | open | 2026-09-08 |
+| E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | singular countable noun with no article | grammar | In Chinese workplace | In China / In the Chinese workplace | 06 | 7 | open | 2026-10-06 |
+| E031 | singular countable noun with no article | grammar | In Chinese workplace | In China / In the Chinese workplace | 06 | 10 | open | 2026-10-08 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | open | 2026-09-05 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
-| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 2 | open | 2026-09-10 |
+| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 3 | open | 2026-09-24 |
 | E038 | since + present instead of perfect | grammar | since then on, I drive my car back home | since then I've been driving back | 08 | 1 | open | 2026-09-05 |
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | open | 2026-09-05 |
 | E040 | chances for opportunities to do something | calque | I just have two chances to go back home | I only get back twice a year | 08 | 1 | open | 2026-09-05 |
@@ -59,5 +59,6 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E052 | make X clear for understanding it yourself | collocation | make the sending logic clear | get my head around the sending logic | 10 | 1 | open | 2026-09-07 |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | open | 2026-09-07 |
 | E054 | awesome as an all-purpose verdict | collocation | it is so awesome that I couldn't put it down / That's awesome. / They are awesome. | it's so good ... / that's the fun part / they're that good | 11 | 3 | open | 2026-09-22 |
-| E055 | object dropped after a transitive verb | grammar | I have to test carefully / We talked this though / I enjoy every time | I've got to test it properly / We talked it through / I enjoy it every time | 05 | 7 | open | 2026-10-06 |
+| E055 | object dropped after a transitive verb | grammar | I have to test carefully / We talked this though / I enjoy every time | I've got to test it properly / We talked it through / I enjoy it every time | 05 | 8 | open | 2026-10-08 |
+| E056 | definite article for a hypothetical or unnamed class | grammar | a correct API key / If the pages focused on interaction / If the file is important | the correct API key / if pages are interaction-heavy / if a file is important | 11 | 3 | open | 2026-09-24 |
 | E002 | run into vs be into | collocation | I really ran into suspense novels. | I was really into suspense novels. | 01 | 1 | resolved | - |

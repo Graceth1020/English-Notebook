@@ -91,3 +91,50 @@ phrases you've never dared to use.
 - If a topic dies after two exchanges, pivot once to a neighboring topic instead
   of interrogating the learner. With only five exchanges in a session there is
   room for exactly one pivot, and none after exchange three.
+
+## The Difficulty Ceiling
+
+**A turn may never require a position the learner does not already hold.** The
+learner has to be able to answer it by saying what he thinks in English. The
+moment answering it well requires a *strategy* - how to push back on a manager,
+how to defend an estimate, what a negotiator would concede - the session has
+stopped measuring English and started measuring something the learner did not
+ask to practise.
+
+Day 12 is the reference case. A kickoff-plan roleplay escalated until the team
+lead asked "Can you not just start and see how far you get?", and the learner had
+to ask both what the line meant and how to answer it before he could reply at
+all. This is the identical failure that was withdrawn mid-drill from form-drill
+02 round 3, for the identical reason, one week earlier.
+
+The line at the top of this file - *work topics stay casual, chatting with a
+colleague, not presenting to a manager* - already prohibited it. It was ignored
+because escalating a roleplay feels like raising difficulty. It is not. Real
+difficulty in this practice is a longer turn, more narration, more reasons - all
+of which the learner can meet with what he already believes.
+
+Concrete constraints:
+
+- Roleplay is allowed. **Roleplay with a power gradient is not**: no manager
+  applying pressure, no stakeholder to be talked down, no deadline the learner
+  must defend. Peers only.
+- Pushback is capped at **one** exchange, and it must be a request for detail
+  ("what made it a week?"), never a challenge to be repelled ("that sounds
+  padded").
+- If the learner asks what a Codex turn *means*, that turn was too hard.
+  Rephrase and continue - do not count it, and do not build on it.
+- If the learner asks for a hint on **what to say** rather than **how to say
+  it**, stop. The topic is wrong, not the answer. Offer to soften or switch.
+
+## Every Turn Carries A Chunk Or Is Cut
+
+A turn that reaches no due chunk and no seeded error is a turn that costs the
+learner effort and returns nothing. Scene matching is necessary but not
+sufficient: Day 12's negotiation turn was correctly in scene `work` and still had
+nothing in range, because the pressure had moved the conversation into a register
+the bank does not cover.
+
+Before writing a Codex turn, name the chunk or error it is reaching for. If there
+is none, rewrite the turn until there is. The learner noticed this before Codex
+did - "没有用得上的chunk吗" arrived in the same message as the difficulty
+complaint, and the two have the same cause.
