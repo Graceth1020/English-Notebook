@@ -18,3 +18,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 10 | 2026-09-04 | The incident review | work | 5 | 17 | done | [summary](summaries/day-10-20260904.md) |
 | 11 | 2026-09-06 | Weekends, libraries, and Clean Code | daily | 5 | 23 | done | [summary](summaries/day-11-20260906.md) |
 | 12 | 2026-09-08 | Project plan / interruptions and focus time | work | 5 | 12 | done | [summary](summaries/day-12-20260908.md) |
+| 13 | 2026-09-10 | Starting somewhere new (onboarding) | work | 5 | 16 | done | [summary](summaries/day-13-20260910.md) |

@@ -61,10 +61,11 @@ structure was available while it was the announced subject. Promotion to
 
 <table class="pt-tbl"><thead><tr><th>ID</th><th>Pattern</th><th>Drills</th><th>Unprompted</th><th>Status</th><th>Next</th></tr></thead><tbody>
 <tr><td><code>P002</code></td><td><b>object pronoun after a preposition (with me / for him)</b><br><small>wrote 'with I trying to learn'; nouns hide it, only pronouns expose it</small></td><td>0</td><td>0/2</td><td><span class="pt-st open">open</span></td><td>2026-09-05</td></tr>
-<tr><td><code>P001</code></td><td><b>with + X + doing/done</b><br><small>packs a secondary fact into the main sentence instead of a separate short clause; never used in 45 exchanges</small></td><td>1</td><td>1/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-20</td></tr>
 <tr><td><code>P003</code></td><td><b>purpose nouns (a learning system, not a system for learning)</b><br><small>reaches for 'a platform where we can...' or a bare noun; never stacks the purpose noun in front. 0 uses in 45 exchanges</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-07</td></tr>
 <tr><td><code>P004</code></td><td><b>the more X, the more Y (correlative comparative)</b><br><small>says two separate sentences or an if-clause for a proportional link; 0 uses in 55 exchanges across 11 days</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-10</td></tr>
-<tr><td><code>P005</code></td><td><b>no matter + wh- + clause (concessive)</b><br><small>concedes with a separate sentence or drops it; 0 uses in 55 exchanges. E011 shows the same clause defect one level up (Whenever working from home)</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-11</td></tr>
+<tr><td><code>P005</code></td><td><b>no matter + wh- + clause (concessive)</b><br><small>concedes with a separate sentence or drops it; 0 uses in 55 exchanges. E011 shows the same clause defect one level up (Whenever working from home)</small></td><td>1</td><td>1/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-26</td></tr>
+<tr><td><code>P006</code></td><td><b>fronted participle clause (Looking at his watch, he saw...)</b><br><small>the same-subject half of P001, named in drill 01 but never drilled; uses a finite clause or 'when I...' instead. E053/E011/E005 all show participle-vs-finite confusion</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-13</td></tr>
+<tr><td><code>P001</code></td><td><b>with + X + doing/done</b><br><small>packs a secondary fact into the main sentence instead of a separate short clause; never used in 45 exchanges</small></td><td>1</td><td>2/2</td><td><span class="pt-st owned">owned</span></td><td>2026-10-10</td></tr>
 </tbody></table>
 
 ## Drills
@@ -73,3 +74,5 @@ structure was available while it was the announced subject. Promotion to
 - [Pattern 02 - purpose nouns](/English-Notebook/patterns/drills/pattern-02-20260904/) &middot; 2026-09-04 &middot; 12 items &middot; 10/12 correct
 - [Pattern 03 - the more X, the more Y](/English-Notebook/patterns/drills/pattern-03-20260906/) &middot; 2026-09-06 &middot; 12 items &middot; 11/12 correct
 - [Pattern 04 - no matter + wh- + clause](/English-Notebook/patterns/drills/pattern-04-20260908/) &middot; 2026-09-08 &middot; 12 items &middot; 9/12 correct
+- [Pattern 05 - no matter + wh- + clause (Round 2, harder)](/English-Notebook/patterns/drills/pattern-05-20260909/) &middot; 2026-09-09 &middot; 12 items &middot; 8/11 correct
+- [Pattern 06 - fronted participle clause](/English-Notebook/patterns/drills/pattern-06-20260910/) &middot; 2026-09-10 &middot; 14 items &middot; 11/14 correct

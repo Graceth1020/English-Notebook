@@ -123,6 +123,49 @@ which were skipped. Both rounds still carried misses - Round 2 had an article er
 in three sentences - so the numbers are real but the denominators are wrong, and
 they are not comparable with the rounds that ran to length.
 
+## The Self-Check Variant
+
+Reserved for `chat:E031`, and run only when a drill is otherwise ordinary.
+
+The premise of this track is that the learner cannot supply his own attention
+while composing. Four drills plus a 12/12 control have not moved `chat:E031`, so
+the untested question is whether attention can be applied in a *second pass*,
+after composing, when the content load is gone.
+
+Run it as a fourth part, after Round 3 is marked:
+
+1. Hand back all three of his own answers, unmarked and unannotated.
+2. Ask him to find and fix the determiner errors himself - and say only
+   "determiners", never which sentences or how many.
+3. Compare his catch rate against what the marking actually found.
+
+Three outcomes, and each says something different:
+
+| He catches | Reading |
+| --- | --- |
+| most of them | the gap is composition-time only; a submit-time habit is worth building |
+| some | partial, and worth repeating to see whether the rate climbs |
+| few | the rule is not available for self-monitoring either, and this instrument is exhausted too |
+
+Do not run this every drill. It announces the axis, so the rounds that follow it
+in the same session are no longer blind, and repeated use turns the whole drill
+into an article exercise.
+
+## Determiners, Not Articles
+
+`chat:E031` was originally logged as "singular countable noun with no article"
+and renamed on 2026-09-10 to "determiner slot left empty". The trigger was
+`quit job`, which the old name could not hold: the missing word is a possessive,
+not an article, so it would have been dropped as a one-off.
+
+The mechanism is one thing, not two. A singular countable noun in English needs
+*something* in the determiner slot - article, possessive, or demonstrative - and
+Chinese has no such slot. 辞职, 洗手, 改主意 need no determiner; `quit his job`,
+`wash your hands`, `changed her mind` all do. Mark a missing possessive as
+`article`, since the axis name is fixed for comparability across drills, and note
+in the round that the slot filler is a possessive.
+
+Distinct from `chat:E056`, where the determiner is present but wrong.
 ## Marking
 
 Per round, one line per axis, always all four even when clean:

@@ -63,6 +63,36 @@ Pull from `chat/summaries/day-*.md`. The `You said` lines are the raw material.
 Rounds 1 and 2 are recognition with extra steps. Round 3 is the one that predicts
 whether the pattern will ever appear in real speech, so never cut it for time.
 
+### Round 1 must spread the forms, not isolate one
+
+If the pattern has variants - different wh-words, `-ing` vs `-ed`, regular vs
+irregular - Round 1 has to contain more than one of them. This has been got wrong
+twice:
+
+- Drill 04: three of four Round 1 items wanted `no matter how`, which primed `how`
+  as a general concession word. The one `what` item was missed, and the same miss
+  came back ten items later in Round 3.
+- Drill 06: four of four Round 1 items wanted `-ing`. The learner asked directly
+  why there were no `-ed` examples, and two had to be added to Round 2 mid-drill.
+
+Clustering one variant teaches it as the default. The learner then scores well on
+the round and carries the wrong model into free production, where it is expensive.
+
+### Put the discriminating item early
+
+A wrong model can produce right answers for a long time when the easy items cannot
+tell the difference:
+
+- Drill 04: `how` = 不管 survived four items, because each happened to have a legal
+  adjective or `many` available to fill the slot.
+- Drill 06: `having` + past simple survived two items, because `finished` and
+  `read` have third forms identical to their past simple. It broke on the first
+  irregular verb - in Round 3, with no drill left to retest it.
+
+So identify the item that only a correct model can pass, and put it in Round 1 or
+2. **One discriminating item is worth four redundant ones**, and it belongs early
+enough that a miss can be retested before the drill ends.
+
 Give a whole round at once and let the learner answer it in one message. This is
 not the daily chat: batching is correct here, because the pattern is the subject
 rather than the conversation.

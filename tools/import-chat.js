@@ -481,6 +481,12 @@ const DASH_STYLE = `
 .chat-card{border:1px solid #e3e8ef;border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#fff}
 .chat-card.due{border-left:4px solid #f59e0b}
 .chat-card.owned{border-left:4px solid #10b981}
+.chat-card.pending{border-left:4px solid #6366f1}
+.chat-card .cnt{color:#9aa4b0;font-size:.76em;margin-left:8px}
+.chat-card .fix.masked{color:transparent;background:#eef1f5;border-radius:5px;cursor:pointer;user-select:none}
+.chat-tag.owned{background:#dcfce7;color:#15803d}
+.chat-tag.pending{background:#e0e7ff;color:#4338ca}
+.chat-tag.open{background:#f1f5f9;color:#64748b}
 .chat-card .ctx{color:#666;font-size:.88em;margin:2px 0 6px}
 .chat-card .said{color:#b91c1c;font-family:ui-monospace,monospace;font-size:.9em}
 .chat-card .fix{color:#047857;font-family:ui-monospace,monospace;font-size:.9em}
@@ -505,6 +511,7 @@ html[data-theme="dark"] .cx-ch .a{color:#fca5a5}
 html[data-theme="dark"] .cx-nat,html[data-theme="dark"] .chat-card .fix,
 html[data-theme="dark"] .drill-ans .fix,html[data-theme="dark"] .cx-ch .b{color:#6ee7b7}
 html[data-theme="dark"] .cx-note,html[data-theme="dark"] .chat-card .ctx{color:#a8b3bf}
+html[data-theme="dark"] .chat-card .fix.masked{background:#2a323b;color:transparent}
 html[data-theme="dark"] .cx-ch .zh{color:#98a2ae}
 html[data-theme="dark"] .drill-was{color:#fca5a5}
 html[data-theme="dark"] .chat-bar{background:#262e37}
@@ -856,29 +863,95 @@ const DASH_SCRIPT = `
   }
 
   // ---- chunk bank ----
-  // Only owned chunks are listed. Reading the pending ones would defeat the
-  // silent seeding they depend on, so they are shown as a count and nothing more.
-  var cb = el('chatChunks');
-  if (cb){
-    var own = chunks.filter(function(c){ return c.status === 'owned'; });
-    var waiting = chunks.filter(function(c){ return c.status === 'pending'; });
-    var pending = chunks.length - own.length;
-    cb.innerHTML = (own.length ? own.map(function(c){
-      return '<div class="chat-card owned"><b>' + esc(c.chunk) + '</b>' +
-        '<span class="chat-tag">day ' + esc(c.day) + '</span>' +
-        '<div class="ctx">' + esc(c.means) + '</div>' +
-        '<div class="fix">' + esc(c.example) + '</div></div>';
-    }).join('') + (waiting.length ? '<p style="margin-top:1em"><b>' +
-      waiting.length + ' pending</b> - produced twice, waiting on one more use ' +
-      'in a different scene: ' + waiting.map(function(c){
-        return '<code>' + esc(c.chunk) + '</code>';
-      }).join(', ') + '</p>' : '')
-    : '<div class="chat-card"><p>Nothing owned yet. A chunk needs two ' +
-      'unprompted uses in a new context.</p></div>') +
-      (pending ? '<div class="chat-card"><b>' + pending + ' still in circulation</b>' +
-        '<div class="ctx">Deliberately not listed - they are seeded into topics ' +
-        'silently, and reading them first would invalidate the test.</div></div>' : '');
+  // The whole bank is listed, filterable by scene, because the learner asked to
+  // be able to revise at any time. This is a deliberate trade: it was previously
+  // owned-only, so that reading the page could not contaminate the silent
+  // seeding the 'used' counter measures. That protection is gone by choice - the
+  // examples are masked by default as a partial substitute, but a 'used' count
+  // recorded after a revision session is weaker evidence than one recorded
+  // before this change. See references/chunks-visibility.md.
+  var cscene = 'all', cstatus = 'all', cmask = true;
+  var cb = el('chatChunks'), csf = el('chatChunkScenes'), cstf = el('chatChunkStatus');
+
+  function chunkScenes(){
+    var seen = {};
+    chunks.forEach(function(c){ seen[c.scene || 'general'] = (seen[c.scene || 'general'] || 0) + 1; });
+    return Object.keys(seen).sort(function(a, b){ return seen[b] - seen[a] || a.localeCompare(b); })
+      .map(function(k){ return [k, seen[k]]; });
   }
+
+  function renderChunks(){
+    if (!cb) return;
+    var rows = chunks.filter(function(c){
+      if (cscene !== 'all' && (c.scene || 'general') !== cscene) return false;
+      if (cstatus === 'due') return c.status !== 'owned' && due(c.next);
+      if (cstatus !== 'all' && c.status !== cstatus) return false;
+      return true;
+    });
+    if (!rows.length){ cb.innerHTML = '<p>Nothing here.</p>'; return; }
+    cb.innerHTML = rows.map(function(c){
+      var st = c.status || 'open';
+      var isDue = st !== 'owned' && due(c.next);
+      return '<div class="chat-card' + (st === 'owned' ? ' owned' : '') +
+        (st === 'pending' ? ' pending' : '') + (isDue ? ' due' : '') + '">' +
+        '<b>' + esc(c.chunk) + '</b>' +
+        '<span class="chat-tag ' + esc(st) + '">' + esc(st) + '</span>' +
+        '<span class="chat-tag">' + esc(c.scene || 'general') + '</span>' +
+        '<span class="chat-tag">day ' + esc(c.day) + '</span>' +
+        '<small class="cnt">tried ' + esc(c.tried) + ' &middot; used ' +
+          esc(c.used) + '/2</small>' +
+        '<div class="ctx">' + esc(c.means) + '</div>' +
+        '<div class="fix' + (cmask ? ' masked' : '') + '" tabindex="0">' +
+          esc(c.example) + '</div></div>';
+    }).join('');
+  }
+
+  if (csf){
+    csf.innerHTML = '<button data-s="all" class="on">All (' + chunks.length + ')</button>' +
+      chunkScenes().map(function(p){
+        return '<button data-s="' + esc(p[0]) + '">' + esc(p[0]) + ' (' + p[1] + ')</button>';
+      }).join('');
+    csf.addEventListener('click', function(ev){
+      var b = ev.target.closest('button[data-s]');
+      if (!b) return;
+      cscene = b.getAttribute('data-s');
+      [].forEach.call(csf.querySelectorAll('button'), function(x){ x.classList.toggle('on', x === b); });
+      renderChunks();
+    });
+  }
+  if (cstf){
+    var sopts = [['all','All'],['due','Due'],['open','Open'],['pending','Pending'],['owned','Owned']];
+    cstf.innerHTML = sopts.map(function(o){
+      return '<button data-cs="' + o[0] + '"' + (o[0] === cstatus ? ' class="on"' : '') +
+        '>' + o[1] + '</button>';
+    }).join('') + '<button data-mask="1" class="on">\u906e\u4f4f\u4f8b\u53e5</button>';
+    cstf.addEventListener('click', function(ev){
+      var m = ev.target.closest('button[data-mask]');
+      if (m){
+        cmask = !cmask;
+        m.classList.toggle('on', cmask);
+        renderChunks();
+        return;
+      }
+      var b = ev.target.closest('button[data-cs]');
+      if (!b) return;
+      cstatus = b.getAttribute('data-cs');
+      [].forEach.call(cstf.querySelectorAll('button[data-cs]'), function(x){ x.classList.toggle('on', x === b); });
+      renderChunks();
+    });
+  }
+  if (cb){
+    cb.addEventListener('click', function(ev){
+      var f = ev.target.closest('.fix.masked');
+      if (f) f.classList.remove('masked');
+    });
+    cb.addEventListener('keydown', function(ev){
+      if (ev.key !== 'Enter' && ev.key !== ' ') return;
+      var f = ev.target.closest && ev.target.closest('.fix.masked');
+      if (f){ ev.preventDefault(); f.classList.remove('masked'); }
+    });
+  }
+  renderChunks();
 
   // ---- error log ----
   var ef = el('chatErrFilters'), eb = el('chatErrors');
@@ -1082,10 +1155,17 @@ function main() {
     '## Sessions',
     '<div id="chatDays"></div>',
     '',
-    '## Chunks Owned',
+    '## Chunk Bank',
     '',
-    'Expressions you have produced twice, unprompted, in a new context. Chunks still',
-    'in circulation are counted but not listed.',
+    'Every expression banked so far, filterable by scene. `open` has not been',
+    'produced unprompted yet, `pending` has twice, `owned` has a third time in a',
+    'different scene.',
+    '',
+    'Examples are masked - click one to reveal. Recalling the sentence before you',
+    'read it is the only part of this page that is worth anything; the list itself',
+    'is recognition, which is already your strong side.',
+    '<div id="chatChunkScenes" class="chat-filters"></div>',
+    '<div id="chatChunkStatus" class="chat-filters"></div>',
     '<div id="chatChunks"></div>',
     '',
     '## Error Log',

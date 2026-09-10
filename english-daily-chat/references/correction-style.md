@@ -220,3 +220,47 @@ turn as a whole - use the most severe label that applies - while the `↪` lines
 handle the individual sentences. `[optional]` lines never affect the verdict: a
 turn whose only lines are optional is `clean`, and saying so matters more than the
 upgrades do.
+
+## Check The Pattern Inventory Before Rewriting
+
+**Before touching a learner sentence, scan it for any pattern in
+`patterns/inventory.md` whose status is `drilled` or better.** If one is there,
+it does not get rewritten - it gets tagged `good`, praised in one clause, and
+logged with `pattern-used`.
+
+This is not a new rule. `summary-format.md` already says *never count a pattern
+as a fix*, written after Day 09 reported 14 fixes when one was `P001` being
+wrongly corrected. It is here as a **step in the rewriting procedure** because
+stating the principle was not enough - Day 13 broke it again, and worse.
+
+What happened on Day 13: the learner produced `No matter which company you work
+for`, the first appearance of `P005` in 55 exchanges of tracking. The rewrite
+silently changed it to `Whichever`. The substitution was defensible in isolation
+- both are correct, `whichever` is shorter - but it was an `[optional]` presented
+as part of a repair, with no row and no reason.
+
+Two separate failures, and the second is the expensive one:
+
+1. An undisclosed change, which the learner catches every time and should.
+2. **A tracked, zero-production pattern was erased from the record.** Had he not
+   asked, `P005` would still read `used=0/2` while he had in fact produced it.
+   The measurement would have been wrong, not just the correction.
+
+An undisclosed edit does not merely annoy the learner. It can destroy the
+evidence the whole practice is built on. This is the concrete reason the
+one-row-per-difference rule is absolute, and the answer to anyone (including
+Codex) who thinks a small silent improvement is harmless.
+
+The procedure:
+
+1. Read the learner's sentence.
+2. Grep it against the `drilled`/`owned` rows of `patterns/inventory.md`.
+3. Any hit: freeze that clause, tag `good`, run `pattern-used`.
+4. Only then write the rewrite, around the frozen clause.
+
+The same freeze applies to a chunk the learner produced correctly. Day 13 also
+rewrote `make this clear` to `get my head around it` in a turn where the learner
+had produced `get my head around` unprompted one exchange earlier - correct as a
+repair, but it then got logged as a second chunk production when the second one
+was Codex's own words. **A chunk that appears only in the rewrite is never a
+credit.** Count productions from the `You said` line and nowhere else.
