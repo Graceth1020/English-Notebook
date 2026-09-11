@@ -19,3 +19,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 11 | 2026-09-06 | Weekends, libraries, and Clean Code | daily | 5 | 23 | done | [summary](summaries/day-11-20260906.md) |
 | 12 | 2026-09-08 | Project plan / interruptions and focus time | work | 5 | 12 | done | [summary](summaries/day-12-20260908.md) |
 | 13 | 2026-09-10 | Starting somewhere new (onboarding) | work | 5 | 16 | done | [summary](summaries/day-13-20260910.md) |
+| 14 | 2026-09-11 | Documentation nobody reads (or does) | work | 5 | 24 | done | [summary](summaries/day-14-20260911.md) |

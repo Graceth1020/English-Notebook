@@ -39,13 +39,13 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 0 | open | 2026-09-06 |
 | C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 2 | 1 | open | 2026-09-15 |
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 3 | 0 | open | 2026-09-07 |
-| C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 2 | 0 | open | 2026-09-07 |
+| C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 3 | 0 | open | 2026-09-14 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 1 | 1 | open | 2026-09-11 |
 | C028 | let's aim to (ship it Wednesday) | phrase | work | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 2 | 0 | open | 2026-09-07 |
 | C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 2 | 0 | open | 2026-09-07 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 0 | open | 2026-09-07 |
 | C032 | it makes no difference to | phrase | games | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 0 | 0 | open | 2026-09-04 |
-| C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 0 | 0 | open | 2026-09-04 |
+| C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 1 | 1 | open | 2026-09-18 |
 | C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 0 | 0 | open | 2026-09-04 |
 | C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 0 | 0 | open | 2026-09-04 |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
@@ -69,7 +69,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C054 | I only get back twice a year | phrase | family | frequency in the verb, not in 'chances' | I only get back twice a year. | 08 | 0 | 0 | open | 2026-09-05 |
 | C055 | that doesn't hold up | phrase | general | the reason sounds fine but collapses under one question - 站不住脚 | He said it was a budget issue, but that doesn't really hold up. | 08 | 1 | 0 | open | 2026-09-07 |
 | C056 | that's a symptom, not the reason | phrase | work | distinguishes what you can see from what is causing it | The retries are a symptom, not the reason. | 08 | 1 | 0 | open | 2026-09-07 |
-| C057 | that's downstream of (X) | phrase | work | caused by something further up - the root-cause phrase natives use at work | All three of those are downstream of the same constraint. | 08 | 1 | 0 | open | 2026-09-07 |
+| C057 | that's downstream of (X) | phrase | work | caused by something further up - the root-cause phrase natives use at work | All three of those are downstream of the same constraint. | 08 | 1 | 1 | open | 2026-09-18 |
 | C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 0 | 0 | open | 2026-09-06 |
 | C060 | keep an eye on (X) | phrase | study | watch an ongoing trend - replaces 'look for the frontier technology' | I'd keep an eye on where the tech is going. | 09 | 0 | 0 | open | 2026-09-06 |
 | C061 | outside my own field | phrase | study | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 0 | 0 | open | 2026-09-06 |
@@ -79,6 +79,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C067 | in the next few months | phrase | food | the everyday vague timeframe - what you say instead of a named period when speaking casually | I'll get through it in the next few months. | 11 | 0 | 0 | open | 2026-09-09 |
 | C068 | by the end of the quarter | phrase | work | the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter | I'm hoping to finish it by the end of the quarter. | 11 | 0 | 0 | open | 2026-09-09 |
 | C069 | ..., anyway | frame | general | end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter' | The traffic's brutal. I drive back anyway. | 11 | 0 | 0 | open | 2026-09-11 |
+| C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 0 | 0 | open | 2026-09-14 |
+| C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 0 | 0 | open | 2026-09-14 |
 | C008 | stay focused | phrase | study | keep concentrating (fixed phrase) | I turn off my console to stay focused. | 02 | 2 | 2 | pending | 2026-09-22 |
 | C009 | I get more say over (X) | phrase | work | claim control in natural speech | I get more say over my own hours. | 02 | 3 | 2 | pending | 2026-09-24 |
 | C012 | my commute | phrase | commute | the trip to work, already includes its length | My commute is 40 minutes door to door. | 02 | 3 | 2 | pending | 2026-09-22 |
@@ -88,5 +90,5 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C031 | the business side / the technical side | phrase | work | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 2 | 2 | pending | 2026-09-26 |
 | C059 | run it past (someone) | phrase | work | get a second opinion on a decision before committing | I'd run it past a colleague first. | 09 | 2 | 2 | pending | 2026-09-24 |
 | C062 | sort out (how X works) | phrase | work | work something out / get it straightened out - he produced this in a first draft then edited it away | I need a day to sort out how the sending works. | 10 | 3 | 3 | pending | 2026-10-08 |
-| C063 | get my head around (X) | phrase | study | come to understand something complex yourself - not 'make it clear' | I need a day to get my head around the sending logic. | 10 | 1 | 1 | open | 2026-09-17 |
 | C006 | it comes down to (X) | phrase | general | name the real cause, casually | Honestly, it just comes down to time. | 01 | 2 | 2 | owned | - |
+| C063 | get my head around (X) | phrase | study | come to understand something complex yourself - not 'make it clear' | I need a day to get my head around the sending logic. | 10 | 3 | 3 | owned | - |

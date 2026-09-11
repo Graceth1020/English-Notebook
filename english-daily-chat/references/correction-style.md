@@ -264,3 +264,17 @@ had produced `get my head around` unprompted one exchange earlier - correct as a
 repair, but it then got logged as a second chunk production when the second one
 was Codex's own words. **A chunk that appears only in the rewrite is never a
 credit.** Count productions from the `You said` line and nowhere else.
+
+## Log First, Announce Second
+
+**A credit or hit must be written to the ledger in the same turn it is
+announced, before the reply is sent.** Day 14 announced two chunk credits and
+two error hits in the exchange-1 reply and never ran the commands; the ledger
+disagreed with the chat for the whole session and was only reconciled at
+wrap-up. A credit that exists only in prose does not move a review date, does
+not change a status, and will be double-counted or lost.
+
+The same applies to numbers quoted in chat. Counts like "E031, 12th occurrence"
+must come from the file at the moment of writing, not from memory of the last
+session - Day 14 quoted a stale count twice because the row had gained hits
+between sessions.
