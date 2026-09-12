@@ -42,8 +42,15 @@ const DRILL_RE = /^form-(\d+)-(\d{8})(?:-[a-z0-9-]+)?\.md$/;
  * `form`: `form` is which shape a verb takes, `object` is whether the argument is
  * there at all. Older drills simply have no `object` line and render as an em
  * dash, which is why axisState distinguishes `none` from `ok`.
+ *
+ * `prep` was added after Drill 05, on 9 corpus occurrences across 9 sessions
+ * (E016, E029 x3, E039, `similar with`, `work for tickets`, `spend in commute`,
+ * `protect over working hours`, `add for a module`). It is the mirror of
+ * `object`: `object` asks whether the argument is present, `prep` asks whether
+ * it is attached with the right glue - including whether a required preposition
+ * is there at all (`reply the message` is a `prep` miss, not an `object` miss).
  */
-const AXES = ['tense', 'article', 'form', 'object'];
+const AXES = ['tense', 'article', 'form', 'object', 'prep'];
 
 /**
  * The drill number an axis started being marked from. A drill that ran before its
@@ -51,7 +58,7 @@ const AXES = ['tense', 'article', 'form', 'object'];
  * that was not being watched. Back-filling `ok` would invent three clean results
  * that were never observed, so those cells render as an em dash instead.
  */
-const AXIS_SINCE = { tense: 1, article: 1, form: 1, object: 3 };
+const AXIS_SINCE = { tense: 1, article: 1, form: 1, object: 3, prep: 6 };
 
 function axisApplies(axis, drillNo) {
   return parseInt(drillNo, 10) >= (AXIS_SINCE[axis] || 1);

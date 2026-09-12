@@ -39,7 +39,7 @@ Difficulty climbs across rounds, and the climb is the experiment: it is the only
 to see whether accuracy degrades under load, holds, or - as happened on Day 10 -
 *improves*, because harder content made him more careful rather than less.
 
-## The Three Axes
+## The Five Axes
 
 Fixed, so that results are comparable across drills:
 
@@ -49,6 +49,7 @@ Fixed, so that results are comparable across drills:
 | `article` | Articles, and the countable/uncountable judgement behind them |
 | `form` | Which verb shape belongs in the slot - bare vs `-ing` vs `-ed` vs participle |
 | `object` | Whether a transitive verb got its object at all |
+| `prep` | Whether the verb's argument is attached with the right preposition - and whether a required one is there at all |
 
 `object` was added after Drill 02, on 7 occurrences across Days 04, 05 and 11:
 *I have to test carefully*, *We talked this though last week*, *Ship this by next
@@ -61,6 +62,28 @@ The cause is transfer, not ignorance: Chinese drops an object that is recoverabl
 from context, English does not. 测一下 needs no object; *test* does. So the drill
 prompt should invite sentences about doing things to something already named -
 which is why Day 05, a whole session about a ticket, produced three in one go.
+
+`prep` was added after Drill 05, on 9 occurrences across 9 sessions, meeting
+the same bar `object` did: *found this combination from Rednote* (E016), *reply
+the message* / *respond it* (E029, three hits), *go to the same direction*
+(E039), *similar with the old*, *working for several tickets*, *spend one hour
+in commute*, *protect my heads-down time over working hours*, *add a coupon
+function for our pay module*. One mechanism: English verb+preposition pairs are
+lexically arbitrary, and Chinese transfer grabs the wrong one under production
+pressure.
+
+It is the mirror of `object`, kept separate for the same reason `object` is not
+folded into `form`. `object` asks whether the argument is present at all;
+`prep` asks whether it is glued on correctly. *I have to test carefully* is an
+`object` miss - the thing is gone. *add the feature for the module* is a `prep`
+miss - the thing is there, the glue is wrong. *reply the message* is also
+`prep`, not `object`: the argument is present, its required preposition is not.
+
+Do not direct-drill this axis in isolation. He knows `add to cart`, `similar
+to`, `reply to` - he produced `responding to a problem` correctly one turn
+before writing `respond it`. There is no knowledge gap, so a conventional drill
+scores 12/12 and proves nothing, which is the E031 trap. Marking it under load
+is the instrument; the daily chat remains the exam.
 
 `form` is deliberately **not** "irregular verbs". Ten sessions of corpus produced
 zero irregular-verb errors - `bought`, `caught`, `ran into`, `got round to` were all
@@ -101,6 +124,7 @@ Three sources of load that work, each stressing a different axis:
 | Narrate something spanning several points in time, in order | `tense` - a time frame to manage |
 | Noun-dense technical description for someone with no context | `article` - a judgement at every noun |
 | Comparison or conditional reasoning needing subordinate clauses | `form` - more verb-shape choices |
+| Walk through a process where several systems or tools interact | `prep` - every verb+preposition pair is an arbitrary fact |
 
 None of these require him to invent a stance, and none of them are easy.
 
@@ -175,6 +199,7 @@ tense   -> ok
 article -> "combine the efficiency" -> "combine that efficiency" (uncountable)
 form    -> ok
 object  -> "I have to test carefully" -> "test it properly"
+prep    -> "added a coupon function for the pay module" -> "added it to the pay module"
 ```
 
 Out-of-scope observations may be mentioned **once**, explicitly flagged as not
@@ -190,7 +215,7 @@ parses it, so the anchors are a contract.
 ```markdown
 # Form Drill <NN> - <what the session was about>
 
-Date: <YYYY-MM-DD> | Axes: tense, article, form, object | Rounds: <N> | Clean: <N>/<N*4>
+Date: <YYYY-MM-DD> | Axes: tense, article, form, object, prep | Rounds: <N> | Clean: <N>/<N*5>
 
 ## Why This Was Run
 
@@ -218,11 +243,11 @@ Date: <YYYY-MM-DD> | Axes: tense, article, form, object | Rounds: <N> | Clean: <
 
 ## Matrix
 
-| Round | Difficulty | tense | article | form | object |
-| --- | --- | --- | --- | --- | --- |
-| 1 | easy | miss | ok | ok | ok |
-| 2 | medium | ok | miss | miss | miss |
-| 3 | hard | ok | ok | ok | ok |
+| Round | Difficulty | tense | article | form | object | prep |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | easy | miss | ok | ok | ok | ok |
+| 2 | medium | ok | miss | miss | miss | ok |
+| 3 | hard | ok | ok | ok | ok | miss |
 
 ## What It Showed
 
