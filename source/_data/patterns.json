@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T02:37:02.073Z",
+  "generated": "2026-09-13T07:36:33.829Z",
   "drills": [
     {
       "drill": "07",
@@ -103,17 +103,6 @@
       "next": "2026-09-07"
     },
     {
-      "id": "P004",
-      "pattern": "the more X, the more Y (correlative comparative)",
-      "gap": "says two separate sentences or an if-clause for a proportional link; 0 uses in 55 exchanges across 11 days",
-      "example": "The longer the commute, the less I want to go in.",
-      "found": "11",
-      "drills": "1",
-      "used": "1",
-      "status": "drilled",
-      "next": "2026-09-27"
-    },
-    {
       "id": "P005",
       "pattern": "no matter + wh- + clause (concessive)",
       "gap": "concedes with a separate sentence or drops it; 0 uses in 55 exchanges. E011 shows the same clause defect one level up (Whenever working from home)",
@@ -156,6 +145,17 @@
       "used": "2",
       "status": "owned",
       "next": "2026-10-10"
+    },
+    {
+      "id": "P004",
+      "pattern": "the more X, the more Y (correlative comparative)",
+      "gap": "says two separate sentences or an if-clause for a proportional link; 0 uses in 55 exchanges across 11 days",
+      "example": "The longer the commute, the less I want to go in.",
+      "found": "11",
+      "drills": "1",
+      "used": "2",
+      "status": "owned",
+      "next": "2026-10-13"
     }
   ],
   "cards": [

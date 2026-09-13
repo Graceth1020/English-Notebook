@@ -256,7 +256,14 @@ The procedure:
 1. Read the learner's sentence.
 2. Grep it against the `drilled`/`owned` rows of `patterns/inventory.md`.
 3. Any hit: freeze that clause, tag `good`, run `pattern-used`.
-4. Only then write the rewrite, around the frozen clause.
+4. **Grep it against `chat/chunks.md` as well.** Day 15 missed three separate
+   chunk productions in one session (C042, C044, C032), all inside sentences
+   that were being read for something else - an error resolve, a structure
+   praise. A chunk inside a *correct* clause is invisible unless you look for
+   it, because nothing about the sentence calls for attention. The learner
+   caught all three by asking. Every chunk found this way gets `used` logged
+   before the reply is sent.
+5. Only then write the rewrite, around the frozen clause.
 
 The same freeze applies to a chunk the learner produced correctly. Day 13 also
 rewrote `make this clear` to `get my head around it` in a turn where the learner

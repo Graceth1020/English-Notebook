@@ -14,7 +14,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E006 | adjective used as noun (a guilty) | grammar | Sometimes I feel it's a guilty. | Sometimes I feel guilty about it. | 01 | 1 | open | 2026-08-31 |
 | E007 | missing verb 'mean' in doesn't-mean frame | grammar | Have more freedom doesn't I'll be offline. | More freedom doesn't mean I'll be offline. | 02 | 1 | open | 2026-09-01 |
 | E008 | response used as verb | grammar | I'll response | I'll respond | 02 | 1 | open | 2026-09-01 |
-| E009 | that for than in comparison | grammar | more efficient that working in company | more efficient than working in the office | 02 | 1 | open | 2026-09-01 |
+| E009 | that for than in comparison | grammar | more efficient that working in company | more efficient than working in the office | 02 | 2 | open | 2026-09-20 |
 | E010 | work at home vs from home | fixed-phrase | I worked at home | I worked from home | 02 | 1 | open | 2026-09-01 |
 | E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | open | 2026-09-01 |
 | E012 | keep focusing instead of stay focused | fixed-phrase | to keep focusing on work | to stay focused | 02 | 1 | open | 2026-09-01 |
@@ -35,11 +35,9 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 16 | open | 2026-10-11 |
+| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 17 | open | 2026-10-13 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
-| E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | open | 2026-09-05 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
-| E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
 | E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 3 | open | 2026-09-24 |
 | E038 | since + present instead of perfect | grammar | since then on, I drive my car back home | since then I've been driving back | 08 | 1 | open | 2026-09-05 |
@@ -60,6 +58,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | open | 2026-09-07 |
 | E054 | awesome as an all-purpose verdict | collocation | it is so awesome that I couldn't put it down / That's awesome. / They are awesome. | it's so good ... / that's the fun part / they're that good | 11 | 3 | open | 2026-09-22 |
 | E055 | object dropped after a transitive verb | grammar | I have to test carefully / We talked this though / I enjoy every time | I've got to test it properly / We talked it through / I enjoy it every time | 05 | 9 | open | 2026-10-10 |
-| E056 | definite article for a hypothetical or unnamed class | grammar | a correct API key / If the pages focused on interaction / If the file is important | the correct API key / if pages are interaction-heavy / if a file is important | 11 | 4 | open | 2026-10-10 |
+| E056 | definite article for a hypothetical or unnamed class | grammar | a correct API key / If the pages focused on interaction / If the file is important | the correct API key / if pages are interaction-heavy / if a file is important | 11 | 5 | open | 2026-10-13 |
 | E057 | comma splice (two independent clauses joined by comma) | grammar | The old SMS provider was reliable, we still swapped it out though. | The old SMS provider was reliable. We swapped it out, though. | 09 | 2 | open | 2026-09-16 |
+| E058 | fixed phrase 'do your own thing' pluralized | collocation | do their own things | do their own thing | 15 | 1 | open | 2026-09-16 |
+| E059 | non-noun clause in the subject slot (infinitive / every-time clause / stacked finite verbs) | grammar | To do things effectively is... / Every time we do what we enjoy helps... / An engineer can pick his own tickets will cause... | Doing things effectively is... / Doing what we enjoy helps... / Letting engineers pick their own tickets will cause... | 15 | 1 | open | 2026-09-16 |
+| E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | resolved | - |
+| E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | resolved | - |
 | E002 | run into vs be into | collocation | I really ran into suspense novels. | I was really into suspense novels. | 01 | 1 | resolved | - |

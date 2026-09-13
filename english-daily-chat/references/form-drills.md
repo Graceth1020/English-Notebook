@@ -202,6 +202,15 @@ object  -> "I have to test carefully" -> "test it properly"
 prep    -> "added a coupon function for the pay module" -> "added it to the pay module"
 ```
 
+For **point errors** (missing article, dropped object, wrong verb shape in one
+slot) keep the fragment format: quote the wrong span, arrow, quote the fixed span.
+For **frame errors** that are distributed across a whole sentence - tense-frame
+drift is the common one - the fix cannot be shown as a fragment, so give a
+**minimal rewrite**: his own sentence with only the marked axis changed, every
+other error deliberately left in place and noted as such. A rewrite that silently
+fixes three axes at once makes the matrix meaningless and does the other tracks'
+work for them.
+
 Out-of-scope observations may be mentioned **once**, explicitly flagged as not
 counted, and never turned into a correction the learner is expected to act on.
 Day 10 round 3: `makes misunderstanding` is a collocation error, worth naming, and
@@ -269,6 +278,18 @@ the site, as in the other two tracks.
 
 **If this format changes, change `tools/import-form-drills.js` in the same commit.**
 
+## Weekly Reviews
+
+Per-week digests live in `form/weekly/YYYY-Www.md` (ISO week, Monday to Sunday,
+Asia/Shanghai), indexed by `form/weekly/index.md`. Format: per-axis miss tables
+(what he wrote / correct version / drill source) grouped by subtype, plus highlights
+and next-week focus - see `2026-W37.md`, the reference sample.
+
+Generation is **conversation-triggered, never scripted**. The learner asks for a
+week's review in chat; the assistant extracts the miss tables from that week's drill
+files and writes the highlights and focus sections. Do not wire this into
+`import-form-drills.js`: the tables are mechanical but the judgement sections are
+not, and the cadence (at most once a week) does not justify automation.
 ## What This Track Cannot Do
 
 It cannot promote anything to `owned`. Like a pattern drill, a good result here means

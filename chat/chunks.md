@@ -24,7 +24,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C001 | couldn't put it down | phrase | reading | a book too good to stop reading | I started it Friday night and couldn't put it down. | 01 | 5 | 1 | open | 2026-09-13 |
 | C002 | be really into (something) | phrase | reading | be passionate about it | I was really into suspense novels. | 01 | 2 | 1 | open | 2026-09-07 |
 | C003 | flush out your system | phrase | health | the health idea of clearing the body | A big glass of water flushes out your system. | 01 | 1 | 1 | open | 2026-09-06 |
-| C004 | get through (a book/task) | phrase | reading | finish it at pace | I got through it in three nights. | 01 | 5 | 0 | open | 2026-09-06 |
+| C004 | get through (a book/task) | phrase | reading | finish it at pace | I got through it in three nights. | 01 | 5 | 1 | open | 2026-09-20 |
 | C005 | a luxury | phrase | family | something you can rarely afford the time for | Reading for two hours straight is a luxury now. | 01 | 1 | 1 | open | 2026-09-07 |
 | C007 | That's on me | phrase | work | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 1 | 1 | open | 2026-09-11 |
 | C010 | work from home | phrase | family | remote work - never 'at home' | I worked from home all through COVID. | 02 | 4 | 0 | open | 2026-09-05 |
@@ -42,21 +42,20 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 3 | 0 | open | 2026-09-14 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 1 | 1 | open | 2026-09-11 |
 | C028 | let's aim to (ship it Wednesday) | phrase | work | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 2 | 0 | open | 2026-09-07 |
-| C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 2 | 0 | open | 2026-09-07 |
+| C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 3 | 0 | open | 2026-09-16 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 0 | open | 2026-09-07 |
-| C032 | it makes no difference to | phrase | games | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 0 | 0 | open | 2026-09-04 |
+| C032 | it makes no difference to | phrase | games | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 1 | 1 | open | 2026-09-20 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 1 | 1 | open | 2026-09-18 |
-| C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 0 | 0 | open | 2026-09-04 |
-| C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 0 | 0 | open | 2026-09-04 |
+| C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 1 | 1 | open | 2026-09-20 |
+| C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 1 | 0 | open | 2026-09-16 |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 1 | 0 | open | 2026-09-11 |
 | C038 | that's down to (X) | phrase | general | attribute a cause or responsibility, casually | That's down to how my leader plans it. | 06 | 1 | 1 | open | 2026-09-13 |
-| C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 1 | 1 | open | 2026-09-13 |
+| C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 2 | 1 | open | 2026-09-16 |
 | C040 | out of my depth | phrase | work | beyond what you can handle | I was completely out of my depth in that meeting. | 06 | 1 | 0 | open | 2026-09-13 |
 | C041 | wired | phrase | health | too stimulated to sleep | I'm still wired an hour after playing. | 07 | 0 | 0 | open | 2026-09-05 |
-| C042 | wear me out | phrase | health | drain your energy - the spoken 'exhausting' | Playing games wears me out. | 07 | 1 | 1 | open | 2026-09-13 |
 | C043 | the thing is, ... | frame | general | spoken frame for raising the real issue - replaces 'the question is' | The thing is, I can't sleep properly afterwards. | 07 | 0 | 0 | open | 2026-09-05 |
-| C044 | unwind | phrase | health | wind down after effort - stronger than relax | An hour of gaming helps me unwind. | 07 | 0 | 0 | open | 2026-09-05 |
+| C044 | unwind | phrase | health | wind down after effort - stronger than relax | An hour of gaming helps me unwind. | 07 | 1 | 1 | open | 2026-09-20 |
 | C045 | get in the way of (X) | phrase | health | the spoken 'affect' when something interferes | It never gets in the way of my sleep. | 07 | 0 | 0 | open | 2026-09-05 |
 | C046 | a weeknight thing | phrase | games | confine something to weeknights in three words | That's only really a weeknight thing. | 07 | 0 | 0 | open | 2026-09-05 |
 | C047 | a rig / my setup | phrase | games | what people call a gaming PC - never 'devices' | I've got a rig that can run anything. | 07 | 0 | 0 | open | 2026-09-05 |
@@ -80,7 +79,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C068 | by the end of the quarter | phrase | work | the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter | I'm hoping to finish it by the end of the quarter. | 11 | 0 | 0 | open | 2026-09-09 |
 | C069 | ..., anyway | frame | general | end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter' | The traffic's brutal. I drive back anyway. | 11 | 0 | 0 | open | 2026-09-11 |
 | C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 0 | 0 | open | 2026-09-14 |
-| C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 0 | 0 | open | 2026-09-14 |
+| C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 1 | 1 | open | 2026-09-20 |
 | C008 | stay focused | phrase | study | keep concentrating (fixed phrase) | I turn off my console to stay focused. | 02 | 2 | 2 | pending | 2026-09-22 |
 | C009 | I get more say over (X) | phrase | work | claim control in natural speech | I get more say over my own hours. | 02 | 3 | 2 | pending | 2026-09-24 |
 | C012 | my commute | phrase | commute | the trip to work, already includes its length | My commute is 40 minutes door to door. | 02 | 3 | 2 | pending | 2026-09-22 |
@@ -88,6 +87,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 2 | 2 | pending | 2026-09-24 |
 | C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 2 | 2 | pending | 2026-09-24 |
 | C031 | the business side / the technical side | phrase | work | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 2 | 2 | pending | 2026-09-26 |
+| C042 | wear me out | phrase | health | drain your energy - the spoken 'exhausting' | Playing games wears me out. | 07 | 2 | 2 | pending | 2026-09-29 |
 | C059 | run it past (someone) | phrase | work | get a second opinion on a decision before committing | I'd run it past a colleague first. | 09 | 2 | 2 | pending | 2026-09-24 |
 | C062 | sort out (how X works) | phrase | work | work something out / get it straightened out - he produced this in a first draft then edited it away | I need a day to sort out how the sending works. | 10 | 3 | 3 | pending | 2026-10-08 |
 | C006 | it comes down to (X) | phrase | general | name the real cause, casually | Honestly, it just comes down to time. | 01 | 2 | 2 | owned | - |
