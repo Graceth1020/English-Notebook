@@ -16,7 +16,6 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E008 | response used as verb | grammar | I'll response | I'll respond | 02 | 1 | open | 2026-09-01 |
 | E009 | that for than in comparison | grammar | more efficient that working in company | more efficient than working in the office | 02 | 2 | open | 2026-09-20 |
 | E010 | work at home vs from home | fixed-phrase | I worked at home | I worked from home | 02 | 1 | open | 2026-09-01 |
-| E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | open | 2026-09-01 |
 | E012 | keep focusing instead of stay focused | fixed-phrase | to keep focusing on work | to stay focused | 02 | 1 | open | 2026-09-01 |
 | E013 | commuting time instead of my commute | calque | It depends on the commuting time. | It depends on my commute. | 02 | 1 | open | 2026-09-01 |
 | E014 | at once for immediately in speech | register | I'll response at once. | I'll respond right away. | 02 | 1 | open | 2026-09-01 |
@@ -35,7 +34,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 17 | open | 2026-10-13 |
+| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 19 | open | 2026-10-15 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
@@ -52,7 +51,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | open | 2026-09-06 |
 | E048 | form/style for format, and good for you as a verdict | calque | it's the form style ... it's good for you | it comes down to the format ... that's what makes the difference | 09 | 1 | open | 2026-09-06 |
 | E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 1 | open | 2026-09-07 |
-| E050 | code-identifier English in speech | register | the send SMS logic / the fixing ticket | how we send SMS / the fix | 10 | 1 | open | 2026-09-07 |
+| E050 | code-identifier English in speech | register | the send SMS logic / the fixing ticket | how we send SMS / the fix | 10 | 2 | open | 2026-09-22 |
 | E051 | answer then immediately reverse it | function | The monitoring didn't fire. Actually, the monitor had caught the errors | It fired, but the alert never got out | 10 | 1 | open | 2026-09-07 |
 | E052 | make X clear for understanding it yourself | collocation | make the sending logic clear | get my head around the sending logic | 10 | 1 | open | 2026-09-07 |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | open | 2026-09-07 |
@@ -62,6 +61,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E057 | comma splice (two independent clauses joined by comma) | grammar | The old SMS provider was reliable, we still swapped it out though. | The old SMS provider was reliable. We swapped it out, though. | 09 | 2 | open | 2026-09-16 |
 | E058 | fixed phrase 'do your own thing' pluralized | collocation | do their own things | do their own thing | 15 | 1 | open | 2026-09-16 |
 | E059 | non-noun clause in the subject slot (infinitive / every-time clause / stacked finite verbs) | grammar | To do things effectively is... / Every time we do what we enjoy helps... / An engineer can pick his own tickets will cause... | Doing things effectively is... / Doing what we enjoy helps... / Letting engineers pick their own tickets will cause... | 15 | 1 | open | 2026-09-16 |
+| E060 | one for a/an when the number is not stressed | grammar | He added one API / at least for one hour a day | an API / for at least an hour a day | 16 | 1 | open | 2026-09-17 |
+| E061 | every time when (doubled connector) | grammar | every time when I get in the zone / Every time when I play it | every time I get in the zone / Every time I play it | 16 | 1 | open | 2026-09-17 |
+| E062 | couldn't drifts into a present-tense general statement | grammar | it is so awesome that I couldn't put it down / Every time I play it, I couldn't sleep well | it's so good I can't put it down / I can't sleep well | 16 | 2 | open | 2026-09-22 |
+| E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | resolved | - |
 | E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | resolved | - |
 | E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | resolved | - |
 | E002 | run into vs be into | collocation | I really ran into suspense novels. | I was really into suspense novels. | 01 | 1 | resolved | - |

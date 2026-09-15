@@ -419,6 +419,14 @@ const DASH_STYLE = `
 .chat-filters button{padding:5px 13px;border:1px solid #dbe3ef;border-radius:999px;background:#fff;cursor:pointer;font:inherit;font-size:.85em}
 .chat-filters button.on{background:#3b82f6;border-color:#3b82f6;color:#fff}
 
+/* ---- section tabs ---- */
+.chat-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:2.2em 0 0;border-bottom:2px solid #e3e8ef}
+.chat-tabs button{padding:8px 16px;border:1px solid #dbe3ef;border-bottom:0;border-radius:10px 10px 0 0;background:#f8fafc;color:#5b6675;cursor:pointer;font:inherit;font-size:.92em;margin-bottom:-2px}
+.chat-tabs button:hover{color:#2563eb;background:#fff}
+.chat-tabs button.on{background:#fff;color:#2563eb;font-weight:600;border-bottom:2px solid #fff}
+.chat-tab-panel{padding-top:.6em}
+.chat-tab-panel[hidden]{display:none}
+
 /* ---- conversation flow ---- */
 .cx{margin:1.6em 0}
 .cx-row{display:flex;margin:14px 0;gap:10px}
@@ -687,6 +695,37 @@ const DASH_SCRIPT = `
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function due(d){ return d && d <= today; }
 
+  // ---- section tabs ----
+  // Four long sections used to stack into one endless page. They now sit in
+  // tab panels that all render once at load, so switching is instant and the
+  // drill deck (a per-visit shuffle by design) survives the switch. The hash
+  // doubles as a deep link, e.g. /chat/#chunks.
+  var tabs = el('chatTabs');
+  if (tabs){
+    var tabNames = ['drill', 'sessions', 'chunks', 'errors'];
+    var showTab = function(name){
+      if (tabNames.indexOf(name) === -1) name = 'drill';
+      tabNames.forEach(function(n){
+        var p = el('panel-' + n);
+        if (p) p.hidden = (n !== name);
+      });
+      var bs = tabs.querySelectorAll('button[data-tab]');
+      for (var i = 0; i < bs.length; i++){
+        var on = bs[i].getAttribute('data-tab') === name;
+        bs[i].classList.toggle('on', on);
+        bs[i].setAttribute('aria-selected', on ? 'true' : 'false');
+      }
+      if (('#' + name) !== window.location.hash && window.history.replaceState){
+        window.history.replaceState(null, '', '#' + name);
+      }
+    };
+    tabs.addEventListener('click', function(ev){
+      var b = ev.target.closest('button[data-tab]');
+      if (b) showTab(b.getAttribute('data-tab'));
+    });
+    showTab((window.location.hash || '').replace('#', ''));
+  }
+
   // ---- stats ----
   var owned = chunks.filter(function(c){ return c.status === 'owned'; }).length;
   var openErr = errors.filter(function(e){ return e.status === 'open'; }).length;
@@ -850,6 +889,9 @@ const DASH_SCRIPT = `
     }
     document.addEventListener('keydown', function(ev){
       if (/^(INPUT|TEXTAREA)$/.test((ev.target.tagName||''))) return;
+      // A hidden panel has an all-zero rect, which passes the viewport check
+      // below; offsetParent is the reliable "actually visible" test.
+      if (!db.offsetParent) return;
       var r = db.getBoundingClientRect();
       if (r.bottom < 0 || r.top > innerHeight) return;
       var k = ev.key;
@@ -1134,45 +1176,54 @@ function main() {
     '<div id="chatStats" class="chat-grid"></div>',
     '<div id="chatProgress"></div>',
     '',
-    '## Recall Drill',
+    '<div class="chat-tabs" id="chatTabs" role="tablist" aria-label="Chat sections">' +
+      '<button type="button" role="tab" data-tab="drill" class="on" aria-selected="true">Recall Drill</button>' +
+      '<button type="button" role="tab" data-tab="sessions" aria-selected="false">Sessions</button>' +
+      '<button type="button" role="tab" data-tab="chunks" aria-selected="false">Chunk Bank</button>' +
+      '<button type="button" role="tab" data-tab="errors" aria-selected="false">Error Log</button>' +
+      '</div>',
     '',
-    '`整轮复述` replays a whole answer from its Chinese cue. `单点` drills one',
-    'collocation. Your original sentence stays hidden until you reveal - reading the',
-    'mistake first only rehearses it.',
-    '',
-    'Keys: `h` hint &middot; `space` show answer &middot; `1` clean &middot; `2` needed the hint ' +
-      '&middot; `3` missed.',
-    '',
-    'This is a scratch pad: **nothing is saved**, and each visit reshuffles the deck.',
-    'Grading yourself is a far weaker signal than saying an expression unprompted in a',
-    'real conversation, so the record that counts is the one the skill keeps in',
-    '`chat/chunks.md` and `chat/errors.md` - not anything you click here.',
+    '<div class="chat-tab-panel" id="panel-drill" role="tabpanel">',
+    '<h2>Recall Drill</h2>',
+    '<p><code>整轮复述</code> replays a whole answer from its Chinese cue. <code>单点</code> drills ' +
+      'one collocation. Your original sentence stays hidden until you reveal - reading the ' +
+      'mistake first only rehearses it.</p>',
+    '<p>Keys: <code>h</code> hint &middot; <code>space</code> show answer &middot; <code>1</code> clean ' +
+      '&middot; <code>2</code> needed the hint &middot; <code>3</code> missed.</p>',
+    '<p>This is a scratch pad: <strong>nothing is saved</strong>, and each visit reshuffles the ' +
+      'deck. Grading yourself is a far weaker signal than saying an expression unprompted in a ' +
+      'real conversation, so the record that counts is the one the skill keeps in ' +
+      '<code>chat/chunks.md</code> and <code>chat/errors.md</code> - not anything you click here.</p>',
     '<div id="chatDrillMode" class="chat-filters">' +
       '<button data-m="turn" class="on">整轮复述</button>' +
       '<button data-m="point">单点</button></div>',
     '<div id="chatDrill"></div>',
+    '</div>',
     '',
-    '## Sessions',
+    '<div class="chat-tab-panel" id="panel-sessions" role="tabpanel" hidden>',
+    '<h2>Sessions</h2>',
     '<div id="chatDays"></div>',
+    '</div>',
     '',
-    '## Chunk Bank',
-    '',
-    'Every expression banked so far, filterable by scene. `open` has not been',
-    'produced unprompted yet, `pending` has twice, `owned` has a third time in a',
-    'different scene.',
-    '',
-    'Examples are masked - click one to reveal. Recalling the sentence before you',
-    'read it is the only part of this page that is worth anything; the list itself',
-    'is recognition, which is already your strong side.',
+    '<div class="chat-tab-panel" id="panel-chunks" role="tabpanel" hidden>',
+    '<h2>Chunk Bank</h2>',
+    '<p>Every expression banked so far, filterable by scene. <code>open</code> has not been ' +
+      'produced unprompted yet, <code>pending</code> has twice, <code>owned</code> has a third ' +
+      'time in a different scene.</p>',
+    '<p>Examples are masked - click one to reveal. Recalling the sentence before you read it ' +
+      'is the only part of this page that is worth anything; the list itself is recognition, ' +
+      'which is already your strong side.</p>',
     '<div id="chatChunkScenes" class="chat-filters"></div>',
     '<div id="chatChunkStatus" class="chat-filters"></div>',
     '<div id="chatChunks"></div>',
+    '</div>',
     '',
-    '## Error Log',
-    '',
-    'Phrasings you produced, with the natural version. Orange = due for review.',
+    '<div class="chat-tab-panel" id="panel-errors" role="tabpanel" hidden>',
+    '<h2>Error Log</h2>',
+    '<p>Phrasings you produced, with the natural version. Orange = due for review.</p>',
     '<div id="chatErrFilters" class="chat-filters"></div>',
     '<div id="chatErrors"></div>',
+    '</div>',
     '',
     '<script>window.CHAT_DATA = ' +
       JSON.stringify(data).replace(/</g, '\\u003c') + ';</script>',

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T07:36:33.829Z",
+  "generated": "2026-09-15T08:38:54.426Z",
   "drills": [
     {
       "drill": "07",
@@ -90,6 +90,17 @@
       "used": "0",
       "status": "open",
       "next": "2026-09-05"
+    },
+    {
+      "id": "P008",
+      "pattern": "reduced relative clause (who/which + be -> dropped)",
+      "gap": "always spells the clause out in full (who is responsible / which was unrelated); such clauses are grammatically fine, so nothing ever errors and the reduced form has never once appeared. The trap runs the other way - dropping who + a lexical verb",
+      "example": "The engineer responsible for the feature ends up dealing with it.",
+      "found": "17",
+      "drills": "0",
+      "used": "0",
+      "status": "open",
+      "next": "2026-09-18"
     },
     {
       "id": "P003",

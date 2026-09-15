@@ -21,3 +21,5 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 13 | 2026-09-10 | Starting somewhere new (onboarding) | work | 5 | 16 | done | [summary](summaries/day-13-20260910.md) |
 | 14 | 2026-09-11 | Documentation nobody reads (or does) | work | 5 | 24 | done | [summary](summaries/day-14-20260911.md) |
 | 15 | 2026-09-13 | Meetings that should have been messages | work | 5 | 24 | done | [summary](summaries/day-15-20260913.md) |
+| 16 | 2026-09-14 | The game you keep coming back to | daily | 5 | 14 | done | [summary](summaries/day-16-20260914.md) |
+| 17 | 2026-09-15 | On call, and the alert that fires at 2am | work | 5 | 18 | done | [summary](summaries/day-17-20260915.md) |

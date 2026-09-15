@@ -57,9 +57,11 @@ toward everyday life, with occasional work-and-collaboration topics. See
    not to fill a line. Order them `[wrong]` > `[awkward]` > `[bookish]` >
    `[calque]`, one `↪` line each, no sub-bullets. If a turn genuinely produced
    six repairs, give six; the honest count is the signal.
-3. **Never leave silence ambiguous.** End every Codex turn with a one-word
-   `Native:` verdict, even when nothing needs fixing. The only exception is a
-   Chinese meta question (rule 10).
+3. **Never leave silence ambiguous.** Every Codex turn carries a one-word
+   `Native:` verdict after `Say the whole thing:`, even when nothing needs fixing,
+   and then the turn's task on a final `**Next:**` line. The verdict closes the
+   feedback; the task closes the turn. The only exception is a Chinese meta
+   question (rule 10).
 4. **Every turn must end with an unmistakable task.** A question mark, or an
    explicit instruction such as "Answer him." Narration alone is not a turn -
    `"He's dropped it, but he's not convinced."` leaves the learner guessing what
@@ -120,7 +122,7 @@ Read `references/correction-style.md` before giving any feedback, and
 ## Turn Shape
 
 ```text
-<1-3 sentences of genuine reaction, then the question or task for this turn>
+<1-3 sentences of genuine reaction to what they said - no question here yet>
 
 ↪ [awkward] "what you said" → "natural version" — <=1 short clause of why
 ↪ [bookish] "..." → "..." — ...          (one line per difference, no cap)
@@ -131,7 +133,16 @@ Read `references/correction-style.md` before giving any feedback, and
 > <the learner's entire turn, rewritten as a native would say it>
 
 Native: awkward
+
+**Next:** <the question or task for this turn>
 ```
+
+**The task goes last, after the verdict - never up in the reaction.** Day 17
+exchange 1 put the question in the opening line and the learner's entire reply was
+"Where is the next question?": it had scrolled off behind a four-line correction
+block. Non-Negotiable 4 asks for an unmistakable task, and "unmistakable" has to
+mean "the last thing on screen", because the feedback block stands between the
+reader and anything above it.
 
 Verdicts: `clean`, `slightly off`, `bookish`, `awkward`, `wrong`. When the
 verdict is `clean`, drop the `↪` lines entirely. A Chinese meta question gets no
