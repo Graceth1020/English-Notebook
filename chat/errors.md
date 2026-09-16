@@ -34,7 +34,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 19 | open | 2026-10-15 |
+| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 21 | open | 2026-10-16 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
