@@ -30,14 +30,13 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 3 | 0 | open | 2026-09-05 |
 | C021 | that's what pays | phrase | money | name the thing that earns the money | The business side is what pays. | 04 | 3 | 1 | open | 2026-09-23 |
 | C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 0 | open | 2026-09-06 |
-| C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 4 | 0 | open | 2026-09-07 |
+| C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 1 | open | 2026-09-24 |
 | C028 | let's aim to (ship it Wednesday) | phrase | work | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 3 | 1 | open | 2026-09-23 |
 | C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 3 | 1 | open | 2026-09-23 |
-| C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 0 | open | 2026-09-07 |
-| C031 | the business side / the technical side | phrase | work | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 3 | 2 | open | 2026-09-19 |
+| C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 1 | open | 2026-09-24 |
 | C032 | it makes no difference to | phrase | games | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 1 | 1 | open | 2026-09-20 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 1 | 1 | open | 2026-09-18 |
-| C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 1 | 0 | open | 2026-09-16 |
+| C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 1 | 1 | open | 2026-09-24 |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 1 | 0 | open | 2026-09-11 |
 | C038 | that's down to (X) | phrase | general | attribute a cause or responsibility, casually | That's down to how my leader plans it. | 06 | 1 | 1 | open | 2026-09-13 |
@@ -59,11 +58,11 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 0 | 0 | open | 2026-09-06 |
 | C060 | keep an eye on (X) | phrase | study | watch an ongoing trend - replaces 'look for the frontier technology' | I'd keep an eye on where the tech is going. | 09 | 1 | 1 | open | 2026-09-23 |
 | C061 | outside my own field | phrase | study | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 0 | 0 | open | 2026-09-06 |
-| C064 | backed up (a queue) | phrase | work | unable to drain - not 'blocked', which implies something deliberate | The queue was backed up for two hours. | 10 | 1 | 0 | open | 2026-09-07 |
-| C065 | Fair point. | phrase | work | concede cleanly with no apology, then give the new number | Fair point. Wednesday works. | 10 | 0 | 0 | open | 2026-09-07 |
+| C064 | backed up (a queue) | phrase | work | unable to drain - not 'blocked', which implies something deliberate | The queue was backed up for two hours. | 10 | 2 | 0 | open | 2026-09-07 |
+| C065 | Fair point. | phrase | work | concede cleanly with no apology, then give the new number | Fair point. Wednesday works. | 10 | 1 | 0 | open | 2026-09-07 |
 | C066 | halfway through (a book) | phrase | reading | at the midpoint of something you are working through - not 'read half of it' | I'm about halfway through. | 11 | 0 | 0 | open | 2026-09-09 |
 | C067 | in the next few months | phrase | food | the everyday vague timeframe - what you say instead of a named period when speaking casually | I'll get through it in the next few months. | 11 | 0 | 0 | open | 2026-09-09 |
-| C068 | by the end of the quarter | phrase | work | the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter | I'm hoping to finish it by the end of the quarter. | 11 | 0 | 0 | open | 2026-09-09 |
+| C068 | by the end of the quarter | phrase | work | the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter | I'm hoping to finish it by the end of the quarter. | 11 | 1 | 0 | open | 2026-09-09 |
 | C069 | ..., anyway | frame | general | end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter' | The traffic's brutal. I drive back anyway. | 11 | 0 | 0 | open | 2026-09-11 |
 | C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 0 | 0 | open | 2026-09-14 |
 | C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 1 | 1 | open | 2026-09-20 |
@@ -83,8 +82,9 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 2 | 2 | pending | 2026-09-24 |
 | C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 2 | 2 | pending | 2026-10-02 |
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 3 | 2 | pending | 2026-10-01 |
-| C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 2 | 2 | pending | 2026-09-24 |
+| C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 3 | 3 | pending | 2026-10-17 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 2 | 2 | pending | 2026-09-30 |
+| C031 | the business side / the technical side | phrase | work | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 3 | 3 | pending | 2026-10-17 |
 | C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 2 | 2 | pending | 2026-10-01 |
 | C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 2 | 2 | pending | 2026-10-01 |
 | C043 | the thing is, ... | frame | general | spoken frame for raising the real issue - replaces 'the question is' | The thing is, I can't sleep properly afterwards. | 07 | 2 | 2 | pending | 2026-10-01 |

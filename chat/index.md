@@ -24,3 +24,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 16 | 2026-09-14 | The game you keep coming back to | daily | 5 | 14 | done | [summary](summaries/day-16-20260914.md) |
 | 17 | 2026-09-15 | On call, and the alert that fires at 2am | work | 5 | 18 | done | [summary](summaries/day-17-20260915.md) |
 | 18 | 2026-09-16 | Sleep and mornings | daily | 5 | 16 | done | [summary](summaries/day-18-20260916.md) |
+| 19 | 2026-09-17 | The pile of work | work | 5 | 10 | done | [summary](summaries/day-19-20260917.md) |
