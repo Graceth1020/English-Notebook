@@ -60,7 +60,7 @@ structure was available while it was the announced subject. Promotion to
 ## Inventory
 
 <table class="pt-tbl"><thead><tr><th>ID</th><th>Pattern</th><th>Drills</th><th>Unprompted</th><th>Status</th><th>Next</th></tr></thead><tbody>
-<tr><td><code>P002</code></td><td><b>object pronoun after a preposition (with me / for him)</b><br><small>wrote 'with I trying to learn'; nouns hide it, only pronouns expose it</small></td><td>0</td><td>0/2</td><td><span class="pt-st open">open</span></td><td>2026-09-05</td></tr>
+<tr><td><code>P002</code></td><td><b>object pronoun after a preposition (with me / for him)</b><br><small>wrote 'with I trying to learn'; nouns hide it, only pronouns expose it</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-21</td></tr>
 <tr><td><code>P003</code></td><td><b>purpose nouns (a learning system, not a system for learning)</b><br><small>reaches for 'a platform where we can...' or a bare noun; never stacks the purpose noun in front. 0 uses in 45 exchanges</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-07</td></tr>
 <tr><td><code>P005</code></td><td><b>no matter + wh- + clause (concessive)</b><br><small>concedes with a separate sentence or drops it; 0 uses in 55 exchanges. E011 shows the same clause defect one level up (Whenever working from home)</small></td><td>1</td><td>1/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-26</td></tr>
 <tr><td><code>P006</code></td><td><b>fronted participle clause (Looking at his watch, he saw...)</b><br><small>the same-subject half of P001, named in drill 01 but never drilled; uses a finite clause or 'when I...' instead. E053/E011/E005 all show participle-vs-finite confusion</small></td><td>1</td><td>0/2</td><td><span class="pt-st drilled">drilled</span></td><td>2026-09-13</td></tr>
@@ -80,3 +80,4 @@ structure was available while it was the announced subject. Promotion to
 - [Pattern 06 - fronted participle clause](/English-Notebook/patterns/drills/pattern-06-20260910/) &middot; 2026-09-10 &middot; 14 items &middot; 11/14 correct
 - [Pattern 07 - none of + noun (total negation)](/English-Notebook/patterns/drills/pattern-07-20260912/) &middot; 2026-09-12 &middot; 17 items &middot; 16/17 correct
 - [Pattern 08 - reduced relative clause](/English-Notebook/patterns/drills/pattern-08-20260915/) &middot; 2026-09-15 &middot; 12 items &middot; 11/12 correct
+- [Pattern 09 - object pronoun after a preposition](/English-Notebook/patterns/drills/pattern-09-20260918/) &middot; 2026-09-18 &middot; 12 items &middot; 9/12 correct

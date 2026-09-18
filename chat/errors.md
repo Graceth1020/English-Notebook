@@ -64,6 +64,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E060 | one for a/an when the number is not stressed | grammar | He added one API / at least for one hour a day | an API / for at least an hour a day | 16 | 1 | open | 2026-09-17 |
 | E061 | every time when (doubled connector) | grammar | every time when I get in the zone / Every time when I play it | every time I get in the zone / Every time I play it | 16 | 1 | open | 2026-09-17 |
 | E062 | couldn't drifts into a present-tense general statement | grammar | it is so awesome that I couldn't put it down / Every time I play it, I couldn't sleep well | it's so good I can't put it down / I can't sleep well | 16 | 2 | open | 2026-09-22 |
+| E063 | subject-verb number agreement lost in production | grammar | the company keep / one development need / a pleasure tour help / features which supports | the company keeps / one development needs / a pleasure tour helps / features which support | 20 | 5 | open | 2026-10-18 |
 | E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | resolved | - |
 | E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | resolved | - |
 | E033 | -ed for -ing adjective (is very tired for tiring) | grammar | playing computer games is very tired | playing games is exhausting / wears me out | 07 | 1 | resolved | - |
