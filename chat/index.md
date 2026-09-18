@@ -25,3 +25,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 17 | 2026-09-15 | On call, and the alert that fires at 2am | work | 5 | 18 | done | [summary](summaries/day-17-20260915.md) |
 | 18 | 2026-09-16 | Sleep and mornings | daily | 5 | 16 | done | [summary](summaries/day-18-20260916.md) |
 | 19 | 2026-09-17 | The pile of work | work | 5 | 10 | done | [summary](summaries/day-19-20260917.md) |
+| 20 | 2026-09-18 | Do you need to be passionate about your job? | opinion | 5 | 22 | done | [summary](summaries/day-20-20260918.md) |
