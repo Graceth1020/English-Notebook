@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-19T03:10:54.574Z",
+  "generated": "2026-09-20T09:01:28.043Z",
   "drills": [
+    {
+      "drill": "11",
+      "date": "2026-09-20",
+      "title": "Pattern 11 - none of + noun (second pass)",
+      "structure": "none of + noun (second pass)",
+      "pattern": "P007",
+      "rounds": 3,
+      "items": 13,
+      "correct": "10/13",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
     {
       "drill": "10",
       "date": "2026-09-19",
@@ -114,6 +125,17 @@
   ],
   "inventory": [
     {
+      "id": "P010",
+      "pattern": "the object or idea as the subject, not 'I + verb' (passive / fronted subject)",
+      "gap": "every sentence about a thing or wish opens with 'I + verb'; the object or idea is never placed in subject position. Not grammar - nothing ever errors - the fronted-subject frame simply never surfaces. Same recall gap as C031, one level up: C031 is a noun slot, this is a whole-sentence frame.",
+      "example": "I follow the rule strictly. -> The rule gets followed strictly. / I want to read books before bed. -> Books before bed are still the plan.",
+      "found": "22",
+      "drills": "0",
+      "used": "0",
+      "status": "open",
+      "next": "2026-09-23"
+    },
+    {
       "id": "P002",
       "pattern": "object pronoun after a preposition (with me / for him)",
       "gap": "wrote 'with I trying to learn'; nouns hide it, only pronouns expose it",
@@ -136,17 +158,6 @@
       "next": "2026-09-07"
     },
     {
-      "id": "P005",
-      "pattern": "no matter + wh- + clause (concessive)",
-      "gap": "concedes with a separate sentence or drops it; 0 uses in 55 exchanges. E011 shows the same clause defect one level up (Whenever working from home)",
-      "example": "No matter how bad the traffic is, I still drive back.",
-      "found": "11",
-      "drills": "1",
-      "used": "1",
-      "status": "drilled",
-      "next": "2026-09-26"
-    },
-    {
       "id": "P006",
       "pattern": "fronted participle clause (Looking at his watch, he saw...)",
       "gap": "the same-subject half of P001, named in drill 01 but never drilled; uses a finite clause or 'when I...' instead. E053/E011/E005 all show participle-vs-finite confusion",
@@ -163,10 +174,10 @@
       "gap": "reaches for 'all ... not' to mean total negation, which English reads as partial (all users couldn't pay = not all could); the none-of frame has never been used",
       "example": "None of the users could pay.",
       "found": "14",
-      "drills": "1",
-      "used": "0",
+      "drills": "2",
+      "used": "1",
       "status": "drilled",
-      "next": "2026-09-15"
+      "next": "2026-09-27"
     },
     {
       "id": "P008",
@@ -200,6 +211,17 @@
       "used": "2",
       "status": "owned",
       "next": "2026-10-13"
+    },
+    {
+      "id": "P005",
+      "pattern": "no matter + wh- + clause (concessive)",
+      "gap": "concedes with a separate sentence or drops it; 0 uses in 55 exchanges. E011 shows the same clause defect one level up (Whenever working from home)",
+      "example": "No matter how bad the traffic is, I still drive back.",
+      "found": "11",
+      "drills": "1",
+      "used": "2",
+      "status": "owned",
+      "next": "2026-10-20"
     }
   ],
   "cards": [
@@ -1966,6 +1988,188 @@
       "verdict": "ok",
       "why": "Full clause kept, which is fine. The tighter version is `books too advanced for me` (type 1).",
       "url": "/English-Notebook/patterns/drills/pattern-10-20260919/"
+    },
+    {
+      "key": "D11.1.1",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 1,
+      "roundName": "rewrite with the right quantifier",
+      "cue": "上线后，没有一个用户能支付。",
+      "task": "After the ticket shipped, all users could not pay.",
+      "answer": "After the ticket shipped, none of the users could pay.",
+      "said": "After the ticket shipped, none of the users could pay.",
+      "verdict": "ok",
+      "why": "The Day 14 original, repaired on sight.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.1.2",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 1,
+      "roundName": "rewrite with the right quantifier",
+      "cue": "不是所有团队文档都是最新的。",
+      "task": "Some of the team docs are up to date. Some are not.",
+      "answer": "Not all of the team docs are up to date.",
+      "said": "Not all of the team docs are up to date.",
+      "verdict": "ok",
+      "why": "",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.1.3",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 1,
+      "roundName": "rewrite with the right quantifier",
+      "cue": "两家咖啡店都关门了，我没喝到咖啡。",
+      "task": "Both coffee shops were closed. I could not get a coffee.",
+      "answer": "Neither coffee shop was open, so I couldnt get a coffee.",
+      "said": "Neither coffee shops were opened, I could not get a coffee.",
+      "verdict": "wrong form",
+      "why": "The Drill 07 retest - and the verb IS affirmative this time, so the meaning held. But `neither` takes a singular noun (`neither coffee shop`, think *neither one*), and `were opened` is the passive of someone opening them where the state `was open` is meant. Plus a comma splice.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.1.4",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 1,
+      "roundName": "rewrite with the right quantifier",
+      "cue": "我请了两个同事 review，两人都没回。",
+      "task": "I asked two teammates to review. Both have not replied.",
+      "answer": "I asked two teammates to review, but neither replied.",
+      "said": "I asked two teammates to review, but neither replied.",
+      "verdict": "ok",
+      "why": "`neither` + affirmative verb - the cleaner version of the item 3 test, correct.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.1.5",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 1,
+      "roundName": "rewrite with the right quantifier",
+      "cue": "wiki 里的信息没有一条是最新的。",
+      "task": "The information in the wiki is never current.",
+      "answer": "None of the information in the wiki is current.",
+      "said": "None of the information in the wiki is current.",
+      "verdict": "ok",
+      "why": "",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.2.1",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 2,
+      "roundName": "mixed, choose the right shape",
+      "cue": "团队每个人都要为此负责。",
+      "task": "All the team have got to be responsible for this. (Day 20)",
+      "answer": "Everyone on the team is responsible for this.",
+      "said": "Everyone on the team have got to be responsible for this.",
+      "verdict": "ok",
+      "why": "The frame is right - `everyone on the team` repairs `all the team`. Two notes: `everyone` is third-person singular (`has got to`), and the Day 20 correction's second half was that responsibility here is a fact, not an obligation - `is responsible` drops the recited-rule feel.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.2.2",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 2,
+      "roundName": "mixed, choose the right shape",
+      "cue": "这两个因素都起作用，形成良性循环。",
+      "task": "All two things work. It is a virtuous cycle. (Day 20)",
+      "answer": "Both things work, and it is a virtuous cycle.",
+      "said": "Both things work, and it is a virtuous cycle.",
+      "verdict": "ok",
+      "why": "Exactly two is `both` - the Day 20 error repaired.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.2.3",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 2,
+      "roundName": "mixed, choose the right shape",
+      "cue": "旧短信供应商很可靠，但我们还是换掉了。",
+      "task": "The old SMS provider was reliable. We swapped it out anyway. (your choice of frame)",
+      "answer": "Both providers were reliable, but we swapped the old one out anyway.",
+      "said": "Neither old SMS provider is unreliable, but we swapped the old one out anyway.",
+      "verdict": "wrong form",
+      "why": "The finding of the drill. `unreliable` is a negative in disguise, so `Neither ... is unreliable` stacks two negations and forces the reader to cancel them - the Drill 07 shape in a subtler costume. Also `is` for `was`, and three concession moves (`neither ... but ... anyway`) in one sentence, the Drill 05 stacking finding. A meta question preceded this item (`reliable` 的反义词), answered briefly per drill rules - but the antonym was then used to build the double negative, which is worth recording honestly: supplying the word enabled the error.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.2.4",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 2,
+      "roundName": "mixed, choose the right shape",
+      "cue": "不是每个工程师都想远程，有人喜欢去公司。",
+      "task": "Not every engineer wants to work remote. Some prefer the office.",
+      "answer": "Not all engineers want to work remote.",
+      "said": "Not all engineers want to work remote.",
+      "verdict": "ok",
+      "why": "",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.3.1",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "用一句话重述 Day 14 的事故。",
+      "task": "Retell the Day 14 incident in one sentence.",
+      "answer": "After the coupon feature shipped, none of the users could pay for their orders.",
+      "said": "After the new feature shipped, no user could pay for their orders.",
+      "verdict": "ok",
+      "why": "`no + noun` sibling again, and `pay for` repaired from Day 14s `pay their orders`.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.3.2",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "跟同事说，新框架的两个候选都有问题。",
+      "task": "Tell a teammate that the two candidates for the new framework both have problems.",
+      "answer": "Both candidates for the framework have problems.",
+      "said": "Both candidates for the framework have problems.",
+      "verdict": "ok",
+      "why": "",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.3.3",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "有人问你们团队是不是所有人都及时更新文档。诚实回答。",
+      "task": "Someone asks if your whole team keeps docs up to date.",
+      "answer": "Not all the docs in the wiki are kept up to date.",
+      "said": "Not all the docs in the wiki are kept up to the date.",
+      "verdict": "ok",
+      "why": "Partial negation correct. Not counted: `up to the date` - the fixed phrase takes no article. This is the Day 14 `kept to date` shape recurring with the article on the other side; logged as `chat:E064`.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D11.3.4",
+      "drill": "11",
+      "pattern": "P007",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "描述国庆开车：车流、那些车，以及你的感受。",
+      "task": "Describe the National Day drive: the traffic, the cars, and how you felt.",
+      "answer": "With everyone heading in the same direction over National Day, the traffic was brutal.",
+      "said": "With all people heading in the same direction over National day, the traffic is brutal.",
+      "verdict": "wrong form",
+      "why": "`all people` is the `all the team` shape again - a bare `all` + plural noun for a specific group. English wants `everyone` or `all the people/drivers`. Third occurrence of the GROUP row gap (Day 20 `all the team`, Round 2 item 1, here). Also `National day` -> `National Day`, and `is` for `was`. The P001 frame (`with X doing`) around the quantifier was correct and unprompted - not what was being marked, but worth noting.",
+      "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
     }
   ]
 }

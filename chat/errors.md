@@ -34,7 +34,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 23 | open | 2026-10-19 |
+| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 24 | open | 2026-10-20 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
@@ -63,7 +63,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E059 | non-noun clause in the subject slot (infinitive / every-time clause / stacked finite verbs) | grammar | To do things effectively is... / Every time we do what we enjoy helps... / An engineer can pick his own tickets will cause... | Doing things effectively is... / Doing what we enjoy helps... / Letting engineers pick their own tickets will cause... | 15 | 1 | open | 2026-09-16 |
 | E060 | one for a/an when the number is not stressed | grammar | He added one API / at least for one hour a day | an API / for at least an hour a day | 16 | 1 | open | 2026-09-17 |
 | E062 | couldn't drifts into a present-tense general statement | grammar | it is so awesome that I couldn't put it down / Every time I play it, I couldn't sleep well | it's so good I can't put it down / I can't sleep well | 16 | 2 | open | 2026-09-22 |
-| E063 | subject-verb number agreement lost in production | grammar | the company keep / one development need / a pleasure tour help / features which supports | the company keeps / one development needs / a pleasure tour helps / features which support | 20 | 5 | open | 2026-10-18 |
+| E063 | subject-verb number agreement lost in production | grammar | the company keep / one development need / a pleasure tour help / features which supports | the company keeps / one development needs / a pleasure tour helps / features which support | 20 | 6 | open | 2026-10-20 |
+| E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | open | 2026-09-23 |
 | E061 | every time when (doubled connector) | grammar | every time when I get in the zone / Every time when I play it | every time I get in the zone / Every time I play it | 16 | 1 | resolved | - |
 | E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | resolved | - |
 | E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | resolved | - |

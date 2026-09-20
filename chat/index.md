@@ -27,3 +27,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 19 | 2026-09-17 | The pile of work | work | 5 | 10 | done | [summary](summaries/day-19-20260917.md) |
 | 20 | 2026-09-18 | Do you need to be passionate about your job? | opinion | 5 | 22 | done | [summary](summaries/day-20-20260918.md) |
 | 21 | 2026-09-19 | The end-of-quarter crunch | work | 5 | 17 | done | [summary](summaries/day-21-20260919.md) |
+| 22 | 2026-09-20 | Weekends, yours or work's? | daily | 5 | 19 | done | [summary](summaries/day-22-20260920.md) |

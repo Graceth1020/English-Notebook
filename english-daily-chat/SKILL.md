@@ -171,6 +171,10 @@ own next turn. That mistake was made on Day 05 and the learner caught it.
    python scripts/chat_log.py patterns --root <project-root> --status drilled
    ```
 
+   Also read `references/observations.md` - it carries the open watch-items that
+   need in-chat handling (P010's non-I-subject test, reached-but-broken
+   scoring) and is the long memory the summaries lack.
+
    **The `drilled` patterns matter as much as the due chunks, and are handled the
    opposite way.** A pattern cannot be seeded - the same idea is always expressible
    with ordinary clauses and still be correct - so a drill's only proof is the
@@ -326,6 +330,11 @@ trusting:
   else. Not a failure to mention; just requeue it sooner.
 - **neither** - the conversation went elsewhere and the chunk never became
   relevant. Leave the row untouched.
+
+A chunk aimed for but produced with its fixed part damaged (`post sorts`,
+`I'll not to put it down`) is scored `missed`, never credited - recognition has
+transferred but the assembly has not. These are logged in
+`references/observations.md`, which is checked at session open.
 
 Never count a chunk as `used` when it was quoted back from the same session, when
 Codex used it first in the same exchange, or when the learner was hinted at. A

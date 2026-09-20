@@ -21,16 +21,15 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| C001 | couldn't put it down | phrase | reading | a book too good to stop reading | I started it Friday night and couldn't put it down. | 01 | 6 | 2 | open | 2026-09-23 |
 | C005 | a luxury | phrase | family | something you can rarely afford the time for | Reading for two hours straight is a luxury now. | 01 | 1 | 1 | open | 2026-09-07 |
 | C010 | work from home | phrase | family | remote work - never 'at home' | I worked from home all through COVID. | 02 | 4 | 1 | open | 2026-09-22 |
-| C016 | get something off (a platform) | phrase | shopping | find/take content from an app or site | I got this recipe off Rednote. | 03 | 1 | 1 | open | 2026-09-09 |
-| C017 | all sorts | phrase | shopping | spoken replacement for 'various' / 'all kinds' | People post all sorts on there. | 03 | 4 | 0 | open | 2026-09-21 |
-| C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 3 | 0 | open | 2026-09-05 |
+| C017 | all sorts | phrase | shopping | spoken replacement for 'various' / 'all kinds' | People post all sorts on there. | 03 | 4 | 1 | open | 2026-09-27 |
+| C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 3 | 1 | open | 2026-09-27 |
 | C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 0 | open | 2026-09-06 |
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 1 | open | 2026-09-24 |
 | C028 | let's aim to (ship it Wednesday) | phrase | work | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 3 | 1 | open | 2026-09-23 |
 | C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 3 | 1 | open | 2026-09-23 |
-| C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 1 | open | 2026-09-24 |
 | C032 | it makes no difference to | phrase | games | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 1 | 1 | open | 2026-09-20 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 1 | 1 | open | 2026-09-18 |
 | C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 1 | 1 | open | 2026-09-24 |
@@ -42,8 +41,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C045 | get in the way of (X) | phrase | health | the spoken 'affect' when something interferes | It never gets in the way of my sleep. | 07 | 1 | 1 | open | 2026-09-23 |
 | C046 | a weeknight thing | phrase | games | confine something to weeknights in three words | That's only really a weeknight thing. | 07 | 1 | 1 | open | 2026-09-23 |
 | C047 | a rig / my setup | phrase | games | what people call a gaming PC - never 'devices' | I've got a rig that can run anything. | 07 | 1 | 1 | open | 2026-09-21 |
-| C048 | know it inside out | phrase | games | know something thoroughly from long use | I know the game inside out by now. | 07 | 0 | 0 | open | 2026-09-05 |
-| C049 | over (a holiday) | phrase | family | across the whole of a holiday - 'during' needs 'the' with 'holiday' | I go back over National Day. | 08 | 0 | 0 | open | 2026-09-05 |
+| C048 | know it inside out | phrase | games | know something thoroughly from long use | I know the game inside out by now. | 07 | 1 | 1 | open | 2026-09-27 |
+| C049 | over (a holiday) | phrase | family | across the whole of a holiday - 'during' needs 'the' with 'holiday' | I go back over National Day. | 08 | 1 | 1 | open | 2026-09-27 |
 | C050 | the traffic is brutal | phrase | commute | spoken replacement for 'traffic is a serious problem' | The traffic was brutal the whole way. | 08 | 0 | 0 | open | 2026-09-05 |
 | C051 | heading in the same direction | phrase | food | direction takes 'in'; 'heading' beats 'going' | Everyone was heading in the same direction. | 08 | 0 | 0 | open | 2026-09-05 |
 | C053 | my parents' place | phrase | family | where your parents live - not 'where my parents live' | I'd work from my parents' place. | 08 | 0 | 0 | open | 2026-09-05 |
@@ -54,8 +53,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 0 | 0 | open | 2026-09-06 |
 | C061 | outside my own field | phrase | study | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 0 | 0 | open | 2026-09-06 |
 | C064 | backed up (a queue) | phrase | work | unable to drain - not 'blocked', which implies something deliberate | The queue was backed up for two hours. | 10 | 4 | 1 | open | 2026-09-22 |
-| C066 | halfway through (a book) | phrase | reading | at the midpoint of something you are working through - not 'read half of it' | I'm about halfway through. | 11 | 0 | 0 | open | 2026-09-09 |
-| C067 | in the next few months | phrase | food | the everyday vague timeframe - what you say instead of a named period when speaking casually | I'll get through it in the next few months. | 11 | 0 | 0 | open | 2026-09-09 |
+| C066 | halfway through (a book) | phrase | reading | at the midpoint of something you are working through - not 'read half of it' | I'm about halfway through. | 11 | 1 | 1 | open | 2026-09-27 |
+| C067 | in the next few months | phrase | food | the everyday vague timeframe - what you say instead of a named period when speaking casually | I'll get through it in the next few months. | 11 | 1 | 1 | open | 2026-09-27 |
 | C068 | by the end of the quarter | phrase | work | the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter | I'm hoping to finish it by the end of the quarter. | 11 | 3 | 1 | open | 2026-09-22 |
 | C069 | ..., anyway | frame | general | end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter' | The traffic's brutal. I drive back anyway. | 11 | 0 | 0 | open | 2026-09-11 |
 | C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 0 | 0 | open | 2026-09-14 |
@@ -66,8 +65,6 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C075 | be in demand | phrase | work | wanted by employers - the collocation for 吃香/抢手, not 'popular in the job market' | Engineers who know the business well are in demand. | 18 | 0 | 0 | open | 2026-09-19 |
 | C076 | way above my level | phrase | work | people who outrank you in skill - the counterpart to 'out of my depth', said about other people | I like talking to people way above my level. | 20 | 0 | 0 | open | 2026-09-21 |
 | C077 | put something in place | phrase | general | introduce measures or procedures to fix or prevent something - the spoken replacement for 'take measures' | We've got to put something in place so it doesn't happen again. | 21 | 0 | 0 | open | 2026-09-22 |
-| C001 | couldn't put it down | phrase | reading | a book too good to stop reading | I started it Friday night and couldn't put it down. | 01 | 5 | 2 | pending | 2026-09-30 |
-| C002 | be really into (something) | phrase | reading | be passionate about it | I was really into suspense novels. | 01 | 2 | 2 | pending | 2026-10-04 |
 | C003 | flush out your system | phrase | health | the health idea of clearing the body | A big glass of water flushes out your system. | 01 | 2 | 2 | pending | 2026-10-02 |
 | C007 | That's on me | phrase | work | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 2 | 2 | pending | 2026-10-05 |
 | C008 | stay focused | phrase | study | keep concentrating (fixed phrase) | I turn off my console to stay focused. | 02 | 2 | 2 | pending | 2026-09-22 |
@@ -76,25 +73,28 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C013 | right away | phrase | games | the neutral spoken 'immediately' - default over 'at once' | If you need me, I'll respond right away. | 02 | 2 | 2 | pending | 2026-10-01 |
 | C014 | never get round to it | phrase | games | keep meaning to do something and never do | I've always meant to play it, I just never get round to it. | 03 | 2 | 2 | pending | 2026-09-30 |
 | C015 | I've always meant to (do X) | phrase | games | a standing intention never acted on | I've always meant to pick that game back up. | 03 | 2 | 2 | pending | 2026-09-30 |
+| C016 | get something off (a platform) | phrase | shopping | find/take content from an app or site | I got this recipe off Rednote. | 03 | 2 | 2 | pending | 2026-10-06 |
 | C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 2 | 2 | pending | 2026-09-24 |
 | C021 | that's what pays | phrase | money | name the thing that earns the money | The business side is what pays. | 04 | 3 | 2 | pending | 2026-10-04 |
-| C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 2 | 2 | pending | 2026-10-02 |
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 3 | 2 | pending | 2026-10-01 |
 | C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 3 | 3 | pending | 2026-10-17 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 2 | 2 | pending | 2026-09-30 |
+| C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 2 | pending | 2026-10-06 |
 | C031 | the business side / the technical side | phrase | work | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 4 | 4 | pending | 2026-10-18 |
-| C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 3 | 3 | pending | 2026-10-18 |
-| C052 | ..., though (sentence-final) | frame | general | the spoken 'However' - goes on the end, never the front | The traffic can be brutal, though. | 08 | 2 | 2 | pending | 2026-10-04 |
 | C059 | run it past (someone) | phrase | work | get a second opinion on a decision before committing | I'd run it past a colleague first. | 09 | 2 | 2 | pending | 2026-09-24 |
 | C060 | keep an eye on (X) | phrase | study | watch an ongoing trend - replaces 'look for the frontier technology' | I'd keep an eye on where the tech is going. | 09 | 2 | 2 | pending | 2026-10-04 |
 | C065 | Fair point. | phrase | work | concede cleanly with no apology, then give the new number | Fair point. Wednesday works. | 10 | 2 | 2 | pending | 2026-10-05 |
+| C002 | be really into (something) | phrase | reading | be passionate about it | I was really into suspense novels. | 01 | 3 | 3 | owned | - |
 | C004 | get through (a book/task) | phrase | reading | finish it at pace | I got through it in three nights. | 01 | 5 | 3 | owned | - |
 | C006 | it comes down to (X) | phrase | general | name the real cause, casually | Honestly, it just comes down to time. | 01 | 2 | 2 | owned | - |
 | C011 | switch off | phrase | work | stop thinking about work | The hard part is switching off at the end of the day. | 02 | 3 | 3 | owned | - |
 | C019 | get in the zone | phrase | games | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 3 | 3 | owned | - |
+| C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 3 | 3 | owned | - |
+| C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 4 | 4 | owned | - |
 | C038 | that's down to (X) | phrase | general | attribute a cause or responsibility, casually | That's down to how my leader plans it. | 06 | 3 | 3 | owned | - |
 | C042 | wear me out | phrase | health | drain your energy - the spoken 'exhausting' | Playing games wears me out. | 07 | 3 | 3 | owned | - |
 | C043 | the thing is, ... | frame | general | spoken frame for raising the real issue - replaces 'the question is' | The thing is, I can't sleep properly afterwards. | 07 | 3 | 3 | owned | - |
 | C044 | unwind | phrase | health | wind down after effort - stronger than relax | An hour of gaming helps me unwind. | 07 | 3 | 3 | owned | - |
+| C052 | ..., though (sentence-final) | frame | general | the spoken 'However' - goes on the end, never the front | The traffic can be brutal, though. | 08 | 3 | 3 | owned | - |
 | C062 | sort out (how X works) | phrase | work | work something out / get it straightened out - he produced this in a first draft then edited it away | I need a day to sort out how the sending works. | 10 | 5 | 5 | owned | - |
 | C063 | get my head around (X) | phrase | study | come to understand something complex yourself - not 'make it clear' | I need a day to get my head around the sending logic. | 10 | 3 | 3 | owned | - |
