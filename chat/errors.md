@@ -38,9 +38,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
-| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 3 | open | 2026-09-24 |
+| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 4 | open | 2026-10-29 |
 | E038 | since + present instead of perfect | grammar | since then on, I drive my car back home | since then I've been driving back | 08 | 1 | open | 2026-09-05 |
-| E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | open | 2026-09-05 |
 | E040 | chances for opportunities to do something | calque | I just have two chances to go back home | I only get back twice a year | 08 | 1 | open | 2026-09-05 |
 | E041 | once for every time | calque | I need to spend eight hours once | that's eight hours in the car every time | 08 | 1 | open | 2026-09-05 |
 | E042 | I don't buy that used to mean I can't | function | I don't buy that. Now I have a full-time job. | I can't, though. I've got a full-time job. | 08 | 2 | open | 2026-09-11 |
@@ -50,14 +49,14 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E046 | professional for a tool instead of specialised | collocation | a professional LLM | a specialised model | 09 | 1 | open | 2026-09-06 |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | open | 2026-09-06 |
 | E048 | form/style for format, and good for you as a verdict | calque | it's the form style ... it's good for you | it comes down to the format ... that's what makes the difference | 09 | 1 | open | 2026-09-06 |
-| E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 1 | open | 2026-09-07 |
+| E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 2 | open | 2026-10-06 |
 | E050 | code-identifier English in speech | register | the send SMS logic / the fixing ticket | how we send SMS / the fix | 10 | 2 | open | 2026-09-22 |
 | E051 | answer then immediately reverse it | function | The monitoring didn't fire. Actually, the monitor had caught the errors | It fired, but the alert never got out | 10 | 1 | open | 2026-09-07 |
 | E052 | make X clear for understanding it yourself | collocation | make the sending logic clear | get my head around the sending logic | 10 | 1 | open | 2026-09-07 |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | open | 2026-09-07 |
 | E054 | awesome as an all-purpose verdict | collocation | it is so awesome that I couldn't put it down / That's awesome. / They are awesome. | it's so good ... / that's the fun part / they're that good | 11 | 3 | open | 2026-09-22 |
 | E055 | object dropped after a transitive verb | grammar | I have to test carefully / We talked this though / I enjoy every time | I've got to test it properly / We talked it through / I enjoy it every time | 05 | 9 | open | 2026-10-10 |
-| E056 | definite article for a hypothetical or unnamed class | grammar | a correct API key / If the pages focused on interaction / If the file is important | the correct API key / if pages are interaction-heavy / if a file is important | 11 | 5 | open | 2026-10-13 |
+| E056 | definite article for a hypothetical or unnamed class | grammar | a correct API key / If the pages focused on interaction / If the file is important | the correct API key / if pages are interaction-heavy / if a file is important | 11 | 6 | open | 2026-10-29 |
 | E057 | comma splice (two independent clauses joined by comma) | grammar | The old SMS provider was reliable, we still swapped it out though. | The old SMS provider was reliable. We swapped it out, though. | 09 | 2 | open | 2026-09-16 |
 | E058 | fixed phrase 'do your own thing' pluralized | collocation | do their own things | do their own thing | 15 | 1 | open | 2026-09-16 |
 | E059 | non-noun clause in the subject slot (infinitive / every-time clause / stacked finite verbs) | grammar | To do things effectively is... / Every time we do what we enjoy helps... / An engineer can pick his own tickets will cause... | Doing things effectively is... / Doing what we enjoy helps... / Letting engineers pick their own tickets will cause... | 15 | 1 | open | 2026-09-16 |
@@ -65,6 +64,9 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E062 | couldn't drifts into a present-tense general statement | grammar | it is so awesome that I couldn't put it down / Every time I play it, I couldn't sleep well | it's so good I can't put it down / I can't sleep well | 16 | 2 | open | 2026-09-22 |
 | E063 | subject-verb number agreement lost in production | grammar | the company keep / one development need / a pleasure tour help / features which supports | the company keeps / one development needs / a pleasure tour helps / features which support | 20 | 6 | open | 2026-10-20 |
 | E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | open | 2026-09-23 |
+| E065 | indefinite article before an uncountable noun | grammar | I'm really into a remote work | I'm really into remote work | 23 | 1 | open | 2026-10-02 |
+| E066 | occurrence count given a preposition (treated as duration or quantity) | preposition | received over one time / I cook it for many times | received more than once / many times - counts take no preposition | 23 | 2 | open | 2026-10-06 |
+| E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | resolved | - |
 | E061 | every time when (doubled connector) | grammar | every time when I get in the zone / Every time when I play it | every time I get in the zone / Every time I play it | 16 | 1 | resolved | - |
 | E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | resolved | - |
 | E035 | false reflexive (relax myself) | collocation | helps relax myself | helps me relax / unwind | 07 | 1 | resolved | - |

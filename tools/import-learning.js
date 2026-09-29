@@ -108,6 +108,48 @@ function openCount(rows) {
   return (rows || []).filter((r) => !/^(resolved|owned|done)$/i.test(String(r.status || ''))).length;
 }
 
+/** A drill dated "2026-09-19/20" spanned two days; count it on the day it finished. */
+function endDate(s) {
+  const m = /^(\d{4}-\d{2}-)\d{2}(?:\/(\d{1,2}))?$/.exec(String(s || ''));
+  if (!m) return '';
+  return m[2] ? m[1] + String(m[2]).padStart(2, '0') : m[0];
+}
+
+/**
+ * Per-track practice counts keyed by date, for the activity graph. Each track
+ * counts the events that represent actual practice: a chat session, a coach
+ * lesson or review, a drill, a rephrase day, a saved note. Review scheduling
+ * data (next/used) is deliberately not activity - it moves without the
+ * learner doing anything.
+ */
+function collectActivity() {
+  const coach = readData('coach');
+  const chat = readData('chat');
+  const patterns = readData('patterns');
+  const form = readData('form');
+  const rephrase = readData('rephrase');
+
+  const act = {};
+  const bump = (key, date) => {
+    if (!isDate(date)) return;
+    act[key] = act[key] || {};
+    act[key][date] = (act[key][date] || 0) + 1;
+  };
+
+  for (const d of (chat && chat.days) || []) bump('chat', d.date);
+  for (const l of (coach && coach.lessons) || []) bump('coach', l.date);
+  for (const r of (coach && coach.reviews) || []) bump('coach', r.date);
+  for (const d of (patterns && patterns.drills) || []) bump('patterns', d.date);
+  for (const d of (form && form.drills) || []) bump('form', endDate(d.date));
+  for (const course of (((rephrase || {}).trees || {}).days || [])) {
+    for (const ep of course.children || []) {
+      for (const day of ep.children || []) bump('rephrase', day.date);
+    }
+  }
+  for (const n of (rephrase && rephrase.notes) || []) bump('notes', n.date);
+  return act;
+}
+
 function latestDate(rows, key) {
   const dates = (rows || []).map((r) => r[key || 'date']).filter(isDate).sort();
   return dates.length ? dates[dates.length - 1] : '';
@@ -276,6 +318,29 @@ html[data-theme="dark"] .lh-foot{border-top-color:#2b333c}
 html[data-theme="dark"] .lh-card .note{background:#252c38;color:#a5b4fc}
 html[data-theme="dark"] .lh-badge{background:#252c38;color:#a5b4fc}
 html[data-theme="dark"] .lh-badge.due{background:#4a3410;color:#fcd34d}
+.act{margin:1.2em 0;overflow-x:auto;padding-bottom:4px}
+.act-t{display:block;font-size:.85em;margin:14px 0 4px;color:#444}
+.act-t a{color:inherit;text-decoration:none}
+.act-t a:hover{text-decoration:underline}
+.act-grid{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,var(--cell,10px));gap:2px;width:max-content}
+.act-head{display:grid;gap:2px;font-size:.72em;width:max-content}
+.act-m{color:#999;white-space:nowrap;overflow:visible}
+.act-c{width:var(--cell,10px);height:var(--cell,10px);border-radius:2px;background:#e8ecf1}
+.act-legend .act-c{width:10px;height:10px}
+.act-c.lv1{background:#bfdbfe}
+.act-c.lv2{background:#60a5fa}
+.act-c.lv3{background:#2563eb}
+.act-c.lv4{background:#1e3a8a}
+.act-c.today{outline:2px solid #f59e0b;outline-offset:-1px}
+.act-c.future{visibility:hidden}
+.act-legend{display:flex;align-items:center;gap:3px;font-size:.72em;color:#999;margin-top:6px}
+.act-legend .act-c{margin-left:2px}
+html[data-theme="dark"] .act-t{color:#9aa4b0}
+html[data-theme="dark"] .act-c{background:#262e37}
+html[data-theme="dark"] .act-c.lv1{background:#1b3a5c}
+html[data-theme="dark"] .act-c.lv2{background:#205493}
+html[data-theme="dark"] .act-c.lv3{background:#2e7cd6}
+html[data-theme="dark"] .act-c.lv4{background:#5ea3ec}
 </style>`;
 
 const SCRIPT = `
@@ -283,6 +348,7 @@ const SCRIPT = `
 (function(){
   var D = window.LEARNING_DATA || {};
   var tracks = D.tracks || [];
+  var activity = D.activity || {};
   var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
   var el = function(id){ return document.getElementById(id); };
@@ -316,6 +382,111 @@ const SCRIPT = `
       '</div>'+
     '</div>';
   }).join('') || '<p>No tracks yet - run the importers.</p>';
+
+  // ---- activity graph ----
+  // One row per track, one column per day, GitHub-contributions style. The
+  // grid starts on the Monday of the week with the first logged practice and
+  // pads to the end of the current week, so the columns are always whole
+  // weeks. Intensity is the number of practice events that day.
+  (function(){
+    var box = el('lhActivity');
+    if (!box) return;
+    var NOUN = { chat:'session', coach:'lesson', patterns:'drill', form:'drill', rephrase:'day', notes:'entry' };
+    var byKey = {};
+    tracks.forEach(function(t){ byKey[t.key] = t; });
+    var keys = Object.keys(activity).filter(function(k){ return byKey[k]; });
+    if (!keys.length){ box.innerHTML = '<p>No practice logged yet.</p>'; return; }
+
+    var pad = function(n){ return String(n).padStart(2, '0'); };
+    var fmt = function(d){ return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
+    var todayStr = fmt(new Date());
+
+    var min = null;
+    keys.forEach(function(k){
+      Object.keys(activity[k]).forEach(function(d){ if (!min || d < min) min = d; });
+    });
+    var start = new Date(min + 'T00:00:00');
+    start.setDate(start.getDate() - (start.getDay() + 6) % 7); // back to Monday
+    var end = new Date(todayStr + 'T00:00:00');
+    end.setDate(end.getDate() + 6 - (end.getDay() + 6) % 7);     // ahead to Sunday
+
+    var days = [];
+    for (var d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) days.push(fmt(d));
+    if (days.length > 53 * 7) days = days.slice(days.length - 53 * 7); // cap at a year
+
+    // Show at least half a year of columns, padding with empty weeks on the
+    // left when the history is shorter (same as GitHub does for new accounts).
+    // Without this the graph is a narrow strip on a mostly empty page.
+    var MIN_WEEKS = 26, MAX_WEEKS = 53;
+    var weeks = days.length / 7;
+    if (weeks < MIN_WEEKS) {
+      var extra = (MIN_WEEKS - weeks) * 7;
+      var first = new Date(days[0] + 'T00:00:00');
+      var prepend = [];
+      for (var i = extra; i >= 1; i--) {
+        var dd = new Date(first);
+        dd.setDate(dd.getDate() - i);
+        prepend.push(fmt(dd));
+      }
+      days = prepend.concat(days);
+      weeks = MIN_WEEKS;
+    }
+
+    var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var head = [];
+    var prevMonth = '';
+    for (var w = 0; w < weeks; w++) {
+      var m = days[w * 7].slice(0, 7);
+      head.push('<span class="act-m">' + (m !== prevMonth ? MONTHS[+m.slice(5) - 1] : '') + '</span>');
+      prevMonth = m;
+    }
+
+    var cell = function(key, ds){
+      var n = (activity[key] || {})[ds] || 0;
+      var lv = n === 0 ? 0 : n === 1 ? 1 : n === 2 ? 2 : n === 3 ? 3 : 4;
+      var cls = 'act-c' + (lv ? ' lv' + lv : '') + (ds === todayStr ? ' today' : '') + (ds > todayStr ? ' future' : '');
+      var noun = NOUN[key] || 'event';
+      var tip = n ? n + ' ' + noun + (n === 1 ? '' : 's') + ' on ' + ds : 'no practice on ' + ds;
+      return '<i class="' + cls + '" title="' + esc(tip) + '"></i>';
+    };
+
+    // GitHub layout: rows are the seven weekdays, columns are weeks. Growth
+    // goes downward (one 7-row strip per track) while the width stays capped
+    // at 53 week columns no matter how much history accumulates. grid-auto-
+    // flow:column fills Monday..Sunday top to bottom, oldest week leftmost.
+    var strips = keys.map(function(k){
+      var t = byKey[k];
+      var cells = '';
+      for (var w2 = 0; w2 < weeks; w2++) {
+        for (var d2 = 0; d2 < 7; d2++) cells += cell(k, days[w2 * 7 + d2]);
+      }
+      return '<span class="act-t"><a href="' + esc(t.url) + '">' + esc(t.name) + '</a></span>' +
+        '<div class="act-grid">' + cells + '</div>';
+    });
+
+    box.innerHTML =
+      '<div class="act-head" style="grid-template-columns:repeat(' + weeks + ',var(--cell,10px))">' + head.join('') + '</div>' +
+      strips.join('') +
+      '<div class="act-legend">Less' +
+      '<i class="act-c"></i><i class="act-c lv1"></i><i class="act-c lv2"></i>' +
+      '<i class="act-c lv3"></i><i class="act-c lv4"></i>More</div>';
+
+    // Stretch the cells so the grid fills the container width: fewer weeks on
+    // record means bigger cells, capped below at 10px (a full year then needs
+    // 53*12px, which fits the 672px content column without scrolling).
+    var GAP = 2;
+    var fitCells = function(){
+      var w = box.clientWidth || 672;
+      var px = Math.floor((w + GAP) / weeks) - GAP;
+      if (px < 10) px = 10;
+      box.style.setProperty('--cell', px + 'px');
+    };
+    fitCells();
+    window.addEventListener('resize', fitCells);
+    // Recent weeks sit in the rightmost columns; when the grid is wider than
+    // its scroll container those are exactly the ones hidden by default.
+    box.scrollLeft = box.scrollWidth;
+  })();
 })();
 </script>`;
 
@@ -323,7 +494,7 @@ function main() {
   ensureClean();
   const root = siteRoot();
   const tracks = buildTracks(root);
-  const data = { generated: new Date().toISOString(), tracks };
+  const data = { generated: new Date().toISOString(), tracks, activity: collectActivity() };
 
   writeFile(path.join(DATA_DIR, 'learning.json'), JSON.stringify(data, null, 2) + '\n');
 
@@ -338,6 +509,9 @@ function main() {
     '',
     '## Tracks',
     '<div id="lhTracks" class="lh-grid"></div>',
+    '',
+    '## Activity',
+    '<div id="lhActivity" class="act"></div>',
     '',
     '<script>window.LEARNING_DATA = ' +
       JSON.stringify(data).replace(/</g, '\\u003c') + ';</script>',
