@@ -28,7 +28,6 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 1 | open | 2026-09-24 |
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 4 | 2 | open | 2026-10-02 |
 | C032 | it makes no difference to | phrase | games | right preposition: difference takes to, not in; also means 'doesn't affect' | Twenty seconds makes no difference to my evening. | 06 | 1 | 1 | open | 2026-09-20 |
-| C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 1 | 1 | open | 2026-09-18 |
 | C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 1 | 1 | open | 2026-09-24 |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 3 | 1 | open | 2026-09-26 |
@@ -55,8 +54,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 0 | 0 | open | 2026-09-14 |
 | C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 2 | 1 | open | 2026-10-02 |
 | C072 | too much of a hassle | phrase | general | the spoken way to say 太麻烦 - 'too trouble' is broken; trouble needs 'too much', and 'a hassle' is the more spoken noun | Playing on the PC is too much of a hassle now - I'd rather play on my phone. | 16 | 0 | 0 | open | 2026-09-17 |
-| C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 0 | 0 | open | 2026-09-18 |
-| C074 | track down (a bug) | phrase | work | find something hidden after searching - 'find out' takes information, not a bug | It took us half a day to track down where the bug was. | 17 | 0 | 0 | open | 2026-09-18 |
+| C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 1 | 1 | open | 2026-10-07 |
+| C074 | track down (a bug) | phrase | work | find something hidden after searching - 'find out' takes information, not a bug | It took us half a day to track down where the bug was. | 17 | 1 | 1 | open | 2026-10-07 |
 | C075 | be in demand | phrase | work | wanted by employers - the collocation for 吃香/抢手, not 'popular in the job market' | Engineers who know the business well are in demand. | 18 | 0 | 0 | open | 2026-09-19 |
 | C076 | way above my level | phrase | work | people who outrank you in skill - the counterpart to 'out of my depth', said about other people | I like talking to people way above my level. | 20 | 0 | 0 | open | 2026-09-21 |
 | C077 | put something in place | phrase | general | introduce measures or procedures to fix or prevent something - the spoken replacement for 'take measures' | We've got to put something in place so it doesn't happen again. | 21 | 0 | 0 | open | 2026-09-22 |
@@ -65,14 +64,13 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C005 | a luxury | phrase | family | something you can rarely afford the time for | Reading for two hours straight is a luxury now. | 01 | 2 | 2 | pending | 2026-10-15 |
 | C007 | That's on me | phrase | work | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 2 | 2 | pending | 2026-10-05 |
 | C008 | stay focused | phrase | study | keep concentrating (fixed phrase) | I turn off my console to stay focused. | 02 | 2 | 2 | pending | 2026-09-22 |
-| C013 | right away | phrase | games | the neutral spoken 'immediately' - default over 'at once' | If you need me, I'll respond right away. | 02 | 2 | 2 | pending | 2026-10-01 |
 | C016 | get something off (a platform) | phrase | shopping | find/take content from an app or site | I got this recipe off Rednote. | 03 | 2 | 2 | pending | 2026-10-06 |
-| C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 2 | 2 | pending | 2026-09-24 |
+| C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 3 | 3 | pending | 2026-10-30 |
 | C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 3 | 3 | pending | 2026-10-17 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 2 | 2 | pending | 2026-09-30 |
 | C028 | let's aim to (ship it Wednesday) | phrase | work | propose a date without ordering anyone | Let's aim to ship it next Wednesday. | 05 | 3 | 2 | pending | 2026-10-15 |
-| C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 3 | 2 | pending | 2026-10-15 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 2 | pending | 2026-10-06 |
+| C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 2 | 2 | pending | 2026-10-16 |
 | C049 | over (a holiday) | phrase | family | across the whole of a holiday - 'during' needs 'the' with 'holiday' | I go back over National Day. | 08 | 2 | 2 | pending | 2026-10-15 |
 | C057 | that's downstream of (X) | phrase | work | caused by something further up - the root-cause phrase natives use at work | All three of those are downstream of the same constraint. | 08 | 2 | 2 | pending | 2026-10-15 |
 | C059 | run it past (someone) | phrase | work | get a second opinion on a decision before committing | I'd run it past a colleague first. | 09 | 2 | 2 | pending | 2026-09-24 |
@@ -83,11 +81,13 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C010 | work from home | phrase | family | remote work - never 'at home' | I worked from home all through COVID. | 02 | 4 | 3 | owned | - |
 | C011 | switch off | phrase | work | stop thinking about work | The hard part is switching off at the end of the day. | 02 | 3 | 3 | owned | - |
 | C012 | my commute | phrase | commute | the trip to work, already includes its length | My commute is 40 minutes door to door. | 02 | 3 | 3 | owned | - |
+| C013 | right away | phrase | games | the neutral spoken 'immediately' - default over 'at once' | If you need me, I'll respond right away. | 02 | 3 | 3 | owned | - |
 | C014 | never get round to it | phrase | games | keep meaning to do something and never do | I've always meant to play it, I just never get round to it. | 03 | 3 | 3 | owned | - |
 | C015 | I've always meant to (do X) | phrase | games | a standing intention never acted on | I've always meant to pick that game back up. | 03 | 3 | 3 | owned | - |
 | C019 | get in the zone | phrase | games | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 3 | 3 | owned | - |
 | C021 | that's what pays | phrase | money | name the thing that earns the money | The business side is what pays. | 04 | 3 | 3 | owned | - |
 | C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 3 | 3 | owned | - |
+| C029 | for what it's worth | phrase | general | soften an opinion you know may not land | For what it's worth, I still think it's overkill. | 05 | 3 | 3 | owned | - |
 | C031 | the business side / the technical side | phrase | work | an ASPECT needs an explicit noun (side/part/end); Chinese leaves it implicit | The business side, I'd say - not the coding side. | 04 | 5 | 5 | owned | - |
 | C034 | work-life balance | phrase | work | fixed compound, that order, hyphenated | Switching off is a big part of work-life balance. | 06 | 4 | 4 | owned | - |
 | C038 | that's down to (X) | phrase | general | attribute a cause or responsibility, casually | That's down to how my leader plans it. | 06 | 3 | 3 | owned | - |

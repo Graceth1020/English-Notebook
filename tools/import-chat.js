@@ -423,6 +423,8 @@ const DASH_STYLE = `
 .chat-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:2.2em 0 0;border-bottom:2px solid #e3e8ef}
 .chat-tabs button{padding:8px 16px;border:1px solid #dbe3ef;border-bottom:0;border-radius:10px 10px 0 0;background:#f8fafc;color:#5b6675;cursor:pointer;font:inherit;font-size:.92em;margin-bottom:-2px}
 .chat-tabs button:hover{color:#2563eb;background:#fff}
+.chat-tabs a.chat-tab-link{padding:8px 16px;border:1px solid #dbe3ef;border-bottom:0;border-radius:10px 10px 0 0;background:#f8fafc;color:#5b6675;font:inherit;font-size:.92em;margin-bottom:-2px;text-decoration:none;display:inline-block}
+.chat-tabs a.chat-tab-link:hover{color:#2563eb;background:#fff}
 .chat-tabs button.on{background:#fff;color:#2563eb;font-weight:600;border-bottom:2px solid #fff}
 .chat-tab-panel{padding-top:.6em}
 .chat-tab-panel[hidden]{display:none}
@@ -525,6 +527,7 @@ html[data-theme="dark"] .drill-was{color:#fca5a5}
 html[data-theme="dark"] .chat-bar{background:#262e37}
 html[data-theme="dark"] .cx-ch td{border-bottom-color:#2a323b}
 html[data-theme="dark"] .cx-cue,html[data-theme="dark"] .drill-cue{color:#c2ccd6}
+html[data-theme="dark"] .chat-tabs a.chat-tab-link{background:#1d232b;border-color:#2e3640;color:#aeb8c2}
 @media (max-width:640px){
   .cx-bub{max-width:100%}
   .cx-row.them .cx-bub,.cx-row.you>div{max-width:100%!important}
@@ -1181,6 +1184,7 @@ function main() {
       '<button type="button" role="tab" data-tab="sessions" aria-selected="false">Sessions</button>' +
       '<button type="button" role="tab" data-tab="chunks" aria-selected="false">Chunk Bank</button>' +
       '<button type="button" role="tab" data-tab="errors" aria-selected="false">Error Log</button>' +
+      '<a class="chat-tab-link" role="tab" aria-selected="false" href="' + root + 'qa/">Q&amp;A</a>' +
       '</div>',
     '',
     '<div class="chat-tab-panel" id="panel-drill" role="tabpanel">',

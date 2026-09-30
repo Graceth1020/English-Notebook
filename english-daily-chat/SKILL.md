@@ -1,4 +1,4 @@
----
+﻿---
 name: english-daily-chat
 description: Run a relaxed daily English small-talk session on a topic Codex picks, about five exchanges long, correcting the learner's non-native phrasing gently as the chat goes, silently recycling past logged errors and banked expressions to see whether they come out unprompted, and writing a daily summary afterwards. Use when the learner asks to chat in English, wants today's chat topic, or says "start today's chat" / "开始今天闲聊" / "今天聊什么". Do not use for structured lessons with a teaching goal, sentence-rephrasing drills, or one-off translation and vocabulary lookups.
 ---
@@ -103,7 +103,7 @@ toward everyday life, with occasional work-and-collaboration topics. See
    session itself, it is not chat practice: answer briefly in English, then hand
    the topic back with a question. No `Native:` verdict, no `↪` fix line, no error
    log entry, and it does not advance the exchange count. Only English attempts
-   at the topic count toward the five.
+   at the topic count toward the five. Log the question and a short answer to `chat/qa.md` under the day's heading, so these one-off explanations collect in a single reviewable place.
 
 11. **A drilled pattern's first appearance is praised, never corrected.** Check
    `patterns --status drilled` at the start of every session. When one of those
@@ -508,7 +508,8 @@ chat/
 ├── index.md                        one row per session: day, date, topic, turns, fixes, status
 ├── errors.md                       accumulated errors with spaced review dates
 ├── chunks.md                       banked expressions with kind + tried/used counts
-├── chunk-sheet.md                  generated phrasebook, grouped by session
+├── chunk-sheet.md                  generated phrasebook, grouped by session
+├── qa.md                           language questions asked mid-chat, with answers
 ├── sessions/day-XX-YYYYMMDD.md     full transcript with the inline fixes
 └── summaries/day-XX-YYYYMMDD.md    daily summary
 

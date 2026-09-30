@@ -163,6 +163,7 @@ function latestDate(rows, key) {
 function buildTracks(root) {
   const coach = readData('coach');
   const chat = readData('chat');
+  const qa = readData('qa');
   const patterns = readData('patterns');
   const form = readData('form');
   const rephrase = readData('rephrase');
@@ -188,6 +189,20 @@ function buildTracks(root) {
     });
   }
 
+  if (qa) {
+    tracks.push({
+      key: 'qa',
+      name: 'Q&A',
+      url: root + 'qa/',
+      blurb: 'Language questions asked mid-practice, with answers.',
+      last: latestDate(qa.days, 'date'),
+      due: 0,
+      stats: [
+        { label: 'Questions', value: qa.total || 0 },
+        { label: 'Days', value: (qa.days || []).length },
+      ],
+    });
+  }
   if (coach) {
     const phases = (coach.plan && coach.plan.phases) || [];
     const active = phases.find((p) => /progress/i.test(String(p.status || '')));

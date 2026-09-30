@@ -53,3 +53,7 @@ coach/inbox/
 # Python bytecode from skill scripts
 __pycache__/
 *.pyc
+
+# Generated qa site content (recreated by tools/import-qa.js)
+source/qa/
+source/_data/qa.json

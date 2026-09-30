@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-29T10:15:28.658Z",
+  "generated": "2026-09-30T10:03:19.332Z",
   "drills": [
+    {
+      "drill": "12",
+      "date": "2026-09-30",
+      "title": "Pattern 12 - noun pile -> embedded question",
+      "structure": "noun pile -> embedded question",
+      "pattern": "P011",
+      "rounds": 3,
+      "items": 10,
+      "correct": "7/10",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
     {
       "drill": "11",
       "date": "2026-09-20",
@@ -125,6 +136,17 @@
   ],
   "inventory": [
     {
+      "id": "P012",
+      "pattern": "post-noun modifier hangers: with + feature, in + clothing, -ing + action, place phrase last",
+      "gap": "Chinese stacks every modifier before the noun (的-chains); English says the head noun first and hangs modifiers after it. He assembles in Chinese order and either stalls or builds a noun pile ('the unit of the amount saved in database', Day 24). Learner-raised gap.",
+      "example": "the guy with long hair and glasses, in a black jersey, playing on the court over there",
+      "found": "24",
+      "drills": "0",
+      "used": "0",
+      "status": "open",
+      "next": "2026-10-03"
+    },
+    {
       "id": "P002",
       "pattern": "object pronoun after a preposition (with me / for him)",
       "gap": "wrote 'with I trying to learn'; nouns hide it, only pronouns expose it",
@@ -169,15 +191,15 @@
       "next": "2026-09-27"
     },
     {
-      "id": "P008",
-      "pattern": "reduced relative clause (who/which + be -> dropped)",
-      "gap": "always spells the clause out in full (who is responsible / which was unrelated); such clauses are grammatically fine, so nothing ever errors and the reduced form has never once appeared. The trap runs the other way - dropping who + a lexical verb",
-      "example": "The engineer responsible for the feature ends up dealing with it.",
-      "found": "17",
-      "drills": "2",
-      "used": "1",
+      "id": "P011",
+      "pattern": "noun pile -> embedded question (wh-word + clause)",
+      "gap": "renders Chinese de-chains word by word as 'the A of the B saved in C'; when the head noun is an information point (unit/name/reason/time/way), English reaches for an embedded question instead - a frame he already owns ('find out what the problem was', Day 24) but the de-chain still wins under production pressure",
+      "example": "the unit of the amount saved in database -> what unit the amount was stored in",
+      "found": "24",
+      "drills": "1",
+      "used": "0",
       "status": "drilled",
-      "next": "2026-09-26"
+      "next": "2026-10-03"
     },
     {
       "id": "P001",
@@ -213,15 +235,26 @@
       "next": "2026-10-20"
     },
     {
+      "id": "P008",
+      "pattern": "reduced relative clause (who/which + be -> dropped)",
+      "gap": "always spells the clause out in full (who is responsible / which was unrelated); such clauses are grammatically fine, so nothing ever errors and the reduced form has never once appeared. The trap runs the other way - dropping who + a lexical verb",
+      "example": "The engineer responsible for the feature ends up dealing with it.",
+      "found": "17",
+      "drills": "2",
+      "used": "2",
+      "status": "owned",
+      "next": "2026-10-30"
+    },
+    {
       "id": "P010",
       "pattern": "the object or idea as the subject, not 'I + verb' (passive / fronted subject)",
       "gap": "every sentence about a thing or wish opens with 'I + verb'; the object or idea is never placed in subject position. Not grammar - nothing ever errors - the fronted-subject frame simply never surfaces. Same recall gap as C031, one level up: C031 is a noun slot, this is a whole-sentence frame.",
       "example": "I follow the rule strictly. -> The rule gets followed strictly. / I want to read books before bed. -> Books before bed are still the plan.",
       "found": "22",
       "drills": "0",
-      "used": "5",
+      "used": "7",
       "status": "owned",
-      "next": "2026-10-29"
+      "next": "2026-10-30"
     }
   ],
   "cards": [
@@ -2170,6 +2203,146 @@
       "verdict": "wrong form",
       "why": "`all people` is the `all the team` shape again - a bare `all` + plural noun for a specific group. English wants `everyone` or `all the people/drivers`. Third occurrence of the GROUP row gap (Day 20 `all the team`, Round 2 item 1, here). Also `National day` -> `National Day`, and `is` for `was`. The P001 frame (`with X doing`) around the quantifier was correct and unprompted - not what was being marked, but worth noting.",
       "url": "/English-Notebook/patterns/drills/pattern-11-20260920/"
+    },
+    {
+      "key": "D12.1.1",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 1,
+      "roundName": "unwind the pile",
+      "cue": "我们当时就会知道数据库里存的金额是什么单位。",
+      "task": "We would have known the unit of the amount saved in the database.",
+      "answer": "We would have known what unit the amount was stored in.",
+      "said": "We would have known what unit of the amount stored in the database.",
+      "verdict": "wrong form",
+      "why": "The wh-word arrived but the of-pile survived inside the frame - \"what unit of the amount\". The of-phrase must unfold into a clause: subject + verb. Took three passes: first retry dropped \"was\" (passive participle with no be - third occurrence in two days, logged as E070), second gave the stranded \"in\" to \"the database\" instead of the unit. Final \"stored in in the database\" showed both locatives understood.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.1.2",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 1,
+      "roundName": "unwind the pile",
+      "cue": "我不知道怎么刷新我们的 API。",
+      "task": "I don't know the way to refresh our API.",
+      "answer": "I don't know how to refresh our API.",
+      "said": "I don't know the way to refresh our API.",
+      "verdict": "not the pattern",
+      "why": "Grammatical - natives do say it - but the drill trains the how-frame: the way to do X -> how to do X. Landed clean on retry.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.1.3",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 1,
+      "roundName": "unwind the pile",
+      "cue": "我们得弄清楚告警为什么没发出去。",
+      "task": "We need to figure out the reason for the failed alerts.",
+      "answer": "We need to figure out why the alerts failed.",
+      "said": "We need to figure out the reason of the failed alerts.",
+      "verdict": "not the pattern",
+      "why": "Both layers untouched - \"reason\" never became \"why\", and \"the failed alerts\" (a short de-pile of its own) never unfolded into a clause. Side note: reason takes \"for\", not \"of\". Landed clean on retry.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.2.1",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 2,
+      "roundName": "unwind or keep?",
+      "cue": "我会在季度结束前读完它。",
+      "task": "I'll get through it by the end of the quarter.",
+      "answer": "I'll get through it by the end of the quarter.",
+      "said": "I'll get through it by the end of the quarter.",
+      "verdict": "ok",
+      "why": "Correctly refused - the discriminating item. \"The end of the quarter\" is a property, not an information point (\"什么结束?\" does not exist), so no unwind. No over-application.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.2.2",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 2,
+      "roundName": "unwind or keep?",
+      "cue": "你知道配置文件在哪儿吗?",
+      "task": "Do you know the location of the config file?",
+      "answer": "Do you know where the config file is?",
+      "said": "Do you know where the config file is?",
+      "verdict": "ok",
+      "why": "",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.2.3",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 2,
+      "roundName": "unwind or keep?",
+      "cue": "告诉我营销短信什么时候发。",
+      "task": "Tell me the time of the campaign SMS.",
+      "answer": "Tell me when the campaign SMS goes out.",
+      "said": "Tell me when the campaign SMS is sent.",
+      "verdict": "ok",
+      "why": "Correct either way - \"is sent\" is fine; \"goes out\" is the spoken default for a scheduled send. Notably the passive be was present one turn after E070 was logged for dropping it.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.2.4",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 2,
+      "roundName": "unwind or keep?",
+      "cue": "我们更新了页面上金额的显示逻辑。",
+      "task": "We updated the amount showing logic on our pages.",
+      "answer": "We updated how the amount showed on our pages.",
+      "said": "We updated how the amount showed on our pages.",
+      "verdict": "ok",
+      "why": "Correct backshift after \"updated\"; present \"shows\" (a standing fact) is also fine.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.3.1",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "你没看懂数据库里金额的单位,去问了同事。",
+      "task": "你没看懂数据库里金额的单位,去问了同事。Say what you did.",
+      "answer": "I asked my colleague what unit the amount was stored in.",
+      "said": "Could you tell me what unit the amount was stored in?",
+      "verdict": "ok",
+      "why": "The embedded frame is exact - \"was\" present, \"in\" stranded. Produced as the direct question rather than a report, which is arguably the more natural response to the situation.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.3.2",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "新同事不会排查线上问题,你说\"我教你怎么查\"。",
+      "task": "A new joiner doesn't know how to debug a production issue. Tell him you'll teach him.",
+      "answer": "Let me teach you how to debug a production issue.",
+      "said": "Let me teach you how to debug a production issue.",
+      "verdict": "ok",
+      "why": "",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D12.3.3",
+      "drill": "12",
+      "pattern": "P011",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "你不记得优惠券功能是哪天上线的,去查了发布记录。",
+      "task": "你不记得优惠券功能是哪天上线的,去查了发布记录。Say it.",
+      "answer": "I forgot when the coupon feature went live, so I checked the release log.",
+      "said": "I forgot when the coupon feature went out so I checked the release log.",
+      "verdict": "ok",
+      "why": "The when-clause is correct. Not counted: a feature \"went live\" or \"shipped\"; \"went out\" is for messages and emails.",
+      "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
     }
   ]
 }
