@@ -1,6 +1,17 @@
 {
-  "generated": "2026-09-30T10:03:19.332Z",
+  "generated": "2026-10-01T14:27:53.890Z",
   "drills": [
+    {
+      "drill": "13",
+      "date": "2026-09-30",
+      "title": "Pattern 13 - post-noun modifier hangers",
+      "structure": "post-noun modifier hangers",
+      "pattern": "P012",
+      "rounds": 3,
+      "items": 11,
+      "correct": "6/11",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
     {
       "drill": "12",
       "date": "2026-09-30",
@@ -136,17 +147,6 @@
   ],
   "inventory": [
     {
-      "id": "P012",
-      "pattern": "post-noun modifier hangers: with + feature, in + clothing, -ing + action, place phrase last",
-      "gap": "Chinese stacks every modifier before the noun (的-chains); English says the head noun first and hangs modifiers after it. He assembles in Chinese order and either stalls or builds a noun pile ('the unit of the amount saved in database', Day 24). Learner-raised gap.",
-      "example": "the guy with long hair and glasses, in a black jersey, playing on the court over there",
-      "found": "24",
-      "drills": "0",
-      "used": "0",
-      "status": "open",
-      "next": "2026-10-03"
-    },
-    {
       "id": "P002",
       "pattern": "object pronoun after a preposition (with me / for him)",
       "gap": "wrote 'with I trying to learn'; nouns hide it, only pronouns expose it",
@@ -197,9 +197,20 @@
       "example": "the unit of the amount saved in database -> what unit the amount was stored in",
       "found": "24",
       "drills": "1",
-      "used": "0",
+      "used": "1",
       "status": "drilled",
-      "next": "2026-10-03"
+      "next": "2026-10-17"
+    },
+    {
+      "id": "P012",
+      "pattern": "post-noun modifier hangers: with + feature, in + clothing, -ing + action, place phrase last",
+      "gap": "Chinese stacks every modifier before the noun (的-chains); English says the head noun first and hangs modifiers after it. He assembles in Chinese order and either stalls or builds a noun pile ('the unit of the amount saved in database', Day 24). Learner-raised gap.",
+      "example": "the guy with long hair and glasses, in a black jersey, playing on the court over there",
+      "found": "24",
+      "drills": "1",
+      "used": "1",
+      "status": "drilled",
+      "next": "2026-10-17"
     },
     {
       "id": "P001",
@@ -252,9 +263,9 @@
       "example": "I follow the rule strictly. -> The rule gets followed strictly. / I want to read books before bed. -> Books before bed are still the plan.",
       "found": "22",
       "drills": "0",
-      "used": "7",
+      "used": "8",
       "status": "owned",
-      "next": "2026-10-30"
+      "next": "2026-10-31"
     }
   ],
   "cards": [
@@ -2343,6 +2354,160 @@
       "verdict": "ok",
       "why": "The when-clause is correct. Not counted: a feature \"went live\" or \"shipped\"; \"went out\" is for messages and emails.",
       "url": "/English-Notebook/patterns/drills/pattern-12-20260930/"
+    },
+    {
+      "key": "D13.1.1",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 1,
+      "roundName": "build the noun phrase",
+      "cue": "那个长头发、戴眼镜的男生",
+      "task": "Pieces: a guy / long hair / glasses",
+      "answer": "the guy with long hair and glasses",
+      "said": "the guy with long hair and glasses",
+      "verdict": "ok",
+      "why": "Worked example, echoed clean - same-category features share one \"with\".",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.1.2",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 1,
+      "roundName": "build the noun phrase",
+      "cue": "那个穿着黑色球衣的男生",
+      "task": "Pieces: a guy / he is wearing a black jersey",
+      "answer": "the guy in the black jersey",
+      "said": "a guy wearing a black jersey",
+      "verdict": "not the pattern",
+      "why": "\"Wearing\" is legal English but dodged the item's decision - 穿着 takes the in-hook when pointing someone out. Also 那个 = \"the\". Landed on retry.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.1.3",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 1,
+      "roundName": "build the noun phrase",
+      "cue": "那边那个正在球场打篮球的男生",
+      "task": "Pieces: a boy / he is playing basketball / on the court over there",
+      "answer": "the boy playing basketball on the court over there",
+      "said": "a boy is playing basketball on the court over there",
+      "verdict": "wrong form",
+      "why": "正在做 promoted to a full verb - \"a boy IS playing\" is a sentence, not a phrase. Chop \"is\", hang the -ing. Landed on retry; \"playing the basketball\" lost its stray \"the\" (sports take no article).",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.1.4",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 1,
+      "roundName": "build the noun phrase",
+      "cue": "那边那个穿着黑色球衣、正在打球的长头发戴眼镜的男生",
+      "task": "Pieces: a guy / long hair + glasses / black jersey / playing on the court / over there",
+      "answer": "the guy with long hair and glasses, in the black jersey, playing basketball on the court over there",
+      "said": "a guy with long hair and glasses wearing a black jersey is playing basketball on the court over there.",
+      "verdict": "wrong form",
+      "why": "Same promotion, doubled - \"wearing\" + \"is playing\" forced a full sentence. Landed clean on retry: the full four-hook chain.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.2.1",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 2,
+      "roundName": "choose the hook yourself",
+      "cue": "那个在会上一直问问题的实习生",
+      "task": "那个在会上一直问问题的实习生",
+      "answer": "the intern who keeps asking questions in the meeting",
+      "said": "the intern who keeps asking questions in the meeting",
+      "verdict": "ok",
+      "why": "The discriminating item passed - habitual action has no hook, correctly escaped to a who-clause.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.2.2",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 2,
+      "roundName": "choose the hook yourself",
+      "cue": "门口那个背红色双肩包的男生",
+      "task": "门口那个背红色双肩包的男生",
+      "answer": "the boy with a red backpack at the door",
+      "said": "the boy with a red backpack behind the door",
+      "verdict": "ok",
+      "why": "Hooks right; 门口 = at the door (\"behind the door\" is 在门后面). Retry came back \"the body\" - typo for \"the boy\", flagged.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.2.3",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 2,
+      "roundName": "choose the hook yourself",
+      "cue": "那个穿白衬衫、正在跟经理说话的女士",
+      "task": "那个穿白衬衫、正在跟经理说话的女士",
+      "answer": "the lady in a white shirt talking to the manager",
+      "said": "a lady in a white shirt, talking with the manager",
+      "verdict": "ok",
+      "why": "Hooks right; \"the lady\" (那个), and 跟某人说话 = talk to (talk with implies a two-way conversation). Both fixed on retry.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.2.4",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 2,
+      "roundName": "choose the hook yourself",
+      "cue": "客厅那台屏幕裂了的旧手机",
+      "task": "客厅那台屏幕裂了的旧手机",
+      "answer": "the old phone with a cracked screen in the living room",
+      "said": "The old phone whose screen is broken in the living room",
+      "verdict": "wrong form",
+      "why": "An object's state went to a whose-clause - stiff for a thing, and it swallowed the place phrase (the screen broke \"in the living room\"). New hook: with + noun + -ed. Landed on retry (\"the phone...\" - dropped \"old\", noted).",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.3.1",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "新同事想看你的游戏主机,你指给他看:\"就是那台……\"",
+      "task": "Your new colleague wants to see your gaming rig. Point it out: \"It's the one ___.\"",
+      "answer": "It's the red one with its screen on, sitting on the desk.",
+      "said": "It's the red one with its screen on sitting on the desk.",
+      "verdict": "ok",
+      "why": "Both hooks fire; a comma is needed when the first hook already contains \"on\".",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.3.2",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "朋友来球场看你打球,你告诉他怎么认出你:\"我就是那个……\"",
+      "task": "A friend is coming to watch you play basketball. Tell him how to spot you: \"I'm the one ___.\"",
+      "answer": "I'm the one with long black hair and fair skin, in a black basketball outfit and Kobes.",
+      "said": "I'm the one with long black hair and white skin, in a black basketball outfit and Kobe brand basketball shoes.",
+      "verdict": "ok",
+      "why": "Assembly clean, adjective order right (long black hair). Vocabulary: 皮肤白 = fair skin; 科比牌球鞋 = Kobes.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
+    },
+    {
+      "key": "D13.3.3",
+      "drill": "13",
+      "pattern": "P012",
+      "round": 3,
+      "roundName": "free production",
+      "cue": "描述你球场或公司里最有辨识度的一个人,特征尽量多,用拆分的方式说。",
+      "task": "Describe the most distinctive person at your court or office - as many features as you can, the SPLIT way.",
+      "answer": "Mike's the one coding in the office. Long blond hair, gold-rimmed glasses, green eyes, fair skin, white shirt and blue jeans, Nikes - that's my leader.",
+      "said": "Mike, with long yellow hair, green eyes, white skin and a pair of glasses, in a Nike brand shoes, white shirt and blue jeans, coding in the office, is my leader.",
+      "verdict": "not the pattern",
+      "why": "Every hook fired, but seven features in one sentence is exactly the overload the split exists for. Word traps inside: 黄头发 = blond (not yellow), 金丝眼镜 = gold-rimmed, \"a Nike brand shoes\" (a + plural; 牌 is just the brand name), \"white shirt\" missing \"a\". Retry landed the full split, all vocabulary fixed - \"That's\" after the dash should be lowercase, the one surviving slip.",
+      "url": "/English-Notebook/patterns/drills/pattern-13-20260930/"
     }
   ]
 }

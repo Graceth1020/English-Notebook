@@ -34,11 +34,11 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 27 | open | 2026-10-30 |
+| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 28 | open | 2026-10-31 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
-| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 5 | open | 2026-10-30 |
+| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 6 | open | 2026-10-31 |
 | E038 | since + present instead of perfect | grammar | since then on, I drive my car back home | since then I've been driving back | 08 | 1 | open | 2026-09-05 |
 | E040 | chances for opportunities to do something | calque | I just have two chances to go back home | I only get back twice a year | 08 | 1 | open | 2026-09-05 |
 | E041 | once for every time | calque | I need to spend eight hours once | that's eight hours in the car every time | 08 | 1 | open | 2026-09-05 |
@@ -68,6 +68,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E068 | passive agent introduced with from instead of by | preposition | the bug was reported from the business department | the bug was reported by the business team | 24 | 1 | open | 2026-10-03 |
 | E069 | been + bare verb instead of been + -ing | grammar | We've been focus more on code review | We've been focusing more on code review / We've focused more on code review | 24 | 1 | open | 2026-10-03 |
 | E070 | passive participle standing alone with no be | grammar | what unit the amount stored in the database | what unit the amount was stored in | 24 | 1 | open | 2026-10-03 |
+| E071 | like + etc. - two example markers in one list | grammar | backend frameworks like Spring, Mybatis. etc. | backend frameworks like Spring and MyBatis / Spring, MyBatis, etc. | 25 | 1 | open | 2026-10-04 |
 | E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | resolved | - |
 | E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 2 | resolved | - |
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | resolved | - |

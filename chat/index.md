@@ -30,3 +30,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 22 | 2026-09-20 | Weekends, yours or work's? | daily | 5 | 19 | done | [summary](summaries/day-22-20260920.md) |
 | 23 | 2026-09-29 | City or small town | opinion | 5 | 22 | done | [summary](summaries/day-23-20260929.md) |
 | 24 | 2026-09-30 | The last bug that ruined your day | work | 5 | 18 | done | [summary](summaries/day-24-20260930.md) |
+| 25 | 2026-10-01 | Interviews you've been through | work | 5 | 21 | done | [summary](summaries/day-25-20261001.md) |

@@ -243,14 +243,19 @@ function main() {
     'Generated from `chat/qa.md` by `tools/import-qa.js`.',
     '',
     QA_STYLE,
+    '',
     '<p><strong>' + total + '</strong> 问 &middot; <strong>' + days.length + '</strong> 天</p>',
+    '',
     '<div class="qa-toolbar">' +
       '<input id="qaFilter" type="search" placeholder="筛选问题或答案…" aria-label="筛选">' +
       '<button type="button" id="qaExpand">全部展开</button>' +
       '<button type="button" id="qaCollapse">全部收起</button></div>',
+    '',
     '<div id="qaList"></div>',
+    '',
     '<script>var QA_DATA = ' +
       JSON.stringify(data).replace(/</g, '\\u003c') + ';</script>',
+    '',
     QA_SCRIPT,
     '',
   ].join('\n');

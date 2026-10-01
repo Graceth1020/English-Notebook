@@ -52,27 +52,9 @@ transcript as `[meta]`; this file is the review copy.
 
 ---
 
-**Q:** "By then customers already haven't got their codes." 是什么意思?这种 got 怎么理解?(像 get somebody something 一样难理解)
-
-**A:** 这里的 got 不是 "get sb sth"(给某人某物),而是 **have got = have**(已经拿到/持有):"customers haven't got their codes" = 用户手里没有验证码 = 没收到。整句:到那时,用户已经收不到验证码了。这句后来打磨成 "by then the customer still hasn't got their code"(still + 否定,记为 chat:E030)。
-
----
-
-**Q:** "Monitoring helps, but that's after the fact - by then the customer already didn't get their code." 这句话是什么意思?
-
-**A:** 监控有用,但那是事后才告诉你——等它报警时,用户已经没收到验证码了。这句在解释为什么监控救不了这次发布:它只能发现,不能预防。
-
----
-
 **Q:** "It's similar to mine" 改成了 "It looks similar",改了但没说为什么。
 
 **A:** "is similar" 是下了结论;"looks similar" 只是第一印象——而你下一句马上说核心逻辑其实不同,hedge 正好配合这个转折:看起来像,实际不是。这处当时漏了解释行,属于"悄悄改写"失误(同批还有 figure out / key part 等四处,后来都写进了 correction-style.md 的 [optional] 规则)。
-
----
-
-**Q:** 为什么改写的句子和我的原句差距这么大,是不是原句表述很不好,只能重新表述?
-
-**A:** 不是原句差。那次改写从 Codex 自己的下一轮里"偷"了内容("there's no fallback", "the old one goes away")——这是 Codex 的错(违反了"改写只能用你说过的东西"),当场改正并给了贴近原句的版本。真正的语言问题只有那三条 fix。这一课后来成了规则:每处改动单独说明,不许悄悄重述。
 
 ---
 
@@ -122,12 +104,6 @@ transcript as `[meta]`; this file is the review copy.
 
 ---
 
-**Q:** 没有太看明白第五轮的问题是什么意思。
-
-**A:** 原问题先叙述了结论再提问,把任务埋了(同一类失误后来写成 Non-Negotiable 4)。重新问成:如果远程工作真的来了,你多久回一次家、每次待多久?(how often + how long,任务前置。)
-
----
-
 **Q:** 「站不住」怎么理解?(总结里说我的三个理由站不住)
 
 **A:** "doesn't hold up" / "doesn't hold water" —— 经不起追问,一推就倒。这个问题还揪出了总结本身的夸大:你的三个理由不是不成立,而是不完整——都是同一个没说出口的约束的下游。总结已改正;这个答案还顺手存了三个 chunk:C055 doesn't hold up / C056 that's a symptom, not the reason / C057 that's downstream of。
@@ -139,12 +115,6 @@ transcript as `[meta]`; this file is the review copy.
 **Q:** "hands you a year's salary" 难理解,是因为对地道表达还不够熟悉吗?
 
 **A:** 拆成三块:**hands you** = 白给你/直接塞给你(地道表达,确实要见过才熟);**a year's salary** = 时间段的所有格,"一年的工资"(这是语法,不是地道问题);真正的原因一半是表达,一半是那句问题太长、任务压在最后。之后改成任务前置重新问。
-
----
-
-**Q:** "With AI developing quickly" 是特意练的 with 句型,但被改了,是写得不好吗?
-
-**A:** 不是,你写得对——那是 P001 句型 drill 后第二天的首次主动产出,唯一该做的是表扬,却被当成 bookish 改写了。错在 Codex:开场检查漏查了 pattern 清单。之后改了三处:session 流程必查 patterns、新增 Non-Negotiable 11(drilled 句型的首次产出只表扬不纠正)、总结表加 good 标签。P001 记为 used 1/2。
 
 ---
 

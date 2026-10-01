@@ -216,6 +216,13 @@ counted, and never turned into a correction the learner is expected to act on.
 Day 10 round 3: `makes misunderstanding` is a collocation error, worth naming, and
 deliberately outside the three axes.
 
+## Numbering
+
+`NN` is a single global sequence across ALL drills, including learner-designed
+variants. Before naming a new drill file, list `form/summaries/` and take the
+highest existing number plus one - never infer the count from this document,
+which only describes the drills that existed when it was written. (Drill 11 was
+initially filed as a second "07" by exactly this mistake.)
 ## Summary Format
 
 Written to `form/summaries/form-NN-YYYYMMDD.md`. `tools/import-form-drills.js`
