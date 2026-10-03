@@ -8,7 +8,7 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "preview": "npm run import && hexo server",
-    "import": "node tools/import-rephrase.js && node tools/import-coach.js && node tools/import-chat.js && node tools/import-patterns.js && node tools/import-form-drills.js && node tools/import-qa.js && node tools/import-learning.js"
+    "import": "node tools/import-rephrase.js && node tools/import-coach.js && node tools/import-chat.js && node tools/import-patterns.js && node tools/import-form-drills.js && node tools/import-form-chunks.js && node tools/import-qa.js && node tools/import-learning.js"
   },
   "hexo": {
     "version": "8.1.2"

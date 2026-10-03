@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-01 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-03 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**26 owned / 78 banked**
+**31 owned / 81 banked**
 
 ## How to review this
 
@@ -56,7 +56,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I've always meant to pick that game back up.
 - [ ] **get something off (a platform)** - find/take content from an app or site
   - I got this recipe off Rednote.
-- [ ] **all sorts** - spoken replacement for 'various' / 'all kinds'
+- [x] **all sorts** - spoken replacement for 'various' / 'all kinds'
   - People post all sorts on there.
 - [ ] **sold out** - no stock left - always with 'be', always plural for shorts etc.
   - I went back for them but they were sold out.
@@ -86,7 +86,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - We talked it through last week.
 - [ ] **all in** - totalling everything up
   - So all in, I'd put it at a week.
-- [ ] **let's aim to (ship it Wednesday)** - propose a date without ordering anyone
+- [x] **let's aim to (ship it Wednesday)** - propose a date without ordering anyone
   - Let's aim to ship it next Wednesday.
 - [x] **for what it's worth** - soften an opinion you know may not land
   - For what it's worth, I still think it's overkill.
@@ -128,7 +128,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - An hour of gaming helps me unwind.
 - [ ] **get in the way of (X)** - the spoken 'affect' when something interferes
   - It never gets in the way of my sleep.
-- [ ] **a weeknight thing** - confine something to weeknights in three words
+- [x] **a weeknight thing** - confine something to weeknights in three words
   - That's only really a weeknight thing.
 - [ ] **a rig / my setup** - what people call a gaming PC - never 'devices'
   - I've got a rig that can run anything.
@@ -160,7 +160,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **in a way that sticks** - presented so it stays in memory - 'stick' is the verb for staying learned
   - You have to present it in a way that sticks.
-- [ ] **run it past (someone)** - get a second opinion on a decision before committing
+- [x] **run it past (someone)** - get a second opinion on a decision before committing
   - I'd run it past a colleague first.
 - [x] **keep an eye on (X)** - watch an ongoing trend - replaces 'look for the frontier technology'
   - I'd keep an eye on where the tech is going.
@@ -184,7 +184,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I'm about halfway through.
 - [ ] **in the next few months** - the everyday vague timeframe - what you say instead of a named period when speaking casually
   - I'll get through it in the next few months.
-- [ ] **by the end of the quarter** - the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter
+- [x] **by the end of the quarter** - the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter
   - I'm hoping to finish it by the end of the quarter.
 - [ ] **..., anyway** - end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter'
   - The traffic's brutal. I drive back anyway.
@@ -227,3 +227,12 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **more than once** - spoken occurrence count - never 'over one time'; contrast: 'for two hours' (duration) vs 'twice' (count, bare)
   - I've made this exact mistake more than once.
+
+## Day 26
+
+- [ ] **run into (a problem / difficulties)** - meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting
+  - No matter what difficulties I run into, I stick to it.
+- [ ] **make a difference** - have a real effect - difference always takes its article; past is 'made a difference'
+  - Over time, that made a difference.
+- [ ] **get to know (a place / person)** - come to understand slowly over time - the spoken 'learn about deeply'
+  - That's how he really gets to know the local culture.

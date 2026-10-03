@@ -593,6 +593,8 @@ function main() {
       '**The axes are never announced during the drill** - naming them restores the',
       'attention the drill is trying to occupy.',
       '',
+      'Scene chunks from the action-chain drills, as recall cards: [form/chunks](' + root + 'form/chunks.html).',
+      '',
       '## Every Round, Every Axis',
       '',
       'Difficulty climbs within each drill. The shape of the curve is the finding:',

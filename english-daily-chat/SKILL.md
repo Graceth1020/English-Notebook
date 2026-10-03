@@ -1,4 +1,4 @@
-﻿---
+---
 name: english-daily-chat
 description: Run a relaxed daily English small-talk session on a topic Codex picks, about five exchanges long, correcting the learner's non-native phrasing gently as the chat goes, silently recycling past logged errors and banked expressions to see whether they come out unprompted, and writing a daily summary afterwards. Use when the learner asks to chat in English, wants today's chat topic, or says "start today's chat" / "开始今天闲聊" / "今天聊什么". Do not use for structured lessons with a teaching goal, sentence-rephrasing drills, or one-off translation and vocabulary lookups.
 ---
@@ -444,6 +444,13 @@ So the summary has to choose. Cut, in this order:
   for that sentence, not an expression waiting to be owned.
 - **Whatever the learner is unlikely to need again this month.** A chunk that
   cannot plausibly recur is a row that will be `tried` forever.
+- **Narrow single-collocation items.** `simple English` was offered and the
+  learner declined it: an adjective-noun pair locked to one noun is not a
+  chunk, it is a vocabulary note. Prefer expressions that travel across
+  scenes - `run into`, `make a difference`, `get to know` fit work, study,
+  and life alike, which means more seeding slots can reach them and the
+  off-scene ownership rule is achievable. If a burned collocation is worth
+  keeping at all, keep it as an error row or an observation, not a chunk.
 
 `--force` exists, but it prints a warning and the reason belongs in the session
 file.

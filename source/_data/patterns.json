@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T14:27:53.890Z",
+  "generated": "2026-10-03T08:28:23.234Z",
   "drills": [
     {
       "drill": "13",
@@ -191,17 +191,6 @@
       "next": "2026-09-27"
     },
     {
-      "id": "P011",
-      "pattern": "noun pile -> embedded question (wh-word + clause)",
-      "gap": "renders Chinese de-chains word by word as 'the A of the B saved in C'; when the head noun is an information point (unit/name/reason/time/way), English reaches for an embedded question instead - a frame he already owns ('find out what the problem was', Day 24) but the de-chain still wins under production pressure",
-      "example": "the unit of the amount saved in database -> what unit the amount was stored in",
-      "found": "24",
-      "drills": "1",
-      "used": "1",
-      "status": "drilled",
-      "next": "2026-10-17"
-    },
-    {
       "id": "P012",
       "pattern": "post-noun modifier hangers: with + feature, in + clothing, -ing + action, place phrase last",
       "gap": "Chinese stacks every modifier before the noun (的-chains); English says the head noun first and hangs modifiers after it. He assembles in Chinese order and either stalls or builds a noun pile ('the unit of the amount saved in database', Day 24). Learner-raised gap.",
@@ -266,6 +255,17 @@
       "used": "8",
       "status": "owned",
       "next": "2026-10-31"
+    },
+    {
+      "id": "P011",
+      "pattern": "noun pile -> embedded question (wh-word + clause)",
+      "gap": "renders Chinese de-chains word by word as 'the A of the B saved in C'; when the head noun is an information point (unit/name/reason/time/way), English reaches for an embedded question instead - a frame he already owns ('find out what the problem was', Day 24) but the de-chain still wins under production pressure",
+      "example": "the unit of the amount saved in database -> what unit the amount was stored in",
+      "found": "24",
+      "drills": "1",
+      "used": "2",
+      "status": "owned",
+      "next": "2026-11-02"
     }
   ],
   "cards": [
