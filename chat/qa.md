@@ -234,3 +234,45 @@ you see the error in production and immediately know it is your code.
 - 注意 build X **into** Y 是另一个意思:把逻辑内嵌进模块、成为它的一部分,
   这时候 build 带上了"放进去"的画面,所以用 into。
 
+
+---
+
+## Day 25 - 2026-10-01
+
+**Q:** "have a good mindset" 这个表达不行吗?
+
+**A:** 能用,语法完全合法,母语者也听得懂——问题是它是"翻译出来的英语"而不是"母语者会说的话"。mindset 在母语语料里的常见搭档是 a growth mindset / the right mindset / a positive mindset,几乎不说 a good mindset(good 太泛);而且 mindset 偏正式、偏自我提升书籍,面试建议这种口语场景里显得重。口语里"心态好/别慌"的说法:keep a clear head(面试、危机首选)/ stay calm / don't let the nerves get to you / be in the right headspace。你的版本 7 分:能懂,但一眼翻译腔。
+
+---
+
+## Day 26 - 2026-10-03
+
+**Q:** simple English 不是 easy English——这种固定搭配怎么练?
+
+**A:** 这类问题和 chunk 不同:chunk 是有限的固定短语,形容词搭配是开放集合(simple English / easy task / plain food / light meal...),不可能全部入库。中文"简单的"是一个词,英文按名词类型拆成不同形容词——本质是搭配敏感度,不是记忆量。结论:烧一个记一个 + 聊天里继续盯(同错两次升级 pattern),不专门开 drill,因为错误密度太低(26 天只烧了 simple English 一个形容词搭配)。另外你追问后定了条入库标准:锁死在单个名词上的搭配(如 simple English)不进 chunk 库——chunk 必须能跨场景旅行(run into / make a difference / get to know 这种),已写进 SKILL.md。
+
+---
+
+## Day 27 - 2026-10-07
+
+**Q:** 为什么不能用 "I drive for four hours" 表达"我开了四个小时"?
+
+**A:** "I drove for four hours" 本身合法——但原句有两个问题。一是分词:should have + 过去分词,drive 的过去分词是 driven,不是 drove。二是意思:"I should have driven for four hours" 评价的是"你开车这个动作持续了多久"(像在说你不该开这么久);而你想说的是"这段路本该四小时到"——路程的耗时有专门主语:The drive takes four hours. / It takes four hours to get there. 对比:"I drove for six and a half hours" 焦点是你(累);"The drive took six and a half hours" 焦点是路(堵)。你吐槽的是堵车,所以主语该是 the drive。
+
+---
+
+**Q:** "after I worked long away from home" —— 我想表达"在我离家很远工作之后"
+
+**A:** 英语里 long 管时间,far 管距离,不能混。母语者读到 "worked long" 会解析成 work long (hours) = 工作时间长——long 自动跟 work 绑定,不会去修饰 away;而 "long away from home" 不是合法组合,"离家远"必须用 far:far from home / far away from home。正确说法:after working far from home for so long(远和久各就各位)/ after spending so long working away from home(更口语)/ after years of working away from home(换名词,最简洁)。注意 away from home 本身只表示"不在家",不带"很远"的程度,要强调远必须把 far 放进去。
+
+---
+
+**Q:** 追问:改写 "after working away from home for so long" 是"离家工作很长时间",跟我想表达的"离家很远工作"不一致
+
+**A:** 抓得对——改写把"很远"弄丢了。away from home 只表示"不在家",不带"远"的程度;要保留你的原意必须把 far 放回去:**after working far away from home for so long**(在离家很远的地方工作了很久,far 补"远",for so long 留"久")。改写时为求句子顺做了过度修剪,这个取舍应当标注。
+
+---
+
+**Q:** "a one-day QQ Music pass" 是一天会员,那一年/一个月的会员怎么说?
+
+**A:** 时长 + membership:a one-month membership(一个月)/ a one-year membership(一年)。但更地道的是换形容词:an annual membership(年度会员,母语者说"年卡"基本都用 annual)/ a monthly membership(月度会员)。三个注意点:1) day 配 pass(one-day pass 像"体验通行证"),month/year 配 membership 或 subscription("会员"是订阅资格);2) 连字符里名词用单数:a one-year membership,不能 one-years——和 a four-hour drive 同一条规则;3) 动词搭配:开会员 get/buy a membership,续费 renew,到期 my membership expires/runs out。例句:"我开了一年的 QQ 音乐会员" -> I got an annual QQ Music membership.

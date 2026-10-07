@@ -27,8 +27,6 @@
 | tidy myself up | 收拾一下自己 | 纠错：tide up（tide 是潮汐） |
 | give myself a once-over in the mirror | 照镜子快速检查一遍仪容 | 词库补充（本轮笔记里的自然说法） |
 
-## 洗澡（Drill 12 R2）
-
 ## 洗澡（Drill 12 R2, 2026-10-03）
 
 **原句：**

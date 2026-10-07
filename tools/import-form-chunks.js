@@ -106,6 +106,51 @@ const STYLE = `
 .fc-orig{font-size:.85em;color:#8a94a6;margin-top:4px}
 .fc-orig s{color:#b91c1c}
 .fc-all{margin:0 0 14px;padding:6px 16px;border:1px solid #cfd8e8;border-radius:999px;background:#fff;color:#243;cursor:pointer;font:inherit;font-size:.88em}
+.fc-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:1.4em 0 0;border-bottom:2px solid #e3e8ef}
+.fc-tabs button{padding:8px 16px;border:1px solid #dbe3ef;border-bottom:0;border-radius:10px 10px 0 0;background:#f8fafc;color:#5b6675;cursor:pointer;font:inherit;font-size:.92em;margin-bottom:-2px}
+.fc-tabs button:hover{color:#2563eb;background:#fff}
+.fc-tabs button.on{background:#fff;color:#2563eb;font-weight:600;border-bottom:2px solid #fff}
+.fc-count{font-size:.78em;color:#98a2b3;margin-left:5px}
+.fc-tabs button.on .fc-count{color:#2563eb}
+.fc-tab-panel{padding-top:.6em}
+.fc-tab-panel[hidden]{display:none}
+.fc-sub-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:1em 0 .2em}
+.fc-sub-tabs button{padding:4px 13px;border:1px solid #dbe3ef;border-radius:999px;background:#f8fafc;color:#5b6675;cursor:pointer;font:inherit;font-size:.85em}
+.fc-sub-tabs button:hover{color:#2563eb;background:#fff}
+.fc-sub-tabs button.on{background:#2563eb;border-color:#2563eb;color:#fff}
+.fc-sub-tabs button.on .fc-count{color:#dbe7ff}
+.fc-sub-panel[hidden]{display:none}
+.fc-src-line{display:block;margin:12px 0 2px}
+
+html[data-theme="dark"] .fc-meta div{background:#1d232b;border-color:#2e3640}
+html[data-theme="dark"] .fc-meta span{color:#8f99a6}
+html[data-theme="dark"] .fc-scene{border-top-color:#2b333c}
+html[data-theme="dark"] .fc-scene h3{color:#dde5ec}
+html[data-theme="dark"] .fc-src{color:#8f99a6}
+html[data-theme="dark"] .fc-pass summary{color:#a5b4fc}
+html[data-theme="dark"] .fc-pass blockquote{background:#232a33;border-left-color:#3b4654;color:#dde5ec}
+html[data-theme="dark"] .fc-pass.opt blockquote{background:#1d2a22;border-left-color:#3f7a5a}
+html[data-theme="dark"] .fc-note{background:#1d232b;border-color:#333c47;color:#a8b3bf}
+html[data-theme="dark"] .fc-card{background:#1d232b;border-color:#2e3640}
+html[data-theme="dark"] .fc-cue{color:#dde5ec}
+html[data-theme="dark"] .fc-hold button,html[data-theme="dark"] .fc-all{background:#20262e;border-color:#333c47;color:#aeb8c2}
+html[data-theme="dark"] .fc-hold button:hover,html[data-theme="dark"] .fc-all:hover{background:#28303a}
+html[data-theme="dark"] .fc-ans{border-top-color:#333c47}
+html[data-theme="dark"] .fc-chunk{color:#e6edf3}
+html[data-theme="dark"] .fc-tag.produced{background:#16382a;color:#4ade80}
+html[data-theme="dark"] .fc-tag.corrected{background:#3d2222;color:#f87171}
+html[data-theme="dark"] .fc-tag.supplied{background:#252c48;color:#a5b4fc}
+html[data-theme="dark"] .fc-orig{color:#8f99a6}
+html[data-theme="dark"] .fc-orig s{color:#f87171}
+html[data-theme="dark"] .fc-tabs{border-bottom-color:#2e3640}
+html[data-theme="dark"] .fc-tabs button{background:#1d232b;border-color:#2e3640;color:#aeb8c2}
+html[data-theme="dark"] .fc-tabs button:hover{color:#6ba3f5;background:#232a33}
+html[data-theme="dark"] .fc-tabs button.on{background:#1c2229;color:#6ba3f5;border-bottom-color:#1c2229}
+html[data-theme="dark"] .fc-tabs button.on .fc-count{color:#6ba3f5}
+html[data-theme="dark"] .fc-sub-tabs button{background:#20262e;border-color:#333c47;color:#aeb8c2}
+html[data-theme="dark"] .fc-sub-tabs button:hover{color:#6ba3f5;background:#28303a}
+html[data-theme="dark"] .fc-sub-tabs button.on{background:#3b82f6;border-color:#3b82f6;color:#fff}
+html[data-theme="dark"] .fc-sub-tabs button.on .fc-count{color:#cfe0ff}
 </style>
 `;
 
@@ -130,7 +175,11 @@ const SCRIPT = `
   var all = document.getElementById('fcAll');
   if (all){
     all.addEventListener('click', function(){
-      var cards = [].slice.call(root.querySelectorAll('.fc-card'));
+      // Only touch cards in the visible tab panel (offsetParent is null
+      // inside a display:none panel).
+      var cards = [].slice.call(root.querySelectorAll('.fc-card')).filter(function(c){
+        return c.offsetParent !== null;
+      });
       var anyHidden = cards.some(function(c){
         var a = c.querySelector('.fc-ans'); return a && a.hidden;
       });
@@ -138,9 +187,76 @@ const SCRIPT = `
       all.textContent = anyHidden ? '\u5168\u90e8\u6536\u8d77' : '\u5168\u90e8\u5c55\u5f00';
     });
   }
+
+  // ---- scene sub-tabs (one per section inside a scene file) ----
+  function showSub(file, idx){
+    var bar = document.getElementById('fc-subtabs-' + file);
+    if (!bar) return;
+    var bs = bar.querySelectorAll('button[data-sub]');
+    if (!bs.length) return;
+    if (idx < 0 || idx >= bs.length) idx = 0;
+    for (var i = 0; i < bs.length; i++){
+      var on = (i === idx);
+      bs[i].classList.toggle('on', on);
+      bs[i].setAttribute('aria-selected', on ? 'true' : 'false');
+      var p = document.getElementById('fc-sub-' + file + '-' + i);
+      if (p) p.hidden = !on;
+    }
+  }
+  root.addEventListener('click', function(ev){
+    var b = ev.target.closest('button[data-sub]');
+    if (!b) return;
+    var file = b.getAttribute('data-file');
+    var idx = +b.getAttribute('data-sub');
+    showSub(file, idx);
+    if (window.history.replaceState){
+      window.history.replaceState(null, '', '#' + file + '-' + idx);
+    }
+  });
+
+  // ---- scene tabs ----
+  // One tab per scene file; all panels render once at load so switching is
+  // instant. The hash doubles as a deep link, e.g. /form/chunks.html#kitchen.
+  var tabs = document.getElementById('fcTabs');
+  if (tabs){
+    var tbs = tabs.querySelectorAll('button[data-tab]');
+    var names = [];
+    for (var i = 0; i < tbs.length; i++) names.push(tbs[i].getAttribute('data-tab'));
+    var showTab = function(name){
+      // Hash may target a sub-tab: #kitchen-2 = kitchen tab, 3rd section.
+      var sub = -1;
+      var m = /^(.*)-([0-9]+)$/.exec(name);
+      if (m && names.indexOf(m[1]) !== -1){ name = m[1]; sub = +m[2]; }
+      if (names.indexOf(name) === -1) name = names[0];
+      names.forEach(function(n){
+        var p = document.getElementById('fc-panel-' + n);
+        if (p) p.hidden = (n !== name);
+      });
+      for (var j = 0; j < tbs.length; j++){
+        var on = tbs[j].getAttribute('data-tab') === name;
+        tbs[j].classList.toggle('on', on);
+        tbs[j].setAttribute('aria-selected', on ? 'true' : 'false');
+      }
+      if (sub >= 0) showSub(name, sub);
+      var want = '#' + (sub >= 0 ? name + '-' + sub : name);
+      if (want !== window.location.hash && window.history.replaceState){
+        window.history.replaceState(null, '', want);
+      }
+    };
+    tabs.addEventListener('click', function(ev){
+      var b = ev.target.closest('button[data-tab]');
+      if (b) showTab(b.getAttribute('data-tab'));
+    });
+    showTab((window.location.hash || '').replace('#', ''));
+  }
 })();
 </script>
 `;
+
+function shortTitle(t) {
+  const short = String(t).replace(/^\u573a\u666f\u8bcd\u5757\uff1a/, '').trim();
+  return short || t;
+}
 
 const TAG_LABEL = { produced: '\u4ea7\u51fa\u6b63\u786e', corrected: '\u7ea0\u9519', supplied: '\u8bcd\u5e93\u8865\u5145' };
 
@@ -156,8 +272,8 @@ function renderCard(c) {
 }
 
 function renderSection(s) {
-  const out = ['<div class="fc-scene"><h3>' + esc(s.name) +
-    (s.src ? ' <span class="fc-src">' + esc(s.src) + '</span>' : '') + '</h3></div>'];
+  const out = [];
+  if (s.src) out.push('<span class="fc-src fc-src-line">' + esc(s.src) + '</span>');
   if (s.optimized) {
     out.push('<details class="fc-pass opt" open><summary>\u4f18\u5316\u7248\uff08\u80cc\u8bf5\u6587\u672c\uff09</summary><blockquote>' + esc(s.optimized) + '</blockquote></details>');
   }
@@ -184,7 +300,8 @@ function main() {
     return;
   }
   const files = fs.readdirSync(CHUNKS).filter((f) => f.endsWith('.md') && f !== 'index.md').sort();
-  const scenes = files.map((f) => parseSceneFile(path.join(CHUNKS, f)));
+  const scenes = files.map((f) =>
+    Object.assign(parseSceneFile(path.join(CHUNKS, f)), { slug: f.replace(/\.md$/, '') }));
 
   let totalChunks = 0, totalSections = 0;
   for (const sc of scenes) for (const s of sc.sections) { totalSections++; totalChunks += s.chunks.length; }
@@ -203,7 +320,32 @@ function main() {
     meta,
     '<button type="button" id="fcAll" class="fc-all">\u5168\u90e8\u5c55\u5f00</button>',
     '<div id="fc">',
-    scenes.map((sc) => '<h2>' + esc(sc.title) + '</h2>\n' + sc.sections.map(renderSection).join('\n')).join('\n'),
+    '<div class="fc-tabs" id="fcTabs" role="tablist" aria-label="\u573a\u666f">' +
+      scenes.map((sc, i) =>
+        '<button type="button" role="tab" data-tab="' + esc(sc.slug) + '"' +
+        (i === 0 ? ' class="on" aria-selected="true"' : ' aria-selected="false"') + '>' +
+        esc(shortTitle(sc.title)) + '<span class="fc-count">' + sc.sections.length + '</span></button>'
+      ).join('') + '</div>',
+    scenes.map((sc, i) => {
+      const seen = {};
+      const subBar = '<div class="fc-sub-tabs" id="fc-subtabs-' + esc(sc.slug) +
+        '" role="tablist" aria-label="' + esc(sc.title) + '">' +
+        sc.sections.map((sec, j) => {
+          // Duplicate section names within one file get a running number.
+          seen[sec.name] = (seen[sec.name] || 0) + 1;
+          const label = seen[sec.name] > 1 ? sec.name + ' ' + seen[sec.name] : sec.name;
+          return '<button type="button" role="tab" data-file="' + esc(sc.slug) +
+            '" data-sub="' + j + '"' +
+            (j === 0 ? ' class="on" aria-selected="true"' : ' aria-selected="false"') + '>' +
+            esc(label) + '<span class="fc-count">' + sec.chunks.length + '</span></button>';
+        }).join('') + '</div>';
+      const subPanels = sc.sections.map((sec, j) =>
+        '<div class="fc-sub-panel" id="fc-sub-' + esc(sc.slug) + '-' + j + '" role="tabpanel"' +
+        (j === 0 ? '' : ' hidden') + '>\n' + renderSection(sec) + '\n</div>'
+      ).join('\n');
+      return '<div class="fc-tab-panel" id="fc-panel-' + esc(sc.slug) + '" role="tabpanel"' +
+        (i === 0 ? '' : ' hidden') + '>\n' + subBar + '\n' + subPanels + '\n</div>';
+    }).join('\n'),
     '</div>',
     SCRIPT,
   ].join('\n');

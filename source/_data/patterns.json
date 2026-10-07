@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T08:28:23.234Z",
+  "generated": "2026-10-07T06:48:58.576Z",
   "drills": [
     {
       "drill": "13",
@@ -175,9 +175,9 @@
       "example": "Sitting in the library, I can actually focus.",
       "found": "12",
       "drills": "1",
-      "used": "0",
+      "used": "1",
       "status": "drilled",
-      "next": "2026-09-13"
+      "next": "2026-10-23"
     },
     {
       "id": "P007",

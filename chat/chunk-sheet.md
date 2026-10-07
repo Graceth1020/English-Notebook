@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-03 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-07 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**31 owned / 81 banked**
+**38 owned / 86 banked**
 
 ## How to review this
 
@@ -35,7 +35,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 02
 
-- [ ] **stay focused** - keep concentrating (fixed phrase)
+- [x] **stay focused** - keep concentrating (fixed phrase)
   - I turn off my console to stay focused.
 - [x] **I get more say over (X)** - claim control in natural speech
   - I get more say over my own hours.
@@ -80,7 +80,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **I'd put it closer to (a week)** - counter an estimate with your own number
   - I'd put it closer to a week.
-- [ ] **that's after the fact** - it only tells you once the damage is done
+- [x] **that's after the fact** - it only tells you once the damage is done
   - Monitoring helps, but that's after the fact.
 - [ ] **talk something through** - discuss it properly, to a conclusion
   - We talked it through last week.
@@ -139,9 +139,9 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **over (a holiday)** - across the whole of a holiday - 'during' needs 'the' with 'holiday'
   - I go back over National Day.
-- [ ] **the traffic is brutal** - spoken replacement for 'traffic is a serious problem'
+- [x] **the traffic is brutal** - spoken replacement for 'traffic is a serious problem'
   - The traffic was brutal the whole way.
-- [ ] **heading in the same direction** - direction takes 'in'; 'heading' beats 'going'
+- [x] **heading in the same direction** - direction takes 'in'; 'heading' beats 'going'
   - Everyone was heading in the same direction.
 - [x] **..., though (sentence-final)** - the spoken 'However' - goes on the end, never the front
   - The traffic can be brutal, though.
@@ -186,14 +186,14 @@ silent, and previewing it invalidates the only honest measurement here.
   - I'll get through it in the next few months.
 - [x] **by the end of the quarter** - the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter
   - I'm hoping to finish it by the end of the quarter.
-- [ ] **..., anyway** - end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter'
+- [x] **..., anyway** - end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter'
   - The traffic's brutal. I drive back anyway.
 
 ## Day 14
 
-- [ ] **over time** - a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame
+- [x] **over time** - a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame
   - Over time, the docs-first discipline has become company culture.
-- [ ] **That way, ...** - the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English
+- [x] **That way, ...** - the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English
   - We write the docs at the end. That way they match what actually shipped.
 
 ## Day 16
@@ -236,3 +236,16 @@ silent, and previewing it invalidates the only honest measurement here.
   - Over time, that made a difference.
 - [ ] **get to know (a place / person)** - come to understand slowly over time - the spoken 'learn about deeply'
   - That's how he really gets to know the local culture.
+
+## Day 27
+
+- [ ] **over the past few months** - the spoken recent-past span - 'recent few months' is not a form; over fits a span better than during
+  - I told them about the problems I'd run into over the past few months.
+- [ ] **catch up on (what happened / the news)** - fill the gap since you last talked or checked - the dedicated phrase for 补上错过的
+  - It helped me catch up on what had happened.
+- [ ] **set aside (a little) time** - reserve time on purpose - time is set aside, never 'arranged'
+  - I only set aside a little time for my own stuff.
+- [ ] **run (a promotion / a campaign)** - an app or company runs a marketing activity - never 'hold an activity'
+  - The app has been running an official promotion.
+- [ ] **a one-day (X) pass** - a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an
+  - I redeemed a one-day QQ Music pass.
