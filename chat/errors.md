@@ -70,6 +70,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E070 | passive participle standing alone with no be | grammar | what unit the amount stored in the database | what unit the amount was stored in | 24 | 1 | open | 2026-10-03 |
 | E071 | like + etc. - two example markers in one list | grammar | backend frameworks like Spring, Mybatis. etc. | backend frameworks like Spring and MyBatis / Spring, MyBatis, etc. | 25 | 1 | open | 2026-10-04 |
 | E072 | first-mention definite: 'the' for an object the listener has not met | grammar | put it in the bowl / I warm the cup with hot water / I wet the towel to clean the table | put it in a bowl / I warm a cup / I wet a cloth - first mention gets 'a', every mention after gets 'the' | 25 | 3 | open | 2026-10-19 |
+| E073 | has + instant verb + since + point in time (has begun since Sep 1 -> kicked off on Sep 1 / has been underway since) | grammar | We've begun a new project since Sep 1. | We kicked off a new project on Sep 1. | 28 | 1 | open | 2026-10-11 |
 | E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | resolved | - |
 | E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 2 | resolved | - |
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | resolved | - |

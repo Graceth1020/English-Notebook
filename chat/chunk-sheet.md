@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-07 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-08 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**38 owned / 86 banked**
+**40 owned / 91 banked**
 
 ## How to review this
 
@@ -130,7 +130,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - It never gets in the way of my sleep.
 - [x] **a weeknight thing** - confine something to weeknights in three words
   - That's only really a weeknight thing.
-- [ ] **a rig / my setup** - what people call a gaming PC - never 'devices'
+- [x] **a rig / my setup** - what people call a gaming PC - never 'devices'
   - I've got a rig that can run anything.
 - [ ] **know it inside out** - know something thoroughly from long use
   - I know the game inside out by now.
@@ -215,7 +215,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 20
 
-- [ ] **way above my level** - people who outrank you in skill - the counterpart to 'out of my depth', said about other people
+- [x] **way above my level** - people who outrank you in skill - the counterpart to 'out of my depth', said about other people
   - I like talking to people way above my level.
 
 ## Day 21
@@ -249,3 +249,16 @@ silent, and previewing it invalidates the only honest measurement here.
   - The app has been running an official promotion.
 - [ ] **a one-day (X) pass** - a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an
   - I redeemed a one-day QQ Music pass.
+
+## Day 28
+
+- [ ] **float an idea (throw out an idea)** - propose something casually in a meeting to see if it survives - never 'present a viewpoint'
+  - One colleague floated an idea, but it didn't hold up.
+- [ ] **speak up** - say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views'
+  - We encourage them to think for themselves and speak up.
+- [ ] **matter to (someone)** - be important to someone - the spoken replacement for 'be important for'; also 'really matters to us'
+  - Being familiar with computer science really matters to us.
+- [ ] **kick off (a project)** - start something with a moment, not a span - 'kicked off on Sep 1', never 'has begun since Sep 1'
+  - We kicked off a new project on Sep 1st.
+- [ ] **high-spec** - the spoken 配置高 for a machine - never 'advanced configuration'; opposite: low-spec
+  - My work rig is high-spec, so I got through them quickly.

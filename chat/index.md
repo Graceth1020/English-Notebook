@@ -33,3 +33,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 25 | 2026-10-01 | Interviews you've been through | work | 5 | 21 | done | [summary](summaries/day-25-20261001.md) |
 | 26 | 2026-10-03 | A habit you're trying to build (or break) | daily | 5 | 22 | done | [summary](summaries/day-26-20261003.md) |
 | 27 | 2026-10-07 | The National Day break | daily | 5 | 23 | done | [summary](summaries/day-27-20261007.md) |
+| 28 | 2026-10-08 | First day back | work | 5 | 21 | done | [summary](summaries/day-28-20261008.md) |
