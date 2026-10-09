@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-08 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-09 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**40 owned / 91 banked**
+**44 owned / 95 banked**
 
 ## How to review this
 
@@ -54,7 +54,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I've always meant to play it, I just never get round to it.
 - [x] **I've always meant to (do X)** - a standing intention never acted on
   - I've always meant to pick that game back up.
-- [ ] **get something off (a platform)** - find/take content from an app or site
+- [x] **get something off (a platform)** - find/take content from an app or site
   - I got this recipe off Rednote.
 - [x] **all sorts** - spoken replacement for 'various' / 'all kinds'
   - People post all sorts on there.
@@ -95,7 +95,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 06
 
-- [ ] **it makes no difference to** - right preposition: difference takes to, not in; also means 'doesn't affect'
+- [x] **it makes no difference to** - right preposition: difference takes to, not in; also means 'doesn't affect'
   - Twenty seconds makes no difference to my evening.
 - [ ] **company culture** - fixed compound - never 'the company's culture'
   - That comes down to company culture.
@@ -149,7 +149,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I'd work from my parents' place.
 - [ ] **I only get back twice a year** - frequency in the verb, not in 'chances'
   - I only get back twice a year.
-- [ ] **that doesn't hold up** - the reason sounds fine but collapses under one question - 站不住脚
+- [x] **that doesn't hold up** - the reason sounds fine but collapses under one question - 站不住脚
   - He said it was a budget issue, but that doesn't really hold up.
 - [ ] **that's a symptom, not the reason** - distinguishes what you can see from what is causing it
   - The retries are a symptom, not the reason.
@@ -182,7 +182,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **halfway through (a book)** - at the midpoint of something you are working through - not 'read half of it'
   - I'm about halfway through.
-- [ ] **in the next few months** - the everyday vague timeframe - what you say instead of a named period when speaking casually
+- [x] **in the next few months** - the everyday vague timeframe - what you say instead of a named period when speaking casually
   - I'll get through it in the next few months.
 - [x] **by the end of the quarter** - the work word for a three-month deadline - 'season' means four seasons or TV seasons, never a business quarter
   - I'm hoping to finish it by the end of the quarter.
@@ -262,3 +262,14 @@ silent, and previewing it invalidates the only honest measurement here.
   - We kicked off a new project on Sep 1st.
 - [ ] **high-spec** - the spoken 配置高 for a machine - never 'advanced configuration'; opposite: low-spec
   - My work rig is high-spec, so I got through them quickly.
+
+## Day 29
+
+- [ ] **push back on (a design / an idea)** - challenge a proposal with reasons - the pronoun goes to the end: pushed back on it, never 'pushed it back on'
+  - I've built features like this more than once, so I pushed back on it.
+- [ ] **double as (something)** - serve two roles at once - the spoken 兼任; one table doubling as the logs
+  - One review table, which could double as the review logs.
+- [ ] **there's no way to (do X)** - the spoken 'impossible' - impossible is for physics, no way to is for designs and plans
+  - The moment someone rejects a review, there's no way to show the logs.
+- [ ] **settle on (a choice)** - finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design
+  - We finally settled on a low-code platform.

@@ -276,3 +276,23 @@ you see the error in production and immediately know it is your code.
 **Q:** "a one-day QQ Music pass" 是一天会员,那一年/一个月的会员怎么说?
 
 **A:** 时长 + membership:a one-month membership(一个月)/ a one-year membership(一年)。但更地道的是换形容词:an annual membership(年度会员,母语者说"年卡"基本都用 annual)/ a monthly membership(月度会员)。三个注意点:1) day 配 pass(one-day pass 像"体验通行证"),month/year 配 membership 或 subscription("会员"是订阅资格);2) 连字符里名词用单数:a one-year membership,不能 one-years——和 a four-hour drive 同一条规则;3) 动词搭配:开会员 get/buy a membership,续费 renew,到期 my membership expires/runs out。例句:"我开了一年的 QQ 音乐会员" -> I got an annual QQ Music membership.
+
+---
+
+## Day 29 - 2026-10-09
+
+**Q:** "the business side was outside my own field" 这句是否可以?
+
+**A:** 可以,而且在 Day 29 语境里比改写更忠实原意。小修:outside my field 就够,own 多余。三个易混表达:outside my field = 不是我的专业领域(中性陈述);out of my depth = 超出能力,hold不住;out of my field = 串味,不存在。Day 25 面试官场景错在"同领域却用 field"(本意"比我厉害" -> way above my level);Day 29 基金业务确实不是后端开发的领域,用 outside my field 是对的,区别只在语气:field 只说"不熟",depth 多一层"力不从心"。注:C061 `outside my own field` 是词库从未产出的 chunk,这句算首次命中形式。
+
+---
+
+**Q:** push back on 怎么用?
+
+**A:** push back on (X) = 对某想法/方案/决定提出异议。结构:push back on + 名词(the design / my choice);push back 可不带宾语单独用;代词永远放最后(push back on it,不是 push it back on)。语气:比 disagree with 具体(说出了口并给理由),比 object to 口语,比 reject 温和(reject 是直接毙掉)。家族:push back = 泛指"顶住";pushback(一个词,名词)= 反对意见("I got some pushback on my estimate")。
+
+---
+
+**Q:** settle on 怎么用?
+
+**A:** settle on (X) = 看过一圈选项后最终选定,结构 settle on + 名词(a framework / a date / a design),代词放最后。核心:decide on 只讲"决定"这个结果;settle on 自带"比较过、犹豫过、最后才定"的画面("We settled on a low-code platform" = 比较过几个框架之后选定)。近义对比:decide on = 中性决定;settle on = 纠结后定;go with = 拍板瞬间,最干脆;end up with = 定了但带无奈。注意:settle on 永远用于"看过选项后的选定",不用于瞬间决定——看十分钟菜单 finally settled on the latte 可以,随手点咖啡不是。
