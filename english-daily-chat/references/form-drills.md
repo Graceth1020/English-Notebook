@@ -1,5 +1,26 @@
 # Form Drills
 
+## Boundary: what does NOT belong here
+
+A form drill treats errors that are **correct under attention, wrong under
+production** - no knowledge gap, so the drill hides the axes and adds load.
+
+Two neighbours it must not absorb:
+
+- **Pattern drills** (`pattern-drills.md`): a structure that has never been
+  produced at all. Announced, one structure per session, three rounds from
+  joining to free production.
+- **Chunk repairs** (`chat/repairs/`): a fixed phrase that IS being reached
+  for but keeps disassembling on one small word under production (e.g.
+  "made no differences" x3, "my parent's place" x4). This is a phrase-
+  integrity problem, not an attention problem and not an absence - so it
+  gets a one-off targeted drill in the pattern-drill shape (gap-fill ->
+  cued production -> free production, material from the learner's own
+  sessions), filed as `chat/repairs/chunk-repair-NN-YYYYMMDD.md`, never
+  numbered into the form series. Drill success does not move chunk state;
+  the phrase is "repaired pending verification" until it survives a live
+  chat appearance.
+
 A third track, alongside the daily chat and the pattern drills. Started only when
 the learner asks for it.
 
