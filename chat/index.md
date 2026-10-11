@@ -35,3 +35,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 27 | 2026-10-07 | The National Day break | daily | 5 | 23 | done | [summary](summaries/day-27-20261007.md) |
 | 28 | 2026-10-08 | First day back | work | 5 | 21 | done | [summary](summaries/day-28-20261008.md) |
 | 29 | 2026-10-09 | A design you pushed back on | work | 5 | 18 | done | [summary](summaries/day-29-20261009.md) |
+| 30 | 2026-10-10 | Given up, picked up | daily | 5 | 18 | done | [summary](summaries/day-30-20261010.md) |

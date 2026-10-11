@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-09 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-10 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**44 owned / 95 banked**
+**48 owned / 101 banked**
 
 ## How to review this
 
@@ -20,7 +20,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 01
 
-- [ ] **couldn't put it down** - a book too good to stop reading
+- [ ] **couldn't put it down** - a book or phone too good to stop using - games do NOT take this; games are 'hooked on'
   - I started it Friday night and couldn't put it down.
 - [x] **be really into (something)** - be passionate about it
   - I was really into suspense novels.
@@ -82,7 +82,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I'd put it closer to a week.
 - [x] **that's after the fact** - it only tells you once the damage is done
   - Monitoring helps, but that's after the fact.
-- [ ] **talk something through** - discuss it properly, to a conclusion
+- [x] **talk something through** - discuss it properly, to a conclusion
   - We talked it through last week.
 - [ ] **all in** - totalling everything up
   - So all in, I'd put it at a week.
@@ -153,7 +153,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - He said it was a budget issue, but that doesn't really hold up.
 - [ ] **that's a symptom, not the reason** - distinguishes what you can see from what is causing it
   - The retries are a symptom, not the reason.
-- [ ] **that's downstream of (X)** - caused by something further up - the root-cause phrase natives use at work
+- [x] **that's downstream of (X)** - caused by something further up - the root-cause phrase natives use at work
   - All three of those are downstream of the same constraint.
 
 ## Day 09
@@ -232,9 +232,9 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **run into (a problem / difficulties)** - meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting
   - No matter what difficulties I run into, I stick to it.
-- [ ] **make a difference** - have a real effect - difference always takes its article; past is 'made a difference'
+- [x] **make a difference** - have a real effect - difference always takes its article; past is 'made a difference'
   - Over time, that made a difference.
-- [ ] **get to know (a place / person)** - come to understand slowly over time - the spoken 'learn about deeply'
+- [x] **get to know (a place / person)** - come to understand slowly over time - the spoken 'learn about deeply'
   - That's how he really gets to know the local culture.
 
 ## Day 27
@@ -273,3 +273,18 @@ silent, and previewing it invalidates the only honest measurement here.
   - The moment someone rejects a review, there's no way to show the logs.
 - [ ] **settle on (a choice)** - finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design
   - We finally settled on a low-code platform.
+
+## Day 30
+
+- [ ] **set up (a group chat)** - create something that will run on its own - a group chat, a meeting, a system; 'create a group' is understood but not what natives say
+  - As more neighbors joined, we set up a group chat.
+- [ ] **round people up (for a game)** - gather people for something casual - 摇人/召集; 'call people' means phoning them
+  - It's a group chat where we can round people up for a game.
+- [ ] **get hooked on (something)** - get addicted to a game or show - the GAME version of couldn't put it down, which only takes books and phones
+  - Lately we've all gotten hooked on this board game.
+- [ ] **stick with (something)** - keep doing it, not quitting - the habit verb; close cousin of stick to
+  - After sticking with the practice for thirty days, it's made a difference.
+- [ ] **hang out** - spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated
+  - It doubles as a way for us to hang out.
+- [ ] **The clearest change is (that)...** - open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque
+  - The clearest change is that I can express myself more naturally.

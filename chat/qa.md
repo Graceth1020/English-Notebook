@@ -296,3 +296,23 @@ you see the error in production and immediately know it is your code.
 **Q:** settle on 怎么用?
 
 **A:** settle on (X) = 看过一圈选项后最终选定,结构 settle on + 名词(a framework / a date / a design),代词放最后。核心:decide on 只讲"决定"这个结果;settle on 自带"比较过、犹豫过、最后才定"的画面("We settled on a low-code platform" = 比较过几个框架之后选定)。近义对比:decide on = 中性决定;settle on = 纠结后定;go with = 拍板瞬间,最干脆;end up with = 定了但带无奈。注意:settle on 永远用于"看过选项后的选定",不用于瞬间决定——看十分钟菜单 finally settled on the latte 可以,随手点咖啡不是。
+
+---
+
+**Q:** that's downstream of (X) 和 that's down to 有什么区别?
+
+**A:** 两个都是归因,但方式不同。**that's down to X** = 简单归因,万能:A 的原因/责任是 X,就这一层,口语首选(The bug is down to a wrong API key / It's down to his lack of experience)。**that's downstream of X** = 因果链定位:X 是更早发生的上游源头,A 是它引发的一串后果之一(常暗示 X 引发的不止 A 一个),偏技术/管理语境(The docs-first rule is downstream of last year's incident / All three delays are downstream of the same constraint)。一图流:down to 是 X→A 一对一;downstream of 是 X→A,B,C,D 一对多。Day 25 "That's downstream of the network congestion" 被记 missed,是因为那一刻在做根因揭晓("原来是网络拥塞")——揭晓用 It turned out to be X,downstream of 不是揭晓而是把某事放置在因果链上。记法:down to 回答"为什么",downstream of 回答"它在因果链的什么位置"。
+
+---
+
+## Day 30 - 2026-10-10
+
+**Q:** "It's made a real difference." 这里为什么用 it's?
+
+**A:** 原句 "This made a difference." 没有错,这处应标 [optional]。区别:你的版本是简单过去时,把"起作用"当成已完成的、回头看的事,this 指代刚说的一串事,作为总结句很好;改写版是现在完成时,强调效果从过去持续到现在(呼应前文的 Over the past few months),it 指代"打球这件事"整体,this→it 是因为隔了几句后指代对象铺开,用 it 更轻松,real 是顺手加的口语强调词。记法:This made a difference = "(回头看)那步走对了",盖章收尾;It's made a difference = "(到现在)一直在起作用"。
+
+---
+
+**Q:** "we talk through the reason" 为什么改成了 "what went wrong"?
+
+**A:** 原句语法没错,问题有两点。(1) "the reason" 太空——什么的原因?母语者会等 the reason for what;而"输球后复盘"有现成说法:talk through / figure out what went wrong,"what went wrong"本身就是"败因"的完整表达,不需要 reason 这个词。(2) "the reason"(定冠词+单数)暗示唯一的、已知的原因,像传达结论;但复盘场景是你们还不知道问题在哪、围在一起找——所以用开放式的 what went wrong(未知、待找)。对比:We talked through the reason we lost = 讨论那个已知的输球原因;We talked through what went wrong = 一起复盘哪里出了问题。

@@ -103,7 +103,7 @@ toward everyday life, with occasional work-and-collaboration topics. See
    session itself, it is not chat practice: answer briefly in English, then hand
    the topic back with a question. No `Native:` verdict, no `↪` fix line, no error
    log entry, and it does not advance the exchange count. Only English attempts
-   at the topic count toward the five. Log the question and a short answer to `chat/qa.md` under the day's heading, so these one-off explanations collect in a single reviewable place.
+   at the topic count toward the five. If the question is ABOUT THE LANGUAGE (usage, grammar, register, word choice), log the question and a short answer to `chat/qa.md` under the day's heading, so these one-off explanations collect in a single reviewable place. Questions about the practice system itself - drill rules, chunk bookkeeping, why a session ran a certain way - are answered in chat only and never logged to qa.md.
 
 11. **A drilled pattern's first appearance is praised, never corrected.** Check
    `patterns --status drilled` at the start of every session. When one of those
@@ -516,7 +516,7 @@ chat/
 ├── errors.md                       accumulated errors with spaced review dates
 ├── chunks.md                       banked expressions with kind + tried/used counts
 ├── chunk-sheet.md                  generated phrasebook, grouped by session
-├── qa.md                           language questions asked mid-chat, with answers
+├── qa.md                           English-language questions asked mid-chat, with answers - practice-system questions are not logged
 ├── sessions/day-XX-YYYYMMDD.md     full transcript with the inline fixes
 └── summaries/day-XX-YYYYMMDD.md    daily summary
 
