@@ -75,3 +75,66 @@
 | save the greasy pan for last | 把油锅留到最后 | 词库补充（他的 "it's the pan's turn" 也地道） |
 | squirt some dish soap onto it | 往上面挤洗洁精（onto，不是 to） | 纠错：squirt ... to it |
 | scrub it and rinse off the soap | 刷一刷再冲掉泡沫 | ✅ 产出正确 |
+## 快手早餐：炒蛋吐司（Drill 15 R1, 2026-10-11）
+**原句：**
+> In mornings, I always eat eggs with bread. First, I crack two eggs into a bowl and beat them with chopsticks. Then I heat up a pan over medium heat for two minutes before I pour eggs and scramble them with a spatula. When the eggs are about to be cooked, I season them with a pinch of salt. After I plate the eggs, I pop two slices of bread into the toaster. Once the toaster pops up, I sandwich eggs between the two slices.
+
+**优化版（背诵用）：**
+> In the morning, I always eat eggs with bread. First, I crack two eggs into a bowl and beat them with chopsticks. Then I heat up a pan over medium heat for two minutes before I pour the eggs in and scramble them with a spatula. When the eggs are almost done, I season them with a pinch of salt. After I plate the eggs, I pop two slices of bread into the toaster. Once the toast pops up, I sandwich the eggs between the two slices.
+
+| Chunk | 中文/用法 | 状态 |
+| --- | --- | --- |
+| in the morning | 在早上（时间固定短语，the 不能省） | 纠错：in mornings |
+| crack two eggs into a bowl | 打两个鸡蛋到碗里 | ✅产出正确 |
+| beat the eggs with chopsticks | 用筷子打散（crack 和 beat 之间用 and，别用逗号） | ✅产出正确 |
+| heat up a pan over medium heat | 中火热锅（火候用 over/on，不用 by） | ✅产出正确 |
+| pour the eggs in | 把蛋液倒进去（pour 要给去向；复提用 the eggs） | 纠错：pour eggs |
+| scramble them with a spatula | 用锅铲翻炒 | ✅产出正确 |
+| when the eggs are almost done | 鸡蛋快熟时（食物"好了"说 done，不说 about to be cooked） | 纠错：about to be cooked |
+| season with a pinch of salt | 撒一小撮盐调味（season 作动词） | ✅产出正确 |
+| plate the eggs | 装盘（plate 作动词） | ✅产出正确 |
+| pop two slices of bread into the toaster | 塞两片面包进烤面包机 | ✅产出正确 |
+| once the toast pops up | 吐司弹起来时（弹起来的是 toast，不是 toaster） | 纠错：the toaster pops up |
+| sandwich the eggs between the two slices | 把鸡蛋夹进两片之间（sandwich 作动词） | 纠错：sandwich eggs |
+
+## 煮面（Drill 15 R2, 2026-10-11）
+**原句：**
+> This is how I cook noodles. First, I fill a pot with water and bring it to a boil. When it comes to a boil, I add a handful of noodles and stir so they don't stick. Then I toss in greens, and keep stirring. After cooking for a while, I turn the heat down to a simmer. I taste the broth and drain the noodles in a colander when it's well cooked. I ladle them in a bowl and drizzle some sesame oil over the top.
+
+**优化版（背诵用）：**
+> This is how I cook noodles. First, I fill a pot with water and bring it to a boil. When it comes to a boil, I add a handful of noodles and stir so they don't stick. Then I toss in some greens and keep stirring. After cooking for a while, I turn the heat down to a simmer. I taste the broth, and when the noodles are done, I drain them in a colander. I ladle them into a bowl and drizzle some sesame oil over the top.
+
+| Chunk | 中文/用法 | 状态 |
+| --- | --- | --- |
+| fill a pot with water | 锅里接水（pot 深锅；fill it up 更口语，代词夹中间） | ✅产出正确 |
+| bring it to a boil / when it comes to a boil | 烧开 / 水开时 | ✅产出正确 |
+| add a handful of noodles | 下一小把面条（noodles 永远复数） | ✅产出正确（初稿 noodle 自改） |
+| stir so they don't stick | 搅动防粘（so + 目的，本句是目的衔接示范） | ✅产出正确 |
+| toss in some greens and keep stirring | 丢点青菜继续搅（共享主语不加逗号） | 纠错：greens, and keep stirring |
+| turn the heat down to a simmer | 转小火 | ✅产出正确 |
+| taste the broth | 尝汤 | ✅产出正确 |
+| when the noodles are done | 面煮好时（指代 noodles 用 they，不用 it） | 纠错：when it's well cooked |
+| drain the noodles in a colander | 用滤篮沥干 | ✅产出正确 |
+| ladle them into a bowl | 舀进碗里（移动进容器用 into） | 纠错：ladle them in a bowl |
+| drizzle some sesame oil over the top | 淋点香油 | ✅产出正确 |
+
+## 蒜蓉西兰花（Drill 15 R3, 2026-10-11）
+**原句：**
+> I rinse the broccoli under running water and cut it into florets. Then I mince two cloves of garlic. After I heat the wok until it starts to smoke, I add oil and swirl it around. I toss in the garlic and stir-fry the florets over high heat. I splash in a litter water so the florets can be soft and cover the wok for a minute. Finally, I season the dish with salt and plate it.
+
+**优化版（背诵用）：**
+> I rinse the broccoli under running water and cut it into florets. Then I mince two cloves of garlic. After I heat the wok until it starts to smoke, I add oil and swirl it around. I toss in the garlic and stir-fry the florets over high heat. I splash in a little water so the florets soften, and cover the wok for a minute. Finally, I season the dish with salt and plate it.
+
+| Chunk | 中文/用法 | 状态 |
+| --- | --- | --- |
+| rinse the broccoli under running water | 在水流下冲洗 | ✅产出正确 |
+| cut it into florets | 切成小朵 | ✅产出正确 |
+| mince two cloves of garlic | 剁两瓣蒜 | ✅产出正确 |
+| heat the wok until it starts to smoke | 烧锅到微微冒烟（wok 中式炒锅；pot 汤锅；pan 平底锅） | ✅产出正确 |
+| add oil and swirl it around | 倒油晃匀 | ✅产出正确 |
+| toss in the garlic | 下蒜末 | ✅产出正确 |
+| stir-fry the florets over high heat | 大火翻炒 | ✅产出正确 |
+| splash in a little water | 烹一点水（little 不是 litter 垃圾） | 纠错：a litter water |
+| so the florets soften | 让它变软（目的从句直接用动词，不用 can be + 形容词） | 纠错：so the florets can be soft |
+| cover the wok for a minute | 盖锅焖一分钟 | ✅产出正确 |
+| season the dish with salt and plate it | 加盐调味装盘 | ✅产出正确 |
