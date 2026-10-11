@@ -336,3 +336,39 @@ you see the error in production and immediately know it is your code.
 **Q:** "make 5000 a month" 为什么不用 per month?
 
 **A:** per month 完全正确,问题在语域不在对错。per 是拉丁借词,天生带正式感,属于合同、报告、技术规格(40 hours per week / per capita);a 是口语的默认单位词(5000 a month / twice a week / 100 an hour),日常说话母语者几乎不说 per。对比:合同写 The salary is 60,000 per year;聊天说 I make 5000 a month;买菜说 60 a kilo。同类词 each/every:"every month"意思是"每个月(强调无一例外)",和"月薪5000"的单位含义不一样。记法:per 属于纸面,a 属于嘴巴。原句零错误,只是写出来比说出来正式,严格说应标 [optional]。
+
+---
+
+**Q:** "heat up a pan over medium heat" 这里能否用 by medium heat?
+
+**A:** 不能。over 是烹饪语境的固定搭配:cook / heat ... over medium heat(中小火上进行),火候是"火力之上"的空间隐喻;by 表示手段/方式(by bus, by hand),medium heat 是档位不是方法,所以不成立。美式口语也可说 on medium heat(on + 档位,同 on high / on low)。同类家族:simmer over low heat 小火炖、sear over high heat 大火煎、bake at 180°C(温度点用 at,档位用 over/on)。(Drill 15 R1)
+
+---
+
+**Q:** "season with" 是调味的意思吗?
+
+**A:** 是。season 作动词 = 用盐、胡椒、香料调味:season the eggs with a pinch of salt / season to taste(按口味调味,菜谱套话)。名词 seasoning = 调味料。同义:add some salt 最直白;flavor ... with ... 偏"增添风味"。别和 taste 混:taste the soup 是尝味道,season the soup 是调味,菜谱里常连用 taste and adjust the seasoning。另:season a wok 是"开锅"(养油膜),同一个词另一个意思。(Drill 15 R1)
+
+---
+
+**Q:** "在两片面包被烤熟了之后,我把鸡蛋塞到它们之间"怎么表达?
+
+**A:** 最地道:Once the toast pops up, I sandwich the eggs between the two slices. 三个要点:1) sandwich 作动词,sandwich A between B = 把 A 夹进 B 中间,一词搞定;2) "烤好了"不说 cooked,吐司说 the toast is done / is toasted,最有画面感的是 the toast pops up(弹起来的是 toast 不是 toaster);3) 普通版 put/slide the eggs between them 也可以,stuff 偏"硬塞"。(Drill 15 R1)
+
+---
+
+**Q:** 能用 "fill a pot up with water" 吗?
+
+**A:** 能,很口语。fill up 的 up 加一层"完全装满"的意味(同 eat up / drink up);只接半锅水煮面,用 fill a pot with water 更准。硬性语序规则(可拆分短语动词):名词宾语两种位置都行(fill up a pot / fill a pot up),代词宾语必须夹中间 fill it up,不说 fill up it。一句话:名词随便放,代词夹中间。(Drill 15 R2)
+
+---
+
+**Q:** wok 和 pot 的区别?
+
+**A:** 三词对应三种锅:wok 圆底/平底大炒锅(中式炒锅, stir-fry, heat the wok until it smokes;粤语"镬"音译);pot 深锅带盖带耳(汤锅煮锅, boil, simmer, fill a pot with water);pan (frying pan/skillet) 浅平底单柄(煎锅, fry, scramble, heat up a pan)。口诀:深到能炖汤是 pot,浅到能煎蛋是 pan,介于两者能掂勺爆炒是 wok。锅盖都叫 lid。(Drill 15 R3)
+
+---
+
+**Q:** "After I heat the wok until it starts to smoke" 能否用 heat up?
+
+**A:** 可以,heat up the wok until it starts to smoke 完全成立。区别在风格不在对错:heat the wok 是菜谱书面语首选(菜谱里全是 heat the oil, add the garlic);heat up 更口语,up 强调温度升上去的过程,口语叙述自己的动作用 heat up 反而更自然。两条规则:1) 可拆分短语动词,代词夹中间 heat it up,名词两位置都行;2) heat up 可不及物单用 The wok is heating up,plain heat 这么用少见。你的原句不用改。(Drill 15 R3)
