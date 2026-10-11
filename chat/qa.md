@@ -316,3 +316,23 @@ you see the error in production and immediately know it is your code.
 **Q:** "we talk through the reason" 为什么改成了 "what went wrong"?
 
 **A:** 原句语法没错,问题有两点。(1) "the reason" 太空——什么的原因?母语者会等 the reason for what;而"输球后复盘"有现成说法:talk through / figure out what went wrong,"what went wrong"本身就是"败因"的完整表达,不需要 reason 这个词。(2) "the reason"(定冠词+单数)暗示唯一的、已知的原因,像传达结论;但复盘场景是你们还不知道问题在哪、围在一起找——所以用开放式的 what went wrong(未知、待找)。对比:We talked through the reason we lost = 讨论那个已知的输球原因;We talked through what went wrong = 一起复盘哪里出了问题。
+
+---
+
+## Day 31 - 2026-10-11
+
+**Q:** "over a long time" 为什么要改成 "over the long run"?
+
+**A:** 语法没错,但有两个问题。(1) 它是逐字翻译:中文"很长时间"→a long time 一对一装配;而英语谈"长期来看(结果、趋势、回报)"有现成成语 in/over the long run,就像中文说"从长远看"而不是"从一个很长的时间看"。(2) 质感不同:a long time 是普通时长(I waited a long time);the long run 是拉长时间轴看结局,投资、习惯、人生选择的主场。三个成员:in the long run = 长远来看最终会怎样(最常用);over the long run = 在漫长过程中持续保持(keep steady returns over the long run);in the long term = 偏书面/规划。记法:long time 是"时长",long run 是"长跑全程"——run 自带画面,一场长跑跑完才算数。
+
+---
+
+**Q:** "Read books that actually help" 和 "Read books that are helpful" 为什么把第二个改成第一个?
+
+**A:** 第二个语法完全合法,这是"好→更好"的修辞升级(严格说应标 [optional])。区别两点:(1) 动词比万能形容词有力——helpful 是英语最平的形容词之一,什么都能 helpful,说了约等于没说;当形容词是万金油时,母语者倾向改用动词(books that actually help / a person who actually shows up / food that''s actually good for you),动词让"帮助"变成动作而不是标签。(2) actually 承担了真正的信息量:你的语境是给建议,隐含对比"很多书号称有用其实没用"——actually help(真正有用的)一句话把对比说出来;books that are helpful 只是平淡描述属性,没有筛选的意思,甚至像废话(谁读没帮助的书?)。
+
+---
+
+**Q:** "make 5000 a month" 为什么不用 per month?
+
+**A:** per month 完全正确,问题在语域不在对错。per 是拉丁借词,天生带正式感,属于合同、报告、技术规格(40 hours per week / per capita);a 是口语的默认单位词(5000 a month / twice a week / 100 an hour),日常说话母语者几乎不说 per。对比:合同写 The salary is 60,000 per year;聊天说 I make 5000 a month;买菜说 60 a kilo。同类词 each/every:"every month"意思是"每个月(强调无一例外)",和"月薪5000"的单位含义不一样。记法:per 属于纸面,a 属于嘴巴。原句零错误,只是写出来比说出来正式,严格说应标 [optional]。

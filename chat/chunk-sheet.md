@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-10 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-11 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**48 owned / 101 banked**
+**51 owned / 104 banked**
 
 ## How to review this
 
@@ -116,7 +116,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 07
 
-- [ ] **That's on me** - take responsibility, without the weight of 'duty'
+- [x] **That's on me** - take responsibility, without the weight of 'duty'
   - I'm the one who let it slide - that's on me.
 - [ ] **wired** - too stimulated to sleep
   - I'm still wired an hour after playing.
@@ -230,7 +230,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 26
 
-- [ ] **run into (a problem / difficulties)** - meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting
+- [x] **run into (a problem / difficulties)** - meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting
   - No matter what difficulties I run into, I stick to it.
 - [x] **make a difference** - have a real effect - difference always takes its article; past is 'made a difference'
   - Over time, that made a difference.
@@ -269,7 +269,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I've built features like this more than once, so I pushed back on it.
 - [ ] **double as (something)** - serve two roles at once - the spoken 兼任; one table doubling as the logs
   - One review table, which could double as the review logs.
-- [ ] **there's no way to (do X)** - the spoken 'impossible' - impossible is for physics, no way to is for designs and plans
+- [x] **there's no way to (do X)** - the spoken 'impossible' - impossible is for physics, no way to is for designs and plans
   - The moment someone rejects a review, there's no way to show the logs.
 - [ ] **settle on (a choice)** - finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design
   - We finally settled on a low-code platform.
@@ -288,3 +288,12 @@ silent, and previewing it invalidates the only honest measurement here.
   - It doubles as a way for us to hang out.
 - [ ] **The clearest change is (that)...** - open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque
   - The clearest change is that I can express myself more naturally.
+
+## Day 31
+
+- [ ] **broaden your horizons** - expand what you know and have seen - the fixed phrase for 开阔眼界; 'expand your scope of knowledge' is translated
+  - Talking with people outside your field broadens your horizons.
+- [ ] **over the long run** - sustained across a long span - the investing/habit phrase; 'over a long time' is just duration; in the long run = eventually
+  - Aim for steady returns over the long run.
+- [ ] **steady returns** - consistent investment gains over time - the personal-finance phrase; 'stable yield' is bond-desk vocabulary
+  - Aim for steady returns over the long run.

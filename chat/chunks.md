@@ -22,14 +22,15 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | C001 | couldn't put it down | phrase | reading | a book or phone too good to stop using - games do NOT take this; games are 'hooked on' | I started it Friday night and couldn't put it down. | 01 | 8 | 3 | open | 2026-10-13 |
-| C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 0 | open | 2026-09-06 |
+| C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 1 | open | 2026-10-18 |
 | C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 2 | 1 | open | 2026-10-11 |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 4 | 1 | open | 2026-10-11 |
+| C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 5 | 4 | open | 2026-10-14 |
 | C040 | out of my depth | phrase | work | beyond what you can handle | I was completely out of my depth in that meeting. | 06 | 4 | 1 | open | 2026-10-12 |
 | C053 | my parents' place | phrase | family | where your parents live - not 'where my parents live' | I'd work from my parents' place. | 08 | 3 | 0 | open | 2026-10-10 |
 | C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 1 | 1 | open | 2026-10-10 |
-| C061 | outside my own field | phrase | study | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 0 | 0 | open | 2026-09-06 |
+| C061 | outside my own field | phrase | study | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 1 | 1 | open | 2026-10-18 |
 | C072 | too much of a hassle | phrase | general | the spoken way to say 太麻烦 - 'too trouble' is broken; trouble needs 'too much', and 'a hassle' is the more spoken noun | Playing on the PC is too much of a hassle now - I'd rather play on my phone. | 16 | 0 | 0 | open | 2026-09-17 |
 | C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 1 | 1 | open | 2026-10-07 |
 | C075 | be in demand | phrase | work | wanted by employers - the collocation for 吃香/抢手, not 'popular in the job market' | Engineers who know the business well are in demand. | 18 | 1 | 1 | open | 2026-10-08 |
@@ -40,27 +41,27 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C085 | run (a promotion / a campaign) | phrase | work | an app or company runs a marketing activity - never 'hold an activity' | The app has been running an official promotion. | 27 | 0 | 0 | open | 2026-10-10 |
 | C086 | a one-day (X) pass | phrase | general | a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an | I redeemed a one-day QQ Music pass. | 27 | 0 | 0 | open | 2026-10-10 |
 | C088 | speak up | phrase | work | say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views' | We encourage them to think for themselves and speak up. | 28 | 0 | 0 | open | 2026-10-11 |
-| C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 1 | 1 | open | 2026-10-16 |
+| C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 2 | 1 | open | 2026-10-14 |
 | C091 | high-spec | phrase | work | the spoken 配置高 for a machine - never 'advanced configuration'; opposite: low-spec | My work rig is high-spec, so I got through them quickly. | 28 | 0 | 0 | open | 2026-10-11 |
 | C092 | push back on (a design / an idea) | phrase | work | challenge a proposal with reasons - the pronoun goes to the end: pushed back on it, never 'pushed it back on' | I've built features like this more than once, so I pushed back on it. | 29 | 0 | 0 | open | 2026-10-12 |
 | C093 | double as (something) | phrase | general | serve two roles at once - the spoken 兼任; one table doubling as the logs | One review table, which could double as the review logs. | 29 | 1 | 1 | open | 2026-10-17 |
-| C094 | there's no way to (do X) | phrase | general | the spoken 'impossible' - impossible is for physics, no way to is for designs and plans | The moment someone rejects a review, there's no way to show the logs. | 29 | 1 | 1 | open | 2026-10-17 |
 | C095 | settle on (a choice) | phrase | general | finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design | We finally settled on a low-code platform. | 29 | 0 | 0 | open | 2026-10-12 |
 | C096 | set up (a group chat) | phrase | general | create something that will run on its own - a group chat, a meeting, a system; 'create a group' is understood but not what natives say | As more neighbors joined, we set up a group chat. | 30 | 0 | 0 | open | 2026-10-13 |
 | C097 | round people up (for a game) | phrase | games | gather people for something casual - 摇人/召集; 'call people' means phoning them | It's a group chat where we can round people up for a game. | 30 | 0 | 0 | open | 2026-10-13 |
 | C098 | get hooked on (something) | phrase | games | get addicted to a game or show - the GAME version of couldn't put it down, which only takes books and phones | Lately we've all gotten hooked on this board game. | 30 | 0 | 0 | open | 2026-10-13 |
-| C099 | stick with (something) | phrase | general | keep doing it, not quitting - the habit verb; close cousin of stick to | After sticking with the practice for thirty days, it's made a difference. | 30 | 0 | 0 | open | 2026-10-13 |
+| C099 | stick with (something) | phrase | general | keep doing it, not quitting - the habit verb; close cousin of stick to | After sticking with the practice for thirty days, it's made a difference. | 30 | 1 | 1 | open | 2026-10-18 |
 | C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 0 | 0 | open | 2026-10-13 |
 | C101 | The clearest change is (that)... | frame | general | open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque | The clearest change is that I can express myself more naturally. | 30 | 0 | 0 | open | 2026-10-13 |
+| C102 | broaden your horizons | phrase | general | expand what you know and have seen - the fixed phrase for 开阔眼界; 'expand your scope of knowledge' is translated | Talking with people outside your field broadens your horizons. | 31 | 0 | 0 | open | 2026-10-14 |
+| C103 | over the long run | phrase | money | sustained across a long span - the investing/habit phrase; 'over a long time' is just duration; in the long run = eventually | Aim for steady returns over the long run. | 31 | 0 | 0 | open | 2026-10-14 |
+| C104 | steady returns | phrase | money | consistent investment gains over time - the personal-finance phrase; 'stable yield' is bond-desk vocabulary | Aim for steady returns over the long run. | 31 | 0 | 0 | open | 2026-10-14 |
 | C003 | flush out your system | phrase | health | the health idea of clearing the body | A big glass of water flushes out your system. | 01 | 2 | 2 | pending | 2026-10-02 |
-| C007 | That's on me | phrase | work | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 3 | 3 | pending | 2026-11-08 |
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 4 | 4 | pending | 2026-11-09 |
 | C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 5 | 5 | pending | 2026-11-08 |
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 2 | pending | 2026-10-24 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 2 | 2 | pending | 2026-09-30 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 2 | 2 | pending | 2026-10-06 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 4 | 4 | pending | 2026-11-08 |
-| C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 4 | 4 | pending | 2026-10-31 |
 | C041 | wired | phrase | health | too stimulated to sleep | I'm still wired an hour after playing. | 07 | 2 | 2 | pending | 2026-10-19 |
 | C045 | get in the way of (X) | phrase | health | the spoken 'affect' when something interferes | It never gets in the way of my sleep. | 07 | 2 | 2 | pending | 2026-10-19 |
 | C048 | know it inside out | phrase | games | know something thoroughly from long use | I know the game inside out by now. | 07 | 2 | 2 | pending | 2026-10-26 |
@@ -71,13 +72,13 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C066 | halfway through (a book) | phrase | reading | at the midpoint of something you are working through - not 'read half of it' | I'm about halfway through. | 11 | 3 | 3 | pending | 2026-11-02 |
 | C074 | track down (a bug) | phrase | work | find something hidden after searching - 'find out' takes information, not a bug | It took us half a day to track down where the bug was. | 17 | 2 | 2 | pending | 2026-10-17 |
 | C078 | more than once | phrase | general | spoken occurrence count - never 'over one time'; contrast: 'for two hours' (duration) vs 'twice' (count, bare) | I've made this exact mistake more than once. | 23 | 2 | 2 | pending | 2026-10-25 |
-| C079 | run into (a problem / difficulties) | phrase | general | meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting | No matter what difficulties I run into, I stick to it. | 26 | 2 | 2 | pending | 2026-10-25 |
 | C087 | float an idea (throw out an idea) | phrase | work | propose something casually in a meeting to see if it survives - never 'present a viewpoint' | One colleague floated an idea, but it didn't hold up. | 28 | 2 | 2 | pending | 2026-10-25 |
 | C090 | kick off (a project) | phrase | work | start something with a moment, not a span - 'kicked off on Sep 1', never 'has begun since Sep 1' | We kicked off a new project on Sep 1st. | 28 | 2 | 2 | pending | 2026-10-25 |
 | C002 | be really into (something) | phrase | reading | be passionate about it | I was really into suspense novels. | 01 | 3 | 3 | owned | - |
 | C004 | get through (a book/task) | phrase | reading | finish it at pace | I got through it in three nights. | 01 | 5 | 3 | owned | - |
 | C005 | a luxury | phrase | family | something you can rarely afford the time for | Reading for two hours straight is a luxury now. | 01 | 3 | 3 | owned | - |
 | C006 | it comes down to (X) | phrase | general | name the real cause, casually | Honestly, it just comes down to time. | 01 | 2 | 2 | owned | - |
+| C007 | That's on me | phrase | work | take responsibility, without the weight of 'duty' | I'm the one who let it slide - that's on me. | 07 | 5 | 5 | owned | - |
 | C008 | stay focused | phrase | study | keep concentrating (fixed phrase) | I turn off my console to stay focused. | 02 | 3 | 3 | owned | - |
 | C009 | I get more say over (X) | phrase | work | claim control in natural speech | I get more say over my own hours. | 02 | 3 | 3 | owned | - |
 | C010 | work from home | phrase | family | remote work - never 'at home' | I worked from home all through COVID. | 02 | 4 | 3 | owned | - |
@@ -120,5 +121,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 3 | 3 | owned | - |
 | C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 3 | 3 | owned | - |
 | C076 | way above my level | phrase | work | people who outrank you in skill - the counterpart to 'out of my depth', said about other people | I like talking to people way above my level. | 20 | 3 | 3 | owned | - |
+| C079 | run into (a problem / difficulties) | phrase | general | meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting | No matter what difficulties I run into, I stick to it. | 26 | 4 | 4 | owned | - |
 | C080 | make a difference | phrase | study | have a real effect - difference always takes its article; past is 'made a difference' | Over time, that made a difference. | 26 | 3 | 3 | owned | - |
 | C081 | get to know (a place / person) | phrase | travel | come to understand slowly over time - the spoken 'learn about deeply' | That's how he really gets to know the local culture. | 26 | 3 | 3 | owned | - |
+| C094 | there's no way to (do X) | phrase | general | the spoken 'impossible' - impossible is for physics, no way to is for designs and plans | The moment someone rejects a review, there's no way to show the logs. | 29 | 3 | 3 | owned | - |
