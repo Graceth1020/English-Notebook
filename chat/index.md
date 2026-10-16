@@ -37,3 +37,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 29 | 2026-10-09 | A design you pushed back on | work | 5 | 18 | done | [summary](summaries/day-29-20261009.md) |
 | 30 | 2026-10-10 | Given up, picked up | daily | 5 | 18 | done | [summary](summaries/day-30-20261010.md) |
 | 31 | 2026-10-11 | The broken lock | daily | 5 | 21 | done | [summary](summaries/day-31-20261011.md) |
+| 32 | 2026-10-16 | The project, three weeks in | work | 5 | 16 | done | [summary](summaries/day-32-20261016.md) |
