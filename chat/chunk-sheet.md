@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-11 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-17 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**51 owned / 104 banked**
+**57 owned / 108 banked**
 
 ## How to review this
 
@@ -101,7 +101,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - That comes down to company culture.
 - [x] **work-life balance** - fixed compound, that order, hyphenated
   - Switching off is a big part of work-life balance.
-- [ ] **sit on something** - hold it without acting on it
+- [x] **sit on something** - hold it without acting on it
   - He's been sitting on my PR for three days.
 - [ ] **read something into (it)** - infer a meaning that may not be there
   - Don't read too much into it.
@@ -132,7 +132,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - That's only really a weeknight thing.
 - [x] **a rig / my setup** - what people call a gaming PC - never 'devices'
   - I've got a rig that can run anything.
-- [ ] **know it inside out** - know something thoroughly from long use
+- [x] **know it inside out** - know something thoroughly from long use
   - I know the game inside out by now.
 
 ## Day 08
@@ -180,7 +180,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 11
 
-- [ ] **halfway through (a book)** - at the midpoint of something you are working through - not 'read half of it'
+- [x] **halfway through (a book)** - at the midpoint of something you are working through - not 'read half of it'
   - I'm about halfway through.
 - [x] **in the next few months** - the everyday vague timeframe - what you say instead of a named period when speaking casually
   - I'll get through it in the next few months.
@@ -239,7 +239,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 27
 
-- [ ] **over the past few months** - the spoken recent-past span - 'recent few months' is not a form; over fits a span better than during
+- [x] **over the past few months** - the spoken recent-past span - 'recent few months' is not a form; over fits a span better than during
   - I told them about the problems I'd run into over the past few months.
 - [ ] **catch up on (what happened / the news)** - fill the gap since you last talked or checked - the dedicated phrase for 补上错过的
   - It helped me catch up on what had happened.
@@ -252,7 +252,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 28
 
-- [ ] **float an idea (throw out an idea)** - propose something casually in a meeting to see if it survives - never 'present a viewpoint'
+- [x] **float an idea (throw out an idea)** - propose something casually in a meeting to see if it survives - never 'present a viewpoint'
   - One colleague floated an idea, but it didn't hold up.
 - [ ] **speak up** - say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views'
   - We encourage them to think for themselves and speak up.
@@ -282,7 +282,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - It's a group chat where we can round people up for a game.
 - [ ] **get hooked on (something)** - get addicted to a game or show - the GAME version of couldn't put it down, which only takes books and phones
   - Lately we've all gotten hooked on this board game.
-- [ ] **stick with (something)** - keep doing it, not quitting - the habit verb; close cousin of stick to
+- [x] **stick with (something)** - keep doing it, not quitting - the habit verb; close cousin of stick to
   - After sticking with the practice for thirty days, it's made a difference.
 - [ ] **hang out** - spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated
   - It doubles as a way for us to hang out.
@@ -297,3 +297,17 @@ silent, and previewing it invalidates the only honest measurement here.
   - Aim for steady returns over the long run.
 - [ ] **steady returns** - consistent investment gains over time - the personal-finance phrase; 'stable yield' is bond-desk vocabulary
   - Aim for steady returns over the long run.
+
+## Day 32
+
+- [ ] **on top of that** - add one more point on the pile - the spoken 'moreover'; sits at the front of the new sentence
+  - On top of that, all the data gets displayed on a dashboard.
+- [ ] **go with (an option / a design)** - choose a plan after comparing - never 'decide to design'; you go with a design, a color, a name
+  - We decided to go with a dashboard.
+
+## Day 33
+
+- [ ] **switch up (the menu / the routine)** - change something that has gone stale - 换换花样; menus, routines, hairstyles get switched up
+  - They should switch up the menu - I've been eating the same thing for five years.
+- [ ] **eat out** - have dinner at a restaurant or canteen, not at home - the dedicated idiom for 在外面吃; opposite: cook at home / eat in
+  - I've eaten out every night this whole week.

@@ -38,7 +38,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
-| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 6 | open | 2026-10-31 |
+| E037 | present tense inside a hypothetical | grammar | If I can get a remote job, I'll go home once a month ... I can get more say | If I ever get a remote job, I'd go home ... I'd get more say | 08 | 7 | open | 2026-11-16 |
 | E038 | since + present instead of perfect | grammar | since then on, I drive my car back home | since then I've been driving back | 08 | 1 | open | 2026-09-05 |
 | E040 | chances for opportunities to do something | calque | I just have two chances to go back home | I only get back twice a year | 08 | 1 | open | 2026-09-05 |
 | E041 | once for every time | calque | I need to spend eight hours once | that's eight hours in the car every time | 08 | 1 | open | 2026-09-05 |
@@ -71,6 +71,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E071 | like + etc. - two example markers in one list | grammar | backend frameworks like Spring, Mybatis. etc. | backend frameworks like Spring and MyBatis / Spring, MyBatis, etc. | 25 | 1 | open | 2026-10-04 |
 | E072 | first-mention definite: 'the' for an object the listener has not met | grammar | put it in the bowl / I warm the cup with hot water / I wet the towel to clean the table | put it in a bowl / I warm a cup / I wet a cloth - first mention gets 'a', every mention after gets 'the' | 25 | 3 | open | 2026-10-19 |
 | E073 | has + instant verb + since + point in time (has begun since Sep 1 -> kicked off on Sep 1 / has been underway since) | grammar | We've begun a new project since Sep 1. | We kicked off a new project on Sep 1. | 28 | 1 | open | 2026-10-11 |
+| E074 | determiner dropped after 'all' before the narrator's own specific items | grammar | After doing all sets / all test suites were passed / Once I've reviewed all changes | all my sets / all the tests / all the changes - the items in front of you are specific; all + plural still needs my/the | 16 | 1 | open | 2026-10-20 |
 | E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | resolved | - |
 | E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 2 | resolved | - |
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | resolved | - |

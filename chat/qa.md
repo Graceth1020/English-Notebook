@@ -372,3 +372,9 @@ you see the error in production and immediately know it is your code.
 **Q:** "After I heat the wok until it starts to smoke" 能否用 heat up?
 
 **A:** 可以,heat up the wok until it starts to smoke 完全成立。区别在风格不在对错:heat the wok 是菜谱书面语首选(菜谱里全是 heat the oil, add the garlic);heat up 更口语,up 强调温度升上去的过程,口语叙述自己的动作用 heat up 反而更自然。两条规则:1) 可拆分短语动词,代词夹中间 heat it up,名词两位置都行;2) heat up 可不及物单用 The wok is heating up,plain heat 这么用少见。你的原句不用改。(Drill 15 R3)
+
+## Day 32 - 2026-10-17
+
+**Q:** "The postmortem is scheduled for 10 am on October 15th." 为什么用 for?
+
+**A:** for 引出"安排的目标",at 只说"发生在某时刻"。be scheduled for + 时间/事项 = 被安排在(一个计划,可能改):The release is scheduled for next Friday / The feature is scheduled for discussion。be at + 时间 = 发生在(一个事实,日历上的一格):The meeting is at 10。你的中文有个"定"字(安排的动作),for 正好对应;"10 点开会"陈述事实才用 at。同类"安排"家族 for 都是标配:scheduled for / set for (The wedding is set for June) / planned for / due for。记法:时间表上的"点"用 at,计划里的"定"用 for。(Pattern 14 R2 讲评)
