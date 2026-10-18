@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-17 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-18 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**57 owned / 108 banked**
+**57 owned / 112 banked**
 
 ## How to review this
 
@@ -17,6 +17,17 @@ cure. The only action that moves a chunk into recall:
 
 Do not read this file before a chat session - the seeding is meant to be
 silent, and previewing it invalidates the only honest measurement here.
+
+## Day -
+
+- [ ] **hand something off to (a team)** - pass work to another team or person to own next - the PM verb; work gets handed off, not given
+  - I document the requirements and hand them off to the tech team.
+- [ ] **push things forward** - keep work moving ahead - the spoken replacement for 推进进度; you push the work, not the progress
+  - My job is to push things forward when they stall.
+- [ ] **show up** - appear or turn up - the default verb for anything that appears: bugs, people, problems; 'appear' is written English
+  - Hundreds of bugs showed up after SIT started.
+- [ ] **won't take no for an answer** - refuse to accept a rejection - the fixed idiom for 死活不接受拒绝; the person demanding is the subject
+  - The client won't take no for an answer.
 
 ## Day 01
 

@@ -378,3 +378,20 @@ you see the error in production and immediately know it is your code.
 **Q:** "The postmortem is scheduled for 10 am on October 15th." 为什么用 for?
 
 **A:** for 引出"安排的目标",at 只说"发生在某时刻"。be scheduled for + 时间/事项 = 被安排在(一个计划,可能改):The release is scheduled for next Friday / The feature is scheduled for discussion。be at + 时间 = 发生在(一个事实,日历上的一格):The meeting is at 10。你的中文有个"定"字(安排的动作),for 正好对应;"10 点开会"陈述事实才用 at。同类"安排"家族 for 都是标配:scheduled for / set for (The wedding is set for June) / planned for / due for。记法:时间表上的"点"用 at,计划里的"定"用 for。(Pattern 14 R2 讲评)
+
+## Day 33 - 2026-10-18
+
+**Q:** "leave a comment on that line" 这种抽象语境的 on / in / of 该怎么区分?
+
+**A:** 抽象介词不是随机的,全是空间隐喻的延伸,先记三个物理原型再投影:on = 贴着表面/线(二维接触)——行是线 a comment on that line / on line 42,页面屏幕是平面 on the dashboard / on the platform,话题是附着点 a book on grammar,日期是时间轴上的点 on Monday;in = 在容器里(三维)——文件函数是容器 in the save function / in the codebase,句子段落是容器 in this sentence,时间段是容器 in the morning / in October(对比:日期是点用 on),状态是容器 in progress;of = 部分与整体——the root of the problem(根属于问题)/ two lines of code(从整体切一份)/ the color of the button(属性属于物体)。实操判断:拿不准就问"这东西物理上像什么"——像平面或线选 on,像容器选 in,像"谁的/哪部分"选 of,90% 能推出来;剩 10% 是固定搭配(depend on, in charge of),见一个记一个。(由 Drill 16 R2 的 on that line 引发)
+
+## Day 34 (2026-10-18)
+
+**Q: "I lock in the schedule" 原句不够地道吗？**
+A: confirm the schedule 语法没错但偏正式/翻译腔。confirm = 核实已有的；lock in = 讨论后敲定。口语 PM 场景几乎都用 lock in。
+
+**Q: "The new project just kicked off" 现在完成时不行吗？**
+A: 可以，不算错。口语里"刚发生不久"默认 just + 一般过去时（He just left）；完成时留给强调对现在影响的场合。闲聊语境 just kicked off 更自然。
+
+**Q: "If the business side won't take no for an answer, I won't say no outright - instead, I'll see if there's another way to build it" 怎么理解？**
+A: won't take no for an answer = 固定习语"不接受拒绝、非要不可"；outright = 直接了当地（比 directly 更强调无转圜）；see if there's another way = 看看有没有别的办法。整句：如果业务方死活不接受拒绝，我也不会一口回绝，而是看看有没有别的实现方式。原句 "the business side answers no" 把拒绝的主客体弄反了——是你拒绝需求，他们不接受拒绝。
