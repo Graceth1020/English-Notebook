@@ -40,3 +40,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 32 | 2026-10-16 | The project, three weeks in | work | 5 | 16 | done | [summary](summaries/day-32-20261016.md) |
 | 33 | 2026-10-17 | Cooking or takeout | daily | 5 | 14 | done | [summary](summaries/day-33-20261017.md) |
 | 34 | 2026-10-18 | The week ahead | daily | 5 | 17 | done | [summary](summaries/day-34-20261018.md) |
+| 35 | 2026-10-19 | Monday, the week actually starts | daily | 5 | 19 | done | [summary](summaries/day-35-20261019.md) |

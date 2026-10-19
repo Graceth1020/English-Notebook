@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-18 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-19 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**57 owned / 112 banked**
+**57 owned / 113 banked**
 
 ## How to review this
 
@@ -28,6 +28,8 @@ silent, and previewing it invalidates the only honest measurement here.
   - Hundreds of bugs showed up after SIT started.
 - [ ] **won't take no for an answer** - refuse to accept a rejection - the fixed idiom for 死活不接受拒绝; the person demanding is the subject
   - The client won't take no for an answer.
+- [ ] **a must (a must-have)** - something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential'
+  - For debugging inside the app, this page is a must.
 
 ## Day 01
 

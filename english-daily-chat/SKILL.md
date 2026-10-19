@@ -103,7 +103,7 @@ toward everyday life, with occasional work-and-collaboration topics. See
    session itself, it is not chat practice: answer briefly in English, then hand
    the topic back with a question. No `Native:` verdict, no `↪` fix line, no error
    log entry, and it does not advance the exchange count. Only English attempts
-   at the topic count toward the five. If the question is ABOUT THE LANGUAGE (usage, grammar, register, word choice), log the question and a short answer to `chat/qa.md` under the day's heading, so these one-off explanations collect in a single reviewable place. Questions about the practice system itself - drill rules, chunk bookkeeping, why a session ran a certain way - are answered in chat only and never logged to qa.md.
+   at the topic count toward the five. If the question is ABOUT THE LANGUAGE (usage, grammar, register, word choice), log the question and a short answer to `chat/qa.md` under the day's heading, so these one-off explanations collect in a single reviewable place. Questions about the practice system itself - drill rules, chunk bookkeeping, why a session ran a certain way - are answered in chat only and never logged to qa.md. One more carve-out: questions that ask to EVALUATE THE CORRECTIONS themselves (why the rewrite changed a word, per-change assessments of a Say-it-like-this line) belong to the day's own correction content - they are folded into that exchange's What changed table in the summary, never into qa.md.
 
 11. **A drilled pattern's first appearance is praised, never corrected.** Check
    `patterns --status drilled` at the start of every session. When one of those

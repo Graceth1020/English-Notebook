@@ -395,3 +395,29 @@ A: 可以，不算错。口语里"刚发生不久"默认 just + 一般过去时�
 
 **Q: "If the business side won't take no for an answer, I won't say no outright - instead, I'll see if there's another way to build it" 怎么理解？**
 A: won't take no for an answer = 固定习语"不接受拒绝、非要不可"；outright = 直接了当地（比 directly 更强调无转圜）；see if there's another way = 看看有没有别的办法。整句：如果业务方死活不接受拒绝，我也不会一口回绝，而是看看有没有别的实现方式。原句 "the business side answers no" 把拒绝的主客体弄反了——是你拒绝需求，他们不接受拒绝。
+
+---
+
+## Day 33 - 2026-10-19
+
+**Q:** "There are 73% left." 和 "There is 73% left." 哪个对?
+
+**A:** 两个都可能对——动词跟"百分比代表的那个名词"走,不跟数字走。指不可数的东西(电量、时间、水、存储)用 is:There's 73% left of the battery / of the month;指可数复数(票、座位、员工)用 are:There are 73% left of the tickets / of the seats。记法:73% of the water is gone(水不可数);73% of the tickets are gone(票可数)。日常最常见的场景(电量、流量、进度)都是不可数,所以大概率要的是 There is 73% left.
+
+---
+
+**Q:** "there's just one feature I plan to add for now" —— 为什么这里用 for?
+
+**A:** for now 是固定短语,意思是"暂时、目前",for 不是"为了",整个成语不能拆开。整句 = "目前我只打算加这一个功能"(言下之意:以后可能再加)。同家族:for good(永久,He left the company for good)/ for a while(一阵子)/ for once(就这一次)。和 just "now" 的区别:now 强调动作发生在此刻("我现在正打算加");for now 强调计划是临时版本、以后可能扩充("暂时只加这一个")。记法:now 是"此刻",for now 是"暂且如此"。
+
+---
+
+**Q:** "one takes the request body" 这里为什么用 takes?
+
+**A:** take 在这里是"接收、接受(作为输入)"——"其中一个(函数/接口)接收请求体"。技术英语的标配:This function takes two arguments / The API takes JSON in the request body。同义词 accepts / receives / expects,但口语和技术文档里 take 最常用、最轻便。它和"耗时"的 take 同属一个逻辑家族——"需要、占用":It takes four hours(吃时间)/ It takes courage(需要勇气)/ The function takes a callback(接收回调)。核心画面:某个主体"要吃掉"一个东西。记法:代码语境里 take 八成是"接收参数",时间语境里八成是"耗时"。
+
+---
+
+**Q:** "a new service we add for calling other systems" —— 这里不能用 to call other systems 吗?
+
+**A:** 语法上可以,但意思会偏一点:for + V-ing 描述"东西的功能"(a service for calling = 这个服务的职责是调用,同类 a tool for cutting),to + V 会吸附到最近的动词 add 上,描述"动作的目的"(we add a service to call = 我们加服务是为了自己去调用)。这句话里两个版本意思几乎重合,母语者也会混用;但严格说,强调组件的职责任 for calling,强调我们做事的目的用 to call。对比:I bought a knife for cutting bread(刀的用途)vs I bought a knife to cut bread(我买刀的目的),基本同义。最稳的写法是 that 从句:a new service that calls other systems,零歧义。
