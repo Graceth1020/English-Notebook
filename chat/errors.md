@@ -10,7 +10,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E001 | past habit in present tense | grammar | I truly love reading novels when I was a middle school student. | I really loved reading novels back in middle school. | 01 | 1 | open | 2026-09-03 |
 | E003 | stacked couldn't-help patterns | grammar | I couldn't help stopping myself to read it. | I couldn't put it down. | 01 | 1 | open | 2026-08-31 |
 | E004 | objects placing instead of sitting | collocation | his books placing on my book desk | his books sitting on my desk | 01 | 1 | open | 2026-08-31 |
-| E005 | bare -ing without auxiliary | grammar | I usually learning something new. | I usually learn something new. | 01 | 1 | open | 2026-08-31 |
+| E005 | bare -ing without auxiliary | grammar | I usually learning something new. | I usually learn something new. | 01 | 2 | open | 2026-10-26 |
 | E006 | adjective used as noun (a guilty) | grammar | Sometimes I feel it's a guilty. | Sometimes I feel guilty about it. | 01 | 1 | open | 2026-08-31 |
 | E007 | missing verb 'mean' in doesn't-mean frame | grammar | Have more freedom doesn't I'll be offline. | More freedom doesn't mean I'll be offline. | 02 | 1 | open | 2026-09-01 |
 | E008 | response used as verb | grammar | I'll response | I'll respond | 02 | 1 | open | 2026-09-01 |
@@ -34,7 +34,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E028 | aspect noun omitted: bare 'the business' for 'the business side' | calque | I have to say business. | The business side, I'd say. | 04 | 1 | open | 2026-09-04 |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | open | 2026-09-24 |
 | E030 | If + bare verb (it's just spend) | grammar | if it's just spend twenty or thirty seconds | if it only takes twenty or thirty seconds | 06 | 1 | open | 2026-09-04 |
-| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 35 | open | 2026-11-15 |
+| E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 36 | open | 2026-11-18 |
 | E032 | negation dropped, meaning inverted (could my ability match) | grammar | could my ability match my position? | am I just not up to the job? | 06 | 1 | open | 2026-09-04 |
 | E034 | question for issue/problem | calque | the question is I couldn't sleep well | the thing is, I can't sleep properly | 07 | 1 | open | 2026-09-05 |
 | E036 | be familiar with in present perfect continuous | grammar | I've been familiar with the game operation | I already know the game inside out | 07 | 1 | open | 2026-09-05 |
