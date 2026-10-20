@@ -421,3 +421,11 @@ A: won't take no for an answer = 固定习语"不接受拒绝、非要不可"；
 **Q:** "a new service we add for calling other systems" —— 这里不能用 to call other systems 吗?
 
 **A:** 语法上可以,但意思会偏一点:for + V-ing 描述"东西的功能"(a service for calling = 这个服务的职责是调用,同类 a tool for cutting),to + V 会吸附到最近的动词 add 上,描述"动作的目的"(we add a service to call = 我们加服务是为了自己去调用)。这句话里两个版本意思几乎重合,母语者也会混用;但严格说,强调组件的职责任 for calling,强调我们做事的目的用 to call。对比:I bought a knife for cutting bread(刀的用途)vs I bought a knife to cut bread(我买刀的目的),基本同义。最稳的写法是 that 从句:a new service that calls other systems,零歧义。
+
+## Day 36 (2026-10-20) - form drill 17
+
+**Q: succeeded 是形容词吗？**
+A: 不是，是动词 succeed 的过去式/过去分词。词族：success (n.) / succeed (v.) / successful (adj.) / successfully (adv.)。你的句子 if the request successes 把名词复数当动词用了；正确是 if the request succeeded（动词）或 if the request was successful（形容词）。钩子：-ed 结尾是动词，-ful 结尾是形容词。
+
+**Q: 为什么不用 whether a request succeeds？**
+A: 可以用，但视角不同。whether the request succeeded（过去式）= 单次叙事，时间锚点 Once it receives the result 之后确认"刚才那次成了没"；whether a request succeeds（现在式）= 讲通用机制/组件职责，语法也对但那是文档视角。规则：叙事有具体时间锚点就用过去式；脱离场景讲一般规律才用 a + 单数 + 现在式。
