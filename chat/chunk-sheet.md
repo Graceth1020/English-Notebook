@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-19 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-20 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**57 owned / 113 banked**
+**59 owned / 113 banked**
 
 ## How to review this
 
@@ -284,12 +284,12 @@ silent, and previewing it invalidates the only honest measurement here.
   - One review table, which could double as the review logs.
 - [x] **there's no way to (do X)** - the spoken 'impossible' - impossible is for physics, no way to is for designs and plans
   - The moment someone rejects a review, there's no way to show the logs.
-- [ ] **settle on (a choice)** - finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design
+- [x] **settle on (a choice)** - finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design
   - We finally settled on a low-code platform.
 
 ## Day 30
 
-- [ ] **set up (a group chat)** - create something that will run on its own - a group chat, a meeting, a system; 'create a group' is understood but not what natives say
+- [x] **set up (a group chat)** - create something that will run on its own - a group chat, a meeting, a system; 'create a group' is understood but not what natives say
   - As more neighbors joined, we set up a group chat.
 - [ ] **round people up (for a game)** - gather people for something casual - 摇人/召集; 'call people' means phoning them
   - It's a group chat where we can round people up for a game.
