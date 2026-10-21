@@ -24,11 +24,9 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 1 | open | 2026-10-18 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 3 | 2 | open | 2026-10-19 |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
-| C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 4 | 1 | open | 2026-10-11 |
 | C053 | my parents' place | phrase | family | where your parents live - not 'where my parents live' | I'd work from my parents' place. | 08 | 3 | 1 | open | 2026-10-24 |
 | C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 1 | 1 | open | 2026-10-10 |
 | C061 | outside my own field | phrase | study | the spoken 'from different industries' | I talk it through with people outside my own field. | 09 | 1 | 1 | open | 2026-10-18 |
-| C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 1 | 1 | open | 2026-10-07 |
 | C077 | put something in place | phrase | general | introduce measures or procedures to fix or prevent something - the spoken replacement for 'take measures' | We've got to put something in place so it doesn't happen again. | 21 | 0 | 0 | open | 2026-09-22 |
 | C083 | catch up on (what happened / the news) | phrase | general | fill the gap since you last talked or checked - the dedicated phrase for 补上错过的 | It helped me catch up on what had happened. | 27 | 0 | 0 | open | 2026-10-10 |
 | C085 | run (a promotion / a campaign) | phrase | work | an app or company runs a marketing activity - never 'hold an activity' | The app has been running an official promotion. | 27 | 1 | 1 | open | 2026-10-24 |
@@ -41,7 +39,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 0 | 0 | open | 2026-10-13 |
 | C101 | The clearest change is (that)... | frame | general | open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque | The clearest change is that I can express myself more naturally. | 30 | 0 | 0 | open | 2026-10-13 |
 | C102 | broaden your horizons | phrase | general | expand what you know and have seen - the fixed phrase for 开阔眼界; 'expand your scope of knowledge' is translated | Talking with people outside your field broadens your horizons. | 31 | 1 | 1 | open | 2026-10-24 |
-| C103 | over the long run | phrase | money | sustained across a long span - the investing/habit phrase; 'over a long time' is just duration; in the long run = eventually | Aim for steady returns over the long run. | 31 | 0 | 0 | open | 2026-10-14 |
+| C103 | over the long run | phrase | money | sustained across a long span - the investing/habit phrase; 'over a long time' is just duration; in the long run = eventually | Aim for steady returns over the long run. | 31 | 1 | 0 | open | 2026-10-24 |
 | C104 | steady returns | phrase | money | consistent investment gains over time - the personal-finance phrase; 'stable yield' is bond-desk vocabulary | Aim for steady returns over the long run. | 31 | 0 | 0 | open | 2026-10-14 |
 | C105 | on top of that | phrase | general | add one more point on the pile - the spoken 'moreover'; sits at the front of the new sentence | On top of that, all the data gets displayed on a dashboard. | 32 | 0 | 0 | open | 2026-10-20 |
 | C106 | go with (an option / a design) | phrase | work | choose a plan after comparing - never 'decide to design'; you go with a design, a color, a name | We decided to go with a dashboard. | 32 | 1 | 1 | open | 2026-10-24 |
@@ -51,7 +49,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C110 | push things forward | phrase | work | keep work moving ahead - the spoken replacement for 推进进度; you push the work, not the progress | My job is to push things forward when they stall. | - | 0 | 0 | open | 2026-10-21 |
 | C111 | show up | phrase | work | appear or turn up - the default verb for anything that appears: bugs, people, problems; 'appear' is written English | Hundreds of bugs showed up after SIT started. | - | 1 | 1 | open | 2026-10-27 |
 | C112 | won't take no for an answer | phrase | work | refuse to accept a rejection - the fixed idiom for 死活不接受拒绝; the person demanding is the subject | The client won't take no for an answer. | - | 0 | 0 | open | 2026-10-21 |
-| C113 | a must (a must-have) | phrase | work | something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential' | For debugging inside the app, this page is a must. | - | 0 | 0 | open | 2026-10-22 |
+| C113 | a must (a must-have) | phrase | work | something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential' | For debugging inside the app, this page is a must. | - | 1 | 1 | open | 2026-10-28 |
 | C001 | couldn't put it down | phrase | reading | a book or phone too good to stop using - games do NOT take this; games are 'hooked on' | I started it Friday night and couldn't put it down. | 01 | 8 | 4 | pending | 2026-11-16 |
 | C003 | flush out your system | phrase | health | the health idea of clearing the body | A big glass of water flushes out your system. | 01 | 2 | 2 | pending | 2026-10-02 |
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 4 | 4 | pending | 2026-11-09 |
@@ -59,6 +57,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 2 | pending | 2026-10-24 |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 3 | 3 | pending | 2026-11-17 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 4 | 4 | pending | 2026-11-08 |
+| C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 4 | 2 | pending | 2026-11-06 |
 | C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 5 | 5 | pending | 2026-11-15 |
 | C040 | out of my depth | phrase | work | beyond what you can handle | I was completely out of my depth in that meeting. | 06 | 4 | 2 | pending | 2026-11-01 |
 | C041 | wired | phrase | health | too stimulated to sleep | I'm still wired an hour after playing. | 07 | 2 | 2 | pending | 2026-10-19 |
@@ -67,7 +66,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C054 | I only get back twice a year | phrase | family | frequency in the verb, not in 'chances' | I only get back twice a year. | 08 | 2 | 2 | pending | 2026-10-23 |
 | C056 | that's a symptom, not the reason | phrase | work | distinguishes what you can see from what is causing it | The retries are a symptom, not the reason. | 08 | 4 | 2 | pending | 2026-10-25 |
 | C064 | backed up (a queue) | phrase | work | unable to drain - not 'blocked', which implies something deliberate | The queue was backed up for two hours. | 10 | 4 | 2 | pending | 2026-10-17 |
-| C072 | too much of a hassle | phrase | general | the spoken way to say 太麻烦 - 'too trouble' is broken; trouble needs 'too much', and 'a hassle' is the more spoken noun | Playing on the PC is too much of a hassle now - I'd rather play on my phone. | 16 | 2 | 2 | pending | 2026-11-05 |
+| C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 2 | 2 | pending | 2026-11-06 |
 | C074 | track down (a bug) | phrase | work | find something hidden after searching - 'find out' takes information, not a bug | It took us half a day to track down where the bug was. | 17 | 2 | 2 | pending | 2026-10-17 |
 | C075 | be in demand | phrase | work | wanted by employers - the collocation for 吃香/抢手, not 'popular in the job market' | Engineers who know the business well are in demand. | 18 | 2 | 2 | pending | 2026-11-03 |
 | C078 | more than once | phrase | general | spoken occurrence count - never 'over one time'; contrast: 'for two hours' (duration) vs 'twice' (count, bare) | I've made this exact mistake more than once. | 23 | 2 | 2 | pending | 2026-10-25 |
@@ -124,6 +123,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C069 | ..., anyway | frame | general | end-of-sentence concession, needs an obstacle stated first - pairs with 'but', never with 'no matter' | The traffic's brutal. I drive back anyway. | 11 | 3 | 3 | owned | - |
 | C070 | over time | phrase | general | a gradual change that has happened up to now - pairs with present perfect, not the 'as time passes, X becomes Y' universal-truth frame | Over time, the docs-first discipline has become company culture. | 14 | 3 | 3 | owned | - |
 | C071 | That way, ... | phrase | general | the spoken connector for '这样/那样的话' - states the result of what you just said; 'in this way' is essay English | We write the docs at the end. That way they match what actually shipped. | 14 | 3 | 3 | owned | - |
+| C072 | too much of a hassle | phrase | general | the spoken way to say 太麻烦 - 'too trouble' is broken; trouble needs 'too much', and 'a hassle' is the more spoken noun | Playing on the PC is too much of a hassle now - I'd rather play on my phone. | 16 | 4 | 4 | owned | - |
 | C076 | way above my level | phrase | work | people who outrank you in skill - the counterpart to 'out of my depth', said about other people | I like talking to people way above my level. | 20 | 3 | 3 | owned | - |
 | C079 | run into (a problem / difficulties) | phrase | general | meet something by accident - problems, difficulties, old friends; never 'meet a problem' and never 'run into' a planned meeting | No matter what difficulties I run into, I stick to it. | 26 | 4 | 4 | owned | - |
 | C080 | make a difference | phrase | study | have a real effect - difference always takes its article; past is 'made a difference' | Over time, that made a difference. | 26 | 3 | 3 | owned | - |

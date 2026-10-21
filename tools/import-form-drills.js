@@ -250,7 +250,7 @@ function parseDrill(dir, base) {
 
       if (field === 'you') {
         const text = line.replace(/^>\s?/, '');
-        round.you = round.you ? round.you + ' ' + text : text;
+        round.you = round.you ? round.you + '\n' + text : text;
       } else if (field === 'prompt') {
         round.prompt = round.prompt ? round.prompt + ' ' + line : line;
       } else if (field === 'zh') {
@@ -437,7 +437,8 @@ function renderRound(r) {
   out.push('<div class="fd-ans" hidden>');
   if (r.you) {
     out.push('<div class="fd-lab">He wrote</div>');
-    out.push('<div class="fd-you">' + inline(r.you) + '</div>');
+    const youLines = r.you.split(/\n+|(?<=[.?!])\s+(?=[A-Z"'])/).map((s) => s.trim()).filter(Boolean);
+    out.push('<div class="fd-you">' + youLines.map((l) => inline(l)).join('<br>') + '</div>');
   }
   out.push('<div class="fd-ax">');
   for (const a of AXES) {

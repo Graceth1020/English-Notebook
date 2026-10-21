@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-20 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-21 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**59 owned / 113 banked**
+**60 owned / 113 banked**
 
 ## How to review this
 
@@ -211,7 +211,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 16
 
-- [ ] **too much of a hassle** - the spoken way to say 太麻烦 - 'too trouble' is broken; trouble needs 'too much', and 'a hassle' is the more spoken noun
+- [x] **too much of a hassle** - the spoken way to say 太麻烦 - 'too trouble' is broken; trouble needs 'too much', and 'a hassle' is the more spoken noun
   - Playing on the PC is too much of a hassle now - I'd rather play on my phone.
 
 ## Day 17

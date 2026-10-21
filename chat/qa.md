@@ -138,6 +138,11 @@ transcript as `[meta]`; this file is the review copy.
 
 ---
 
+**Q:** "but I just want to sleep or scroll Douyin" 为什么 but 变成了 and?
+A: 前后两句不是转折而是递进/补充（有好设备，"而且"还是想躺平刷视频），英语里顺势补充用 and；but 会制造一个原文没有的对抗感。中文的"但"在这里其实是口语里的顺接，不是逻辑转折。
+
+**Q:** "especially when the game plot got going" 为什么 when 改成 once?"As for watching reels, it's a good way to relax" 为什么改成 "Whereas watching reels is an easy way to switch off" 且当时没给解释?
+A: (1) once = 一旦…就…，强调触发点之后的连锁反应（剧情一展开就累），when 只是泛泛的"当…时"；这里讲的是触发关系，once 更准。(2) As for 是"至于"，用来开启新话题；而这里是拿两件事做对比（打游戏累 vs 刷视频放松），对比用 whereas。switch off 也比 relax 更贴合"让大脑关机"的语境。当时漏给解释是流程失误——每条改动都应附原因，这后来促成了"每个改动都要解释"的规则。
 ## Day 12 - 2026-09-08
 
 **Q:** "Can you not just start and see how far you get?" 是什么意思?
@@ -194,6 +199,8 @@ transcript as `[meta]`; this file is the review copy.
 
 ---
 
+**Q:** "does it still hold the title, or has something come close?" 这个问题想表达什么?
+A: hold the title = 保持"冠军头衔"（拳击/比赛的比喻）。整句意思：那个 bug 到现在还是你"史上最严重"的纪录保持者吗？还是后来有别的 bug 接近过这个纪录？是在追问它的历史地位有没有被撼动。
 ## Day 21 - 2026-09-19
 
 **Q:** on / in / to 这些介词怎么练?比如 in the province,这里用 in 对吗?(在两次练习之间问的)
@@ -429,3 +436,8 @@ A: 不是，是动词 succeed 的过去式/过去分词。词族：success (n.) 
 
 **Q: 为什么不用 whether a request succeeds？**
 A: 可以用，但视角不同。whether the request succeeded（过去式）= 单次叙事，时间锚点 Once it receives the result 之后确认"刚才那次成了没"；whether a request succeeds（现在式）= 讲通用机制/组件职责，语法也对但那是文档视角。规则：叙事有具体时间锚点就用过去式；脱离场景讲一般规律才用 a + 单数 + 现在式。
+
+## Day 37 (2026-10-21)
+
+**Q: "whether setting a rule depends on..." — setting a rule 不能做主语吗？**
+A: 动名词可以作主语，问题在 whether。whether 引导名词性从句，从句内需要主语+限定动词：Whether we set a rule depends on...；动名词作主语则要去掉 whether：Setting a rule depends on...。✗ whether setting a rule... 是两条路线的杂交。中文"是否设立规则"允许动名词悬在"是否"后，英语不行。
