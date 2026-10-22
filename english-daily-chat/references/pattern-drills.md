@@ -101,8 +101,13 @@ rather than the conversation.
 
 1. **English for the drill itself.** A Chinese meta question is answered briefly,
    as in daily chat, and costs nothing.
-2. **Mark each item, do not rewrite the whole answer.** `[ok]`, or the correction
-   and one clause of why. There is no `Native:` verdict - the sentence is not an
+2. **Mark each item, and always give the full correct version.** Every verdict,
+   in every round - including the bare-phrase rounds - carries an `**Answer:**`
+   line with the complete correct sentence, plus one clause of why on a miss.
+   Requested by the learner on 2026-10-22 after Drill 17, where Round 2 was
+   marked with corrections only and he asked for the full versions; the same
+   lines feed the summary file and the drill page, so one Answer line serves
+   chat, md, and site. There is no `Native:` verdict - the sentence is not an
    attempt at natural speech, it is an attempt at one structure.
 3. **Correctness of the structure is the only thing being marked.** If the learner
    uses the pattern correctly but picks an odd word, let it go; that belongs to
