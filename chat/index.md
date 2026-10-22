@@ -43,3 +43,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 35 | 2026-10-19 | Monday, the week actually starts | daily | 5 | 19 | done | [summary](summaries/day-35-20261019.md) |
 | 36 | 2026-10-20 | Tuesday: did the fight happen? | daily | 5 | 10 | done | [summary](summaries/day-36-20261020.md) |
 | 37 | 2026-10-21 | Wednesday: the spec conversation | daily | 5 | 13 | done | [summary](summaries/day-37-20261021.md) |
+| 38 | 2026-10-22 | A Thursday night off | daily | 5 | 10 | done | [summary](summaries/day-38-20261022.md) |

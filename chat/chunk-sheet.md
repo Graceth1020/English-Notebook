@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-21 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-22 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**60 owned / 113 banked**
+**62 owned / 118 banked**
 
 ## How to review this
 
@@ -30,6 +30,16 @@ silent, and previewing it invalidates the only honest measurement here.
   - The client won't take no for an answer.
 - [ ] **a must (a must-have)** - something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential'
   - For debugging inside the app, this page is a must.
+- [ ] **when it comes to (doing something)** - switch the topic to a specific area - the to is a preposition, so a verb after it takes -ing: when it comes to hanging out
+  - When it comes to hanging out with friends, that's a weekend thing.
+- [ ] **at once** - immediately, or all at the same time - slightly old-fashioned spoken; reply at once, don't do it all at once
+  - If you need me, I'll reply at once.
+- [ ] **so far** - up to now - pairs with present perfect: there's no message so far
+  - There's no message in the group so far.
+- [ ] **in terms of (X)** - on the X axis / regarding X - the spoken way to name the dimension you are comparing: in terms of time, in terms of cost
+  - In terms of time, remote wins easily.
+- [ ] **be supposed to do (something)** - expected or arranged to happen - we are supposed to play on Saturday; also for mild obligation: you are supposed to knock
+  - We are supposed to play the game on Saturday morning.
 
 ## Day 01
 
@@ -37,7 +47,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I started it Friday night and couldn't put it down.
 - [x] **be really into (something)** - be passionate about it
   - I was really into suspense novels.
-- [ ] **flush out your system** - the health idea of clearing the body
+- [x] **flush out your system** - the health idea of clearing the body
   - A big glass of water flushes out your system.
 - [x] **get through (a book/task)** - finish it at pace
   - I got through it in three nights.
@@ -315,7 +325,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 - [ ] **on top of that** - add one more point on the pile - the spoken 'moreover'; sits at the front of the new sentence
   - On top of that, all the data gets displayed on a dashboard.
-- [ ] **go with (an option / a design)** - choose a plan after comparing - never 'decide to design'; you go with a design, a color, a name
+- [x] **go with (an option / a design)** - choose a plan after comparing - never 'decide to design'; you go with a design, a color, a name
   - We decided to go with a dashboard.
 
 ## Day 33

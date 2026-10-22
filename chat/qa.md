@@ -139,10 +139,10 @@ transcript as `[meta]`; this file is the review copy.
 ---
 
 **Q:** "but I just want to sleep or scroll Douyin" 为什么 but 变成了 and?
-A: 前后两句不是转折而是递进/补充（有好设备，"而且"还是想躺平刷视频），英语里顺势补充用 and；but 会制造一个原文没有的对抗感。中文的"但"在这里其实是口语里的顺接，不是逻辑转折。
+**A:** 前后两句不是转折而是递进/补充（有好设备，"而且"还是想躺平刷视频），英语里顺势补充用 and；but 会制造一个原文没有的对抗感。中文的"但"在这里其实是口语里的顺接，不是逻辑转折。
 
 **Q:** "especially when the game plot got going" 为什么 when 改成 once?"As for watching reels, it's a good way to relax" 为什么改成 "Whereas watching reels is an easy way to switch off" 且当时没给解释?
-A: (1) once = 一旦…就…，强调触发点之后的连锁反应（剧情一展开就累），when 只是泛泛的"当…时"；这里讲的是触发关系，once 更准。(2) As for 是"至于"，用来开启新话题；而这里是拿两件事做对比（打游戏累 vs 刷视频放松），对比用 whereas。switch off 也比 relax 更贴合"让大脑关机"的语境。当时漏给解释是流程失误——每条改动都应附原因，这后来促成了"每个改动都要解释"的规则。
+**A:** (1) once = 一旦…就…，强调触发点之后的连锁反应（剧情一展开就累），when 只是泛泛的"当…时"；这里讲的是触发关系，once 更准。(2) As for 是"至于"，用来开启新话题；而这里是拿两件事做对比（打游戏累 vs 刷视频放松），对比用 whereas。switch off 也比 relax 更贴合"让大脑关机"的语境。当时漏给解释是流程失误——每条改动都应附原因，这后来促成了"每个改动都要解释"的规则。
 ## Day 12 - 2026-09-08
 
 **Q:** "Can you not just start and see how far you get?" 是什么意思?
@@ -200,7 +200,7 @@ A: (1) once = 一旦…就…，强调触发点之后的连锁反应（剧情一
 ---
 
 **Q:** "does it still hold the title, or has something come close?" 这个问题想表达什么?
-A: hold the title = 保持"冠军头衔"（拳击/比赛的比喻）。整句意思：那个 bug 到现在还是你"史上最严重"的纪录保持者吗？还是后来有别的 bug 接近过这个纪录？是在追问它的历史地位有没有被撼动。
+**A:** hold the title = 保持"冠军头衔"（拳击/比赛的比喻）。整句意思：那个 bug 到现在还是你"史上最严重"的纪录保持者吗？还是后来有别的 bug 接近过这个纪录？是在追问它的历史地位有没有被撼动。
 ## Day 21 - 2026-09-19
 
 **Q:** on / in / to 这些介词怎么练?比如 in the province,这里用 in 对吗?(在两次练习之间问的)
@@ -380,32 +380,30 @@ you see the error in production and immediately know it is your code.
 
 **A:** 可以,heat up the wok until it starts to smoke 完全成立。区别在风格不在对错:heat the wok 是菜谱书面语首选(菜谱里全是 heat the oil, add the garlic);heat up 更口语,up 强调温度升上去的过程,口语叙述自己的动作用 heat up 反而更自然。两条规则:1) 可拆分短语动词,代词夹中间 heat it up,名词两位置都行;2) heat up 可不及物单用 The wok is heating up,plain heat 这么用少见。你的原句不用改。(Drill 15 R3)
 
-## Day 32 - 2026-10-17
+## Day 32 - 2026-10-16
 
 **Q:** "The postmortem is scheduled for 10 am on October 15th." 为什么用 for?
 
 **A:** for 引出"安排的目标",at 只说"发生在某时刻"。be scheduled for + 时间/事项 = 被安排在(一个计划,可能改):The release is scheduled for next Friday / The feature is scheduled for discussion。be at + 时间 = 发生在(一个事实,日历上的一格):The meeting is at 10。你的中文有个"定"字(安排的动作),for 正好对应;"10 点开会"陈述事实才用 at。同类"安排"家族 for 都是标配:scheduled for / set for (The wedding is set for June) / planned for / due for。记法:时间表上的"点"用 at,计划里的"定"用 for。(Pattern 14 R2 讲评)
 
-## Day 33 - 2026-10-18
+## Day 34 - 2026-10-18
 
 **Q:** "leave a comment on that line" 这种抽象语境的 on / in / of 该怎么区分?
 
 **A:** 抽象介词不是随机的,全是空间隐喻的延伸,先记三个物理原型再投影:on = 贴着表面/线(二维接触)——行是线 a comment on that line / on line 42,页面屏幕是平面 on the dashboard / on the platform,话题是附着点 a book on grammar,日期是时间轴上的点 on Monday;in = 在容器里(三维)——文件函数是容器 in the save function / in the codebase,句子段落是容器 in this sentence,时间段是容器 in the morning / in October(对比:日期是点用 on),状态是容器 in progress;of = 部分与整体——the root of the problem(根属于问题)/ two lines of code(从整体切一份)/ the color of the button(属性属于物体)。实操判断:拿不准就问"这东西物理上像什么"——像平面或线选 on,像容器选 in,像"谁的/哪部分"选 of,90% 能推出来;剩 10% 是固定搭配(depend on, in charge of),见一个记一个。(由 Drill 16 R2 的 on that line 引发)
 
-## Day 34 (2026-10-18)
+**Q:** "I lock in the schedule" 原句不够地道吗？
+**A:** confirm the schedule 语法没错但偏正式/翻译腔。confirm = 核实已有的；lock in = 讨论后敲定。口语 PM 场景几乎都用 lock in。
 
-**Q: "I lock in the schedule" 原句不够地道吗？**
-A: confirm the schedule 语法没错但偏正式/翻译腔。confirm = 核实已有的；lock in = 讨论后敲定。口语 PM 场景几乎都用 lock in。
+**Q:** "The new project just kicked off" 现在完成时不行吗？
+**A:** 可以，不算错。口语里"刚发生不久"默认 just + 一般过去时（He just left）；完成时留给强调对现在影响的场合。闲聊语境 just kicked off 更自然。
 
-**Q: "The new project just kicked off" 现在完成时不行吗？**
-A: 可以，不算错。口语里"刚发生不久"默认 just + 一般过去时（He just left）；完成时留给强调对现在影响的场合。闲聊语境 just kicked off 更自然。
-
-**Q: "If the business side won't take no for an answer, I won't say no outright - instead, I'll see if there's another way to build it" 怎么理解？**
-A: won't take no for an answer = 固定习语"不接受拒绝、非要不可"；outright = 直接了当地（比 directly 更强调无转圜）；see if there's another way = 看看有没有别的办法。整句：如果业务方死活不接受拒绝，我也不会一口回绝，而是看看有没有别的实现方式。原句 "the business side answers no" 把拒绝的主客体弄反了——是你拒绝需求，他们不接受拒绝。
+**Q:** "If the business side won't take no for an answer, I won't say no outright - instead, I'll see if there's another way to build it" 怎么理解？
+**A:** won't take no for an answer = 固定习语"不接受拒绝、非要不可"；outright = 直接了当地（比 directly 更强调无转圜）；see if there's another way = 看看有没有别的办法。整句：如果业务方死活不接受拒绝，我也不会一口回绝，而是看看有没有别的实现方式。原句 "the business side answers no" 把拒绝的主客体弄反了——是你拒绝需求，他们不接受拒绝。
 
 ---
 
-## Day 33 - 2026-10-19
+## Day 35 - 2026-10-19
 
 **Q:** "There are 73% left." 和 "There is 73% left." 哪个对?
 
@@ -429,15 +427,19 @@ A: won't take no for an answer = 固定习语"不接受拒绝、非要不可"；
 
 **A:** 语法上可以,但意思会偏一点:for + V-ing 描述"东西的功能"(a service for calling = 这个服务的职责是调用,同类 a tool for cutting),to + V 会吸附到最近的动词 add 上,描述"动作的目的"(we add a service to call = 我们加服务是为了自己去调用)。这句话里两个版本意思几乎重合,母语者也会混用;但严格说,强调组件的职责任 for calling,强调我们做事的目的用 to call。对比:I bought a knife for cutting bread(刀的用途)vs I bought a knife to cut bread(我买刀的目的),基本同义。最稳的写法是 that 从句:a new service that calls other systems,零歧义。
 
-## Day 36 (2026-10-20) - form drill 17
+---
 
-**Q: succeeded 是形容词吗？**
-A: 不是，是动词 succeed 的过去式/过去分词。词族：success (n.) / succeed (v.) / successful (adj.) / successfully (adv.)。你的句子 if the request successes 把名词复数当动词用了；正确是 if the request succeeded（动词）或 if the request was successful（形容词）。钩子：-ed 结尾是动词，-ful 结尾是形容词。
+## Day 36 - 2026-10-20
 
-**Q: 为什么不用 whether a request succeeds？**
-A: 可以用，但视角不同。whether the request succeeded（过去式）= 单次叙事，时间锚点 Once it receives the result 之后确认"刚才那次成了没"；whether a request succeeds（现在式）= 讲通用机制/组件职责，语法也对但那是文档视角。规则：叙事有具体时间锚点就用过去式；脱离场景讲一般规律才用 a + 单数 + 现在式。
+**Q:** succeeded 是形容词吗？
+**A:** 不是，是动词 succeed 的过去式/过去分词。词族：success (n.) / succeed (v.) / successful (adj.) / successfully (adv.)。你的句子 if the request successes 把名词复数当动词用了；正确是 if the request succeeded（动词）或 if the request was successful（形容词）。钩子：-ed 结尾是动词，-ful 结尾是形容词。
 
-## Day 37 (2026-10-21)
+**Q:** 为什么不用 whether a request succeeds？
+**A:** 可以用，但视角不同。whether the request succeeded（过去式）= 单次叙事，时间锚点 Once it receives the result 之后确认"刚才那次成了没"；whether a request succeeds（现在式）= 讲通用机制/组件职责，语法也对但那是文档视角。规则：叙事有具体时间锚点就用过去式；脱离场景讲一般规律才用 a + 单数 + 现在式。
 
-**Q: "whether setting a rule depends on..." — setting a rule 不能做主语吗？**
-A: 动名词可以作主语，问题在 whether。whether 引导名词性从句，从句内需要主语+限定动词：Whether we set a rule depends on...；动名词作主语则要去掉 whether：Setting a rule depends on...。✗ whether setting a rule... 是两条路线的杂交。中文"是否设立规则"允许动名词悬在"是否"后，英语不行。
+---
+
+## Day 37 - 2026-10-21
+
+**Q:** "whether setting a rule depends on..." — setting a rule 不能做主语吗？
+**A:** 动名词可以作主语，问题在 whether。whether 引导名词性从句，从句内需要主语+限定动词：Whether we set a rule depends on...；动名词作主语则要去掉 whether：Setting a rule depends on...。✗ whether setting a rule... 是两条路线的杂交。中文"是否设立规则"允许动名词悬在"是否"后，英语不行。
