@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-22 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-23 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**62 owned / 118 banked**
+**62 owned / 119 banked**
 
 ## How to review this
 
@@ -40,6 +40,8 @@ silent, and previewing it invalidates the only honest measurement here.
   - In terms of time, remote wins easily.
 - [ ] **be supposed to do (something)** - expected or arranged to happen - we are supposed to play on Saturday; also for mild obligation: you are supposed to knock
   - We are supposed to play the game on Saturday morning.
+- [ ] **try out (something)** - test something hands-on before committing - the spoken 体验/试用: try out the user flows, try out a new restaurant
+  - The business side can try out the user flows as soon as the prototypes are done.
 
 ## Day 01
 
