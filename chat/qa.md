@@ -443,3 +443,31 @@ you see the error in production and immediately know it is your code.
 
 **Q:** "whether setting a rule depends on..." — setting a rule 不能做主语吗？
 **A:** 动名词可以作主语，问题在 whether。whether 引导名词性从句，从句内需要主语+限定动词：Whether we set a rule depends on...；动名词作主语则要去掉 whether：Setting a rule depends on...。✗ whether setting a rule... 是两条路线的杂交。中文"是否设立规则"允许动名词悬在"是否"后，英语不行。
+
+## Day 38 - 2026-10-25
+
+**Q:** "He fixed the ticket in under two hours." 和 "He fixed the ticket in two hours." 有什么区别?
+
+**A:** under 加了一个"还不到"的上限意味。in two hours 是中性陈述:耗时两小时,就报个数字;in under two hours 明确表示少于两小时,带"比预期快"的强调语气。同家族对比:in just two hours(只用了两小时,更口语的强调"快")/ in over two hours(两个多小时,强调"慢")。所以 cue 里带"就"字(两小时内就修好了)时,in under two hours 比 in two hours 更贴原文;within two hours 意思一样,只是更正式。
+
+---
+
+**Q:** "in two hours" 有没有"两个小时以后"的意思?
+
+**A:** 有,这是 in + 时长的经典歧义,靠时态和动词类型区分。过去时 + 完成类动词 = 耗时:He fixed the ticket in two hours(两小时内修好);将来时 / scheduled 语境 = ……以后:The meeting starts in two hours(会议两小时后开始)。所以过去时的句子没有歧义,但 He will fix it in two hours 基本只会读成"他两小时后动手/才修好"。想表达将来的"耗时两小时"要换说法:It''ll take him two hours to fix / He''ll have it fixed within two hours。用容器隐喻记:时长是个容器,事情要么在容器内完成(耗时),要么走到容器尽头才发生(……以后)。
+
+---
+
+## Day 40 - 2026-10-25
+
+**Q:** "made a plan to return in a group chat" 为什么意思会悬？介词短语位置怎么理解？
+
+**A:** 英语里介词短语默认修饰离它最近的动词。"made a plan to return in a group chat" 中 in a group chat 紧跟 to return，读者会把它粘到 return 上——变成"在群聊里返回"，意思就悬了。你真正想修饰的是 made（在群里制定计划），所以要把它挪到 made 旁边：We made a plan in the group chat to go back. 或提前：On Friday morning, we made a plan in the group chat to go back. 自检规则：修饰语贴谁近就修饰谁，放位置前想清楚它修饰哪个动词。对比例：I watched a movie with my friend about space（朋友是关于太空的？）应改为 I watched a movie about space with my friend.
+
+**Q:** "Now that electric bikes are allowed on campus" —— 为什么用 on campus 而不是 in？
+
+**A:** 空间隐喻：校园是开阔的活动区域（一张铺开的地图，人在上面移动），用 on——同家族 on the farm / on the playground / on site，也和 on the platform / on the dashboard（Day 34 平面用 on）同一条规则。in 是容器（被围起来的盒子）：in the classroom / in the campus library。in campus 是经典中式错误。记法：能在上面跑来跑去的开阔区域用 on，被围起来的盒子用 in。
+
+**Q:** "know a lot about computer science" —— 领域不是用 on 吗，为什么用 about？
+
+**A:** about 在这里不是"领域"，而是 know about = 了解某内容（know a lot about computers / know nothing about cooking）。"领域/行业"用 in：major in computer science / specialize in AI / work in tech / an expert in this field。on 留给"专题"——书、讲座、文章的主题（a book on grammar / a talk on investing），是 Day 34 "on = 附着在平面上"的延伸。记法：懂内容用 about，身在领域用 in，作品讲专题用 on。

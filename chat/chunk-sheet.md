@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-23 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-25 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**62 owned / 119 banked**
+**66 owned / 122 banked**
 
 ## How to review this
 
@@ -28,7 +28,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - Hundreds of bugs showed up after SIT started.
 - [ ] **won't take no for an answer** - refuse to accept a rejection - the fixed idiom for 死活不接受拒绝; the person demanding is the subject
   - The client won't take no for an answer.
-- [ ] **a must (a must-have)** - something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential'
+- [x] **a must (a must-have)** - something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential'
   - For debugging inside the app, this page is a must.
 - [ ] **when it comes to (doing something)** - switch the topic to a specific area - the to is a preposition, so a verb after it takes -ing: when it comes to hanging out
   - When it comes to hanging out with friends, that's a weekend thing.
@@ -42,6 +42,12 @@ silent, and previewing it invalidates the only honest measurement here.
   - We are supposed to play the game on Saturday morning.
 - [ ] **try out (something)** - test something hands-on before committing - the spoken 体验/试用: try out the user flows, try out a new restaurant
   - The business side can try out the user flows as soon as the prototypes are done.
+- [ ] **see (something) as (something)** - view or interpret something in a certain way - 把...看作...: see it as a short-term correction, see it as an opportunity
+  - I see the drop as a short-term correction, not a crash.
+- [ ] **excess returns** - returns above the benchmark - 超额回报; NOT excessive returns, which means unreasonably large (negative)
+  - Good companies reward their investors with excess returns.
+- [ ] **reward (someone) with (something)** - give someone something good in return - 用...回报...: reward investors with excess returns, reward yourself with a meal
+  - Good companies reward their investors with excess returns.
 
 ## Day 01
 
@@ -189,7 +195,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I'd run it past a colleague first.
 - [x] **keep an eye on (X)** - watch an ongoing trend - replaces 'look for the frontier technology'
   - I'd keep an eye on where the tech is going.
-- [ ] **outside my own field** - the spoken 'from different industries'
+- [x] **outside my own field** - the spoken 'from different industries'
   - I talk it through with people outside my own field.
 
 ## Day 10
@@ -235,7 +241,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 18
 
-- [ ] **be in demand** - wanted by employers - the collocation for 吃香/抢手, not 'popular in the job market'
+- [x] **be in demand** - wanted by employers - the collocation for 吃香/抢手, not 'popular in the job market'
   - Engineers who know the business well are in demand.
 
 ## Day 20
@@ -270,7 +276,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - It helped me catch up on what had happened.
 - [ ] **set aside (a little) time** - reserve time on purpose - time is set aside, never 'arranged'
   - I only set aside a little time for my own stuff.
-- [ ] **run (a promotion / a campaign)** - an app or company runs a marketing activity - never 'hold an activity'
+- [x] **run (a promotion / a campaign)** - an app or company runs a marketing activity - never 'hold an activity'
   - The app has been running an official promotion.
 - [ ] **a one-day (X) pass** - a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an
   - I redeemed a one-day QQ Music pass.
