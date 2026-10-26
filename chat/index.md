@@ -46,3 +46,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 38 | 2026-10-22 | A Thursday night off | daily | 5 | 10 | done | [summary](summaries/day-38-20261022.md) |
 | 39 | 2026-10-23 | Friday: the week, graded | daily | 5 | 19 | done | [summary](summaries/day-39-20261023.md) |
 | 40 | 2026-10-25 | Sunday: did the board game happen? | daily | 5 | 20 | done | [summary](summaries/day-40-20261025.md) |
+| 41 | 2026-10-26 | Monday: new sprint | daily | 5 | 12 | done | [summary](summaries/day-41-20261026.md) |

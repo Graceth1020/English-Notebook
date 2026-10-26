@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-25 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-26 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**66 owned / 122 banked**
+**68 owned / 126 banked**
 
 ## How to review this
 
@@ -36,7 +36,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - If you need me, I'll reply at once.
 - [ ] **so far** - up to now - pairs with present perfect: there's no message so far
   - There's no message in the group so far.
-- [ ] **in terms of (X)** - on the X axis / regarding X - the spoken way to name the dimension you are comparing: in terms of time, in terms of cost
+- [x] **in terms of (X)** - on the X axis / regarding X - the spoken way to name the dimension you are comparing: in terms of time, in terms of cost
   - In terms of time, remote wins easily.
 - [ ] **be supposed to do (something)** - expected or arranged to happen - we are supposed to play on Saturday; also for mild obligation: you are supposed to knock
   - We are supposed to play the game on Saturday morning.
@@ -48,6 +48,14 @@ silent, and previewing it invalidates the only honest measurement here.
   - Good companies reward their investors with excess returns.
 - [ ] **reward (someone) with (something)** - give someone something good in return - 用...回报...: reward investors with excess returns, reward yourself with a meal
   - Good companies reward their investors with excess returns.
+- [ ] **the same X as (Y)** - the comparison frame - same takes THE before and AS after: the same concept as SpringMVC; never 'a same... with'
+  - The C# framework has the same concept as SpringMVC.
+- [ ] **map out (a process / a plan)** - work out the full picture of something step by step - 梳理清楚; NOT 'close' (close the loop = report back at the end)
+  - Once the whole process is mapped out, it is time to write the spec.
+- [ ] **low-priority / high-priority** - the adjective pair for 优先级低/高 - hyphenated before a noun: a low-priority project; it is low-priority
+  - The project I took over is low-priority.
+- [ ] **get involved in (something)** - become engaged in ongoing work or a process - 介入/参与进去; deeper than take part in, which is for events
+  - The tech team has to get involved in the requirements stage early.
 
 ## Day 01
 
@@ -274,7 +282,7 @@ silent, and previewing it invalidates the only honest measurement here.
   - I told them about the problems I'd run into over the past few months.
 - [ ] **catch up on (what happened / the news)** - fill the gap since you last talked or checked - the dedicated phrase for 补上错过的
   - It helped me catch up on what had happened.
-- [ ] **set aside (a little) time** - reserve time on purpose - time is set aside, never 'arranged'
+- [x] **set aside (a little) time** - reserve time on purpose - time is set aside, never 'arranged'
   - I only set aside a little time for my own stuff.
 - [x] **run (a promotion / a campaign)** - an app or company runs a marketing activity - never 'hold an activity'
   - The app has been running an official promotion.
