@@ -471,3 +471,9 @@ you see the error in production and immediately know it is your code.
 **Q:** "know a lot about computer science" —— 领域不是用 on 吗，为什么用 about？
 
 **A:** about 在这里不是"领域"，而是 know about = 了解某内容（know a lot about computers / know nothing about cooking）。"领域/行业"用 in：major in computer science / specialize in AI / work in tech / an expert in this field。on 留给"专题"——书、讲座、文章的主题（a book on grammar / a talk on investing），是 Day 34 "on = 附着在平面上"的延伸。记法：懂内容用 about，身在领域用 in，作品讲专题用 on。
+
+## Day 42 - 2026-10-27
+
+**Q:** all in all 不是跟 C027（all in）一样吗？
+
+**A:** 不一样，是两个不同的固定短语。all in = 全部算下来、总共（给数字收尾）：All in, there are four business codebases. / All in, I'd put it at a week. all in all = 总的来说、综合考虑（给评价收尾）：All in all, it was a good week. 你今天写的 All in, there are four business codebase 本来就是对的——正是 C027 的用法，我不该改成 all in all，记录已更正。记法：all in 后面跟数字/总量，all in all 后面跟评价。

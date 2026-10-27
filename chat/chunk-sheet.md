@@ -1,8 +1,8 @@
 # Personal Chunk Sheet
 
-Generated 2026-10-26 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
+Generated 2026-10-27 from chat/chunks.md. Grouped by the session that produced it, because a chunk is easier to recall attached to the situation it came from than from a word list.
 
-**68 owned / 126 banked**
+**69 owned / 127 banked**
 
 ## How to review this
 
@@ -264,7 +264,7 @@ silent, and previewing it invalidates the only honest measurement here.
 
 ## Day 23
 
-- [ ] **more than once** - spoken occurrence count - never 'over one time'; contrast: 'for two hours' (duration) vs 'twice' (count, bare)
+- [x] **more than once** - spoken occurrence count - never 'over one time'; contrast: 'for two hours' (duration) vs 'twice' (count, bare)
   - I've made this exact mistake more than once.
 
 ## Day 26
@@ -350,3 +350,8 @@ silent, and previewing it invalidates the only honest measurement here.
   - They should switch up the menu - I've been eating the same thing for five years.
 - [ ] **eat out** - have dinner at a restaurant or canteen, not at home - the dedicated idiom for 在外面吃; opposite: cook at home / eat in
   - I've eaten out every night this whole week.
+
+## Day 42
+
+- [ ] **write things down** - record something so it is not forgotten - things plural, and down IN a list
+  - I'll write things down in a to-do list and sort out the rest at the same time.
