@@ -48,3 +48,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 40 | 2026-10-25 | Sunday: did the board game happen? | daily | 5 | 20 | done | [summary](summaries/day-40-20261025.md) |
 | 41 | 2026-10-26 | Monday: new sprint | daily | 5 | 12 | done | [summary](summaries/day-41-20261026.md) |
 | 42 | 2026-10-27 | Tuesday: codebase archaeology | daily | 5 | 18 | done | [summary](summaries/day-42-20261027.md) |
+| 43 | 2026-10-28 | Wednesday: the bug, day three | daily | 5 | 11 | done | [summary](summaries/day-43-20261028.md) |
