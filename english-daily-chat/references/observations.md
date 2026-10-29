@@ -19,6 +19,9 @@ Instances so far:
 - C039 `be up to the job` -> "be up to my job" (Day 20)
 - C040 `out of my depth` -> "people out of our depth" (Day 20; idiom applied to others)
 - C056 `that's a symptom, not the reason` - missed 4x before landing whole (Day 21)
+- C091 `high-spec` -> "has a high-sec" (Day 44, 1st try; spec->sec + adjective used as a noun)
+- C045 `get in the way of` -> "gets ON the way" (Day 44; preposition broke, pending row so no off-scene confirm either)
+- C124 hint contamination (Day 44): named in Day 43's Two To Use, produced correctly next day - credit REVERTED. Two To Use naming = one-day hint; a chunk named there can only be credited from a later session.
 
 Pattern in the damage: the fixed parts break - the particle, the article, the
 modal+to glue - never the content words. The learner knows the chunk; the

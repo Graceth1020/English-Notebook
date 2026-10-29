@@ -80,6 +80,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E080 | redundant before after past marking | calque | The colleague used to own this business part before | used to own this business part - used to already places it in the past; 之前 does not need a second marker | 43 | 1 | open | 2026-10-31 |
 | E081 | find out + a person | collocation | I'm going to find out the colleague responsible for this system | find the colleague - find out takes information (find out who is responsible); a person you find or track down | 43 | 1 | open | 2026-10-31 |
 | E082 | specific-plan will/going to for a general procedure | grammar | When a service is down or slow, I'm going to find the colleague | When a service is down or slow, I find the colleague - general mechanisms take plain present (same as Day 41: is handled, not is being handled) | 43 | 1 | open | 2026-10-31 |
+| E083 | no intention to + verb | collocation | I have no intention to install | no intention of installing - intention of + -ing | 44 | 1 | open | 2026-11-01 |
 | E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | resolved | - |
 | E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 2 | resolved | - |
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | resolved | - |
