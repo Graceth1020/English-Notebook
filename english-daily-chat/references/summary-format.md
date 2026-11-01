@@ -173,7 +173,10 @@ conversation never called for it. Omit the section if nothing was seeded.>
 each, with the qualified id and the action taken, so the record shows what was
 retired: `coach:E012 pushed-back-without-a-number - used correctly unprompted ->
 resolved`. Use "avoided (no action)" when the learner sidestepped the structure
-entirely. Omit the section if nothing was due.>
+entirely. Only `open` rows are seeded; `claimed` (self-closed without evidence),
+`retired` (merged into another track), and `resolved` rows do not appear here.
+If a closed row's old pattern comes back, the `hit` reopens it and that relapse
+is reported as such. Omit the section if nothing was due.>
 
 ## Two To Use Tomorrow
 
@@ -312,10 +315,10 @@ Describe what the earlier answer *was*, not how badly it lost.
 
 **Do not use vocabulary in the write-up that the chat did not use.** The learner
 rereads this file, and an idiom that appears only here is one he has to stop and ask
-about. Either keep the prose plain, or if a vivid phrase genuinely earns its place,
-bank it - the Day 08 question about 站不住 produced three usable expressions
-(`hold up`, `a symptom not the reason`, `downstream of`), which is a good outcome but
-was not a planned one.
+about. Keep the prose plain. Under the standing banking freeze (SKILL.md, "The bank
+is frozen"), a vivid candidate is **not** banked automatically; it goes onto the
+bank only if the learner explicitly asks to add it, and the skill reference is
+updated in the same step.
 
 ## Why This Shape
 

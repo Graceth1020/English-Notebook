@@ -80,6 +80,13 @@ Prioritize the recurring, transferable habits:
 - **Register mismatch** - written/formal vocabulary in casual chat (`moreover`,
   `I am of the opinion that`, `purchase`, `commence`) where a friend says
   `also`, `I think`, `buy`, `start`.
+
+Register rows stay one per concrete slot (connector position, report noun
+phrase, app-store wrapper, work jargon) - do not merge them into one umbrella
+"written English" row: Hidden Review needs a seedable target, and a relapse
+must be attributable to the slot that came back. When the spoken replacement
+is already an owned chunk, retire the error row into that chunk track instead
+of keeping a register preference in the error rotation.
 - **Function drift** - the sentence is grammatical but performs the wrong social
   act: a hedge that reads as agreement, an opinion that reads as a verdict, a
   suggestion that reads as an order. This is the learner's most frequent

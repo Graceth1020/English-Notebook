@@ -381,7 +381,7 @@ function assertChunkHeader() {
 
 function parseErrors() {
   return parseTable('errors.md', /^E\d+$/,
-    ['id', 'pattern', 'category', 'said', 'fix', 'day', 'hits', 'status', 'next'])
+    ['id', 'pattern', 'category', 'said', 'fix', 'day', 'hits', 'status', 'next', 'note'])
     .map((r) => ({ ...r, hits: +r.hits || 0 }));
 }
 
@@ -1009,7 +1009,7 @@ const DASH_SCRIPT = `
     var rows = errors.filter(function(e){
       if (efilter === 'due') return e.status === 'open' && due(e.next);
       if (efilter === 'open') return e.status === 'open';
-      if (efilter === 'resolved') return e.status !== 'open';
+      if (efilter === 'closed') return e.status !== 'open';
       return true;
     });
     if (!rows.length){ eb.innerHTML = '<p>Nothing here.</p>'; return; }
@@ -1017,13 +1017,15 @@ const DASH_SCRIPT = `
       return '<div class="chat-card' + (due(e.next) && e.status === 'open' ? ' due' : '') + '">' +
         '<b>' + esc(e.pattern) + '</b><span class="chat-tag">' + esc(e.category) + '</span>' +
         '<span class="chat-tag">day ' + esc(e.day) + '</span>' +
+        (e.status !== 'open' ? '<span class="chat-tag">' + esc(e.status) + '</span>' : '') +
         (e.hits > 1 ? '<span class="chat-tag">hits ' + esc(e.hits) + '</span>' : '') +
         '<div class="said">' + esc(e.said) + '</div>' +
-        '<div class="fix">' + esc(e.fix) + '</div></div>';
+        '<div class="fix">' + esc(e.fix) + '</div>' +
+        (e.note ? '<div class="said">' + esc(e.note) + '</div>' : '') + '</div>';
     }).join('');
   }
   if (ef){
-    var opts = [['due','Due today'],['open','All open'],['resolved','Resolved'],['all','Everything']];
+    var opts = [['due','Due today'],['open','All open'],['closed','Closed'],['all','Everything']];
     ef.innerHTML = opts.map(function(o){
       return '<button data-f="' + o[0] + '"' + (o[0]===efilter?' class="on"':'') + '>' + o[1] + '</button>';
     }).join('');

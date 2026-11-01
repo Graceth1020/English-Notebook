@@ -35,8 +35,9 @@ Two things therefore get recycled:
   unprompted twice is ownership.
 
 The backlog will not reach zero at two or three sessions a week, and that is not
-the target. The measure is whether `resolved` errors and `owned` chunks keep
-climbing.
+the target. The measure is whether evidence-`resolved` errors and `owned` chunks
+keep climbing; `claimed` and `retired` closures are housekeeping, not mastery
+gains.
 
 ## Learner Profile
 
@@ -230,22 +231,65 @@ own next turn. That mistake was made on Day 05 and the learner caught it.
    main value this skill adds - do not withhold it out of caution, but never
    resolve a row the learner only got right after being shown the answer.
 
-   Then settle today's chunks and bank the new ones:
+   **Four error statuses, do not collapse them.** `open` is the only status
+   Hidden Review seeds. `resolved` keeps the evidence gate above: unprompted,
+   unaided live-chat production. `claimed` is a separate self-closure the
+   learner explicitly asks for without live evidence - it leaves the review
+   rotation but is **not** a resolve, and the Note cell records the date and
+   that no evidence was recorded:
+
+   ```bash
+   python scripts/chat_log.py claim --root <project-root> --id chat:E008 \
+       --reason "self-closed; no live-chat verification recorded"
+   ```
+
+   `retired` leaves the error track because the row duplicates another track
+   (a structure already owned as a pattern, or a register preference whose
+   spoken replacement is already an owned chunk) or merges into an existing
+   row; `--into` records the target:
+
+   ```bash
+   python scripts/chat_log.py retire --root <project-root> --id chat:E045 \
+       --into P001 --reason "same structure as owned pattern P001"
+   python scripts/chat_log.py retire --root <project-root> --id chat:E017 \
+       --into C017 --reason "spoken replacement owned as chunk C017"
+   ```
+
+   A `hit` on a `claimed` or `retired` row reopens it as `open` and records
+   the recurrence in the Note - self-closure never survives a real relapse.
+   Coach rows close only through `hit`/`resolve`; `claim`/`retire` refuse them.
+
+   Then settle today's existing chunks:
 
    ```bash
    python scripts/chat_log.py used   --root <project-root> --id C004
    python scripts/chat_log.py missed --root <project-root> --id C002
+   ```
+
+   **Standing freeze (set 2026-10-31): do NOT run `add-chunk` automatically.** No
+   new chunk is banked per session, no matter how good a candidate expression
+   looks. Bank a chunk only when the learner explicitly asks to add it, and when
+   that happens, update this skill / its references in the same step so the rule
+   and the bank stay consistent. The command still exists for those explicit
+   asks:
+
+   ```bash
    python scripts/chat_log.py add-chunk --root <project-root> \
        --chunk "That's on me" --gloss "take responsibility" \
        --example "Keeping the boundary is on me." --day 02
    ```
 
-   Bank **at most 4** chunks per session - `add-chunk` refuses a fifth - drawn from
-   the natural versions and from Codex's own turns, and only expressions the
-   learner actually needed today. Pass `--kind frame` for a sentence pattern
-   rather than a fixed phrase; frames are excluded from seeding and drilled
-   instead. See "Four chunks a session" below for what to cut when there are more
-   candidates than slots, which there usually are.
+   Pass `--kind frame` for a sentence pattern rather than a fixed phrase; frames
+   are excluded from seeding and drilled instead.
+
+   Correcting an existing chunk's Means, example, or scene goes through
+   `edit-chunk` - never hand-edit `chunks.md`; tried/used/status/review date
+   are left untouched:
+
+   ```bash
+   python scripts/chat_log.py edit-chunk --root <project-root> --id C115 \
+       --gloss "two senses: immediately (slightly formal); all at the same time"
+   ```
 
 5. **Close with the summary.** Write `chat/summaries/day-XX-YYYYMMDD.md` per
    `references/summary-format.md`, then record the row:
@@ -277,7 +321,7 @@ own next turn. That mistake was made on Day 05 and the learner caught it.
 Take **1-2** due items from the merged `due` list - never more, because the topic
 is already carrying 3-4 chunks and a conversation cannot chase six targets in
 five exchanges. If an error row cannot be reached by the topic the chunks
-chose, drop it: chunks have priority, and with 70-plus open rows there will
+chose, drop it: chunks have priority, and with dozens of open rows there will
 always be another chance at any given error. Say nothing about the seeding.
 
 Coach rows carry categories that a casual topic cannot always reach. Match the
@@ -291,10 +335,12 @@ category to a setting that can:
 If a due row is `function` or `tone` and today's topic cannot carry it, leave it
 for a `work`/`opinion` day rather than forcing the topic.
 
-Then, per seeded row: `resolve` if the natural form appeared unprompted, `hit` if
-the old pattern came back, and neither if the learner simply avoided the
-structure. Report each outcome in the summary's Hidden Review section - that is
-the only place the seeding is revealed.
+Only `open` rows are eligible for seeding; `claimed`, `retired`, and `resolved`
+rows never enter the `due` list and are not seeded. Then, per seeded row:
+`resolve` if the natural form appeared unprompted, `hit` if the old pattern
+came back (a hit on a closed row reopens it), and neither if the learner
+simply avoided the structure. Report each outcome in the summary's Hidden
+Review section - that is the only place the seeding is revealed.
 
 ## Chunk Recall
 
@@ -425,13 +471,24 @@ matter how good the expression is. The learner called this himself, and the
 arithmetic supports him: at 4 banked and ~1.5 credited per session the backlog
 grows faster than it clears, and every added row dilutes the seeding slots.
 
+**Current standing rule (set 2026-10-31, stricter than the Day 11 freeze):**
+auto-banking is fully off. Existing chunks are still settled every session
+(`used` / `missed` / pending / owned), but `add-chunk` runs only when the
+learner explicitly asks to add a chunk. On an explicit ask, update this skill
+or its references in the same step - the rule and the bank must not drift
+apart. The older "bank at most four per session" cap below describes the
+history behind the freeze; it no longer permits automatic banking.
+
 Exception: a chunk the learner explicitly asks to bank. Those come from him
 noticing a gap, and they carry a much higher hit rate than ones Codex picks.
 
-### Four chunks a session, no more
+### Four chunks a session, no more (historical - auto-banking is frozen)
 
-`add-chunk` refuses a fifth chunk on the same day. The cap exists because the
-bank was growing far faster than it could be consumed: Day 07 banked 8 and Day 08
+The scoring cut rules below still apply if the learner explicitly asks to bank a
+chunk in a session with several candidates; automatic per-session banking is off
+under the standing rule above. `add-chunk` refuses a fifth chunk on the same day.
+The cap exists because the bank was growing far faster than it could be consumed:
+Day 07 banked 8 and Day 08
 banked 9, against **57 chunks and none ever reaching `owned`**, while a session
 has only 4-5 seeding slots. Banking everything that sounded nice guaranteed most
 rows would never be seeded at all.
@@ -515,7 +572,7 @@ chat/
 ├── index.md                        one row per session: day, date, topic, turns, fixes, status
 ├── errors.md                       accumulated errors with spaced review dates
 ├── chunks.md                       banked expressions with kind + tried/used counts
-├── chunk-sheet.md                  generated phrasebook, grouped by session
+├── chunk-sheet.md                  generated phrasebook, grouped by session
 ├── qa.md                           English-language questions asked mid-chat, with answers - practice-system questions are not logged
 ├── sessions/day-XX-YYYYMMDD.md     full transcript with the inline fixes
 └── summaries/day-XX-YYYYMMDD.md    daily summary
@@ -548,7 +605,7 @@ The two error logs have **different column shapes** and always will:
 
 | file | columns |
 | --- | --- |
-| `chat/errors.md` | ID, Pattern, Category, You said, Say instead, Day, Hits, Status, Next review |
+| `chat/errors.md` | ID, Pattern, Category, You said, Say instead, Day, Hits, Status, Next review, Note |
 | `coach/errors.md` | ID, Bucket, Skill, Situation, Say, Model, Hint, Trap, Lesson, Hits, Status, Next |
 
 `chat_log.py` therefore parses **by header name, never by position**, and writes

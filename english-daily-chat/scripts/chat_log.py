@@ -27,8 +27,11 @@ And one chunk bank, chat/chunks.md, holding the "worth stealing" expressions
 with their own review schedule and an owned/tried counter.
 
 Errors and chunks resurface on a spaced schedule (3, 7, 16, 30 days). An error
-is resolved only when the learner produces the natural form unprompted; a chunk
-is owned only after two unprompted uses in a new context.
+is `resolved` only when the learner produces the natural form unprompted;
+`claimed` is a separate self-closure the learner asks for without live evidence,
+and `retired` leaves the error track because it duplicates another track
+(e.g. a pattern row) or merges into an existing row. A chunk is owned only
+after two unprompted uses in a new context.
 
 Usage:
   chat_log.py next                            # next day number + file paths
@@ -36,8 +39,10 @@ Usage:
   chat_log.py due [--top 2] [--source both|chat|coach]
   chat_log.py add --pattern "flat disagreement" --category function \
       --said "I don't think so." --fix "I see it a bit differently." --day 01
-  chat_log.py hit --id coach:E012             # pattern recurred
+  chat_log.py hit --id coach:E012             # pattern recurred (reopens if closed)
   chat_log.py resolve --id coach:E012         # produced correctly, unprompted
+  chat_log.py claim --id chat:E008            # learner self-closed, no evidence
+  chat_log.py retire --id chat:E045 --into P001
   chat_log.py list [--status open] [--source both|chat|coach]
 
   chat_log.py add-chunk --chunk "That's on me" --gloss "take responsibility" \
@@ -81,7 +86,8 @@ ERR_ROW_RE = re.compile(r"^\|\s*(E\d+)\s*\|")
 # 9-column table; coach/errors.md was rebuilt as 12 drillable-card columns.
 # Rows are therefore mapped by HEADER NAME, not by position, and each file is
 # written back in exactly the shape it was read in.
-ERR_FIELDS = ["id", "pattern", "category", "said", "fix", "origin", "hits", "status", "next"]
+ERR_FIELDS = ["id", "pattern", "category", "said", "fix", "origin", "hits",
+              "status", "next", "note"]
 COACH_FIELDS = ["id", "bucket", "skill", "situation", "say", "model", "hint",
                 "trap", "origin", "hits", "status", "next"]
 
@@ -92,6 +98,7 @@ HEADER_ALIASES = {
     "day": "origin", "lesson": "origin",
     "hits": "hits", "status": "status",
     "next": "next", "next review": "next",
+    "note": "note", "closure note": "note",
     "bucket": "bucket", "skill": "skill", "situation": "situation",
     "say": "say", "model": "model", "hint": "hint", "trap": "trap",
 }
@@ -110,7 +117,8 @@ LOGS = {
             "",
             "Phrasings the learner actually produced in daily chat, with the natural",
             "version and a spaced review date. `Hits` counts how many times the pattern",
-            "recurred. Rows are resolved only after the natural form appears unprompted.",
+            "recurred. `resolved` needs the natural form unprompted in live chat; `claimed`",
+            "is a learner self-closure without evidence; `retired` duplicates another track.",
             "Maintained by scripts/chat_log.py - do not hand-edit.",
         ],
     },
@@ -245,7 +253,7 @@ def err_header(which: str) -> str:
         return ("| ID | Bucket | Skill | Situation | Say | Model | Hint | Trap "
                 "| Lesson | Hits | Status | Next |")
     return ("| ID | Pattern | Category | You said | Say instead | "
-            f"{LOGS[which]['origin']} | Hits | Status | Next review |")
+            f"{LOGS[which]['origin']} | Hits | Status | Next review | Note |")
 
 
 def err_fields(which: str) -> list[str]:
@@ -356,32 +364,36 @@ def read_errors(root, which):
     preamble: list[str] = []
     rows: list[dict] = []
     header = sep = None
+    header_fields = None
     fields = default["fields"]
     with open(path, encoding="utf-8") as fh:
         for line in fh.read().splitlines():
             if ERR_ROW_RE.match(line):
                 cells = [c.strip() for c in line.strip().strip("|").split("|")]
-                if len(cells) >= len(fields):
-                    row = dict(zip(fields, cells))
-                    row["_ord"] = len(rows)
-                    rows.append(row)
-                else:
-                    print(f"[warn] {which}: skipped a row with {len(cells)} cells, "
-                          f"header declares {len(fields)}", file=sys.stderr)
+                if len(cells) < len(fields):
+                    cells += [""] * (len(fields) - len(cells))
+                elif len(cells) > len(fields):
+                    cells = cells[:len(fields)]
+                row = dict(zip(fields, cells))
+                row["_ord"] = len(rows)
+                rows.append(row)
                 continue
             if line.strip().startswith("|"):
                 stripped = line.replace("|", "").replace(" ", "")
                 if header is None and line.strip().lower().startswith("| id"):
-                    header, fields = line, fields_from_header(line)
+                    header, header_fields = line, fields_from_header(line)
                 elif sep is None and stripped and set(stripped) <= set("-:"):
                     sep = line
                 continue
             preamble.append(line)
-    _SCHEMA[which] = {
-        "header": header or default["header"],
-        "sep": sep or err_sep(header or default["header"]),
-        "fields": fields,
-    }
+    # The chat log keeps the canonical column shape (including the Note
+    # column); the coach log must keep its own hand-shaped 12-column layout.
+    if which == "chat":
+        header, fields = default["header"], ERR_FIELDS
+        sep = err_sep(header)
+    else:
+        fields = header_fields or default["fields"]
+    _SCHEMA[which] = {"header": header, "sep": sep or err_sep(header), "fields": fields}
     return preamble, rows
 
 
@@ -393,11 +405,14 @@ def write_errors(root, which, preamble, rows):
         schema = {"header": header, "sep": err_sep(header), "fields": err_fields(which)}
     # Keep the file's existing row order. coach/errors.md is grouped by bucket
     # by hand, and re-sorting it by id would silently destroy that grouping and
-    # make every write a large diff. Resolved rows still sink to the bottom.
-    order = {"open": 0, "resolved": 1}
+    # make every write a large diff. Closed rows still sink to the bottom.
+    order = {"open": 0, "claimed": 1, "retired": 2, "resolved": 3}
     rows = sorted(rows, key=lambda r: (order.get(r["status"], 0),
                                        r.get("_ord", 1 << 30)))
-    write_table(log_path(root, which), preamble, LOGS[which]["preamble"],
+    # The chat preamble describes the current status model; keep it canonical.
+    # The coach log keeps its own hand-written preamble untouched.
+    out_preamble = LOGS[which]["preamble"] if which == "chat" else preamble
+    write_table(log_path(root, which), out_preamble, LOGS[which]["preamble"],
                 schema["header"], schema["sep"], rows, schema["fields"])
 
 
@@ -547,7 +562,8 @@ def cmd_add(a):
     """New chat errors always land in chat/errors.md."""
     pre, rows = read_errors(a.root, "chat")
     for r in rows:
-        if r["pattern"].lower() == a.pattern.lower() and r["status"] == "open":
+        if (r["pattern"].lower() == a.pattern.lower()
+                and r["status"] != "resolved"):
             print(f"[warn] pattern already logged as chat:{r['id']}; recording a hit")
             a.id = f"chat:{r['id']}"
             return cmd_hit(a)
@@ -556,6 +572,7 @@ def cmd_add(a):
         "id": eid, "pattern": esc(a.pattern), "category": a.category,
         "said": esc(a.said), "fix": esc(a.fix), "origin": esc(a.day) or "-",
         "hits": "1", "status": "open", "next": schedule(1, today(a.as_of)),
+        "note": "",
     })
     write_errors(a.root, "chat", pre, rows)
     print(f"[OK] chat:{eid} added -> {log_path(a.root, 'chat')}")
@@ -568,6 +585,10 @@ def cmd_hit(a):
     for r in rows:
         if r["id"] == eid:
             hits = int(r["hits"]) + 1 if r["hits"].isdigit() else 2
+            closed = r["status"]
+            if closed != "open":
+                r["note"] = f"reopened after {closed} closure; recurred " \
+                            f"{today(a.as_of).isoformat()}"
             r["hits"], r["status"] = str(hits), "open"
             r["next"] = schedule(hits, today(a.as_of))
             write_errors(a.root, which, pre, rows)
@@ -578,6 +599,7 @@ def cmd_hit(a):
 
 
 def cmd_resolve(a):
+    """Evidence-only closure: natural form produced unprompted in live chat."""
     which, eid = parse_id(a.id)
     pre, rows = read_errors(a.root, which)
     for r in rows:
@@ -585,9 +607,57 @@ def cmd_resolve(a):
             if r["status"] == "resolved":
                 print(f"[warn] {which}:{eid} already resolved")
                 return 0
-            r["status"], r["next"] = "resolved", "-"
+            r["status"], r["next"], r["note"] = "resolved", "-", ""
             write_errors(a.root, which, pre, rows)
             print(f"[OK] {which}:{eid} resolved ({view(which, r)['pattern']})")
+            return 0
+    print(f"[ERROR] no such id in {which} log: {eid}", file=sys.stderr)
+    return 1
+
+
+def cmd_claim(a):
+    """Learner self-closure without live-chat evidence. Not a `resolve`."""
+    which, eid = parse_id(a.id)
+    if which == "coach":
+        print("[ERROR] coach rows close only through hit/resolve", file=sys.stderr)
+        return 1
+    pre, rows = read_errors(a.root, which)
+    for r in rows:
+        if r["id"] == eid:
+            if r["status"] == "resolved":
+                print(f"[warn] {which}:{eid} already resolved on evidence")
+                return 0
+            if r["status"] == "claimed":
+                print(f"[warn] {which}:{eid} already claimed")
+                return 0
+            reason = esc(a.reason) or "self-closed by learner; no live-chat evidence"
+            r["status"], r["next"] = "claimed", "-"
+            r["note"] = f"claimed {today(a.as_of).isoformat()}: {reason}"
+            write_errors(a.root, which, pre, rows)
+            print(f"[OK] {which}:{eid} claimed ({view(which, r)['pattern']})")
+            return 0
+    print(f"[ERROR] no such id in {which} log: {eid}", file=sys.stderr)
+    return 1
+
+
+def cmd_retire(a):
+    """Leave the error track: duplicates another track or merges into a row."""
+    which, eid = parse_id(a.id)
+    if which == "coach":
+        print("[ERROR] coach rows close only through hit/resolve", file=sys.stderr)
+        return 1
+    pre, rows = read_errors(a.root, which)
+    for r in rows:
+        if r["id"] == eid:
+            if r["status"] == "resolved":
+                print(f"[warn] {which}:{eid} already resolved on evidence")
+                return 0
+            target = esc(a.into) or "-"
+            reason = esc(a.reason) or "duplicates another track"
+            r["status"], r["next"] = "retired", "-"
+            r["note"] = f"retired {today(a.as_of).isoformat()}; merged into {target}: {reason}"
+            write_errors(a.root, which, pre, rows)
+            print(f"[OK] {which}:{eid} retired -> {target}")
             return 0
     print(f"[ERROR] no such id in {which} log: {eid}", file=sys.stderr)
     return 1
@@ -637,8 +707,11 @@ def cmd_list(a):
         print(f"--- {which} ({len(rows)}) ---")
         for r in rows:
             v = view(which, r)
-            print(f"{which}:{r['id']} [{r['status']}] {v['category']}: {v['pattern']} "
-                  f"(hits {r['hits']}, next {r['next']})")
+            line = (f"{which}:{r['id']} [{r['status']}] {v['category']}: {v['pattern']} "
+                    f"(hits {r['hits']}, next {r['next']})")
+            if r.get("note"):
+                line += f"  -- {r['note']}"
+            print(line)
         total += len(rows)
     if not total:
         print("No entries.")
@@ -694,6 +767,35 @@ def cmd_add_chunk(a):
     print(f"[OK] {cid} banked ({kind}) -> {chunks_path(a.root)}")
     if kind == "frame":
         print("  frame: excluded from chunks-due; add a pattern drill instead")
+    return 0
+
+
+def cmd_edit_chunk(a):
+    """Correct an existing chunk's gloss/example/scene; rotation counters stay put."""
+    pre, rows = read_chunks(a.root)
+    row = find_chunk(rows, a.id)
+    if not row:
+        print(f"[ERROR] no such chunk: {a.id}", file=sys.stderr)
+        return 1
+    changed: list[str] = []
+    if a.gloss is not None:
+        row["gloss"] = esc(a.gloss)
+        changed.append("gloss")
+    if a.example is not None:
+        row["example"] = esc(a.example)
+        changed.append("example")
+    if a.scene is not None:
+        if a.scene not in SCENES:
+            print(f"[error] --scene must be one of {', '.join(SCENES)}",
+                  file=sys.stderr)
+            return 1
+        row["scene"] = a.scene
+        changed.append("scene")
+    if not changed:
+        print("nothing to update; pass --gloss, --example, or --scene")
+        return 0
+    write_chunks(a.root, pre, rows)
+    print(f"[OK] {row['id']} updated ({', '.join(changed)})")
     return 0
 
 
@@ -1173,12 +1275,22 @@ def main() -> int:
     p = common(sub.add_parser("resolve")); p.set_defaults(fn=cmd_resolve)
     p.add_argument("--id", required=True, help="chat:E003 / coach:E012")
 
+    p = common(sub.add_parser("claim")); p.set_defaults(fn=cmd_claim)
+    p.add_argument("--id", required=True, help="chat:E003 (self-closure, no evidence)")
+    p.add_argument("--reason", default="", help="why the learner closed it")
+
+    p = common(sub.add_parser("retire")); p.set_defaults(fn=cmd_retire)
+    p.add_argument("--id", required=True, help="chat:E045")
+    p.add_argument("--into", default="-", help="track row it merges into, e.g. P001")
+    p.add_argument("--reason", default="", help="why it leaves the error track")
+
     p = common(sub.add_parser("due")); p.set_defaults(fn=cmd_due)
     p.add_argument("--top", type=int, default=2)
     p.add_argument("--source", default="both", choices=["both", "chat", "coach"])
 
     p = common(sub.add_parser("list")); p.set_defaults(fn=cmd_list)
-    p.add_argument("--status", default="all", choices=["all", "open", "resolved"])
+    p.add_argument("--status", default="all",
+                   choices=["all", "open", "claimed", "retired", "resolved"])
     p.add_argument("--source", default="both", choices=["both", "chat", "coach"])
 
     p = common(sub.add_parser("add-chunk")); p.set_defaults(fn=cmd_add_chunk)
@@ -1193,6 +1305,15 @@ def main() -> int:
                         "frame = sentence pattern, drilled not seeded")
     p.add_argument("--force", action="store_true",
                    help=f"bank past the per-day cap of {DAILY_CHUNK_CAP}")
+
+    p = common(sub.add_parser("edit-chunk")); p.set_defaults(fn=cmd_edit_chunk)
+    p.add_argument("--id", required=True, help="C004 or the chunk text")
+    p.add_argument("--gloss", default=None,
+                   help="replacement Means; omitted leaves it unchanged")
+    p.add_argument("--example", default=None,
+                   help="replacement example; omitted leaves it unchanged")
+    p.add_argument("--scene", choices=SCENES, default=None,
+                   help="replacement scene; omitted leaves it unchanged")
 
     p = common(sub.add_parser("chunks-due")); p.set_defaults(fn=cmd_chunks_due)
     p.add_argument("--top", type=int, default=4)

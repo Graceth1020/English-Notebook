@@ -35,6 +35,31 @@ never "I won't to put it down" (one instance, Day 22). Not worth a drill until
 it recurs.
 
 
+## "Form intact, wrong slot" - the chunk reaches the wrong concept (2026-10-31)
+
+Distinct from fixed-part damage above. The fixed phrase comes out whole, but
+its meaning slot does not match what the sentence talks about:
+
+- C125 `high-priority / low-priority` -> "a high-priority drink" (Day 45). The
+  adjective ranks tasks and projects, not beverages; he meant the default/go-to
+  drink. Form was perfect, concept wrong - logged `missed`, same as a broken
+  form, because the learner has not owned the collocation's boundary yet.
+
+Watch for the next occurrence: if a chunk keeps landing on a nearby but
+wrong concept, the gap is semantic scope, not assembly - a contrast card
+(high-priority task vs default drink) may be more useful than another seed.
+
+## Prompt comprehension: abstract options stall, concrete A/B does not (2026-10-31)
+
+Day 45 exchange 4 opened with "settle everything in one go / sort it out piece
+by piece" - he could not parse it after one plain-language unpacking, and asked
+for a second round. A concrete two-option example (one message with the whole
+plan vs several messages, one decision each) unblocked it immediately. When a
+planning or process question stalls twice, skip the abstract vocabulary and
+write the two situations as labeled mini-examples before asking again. Those
+clarification rounds are `[meta]`, never counted as exchanges.
+
+
 ## "I + verb" every time - the fronted subject never comes out (2026-09-20)
 
 Every sentence expressing a thing or a wish opens with "I + verb"; the object or
