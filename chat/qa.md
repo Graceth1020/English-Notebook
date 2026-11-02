@@ -477,3 +477,13 @@ you see the error in production and immediately know it is your code.
 **Q:** all in all 不是跟 C027（all in）一样吗？
 
 **A:** 不一样，是两个不同的固定短语。all in = 全部算下来、总共（给数字收尾）：All in, there are four business codebases. / All in, I'd put it at a week. all in all = 总的来说、综合考虑（给评价收尾）：All in all, it was a good week. 你今天写的 All in, there are four business codebase 本来就是对的——正是 C027 的用法，我不该改成 all in all，记录已更正。记法：all in 后面跟数字/总量，all in all 后面跟评价。
+
+## Day 46 - 2026-11-02
+
+**Q:** 一个播客叫 "How to Invest"，主题是 investing，想同时说出标题和主题，句子该怎么写？(Pattern 24 R3 讲评)
+
+**A:** 不能把两个标签直接叠在同一个名词短语后面。合法写法三类：
+1. 一个短语内，顺序固定为「主题在前、标题在后」：a podcast on investing called "How to Invest"。
+2. 拆开写，用逗号、破折号或第二个句子隔开：I'd recommend a podcast called "How to Invest" — it's all about investing. / I'd recommend "How to Invest," a podcast on investing. / I'd recommend a podcast called "How to Invest." It covers investing.
+3. 最自然的母语说法只给一个标签——标题本身已经说了主题，再说 on investing 就重复了：I'd recommend a podcast called "How to Invest." 或 I'd recommend a podcast on investing。
+为什么 a podcast called "How to Invest" on investing 不通：on investing 紧贴标题短语，读者会把它粘到标题上，两个修饰语挤在一个名词后没有停顿。短语内顺序是 on X（主题）→ called "Y"（标题）；标题在前时，主题必须用逗号、破折号或第二句重新引出。记法：一个名词短语只挂一个直接标签；要两个标签，要么主题在前标题在后，要么拆成两处。

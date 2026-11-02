@@ -29,7 +29,10 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+# Standalone study decks copied verbatim into public; they carry their own app
+# shell, CSS and JS and must not be wrapped by the notebook theme layout.
 skip_render:
+  - juyouci/**/*.html
 
 # Markdown rendering
 # hexo-renderer-marked defaults to breaks: true, which turns every single newline

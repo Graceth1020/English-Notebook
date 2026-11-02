@@ -22,6 +22,8 @@ Instances so far:
 - C091 `high-spec` -> "has a high-sec" (Day 44, 1st try; spec->sec + adjective used as a noun)
 - C045 `get in the way of` -> "gets ON the way" (Day 44; preposition broke, pending row so no off-scene confirm either)
 - C124 hint contamination (Day 44): named in Day 43's Two To Use, produced correctly next day - credit REVERTED. Two To Use naming = one-day hint; a chunk named there can only be credited from a later session.
+- C126 `get involved in (something)` -> "which different teams are get involved in" (Day 46; auxiliary stack broke: are + get cannot coexist; reached-but-broken, logged missed).
+- C089 `matter to (someone)` -> "it really matters for the developers" (Day 46; preposition slot broke, to -> for; reached-but-broken, logged missed).
 
 Pattern in the damage: the fixed parts break - the particle, the article, the
 modal+to glue - never the content words. The learner knows the chunk; the

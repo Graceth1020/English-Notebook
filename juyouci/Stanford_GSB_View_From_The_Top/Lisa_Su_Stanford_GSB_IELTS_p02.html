@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>剧有词 · 学习器</title>
+<style>
+:root{--bg:#f4f3ed;--ink:#213e39;--muted:#687772;--line:#d8dfd6;--green:#235a47;--soft:#e5ecdf}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1080px;margin:auto;padding:38px 28px 64px}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(26px,4vw,40px);letter-spacing:-1px;margin:6px 0}p{margin:8px 0}.muted{color:var(--muted);font-size:14px}.badge{border:1px solid var(--line);border-radius:30px;padding:6px 13px;font-size:12px;white-space:nowrap}.stats{display:flex;gap:28px;margin:24px 0}.stats strong{font-size:28px;margin-right:8px}nav,.toolbar,.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}button,select,input{font:inherit}button,select{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 16px;border-radius:10px;cursor:pointer}button:hover{background:var(--soft)}button:disabled{opacity:.4;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d99945;outline-offset:3px}.primary,button[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}.toolbar{justify-content:space-between;margin:22px 0 16px}.toolbar label{display:flex;align-items:center;gap:10px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px 40px;min-height:370px;box-shadow:0 12px 35px #213e3906}.sentence{font-family:Georgia,serif;font-size:clamp(25px,4vw,36px);line-height:1.5;margin:28px 0;color:#193e33;overflow-wrap:anywhere}.answer{border-top:1px solid var(--line);margin:22px 0;padding-top:18px}.term{font-size:22px;font-weight:650}.ipa{font-size:16px;color:var(--muted);font-weight:400;margin-left:12px}.type-badge{font-size:12px;font-weight:600;color:#855220;background:#f2e5c8;border-radius:12px;padding:2px 10px;margin-left:10px;vertical-align:middle}.speak-term{padding:8px 12px;font-size:14px}.word-speak{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:14px;margin-left:auto}.word-speak:hover{background:var(--soft)}.actions{margin-top:24px}.bottom{justify-content:space-between;margin-top:18px;display:flex;gap:12px;align-items:center}.hint{font-size:12px;color:var(--muted)}input[type=search]{width:100%;padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:white;margin:22px 0}.word{background:white;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin-bottom:12px}.word-top{display:flex;justify-content:space-between;gap:12px}.word p{overflow-wrap:anywhere}.word .example{font-family:Georgia,serif;font-size:20px}footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--line)}footer .actions{margin-top:12px}#notice{min-height:24px;color:#855220;font-size:14px}#source-list{overflow-wrap:anywhere}a{color:var(--green)}[hidden]{display:none!important}.empty{background:#fff;border:1px dashed var(--line);border-radius:18px;padding:32px;margin:26px 0}.empty h2{margin-top:0}.word-target{font-size:clamp(28px,4vw,38px);line-height:1.25;margin:10px 0 4px;overflow-wrap:anywhere}.target-label{font-size:13px;color:var(--muted);letter-spacing:.04em}.recall-prompt{font-size:18px;line-height:1.5;margin:12px 0}.sentence mark{background:#e3edb9;color:inherit;border-radius:4px;padding:0 3px}.sentence mark.blank{background:#f2e5c8;letter-spacing:.08em}.answer-input{width:min(100%,540px);min-height:52px;padding:12px 16px;border:1px solid #9aaea2;border-radius:10px;background:white;color:var(--ink);font-size:18px}.answer-input[disabled]{background:#f4f3ed}.feedback{min-height:30px;margin-top:12px;font-weight:600}.feedback.good{color:#235a47}.feedback.retry{color:#8b4b17}.actions button{min-height:44px}mark{background:#e3edb9;color:inherit;border-radius:4px;padding:0 3px}@media(max-width:620px){main{padding:24px 16px}header{display:block}.badge{display:inline-block;margin-top:10px}.card{padding:22px;min-height:360px}.stats{gap:18px}.stats strong{font-size:23px}.bottom{align-items:flex-start;flex-direction:column}.actions button{flex:1}.word{padding:16px}.toolbar{align-items:flex-start;flex-direction:column}.toolbar label{align-items:flex-start;flex-direction:column;gap:4px}.word-target{font-size:30px}.recall-prompt{font-size:16px}.answer-input{font-size:16px}}
+</style></head>
+<body><main>
+<header><div><div class="eyebrow">JUYOUCI / 剧有词</div><h1 id="title">剧有词</h1><p class="muted">选一段素材，学一批词。</p></div><span class="badge">独立 HTML · 随时学习</span></header>
+<section id="empty-library" class="empty" hidden><h2>学习器里还没有词库</h2><p>请让剧有词把词库加入这个学习网页，再重新生成文件。</p></section>
+<div id="workspace" hidden>
+<div class="toolbar" aria-label="学习器设置"><label>选择词库 <select id="deck-select" aria-label="选择词库"></select></label><label>练习方式 <select id="practice-mode" aria-label="练习方式"><option value="flashcard">两阶段自评（默认）</option><option value="typed">输入目标语言</option></select></label></div>
+<section id="deck-empty" class="empty" hidden><h2>这个词库还没有词条</h2><p>选择其他词库，或让剧有词为这个素材添加词条。</p></section>
+<div id="deck-content">
+<div class="stats" aria-label="学习统计"><div><strong id="total">0</strong>词条</div><div><strong id="learned">0</strong><span id="learned-label">已掌握</span></div><div><strong id="remaining">0</strong>待练习</div></div>
+<nav aria-label="页面模式"><button id="study-tab" aria-pressed="true">学习与回忆</button><button id="list-tab" aria-pressed="false">词汇总览</button></nav>
+<section id="study"><div class="toolbar"><label>练习范围 <select id="filter"><option value="unlearned">继续学习</option><option value="again">需要再练</option><option value="all">全部复习</option></select></label><button id="shuffle">打乱顺序</button></div>
+<div class="card"><div class="eyebrow" id="position"></div><div class="answer" id="answer-block"><div class="target-label" id="target-label">本次要学</div><h2 class="word-target" id="target"></h2><span class="type-badge" id="type-badge" hidden>短语</span><span class="ipa" id="ipa"></span><p class="muted" id="meaning"></p><p id="translation"></p></div><p class="recall-prompt" id="prompt"></p><p class="sentence" id="sentence"></p>
+<div class="actions" id="learn-actions"><button class="primary" id="start">学过了，稍后考我</button><button id="speak-term">朗读词条</button><button id="speak">朗读原句</button></div>
+<div class="actions" id="self-actions" hidden><button class="primary" id="reveal">核对答案</button><button id="speak-term-self">朗读词条</button><button id="self-speak">朗读原句</button></div>
+<div class="actions" id="ratings" hidden><button id="again">没想起来</button><button class="primary" id="known">想起来了</button></div>
+<div id="typed-actions" hidden><label class="target-label" for="answer-input" id="answer-label">根据中文提示，输入目标语言</label><div class="actions"><input id="answer-input" class="answer-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="feedback"><button class="primary" id="check">检查答案</button><button id="give-up">看答案，再练</button></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p><button id="continue" hidden>继续下一词 →</button></div></div>
+<div class="bottom"><span class="hint" id="keyboard-hint">按空格核对答案 · 显示答案后按 1 再练 / 2 想起来了</span></div>
+<p class="hint" id="mode-hint">先学词 → 回忆词义 → 回想目标语言。请先在心里作答，再核对答案；答错会自动排回队列。</p></section>
+<section id="list" hidden><input id="search" type="search" aria-label="搜索词汇" placeholder="搜索词汇、释义或台词…"><p class="muted" id="results"></p><div id="words"></div></section>
+<footer><div id="notice" role="status" aria-live="polite"></div><p class="hint">学习进度按词库保存在当前浏览器。换浏览器、移动文件或清理数据前，请导出备份。练习方式会保存在这个浏览器中。朗读使用设备语音，声音及离线可用性取决于浏览器。</p><div class="actions"><button id="export">导出进度</button><button id="import">导入进度</button><button id="reset">重置进度</button><input type="file" id="file" accept="application/json,.json" hidden></div><p class="muted" id="profile"></p><p class="muted" id="note"></p><details><summary class="hint">内容来源</summary><div id="source-list"></div></details></footer>
+</div>
+</main><script type="application/json" id="vocab-library">{"schema_version": 1, "decks": [{"title": "Lisa Su · Stanford GSB View From The Top · IELTS 词汇（2/4）", "deck_id": "lecture:lisa-su-stanford:zh:p02", "language": "English", "exam_target": "IELTS", "level_target": "C1-C2", "selection_basis": "基于用户提供的英文访谈原文，按 IELTS C1–C2 范围筛选；例句均来自真实对白，不虚构台词。", "difficulty_feedback": "首轮 B2–C1 用户反馈偏简单，上调一档至 C1–C2；第二轮按 C1–C2 审计剔除 40 条 B1/A2 偏低词条，原位替换为更高级候选（详见 C1-C2-level-audit.md 方案 B）。", "source_type": "lecture", "cards": [{"term": "transformation", "meaning": "转型；彻底变革", "ipa": "/ˌtrænsfərˈmeɪʃn/", "sentence": "So I joined in 2012 to run the business units, there was no concept of business units, PNLs, those kinds of things, so there was a lot of transformation to be done there.", "translation": "我 2012 年加入并负责业务部门时，公司根本没有业务部门、损益表这类概念，因此有很多变革要做。", "card_type": "word", "answers": ["transformation"], "targets": ["transformation"], "target_spans": [[138, 152]], "id": "e370887a8f44a15ed19a"}, {"term": "precision", "meaning": "精确；精准程度", "ipa": "/prɪˈsɪʒn/", "sentence": "And look, I think the moral of the story is you never know ,you can't plan these things to any precision, but what was clear was that we had to transition some of our strategy as a company, and we were ready for a change.", "translation": "我觉得这件事的教训是，你永远无法精确规划这一切；但很清楚的是，我们必须转变公司的部分战略，而我们当时已经准备好迎接改变。", "card_type": "word", "answers": ["precision"], "targets": ["precision"], "target_spans": [[95, 104]], "id": "513ae347c0683702b394"}, {"term": "brink", "meaning": "边缘（濒临…的状态）", "ipa": "/brɪŋk/", "sentence": "Well, it definitely wasn't easy when you joined the helm, the company was at the brink of bankruptcy, and the share price was hovering at around $3 under your leadership at its peak,AMD shares topped $200.", "translation": "你执掌公司时情况显然并不轻松，公司濒临破产，股价徘徊在 3 美元上下；而在你的领导下，AMD 股价峰值突破了 200 美元。", "card_type": "word", "answers": ["brink"], "targets": ["brink"], "target_spans": [[81, 86]], "id": "5781ac043eeefd224cbf"}, {"term": "defensive", "meaning": "防守型的；守成的", "ipa": "/dɪˈfensɪv/", "sentence": "So how did you balance between defensive leadership, which involved cost cutting and focusing on the core, with offensive leadership, which involved diversifying product lines and taking bolder bets?", "translation": "你是如何在防守型领导（削减成本、聚焦核心）与进攻型领导（拓展产品线、下更大的赌注）之间取得平衡的？", "card_type": "word", "answers": ["defensive"], "targets": ["defensive"], "target_spans": [[31, 40]], "id": "1ef25fbae1a59f641f54"}, {"term": "sector", "meaning": "行业；领域；板块", "ipa": "/ˈsektər/", "sentence": "At the time, the most interesting sector, frankly, was mobile smartphones were taking off, everyone was like, Lisa, why aren't we building mobile chips?", "translation": "当时坦率说最热门的行业是移动，智能手机正在崛起，所有人都问：丽莎，我们为什么不做手机芯片？", "card_type": "word", "answers": ["sector"], "targets": ["sector"], "target_spans": [[34, 40]], "id": "f76e7fee349780a21942"}, {"term": "fundamentally", "meaning": "根本上；本质上", "ipa": "/ˌfʌndəˈmentəli/", "sentence": "And we thought about it, actually we sized it, we looked at it, we spent quite a bit of time looking at it, and we realized that, yes, that is a good business, but that actually is not a good business for us, because that's not fundamentally what we are best at.", "translation": "我们认真评估、研究了很久，最后意识到：那确实是一门好生意，但不适合我们，因为那从根本上并不是我们最擅长的事。", "card_type": "word", "answers": ["fundamentally"], "targets": ["fundamentally"], "target_spans": [[228, 241]], "id": "41d032eeb1260a38c3d3"}, {"term": "derivative", "meaning": "n. 衍生物；派生出来的产品/成果", "ipa": "/dɪˈrɪvətɪv/", "sentence": "And so you're seeing many derivatives of this come about.", "translation": "因此你会看到由此衍生出的许多后续产品。", "card_type": "word", "answers": ["derivative"], "targets": ["derivatives"], "target_spans": [[26, 37]], "id": "89d3532db4b0303478f9"}, {"term": "landscape", "meaning": "格局；行业全貌", "ipa": "/ˈlændskeɪp/", "sentence": "And there are many reasons for that, you can look at what your competition looks like, you can look at what the technology landscape looks like, you can look at where you think the markets are going.", "translation": "这背后有很多原因：你可以看竞争格局，可以看技术格局，也可以看你认为市场将走向何方。", "card_type": "word", "answers": ["landscape"], "targets": ["landscape"], "target_spans": [[123, 132]], "id": "7f4ec592bd7b65a99eb8"}, {"term": "summarize", "meaning": "概括；总结", "ipa": "/ˈsʌməraɪz/", "sentence": "But if I kind of summarize there's probably a few basic things, right?", "translation": "但如果我来概括，大概有几个基本要点，对吧？", "card_type": "word", "answers": ["summarize"], "targets": ["summarize"], "target_spans": [[17, 26]], "id": "e94ef945425908f157d5"}, {"term": "inflection", "meaning": "拐点；趋势转折点", "ipa": "/ɪnˈflekʃn/", "sentence": "You want to make sure that as a company that you're in markets that are large enough especially picking markets where you see there is sort of industry transformations coming industry inflections coming.", "translation": "作为一家公司，你要确保身处足够大的市场，尤其是要选那些能看到行业变革、行业拐点正在到来的市场。", "card_type": "word", "answers": ["inflection"], "targets": ["inflections"], "target_spans": [[184, 195]], "id": "6286f541fd344f0a75eb"}, {"term": "vision", "meaning": "愿景；长远设想", "ipa": "/ˈvɪʒn/", "sentence": "And I knew that my job as a COO at the time was to lay out that vision, but then also give our team enough time to fully realize that vision, because nothing changes quickly.", "translation": "我知道当时作为 COO，我的职责是勾勒出这份愿景，同时给团队足够的时间去充分实现它，因为任何改变都不会一蹴而就。", "card_type": "word", "answers": ["vision"], "targets": ["vision"], "target_spans": [[64, 70], [134, 140]], "id": "331b4ab11e01f122dc35"}, {"term": "essentially", "meaning": "本质上；基本上", "ipa": "/ɪˈsenʃəli/", "sentence": "Moore's Law was essentially slowing down, and there was going to be new technologies that would make a difference and that's what we were going to bet on in terms of going forward.", "translation": "摩尔定律基本上正在放缓，将会出现一些带来改变的新技术，而我们未来要押注的正是这些技术。", "card_type": "word", "answers": ["essentially"], "targets": ["essentially"], "target_spans": [[16, 27]], "id": "14b9416cf4cef568c541"}, {"term": "align", "meaning": "使一致；对齐（方向/资源）", "ipa": "/əˈlaɪn/", "sentence": "So I think the key with any, people call it a turnaround, yes, maybe I call it more you have to kind of see where the future is going and try to align your resources and your focus with where the future is going.", "translation": "所以我认为关键在于，人们称之为扭转局面；我更愿意说，你得看清未来的走向，并让资源和注意力与未来的方向保持一致。", "card_type": "word", "answers": ["align"], "targets": ["align"], "target_spans": [[145, 150]], "id": "261f8d7c18dcfabfb5db"}, {"term": "mindset", "meaning": "思维模式；心态", "ipa": "/ˈmaɪndset/", "sentence": "Right, and other than a technological change, there was also a cultural shift within the company, were there any key decisions you made that helped change AMD's internal mindset from being an underdog to an industry leader?", "translation": "除了技术变革，公司内部也经历了文化转变。你做出过哪些关键决策，帮助 AMD 的内部心态从弱者心态转向行业领导者？", "card_type": "word", "answers": ["mindset"], "targets": ["mindset"], "target_spans": [[170, 177]], "id": "8906ca4b91ad4a85c450"}, {"term": "collaboration", "meaning": "协作；合作精神", "ipa": "/kəˌlæbəˈreɪʃn/", "sentence": "And what we have certainly seen in the process is that collaboration is a big piece of that.", "translation": "在这个过程中我们确实看到，协作是其中很重要的一环。", "card_type": "word", "answers": ["collaboration"], "targets": ["collaboration"], "target_spans": [[55, 68]], "id": "aca113ee872054dbfa9b"}, {"term": "achieve", "meaning": "v. 实现；达成（目标）", "ipa": "/əˈtʃiːv/", "sentence": "So I answer that question is, what do I want to achieve?", "translation": "所以我对这个问题的回答是：我想实现什么？", "card_type": "word", "answers": ["achieve"], "targets": ["achieve"], "target_spans": [[48, 55]], "id": "2bde207766043bfca964"}, {"term": "geopolitical", "meaning": "地缘政治的", "ipa": "/ˌdʒiːoʊpəˈlɪtɪkl/", "sentence": "I love that, a learning culture is something we can all take home with us, now, I want to shift over to talking a bit about the industry and AI, the semiconductor industry is as much a geopolitical story as it is a technological one.", "translation": "我很喜欢这点，学习型文化是我们都能带走的东西。现在我想转到行业和 AI 的话题：半导体行业既是技术故事，也是地缘政治故事。", "card_type": "word", "answers": ["geopolitical"], "targets": ["geopolitical"], "target_spans": [[185, 197]], "id": "e833a5794ca0d9a43cd4"}, {"term": "navigate", "meaning": "应对；在复杂局面中穿行", "ipa": "/ˈnævɪɡeɪt/", "sentence": "So how do you navigate an environment where policy decisions such as tariffs, ship subsidies and export controls can make or break an industry leader?", "translation": "在关税、造船补贴、出口管制等政策决策可能成就或摧毁一家行业龙头的环境中，你是如何应对的？", "card_type": "word", "answers": ["navigate"], "targets": ["navigate"], "target_spans": [[14, 22]], "id": "7728f1d5a0429a294528"}, {"term": "competitive", "meaning": "竞争的；有竞争力的", "ipa": "/kəmˈpetətɪv/", "sentence": "And like I said, it can make a difference in terms of getting a competitive edge in companies, and it can make a difference about a competitive edge in companies.", "translation": "就像我说的，这有助于让公司获得竞争优势，也会影响公司之间的竞争格局。", "card_type": "word", "answers": ["competitive"], "targets": ["competitive"], "target_spans": [[64, 75], [132, 143]], "id": "c07cbbbeb76148a1debf"}, {"term": "clarity", "meaning": "清晰；明确（立场）", "ipa": "/ˈklærəti/", "sentence": "I think the key is to have very good clarity on we are a US company.", "translation": "我认为关键在于非常清楚一点：我们是一家美国公司。", "card_type": "word", "answers": ["clarity"], "targets": ["clarity"], "target_spans": [[37, 44]], "id": "5575da6b90f0b148cad5"}, {"term": "compliant", "meaning": "合规的；符合规定的", "ipa": "/kəmˈplaɪənt/", "sentence": "But as it relates to critical technology, we're very much focused on ensuring that we're compliant with all of the US regulations.", "translation": "但说到关键技术，我们非常注重确保自己遵守所有美国法规。", "card_type": "word", "answers": ["compliant"], "targets": ["compliant"], "target_spans": [[89, 98]], "id": "478ef917f9417201a86f"}, {"term": "incredible", "meaning": "adj. 惊人的；难以置信的；了不起的", "ipa": "/ɪnˈkredəbl/", "sentence": "What I've learned over the last 18 months is incredible.", "translation": "过去这 18 个月里我学到的东西之多，令人惊叹。", "card_type": "word", "answers": ["incredible"], "targets": ["incredible"], "target_spans": [[45, 55]], "id": "cb78d81e421699b50d53"}, {"term": "flexible", "meaning": "灵活的；可变通的", "ipa": "/ˈfleksəbl/", "sentence": "So some have said that AMD is the Android to Nvidia's Apple, more open, more flexible, but slightly less easy to integrate.", "translation": "有人说，AMD 之于英伟达，就像安卓之于苹果：更开放、更灵活，但集成起来稍微没那么容易。", "card_type": "word", "answers": ["flexible"], "targets": ["flexible"], "target_spans": [[77, 85]], "id": "995ecd6118c937f0cd48"}, {"term": "expert", "meaning": "adj. 专业的；专家级的　n. 专家", "ipa": "/ˈekspɜːrt/", "sentence": "So how do you take, let's call it the power of our expert knowledge, which is in hardware, software systems, together with our partners who are great in applications, and sort of the end user capabilities?", "translation": "我们如何把自身在硬件、软件系统方面的专业知识，与合作伙伴在应用端、终端用户能力上的优势结合起来？", "card_type": "word", "answers": ["expert"], "targets": ["expert"], "target_spans": [[51, 57]], "id": "00e712e971c0ec0e915d"}, {"term": "component", "meaning": "组件；组成部分", "ipa": "/kəmˈpoʊnənt/", "sentence": "We believe in letting our customers and our partners choose what is the best component in each spot.", "translation": "我们相信应该让客户和合作伙伴在每一个环节自行选择最合适的组件。", "card_type": "word", "answers": ["component"], "targets": ["component"], "target_spans": [[77, 86]], "id": "d73e193885e687d455e7"}, {"term": "ecosystem", "meaning": "（产业）生态系统", "ipa": "/ˈiːkoʊsɪstəm/", "sentence": "However, we believe in the end, we'll get a much larger developer ecosystem as part of that, and so that has been our mantra.", "translation": "但我们相信，最终我们会因此拥有规模大得多的开发者生态，这一直是我们的信条。", "card_type": "word", "answers": ["ecosystem"], "targets": ["ecosystem"], "target_spans": [[66, 75]], "id": "e50e7a0c3fed0e2558f0"}, {"term": "usability", "meaning": "易用性；使用便利度", "ipa": "/ˌjuːzəˈbɪləti/", "sentence": "And what you'll see in AI today is we're in a race to get to the next great app or the next big wave of usability, people want to make it as simple as possible.", "translation": "今天的 AI 领域，大家正在竞相打造下一个爆款应用、下一波更好用的产品，人们希望把它做得尽可能简单。", "card_type": "word", "answers": ["usability"], "targets": ["usability"], "target_spans": [[104, 113]], "id": "6a992e04cecc3b7e0724"}, {"term": "hedge", "meaning": "对冲；防范（风险）", "ipa": "/hedʒ/", "sentence": "Do you think there is a bubble in this space, and how do you hedge for that case?", "translation": "你觉得这个领域存在泡沫吗？如果存在，你会如何对冲这种风险？", "card_type": "word", "answers": ["hedge"], "targets": ["hedge"], "target_spans": [[61, 66]], "id": "715c724d68a6974cbed5"}, {"term": "monopoly", "meaning": "垄断；独占", "ipa": "/məˈnɑːpəli/", "sentence": "So Jensen was here two weeks ago, and I asked a question about the kind of monopoly they have on all the kind of hardware used for pre training.", "translation": "Jensen 两周前也来过这里，我问过他，在所有预训练硬件方面他们是否形成了某种垄断。", "card_type": "word", "answers": ["monopoly"], "targets": ["monopoly"], "target_spans": [[75, 83]], "id": "d8f5e5d783c5225478cd"}, {"term": "challenge", "meaning": "挑战；与…竞争抗衡", "ipa": "/ˈtʃælɪndʒ/", "sentence": "Does AMD plan to try and challenge Nvidia on this?", "translation": "AMD 是否计划在这方面向英伟达发起挑战？", "card_type": "word", "answers": ["challenge"], "targets": ["challenge"], "target_spans": [[25, 34]], "id": "837f08c18267b03d5c98"}, {"term": "cycle", "meaning": "n. 周期；循环；一轮迭代", "ipa": "/ˈsaɪkl/", "sentence": "I mean, I think the power of social media, the power of just the cycles that it used to be for research and for new products to come out, is now much, much shorter.", "translation": "我的意思是，社交媒体的力量，以及过去研发和新产品推出的周期，如今都缩短了很多。", "card_type": "word", "answers": ["cycle"], "targets": ["cycles"], "target_spans": [[65, 71]], "id": "560b03ac74d683b72b17"}, {"term": "agile", "meaning": "adj. 敏捷灵活的；组织上应变迅速的", "ipa": "/ˈædʒəl/", "sentence": "And so, yeah, I think it is about continuing to be very agile and nimble.", "translation": "所以我认为，关键就在于始终保持高度灵活、反应敏捷。", "card_type": "word", "answers": ["agile"], "targets": ["agile"], "target_spans": [[56, 61]], "id": "245ef4ff87ee4dd0838d"}, {"term": "output", "meaning": "n. 产出；（模型/系统的）输出结果", "ipa": "/ˈaʊtpʊt/", "sentence": "And so there's a lot of work that can still be done in terms of really taking the output of these models and turning them into something you've heard about.", "translation": "因此还有大量工作要做：如何真正把这些模型的输出，转化成可靠可用的结果。", "card_type": "word", "answers": ["output"], "targets": ["output"], "target_spans": [[82, 88]], "id": "b96a3512c6b4bd9ee73c"}, {"term": "pace", "meaning": "速度；节奏", "ipa": "/peɪs/", "sentence": "If you had asked me 5 years ago the rate and pace of AI adoption that we've seen over the last 18 months, I mean, it's extraordinary.", "translation": "如果五年前有人问我 AI 在过去 18 个月这样的普及速度和节奏，我会说这简直不可思议。", "card_type": "word", "answers": ["pace"], "targets": ["pace"], "target_spans": [[45, 49]], "id": "e52f96fd594bc3d7676d"}, {"term": "permeate", "meaning": "渗透；遍及", "ipa": "/ˈpɜːrmieɪt/", "sentence": "You're going to see AI permeate every part of our lives, whether you talk about the largest cloud environments, which are important today, or you talk about your environments at the edge.", "translation": "你会看到 AI 渗透到我们生活的方方面面，无论是如今很重要的大型云环境，还是你身边的边缘设备环境。", "card_type": "word", "answers": ["permeate"], "targets": ["permeate"], "target_spans": [[23, 31]], "id": "e7494201ff027931cca2"}, {"term": "tactic", "meaning": "策略；战术层面的手段", "ipa": "/ˈtæktɪk/", "sentence": "So to your question about inference versus training, I think that is a little bit more in terms of the tactics of a given year.", "translation": "回到你关于推理与训练的问题，我觉得这更多属于某一年度的战术层面问题。", "card_type": "word", "answers": ["tactic"], "targets": ["tactics"], "target_spans": [[103, 110]], "id": "218ea194d2df61dfbe33"}, {"term": "infrastructure", "meaning": "基础设施；底层架构", "ipa": "/ˈɪnfrəstrʌktʃər/", "sentence": "So what does this mean for the huge amounts of AI infrastructure investment?", "translation": "那么，这对规模庞大的 AI 基础设施投资意味着什么？", "card_type": "word", "answers": ["infrastructure"], "targets": ["infrastructure"], "target_spans": [[50, 64]], "id": "c949e5fc2bac71791e24"}, {"term": "innovation", "meaning": "创新；革新", "ipa": "/ˌɪnəˈveɪʃn/", "sentence": "Well, first of all, I think what's been most interesting about DeepSeek over the last month or so, it's an example of how innovation can really spark new thinking.", "translation": "首先，我认为过去一个月左右 DeepSeek 最有意思的一点在于，它证明了创新如何真正激发出新的思路。", "card_type": "word", "answers": ["innovation"], "targets": ["innovation"], "target_spans": [[122, 132]], "id": "d0229fd718c1607a1efa"}, {"term": "spark", "meaning": "激发；引发（新想法）", "ipa": "/spɑːrk/", "sentence": "Today, what we're seeing is innovation sparks more innovation.", "translation": "今天我们看到的是，创新会激发更多创新。", "card_type": "word", "answers": ["spark"], "targets": ["sparks"], "target_spans": [[39, 45]], "id": "763fb2d9a5966d5057f4"}, {"term": "secondary", "meaning": "次要的；第二位的", "ipa": "/ˈsekənderi/", "sentence": "I think that's actually a secondary point.", "translation": "我认为这其实是次要的一点。", "card_type": "word", "answers": ["secondary"], "targets": ["secondary"], "target_spans": [[26, 35]], "id": "fd69fe4e339831890580"}], "sources": ["https://www.youtube.com/watch?v=C4GM7_Cf0N4", "coach/materials/lisa-su-stanford/transcript.json"], "note": "全量提取模式：125 词 + 33 短语，按每片 40 条拆分独立 HTML；第二轮替换 40 条偏低词条后重建。"}]}</script><script>
+'use strict';
+const LIBRARY = JSON.parse(document.getElementById('vocab-library').textContent);
+const $ = id => document.getElementById(id);
+const preferenceKey = 'series-vocab:preferences:v1';
+const validDecks = LIBRARY && LIBRARY.schema_version === 1 && Array.isArray(LIBRARY.decks)
+  ? LIBRARY.decks.filter(deck => deck && typeof deck.title === 'string' && typeof deck.deck_id === 'string' && Array.isArray(deck.cards))
+  : [];
+let preferences = { practiceMode: 'flashcard', deckId: '' };
+try {
+  const saved = JSON.parse(localStorage.getItem(preferenceKey) || 'null');
+  if (saved && typeof saved === 'object') {
+    if (saved.practiceMode === 'typed' || saved.practiceMode === 'flashcard') preferences.practiceMode = saved.practiceMode;
+    if (typeof saved.deckId === 'string') preferences.deckId = saved.deckId;
+  }
+} catch (_) {}
+let D = null, cardById = new Map(), ids = new Set(), progress = {}, queue = [];
+let practiceMode = preferences.practiceMode, pageMode = 'study', revealed = false;
+const progressKey = deckId => 'series-vocab:v2:' + deckId;
+const legacyProgressKey = deckId => 'series-vocab:v1:' + deckId;
+const LANG_CODES = { english: 'en-US', en: 'en-US', japanese: 'ja-JP', jp: 'ja-JP', korean: 'ko-KR', ko: 'ko-KR', chinese: 'zh-CN', zh: 'zh-CN', french: 'fr-FR', spanish: 'es-ES', german: 'de-DE' };
+function langCode(language) { return LANG_CODES[(language || '').trim().toLowerCase()] || 'en-US'; }
+
+function notify(message) { $('notice').textContent = message; }
+function savePreferences() {
+  preferences.practiceMode = practiceMode;
+  preferences.deckId = D ? D.deck_id : '';
+  try { localStorage.setItem(preferenceKey, JSON.stringify(preferences)); }
+  catch (_) { notify('浏览器未允许保存偏好；当前打开期间仍可切换练习方式。'); }
+}
+function cleanProgress(value, migrateLegacy = false) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw Error('进度格式不正确');
+  const clean = {};
+  for (const [id, state] of Object.entries(value)) {
+    if (!ids.has(id)) continue;
+    if (!['known', 'again', 'studied', 'meaning'].includes(state)) throw Error('进度状态不正确');
+    clean[id] = migrateLegacy && state === 'known' ? 'studied' : state;
+  }
+  return clean;
+}
+function loadProgress() {
+  progress = {};
+  if (!D) return;
+  try {
+    const saved = localStorage.getItem(progressKey(D.deck_id));
+    const legacy = saved ? null : localStorage.getItem(legacyProgressKey(D.deck_id));
+    if (saved) progress = cleanProgress(JSON.parse(saved));
+    else if (legacy) { progress = cleanProgress(JSON.parse(legacy), true); saveProgress(); }
+  } catch (_) { notify('无法读取本地进度；这次仍可学习，请用“导出进度”保存。'); }
+}
+function saveProgress() {
+  if (!D) return;
+  try { localStorage.setItem(progressKey(D.deck_id), JSON.stringify(progress)); }
+  catch (_) { notify('浏览器未允许保存进度；请用“导出进度”备份。'); }
+}
+function updateStats() {
+  $('total').textContent = D ? D.cards.length : 0;
+  $('learned').textContent = D ? D.cards.filter(card => progress[card.id] === 'known').length : 0;
+  $('remaining').textContent = D ? D.cards.filter(card => progress[card.id] !== 'known').length : 0;
+  $('learned-label').textContent = practiceMode === 'typed' ? '本轮答对' : '本轮记住';
+}
+function currentTask() { return queue[0] || null; }
+function currentCard() { return queue.length && D ? cardById.get(queue[0].id) : null; }
+function enqueue(task) { queue.splice(Math.min(3, queue.length), 0, task); }
+function renderSentence(card, blank) {
+  const host = $('sentence'); host.replaceChildren();
+  let offset = 0;
+  for (const [start, end] of card.target_spans || []) {
+    host.append(document.createTextNode(card.sentence.slice(offset, start)));
+    const mark = document.createElement('mark');
+    if (blank) mark.className = 'blank';
+    mark.textContent = blank ? '________' : card.sentence.slice(start, end);
+    host.append(mark); offset = end;
+  }
+  host.append(document.createTextNode(card.sentence.slice(offset)));
+}
+function setVisible(id, visible) { $(id).hidden = !visible; }
+function render() {
+  updateStats();
+  const task = currentTask(), card = currentCard(), phase = task && task.phase;
+  const active = !!card;
+  revealed = false;
+  setVisible('answer-block', phase === 'learn');
+  setVisible('target-label', phase === 'learn');
+  setVisible('learn-actions', phase === 'learn' && active);
+  setVisible('self-actions', (phase === 'meaning' || (phase === 'cloze' && practiceMode === 'flashcard')) && active);
+  setVisible('ratings', false);
+  setVisible('typed-actions', phase === 'cloze' && practiceMode === 'typed' && active);
+  $('speak').disabled = !active;
+  $('self-speak').disabled = !active;
+  $('speak-term').disabled = !active;
+  $('speak-term-self').disabled = !active;
+  $('start').disabled = !active;
+  if (!active) {
+    const noDueAgain = D && D.cards.length && $('filter').value === 'again';
+    $('position').textContent = D && D.cards.length ? (noDueAgain ? '没有待重练词条' : '本组练习完成') : '词库为空';
+    $('target').textContent = '';
+    $('type-badge').hidden = true;
+    $('prompt').textContent = noDueAgain ? '当前没有标记为“需要再练”的词。可以切换到“全部复习”继续。' : D && D.cards.length ? '休息一下吧。之后可以选择“全部复习”再练。' : '这个词库还没有词条。';
+    $('sentence').textContent = noDueAgain ? '这一组没有需要重练的词。' : D && D.cards.length ? '本轮练习完成。' : '';
+    $('translation').textContent = '';
+    setVisible('answer-block', false); setVisible('target-label', false);
+    setVisible('learn-actions', false); setVisible('self-actions', false);
+    setVisible('typed-actions', false);
+    return;
+  }
+  const phaseLabels = { learn: '01 · 学习新词', meaning: '02 · 回忆词义', cloze: '03 · 回想目标语言' };
+  $('position').textContent = phaseLabels[phase] + ' · 队列剩余 ' + queue.length + ' 项';
+  $('target').textContent = phase === 'cloze' ? card.meaning : card.term;
+  $('type-badge').hidden = card.card_type !== 'phrase';
+  $('ipa').textContent = card.ipa;
+  $('meaning').textContent = card.meaning;
+  $('translation').textContent = card.translation;
+  if (phase === 'learn') {
+    $('prompt').textContent = '看词义，再结合原句理解。准备好后，稍后会考你。';
+    renderSentence(card, false);
+  } else if (phase === 'meaning') {
+    $('prompt').textContent = '标出的词或短语在这句话中是什么意思？先在心里作答，再核对答案。';
+    renderSentence(card, false);
+  } else {
+    $('prompt').textContent = card.meaning + '：根据中文意思，回想空格处的目标语言（按原句形式）。';
+    renderSentence(card, true);
+  }
+  $('reveal').textContent = '核对答案';
+  $('answer-input').value = '';
+  $('answer-input').disabled = false;
+  $('check').hidden = false; $('check').disabled = false;
+  $('continue').hidden = true; $('feedback').textContent = ''; $('feedback').className = 'feedback';
+  if (phase === 'cloze' && practiceMode === 'typed') requestAnimationFrame(() => $('answer-input').focus({ preventScroll: true }));
+}
+function normalizeAnswer(value) {
+  return value.normalize('NFKC').toLocaleLowerCase().replace(/[’‘]/g, "'").replace(/[\p{P}\p{S}]/gu, ' ').replace(/\s+/g, ' ').trim();
+}
+function reveal() {
+  const task = currentTask();
+  if (!task || (task.phase !== 'meaning' && !(task.phase === 'cloze' && practiceMode === 'flashcard'))) return;
+  revealed = true; $('target').textContent = currentCard().term; setVisible('answer-block', true); setVisible('ratings', true); setVisible('self-actions', false);
+  if (task.phase === 'cloze') renderSentence(currentCard(), false);
+}
+function study() {
+  if (currentTask()?.phase !== 'learn') return;
+  const task = queue.shift(); progress[task.id] = 'studied';
+  enqueue({ id: task.id, phase: 'meaning' }); saveProgress(); render();
+}
+function rate(value) {
+  const task = currentTask(), card = currentCard();
+  if (!revealed || !task || !card) return;
+  if (value === 'again') {
+    progress[task.id] = 'again';
+    queue.shift(); enqueue({ id: task.id, phase: 'meaning' });
+  } else if (task.phase === 'meaning') {
+    progress[task.id] = 'meaning';
+    queue.shift(); enqueue({ id: task.id, phase: 'cloze' });
+  } else {
+    progress[task.id] = 'known'; queue.shift();
+  }
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  saveProgress(); render(); if (pageMode === 'list') list();
+}
+function checkAnswer() {
+  const task = currentTask(), card = currentCard();
+  if (!task || task.phase !== 'cloze' || practiceMode !== 'typed') return;
+  const response = normalizeAnswer($('answer-input').value);
+  if (!response) {
+    $('feedback').textContent = '先输入答案，或点击“看答案，再练”。';
+    $('feedback').className = 'feedback retry'; $('answer-input').focus(); return;
+  }
+  const correct = card.answers.map(normalizeAnswer).includes(response);
+  $('answer-input').disabled = true; $('check').hidden = true; $('continue').hidden = false;
+  $('target').textContent = card.term; $('type-badge').hidden = card.card_type !== 'phrase'; setVisible('answer-block', true);
+  if (correct) {
+    progress[task.id] = 'known';
+    $('feedback').textContent = '答对了：' + card.term; $('feedback').className = 'feedback good';
+  } else {
+    progress[task.id] = 'again';
+    $('feedback').textContent = '这次没想起来。稍后再练一次。'; $('feedback').className = 'feedback retry';
+    enqueue({ id: task.id, phase: 'cloze' });
+  }
+  saveProgress(); updateStats();
+}
+function giveUp() {
+  const task = currentTask(), card = currentCard();
+  if (!task || task.phase !== 'cloze' || practiceMode !== 'typed') return;
+  $('answer-input').disabled = true; $('check').hidden = true; $('continue').hidden = false;
+  $('target').textContent = card.term; $('type-badge').hidden = card.card_type !== 'phrase'; setVisible('answer-block', true); progress[task.id] = 'again';
+  $('feedback').textContent = '答案：' + card.term + '。稍后再练一次。'; $('feedback').className = 'feedback retry';
+  enqueue({ id: task.id, phase: 'cloze' }); saveProgress(); updateStats();
+}
+function continueNext() { if (!currentTask()) return; queue.shift(); render(); }
+function rebuild() {
+  if (!D) return;
+  const filter = $('filter').value;
+  const cards = D.cards.filter(card => {
+    const state = progress[card.id];
+    if (filter === 'again') return state === 'again';
+    if (filter === 'unlearned') return state !== 'known';
+    return true;
+  });
+  queue = cards.map(card => ({
+    id: card.id,
+    phase: !progress[card.id] ? 'learn' : progress[card.id] === 'meaning' ? 'cloze' : 'meaning',
+  }));
+  render();
+}
+function list() {
+  if (!D) return;
+  const query = $('search').value.trim().toLocaleLowerCase();
+  const rows = D.cards.filter(card => [card.term, card.meaning, card.sentence, card.translation].join(' ').toLocaleLowerCase().includes(query));
+  $('results').textContent = '找到 ' + rows.length + ' 个词条';
+  $('words').replaceChildren();
+  for (const card of rows) {
+    const article = document.createElement('article'); article.className = 'word';
+    const top = document.createElement('div'); top.className = 'word-top';
+    const left = document.createElement('div');
+    const term = document.createElement('strong'); term.textContent = card.term;
+    left.append(term);
+    if (card.card_type === 'phrase') {
+      const badge = document.createElement('span'); badge.className = 'type-badge'; badge.textContent = '短语';
+      left.append(badge);
+    }
+    const status = document.createElement('span'); status.className = 'hint';
+    status.textContent = progress[card.id] === 'known' ? (practiceMode === 'typed' ? '本轮答对' : '本轮记住') : progress[card.id] === 'again' ? '需要再练' : progress[card.id] ? '练习中' : '未学习';
+    left.append(term, status);
+    const speakBtn = document.createElement('button'); speakBtn.className = 'word-speak'; speakBtn.type = 'button';
+    speakBtn.textContent = '朗读'; speakBtn.title = '朗读该词条';
+    speakBtn.onclick = () => speakText(card.term, .8);
+    top.append(left, speakBtn); article.append(top);
+    for (const [content, className] of [[card.ipa, 'muted'], [card.meaning, ''], [card.sentence, 'example'], [card.translation, 'muted']]) {
+      const p = document.createElement('p'); p.textContent = content; p.className = className; article.append(p);
+    }
+    $('words').append(article);
+  }
+}
+function switchPageMode(nextMode) {
+  pageMode = nextMode;
+  $('study').hidden = pageMode !== 'study'; $('list').hidden = pageMode !== 'list';
+  $('study-tab').setAttribute('aria-pressed', pageMode === 'study'); $('list-tab').setAttribute('aria-pressed', pageMode === 'list');
+  if (pageMode === 'list') list();
+}
+function speakText(text, rate) {
+  if (!('speechSynthesis' in window)) { notify('当前浏览器不支持朗读，学习仍可使用。'); return; }
+  speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = langCode(D && D.language); utterance.rate = rate || .85;
+  utterance.onerror = () => notify('朗读暂不可用，请检查设备语音或网络。');
+  speechSynthesis.speak(utterance);
+}
+function speak() { const card = currentCard(); if (!card) return; speakText(card.sentence, .85); }
+function speakTerm() { const card = currentCard(); if (!card) return; speakText(card.term, .8); }
+function setDeck(deckId) {
+  D = validDecks.find(deck => deck.deck_id === deckId) || validDecks[0] || null;
+  if (!D) return;
+  cardById = new Map(D.cards.map(card => [card.id, card])); ids = new Set(cardById.keys());
+  $('title').textContent = D.title || '剧有词学习器';
+  document.title = (D.title || '剧有词学习器') + ' · 剧有词';
+  const sourceTypeLabel = { episode: '剧集单集', movie: '电影', podcast: '播客', documentary: '纪录片', lecture: '讲座/演讲', article: '文章', book: '书籍章节', other: '其他文本' };
+  const typeLabel = D.source_type && sourceTypeLabel[D.source_type] ? sourceTypeLabel[D.source_type] : '';
+  const profile = [typeLabel, D.language, D.exam_target, D.level_target].filter(Boolean).join(' · ');
+  $('profile').textContent = profile ? `素材：${profile}${D.selection_basis ? ' · ' + D.selection_basis : ''}` : '';
+  $('note').textContent = D.note || '';
+  $('source-list').replaceChildren();
+  for (const source of D.sources || []) {
+    const p = document.createElement('p');
+    if (/^https?:\/\//i.test(source)) {
+      const a = document.createElement('a'); a.href = source; a.textContent = source;
+      a.target = '_blank'; a.rel = 'noopener noreferrer'; p.append(a);
+    } else p.textContent = source;
+    $('source-list').append(p);
+  }
+  $('filter').value = 'unlearned'; $('search').value = '';
+  loadProgress();
+  const empty = D.cards.length === 0;
+  $('deck-empty').hidden = !empty; $('deck-content').hidden = empty;
+  if (!empty) { switchPageMode('study'); rebuild(); list(); }
+  savePreferences();
+}
+
+if (!validDecks.length) {
+  $('empty-library').hidden = false; $('title').textContent = '剧有词学习器';
+} else {
+  $('workspace').hidden = false;
+  for (const deck of validDecks) {
+    const option = document.createElement('option'); option.value = deck.deck_id; option.textContent = deck.title; $('deck-select').append(option);
+  }
+  const initialDeck = validDecks.some(deck => deck.deck_id === preferences.deckId) ? preferences.deckId : validDecks[0].deck_id;
+  $('deck-select').value = initialDeck; $('practice-mode').value = practiceMode;
+  $('deck-select').onchange = () => setDeck($('deck-select').value);
+  $('practice-mode').onchange = () => {
+    practiceMode = $('practice-mode').value; savePreferences(); rebuild();
+    if (pageMode === 'list') list();
+  };
+  $('study-tab').onclick = () => switchPageMode('study'); $('list-tab').onclick = () => switchPageMode('list');
+  $('search').oninput = list; $('filter').onchange = rebuild;
+  $('shuffle').onclick = () => {
+    for (let i = queue.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [queue[i], queue[j]] = [queue[j], queue[i]]; }
+    render();
+  };
+  $('reveal').onclick = reveal; $('start').onclick = study;
+  $('again').onclick = () => rate('again'); $('known').onclick = () => rate('known');
+  $('check').onclick = checkAnswer; $('give-up').onclick = giveUp; $('continue').onclick = continueNext;
+  $('answer-input').oninput = () => { $('feedback').textContent = ''; $('feedback').className = 'feedback'; };
+  $('answer-input').onkeydown = event => {
+    if (event.key !== 'Enter') return; event.preventDefault();
+    if ($('continue').hidden) checkAnswer(); else continueNext();
+  };
+  $('speak').onclick = speak; $('self-speak').onclick = speak;
+  $('speak-term').onclick = speakTerm; $('speak-term-self').onclick = speakTerm;
+  $('export').onclick = () => {
+    const blob = new Blob([JSON.stringify({ version: 2, deck_id: D.deck_id, progress }, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob), link = document.createElement('a');
+    link.href = url; link.download = 'vocab-progress-' + D.deck_id.replace(/[^a-z0-9_-]+/gi, '-') + '.json'; link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 2000); notify('已导出当前词库的学习进度。');
+  };
+  $('import').onclick = () => $('file').click();
+  $('file').onchange = async () => {
+    const file = $('file').files[0]; if (!file) return;
+    try {
+      if (file.size > 2000000) throw Error('文件过大');
+      const data = JSON.parse(await file.text());
+      if (![1, 2].includes(data.version) || data.deck_id !== D.deck_id) throw Error('这份进度不属于当前词库');
+      const restored = cleanProgress(data.progress, data.version === 1);
+      if (!confirm('导入会替换当前词库的学习进度，继续吗？')) return;
+      progress = restored; saveProgress(); rebuild(); list(); notify('进度已导入。');
+    } catch (error) { notify('导入失败：' + error.message); }
+    finally { $('file').value = ''; }
+  };
+  $('reset').onclick = () => {
+    if (!confirm('确定清除当前词库的学习进度吗？')) return;
+    progress = {}; saveProgress(); rebuild(); list(); notify('已重置当前词库进度。');
+  };
+  document.addEventListener('keydown', event => {
+    if (pageMode !== 'study' || event.ctrlKey || event.metaKey || event.altKey || event.repeat || ['INPUT', 'SELECT', 'TEXTAREA', 'BUTTON'].includes(event.target.tagName)) return;
+    if (event.key === ' ' && !$('reveal').hidden) { event.preventDefault(); reveal(); }
+    if (event.key === '1' && !$('ratings').hidden) rate('again');
+    if (event.key === '2' && !$('ratings').hidden) rate('known');
+  });
+  setDeck(initialDeck);
+}
+</script></body></html>
