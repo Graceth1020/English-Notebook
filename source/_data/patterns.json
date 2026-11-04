@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T10:16:25.245Z",
+  "generated": "2026-11-04T02:44:53.347Z",
   "drills": [
     {
       "drill": "24",
@@ -395,9 +395,9 @@
       "example": "I follow the rule strictly. -> The rule gets followed strictly. / I want to read books before bed. -> Books before bed are still the plan.",
       "found": "22",
       "drills": "0",
-      "used": "8",
+      "used": "9",
       "status": "owned",
-      "next": "2026-10-31"
+      "next": "2026-12-04"
     },
     {
       "id": "P011",

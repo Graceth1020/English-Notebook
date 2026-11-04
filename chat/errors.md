@@ -51,6 +51,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E082 | specific-plan will/going to for a general procedure | grammar | When a service is down or slow, I'm going to find the colleague | When a service is down or slow, I find the colleague - general mechanisms take plain present (same as Day 41: is handled, not is being handled) | 43 | 2 | open | 2026-11-07 |  |
 | E083 | no intention to + verb | collocation | I have no intention to install | no intention of installing - intention of + -ing | 44 | 1 | open | 2026-11-01 |  |
 | E084 | later vs in a few weeks for a forward-looking plan | grammar | we were supposed to play it a few weeks later | we were supposed to play it in a few weeks | 45 | 1 | open | 2026-11-03 |  |
+| E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 3 | open | 2026-11-19 | reopened after resolved closure; recurred 2026-11-03 |
+| E085 | stay healthy | collocation | keep health | stay healthy | 47 | 1 | open | 2026-11-07 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
@@ -84,7 +86,6 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E014 | at once for immediately in speech | register | I'll response at once. | I'll respond right away. | 02 | 2 | retired | - | retired 2026-11-01; merged into C013: not an error: register preference only; immediate sense covered by owned C013 right away; the Day-45 second hit was the simultaneous sense and was misattributed; that sense stays valid spoken English |
 | E045 | With X doing Y absolute construction in speech | register | With AI developing quickly, ... | AI's moving so fast that ... | 09 | 1 | retired | - | retired 2026-11-01; merged into P001: same structure as owned pattern P001 (with + X + doing/done); error row redundant |
 | E064 | up to date with an article (to date / up to the date) | fixed-phrase | kept up to the date | kept up to date | 22 | 1 | resolved | - |  |
-| E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 2 | resolved | - |  |
 | E039 | direction takes in, not to | preposition | many cars go to the same direction | everyone heading in the same direction | 08 | 1 | resolved | - |  |
 | E061 | every time when (doubled connector) | grammar | every time when I get in the zone / Every time when I play it | every time I get in the zone / Every time I play it | 16 | 1 | resolved | - |  |
 | E011 | whenever + bare -ing (no subject) | grammar | Whenever working from home | Whenever I'm working from home | 02 | 1 | resolved | - |  |

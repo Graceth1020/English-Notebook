@@ -24,6 +24,8 @@ Instances so far:
 - C124 hint contamination (Day 44): named in Day 43's Two To Use, produced correctly next day - credit REVERTED. Two To Use naming = one-day hint; a chunk named there can only be credited from a later session.
 - C126 `get involved in (something)` -> "which different teams are get involved in" (Day 46; auxiliary stack broke: are + get cannot coexist; reached-but-broken, logged missed).
 - C089 `matter to (someone)` -> "it really matters for the developers" (Day 46; preposition slot broke, to -> for; reached-but-broken, logged missed).
+- C127 `write things down` -> "write any plan down" (Day 47; fixed part broke: things -> any plan, plus my own question had hinted the slot; reached-but-broken, logged missed).
+- C086 `a one-day (X) pass` / C116 `so far` (Day 47) - both were named in Codex's own opening/question, then produced back next turn; same-session echo, no credit (same rule as the C124 case below).
 
 Pattern in the damage: the fixed parts break - the particle, the article, the
 modal+to glue - never the content words. The learner knows the chunk; the
@@ -79,5 +81,6 @@ mark `[good]` - any correct subject word counts, not a fixed phrase. When a run
 of sentences all opens with I, say one gentle line - never a formal correction.
 
 Logged as **P010** (P009 stays reserved for modal + bare infinitive). Status
-`open` - owned needs two unprompted non-I-subject productions in chat,
-`pattern-used --id P010`.
+`owned` as of Day 47: "Whether I skip a day depends on..." (exchange 3) was the
+unprompted non-I-subject production; `pattern-used` logged it (used=9/2). Keep
+praising the frame on sight, but no further logging needed.
