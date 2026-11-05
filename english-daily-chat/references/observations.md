@@ -84,3 +84,29 @@ Logged as **P010** (P009 stays reserved for modal + bare infinitive). Status
 `owned` as of Day 47: "Whether I skip a day depends on..." (exchange 3) was the
 unprompted non-I-subject production; `pattern-used` logged it (used=9/2). Keep
 praising the frame on sight, but no further logging needed.
+
+
+## Seed that will not land by asking about gear (2026-11-05)
+
+C091 "high-spec" has now been seeded three times (Day 28, Day 48 twice) and
+produced never - including today, where exchange 1 asked directly whether the
+home setup was good enough and exchange 5 offered a company-funded desk and
+monitor. He answered both without mentioning the machine at all. Stop opening
+with "is your setup good"; reach it sideways instead - a machine that eats heavy
+work ("it gets through a render in ten minutes"), or a contrast with an old one.
+Until something lands, treat C091 as recognition-only, not a bad chunk.
+
+- C010 "work from home" is owned, but "work at home" came out twice in Day 48
+  exchange 2, in an answer where work-from-home was the whole subject. The chunk
+  is intact in storage and gone under speed; watch the preposition rather than
+  re-teaching the phrase.
+- C008 "stay focused" is owned, and "to stay focus" dropped the -ed. chat:E012 now
+  carries this form, so let the error row do the tracking; no separate chunk
+  action.
+- C092 "push back on (a design / an idea)" is pending with home scene `work`, and
+  Day 48 produced it correctly in a work session - the confirm was refused as
+  same-scene. It needs a non-work topic where pushing back on an idea comes up
+  (family, study, opinion about a plan).
+- C045 "get in the way of (X)" reached owned on Day 48 by a work-scene sentence
+  ("gets in the way of the progress"); its two earlier uses were both health
+  ground. The work one is the portable evidence, which is what confirm is for.

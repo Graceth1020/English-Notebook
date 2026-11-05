@@ -487,3 +487,18 @@ you see the error in production and immediately know it is your code.
 2. 拆开写，用逗号、破折号或第二个句子隔开：I'd recommend a podcast called "How to Invest" — it's all about investing. / I'd recommend "How to Invest," a podcast on investing. / I'd recommend a podcast called "How to Invest." It covers investing.
 3. 最自然的母语说法只给一个标签——标题本身已经说了主题，再说 on investing 就重复了：I'd recommend a podcast called "How to Invest." 或 I'd recommend a podcast on investing。
 为什么 a podcast called "How to Invest" on investing 不通：on investing 紧贴标题短语，读者会把它粘到标题上，两个修饰语挤在一个名词后没有停顿。短语内顺序是 on X（主题）→ called "Y"（标题）；标题在前时，主题必须用逗号、破折号或第二句重新引出。记法：一个名词短语只挂一个直接标签；要两个标签，要么主题在前标题在后，要么拆成两处。
+
+## Day 48 - 2026-11-05
+
+**Q:** C089 it really matters to a manager to manage project progress. Is this sentence right?
+
+**A:** 不对，是把两个结构叠在一起了。matter to 的结构固定为「X matters to someone」——X 是要紧的那件事，to 只引出「对谁要紧」：Being familiar with computer science really matters to us.（C089 自己的例句）。你想套的 it ... to do 外置结构，在 matter 上之所以不行，是因为 matter 后面的 to 已经被「对谁」占住了，再挂一个 to do，读者会把它读成「对着经理做这件事很重要」。
+
+合法写法两种：
+1. 直接让要紧的事当主语：Managing project progress really matters to a manager.
+2. 要用 it 外置，就换成 that 从句：It matters to a manager that the project keeps moving.
+
+记法：matter 前面放「什么要紧」，to 后面放「对谁要紧」，两个槽各一个，不许再塞第三个成分。
+**Q:** What's the meaning of "turned down twice"?
+
+**A:** turn down = 拒绝（请求、提案、申请、报价），不是"调低"。turned down twice 就是"已经被拒了两次"。例：We turned down their request twice. / I asked for a raise and got turned down. / The feature was turned down at the first review. 两个要点：一是它和"音量/火候调小"的 turn down（Turn the music down.）同形不同义，靠宾语区分——人提出的东西被 turn down 是拒绝，音量、温度被 turn down 是调低；二是它是可分的短语动词，代词必须放中间：turned it down（不说 turned down it），名词可以两边任选：turned down the offer / turned the offer down。

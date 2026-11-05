@@ -53,3 +53,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 45 | 2026-10-31 | Saturday: friends and weekend plans | daily | 5 | 20 | done | [summary](summaries/day-45-20261031.md) |
 | 46 | 2026-11-02 | A peer's extra request this sprint | work | 5 | 8 | done | [summary](summaries/day-46-20261102.md) |
 | 47 | 2026-11-03 | Trying a new class or gym | daily | 6 | 19 | done | [summary](summaries/day-47-20261103.md) |
+| 48 | 2026-11-05 | Remote vs office, honestly | opinion | 5 | 25 | done | [summary](summaries/day-48-20261105.md) |

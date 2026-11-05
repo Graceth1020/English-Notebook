@@ -8,7 +8,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Pattern | Category | You said | Say instead | Day | Hits | Status | Next review | Note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| E012 | keep focusing instead of stay focused | fixed-phrase | to keep focusing on work | to stay focused | 02 | 1 | open | 2026-09-01 |  |
+| E012 | keep focusing instead of stay focused | fixed-phrase | to keep focusing on work | to stay focused | 02 | 2 | open | 2026-11-12 |  |
 | E024 | cost/take for duration | collocation | The code change costs two days | The code itself is about two days | 05 | 1 | open | 2026-09-03 |  |
 | E025 | make sure + bare noun | grammar | make sure complatibility | make sure nothing breaks | 05 | 1 | open | 2026-09-03 |  |
 | E031 | determiner slot left empty before a singular countable noun | grammar | In Chinese workplace / from frontend or backend / he would quit job | In the Chinese workplace / from the frontend / he would quit his job | 06 | 37 | open | 2026-11-30 |  |
@@ -53,6 +53,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E084 | later vs in a few weeks for a forward-looking plan | grammar | we were supposed to play it a few weeks later | we were supposed to play it in a few weeks | 45 | 1 | open | 2026-11-03 |  |
 | E049 | past incident narrated in present tense | grammar | the application doesn't get the right API key | it wasn't picking up the right API key | 10 | 3 | open | 2026-11-19 | reopened after resolved closure; recurred 2026-11-03 |
 | E085 | stay healthy | collocation | keep health | stay healthy | 47 | 1 | open | 2026-11-07 |  |
+| E086 | adjective before a verb instead of adverb | grammar | I can arrange my time more flexible. | I can arrange my time more flexibly. | 48 | 1 | open | 2026-11-08 |  |
+| E087 | short answer echoes the wrong modal | grammar | No, it isn't. | No, it wouldn't. | 48 | 1 | open | 2026-11-08 |  |
+| E088 | state verb put in the progressive | grammar | They are living in my hometown. | They live in my hometown. | 48 | 1 | open | 2026-11-08 |  |
+| E089 | ask takes an object with no preposition | calque | the manager has to ask the progress | ask about progress | 48 | 1 | open | 2026-11-08 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
