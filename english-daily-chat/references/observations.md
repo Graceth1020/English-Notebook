@@ -110,3 +110,30 @@ Until something lands, treat C091 as recognition-only, not a bad chunk.
 - C045 "get in the way of (X)" reached owned on Day 48 by a work-scene sentence
   ("gets in the way of the progress"); its two earlier uses were both health
   ground. The work one is the portable evidence, which is what confirm is for.
+
+## The chunk that would not land - it was the opening, not the chunk (2026-11-06)
+
+C091 "high-spec" arrived twice unprompted on Day 49 after three seeded sessions
+produced nothing, and the difference was the kind of question. Every failed
+attempt asked him to evaluate equipment ("is your setup good enough"). Today it
+came out of ownership and contrast ("I refuse to give up my laptop - it's still
+high-spec"), then again for a tablet he had bought. Once a chunk has failed three
+seeded sessions, stop re-asking the same shape: change the frame from evaluation
+to possession or comparison before writing it off.
+
+- C119 "try out" was echoed, not recalled: the question itself said "did you try
+  anything else out first" and the answer reused the phrase. Naming the chunk in
+  the Codex turn turns it into a prompt, so it can never be credited. Ask about
+  the decision ("how did you end up on it") and leave the phrase out.
+- Two questions fused into one turn failed again (the site-sections question
+  needed "all-rounders" and "built for one specific job" unpacked together). One
+  idea per question is the ceiling, and the flag came as "your question is hard to
+  understand" rather than a request for meaning.
+- Conditional drift is now a repeating habit, not a one-off: "I'd try out
+  something else ... I will get something". Same family as Day 48's "if the
+  company pushed ... I have to switch up". Watch for it as a drift across a whole
+  answer, not a single clause.
+- chat:E046 (a purpose-built tool called "professional") was reachable all session
+  and never fired - he answered "all kinds of laptops" both times. It needs a
+  question he can only answer by naming a category of machine, not by listing
+  variety.

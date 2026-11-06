@@ -502,3 +502,13 @@ you see the error in production and immediately know it is your code.
 **Q:** What's the meaning of "turned down twice"?
 
 **A:** turn down = 拒绝（请求、提案、申请、报价），不是"调低"。turned down twice 就是"已经被拒了两次"。例：We turned down their request twice. / I asked for a raise and got turned down. / The feature was turned down at the first review. 两个要点：一是它和"音量/火候调小"的 turn down（Turn the music down.）同形不同义，靠宾语区分——人提出的东西被 turn down 是拒绝，音量、温度被 turn down 是调低；二是它是可分的短语动词，代词必须放中间：turned it down（不说 turned down it），名词可以两边任选：turned down the offer / turned the offer down。
+## Day 49 - 2026-11-06
+
+**Q:** C115 at once
+
+**A:** C115 就是 at once，它有两个意思，账面注释里已经写清了：一是"立刻"，二是"同时一起"。
+1. 立刻：If you need me, I'll reply at once. —— 这个意思是对的、地道的，只是比 spoken 默认的 right away 略正式一点。
+2. 同时：Don't do it all at once.（别一次性全做完）—— 这个意思在口语里最普通，没有任何正式感。
+
+所以今天那句 "the customer service staff would deal with it at once" 完全正确，不是错句。我给的 optional 只标在"语域"这一栏：在讲客服、市场这类偏书面的话题里 at once 一点问题都没有，只有在很快的日常叙述里，母语者会自然滑向 right away。optional 的意思是"你原句没问题，另有一个更常用的说法"，不是改错。
+既然 C115 是你自己的 chunk，用它就是应该的——不要因为见到 right away 就放弃 at once。今天这一用已经记上（2/2 pending），下次在一个非 general 场景里再用一次就 owned。
