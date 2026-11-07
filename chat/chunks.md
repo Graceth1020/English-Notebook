@@ -27,14 +27,13 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C053 | my parents' place | phrase | family | where your parents live - not 'where my parents live' | I'd work from my parents' place. | 08 | 3 | 1 | open | 2026-10-24 |
 | C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 1 | 1 | open | 2026-10-10 |
 | C064 | backed up (a queue) | phrase | work | unable to drain - not 'blocked', which implies something deliberate | The queue was backed up for two hours. | 10 | 6 | 2 | open | 2026-11-05 |
-| C086 | a one-day (X) pass | phrase | general | a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an | I redeemed a one-day QQ Music pass. | 27 | 3 | 1 | open | 2026-10-24 |
+| C086 | a one-day (X) pass | phrase | general | a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an | I redeemed a one-day QQ Music pass. | 27 | 4 | 1 | open | 2026-10-24 |
 | C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 3 | 2 | open | 2026-11-05 |
-| C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 3 | 0 | open | 2026-11-03 |
+| C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 4 | 1 | open | 2026-11-14 |
 | C101 | The clearest change is (that)... | frame | general | open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque | The clearest change is that I can express myself more naturally. | 30 | 1 | 1 | open | 2026-11-04 |
 | C107 | switch up (the menu / the routine) | phrase | food | change something that has gone stale - 换换花样; menus, routines, hairstyles get switched up | They should switch up the menu - I've been eating the same thing for five years. | 33 | 1 | 1 | open | 2026-11-12 |
 | C108 | eat out | phrase | food | have dinner at a restaurant or canteen, not at home - the dedicated idiom for 在外面吃; opposite: cook at home / eat in | I've eaten out every night this whole week. | 33 | 1 | 1 | open | 2026-11-10 |
 | C112 | won't take no for an answer | phrase | work | refuse to accept a rejection - the fixed idiom for 死活不接受拒绝; the person demanding is the subject | The client won't take no for an answer. | - | 3 | 1 | open | 2026-11-12 |
-| C116 | so far | phrase | general | up to now - pairs with present perfect: there's no message so far | There's no message in the group so far. | - | 2 | 1 | open | 2026-10-30 |
 | C119 | try out (something) | phrase | work | test something hands-on before committing - the spoken 体验/试用: try out the user flows, try out a new restaurant | The business side can try out the user flows as soon as the prototypes are done. | - | 3 | 1 | open | 2026-11-09 |
 | C120 | see (something) as (something) | phrase | money | view or interpret something in a certain way - 把...看作...: see it as a short-term correction, see it as an opportunity | I see the drop as a short-term correction, not a crash. | - | 1 | 1 | open | 2026-11-10 |
 | C123 | the same X as (Y) | phrase | work | the comparison frame - same takes THE before and AS after: the same concept as SpringMVC; never 'a same... with' | The C# framework has the same concept as SpringMVC. | - | 2 | 1 | open | 2026-11-05 |
@@ -42,14 +41,12 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C128 | it's on them | phrase | work | responsibility or blame belongs to them - NOT 'their thing', which means their hobby or specialty | Take a screenshot of the request flow and tell them it's on them. | 43 | 2 | 0 | open | 2026-11-08 |
 | C001 | couldn't put it down | phrase | reading | a book or phone too good to stop using - games do NOT take this; games are 'hooked on' | I started it Friday night and couldn't put it down. | 01 | 8 | 4 | pending | 2026-11-16 |
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 4 | 4 | pending | 2026-11-09 |
-| C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 6 | 6 | pending | 2026-11-15 |
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 3 | pending | 2026-11-26 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 4 | 4 | pending | 2026-11-08 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 4 | 2 | pending | 2026-11-06 |
 | C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 5 | 5 | pending | 2026-11-15 |
 | C040 | out of my depth | phrase | work | beyond what you can handle | I was completely out of my depth in that meeting. | 06 | 5 | 2 | pending | 2026-11-01 |
 | C041 | wired | phrase | health | too stimulated to sleep | I'm still wired an hour after playing. | 07 | 2 | 2 | pending | 2026-10-19 |
-| C049 | over (a holiday) | phrase | family | across the whole of a holiday - 'during' needs 'the' with 'holiday' | I go back over National Day. | 08 | 2 | 2 | pending | 2026-10-15 |
 | C056 | that's a symptom, not the reason | phrase | work | distinguishes what you can see from what is causing it | The retries are a symptom, not the reason. | 08 | 4 | 3 | pending | 2026-11-28 |
 | C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 2 | 2 | pending | 2026-11-06 |
 | C074 | track down (a bug) | phrase | work | find something hidden after searching - 'find out' takes information, not a bug | It took us half a day to track down where the bug was. | 17 | 3 | 3 | pending | 2026-11-26 |
@@ -70,6 +67,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C111 | show up | phrase | work | appear or turn up - the default verb for anything that appears: bugs, people, problems; 'appear' is written English | Hundreds of bugs showed up after SIT started. | - | 2 | 2 | pending | 2026-11-12 |
 | C114 | when it comes to (doing something) | phrase | general | switch the topic to a specific area - the to is a preposition, so a verb after it takes -ing: when it comes to hanging out | When it comes to hanging out with friends, that's a weekend thing. | - | 2 | 2 | pending | 2026-11-16 |
 | C115 | at once | phrase | general | two senses: immediately (slightly more formal than the spoken default right away); all at the same time (ordinary spoken English) - don't do it all at once | If you need me, I'll reply at once. | - | 2 | 2 | pending | 2026-11-22 |
+| C116 | so far | phrase | general | up to now - pairs with present perfect: there's no message so far | There's no message in the group so far. | - | 4 | 2 | pending | 2026-11-23 |
 | C121 | excess returns | phrase | money | returns above the benchmark - 超额回报; NOT excessive returns, which means unreasonably large (negative) | Good companies reward their investors with excess returns. | - | 2 | 2 | pending | 2026-11-21 |
 | C122 | reward (someone) with (something) | phrase | money | give someone something good in return - 用...回报...: reward investors with excess returns, reward yourself with a meal | Good companies reward their investors with excess returns. | - | 2 | 2 | pending | 2026-11-19 |
 | C124 | map out (a process / a plan) | phrase | work | work out the full picture of something step by step - 梳理清楚; NOT 'close' (close the loop = report back at the end) | Once the whole process is mapped out, it is time to write the spec. | - | 2 | 2 | pending | 2026-11-18 |
@@ -92,6 +90,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C016 | get something off (a platform) | phrase | shopping | find/take content from an app or site | I got this recipe off Rednote. | 03 | 3 | 3 | owned | - |
 | C017 | all sorts | phrase | shopping | spoken replacement for 'various' / 'all kinds' | People post all sorts on there. | 03 | 4 | 3 | owned | - |
 | C019 | get in the zone | phrase | games | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 3 | 3 | owned | - |
+| C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 7 | 7 | owned | - |
 | C021 | that's what pays | phrase | money | name the thing that earns the money | The business side is what pays. | 04 | 3 | 3 | owned | - |
 | C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 3 | 3 | owned | - |
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 4 | 4 | owned | - |
@@ -111,6 +110,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C046 | a weeknight thing | phrase | games | confine something to weeknights in three words | That's only really a weeknight thing. | 07 | 3 | 3 | owned | - |
 | C047 | a rig / my setup | phrase | games | what people call a gaming PC - never 'devices' | I've got a rig that can run anything. | 07 | 3 | 3 | owned | - |
 | C048 | know it inside out | phrase | games | know something thoroughly from long use | I know the game inside out by now. | 07 | 4 | 4 | owned | - |
+| C049 | over (a holiday) | phrase | family | across the whole of a holiday - 'during' needs 'the' with 'holiday' | I go back over National Day. | 08 | 3 | 3 | owned | - |
 | C050 | the traffic is brutal | phrase | commute | spoken replacement for 'traffic is a serious problem' | The traffic was brutal the whole way. | 08 | 3 | 3 | owned | - |
 | C051 | heading in the same direction | phrase | food | direction takes 'in'; 'heading' beats 'going' | Everyone was heading in the same direction. | 08 | 3 | 3 | owned | - |
 | C052 | ..., though (sentence-final) | frame | general | the spoken 'However' - goes on the end, never the front | The traffic can be brutal, though. | 08 | 3 | 3 | owned | - |

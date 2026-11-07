@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>剧有词 · 学习器</title>
+<style>
+:root{--bg:#171c1a;--panel:#1f2623;--soft:#2a332e;--ink:#e3e9e2;--muted:#9aa79e;--line:#38423c;--green:#3d6d59;--green-ink:#f2f7f3;--accent-text:#8fc3a8;--sentence:#dfe9df;--mark:#3b4a30;--mark-blank:#4a3d2a;--notice:#d7a765;--warn:#e5a96b;--focus:#c78a49;--shadow:0 12px 35px rgba(0,0,0,.4);--input:#5a6a61;--disabled:#1b201d;--badge-bg:#3a3325;--badge-ink:#e8c68d}html[data-theme=light]{--bg:#f4f3ed;--panel:#fff;--soft:#e5ecdf;--ink:#213e39;--muted:#687772;--line:#d8dfd6;--green:#235a47;--green-ink:#fff;--accent-text:#235a47;--sentence:#193e33;--mark:#e3edb9;--mark-blank:#f2e5c8;--notice:#855220;--warn:#8b4b17;--focus:#d99945;--shadow:0 12px 35px rgba(33,62,57,.024);--input:#9aaea2;--disabled:#f4f3ed;--badge-bg:#f2e5c8;--badge-ink:#855220}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1080px;margin:auto;padding:38px 28px 64px}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(26px,4vw,40px);letter-spacing:-1px;margin:6px 0}p{margin:8px 0}.muted{color:var(--muted);font-size:14px}.badge{border:1px solid var(--line);border-radius:30px;padding:6px 13px;font-size:12px;white-space:nowrap}.stats{display:flex;gap:28px;margin:24px 0}.stats strong{font-size:28px;margin-right:8px}nav,.toolbar,.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}button,select,input{font:inherit}button,select{border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:10px 16px;border-radius:10px;cursor:pointer}button:hover{background:var(--soft)}button:disabled{opacity:.4;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.primary,button[aria-pressed=true]{background:var(--green);color:var(--green-ink);border-color:var(--green)}.toolbar{justify-content:space-between;margin:22px 0 16px}.toolbar label{display:flex;align-items:center;gap:10px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:32px 40px;min-height:370px;box-shadow:var(--shadow)}.sentence{font-family:Georgia,serif;font-size:clamp(25px,4vw,36px);line-height:1.5;margin:28px 0;color:var(--sentence);overflow-wrap:anywhere}.answer{border-top:1px solid var(--line);margin:22px 0;padding-top:18px}.term{font-size:22px;font-weight:650}.ipa{font-size:16px;color:var(--muted);font-weight:400;margin-left:12px}.type-badge{font-size:12px;font-weight:600;color:var(--badge-ink);background:var(--badge-bg);border-radius:12px;padding:2px 10px;margin-left:10px;vertical-align:middle}.speak-term{padding:8px 12px;font-size:14px}.word-speak{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:14px;margin-left:auto}.word-speak:hover{background:var(--soft)}.actions{margin-top:24px}.bottom{justify-content:space-between;margin-top:18px;display:flex;gap:12px;align-items:center}.hint{font-size:12px;color:var(--muted)}input[type=search]{width:100%;padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin:22px 0}.word{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin-bottom:12px}.word-top{display:flex;justify-content:space-between;gap:12px}.word p{overflow-wrap:anywhere}.word .example{font-family:Georgia,serif;font-size:20px}footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--line)}footer .actions{margin-top:12px}#notice{min-height:24px;color:var(--notice);font-size:14px}#source-list{overflow-wrap:anywhere}a{color:var(--accent-text)}[hidden]{display:none!important}.empty{background:var(--panel);border:1px dashed var(--line);border-radius:18px;padding:32px;margin:26px 0}.empty h2{margin-top:0}.word-target{font-size:clamp(28px,4vw,38px);line-height:1.25;margin:10px 0 4px;overflow-wrap:anywhere}.target-label{font-size:13px;color:var(--muted);letter-spacing:.04em}.recall-prompt{font-size:18px;line-height:1.5;margin:12px 0}.sentence mark{background:var(--mark);color:inherit;border-radius:4px;padding:0 3px}.sentence mark.blank{background:var(--mark-blank);letter-spacing:.08em}.answer-input{width:min(100%,540px);min-height:52px;padding:12px 16px;border:1px solid var(--input);border-radius:10px;background:var(--panel);color:var(--ink);font-size:18px}.answer-input[disabled]{background:var(--disabled)}.feedback{min-height:30px;margin-top:12px;font-weight:600}.feedback.good{color:var(--accent-text)}.feedback.retry{color:var(--warn)}.actions button{min-height:44px}mark{background:var(--mark);color:inherit;border-radius:4px;padding:0 3px}.example-label{font-size:12px;letter-spacing:.08em;color:var(--muted);margin:0 0 2px}.examples{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}.example-item+.example-item{margin-top:14px}.example-item .example{margin:0}.header-side{display:flex;gap:8px;align-items:center;flex-wrap:wrap}@media(max-width:620px){main{padding:24px 16px}header{display:block}.badge{display:inline-block;margin-top:10px}.card{padding:22px;min-height:360px}.stats{gap:18px}.stats strong{font-size:23px}.bottom{align-items:flex-start;flex-direction:column}.actions button{flex:1}.word{padding:16px}.toolbar{align-items:flex-start;flex-direction:column}.toolbar label{align-items:flex-start;flex-direction:column;gap:4px}.word-target{font-size:30px}.recall-prompt{font-size:16px}.answer-input{font-size:16px}}
+.script-line{font-family:Georgia,serif;font-size:19px;line-height:1.65;margin:0 0 10px;color:var(--sentence);overflow-wrap:anywhere}.script-line .line-no{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:12px;color:var(--muted);margin-right:10px}.script-zh{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.6;color:var(--muted);margin:2px 0 0 30px;overflow-wrap:anywhere}.script-meta{font-size:13px;color:var(--muted);margin:0 0 14px}.zh-toggle{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:11px;line-height:1;padding:3px 7px;margin-left:10px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--muted);cursor:pointer;vertical-align:middle}.zh-toggle:hover{color:var(--ink);border-color:var(--green)}.zh-toggle[aria-pressed="true"]{color:var(--ink);border-color:var(--green)}</style></head>
+<body><main>
+<header><div><div class="eyebrow">JUYOUCI / 剧有词</div><h1 id="title">剧有词</h1><p class="muted">选一段素材，学一批词。</p></div><div class="header-side"><span class="badge">独立 HTML · 随时学习</span><button id="theme-toggle" type="button" aria-pressed="false" title="切换护眼/浅色配色">切换浅色</button></div></header>
+<section id="empty-library" class="empty" hidden><h2>学习器里还没有词库</h2><p>请让剧有词把词库加入这个学习网页，再重新生成文件。</p></section>
+<div id="workspace" hidden>
+<div class="toolbar" aria-label="学习器设置"><label>选择词库 <select id="deck-select" aria-label="选择词库"></select></label><label>练习方式 <select id="practice-mode" aria-label="练习方式"><option value="flashcard">两阶段自评（默认）</option><option value="typed">输入目标语言</option></select></label></div>
+<section id="deck-empty" class="empty" hidden><h2>这个词库还没有词条</h2><p>选择其他词库，或让剧有词为这个素材添加词条。</p></section>
+<div id="deck-content">
+<div class="stats" aria-label="学习统计"><div><strong id="total">0</strong>词条</div><div><strong id="learned">0</strong><span id="learned-label">已掌握</span></div><div><strong id="remaining">0</strong>待练习</div></div>
+<nav aria-label="页面模式"><button id="study-tab" aria-pressed="true">学习与回忆</button><button id="list-tab" aria-pressed="false">词汇总览</button><button id="lines-tab" aria-pressed="false" hidden>台词</button></nav>
+<section id="study"><div class="toolbar"><label>练习范围 <select id="filter"><option value="unlearned">继续学习</option><option value="again">需要再练</option><option value="all">全部复习</option></select></label><button id="shuffle">打乱顺序</button></div>
+<div class="card"><div class="eyebrow" id="position"></div><div class="answer" id="answer-block"><div class="target-label" id="target-label">本次要学</div><h2 class="word-target" id="target"></h2><span class="type-badge" id="type-badge" hidden>短语</span><span class="ipa" id="ipa"></span><p class="muted" id="meaning"></p><p id="translation"></p></div><p class="recall-prompt" id="prompt"></p><p class="sentence" id="sentence"></p>
+<div class="actions" id="learn-actions"><button class="primary" id="start">学过了，稍后考我</button><button id="speak-term">朗读词条</button><button id="speak">朗读原句</button></div>
+<div class="actions" id="self-actions" hidden><button class="primary" id="reveal">核对答案</button><button id="speak-term-self">朗读词条</button><button id="self-speak">朗读原句</button></div>
+<div class="actions" id="ratings" hidden><button id="again">没想起来</button><button class="primary" id="known">想起来了</button></div>
+<div id="typed-actions" hidden><label class="target-label" for="answer-input" id="answer-label">根据中文提示，输入目标语言</label><div class="actions"><input id="answer-input" class="answer-input" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="feedback"><button class="primary" id="check">检查答案</button><button id="give-up">看答案，再练</button></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p><button id="continue" hidden>继续下一词 →</button></div></div>
+<div class="bottom"><span class="hint" id="keyboard-hint">按空格核对答案 · 显示答案后按 1 再练 / 2 想起来了</span></div>
+<p class="hint" id="mode-hint">先学词 → 回忆词义 → 回想目标语言。请先在心里作答，再核对答案；答错会自动排回队列。</p></section>
+<section id="list" hidden><input id="search" type="search" aria-label="搜索词汇" placeholder="搜索词汇、释义或台词…"><p class="muted" id="results"></p><div id="words"></div></section>
+<section id="lines" hidden><div class="toolbar"><label id="episode-picker">选集 <select id="episode-select" aria-label="选择集数"></select></label><button id="lines-zh" type="button" aria-pressed="false" hidden>显示中文</button></div><p class="script-meta" id="lines-meta"></p><div id="script"></div></section>
+<footer><div id="notice" role="status" aria-live="polite"></div><p class="hint">学习进度按词库保存在当前浏览器。换浏览器、移动文件或清理数据前，请导出备份。练习方式会保存在这个浏览器中。朗读使用设备语音，声音及离线可用性取决于浏览器。</p><div class="actions"><button id="export">导出进度</button><button id="import">导入进度</button><button id="reset">重置进度</button><input type="file" id="file" accept="application/json,.json" hidden></div><p class="muted" id="profile"></p><p class="muted" id="note"></p><details><summary class="hint">内容来源</summary><div id="source-list"></div></details></footer>
+</div>
+</main><script type="application/json" id="vocab-library">{"schema_version": 1, "decks": [{"title": "Friends S03E17 · 词汇学习", "deck_id": "friends:s03e17:zh", "language": "English", "exam_target": "IELTS", "level_target": "单词 B2–C1，词组 B1–C1", "selection_basis": "S03E17 SRT 原文；沿用 Friends S03E14–E25 批次的词条，按原句归属重新分集", "difficulty_feedback": "", "source_type": "episode", "cards": [{"term": "collapsed", "meaning": "倒下；崩溃", "ipa": "/kəˈlæpst/", "sentence": "Smokey Joe here got halfway to the highway and collapsed.", "translation": "这位烟熏乔走到半路去公路就倒下了。", "card_type": "word", "answers": ["collapsed"], "targets": ["collapsed"], "target_spans": [[47, 56]], "examples": [], "id": "5e8f48c7147247e3d2ac"}, {"term": "generous", "meaning": "慷慨的；大方的", "ipa": "/ˈʤɛnərəs/", "sentence": "Thank you, Phoebe. That's very, very generous.", "translation": "谢谢你，菲比。这真是太慷慨了。", "card_type": "word", "answers": ["generous"], "targets": ["generous"], "target_spans": [[37, 45]], "examples": [], "id": "23ca56a80e332387241d"}, {"term": "appreciate", "meaning": "感激；欣赏", "ipa": "/əˈpriʃiˌeɪt/", "sentence": "Look, I just wanna say I really appreciate you spending time with me.", "translation": "听着，我只想说我很感谢你花时间陪我。", "card_type": "word", "answers": ["appreciate"], "targets": ["appreciate"], "target_spans": [[32, 42]], "examples": [], "id": "32063a1ed7290e37767c"}, {"term": "put out", "meaning": "摆出；熄灭", "ipa": "/pʊt aʊt/", "sentence": "I'll just put out pickles or something.", "translation": "我就摆点酸黄瓜什么的。", "card_type": "phrase", "answers": ["put out"], "targets": ["put out"], "target_spans": [[10, 17]], "examples": [], "id": "3f9d7d7a2b8f4660e956"}, {"term": "in public", "meaning": "在公共场合", "ipa": "/ɪn ˈpəblɪk/", "sentence": "Rachel never pees in public restrooms.", "translation": "瑞秋从不在公共厕所小便。", "card_type": "phrase", "answers": ["in public"], "targets": ["in public"], "target_spans": [[18, 27]], "examples": [], "id": "e3cafe9218652182ce71"}, {"term": "you know what", "meaning": "你知道吗", "ipa": "/ju noʊ hwət/", "sentence": "You know what? There is no right or wrong here.", "translation": "你知道吗？这里没有对错。", "card_type": "phrase", "answers": ["you know what"], "targets": ["You know what"], "target_spans": [[0, 13]], "examples": [], "id": "2c8cff686660805d10f4"}, {"term": "never mind", "meaning": "算了；别在意", "ipa": "/ˈnɛvər maɪnd/", "sentence": "All right, forget it, never mind.", "translation": "好，算了，别在意。", "card_type": "phrase", "answers": ["never mind"], "targets": ["never mind"], "target_spans": [[22, 32]], "examples": [], "id": "cce7fb89b73ff57d6e5f"}], "sources": ["friends.s03e17.720p.bluray.x264-psychd.srt"], "transcript": [{"label": "S03E17", "lines": [{"text": "Can I see the comics?", "translation": "我能看漫画吗？"}, {"text": "This is the New York Times.", "translation": "这是《纽约时报》。"}, {"text": "Okay, may I see the comics?", "translation": "好，我能看漫画吗？"}, {"text": "I thought you were taking Ross to the game.", "translation": "我以为你要带罗斯去看比赛。"}, {"text": "- We are. He's meeting us here. - No, Rachel's meeting us here.", "translation": "——我们要去。他在这儿跟我们碰头。——不，是瑞秋在这儿跟我们碰头。"}, {"text": "Come on. They can be in the same room.", "translation": "拜托，他们可以待在一个房间里。"}, {"text": "- You should've been there last night. - What happened?", "translation": "——你昨晚该在场的。——怎么了？"}, {"text": "Ross was hanging out at our place.", "translation": "罗斯在我们那儿待着。"}, {"text": "Rachel comes to borrow moisturizer from Chandler...", "translation": "瑞秋来跟钱德借润肤霜……"}, {"text": "Hey.", "translation": "嘿。"}, {"text": "How hard is it to say \"something\"?", "translation": "说“东西”有那么难吗？"}, {"text": "Rachel came over to borrow \"something. \"", "translation": "瑞秋过来借“东西”。"}, {"text": "Anyway, her and Ross just started yelling at each other.", "translation": "反正她跟罗斯就吵起来了。"}, {"text": "Why was he yelling at her? He slept with someone else.", "translation": "他干嘛冲她吼？他跟别人睡了。"}, {"text": "He says they were on a break when it happened...", "translation": "他说那事发生的时候他们在冷静期……"}, {"text": "...so she should've forgiven him by now.", "translation": "……所以她到现在早该原谅他了。"}, {"text": "He is so unreasonable. God.", "translation": "他太不讲理了。天哪。"}, {"text": "Although I understand what he means.", "translation": "不过我能理解他的意思。"}, {"text": "Oh, my God. This is like 60 Minutes...", "translation": "天哪，这简直像《60 分钟》……"}, {"text": "...when at first you're mad at that pharmaceutical company...", "translation": "一开始你气那家制药公司……"}, {"text": "...for making the drug.", "translation": "……造那个药。"}, {"text": "And then, you just feel bad for the people because...", "translation": "然后你就只剩心疼那些人，因为……"}, {"text": "...they needed to make their hair grow.", "translation": "……他们需要长头发。"}, {"text": "You know, this is like when my parents got divorced.", "translation": "你知道，这就像我爸妈离婚那会儿。"}, {"text": "I hope Ross doesn't try to kidnap me after Cub Scouts.", "translation": "希望罗斯别在幼童军活动后把我绑走。"}, {"text": "I dreamed that Ross and Rachel were still together.", "translation": "我梦见罗斯和瑞秋还在一起。"}, {"text": "And we were all hanging out and happy.", "translation": "我们大家在一块儿玩，特别开心。"}, {"text": "I had the same dream.", "translation": "我也做了同样的梦。"}, {"text": "- And nobody slept with the Xerox girl. - Oh, I had the opposite dream.", "translation": "——而且没人跟复印店那姑娘睡。——哦，我做的梦正相反。"}, {"text": "Maybe it's gonna be okay. I mean, it's been a week.", "translation": "也许没事了。我是说，都过了一周了。"}, {"text": "It never takes me more than a week to get over a relationship.", "translation": "我从来不超过一周就能走出一段感情。"}, {"text": "It never takes you more than a shower to get over a relationship.", "translation": "你从来不超过一个澡就能走出一段感情。"}, {"text": "Let's go. Let's hit the road. Let's get the show on it.", "translation": "走吧。上路。开干。"}, {"text": "Let me get coffee.", "translation": "我去弄杯咖啡。"}, {"text": "I know the best coffeehouse. And it's close.", "translation": "我知道最好的咖啡店，而且很近。"}, {"text": "Closer than here?", "translation": "比这儿还近？"}, {"text": "Oh, look. I found coffee.", "translation": "哦，看，我找到咖啡了。"}, {"text": "Okay, let's skedaddle.", "translation": "好，我们赶紧溜。"}, {"text": "I'm not gonna drink somebody's old coffee.", "translation": "我才不喝别人的剩咖啡。"}, {"text": "Okay, Your Highness.", "translation": "好，殿下。"}, {"text": "\"Rachel, I'm really sorry. \" \"Okay, Ross. Wanna get back together?\"", "translation": "“瑞秋，我真的很抱歉。”“好，罗斯。要复合吗？”"}, {"text": "\"Yeah, okay. \"", "translation": "“好啊，行。”"}, {"text": "Did anyone else hear that?", "translation": "别人也听见了吗？"}, {"text": "- Is he here? - No.", "translation": "——他在吗？——不在。"}, {"text": "Here's your moisturizer.", "translation": "你的润肤霜。"}, {"text": "Hi.", "translation": "嗨。"}, {"text": "You guys are gonna love me. Okay, check it out.", "translation": "你们会爱死我的。好，看这个。"}, {"text": "Thursday night, five tickets.", "translation": "周四晚上，五张票。"}, {"text": "Calvin Klein lingerie show, and you guys are coming with me.", "translation": "Calvin Klein 内衣秀，你们跟我去。"}, {"text": "I said that out loud, right?", "translation": "我刚是说出口了吧？"}, {"text": "Yes, it's just that we kind of already...", "translation": "是，只是我们其实已经……"}, {"text": "...made plans with Ross.", "translation": "……跟罗斯约好了。"}, {"text": "Oh. Well, okay.", "translation": "哦。那好吧。"}, {"text": "Well, there you go.", "translation": "那就这样了。"}, {"text": "It's just, he got this new home-theater dealy...", "translation": "就是他弄了个新的家庭影院那玩意儿……"}, {"text": "...and he wants us to check it out.", "translation": "……想让我们去看看。"}, {"text": "He's excited about it too.", "translation": "他也很兴奋。"}, {"text": "He even recorded showtimes on his answering machine.", "translation": "他连放映时间都录在答录机里了。"}, {"text": "- We're sorry, honey. Oh, it's okay.", "translation": "——对不起，亲爱的。——哦，没事。"}, {"text": "Rach, it's not that we don't want to. Really.", "translation": "瑞秋，不是我们不想去。真的。"}, {"text": "Are we talking models in their underwear?", "translation": "是说穿内衣的模特吗？"}, {"text": "And heels.", "translation": "还有高跟鞋。"}, {"text": "Ross did ask us first, and we set that night aside.", "translation": "罗斯先问的我们，我们也把那晚留出来了。"}, {"text": "Come on. If he asked you first, it's only fair.", "translation": "拜托，他先问的你们，这才公平。"}, {"text": "Oh, boy, do I feel bad.", "translation": "哦，天，我好难受。"}, {"text": "Very bad.", "translation": "非常难受。"}, {"text": "- Chandler, what are you doing? - Chandler.", "translation": "——钱德，你干什么？——钱德。"}, {"text": "Oh, my God.", "translation": "天哪。"}, {"text": "You're smoking again?", "translation": "你又抽烟了？"}, {"text": "Well, actually, yesterday I was smoking again.", "translation": "其实，昨天我又抽烟了。"}, {"text": "Today I'm smoking, still.", "translation": "今天我还在抽。"}, {"text": "Why would you start again after chewing all that quitting gum?", "translation": "你嚼了那么多戒烟口香糖，干嘛又抽？"}, {"text": "This is just like my parents' divorce...", "translation": "这就像我爸妈离婚……"}, {"text": "...which is when I first started smoking.", "translation": "……我就是那时候开始抽烟的。"}, {"text": "Weren't you 9?", "translation": "你那时候不是九岁吗？"}, {"text": "Yeah.", "translation": "是啊。"}, {"text": "I'm telling you something, that first smoke after naptime...", "translation": "跟你说，午睡之后那第一根烟……"}, {"text": "That's great. With my luck, that's him.", "translation": "太好了。按我的运气，这就是他。"}, {"text": "Him? Ross?", "translation": "他？罗斯？"}, {"text": "No, \"Hymn\" 253: \"His Eyes Are on the Sparrow. \"", "translation": "不，是“圣歌”253 首：“他的眼目看顾麻雀。”"}, {"text": "When my parents got divorced, I started using humor as a defense mechanism.", "translation": "我爸妈离婚后，我开始用幽默当防御机制。"}, {"text": "Hi. Uh, do you guys have weekend plans?", "translation": "嗨。呃，你们周末有安排吗？"}, {"text": "Because my sister says we can spend the weekend at her cabin, skiing.", "translation": "因为我妹妹说我们可以去她的小木屋过周末，滑雪。"}, {"text": "I'm asking you first, right? I'm playing by the rules.", "translation": "我先问的你们，对吧？我按规矩来。"}, {"text": "Absolutely.", "translation": "当然。"}, {"text": "Chandler. You're smoking? What are you doing?", "translation": "钱德。你在抽烟？你干什么？"}, {"text": "Shut up. You're not my real mom.", "translation": "闭嘴。你又不是我亲妈。"}, {"text": "Could you close that window? My nipples could cut glass.", "translation": "能把那窗户关上吗？我的乳头都能割玻璃了。"}, {"text": "Really? Because mine get me out of tickets.", "translation": "真的？我那俩还能帮我免罚单呢。"}, {"text": "Look, I just wanna say I really appreciate you spending time with me.", "translation": "听着，我就想说，很感谢你们陪我。"}, {"text": "It's been a hard time right now, so I just want to say thanks.", "translation": "现在日子挺难的，所以我就想说声谢谢。"}, {"text": "Somebody else hug him. I have to stay by the window.", "translation": "换个人抱他。我得守着窗户。"}, {"text": "Oh, hey, hey.", "translation": "哦，嘿，嘿。"}, {"text": "How about this weekend, we have a laser-disc marathon, okay?", "translation": "这个周末我们来个镭射碟马拉松，怎么样？"}, {"text": "And maybe a tournament on my new...", "translation": "也许再加个比赛，用我的新……"}, {"text": "...dart board. What do you think?", "translation": "……飞镖盘。你们觉得呢？"}, {"text": "Two days of darts. It'll be great.", "translation": "打两天飞镖。肯定很棒。"}, {"text": "It'll be great for next weekend.", "translation": "下个周末肯定很棒。"}, {"text": "This weekend, guys.", "translation": "这个周末，各位。"}, {"text": "It'll be great for next weekend.", "translation": "下个周末肯定很棒。"}, {"text": "I mean, \"It'll be great. \"", "translation": "我是说，“肯定很棒”。"}, {"text": "What's going on?", "translation": "怎么了？"}, {"text": "We're, um, sort of invited to go skiing. You know, Rachel's sister's cabin?", "translation": "我们，呃，算是被邀请去滑雪。你知道，瑞秋妹妹的小木屋？"}, {"text": "So, for the whole weekend?", "translation": "所以，整个周末？"}, {"text": "We're really sorry, but she did ask us first.", "translation": "我们真抱歉，可是她先问的我们。"}, {"text": "That's okay. If you all have to go away...", "translation": "没事。如果你们都得走……"}, {"text": "...for the first weekend I'm alone by myself...", "translation": "……在我一个人独自待着的第一个周末……"}, {"text": "...then I totally understand.", "translation": "……那我完全理解。"}, {"text": "I can stay. I'm gonna stay.", "translation": "我可以留下。我留下。"}, {"text": "The last time I went, I was afraid to leave the chair lift.", "translation": "我上次去，都不敢离开缆车座椅。"}, {"text": "I just went round and round.", "translation": "我就一圈一圈地转。"}, {"text": "We need you to drive us there in your grandmother's cab.", "translation": "我们得你开你奶奶的出租车送我们去。"}, {"text": "- But you know what? I'll stay. - No, I'll stay. He's my brother.", "translation": "——不过你知道吗？我留下。——不，我留下。他是我弟弟。"}, {"text": "- What, a \"pity stay\"? - No.", "translation": "——什么，“同情留守”？——不是。"}, {"text": "We're gonna have fun.", "translation": "我们会玩得开心。"}, {"text": "We can make fudge.", "translation": "我们可以做软糖。"}, {"text": "Pity food?", "translation": "同情食品？"}, {"text": "You know what? I don't need any of you to stay.", "translation": "你知道吗？我不需要你们任何人留下。"}, {"text": "Nobody stays.", "translation": "谁也不许留。"}, {"text": "Well, then I might as well offer to stay.", "translation": "那我干脆也提议留下算了。"}, {"text": "Hey...", "translation": "嘿……"}, {"text": "Does anybody else feel bad about Ross?", "translation": "别人也觉得对罗斯不好意思吗？"}, {"text": "You think he's still mad?", "translation": "你觉得他还生气吗？"}, {"text": "He's probably more mad since you called him to borrow his goggles.", "translation": "你打电话跟他借护目镜，他大概更气了。"}, {"text": "What? Mine aren't tinted.", "translation": "怎么？我的不是带色的。"}, {"text": "Chandler.", "translation": "钱德。"}, {"text": "What?", "translation": "什么？"}, {"text": "What does the sign say?", "translation": "牌子上写什么？"}, {"text": "\"Beam me up, Jesus. \"", "translation": "“把我传上去吧，耶稣。”"}, {"text": "The \"No Smoking\" sign.", "translation": "“禁止吸烟”的牌子。"}, {"text": "There's no smoking in my grandmother's cab.", "translation": "我奶奶的出租车里不许抽烟。"}, {"text": "Well, then I have to go to the bathroom.", "translation": "那我得去上厕所。"}, {"text": "Oh, please.", "translation": "哦，拜托。"}, {"text": "No unscheduled stops. You can go when we stop for gas.", "translation": "不许临时停车。加油的时候你再去。"}, {"text": "There's a rest stop right up there. Come on, I really have to go.", "translation": "前面就有个休息站。拜托，我真得去。"}, {"text": "Oh, now I have to go.", "translation": "哦，现在我也得去了。"}, {"text": "Here we go.", "translation": "来了。"}, {"text": "Brace yourself. What?", "translation": "坐稳了。什么？"}, {"text": "Okay. Ow.", "translation": "好。哎哟。"}, {"text": "- Aren't you gonna go? - No, thanks.", "translation": "——你不去？——不用，谢谢。"}, {"text": "Rachel never pees in public restrooms.", "translation": "瑞秋从不在公共厕所小便。"}, {"text": "They never have any paper in there.", "translation": "那儿从来没有纸。"}, {"text": "So my rule is, \"No tissue, no tushy. \"", "translation": "所以我的规矩是：“没纸，不坐。”"}, {"text": "Well, if everybody's going...", "translation": "那，既然大家都去……"}, {"text": "Don't close it. The keys are in there.", "translation": "别关。钥匙在里面。"}, {"text": "Oh, no, no, no, no.", "translation": "哦，不不不不。"}, {"text": "- What's going on? - My lighter's in there.", "translation": "——怎么了？——我的打火机在里面。"}, {"text": "Damn. The tailpipe's not hot enough to light this.", "translation": "该死。排气管不够热，点不着。"}, {"text": "I can open this. Anybody got a coat hanger?", "translation": "我能开这个。谁有衣架？"}, {"text": "Oh, I do.", "translation": "哦，我有。"}, {"text": "No, I took it out of my shirt when I put it on this morning.", "translation": "没有，我早上穿衬衫的时候把它拿出去了。"}, {"text": "So if your parents hadn't divorced...", "translation": "所以要是你爸妈没离婚……"}, {"text": "...you'd be able to answer a question like a normal person?", "translation": "……你就能像个正常人一样回答问题了？"}, {"text": "Look, I just need a wire something to jimmy it.", "translation": "听着，我只要根铁丝之类的东西撬一下。"}, {"text": "One of you give me your bra underwire.", "translation": "你们谁把内衣钢圈给我。"}, {"text": "What?", "translation": "什么？"}, {"text": "Come on. Who has the biggest boobs?", "translation": "拜托。谁胸最大？"}, {"text": "Whoever has the biggest boobs, has the biggest bra and wire.", "translation": "胸最大的，内衣和钢圈也最大。"}, {"text": "- No. - It's too expensive.", "translation": "——不行。——太贵了。"}, {"text": "To get back in the car, we need that wire.", "translation": "要回到车上，我们就要那根钢圈。"}, {"text": "Your call.", "translation": "你们决定。"}, {"text": "Monica's are the biggest.", "translation": "莫妮卡最大。"}, {"text": "These tiny little non-breasts? Please. It's gotta be Rachel.", "translation": "这俩小得跟没有似的？拜托。肯定是瑞秋。"}, {"text": "No, mine are deceptively small.", "translation": "不，我的是小得有欺骗性。"}, {"text": "I mean, I actually sometimes stuff my bra.", "translation": "我是说，我有时还往内衣里塞东西。"}, {"text": "Well, then your bra would still be big.", "translation": "那你内衣还是大的。"}, {"text": "No, I stuff outside the bra.", "translation": "不，我塞在内衣外面。"}, {"text": "Ladies, let's just compromise, okay?", "translation": "女士们，我们折中一下，行吗？"}, {"text": "Phoebe, Rachel, take off Monica's bra.", "translation": "菲比，瑞秋，把莫妮卡的内衣脱了。"}, {"text": "All right, forget it, never mind.", "translation": "好，算了，别了。"}, {"text": "- You can have mine. Thank you.", "translation": "——用我的吧。——谢谢。"}, {"text": "Chandler. What are you doing? There's a trash can right there.", "translation": "钱德。你干什么？那边就有垃圾桶。"}, {"text": "I thought if I littered, that crying Indian might come by and save us.", "translation": "我想，要是我乱扔垃圾，那个哭泣的印第安人就会来救我们。"}, {"text": "There.", "translation": "好了。"}, {"text": "Thank you, Phoebe. That's very, very generous.", "translation": "谢谢你，菲比。真是太慷慨了。"}, {"text": "Now, let's decide who has the nicest ass.", "translation": "现在我们来评评谁屁股最好看。"}, {"text": "And there you go.", "translation": "来了。"}, {"text": "Chandler.", "translation": "钱德。"}, {"text": "Well, at least let me smoke it to the good part.", "translation": "至少让我抽到精彩的地方。"}, {"text": "Oh, no.", "translation": "哦，不。"}, {"text": "- What's going on? - What?", "translation": "——怎么了？——什么？"}, {"text": "Yeah, this has happened before.", "translation": "是啊，这以前也发生过。"}, {"text": "- So you know how to fix it? - Yep. Put more gas in.", "translation": "——那你知道怎么修？——知道。多加汽油。"}, {"text": "Hi. What are you doing here?", "translation": "嗨。你怎么在这儿？"}, {"text": "I was wondering, when you and I split up...", "translation": "我在想，你跟我分开的时候……"}, {"text": "...did you get the tape that was half the last episode of M.A.S. H...", "translation": "……你是不是拿走了那盘录像带，一半是《M.A.S.H》最后一集……"}, {"text": "...and half the hostages coming home?", "translation": "……一半是人质回家？"}, {"text": "But now it's Susan and me in Mexico and the hostages coming home.", "translation": "现在是我和苏珊在墨西哥，还有人质回家。"}, {"text": "Where's Ben?", "translation": "本呢？"}, {"text": "- He's sleeping. - Ah. Ooh.", "translation": "——他睡了。——啊。哦。"}, {"text": "Is this a bad time?", "translation": "现在不方便吗？"}, {"text": "Yeah, actually. Susan's gonna be here any minute.", "translation": "是啊，其实。苏珊随时到。"}, {"text": "- It's kind of an anniversary. - Oh.", "translation": "算是某种纪念日吧。"}, {"text": "I thought you guys got married in January.", "translation": "我以为你们一月结的婚。"}, {"text": "A different kind of anniversary.", "translation": "另一种纪念日。"}, {"text": "Oh.", "translation": "哦。"}, {"text": "So anyway...", "translation": "总之……"}, {"text": "Candles, champagne...", "translation": "蜡烛、香槟……"}, {"text": "Yeah, anniversaries are great...", "translation": "是啊，纪念日真好……"}, {"text": "...because love lasts forever, you know?", "translation": "……因为爱会永远，你知道吗？"}, {"text": "There's nothing like it in this life. Money in the bank.", "translation": "这辈子没什么比得上。跟银行里的钱一样稳。"}, {"text": "So Rachel and I broke up.", "translation": "所以我和瑞秋分手了。"}, {"text": "God, Ross, I am so sorry.", "translation": "天哪，罗斯，我真难过。"}, {"text": "You know what?", "translation": "你知道吗？"}, {"text": "I wanna talk about this so much...", "translation": "我特别想聊这事……"}, {"text": "...but when we can really get into it.", "translation": "……等我们能真正好好聊的时候。"}, {"text": "- You free for dinner tomorrow? - I'd love that.", "translation": "——你明天晚上有空吃晚饭吗？——我很乐意。"}, {"text": "Me too.", "translation": "我也是。"}, {"text": "I guess it all started when Rachel got this new job.", "translation": "我想一切是从瑞秋接了这个新工作开始的。"}, {"text": "Triple A can pick us up.", "translation": "AAA 可以来接我们。"}, {"text": "What town are we near?", "translation": "我们靠近哪个镇？"}, {"text": "Freemont. Westmont.", "translation": "弗里蒙特。韦斯特蒙特。"}, {"text": "Uh, Westberg?", "translation": "呃，韦斯特伯格？"}, {"text": "Why are you answering?", "translation": "你干嘛回答？"}, {"text": "Do you know what route we're on?", "translation": "你知道我们在哪条路上吗？"}, {"text": "We are definitely on Route 27.", "translation": "我们肯定在 27 号公路上。"}, {"text": "We are at a rest stop on Route 27...", "translation": "我们在 27 号公路的一个休息站……"}, {"text": "There is no Route 27.", "translation": "没有 27 号公路。"}, {"text": "- Either 93 or 76. I don't know.", "translation": "——93 或者 76。我不知道。"}, {"text": "I always slept in the back when we drove here.", "translation": "我们开车来的时候，我总是睡在后座。"}, {"text": "Can you just send someone up and down 76 and check every rest stop?", "translation": "你能不能派人在 76 号上下来回跑，查每个休息站？"}, {"text": "And also 93?", "translation": "还有 93 号？"}, {"text": "Okay.", "translation": "好。"}, {"text": "No, they don't do that.", "translation": "不，他们不这么干。"}, {"text": "Somebody will come and save us.", "translation": "会有人来救我们的。"}, {"text": "Who? Have you seen a car in the last hour and a half?", "translation": "谁？过去一个半小时你见过车吗？"}, {"text": "We should call Ross. Maybe he can get a car to get us.", "translation": "我们该给罗斯打电话。也许他能找辆车来接我们。"}, {"text": "I am not getting in a car with Ross.", "translation": "我才不上罗斯的车。"}, {"text": "We will just have to...", "translation": "那我们就只能……"}, {"text": "...live here.", "translation": "……住这儿了。"}, {"text": "- But it's so cold. - No.", "translation": "——可这儿太冷了。——不。"}, {"text": "I won't get in a car with him. Think of something else.", "translation": "我不上他的车。想别的办法。"}, {"text": "Joey and Chandler are back.", "translation": "乔伊和钱德回来了。"}, {"text": "- So the going-for-help went well? - Oh, yeah.", "translation": "——那，去找救兵顺利吗？——哦，是啊。"}, {"text": "Smokey Joe here got halfway to the highway and collapsed.", "translation": "这位烟熏乔走到半路就瘫了。"}, {"text": "I have the lung capacity of a 2-year-old.", "translation": "我的肺活量就两岁小孩水平。"}, {"text": "Then why are you smoking?", "translation": "那你干嘛还抽烟？"}, {"text": "It's very unsettling.", "translation": "真让人不安。"}, {"text": "Right? I mean, it's pretty unbelievable.", "translation": "对吧？我是说，真难以相信。"}, {"text": "They just took off without even looking back.", "translation": "他们就这么走了，连头都不回。"}, {"text": "I don't need them. I've got you guys now as friends.", "translation": "我不需要他们。我现在有你们这些朋友。"}, {"text": "You and Susan.", "translation": "你和苏珊。"}, {"text": "Susan will be so pleased.", "translation": "苏珊会很高兴。"}, {"text": "Seven-one-seven?", "translation": "七一七？"}, {"text": "Where's 717?", "translation": "717 在哪儿？"}, {"text": "You have more of these for Susan, right?", "translation": "你还有这种给苏珊的吗？"}, {"text": "No, but that's okay.", "translation": "没有，不过没事。"}, {"text": "I'll just put out pickles or something.", "translation": "我就摆点酸黄瓜什么的。"}, {"text": "- Ross, thank God. Pheebs?", "translation": "——罗斯，谢天谢地。菲比？"}, {"text": "Why are you whispering?", "translation": "你干嘛小声说话？"}, {"text": "I ate a bug.", "translation": "我吃了只虫子。"}, {"text": "Hey, Rach. The tampons here are only a penny.", "translation": "嘿，瑞秋。这儿的卫生棉条才一便士。"}, {"text": "Let's stock up.", "translation": "我们囤点。"}, {"text": "We're out of gas and don't know where we are, so we can't get a tow truck.", "translation": "我们没油了，也不知道在哪儿，所以叫不到拖车。"}, {"text": "- Oh. Now you want a favor? - Yes, please.", "translation": "——哦。现在你想要人情了？——是，拜托。"}, {"text": "I'm sorry your car broke down, Pheebs...", "translation": "你车坏了，我很遗憾，菲比……"}, {"text": "...but I'm too busy with some of my real friends right now.", "translation": "……可我现在忙着陪我真正的朋友。"}, {"text": "But please call to let me know you got home safely.", "translation": "不过到家了打个电话报平安。"}, {"text": "Phoebe, hang on a second.", "translation": "菲比，等一下。"}, {"text": "Take my car. Get your friends.", "translation": "开我的车。去接你朋友。"}, {"text": "No, I won't pick them up.", "translation": "不，我不接他们。"}, {"text": "We both know you'll do it because you're not a jerk.", "translation": "我们都知道你会去，因为你人不错。"}, {"text": "So you can sulk here for half an hour, then go get them...", "translation": "所以你就在这儿生半小时闷气，然后去接他们……"}, {"text": "...or save time and sulk in the car. - Rachel doesn't...", "translation": "……或者省点时间，在车里生气。——瑞秋没……"}, {"text": "I'm sorry Rachel dumped you for Mark...", "translation": "瑞秋为了马克甩了你，我很遗憾……"}, {"text": "...and you're the innocent victim in this.", "translation": "……你是这事的无辜受害者。"}, {"text": "But don't punish your friends for what Rachel did.", "translation": "但别因为瑞秋做的事去惩罚你朋友。"}, {"text": "Yeah, you're right.", "translation": "是啊，你说得对。"}, {"text": "Phoebe, hang on. Ross wants to say something.", "translation": "菲比，等一下。罗斯有话要说。"}, {"text": "What? You slept with someone else?", "translation": "什么？你跟别人睡了？"}, {"text": "We were on a break.", "translation": "我们在冷静期。"}, {"text": "We were... Yeah.", "translation": "我们……是啊。"}, {"text": "Where are you? I'll find you.", "translation": "你们在哪儿？我来找你们。"}, {"text": "You slept with another woman?", "translation": "你跟别的女人睡了？"}, {"text": "Oh, you're one to talk.", "translation": "哦，你还好意思说。"}, {"text": "Okay, done.", "translation": "好，写了。"}, {"text": "What's \"pleh\"?", "translation": "“pleh”是什么？"}, {"text": "That's \"help\" spelled backwards...", "translation": "那是“help”倒着拼……"}, {"text": "...so that the helicopters can read it from the air.", "translation": "……这样直升机从空中能看清。"}, {"text": "Ha. What's \"dufus\" spelled backwards?", "translation": "哈。“dufus”倒着拼是什么？"}, {"text": "Car. Car.", "translation": "车。车。"}, {"text": "Oh, it's Ross on one of his drives.", "translation": "哦，是罗斯开车路过。"}, {"text": "Hey.", "translation": "嘿。"}, {"text": "What is he doing here?", "translation": "他在这儿干嘛？"}, {"text": "He is saving your butt.", "translation": "他是来救你们的。"}, {"text": "Unless I'm stepping on some toes here...", "translation": "除非我在这儿碍着谁了……"}, {"text": "...in which case, I could just mosey on.", "translation": "……那我就慢慢溜达走。"}, {"text": "I have plenty of people to help on the interstate.", "translation": "州际公路上等着我帮忙的人多着呢。"}, {"text": "Come on. We need your help, please.", "translation": "拜托。我们需要你帮忙。"}, {"text": "Fine. Fine.", "translation": "好。好。"}, {"text": "Oh, no. Now it's not gonna make any sense.", "translation": "哦，不。现在这就不通顺了。"}, {"text": "You guys...", "translation": "你们……"}, {"text": "...what do we do about Ross? He drove all the way up here.", "translation": "……罗斯怎么办？他大老远开上来了。"}, {"text": "Just send him back, then we'll go skiing?", "translation": "直接让他回去，然后我们去滑雪？"}, {"text": "This is horrible. It's just horrible.", "translation": "这太糟了。简直太糟了。"}, {"text": "Should we ask Ross to come along?", "translation": "我们要不要叫罗斯一起去？"}, {"text": "But what about Rachel? How are we gonna even ask her?", "translation": "可瑞秋怎么办？我们怎么开口问她？"}, {"text": "Ask me what?", "translation": "问我什么？"}, {"text": "If, uh, it might be okay if Ross came skiing?", "translation": "就是，呃，如果罗斯一起去滑雪，行不行？"}, {"text": "No, I wasn't gonna ask that.", "translation": "不，我没打算问那个。"}, {"text": "You guys are unbelievable. No, he cannot come.", "translation": "你们真行。不行，他不能来。"}, {"text": "- Excuse me? It's horrible.", "translation": "——什么？这也太糟了。——糟透了。"}, {"text": "Oh, please? Can't I come to your special, magical cabin?", "translation": "哦，拜托？我就不能去你们那个神奇小木屋吗？"}, {"text": "Why would you even want to come? You're a horrible skier.", "translation": "你干嘛想去？你滑雪烂透了。"}, {"text": "Oh. Hitting me where it hurts. My ski skills.", "translation": "哦。戳我痛处。我的滑雪技术。"}, {"text": "Here we go again.", "translation": "又来。"}, {"text": "I can't handle this, you guys.", "translation": "我受不了了，你们。"}, {"text": "I can handle it. \"Handle\" is my middle name.", "translation": "我受得了。“受得了”是我中间名。"}, {"text": "Actually, it's the middle part of my first name.", "translation": "其实是我名字中间那部分。"}, {"text": "All right, Pheebs, your cab's ready.", "translation": "好，菲比，你的车好了。"}, {"text": "Let's go.", "translation": "走吧。"}, {"text": "You're welcome.", "translation": "不客气。"}, {"text": "I'm sorry. Were you speaking to me, or sleeping with someone else?", "translation": "抱歉。你刚是在跟我说话，还是跟别人睡去了？"}, {"text": "We were on a break.", "translation": "我们在冷静期。"}, {"text": "Why don't you just put that on your answering machine?", "translation": "你干嘛不把那句录到你答录机上？"}, {"text": "It's valid, and I'm not the only one who thinks so.", "translation": "这说法成立，而且不只我一个人这么想。"}, {"text": "Monica agrees with me.", "translation": "莫妮卡同意我。"}, {"text": "What?", "translation": "什么？"}, {"text": "I don't know.", "translation": "我不知道。"}, {"text": "You said it last night.", "translation": "你昨晚说的。"}, {"text": "What I said was that I understood.", "translation": "我说的是我理解。"}, {"text": "Joey is the one who agreed with you.", "translation": "同意你的是乔伊。"}, {"text": "Really, Joey?", "translation": "真的，乔伊？"}, {"text": "What?", "translation": "什么？"}, {"text": "You know what? There is no right or wrong here.", "translation": "你知道吗？这事没有对错。"}, {"text": "I think it's very obvious who's wrong here.", "translation": "我觉得谁错很明显。"}, {"text": "Obviously not to Joey.", "translation": "显然乔伊不这么觉得。"}, {"text": "What?", "translation": "什么？"}, {"text": "Joey and Monica feel like I do. You and this innocent act.", "translation": "乔伊和莫妮卡跟我一个感受。还有你这副无辜样。"}, {"text": "Hey, guess who I am?", "translation": "嘿，猜猜我是谁？"}, {"text": "Hey, hey, hey, hey. Hey.", "translation": "嘿，嘿，嘿，嘿。嘿。"}, {"text": "Look what you're doing to Chandler.", "translation": "看看你把钱德弄成什么样了。"}, {"text": "Look. We know that this is really, really hard for you guys.", "translation": "听着，我们知道这对你们真的很难。"}, {"text": "You don't have to love each other.", "translation": "你们不必相爱。"}, {"text": "You don't even have to like each other much right now.", "translation": "现在你们甚至不必多喜欢对方。"}, {"text": "But please find a way to be around each other.", "translation": "但请你们想办法能共处。"}, {"text": "And not put us in the middle.", "translation": "别把我们夹在中间。"}, {"text": "Otherwise, I mean, that's just it for us hanging out together.", "translation": "不然，我们就没法一起玩了。"}, {"text": "Is that what you want?", "translation": "这是你们想要的吗？"}, {"text": "Can you be civil?", "translation": "你们能客气点吗？"}, {"text": "- Yeah. - I can.", "translation": "——能。——我能。"}, {"text": "Good, let's get back in the car. It's freezing...", "translation": "好，回车里。冻死了……"}, {"text": "...and my chest is unsupported.", "translation": "……而且我胸口没支撑。"}, {"text": "Wait a second.", "translation": "等一下。"}, {"text": "I mean, what are we doing? Who's going with who?", "translation": "我是说，我们这是干嘛？谁跟谁走？"}, {"text": "Look, you guys should go.", "translation": "听着，你们去吧。"}, {"text": "You know, you planned this all out...", "translation": "你们计划了这么久……"}, {"text": "...and I don't wanna ruin it. So just go.", "translation": "……我不想毁了。去吧。"}, {"text": "- You drove all the way up here. - No, no, no.", "translation": "——你都大老远开上来了。——不不不。"}, {"text": "I've gotta take the car back anyway.", "translation": "我反正得把车开回去。"}, {"text": "I'm spending all day tomorrow with Ben.", "translation": "我明天一整天陪本。"}, {"text": "It's fine, okay? Just go. No guilt, I promise.", "translation": "没事，好吗？去吧。我保证不怪你们。"}, {"text": "Thank you.", "translation": "谢谢。"}, {"text": "We'll call you when we get back.", "translation": "我们回来给你打电话。"}, {"text": "Maybe we can, like, go to a movie or something.", "translation": "也许我们能去看个电影什么的。"}, {"text": "Or the rodeo.", "translation": "或者去看牛仔竞技。"}, {"text": "- That would be great. - Okay.", "translation": "——那就太好了。——好。"}, {"text": "I was being Shelley Winters from The Poseidon Adventure.", "translation": "我刚是在演《海神号遇险记》里的谢莉·温特斯。"}, {"text": "I know.", "translation": "我知道。"}, {"text": "Bye.", "translation": "再见。"}, {"text": "- Ross. - Hi. Sorry I'm late.", "translation": "——罗斯。——嗨。抱歉我晚了。"}, {"text": "- Were you sleeping? - Uh, no.", "translation": "——你睡着了？——呃，没有。"}, {"text": "Oh, great.", "translation": "哦，好。"}, {"text": "I had to get you a new battery. I got the best I could.", "translation": "我得给你拿块新电池。我拿了最好的。"}, {"text": "You don't want to skimp there.", "translation": "这上面不能省。"}, {"text": "You're a genius.", "translation": "你真是个天才。"}, {"text": "It came to about $112.", "translation": "一共大概 112。"}, {"text": "But what the hell, call it an even 110?", "translation": "不过算了，就 110 吧。"}, {"text": "I'll pay you tomorrow. Bye.", "translation": "我明天给你钱。再见。"}, {"text": "So they, uh, all took off.", "translation": "所以他们，呃，都走了。"}, {"text": "It was pretty hard watching them go, you know?", "translation": "看着他们走，挺难受的，你知道吗？"}, {"text": "Yeah, okay. Bye.", "translation": "是啊，好。再见。"}, {"text": "So I'm gonna take off then.", "translation": "那我走了。"}]}], "note": "该剧对话中严格 C1–C2 单词有限，本批以语料上限词为主，未凑数；每条原句均逐字来自字幕。"}]}</script><script>
+'use strict';
+const LIBRARY = JSON.parse(document.getElementById('vocab-library').textContent);
+const $ = id => document.getElementById(id);
+const preferenceKey = 'series-vocab:preferences:v1';
+const validDecks = LIBRARY && LIBRARY.schema_version === 1 && Array.isArray(LIBRARY.decks)
+  ? LIBRARY.decks.filter(deck => deck && typeof deck.title === 'string' && typeof deck.deck_id === 'string' && Array.isArray(deck.cards))
+  : [];
+let preferences = { practiceMode: 'flashcard', deckId: '', theme: 'dark' };
+try {
+  const saved = JSON.parse(localStorage.getItem(preferenceKey) || 'null');
+  if (saved && typeof saved === 'object') {
+    if (saved.practiceMode === 'typed' || saved.practiceMode === 'flashcard') preferences.practiceMode = saved.practiceMode;
+    if (typeof saved.deckId === 'string') preferences.deckId = saved.deckId;
+    if (saved.theme === 'light' || saved.theme === 'dark') preferences.theme = saved.theme;
+  }
+} catch (_) {}
+applyTheme();
+$('theme-toggle').onclick = toggleTheme;
+let D = null, cardById = new Map(), ids = new Set(), progress = {}, queue = [];
+let practiceMode = preferences.practiceMode, pageMode = 'study', revealed = false, showTranscriptZh = false;
+const progressKey = deckId => 'series-vocab:v2:' + deckId;
+const legacyProgressKey = deckId => 'series-vocab:v1:' + deckId;
+const LANG_CODES = { english: 'en-US', en: 'en-US', japanese: 'ja-JP', jp: 'ja-JP', korean: 'ko-KR', ko: 'ko-KR', chinese: 'zh-CN', zh: 'zh-CN', french: 'fr-FR', spanish: 'es-ES', german: 'de-DE' };
+function langCode(language) { return LANG_CODES[(language || '').trim().toLowerCase()] || 'en-US'; }
+
+function notify(message) { $('notice').textContent = message; }
+function applyTheme() {
+  preferences.theme = preferences.theme === 'light' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = preferences.theme;
+  const button = $('theme-toggle');
+  button.textContent = preferences.theme === 'light' ? '切换护眼' : '切换浅色';
+  button.setAttribute('aria-pressed', preferences.theme === 'light' ? 'true' : 'false');
+}
+function toggleTheme() {
+  preferences.theme = preferences.theme === 'light' ? 'dark' : 'light';
+  applyTheme(); savePreferences();
+}
+function savePreferences() {
+  preferences.practiceMode = practiceMode;
+  preferences.deckId = D ? D.deck_id : '';
+  try { localStorage.setItem(preferenceKey, JSON.stringify(preferences)); }
+  catch (_) { notify('浏览器未允许保存偏好；当前打开期间仍可切换练习方式。'); }
+}
+function cleanProgress(value, migrateLegacy = false) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) throw Error('进度格式不正确');
+  const clean = {};
+  for (const [id, state] of Object.entries(value)) {
+    if (!ids.has(id)) continue;
+    if (!['known', 'again', 'studied', 'meaning'].includes(state)) throw Error('进度状态不正确');
+    clean[id] = migrateLegacy && state === 'known' ? 'studied' : state;
+  }
+  return clean;
+}
+function loadProgress() {
+  progress = {};
+  if (!D) return;
+  try {
+    const saved = localStorage.getItem(progressKey(D.deck_id));
+    const legacy = saved ? null : localStorage.getItem(legacyProgressKey(D.deck_id));
+    if (saved) progress = cleanProgress(JSON.parse(saved));
+    else if (legacy) { progress = cleanProgress(JSON.parse(legacy), true); saveProgress(); }
+  } catch (_) { notify('无法读取本地进度；这次仍可学习，请用“导出进度”保存。'); }
+}
+function saveProgress() {
+  if (!D) return;
+  try { localStorage.setItem(progressKey(D.deck_id), JSON.stringify(progress)); }
+  catch (_) { notify('浏览器未允许保存进度；请用“导出进度”备份。'); }
+}
+function updateStats() {
+  $('total').textContent = D ? D.cards.length : 0;
+  $('learned').textContent = D ? D.cards.filter(card => progress[card.id] === 'known').length : 0;
+  $('remaining').textContent = D ? D.cards.filter(card => progress[card.id] !== 'known').length : 0;
+  $('learned-label').textContent = practiceMode === 'typed' ? '本轮答对' : '本轮记住';
+}
+function currentTask() { return queue[0] || null; }
+function currentCard() { return queue.length && D ? cardById.get(queue[0].id) : null; }
+function enqueue(task) { queue.splice(Math.min(3, queue.length), 0, task); }
+function renderSentence(card, blank) {
+  const host = $('sentence'); host.replaceChildren();
+  let offset = 0;
+  for (const [start, end] of card.target_spans || []) {
+    host.append(document.createTextNode(card.sentence.slice(offset, start)));
+    const mark = document.createElement('mark');
+    if (blank) mark.className = 'blank';
+    mark.textContent = blank ? '________' : card.sentence.slice(start, end);
+    host.append(mark); offset = end;
+  }
+  host.append(document.createTextNode(card.sentence.slice(offset)));
+}
+function setVisible(id, visible) { $(id).hidden = !visible; }
+function render() {
+  updateStats();
+  const task = currentTask(), card = currentCard(), phase = task && task.phase;
+  const active = !!card;
+  revealed = false;
+  setVisible('answer-block', phase === 'learn');
+  setVisible('target-label', phase === 'learn');
+  setVisible('learn-actions', phase === 'learn' && active);
+  setVisible('self-actions', (phase === 'meaning' || (phase === 'cloze' && practiceMode === 'flashcard')) && active);
+  setVisible('ratings', false);
+  setVisible('typed-actions', phase === 'cloze' && practiceMode === 'typed' && active);
+  $('speak').disabled = !active;
+  $('self-speak').disabled = !active;
+  $('speak-term').disabled = !active;
+  $('speak-term-self').disabled = !active;
+  $('start').disabled = !active;
+  if (!active) {
+    const noDueAgain = D && D.cards.length && $('filter').value === 'again';
+    $('position').textContent = D && D.cards.length ? (noDueAgain ? '没有待重练词条' : '本组练习完成') : '词库为空';
+    $('target').textContent = '';
+    $('type-badge').hidden = true;
+    $('prompt').textContent = noDueAgain ? '当前没有标记为“需要再练”的词。可以切换到“全部复习”继续。' : D && D.cards.length ? '休息一下吧。之后可以选择“全部复习”再练。' : '这个词库还没有词条。';
+    $('sentence').textContent = noDueAgain ? '这一组没有需要重练的词。' : D && D.cards.length ? '本轮练习完成。' : '';
+    $('translation').textContent = '';
+    setVisible('answer-block', false); setVisible('target-label', false);
+    setVisible('learn-actions', false); setVisible('self-actions', false);
+    setVisible('typed-actions', false);
+    return;
+  }
+  const phaseLabels = { learn: '01 · 学习新词', meaning: '02 · 回忆词义', cloze: '03 · 回想目标语言' };
+  $('position').textContent = phaseLabels[phase] + ' · 队列剩余 ' + queue.length + ' 项';
+  $('target').textContent = phase === 'cloze' ? card.meaning : card.term;
+  $('type-badge').hidden = card.card_type !== 'phrase';
+  $('ipa').textContent = card.ipa;
+  $('meaning').textContent = card.meaning;
+  $('translation').textContent = card.translation;
+  if (phase === 'learn') {
+    $('prompt').textContent = '看词义，再结合原句理解。准备好后，稍后会考你。';
+    renderSentence(card, false);
+  } else if (phase === 'meaning') {
+    $('prompt').textContent = '标出的词或短语在这句话中是什么意思？先在心里作答，再核对答案。';
+    renderSentence(card, false);
+  } else {
+    $('prompt').textContent = card.meaning + '：根据中文意思，回想空格处的目标语言（按原句形式）。';
+    renderSentence(card, true);
+  }
+  $('reveal').textContent = '核对答案';
+  $('answer-input').value = '';
+  $('answer-input').disabled = false;
+  $('check').hidden = false; $('check').disabled = false;
+  $('continue').hidden = true; $('feedback').textContent = ''; $('feedback').className = 'feedback';
+  if (phase === 'cloze' && practiceMode === 'typed') requestAnimationFrame(() => $('answer-input').focus({ preventScroll: true }));
+}
+function normalizeAnswer(value) {
+  return value.normalize('NFKC').toLocaleLowerCase().replace(/[’‘]/g, "'").replace(/[\p{P}\p{S}]/gu, ' ').replace(/\s+/g, ' ').trim();
+}
+function reveal() {
+  const task = currentTask();
+  if (!task || (task.phase !== 'meaning' && !(task.phase === 'cloze' && practiceMode === 'flashcard'))) return;
+  revealed = true; $('target').textContent = currentCard().term; setVisible('answer-block', true); setVisible('ratings', true); setVisible('self-actions', false);
+  if (task.phase === 'cloze') renderSentence(currentCard(), false);
+}
+function study() {
+  if (currentTask()?.phase !== 'learn') return;
+  const task = queue.shift(); progress[task.id] = 'studied';
+  enqueue({ id: task.id, phase: 'meaning' }); saveProgress(); render();
+}
+function rate(value) {
+  const task = currentTask(), card = currentCard();
+  if (!revealed || !task || !card) return;
+  if (value === 'again') {
+    progress[task.id] = 'again';
+    queue.shift(); enqueue({ id: task.id, phase: 'meaning' });
+  } else if (task.phase === 'meaning') {
+    progress[task.id] = 'meaning';
+    queue.shift(); enqueue({ id: task.id, phase: 'cloze' });
+  } else {
+    progress[task.id] = 'known'; queue.shift();
+  }
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  saveProgress(); render(); if (pageMode === 'list') list();
+}
+function checkAnswer() {
+  const task = currentTask(), card = currentCard();
+  if (!task || task.phase !== 'cloze' || practiceMode !== 'typed') return;
+  const response = normalizeAnswer($('answer-input').value);
+  if (!response) {
+    $('feedback').textContent = '先输入答案，或点击“看答案，再练”。';
+    $('feedback').className = 'feedback retry'; $('answer-input').focus(); return;
+  }
+  const correct = card.answers.map(normalizeAnswer).includes(response);
+  $('answer-input').disabled = true; $('check').hidden = true; $('continue').hidden = false;
+  $('target').textContent = card.term; $('type-badge').hidden = card.card_type !== 'phrase'; setVisible('answer-block', true);
+  if (correct) {
+    progress[task.id] = 'known';
+    $('feedback').textContent = '答对了：' + card.term; $('feedback').className = 'feedback good';
+  } else {
+    progress[task.id] = 'again';
+    $('feedback').textContent = '这次没想起来。稍后再练一次。'; $('feedback').className = 'feedback retry';
+    enqueue({ id: task.id, phase: 'cloze' });
+  }
+  saveProgress(); updateStats();
+}
+function giveUp() {
+  const task = currentTask(), card = currentCard();
+  if (!task || task.phase !== 'cloze' || practiceMode !== 'typed') return;
+  $('answer-input').disabled = true; $('check').hidden = true; $('continue').hidden = false;
+  $('target').textContent = card.term; $('type-badge').hidden = card.card_type !== 'phrase'; setVisible('answer-block', true); progress[task.id] = 'again';
+  $('feedback').textContent = '答案：' + card.term + '。稍后再练一次。'; $('feedback').className = 'feedback retry';
+  enqueue({ id: task.id, phase: 'cloze' }); saveProgress(); updateStats();
+}
+function continueNext() { if (!currentTask()) return; queue.shift(); render(); }
+function rebuild() {
+  if (!D) return;
+  const filter = $('filter').value;
+  const cards = D.cards.filter(card => {
+    const state = progress[card.id];
+    if (filter === 'again') return state === 'again';
+    if (filter === 'unlearned') return state !== 'known';
+    return true;
+  });
+  queue = cards.map(card => ({
+    id: card.id,
+    phase: !progress[card.id] ? 'learn' : progress[card.id] === 'meaning' ? 'cloze' : 'meaning',
+  }));
+  render();
+}
+function renderHighlighted(host, text, spans) {
+  host.replaceChildren();
+  let offset = 0;
+  for (const [start, end] of spans || []) {
+    if (start < offset || end > text.length) continue;
+    host.append(document.createTextNode(text.slice(offset, start)));
+    const mark = document.createElement('mark');
+    mark.textContent = text.slice(start, end);
+    host.append(mark); offset = end;
+  }
+  host.append(document.createTextNode(text.slice(offset)));
+}
+function list() {
+  if (!D) return;
+  const query = $('search').value.trim().toLocaleLowerCase();
+  const examplesOf = card => Array.isArray(card.examples) ? card.examples : [];
+  const rows = D.cards.filter(card => [card.term, card.meaning, card.sentence, card.translation]
+    .concat(examplesOf(card).flatMap(example => [example.sentence || '', example.translation || '']))
+    .join(' ').toLocaleLowerCase().includes(query));
+  $('results').textContent = '找到 ' + rows.length + ' 个词条';
+  $('words').replaceChildren();
+  for (const card of rows) {
+    const examples = examplesOf(card);
+    const article = document.createElement('article'); article.className = 'word';
+    const top = document.createElement('div'); top.className = 'word-top';
+    const left = document.createElement('div');
+    const term = document.createElement('strong'); term.textContent = card.term;
+    left.append(term);
+    if (card.card_type === 'phrase') {
+      const badge = document.createElement('span'); badge.className = 'type-badge'; badge.textContent = '短语';
+      left.append(badge);
+    }
+    const status = document.createElement('span'); status.className = 'hint';
+    status.textContent = progress[card.id] === 'known' ? (practiceMode === 'typed' ? '本轮答对' : '本轮记住') : progress[card.id] === 'again' ? '需要再练' : progress[card.id] ? '练习中' : '未学习';
+    left.append(status);
+    const speakBtn = document.createElement('button'); speakBtn.className = 'word-speak'; speakBtn.type = 'button';
+    speakBtn.textContent = '朗读'; speakBtn.title = '朗读该词条';
+    speakBtn.onclick = () => speakText(card.term, .8);
+    top.append(left, speakBtn); article.append(top);
+    const append = (content, className) => {
+      const p = document.createElement('p'); p.textContent = content; p.className = className; article.append(p);
+    };
+    append(card.ipa, 'muted'); append(card.meaning, '');
+    if (examples.length) append('原句', 'example-label');
+    const sentence = document.createElement('p'); sentence.className = 'example';
+    renderHighlighted(sentence, card.sentence, card.target_spans);
+    article.append(sentence);
+    append(card.translation, 'muted');
+    if (examples.length) {
+      const block = document.createElement('div'); block.className = 'examples';
+      for (const [index, example] of examples.entries()) {
+        const item = document.createElement('div'); item.className = 'example-item';
+        const label = document.createElement('p'); label.className = 'example-label'; label.textContent = '例句 ' + (index + 1);
+        const text = document.createElement('p'); text.className = 'example';
+        renderHighlighted(text, example.sentence, example.target_spans);
+        const translation = document.createElement('p'); translation.className = 'muted'; translation.textContent = example.translation;
+        item.append(label, text, translation); block.append(item);
+      }
+      article.append(block);
+    }
+    $('words').append(article);
+  }
+}
+function lineTranslation(line) {
+  return line && typeof line === 'object' && typeof line.translation === 'string' ? line.translation : '';
+}
+function lineText(line) {
+  return line && typeof line === 'object' ? String(line.text || '') : String(line || '');
+}
+function blockHasTranslation(block) {
+  return !!block && Array.isArray(block.lines) && block.lines.some(line => lineTranslation(line).trim());
+}
+function zhFor(button) {
+  const index = button && button.dataset ? button.dataset.zhIndex : '';
+  return index ? $('script').querySelector('.script-zh[data-zh-index="' + index + '"]') : null;
+}
+function syncZhButtons() {
+  for (const button of $('script').querySelectorAll('.zh-toggle')) {
+    const zh = zhFor(button);
+    button.setAttribute('aria-pressed', zh && !zh.hidden ? 'true' : 'false');
+  }
+}
+function applyTranscriptZh() {
+  const button = $('lines-zh');
+  button.textContent = showTranscriptZh ? '隐藏中文' : '显示中文';
+  button.setAttribute('aria-pressed', showTranscriptZh ? 'true' : 'false');
+  for (const node of $('script').querySelectorAll('.script-zh')) node.hidden = !showTranscriptZh;
+  syncZhButtons();
+}
+function toggleLineZh(button) {
+  const zh = zhFor(button);
+  if (!zh) return;
+  zh.hidden = !zh.hidden;
+  button.setAttribute('aria-pressed', zh.hidden ? 'false' : 'true');
+}
+function renderLines() {
+  if (!D) return;
+  const blocks = Array.isArray(D.transcript) ? D.transcript : [];
+  const block = blocks.find(item => item && item.label === $('episode-select').value) || blocks[0];
+  $('script').replaceChildren();
+  if (!block || !Array.isArray(block.lines)) { $('lines-meta').textContent = '这个词库没有附带台词。'; return; }
+  const translated = blockHasTranslation(block);
+  $('lines-meta').textContent = block.label + ' · 共 ' + block.lines.length + ' 句' + (translated ? '' : ' · 本段暂无中文');
+  $('lines-zh').hidden = !translated;
+  $('lines-zh').disabled = !translated;
+  for (const [index, line] of block.lines.entries()) {
+    const p = document.createElement('p'); p.className = 'script-line';
+    const no = document.createElement('span'); no.className = 'line-no'; no.textContent = String(index + 1);
+    p.append(no, document.createTextNode(lineText(line)));
+    $('script').append(p);
+    const zh = lineTranslation(line);
+    if (zh.trim()) {
+      const sub = document.createElement('p'); sub.className = 'script-zh';
+      sub.dataset.zhIndex = String(index + 1);
+      sub.textContent = zh; sub.hidden = !showTranscriptZh;
+      $('script').append(sub);
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'zh-toggle';
+      button.dataset.zhIndex = String(index + 1);
+      button.textContent = '中'; button.title = '显示 / 隐藏本句译文';
+      button.setAttribute('aria-label', '第 ' + (index + 1) + ' 句译文');
+      button.setAttribute('aria-pressed', showTranscriptZh ? 'true' : 'false');
+      button.onclick = () => toggleLineZh(button);
+      p.append(button);
+    }
+  }
+  applyTranscriptZh();
+}
+function switchPageMode(nextMode) {
+  pageMode = nextMode;
+  $('study').hidden = pageMode !== 'study'; $('list').hidden = pageMode !== 'list'; $('lines').hidden = pageMode !== 'lines';
+  $('study-tab').setAttribute('aria-pressed', pageMode === 'study'); $('list-tab').setAttribute('aria-pressed', pageMode === 'list'); $('lines-tab').setAttribute('aria-pressed', pageMode === 'lines');
+  if (pageMode === 'list') list();
+  if (pageMode === 'lines') renderLines();
+}
+function speakText(text, rate) {
+  if (!('speechSynthesis' in window)) { notify('当前浏览器不支持朗读，学习仍可使用。'); return; }
+  speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = langCode(D && D.language); utterance.rate = rate || .85;
+  utterance.onerror = () => notify('朗读暂不可用，请检查设备语音或网络。');
+  speechSynthesis.speak(utterance);
+}
+function speak() { const card = currentCard(); if (!card) return; speakText(card.sentence, .85); }
+function speakTerm() { const card = currentCard(); if (!card) return; speakText(card.term, .8); }
+function setDeck(deckId) {
+  D = validDecks.find(deck => deck.deck_id === deckId) || validDecks[0] || null;
+  if (!D) return;
+  cardById = new Map(D.cards.map(card => [card.id, card])); ids = new Set(cardById.keys());
+  $('title').textContent = D.title || '剧有词学习器';
+  document.title = (D.title || '剧有词学习器') + ' · 剧有词';
+  const sourceTypeLabel = { episode: '剧集单集', movie: '电影', podcast: '播客', documentary: '纪录片', lecture: '讲座/演讲', article: '文章', book: '书籍章节', other: '其他文本' };
+  const typeLabel = D.source_type && sourceTypeLabel[D.source_type] ? sourceTypeLabel[D.source_type] : '';
+  const profile = [typeLabel, D.language, D.exam_target, D.level_target].filter(Boolean).join(' · ');
+  $('profile').textContent = profile ? `素材：${profile}${D.selection_basis ? ' · ' + D.selection_basis : ''}` : '';
+  $('note').textContent = D.note || '';
+  $('source-list').replaceChildren();
+  for (const source of D.sources || []) {
+    const p = document.createElement('p');
+    if (/^https?:\/\//i.test(source)) {
+      const a = document.createElement('a'); a.href = source; a.textContent = source;
+      a.target = '_blank'; a.rel = 'noopener noreferrer'; p.append(a);
+    } else p.textContent = source;
+    $('source-list').append(p);
+  }
+  $('filter').value = 'unlearned'; $('search').value = ''; $('script').replaceChildren();
+  showTranscriptZh = false; $('lines-zh').hidden = true; $('lines-zh').setAttribute('aria-pressed', 'false');
+  const blocks = Array.isArray(D.transcript) ? D.transcript.filter(block => block && typeof block.label === 'string' && Array.isArray(block.lines)) : [];
+  $('lines-tab').hidden = !blocks.length;
+  $('episode-select').replaceChildren();
+  for (const block of blocks) {
+    const option = document.createElement('option'); option.value = block.label;
+    option.textContent = block.label + '（' + block.lines.length + ' 句）';
+    $('episode-select').append(option);
+  }
+  // 只有一段台词时不需要选集下拉框，避免出现「选集」+唯一选项的空控件。
+  $('episode-picker').hidden = blocks.length < 2;
+  $('lines-meta').textContent = blocks.length ? '' : '这个词库没有附带台词。';
+  loadProgress();
+  const empty = D.cards.length === 0;
+  $('deck-empty').hidden = !empty; $('deck-content').hidden = empty;
+  if (!empty) { switchPageMode('study'); rebuild(); list(); }
+  savePreferences();
+}
+
+if (!validDecks.length) {
+  $('empty-library').hidden = false; $('title').textContent = '剧有词学习器';
+} else {
+  $('workspace').hidden = false;
+  for (const deck of validDecks) {
+    const option = document.createElement('option'); option.value = deck.deck_id; option.textContent = deck.title; $('deck-select').append(option);
+  }
+  const initialDeck = validDecks.some(deck => deck.deck_id === preferences.deckId) ? preferences.deckId : validDecks[0].deck_id;
+  $('deck-select').value = initialDeck; $('practice-mode').value = practiceMode;
+  $('deck-select').onchange = () => setDeck($('deck-select').value);
+  $('practice-mode').onchange = () => {
+    practiceMode = $('practice-mode').value; savePreferences(); rebuild();
+    if (pageMode === 'list') list();
+  };
+  $('study-tab').onclick = () => switchPageMode('study'); $('list-tab').onclick = () => switchPageMode('list');
+  $('lines-tab').onclick = () => switchPageMode('lines'); $('episode-select').onchange = renderLines;
+  $('lines-zh').onclick = () => { showTranscriptZh = !showTranscriptZh; applyTranscriptZh(); };
+  $('search').oninput = list; $('filter').onchange = rebuild;
+  $('shuffle').onclick = () => {
+    for (let i = queue.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [queue[i], queue[j]] = [queue[j], queue[i]]; }
+    render();
+  };
+  $('reveal').onclick = reveal; $('start').onclick = study;
+  $('again').onclick = () => rate('again'); $('known').onclick = () => rate('known');
+  $('check').onclick = checkAnswer; $('give-up').onclick = giveUp; $('continue').onclick = continueNext;
+  $('answer-input').oninput = () => { $('feedback').textContent = ''; $('feedback').className = 'feedback'; };
+  $('answer-input').onkeydown = event => {
+    if (event.key !== 'Enter') return; event.preventDefault();
+    if ($('continue').hidden) checkAnswer(); else continueNext();
+  };
+  $('speak').onclick = speak; $('self-speak').onclick = speak;
+  $('speak-term').onclick = speakTerm; $('speak-term-self').onclick = speakTerm;
+  $('export').onclick = () => {
+    const blob = new Blob([JSON.stringify({ version: 2, deck_id: D.deck_id, progress }, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob), link = document.createElement('a');
+    link.href = url; link.download = 'vocab-progress-' + D.deck_id.replace(/[^a-z0-9_-]+/gi, '-') + '.json'; link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 2000); notify('已导出当前词库的学习进度。');
+  };
+  $('import').onclick = () => $('file').click();
+  $('file').onchange = async () => {
+    const file = $('file').files[0]; if (!file) return;
+    try {
+      if (file.size > 2000000) throw Error('文件过大');
+      const data = JSON.parse(await file.text());
+      if (![1, 2].includes(data.version) || data.deck_id !== D.deck_id) throw Error('这份进度不属于当前词库');
+      const restored = cleanProgress(data.progress, data.version === 1);
+      if (!confirm('导入会替换当前词库的学习进度，继续吗？')) return;
+      progress = restored; saveProgress(); rebuild(); list(); notify('进度已导入。');
+    } catch (error) { notify('导入失败：' + error.message); }
+    finally { $('file').value = ''; }
+  };
+  $('reset').onclick = () => {
+    if (!confirm('确定清除当前词库的学习进度吗？')) return;
+    progress = {}; saveProgress(); rebuild(); list(); notify('已重置当前词库进度。');
+  };
+  document.addEventListener('keydown', event => {
+    if (pageMode !== 'study' || event.ctrlKey || event.metaKey || event.altKey || event.repeat || ['INPUT', 'SELECT', 'TEXTAREA', 'BUTTON'].includes(event.target.tagName)) return;
+    if (event.key === ' ' && !$('reveal').hidden) { event.preventDefault(); reveal(); }
+    if (event.key === '1' && !$('ratings').hidden) rate('again');
+    if (event.key === '2' && !$('ratings').hidden) rate('known');
+  });
+  setDeck(initialDeck);
+}
+</script></body></html>

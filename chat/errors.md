@@ -57,6 +57,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E087 | short answer echoes the wrong modal | grammar | No, it isn't. | No, it wouldn't. | 48 | 1 | open | 2026-11-08 |  |
 | E088 | state verb put in the progressive | grammar | They are living in my hometown. | They live in my hometown. | 48 | 1 | open | 2026-11-08 |  |
 | E089 | ask takes an object with no preposition | calque | the manager has to ask the progress | ask about progress | 48 | 1 | open | 2026-11-08 |  |
+| E090 | have + bare verb | grammar | it still hasn't happen / We've make a plan | it still hasn't happened / We've made a plan | 50 | 1 | open | 2026-11-10 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |

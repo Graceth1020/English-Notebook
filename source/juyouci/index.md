@@ -32,6 +32,39 @@ html[data-theme="dark"] .vd-chunks .count{color:#8b95a1}
 html[data-theme="dark"] .vd-tag{background:#252c38;color:#a5b4fc}
 </style>
 
+## Friends · Season 3 (E13–E25)
+
+<div class="vd-grid">
+  <div class="vd-card">
+    <h3>Friends — Season 3, E13–E25 <span class="vd-tag">IELTS · B2–C1</span></h3>
+    <p class="blurb">One deck per episode, built from the local 720p BluRay subtitles:
+    91 words and 92 phrases across 13 episodes. Each episode carries only its own
+    transcript — 4,667 lines in total, every line paired with a Chinese translation
+    (each sentence has its own 「中」 button, plus a toolbar-wide show/hide switch).</p>
+    <div class="vd-meta">
+      <div><b>13</b><span>Episodes</span></div>
+      <div><b>183</b><span>Entries</span></div>
+      <div><b>91 / 92</b><span>Words / Phrases</span></div>
+      <div><b>4,667</b><span>Lines</span></div>
+    </div>
+    <div class="vd-chunks">
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E13.html">S03E13 · The One Where Monica and Richard Are Just Friends <span class="count">40 words · 349 lines</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E14.html">S03E14 <span class="count">5 words · 8 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E15.html">S03E15 <span class="count">3 words · 12 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E16.html">S03E16 <span class="count">3 words · 10 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E17.html">S03E17 <span class="count">3 words · 4 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E18.html">S03E18 <span class="count">5 words · 7 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E19.html">S03E19 <span class="count">3 words · 6 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E20.html">S03E20 <span class="count">4 words · 5 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E21.html">S03E21 <span class="count">8 words · 11 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E22.html">S03E22 <span class="count">3 words · 9 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E23.html">S03E23 <span class="count">5 words · 5 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E24.html">S03E24 <span class="count">6 words · 9 phrases</span></a>
+      <a href="/English-Notebook/juyouci/friends-s03/Friends_S03E25.html">S03E25 <span class="count">3 words · 6 phrases</span></a>
+    </div>
+  </div>
+</div>
+
 ## Lisa Su · Stanford GSB View From The Top
 
 <div class="vd-grid">

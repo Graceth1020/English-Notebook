@@ -137,3 +137,30 @@ to possession or comparison before writing it off.
   and never fired - he answered "all kinds of laptops" both times. It needs a
   question he can only answer by naming a category of machine, not by listing
   variety.
+
+## Off-scene evidence is worth a whole rotation (2026-11-07)
+
+A `general` travel topic owned two chunks that a same-scene session could never
+have confirmed: C049 "over (a holiday)" (home `family`) from "Over the holiday,
+you can switch off totally", and C020 "talk it through" (home `work`) from
+"We'll talk it through" about a trip. Both were pending with several uses
+already, and both landed the moment the topic left their home ground. When two
+or three rows are sitting at used=2/2 with no off-scene chance in sight, a
+`general` day is the cheapest way to convert them.
+
+- C116 "so far" was missed and then used in the same session, one turn apart.
+  Turn 1 called for the frame ("it still hasn't happened") and he reached for
+  "by then"; turn 2, where the question had a what-is-done / what-is-not shape
+  ("has anyone booked anything yet"), produced "nothing has been done so far"
+  cleanly. The frame surfaces when the answer has to divide the work into done
+  and not done - ask for that split instead of asking about elapsed time.
+- C086 "a one-day (X) pass" does not belong in a trip chat. Ten days of seeding
+  suggest it needs a membership or subscription ground - a music pass, a gym
+  trial - not travel. Give it a shopping/subscription day or drop it from seeds.
+- C018 "sold out" appeared as "the air tickets will be sold out soon". The frame
+  was reached but the tense is what no native says (tickets sell out, a shop is
+  sold out), so it was not credited and must not be confirmed on that evidence.
+- The same-X-as frame returned one day after being seeded, this time as "the same
+  weather with Guangdong". No credit - it was named in Codex's own question the
+  day before, so the hint carries - but the wrong preposition is fresh evidence
+  that C123 is still recognition-only.
