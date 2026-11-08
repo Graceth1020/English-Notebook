@@ -56,3 +56,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 48 | 2026-11-05 | Remote vs office, honestly | opinion | 5 | 25 | done | [summary](summaries/day-48-20261105.md) |
 | 49 | 2026-11-06 | The tool you'd refuse to give up | work | 5 | 16 | done | [summary](summaries/day-49-20261106.md) |
 | 50 | 2026-11-07 | A trip you keep postponing | daily | 5 | 18 | done | [summary](summaries/day-50-20261107.md) |
+| 51 | 2026-11-08 | Thrown in with no preparation | daily | 5 | 26 | done | [summary](summaries/day-51-20261108.md) |

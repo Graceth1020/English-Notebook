@@ -164,3 +164,81 @@ or three rows are sitting at used=2/2 with no off-scene chance in sight, a
   weather with Guangdong". No credit - it was named in Codex's own question the
   day before, so the hint carries - but the wrong preposition is fresh evidence
   that C123 is still recognition-only.
+
+## A general label is not a different context (2026-11-08)
+
+Six pending rows were produced correctly and unprompted today - C040, C064, C073,
+C091, C125 (all home `work`) and C001 (home `reading`) - and none was confirmed.
+The day was labelled `general`, so the command would have accepted all six. They
+were counted as uses and held, because every one of them arrived inside the
+retelling of the same junior-project story they were banked from, and C001 arrived
+inside a book recommendation, which is literally its home territory. A re-telling
+is not portability, and a false `owned` removes a row while it is still
+recognition-only. Test to apply: not the day's scene label, but whether the
+situation being described is new. Day 50 confirmed two work/family rows because
+they surfaced in a travel answer where they had never been used before; today's
+did not.
+
+- The consequence for scheduling: this learner's default repertoire for any open
+  question is engineering anecdotes. Ask "when were you thrown in" and the answer
+  is first-year coding even though the day is labelled general. Any day intended
+  to confirm a work-homed pending has to be a topic with no technical surface at
+  all - food, health, family, shopping - otherwise it silently becomes a work chat
+  with a general label. Five rows now sit at 3 uses each waiting for exactly that.
+- C092 "push back on" was missed for the second time, and the question asked for it
+  almost verbatim ("did you actually say something about it?"). He reached for
+  "I spoke up my opinion" instead, which is both a wrong construction and a
+  different verb. When a direct opening still does not pull the chunk, the chunk
+  is not available for that function - consider whether C092 should be replaced by
+  the plainer "say something" alongside it.
+- Instrument-versus-agent appeared twice in one session: "a framework which can
+  integrate into every business system" and "when the application deployed on the
+  cloud server". Two occurrences in one day is row-worthy if it shows up again -
+  the Chinese habit is to let the inanimate subject act, and English requires the
+  passive.
+- Fixed phrases rebuilt from the middle: "take no for my answer" for "take no for
+  an answer". He has the first half and the concept, and re-grows the ending each
+  time. Worth watching as a category rather than as one row.
+
+
+### Correction, same day (2026-11-08)
+
+The block above held all six pendings. On review with the learner, the test it
+used was too strict. The ledger's rule is scene, not narrative: C001 sits home
+`reading` and C040 C056 C064 C074 C090 C091 C109 C111 C125 C126 all sit home
+`work`, while a `daily` topic runs on scene `general` - so the off-scene condition
+is met the moment the phrase comes out in a session that is not those scenes, and
+the day being about code does not change the recorded scene. Eleven rows were
+confirmed. Keep the narrower caution for a different case only: a chunk produced
+while quoting back Codex's own wording, or the same sentence from the same
+session, is still not evidence. The remaining five (C089, C101, C102, C127, C077)
+are home `general` and now need a session in some other scene.
+
+### Typing slips vs assembly failures (2026-11-08)
+
+C030, C112 and C120 were first logged `missed` and the learner reclassified them
+as typing slips; they are now `used` and sit at pending. The line drawn: where the
+damage is a word inside an otherwise intact frame ("hasn't happen" for "hasn't
+happened", "for my answer" for "for an answer"), take the learner's call and
+credit the use - the morphology there is already tracked as E090, and quarrelling
+over it double-charges the same error. Where the damaged part IS the row's subject
+(C120 exists solely to install the "as"), credit the use but do not confirm:
+pending is the right resting place until a clean production appears.
+
+### Retro audit of days 48-50 (2026-11-08)
+
+Scanning the transcripts against all 128 rows turned up four productions that were
+never credited, all from long answers where only the sentence being corrected got
+noticed. C053 "my parents' place" (day 48), C092 "push back on" (day 48), C107
+"switch up" (days 48 and 50, two clean uses against a counter of one), C119 "try
+out" (days 49 and 50, likewise). Applied to the ledger; the day 48-50 summaries
+were left as written, so their Chunk Recall sections under-report.
+
+The mechanical fix for this: when closing a session, walk the whole utterance
+against the chunk list instead of only the sentences that were corrected. Correct
+usage is invisible to an editor's eye and is exactly what the ledger is for.
+
+Also learned: C123 "the same X as Y" has never landed because what he produces is
+"it's the same as a normal market" - the bare comparison with no noun in the slot.
+The frame he has is "the same as", not "the same X as Y", so seeding it produces
+the short form every time.
