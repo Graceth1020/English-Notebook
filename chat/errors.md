@@ -58,6 +58,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E088 | state verb put in the progressive | grammar | They are living in my hometown. | They live in my hometown. | 48 | 1 | open | 2026-11-08 |  |
 | E089 | ask takes an object with no preposition | calque | the manager has to ask the progress | ask about progress | 48 | 1 | open | 2026-11-08 |  |
 | E090 | have + bare verb | grammar | it still hasn't happen / We've make a plan | it still hasn't happened / We've made a plan | 50 | 1 | open | 2026-11-10 |  |
+| E091 | prevent + object + from + -ing | grammar | You should put something in place to prevent such things happen again. | You should put something in place to prevent such things from happening again. | 52 | 1 | open | 2026-11-12 |  |
+| E092 | be down to = be caused by, not whose job | collocation | When something was half-done, I thought it was down to the PM. | When something was half-done, I thought it was on the PM. | 52 | 1 | open | 2026-11-12 |  |
+| E093 | make + a bug (calque of 做/制造) | collocation | I didn't mean to make any bugs. | I didn't want to ship anything buggy. | 52 | 1 | open | 2026-11-12 |  |
+| E094 | third-person -s missing on a stative verb | grammar | It only look that way now. | It only looks that way now. | 52 | 1 | open | 2026-11-12 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
