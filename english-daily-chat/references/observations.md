@@ -242,3 +242,40 @@ Also learned: C123 "the same X as Y" has never landed because what he produces i
 "it's the same as a normal market" - the bare comparison with no noun in the slot.
 The frame he has is "the same as", not "the same X as Y", so seeding it produces
 the short form every time.
+## Day 53 - The scene was the only thing that was wrong
+
+Seven chunks promoted in one session, and not one of them needed a better
+technique. C104, C103, C121, C022, C041, C114 and C086 had between them 17 uses
+and 3 pending statuses before today; what they did not have was a session in
+`reading`. The moment one ran, the money cluster and every general marker came
+out inside two answers.
+
+This is the Day 44 lesson at a larger scale. Then it was ten work sessions
+starving the reading chunks. There were eight stalled clusters this morning, four
+of them with a single chunk that had never been produced at all, and `reading` -
+one due chunk, one never produced - was the smallest of them. It still outperformed
+every work session this month, because the bank's debt is spatial, not lexical.
+
+Practical rule for `chunks-due`: read the cluster table before the seed list. If
+one scene holds nothing but one overdue row, that is not a weak scene - it is an
+untested one.
+
+## Same preposition, two outcomes, one session
+
+`when it comes to investment` was correct, `the key to gain excess returns` was
+not, and the difference is a single slot: noun versus bare verb. This is worth
+watching as one item (E095) rather than as a phrase-by-phrase list, because the
+`to` shows up prepositionally in at least four other expressions he uses.
+
+## The prompt that gets answered by the thesis
+
+C058 "in a way that sticks" was asked for as "what made that one land when the
+others did not", and the reply was "It's about patience" - the book's argument
+rather than the mechanism. C036 went the same way: a question about inventing a
+reason was answered with a stop-loss rule.
+
+Two misses in a row from the same cause, and it is back to the Day 51 problem from
+the other side. Both questions asked how something worked on the learner; both
+were answered with what the thing was about. The fix is not a better phrase but a
+first-person frame: "What did that book do to you that the others did not?" -
+which cannot be answered with a summary of the book.

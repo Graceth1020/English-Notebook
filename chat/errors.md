@@ -62,6 +62,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E092 | be down to = be caused by, not whose job | collocation | When something was half-done, I thought it was down to the PM. | When something was half-done, I thought it was on the PM. | 52 | 1 | open | 2026-11-12 |  |
 | E093 | make + a bug (calque of 做/制造) | collocation | I didn't mean to make any bugs. | I didn't want to ship anything buggy. | 52 | 1 | open | 2026-11-12 |  |
 | E094 | third-person -s missing on a stative verb | grammar | It only look that way now. | It only looks that way now. | 52 | 1 | open | 2026-11-12 |  |
+| E095 | the key to + -ing (prepositional to, not infinitive) | grammar | The key to gain excess returns is learning to stop losses. | The key to gaining excess returns is learning to cut your losses. | 53 | 1 | open | 2026-11-13 |  |
+| E096 | redeem takes the thing directly (no for) | collocation | I'd redeem for a one-day APP pass. | I'd redeem a one-day app pass. | 53 | 1 | open | 2026-11-13 |  |
+| E097 | run a promotion, not run an activity (calque of 办活动) | calque | If the App is running an activity | If the app is running a promotion | 53 | 1 | open | 2026-11-13 |  |
+| E098 | lose sleep takes no possessive | fixed-phrase | I will get wired and lose my sleep. | I will get wired and lose sleep. | 53 | 1 | open | 2026-11-13 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |

@@ -58,3 +58,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 50 | 2026-11-07 | A trip you keep postponing | daily | 5 | 18 | done | [summary](summaries/day-50-20261107.md) |
 | 51 | 2026-11-08 | Thrown in with no preparation | daily | 5 | 26 | done | [summary](summaries/day-51-20261108.md) |
 | 52 | 2026-11-09 | The mess somebody else left you | work | 5 | 14 | done | [summary](summaries/day-52-20261109.md) |
+| 53 | 2026-11-10 | What actually survives a book | opinion | 5 | 7 | done | [summary](summaries/day-53-20261110.md) |

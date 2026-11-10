@@ -21,21 +21,18 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 0 | 0 | open | 2026-09-04 |
+| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 2 | 0 | open | 2026-11-13 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 6 | 2 | open | 2026-11-12 |
-| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 1 | 1 | open | 2026-10-10 |
-| C086 | a one-day (X) pass | phrase | general | a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an | I redeemed a one-day QQ Music pass. | 27 | 5 | 1 | open | 2026-10-24 |
+| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 3 | 1 | open | 2026-11-13 |
 | C088 | speak up | phrase | work | say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views' | We encourage them to think for themselves and speak up. | 28 | 3 | 2 | open | 2026-11-11 |
 | C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 4 | 1 | open | 2026-11-14 |
 | C108 | eat out | phrase | food | have dinner at a restaurant or canteen, not at home - the dedicated idiom for 在外面吃; opposite: cook at home / eat in | I've eaten out every night this whole week. | 33 | 1 | 1 | open | 2026-11-10 |
 | C128 | it's on them | phrase | work | responsibility or blame belongs to them - NOT 'their thing', which means their hobby or specialty | Take a screenshot of the request flow and tell them it's on them. | 43 | 3 | 0 | open | 2026-11-08 |
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 4 | 4 | pending | 2026-11-09 |
-| C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 2 | 2 | pending | 2026-11-24 |
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 3 | pending | 2026-11-26 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 4 | 3 | pending | 2026-12-08 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 5 | 5 | pending | 2026-12-09 |
 | C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 6 | 6 | pending | 2026-12-09 |
-| C041 | wired | phrase | health | too stimulated to sleep | I'm still wired an hour after playing. | 07 | 2 | 2 | pending | 2026-10-19 |
 | C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 3 | 3 | pending | 2026-12-08 |
 | C083 | catch up on (what happened / the news) | phrase | general | fill the gap since you last talked or checked - the dedicated phrase for 补上错过的 | It helped me catch up on what had happened. | 27 | 3 | 3 | pending | 2026-12-08 |
 | C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 3 | 3 | pending | 2026-12-08 |
@@ -45,14 +42,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C098 | get hooked on (something) | phrase | games | get addicted to a game or show - the GAME version of couldn't put it down, which only takes books and phones | Lately we've all gotten hooked on this board game. | 30 | 2 | 2 | pending | 2026-11-16 |
 | C101 | The clearest change is (that)... | frame | general | open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque | The clearest change is that I can express myself more naturally. | 30 | 2 | 2 | pending | 2026-11-24 |
 | C102 | broaden your horizons | phrase | general | expand what you know and have seen - the fixed phrase for 开阔眼界; 'expand your scope of knowledge' is translated | Talking with people outside your field broadens your horizons. | 31 | 3 | 3 | pending | 2026-12-08 |
-| C103 | over the long run | phrase | money | sustained across a long span - the investing/habit phrase; 'over a long time' is just duration; in the long run = eventually | Aim for steady returns over the long run. | 31 | 3 | 3 | pending | 2026-11-30 |
-| C104 | steady returns | phrase | money | consistent investment gains over time - the personal-finance phrase; 'stable yield' is bond-desk vocabulary | Aim for steady returns over the long run. | 31 | 2 | 2 | pending | 2026-11-10 |
 | C110 | push things forward | phrase | work | keep work moving ahead - the spoken replacement for 推进进度; you push the work, not the progress | My job is to push things forward when they stall. | - | 3 | 3 | pending | 2026-12-09 |
 | C112 | won't take no for an answer | phrase | work | refuse to accept a rejection - the fixed idiom for 死活不接受拒绝; the person demanding is the subject | The client won't take no for an answer. | - | 4 | 2 | pending | 2026-11-24 |
-| C114 | when it comes to (doing something) | phrase | general | switch the topic to a specific area - the to is a preposition, so a verb after it takes -ing: when it comes to hanging out | When it comes to hanging out with friends, that's a weekend thing. | - | 2 | 2 | pending | 2026-11-16 |
 | C115 | at once | phrase | general | two senses: immediately (slightly more formal than the spoken default right away); all at the same time (ordinary spoken English) - don't do it all at once | If you need me, I'll reply at once. | - | 2 | 2 | pending | 2026-11-22 |
 | C116 | so far | phrase | general | up to now - pairs with present perfect: there's no message so far | There's no message in the group so far. | - | 4 | 2 | pending | 2026-11-23 |
-| C121 | excess returns | phrase | money | returns above the benchmark - 超额回报; NOT excessive returns, which means unreasonably large (negative) | Good companies reward their investors with excess returns. | - | 2 | 2 | pending | 2026-11-21 |
 | C122 | reward (someone) with (something) | phrase | money | give someone something good in return - 用...回报...: reward investors with excess returns, reward yourself with a meal | Good companies reward their investors with excess returns. | - | 2 | 2 | pending | 2026-11-19 |
 | C123 | the same X as (Y) | phrase | work | the comparison frame - same takes THE before and AS after: the same concept as SpringMVC; never 'a same... with' | The C# framework has the same concept as SpringMVC. | - | 4 | 2 | pending | 2026-11-25 |
 | C124 | map out (a process / a plan) | phrase | work | work out the full picture of something step by step - 梳理清楚; NOT 'close' (close the loop = report back at the end) | Once the whole process is mapped out, it is time to write the spec. | - | 3 | 3 | pending | 2026-12-09 |
@@ -77,6 +70,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C019 | get in the zone | phrase | games | hit deep focus while working | Once I get in the zone I lose three hours. | 04 | 3 | 3 | owned | - |
 | C020 | talk it through | phrase | work | work something out by discussing it | Even a team of experts has to talk it through first. | 04 | 7 | 7 | owned | - |
 | C021 | that's what pays | phrase | money | name the thing that earns the money | The business side is what pays. | 04 | 3 | 3 | owned | - |
+| C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 4 | 4 | owned | - |
 | C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 3 | 3 | owned | - |
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 4 | 4 | owned | - |
 | C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 6 | 6 | owned | - |
@@ -89,6 +83,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C035 | sit on something | phrase | work | hold it without acting on it | He's been sitting on my PR for three days. | 06 | 3 | 3 | owned | - |
 | C038 | that's down to (X) | phrase | general | attribute a cause or responsibility, casually | That's down to how my leader plans it. | 06 | 3 | 3 | owned | - |
 | C040 | out of my depth | phrase | work | beyond what you can handle | I was completely out of my depth in that meeting. | 06 | 6 | 4 | owned | - |
+| C041 | wired | phrase | health | too stimulated to sleep | I'm still wired an hour after playing. | 07 | 4 | 4 | owned | - |
 | C042 | wear me out | phrase | health | drain your energy - the spoken 'exhausting' | Playing games wears me out. | 07 | 3 | 3 | owned | - |
 | C043 | the thing is, ... | frame | general | spoken frame for raising the real issue - replaces 'the question is' | The thing is, I can't sleep properly afterwards. | 07 | 3 | 3 | owned | - |
 | C044 | unwind | phrase | health | wind down after effort - stronger than relax | An hour of gaming helps me unwind. | 07 | 3 | 3 | owned | - |
@@ -130,6 +125,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C082 | over the past few months | phrase | general | the spoken recent-past span - 'recent few months' is not a form; over fits a span better than during | I told them about the problems I'd run into over the past few months. | 27 | 3 | 3 | owned | - |
 | C084 | set aside (a little) time | phrase | general | reserve time on purpose - time is set aside, never 'arranged' | I only set aside a little time for my own stuff. | 27 | 4 | 4 | owned | - |
 | C085 | run (a promotion / a campaign) | phrase | work | an app or company runs a marketing activity - never 'hold an activity' | The app has been running an official promotion. | 27 | 3 | 3 | owned | - |
+| C086 | a one-day (X) pass | phrase | general | a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an | I redeemed a one-day QQ Music pass. | 27 | 6 | 3 | owned | - |
 | C087 | float an idea (throw out an idea) | phrase | work | propose something casually in a meeting to see if it survives - never 'present a viewpoint' | One colleague floated an idea, but it didn't hold up. | 28 | 4 | 4 | owned | - |
 | C090 | kick off (a project) | phrase | work | start something with a moment, not a span - 'kicked off on Sep 1', never 'has begun since Sep 1' | We kicked off a new project on Sep 1st. | 28 | 5 | 5 | owned | - |
 | C091 | high-spec | phrase | work | the spoken 配置高 for a machine - never 'advanced configuration'; opposite: low-spec | My work rig is high-spec, so I got through them quickly. | 28 | 4 | 4 | owned | - |
@@ -137,15 +133,19 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C095 | settle on (a choice) | phrase | general | finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design | We finally settled on a low-code platform. | 29 | 3 | 3 | owned | - |
 | C096 | set up (a group chat) | phrase | general | create something that will run on its own - a group chat, a meeting, a system; 'create a group' is understood but not what natives say | As more neighbors joined, we set up a group chat. | 30 | 3 | 3 | owned | - |
 | C099 | stick with (something) | phrase | general | keep doing it, not quitting - the habit verb; close cousin of stick to | After sticking with the practice for thirty days, it's made a difference. | 30 | 3 | 3 | owned | - |
+| C103 | over the long run | phrase | money | sustained across a long span - the investing/habit phrase; 'over a long time' is just duration; in the long run = eventually | Aim for steady returns over the long run. | 31 | 5 | 5 | owned | - |
+| C104 | steady returns | phrase | money | consistent investment gains over time - the personal-finance phrase; 'stable yield' is bond-desk vocabulary | Aim for steady returns over the long run. | 31 | 4 | 4 | owned | - |
 | C105 | on top of that | phrase | general | add one more point on the pile - the spoken 'moreover'; sits at the front of the new sentence | On top of that, all the data gets displayed on a dashboard. | 32 | 3 | 3 | owned | - |
 | C106 | go with (an option / a design) | phrase | work | choose a plan after comparing - never 'decide to design'; you go with a design, a color, a name | We decided to go with a dashboard. | 32 | 3 | 3 | owned | - |
 | C107 | switch up (the menu / the routine) | phrase | food | change something that has gone stale - 换换花样; menus, routines, hairstyles get switched up | They should switch up the menu - I've been eating the same thing for five years. | 33 | 3 | 3 | owned | - |
 | C109 | hand something off to (a team) | phrase | work | pass work to another team or person to own next - the PM verb; work gets handed off, not given | I document the requirements and hand them off to the tech team. | - | 4 | 4 | owned | - |
 | C111 | show up | phrase | work | appear or turn up - the default verb for anything that appears: bugs, people, problems; 'appear' is written English | Hundreds of bugs showed up after SIT started. | - | 4 | 4 | owned | - |
 | C113 | a must (a must-have) | phrase | work | something you absolutely need - the spoken 'essential'; a debug page is a must, not 'is essential' | For debugging inside the app, this page is a must. | - | 4 | 4 | owned | - |
+| C114 | when it comes to (doing something) | phrase | general | switch the topic to a specific area - the to is a preposition, so a verb after it takes -ing: when it comes to hanging out | When it comes to hanging out with friends, that's a weekend thing. | - | 4 | 4 | owned | - |
 | C117 | in terms of (X) | phrase | general | on the X axis / regarding X - the spoken way to name the dimension you are comparing: in terms of time, in terms of cost | In terms of time, remote wins easily. | - | 4 | 4 | owned | - |
 | C118 | be supposed to do (something) | phrase | general | expected or arranged to happen - we are supposed to play on Saturday; also for mild obligation: you are supposed to knock | We are supposed to play the game on Saturday morning. | - | 3 | 3 | owned | - |
 | C119 | try out (something) | phrase | work | test something hands-on before committing - the spoken 体验/试用: try out the user flows, try out a new restaurant | The business side can try out the user flows as soon as the prototypes are done. | - | 3 | 3 | owned | - |
 | C120 | see (something) as (something) | phrase | money | view or interpret something in a certain way - 把...看作...: see it as a short-term correction, see it as an opportunity | I see the drop as a short-term correction, not a crash. | - | 4 | 4 | owned | - |
+| C121 | excess returns | phrase | money | returns above the benchmark - 超额回报; NOT excessive returns, which means unreasonably large (negative) | Good companies reward their investors with excess returns. | - | 4 | 4 | owned | - |
 | C125 | low-priority / high-priority | phrase | work | the adjective pair for 优先级低/高 - hyphenated before a noun: a low-priority project; it is low-priority | The project I took over is low-priority. | - | 4 | 4 | owned | - |
 | C126 | get involved in (something) | phrase | work | become engaged in ongoing work or a process - 介入/参与进去; deeper than take part in, which is for events | The tech team has to get involved in the requirements stage early. | - | 3 | 3 | owned | - |
