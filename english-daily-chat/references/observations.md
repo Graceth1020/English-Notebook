@@ -279,3 +279,35 @@ the other side. Both questions asked how something worked on the learner; both
 were answered with what the thing was about. The fix is not a better phrase but a
 first-person frame: "What did that book do to you that the others did not?" -
 which cannot be answered with a summary of the book.
+## Day 54 - The row that closed with a different noun
+
+C128 "it's on them" was seeded three times and produced nothing: on Day 52 the
+answer was "it was down to the PM". Today the same situation pulled "it's on the
+PM", which is the mechanism with the slot filled by a different person - and that
+is exactly what the bank-the-mechanism rule says to credit.
+
+The lesson is about the seeding question, not the learner. Day 52 asked "whose
+problem was that?", which is a question about causality as much as ownership;
+"down to" answers it plausibly. Today's opening was "who ends up chasing it" -
+a question that only has owners as answers. When a chunk refuses to appear, check
+whether the opening can be answered correctly without it.
+
+## When the frame is right and the slot is wrong
+
+"The schedule really matters to the project" - `matter to` needs a party that can
+care, and a project cannot. C089 has been pending at 3/3 for months and this is
+its failure mode: the frame is solid, the noun after `to` is a thing instead of a
+someone. Marking it missed rather than used is the honest call, because crediting
+it would have promoted a row that is being used wrong.
+
+Same family, same session: P014 was promoted on "it's on the PM". Abstract
+prepositions are a two-part skill - which preposition, and what kind of noun it
+accepts - and the ledger has only been tracking the first half.
+
+## Third routes are not the target form
+
+coach:E014 wants a concede that leaves the door open. He produced a better
+professional move instead: do not say no, take it to the leader and coordinate
+the workload. That refuses without refusing, and it is not the modelled answer,
+so it is neither a hit nor a resolve. Worth remembering when that row comes up
+again - the target is rhetorical, and he keeps choosing structural answers.

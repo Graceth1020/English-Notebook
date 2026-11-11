@@ -66,6 +66,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E096 | redeem takes the thing directly (no for) | collocation | I'd redeem for a one-day APP pass. | I'd redeem a one-day app pass. | 53 | 1 | open | 2026-11-13 |  |
 | E097 | run a promotion, not run an activity (calque of 办活动) | calque | If the App is running an activity | If the app is running a promotion | 53 | 1 | open | 2026-11-13 |  |
 | E098 | lose sleep takes no possessive | fixed-phrase | I will get wired and lose my sleep. | I will get wired and lose sleep. | 53 | 1 | open | 2026-11-13 |  |
+| E099 | speak up, not speak it out | fixed-phrase | someone would speak it out | someone would speak up | 54 | 1 | open | 2026-11-14 |  |
+| E100 | bare verb after 'has the right to'; a later date is pushed back | grammar | the tech team has the right to push back on it and pushed it later | the tech team has the right to push back on it and push it back | 54 | 1 | open | 2026-11-14 |  |
+| E101 | who owns it, not 'the division' (calque of 分工) | calque | the division hasn't been determined by now | nobody has decided who owns it by now | 54 | 1 | open | 2026-11-14 |  |
+| E102 | no article before a how-clause | grammar | it depends on the how big a deal it is | it depends on how big a deal it is | 54 | 1 | open | 2026-11-14 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
