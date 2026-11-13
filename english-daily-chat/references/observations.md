@@ -311,3 +311,47 @@ professional move instead: do not say no, take it to the leader and coordinate
 the workload. That refuses without refusing, and it is not the modelled answer,
 so it is neither a hit nor a resolve. Worth remembering when that row comes up
 again - the target is rhetorical, and he keeps choosing structural answers.
+## Day 55 - A row closes on the slot, not the frame
+
+C089 "matter to" was missed on Day 54 ("matters to the project") and owned on
+Day 55 with two clean uses: "matters to the companies", "matters to a buyer".
+The frame never improved; what changed was the topic. A shopping conversation
+puts a party on the other side of every sentence, so the slot was filled right
+without being aimed at.
+
+Conclusion for seeding: rows whose failure lives in the noun slot need topics
+with human parties in them - buyers, sellers, companies, customers - not
+abstract subjects. Work topics will keep failing this row because work answers
+are about processes and dates.
+
+## Separable verbs: two days, two instances, one mechanism
+
+"speak it out" (Day 54) and "wrote things that she'd meant to buy down" (Day 55)
+are the same failure: the particle gets detached from the verb and the object
+gets longer than the verb can carry. This is not a meaning problem - both verbs
+were understood - and it is not a knowledge problem, since both appear in the
+chunk bank. It is a production-shape problem under sentence length, so it will
+recur whenever the object is heavy. Drilling `speak up` and `write down` in
+isolation will not fix it; the drill has to be "say the sentence with the
+particle first and the object last".
+
+## A meta question can spend a hidden-review target
+
+coach:E028 asks for the mechanism and the timeline together. He asked what "how
+long before it pays off" meant, which explained the timeline half on request -
+so the timeline could no longer count as unprompted evidence, and the row stayed
+unresolved even though the mechanism came out clean later in the same session.
+
+Rule: when a learner asks for the meaning of a phrase that sits inside a hidden
+review target, answer, then note in the session that the target is spent for the
+day. Otherwise a resolve gets credited against a phrase the tutor just taught.
+
+## The act rows keep drawing structural answers
+
+coach:E014 has now been reached twice and both times the answer was a
+restructuring of the situation (talk to the leader, coordinate the workload)
+rather than the rhetorical move of conceding while leaving the door open. He is
+not avoiding the row - he is answering a different, more professional question.
+Reachable only if the position I take is one he actually disagrees with; a mild
+position about returns did not produce disagreement, it produced a change of
+subject.

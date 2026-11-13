@@ -70,6 +70,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E100 | bare verb after 'has the right to'; a later date is pushed back | grammar | the tech team has the right to push back on it and pushed it later | the tech team has the right to push back on it and push it back | 54 | 1 | open | 2026-11-14 |  |
 | E101 | who owns it, not 'the division' (calque of 分工) | calque | the division hasn't been determined by now | nobody has decided who owns it by now | 54 | 1 | open | 2026-11-14 |  |
 | E102 | no article before a how-clause | grammar | it depends on the how big a deal it is | it depends on how big a deal it is | 54 | 1 | open | 2026-11-14 |  |
+| E103 | at this time is 目前, not 这次 | calque | At this time, she did it again | This time she did it again | 55 | 1 | open | 2026-11-16 |  |
+| E104 | separable phrasal verb: the particle stays with the verb | fixed-phrase | she wrote things that she'd meant to buy down | she wrote down the things she meant to buy | 55 | 1 | open | 2026-11-16 |  |
+| E105 | so + adjective + that (the so carries the clause) | grammar | The express industry is competitive that delivering correctly matters | is so competitive that delivering correctly matters | 55 | 1 | open | 2026-11-16 |  |
+| E106 | return the goods, the shop refunds the money | collocation | she refunds those she doesn't like | she returns the ones she doesn't like | 55 | 1 | open | 2026-11-16 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |

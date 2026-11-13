@@ -21,13 +21,12 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 2 | 0 | open | 2026-11-13 |
-| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 3 | 1 | open | 2026-11-13 |
+| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 3 | 0 | open | 2026-11-13 |
+| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 4 | 1 | open | 2026-11-13 |
 | C088 | speak up | phrase | work | say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views' | We encourage them to think for themselves and speak up. | 28 | 5 | 2 | open | 2026-11-14 |
-| C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 4 | 3 | open | 2026-11-14 |
 | C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 4 | 1 | open | 2026-11-14 |
 | C128 | it's on them | phrase | work | responsibility or blame belongs to them - NOT 'their thing', which means their hobby or specialty | Take a screenshot of the request flow and tell them it's on them. | 43 | 4 | 1 | open | 2026-11-18 |
-| C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 5 | 4 | pending | 2026-11-09 |
+| C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 6 | 5 | pending | 2026-12-13 |
 | C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 3 | pending | 2026-11-26 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 4 | 3 | pending | 2026-12-08 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 5 | 5 | pending | 2026-12-09 |
@@ -126,6 +125,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C085 | run (a promotion / a campaign) | phrase | work | an app or company runs a marketing activity - never 'hold an activity' | The app has been running an official promotion. | 27 | 3 | 3 | owned | - |
 | C086 | a one-day (X) pass | phrase | general | a short fixed-length membership or ticket - a one-day pass, a three-day pass; 'one' takes a, not an | I redeemed a one-day QQ Music pass. | 27 | 6 | 3 | owned | - |
 | C087 | float an idea (throw out an idea) | phrase | work | propose something casually in a meeting to see if it survives - never 'present a viewpoint' | One colleague floated an idea, but it didn't hold up. | 28 | 4 | 4 | owned | - |
+| C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 5 | 5 | owned | - |
 | C090 | kick off (a project) | phrase | work | start something with a moment, not a span - 'kicked off on Sep 1', never 'has begun since Sep 1' | We kicked off a new project on Sep 1st. | 28 | 5 | 5 | owned | - |
 | C091 | high-spec | phrase | work | the spoken 配置高 for a machine - never 'advanced configuration'; opposite: low-spec | My work rig is high-spec, so I got through them quickly. | 28 | 4 | 4 | owned | - |
 | C094 | there's no way to (do X) | phrase | general | the spoken 'impossible' - impossible is for physics, no way to is for designs and plans | The moment someone rejects a review, there's no way to show the logs. | 29 | 3 | 3 | owned | - |

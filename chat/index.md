@@ -60,3 +60,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 52 | 2026-11-09 | The mess somebody else left you | work | 5 | 14 | done | [summary](summaries/day-52-20261109.md) |
 | 53 | 2026-11-10 | What actually survives a book | opinion | 5 | 7 | done | [summary](summaries/day-53-20261110.md) |
 | 54 | 2026-11-11 | The ticket nobody owns | work | 5 | 7 | done | [summary](summaries/day-54-20261111.md) |
+| 55 | 2026-11-13 | The parcel that did not match the picture | daily | 5 | 12 | done | [summary](summaries/day-55-20261113.md) |

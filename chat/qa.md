@@ -512,3 +512,94 @@ you see the error in production and immediately know it is your code.
 
 所以今天那句 "the customer service staff would deal with it at once" 完全正确，不是错句。我给的 optional 只标在"语域"这一栏：在讲客服、市场这类偏书面的话题里 at once 一点问题都没有，只有在很快的日常叙述里，母语者会自然滑向 right away。optional 的意思是"你原句没问题，另有一个更常用的说法"，不是改错。
 既然 C115 是你自己的 chunk，用它就是应该的——不要因为见到 right away 就放弃 at once。今天这一用已经记上（2/2 pending），下次在一个非 general 场景里再用一次就 owned。
+## Day 55 - 2026-11-13
+
+**Q:** At this time 这个词组应该怎么用
+
+**A:** at this time 意思是「目前、此刻」，是公告腔，不是「这次」。它出现在通知、客服话术里：At this time we are not accepting new orders.（目前我们暂不接受新订单。）所以 "At this time, she did it again" 读起来是「目前她又做了一次」，不是「这次她又买了」。
+
+要分清三个长得像的：
+1. this time = 这次。This time she did it again. / This time I remembered my keys.
+2. at the time = 当时（过去某一刻）。At the time, I didn't know the rule. —— 注意是 the，不是 this。
+3. at this time = 目前（现在这一段），正式、公告用。等于 at the moment，但更硬。
+
+想强调「又一次、这回又」，口语最常说的是 this time / this time around：She did it again this time around.
+**Q:** at this time 再多给点例句，感觉跟 this time 的用法很类似
+
+**A:** 之所以感觉像，是因为中文都落在「时间」，但两者的坐标不一样：this time 是「多次之中的这一次」，at this time 是「现在这个时刻」。
+
+at this time（= 目前、此刻，偏正式）：
+1. At this time, we are experiencing high call volume.（客服录音标准句：目前来电量很大）
+2. At this time, no further changes are planned.（目前没有进一步的改动计划）
+3. Passengers are asked to remain seated at this time.（广播）
+4. At this time last year, we were still working on the old system.（去年这个时候——注意后面可以跟 last year，这时它变回纯时间点）
+
+this time（= 这次，与 last time / next time / every time 对照）：
+1. This time it actually worked.（这次真成了）
+2. I got it wrong last time, so I checked twice this time.（上次错，这次查了两遍）
+3. Try holding it this way this time.（这次这么拿试试）
+4. This time tomorrow I'll be on a train.（明天这个时候——注意这里 this time 也能接 tomorrow）
+
+判别方法，两个测试：
+- 能不能换成 "right now"？能 → at this time（At this time = right now）。
+- 句子里有没有"和上一次对比"的意思？有 → this time。
+- 中文想说的是「目前/现在」→ at this time / right now；想说的是「这一回」→ this time。
+
+一个必须分开的：at the time = 当时（过去某一刻），I didn't know the rule at the time. 三个千万别混：this time 这次 / at the time 当时 / at this time 目前。
+**Q:** "Some goods still haven't been sent by then." 这样可以吗
+
+**A:** 不行，问题出在 by then。by then = 到那时，它必须挂在一个已经说好的时间点上（过去或未来都行），不能用来指"现在"。而且它通常配过去完成或将来完成：
+- 过去锚点：By then, half the order still hadn't arrived.（到那时候，一半还没到）
+- 将来锚点：By tomorrow, the rest will have been sent.（到明天，剩下的就发出去了）
+
+如果意思是"到现在还没发"，那不是 by then，是 yet / so far / by now：
+- Some goods still haven't shipped.（最口语）
+- A few things haven't shipped yet.
+- So far, some of the goods haven't been sent.
+
+另外 still 和 yet 别叠着用：still 表"仍然"，yet 表"还没到"，两个都上会显得啰嗦——挑一个就行。"still haven't been sent yet" 不算错，母语者会说，但一句里两个否定意味，能省就省。
+
+结论：by then 换成 yet，或者干脆把 still 留着、把 by then 删掉。
+**Q:** What's the meaning of "how long before it pays off"?
+
+**A:** "how long before + 从句" = 还要多久才……。所以 How long before it pays off? = 要多久才能回本／见效？口语里更常说的是 How long until it pays off? / How long will it take to pay off?，意思一样。
+
+pay off 这个词组有三个常见意思，都要靠上下文判断：
+1. 回本、赚回来（钱）：The investment paid off in two years.（两年回本）
+2. 见效、有回报（努力、方法）：All that practice paid off.（那些练习终于有了回报）
+3. 还清（债务）：We paid off the loan last year.（还清了贷款）
+
+例：
+- How long before the new warehouse pays off?（新仓多久能见效）
+- Hard work usually pays off eventually.（努力最终会有回报）
+- It will take about a year to pay off.（大概要一年才回本）
+**Q:** "she'd return such things right away" —— Can I use at once here?
+
+**A:** 可以，而且不用改别的。at once = 立刻，等于 right away，只是正式一档：日常叙述、客服、业务邮件里都很自然，只有极快的口语（"赶紧的"）才更偏向 right away。C115 已经把两个意思（立刻 / 同时）都写清楚了，这是"立刻"那一支。
+所以 She'd send those back at once. 和 She'd send those back right away. 都成立，选哪个看语域；你原句用 right away 也没问题。
+**Q:** read something into it 如何使用比较合适
+
+**A:** 结构是 read + 你推断出来的意思 + into + 那个东西。意思是"从……里读出（本来不一定存在的）含义"，中文最贴的是"过度解读""想多了"。
+
+最常出现的三个形式：
+1. 否定祈使：Don't read too much into it.（别想太多）／Don't read anything into his short reply.（他那句短回复别往心里去）
+2. 自我提醒：I wouldn't read too much into one bad review.（一条差评别太当回事）
+3. 事后评论：He took the silence as a hint, but he was reading too much into it.（他把沉默当暗示，其实是自己加戏）
+
+要点：
+- into 后面接的是"被解读的东西"——it / that / a reply / the silence / one review，不接人。"read something into her" 不成立，要说得先有 she said something 之类的物。
+- 几乎总带 too much / anything / nothing 这类程度词；不带的话（read a threat into it）也可以，但更书面。
+- 和 read between the lines 不是一个意思：between the lines 是"读出字里行间真实的意思"，read into 是"读出不存在的意思"。
+**Q:** "There are still some goods that haven't been sent yet" 能否用 still hasn't (done X) by then 改造？
+
+**A:** 不能直接改，两个地方会挡住：数不一致，和 by then 缺锚点。
+
+1. goods 是复数，要用 haven't；still hasn't 只能配单数主语。要单数就得换主语：One item still hasn't been sent.
+2. by then = 到那时，必须先有一个"那时"。没有前文时间点，它没有落点；而且到那时通常配过去完成或将来完成。
+   - 过去锚点：By the time 11.11 arrived, some goods still hadn't been sent.（到 11.11 那会儿，还有些货没发出去）
+   - 将来锚点：By then, the rest still won't have been sent.（到那时候，剩下的还是发不出去）
+3. 只说"到现在还没发"，就是 yet / so far，不出现 by then：
+   - There are still some goods that haven't been sent yet.
+   - So far, some of the goods haven't been sent.
+
+所以改造的合法版本是：先立一个时间点，再上 by then + 完成时；否则保持 yet。
