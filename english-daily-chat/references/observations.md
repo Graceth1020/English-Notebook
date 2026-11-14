@@ -355,3 +355,66 @@ not avoiding the row - he is answering a different, more professional question.
 Reachable only if the position I take is one he actually disagrees with; a mild
 position about returns did not produce disagreement, it produced a change of
 subject.
+## Changed topic is not changed scene
+
+Day 56 was a `reading` day and two work/shopping chunks arrived inside it: `sold
+out` told about a book bought online, and `speak up` about courage to disagree.
+Both had to stay unconfirmed even though the conversation was off their home
+scene, because the scene a chunk lives in is the *activity*, not the topic of
+the conversation. Buying a book is `shopping`; disagreeing in a meeting is
+`work`, whatever book was being discussed at the time.
+
+This is the mirror of the Day 55 lesson (`C089` closed by changing the subject
+from work to shopping). A topic change can reach a chunk without moving it out
+of its scene, and `confirm` measures the second thing. Before confirming, ask
+what the sentence is *doing*, not what the session is *about*.
+
+## One frame, six questions
+
+`by then` / `by now` / the perfect with a state drew six Chinese questions
+across Day 55 and 56, each testing one edge of the same frame: does `by then`
+need an anchor, can it point at a future deadline, does `by now` take a plain
+state, does a state take the perfect at all. He is not collecting six
+vocabulary items; he is mapping one construction by probing its boundaries one
+at a time, which is how a grammar gap gets closed.
+
+Two consequences. First, these questions are worth more than a qa.md entry each
+- they are evidence for one pattern row, and the row is still unbuilt because
+the learner has not said whether he wants it. Second, each question costs a
+turn that no exchange fills, and Day 56 spent four of them before the first
+real answer about the book arrived.
+
+## A pull question can be answered at the wrong layer
+
+`C058` "in a way that sticks" was pulled with "how would you put one idea from
+that chapter in front of your team so that it stays with them", and the answer
+was how he would implement the pattern: sub classes, a base class, logging and
+checking methods. The question asked for a communication act and got a build
+plan. Same shape as `coach:E014` on Day 54 and 55, where a disagreement
+question drew a restructuring of the situation.
+
+When that happens the question shape failed, not the learner's English, and the
+chunk is `missed` rather than `used`. A pull for an act needs the act named in
+the question - "what would you say first" - not the outcome ("so that it stays
+with them").
+
+## P014 in free production: the shape arrives, the choice does not
+
+"on the chapter of the importance of the abstract template pattern" is `P014`
+topic-on being reached for at exactly the right moment and assembled with `of`.
+Yesterday's drill produced the identical event from the other side: `on the loop`
+on the one question written to separate `in` from `on`.
+
+So the pattern's failure is not "cannot produce the frame" - the frame comes
+out unprompted, in a new topic, without being asked for. The failure is the
+preposition choice inside it, and drills that supply the sentence never test
+that, because the sentence already contains the answer.
+
+## Repair by resubmission is his default move
+
+When the repair arrived, he re-sent the whole paragraph with the correction
+folded in rather than answering the question that came after it (twice in a
+row). This is efficient for him and it does produce new, checkable English, but
+it means a day can read as five exchanges while only two of them are answers.
+Count them as exchanges - the production is real - and keep the unanswered
+question in the transcript rather than quietly replacing it.

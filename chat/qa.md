@@ -603,3 +603,59 @@ pay off 这个词组有三个常见意思，都要靠上下文判断：
    - So far, some of the goods haven't been sent.
 
 所以改造的合法版本是：先立一个时间点，再上 by then + 完成时；否则保持 yet。
+## Day 56 - 2026-11-14
+
+**Q:** "I'm not halfway through yet" 有办法用 still hasn't (done X) by then 改写吗
+
+**A:** 有，但必须先立一个"那时"，否则不能上 by then。
+
+1. 只说现在（没有锚点）：把状态改成完成时，然后丢掉 by then
+   - I still haven't got halfway through it.（口语常用）
+   - I still haven't finished half of it.
+2. 有话可说的时候（先有一个时间点）
+   - 过去锚点：By last Sunday, I still hadn't got halfway through it.
+   - 将来锚点：By the end of this week, I still won't have got halfway through it.
+
+关键教训：by then / by X 不是"还没"的表达，它是"到某个时刻为止"的表达。句子里先要有那个时刻，by then 才有东西可指。你连着三次想问 by then，说明你想抓的是"by + 时间点 + 完成时"这个框——那就固定成模板：By + 时间点, 主语 + had/has/have + done.
+3. 另外一个点：halfway through 是状态，不是动作，所以它最自然的形式是 be halfway through / get halfway through，而不是 have been halfway through。
+**Q:** "I planned to finish it by the end of this week, but by then I still won't have got halfway through it." 能不能表达"我计划这周读完，但现在还没读一半"？
+
+**A:** 不能。won't have got 是将来完成时，它把"还没"锁在"周末结束那一刻"，说的是预测；你要的"到现在还没读一半"锁在"现在"，用一般现在时。
+
+三句对照：
+1. 现在状态（你的意思）：I planned to finish it by the end of this week, but I'm still not halfway through. / ... but so far I'm not halfway through.
+2. 到期预测：I planned to finish it by the end of this week, but by then I still won't have got halfway through it.
+3. 计划还有效、只是现在落后：I plan to finish it this week, but I'm not halfway through yet.
+
+判断方法：句子指的是"现在这一刻"还是"那个截止时刻"？现在 → am/is/are + yet；那个时刻 → will have / had + done。
+**Q:** by now 应该怎么用
+
+**A:** by now = 到此刻为止，含"按理说这时候应该已经……"的意味。它几乎总和完成时或 should / must / will have 连用，很少配一般现在时的状态。
+
+最典型的三类：
+1. 预期落空（最常用）：The train should be here by now.（火车该到了）／The parcel should have arrived by now.（包裹这会儿该到了）
+2. 到目前已经累积：I've read it twice by now.（到现在我读了两遍）／By now, half the team has left.（到现在一半人都走了）
+3. 轻度责备：By now you should have finished chapter three.（到这会儿你早该读完第三章了）
+
+容易混的三个：
+- yet：还没，放否定/疑问句尾，问"到现在为止有没有"——I'm not halfway yet. / Have you finished yet?
+- now：就是现在，不带"应该已经"的意味。
+- by now：到目前这个时间点，通常带期待或比较。
+
+所以你昨天那句 "I haven't been halfway through by now" 错在两处：halfway 是状态不该用完成时，而且这里没有"应该已经"的意味，用 yet 才对。
+**Q:** "到现在我还没读一半" 不能用 perfect tense 吗
+
+**A:** 能用，而且很常能——只是不能用在你原来那个动词上。
+
+可以用完成时的（动词是"事件"：get / finish / read / reach）：
+- I haven't got halfway through it yet.（到现在还没读到一半）
+- I haven't finished half of it yet.
+- I haven't read half of it yet.
+
+不能用的（halfway 是状态，配 be）：
+- ✗ I haven't been halfway through yet.
+- ✓ I'm not halfway through yet.
+
+区别在于：完成时说的是"某件事到目前有没有发生"，所以谓语得是个能"发生"的动作；halfway through 是个状态，它不发生，它是持续着的，所以用一般现在。同理：be tired / be ready / be late 都用一般现在 + yet：I'm not ready yet. / He isn't here yet.
+
+补一句：I haven't been ready 不是错句，但它意思是"我一直没准备好"（强调持续），不是"我到目前还没准备好"的那个 yet。

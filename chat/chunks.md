@@ -21,21 +21,19 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 3 | 0 | open | 2026-11-13 |
-| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 4 | 1 | open | 2026-11-13 |
-| C088 | speak up | phrase | work | say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views' | We encourage them to think for themselves and speak up. | 28 | 5 | 2 | open | 2026-11-14 |
-| C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 4 | 1 | open | 2026-11-14 |
+| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 4 | 0 | open | 2026-11-13 |
+| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 5 | 1 | open | 2026-11-13 |
+| C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 5 | 1 | open | 2026-11-14 |
 | C128 | it's on them | phrase | work | responsibility or blame belongs to them - NOT 'their thing', which means their hobby or specialty | Take a screenshot of the request flow and tell them it's on them. | 43 | 4 | 1 | open | 2026-11-18 |
-| C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 6 | 5 | pending | 2026-12-13 |
-| C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 3 | pending | 2026-11-26 |
+| C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 6 | 6 | pending | 2026-12-14 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 4 | 3 | pending | 2026-12-08 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 5 | 5 | pending | 2026-12-09 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 6 | 3 | pending | 2026-12-11 |
-| C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 6 | 6 | pending | 2026-12-09 |
+| C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 7 | 7 | pending | 2026-12-14 |
 | C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 3 | 3 | pending | 2026-12-08 |
 | C083 | catch up on (what happened / the news) | phrase | general | fill the gap since you last talked or checked - the dedicated phrase for 补上错过的 | It helped me catch up on what had happened. | 27 | 3 | 3 | pending | 2026-12-08 |
+| C088 | speak up | phrase | work | say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views' | We encourage them to think for themselves and speak up. | 28 | 6 | 3 | pending | 2026-12-14 |
 | C092 | push back on (a design / an idea) | phrase | work | challenge a proposal with reasons - the pronoun goes to the end: pushed back on it, never 'pushed it back on' | I've built features like this more than once, so I pushed back on it. | 29 | 5 | 5 | pending | 2026-12-11 |
-| C093 | double as (something) | phrase | general | serve two roles at once - the spoken 兼任; one table doubling as the logs | One review table, which could double as the review logs. | 29 | 3 | 3 | pending | 2026-11-21 |
 | C097 | round people up (for a game) | phrase | games | gather people for something casual - 摇人/召集; 'call people' means phoning them | It's a group chat where we can round people up for a game. | 30 | 2 | 2 | pending | 2026-11-21 |
 | C098 | get hooked on (something) | phrase | games | get addicted to a game or show - the GAME version of couldn't put it down, which only takes books and phones | Lately we've all gotten hooked on this board game. | 30 | 2 | 2 | pending | 2026-11-16 |
 | C101 | The clearest change is (that)... | frame | general | open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque | The clearest change is that I can express myself more naturally. | 30 | 2 | 2 | pending | 2026-11-24 |
@@ -70,6 +68,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C021 | that's what pays | phrase | money | name the thing that earns the money | The business side is what pays. | 04 | 3 | 3 | owned | - |
 | C022 | buy that | phrase | shopping | believe a claim - spoken 'be convinced by' | People say coding is dead, but I don't buy that. | 04 | 4 | 4 | owned | - |
 | C023 | heads-down time | phrase | work | uninterrupted solo work | I'd protect my heads-down time over meetings. | 04 | 3 | 3 | owned | - |
+| C024 | I'd put it closer to (a week) | phrase | work | counter an estimate with your own number | I'd put it closer to a week. | 05 | 5 | 5 | owned | - |
 | C025 | that's after the fact | phrase | work | it only tells you once the damage is done | Monitoring helps, but that's after the fact. | 05 | 4 | 4 | owned | - |
 | C026 | talk something through | phrase | work | discuss it properly, to a conclusion | We talked it through last week. | 05 | 6 | 6 | owned | - |
 | C027 | all in | phrase | work | totalling everything up | So all in, I'd put it at a week. | 05 | 5 | 5 | owned | - |
@@ -128,6 +127,7 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | C089 | matter to (someone) | phrase | general | be important to someone - the spoken replacement for 'be important for'; also 'really matters to us' | Being familiar with computer science really matters to us. | 28 | 5 | 5 | owned | - |
 | C090 | kick off (a project) | phrase | work | start something with a moment, not a span - 'kicked off on Sep 1', never 'has begun since Sep 1' | We kicked off a new project on Sep 1st. | 28 | 5 | 5 | owned | - |
 | C091 | high-spec | phrase | work | the spoken 配置高 for a machine - never 'advanced configuration'; opposite: low-spec | My work rig is high-spec, so I got through them quickly. | 28 | 4 | 4 | owned | - |
+| C093 | double as (something) | phrase | general | serve two roles at once - the spoken 兼任; one table doubling as the logs | One review table, which could double as the review logs. | 29 | 5 | 5 | owned | - |
 | C094 | there's no way to (do X) | phrase | general | the spoken 'impossible' - impossible is for physics, no way to is for designs and plans | The moment someone rejects a review, there's no way to show the logs. | 29 | 3 | 3 | owned | - |
 | C095 | settle on (a choice) | phrase | general | finally decide after comparing - stronger than 'had been decided'; you settle on a framework, a date, a design | We finally settled on a low-code platform. | 29 | 3 | 3 | owned | - |
 | C096 | set up (a group chat) | phrase | general | create something that will run on its own - a group chat, a meeting, a system; 'create a group' is understood but not what natives say | As more neighbors joined, we set up a group chat. | 30 | 3 | 3 | owned | - |
