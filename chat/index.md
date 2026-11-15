@@ -62,3 +62,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 54 | 2026-11-11 | The ticket nobody owns | work | 5 | 7 | done | [summary](summaries/day-54-20261111.md) |
 | 55 | 2026-11-13 | The parcel that did not match the picture | daily | 5 | 12 | done | [summary](summaries/day-55-20261113.md) |
 | 56 | 2026-11-14 | The writing that sold you something | daily | 5 | 10 | done | [summary](summaries/day-56-20261114.md) |
+| 57 | 2026-11-15 | The message you read wrong | culture | 5 | 11 | done | [summary](summaries/day-57-20261115.md) |

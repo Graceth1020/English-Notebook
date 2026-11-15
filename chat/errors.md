@@ -78,6 +78,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E108 | a topic takes on/about, not of (chapter of) | preposition | on the chapter of the importance of the abstract template pattern | on the chapter about the importance of the abstract template pattern | 56 | 1 | open | 2026-11-17 |  |
 | E109 | adjective where the adverb is needed (more reasonable) | grammar | implement a feature more reasonable | implement a feature more sensibly | 56 | 1 | open | 2026-11-17 |  |
 | E110 | agree with an opinion, agree to a proposal | collocation | something you don't agree to | something you don't agree with | 56 | 1 | open | 2026-11-17 |  |
+| E111 | catch up on is 补进度/了解近况, not 弄清原因 | collocation | to catch up on the reason | to work out why it was so slow | 57 | 1 | open | 2026-11-18 |  |
+| E112 | so far takes the perfect continuous | grammar | We are playing it twice a week so far | We've been playing twice a week so far | 57 | 1 | open | 2026-11-18 |  |
+| E113 | especially (尤其) where mostly (主要是) is meant | other | especially expressing how big a deal it is | mostly to explain how big a deal it was | 57 | 1 | open | 2026-11-18 |  |
+| E114 | plenty takes no article (a plenty of) | grammar | There are a plenty of messages worth answering | There are plenty of messages worth answering | 57 | 1 | open | 2026-11-18 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |

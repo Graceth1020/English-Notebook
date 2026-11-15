@@ -418,3 +418,59 @@ row). This is efficient for him and it does produce new, checkable English, but
 it means a day can read as five exchanges while only two of them are answers.
 Count them as exchanges - the production is real - and keep the unanswered
 question in the transcript rather than quietly replacing it.
+## C036 closed by changing the sense, not the scene
+
+Four failed openings all asked about a book, and a book always supplies an
+answer to any question about itself - so the target sentence was never needed.
+Day 57 asked about a two-word text message instead: same verb sense (infer a
+meaning that is not there), no book in the room, and it came out in the first
+exchange.
+
+The transferable rule: when a chunk keeps failing, check whether the *sense*
+being pulled is the one the topic can reach, not just whether the scene label
+matches. `read something into it` lives in semantics (over-interpretation),
+which a texting conversation serves better than a reading conversation does.
+
+## A quantity question gets answered with a quantity word
+
+`P007` (none of + noun) was given its ideal opening - "how many were worth
+answering, how many were just noise" - and the answer was "there are a plenty
+of messages" and "so many of them were just noise". The learner quantified
+without naming a set.
+
+So a total-negation pattern needs a closed set in the question, not an open
+"how many": "which of those five were worth answering" or "was even one of them
+worth a reply". With an open count, "plenty" is a perfectly good answer and the
+pattern never has to fire.
+
+## Agreement is not the act the row wants
+
+`coach:E014` asks for accepting a decision while leaving the door open. Day 57
+took a mild position ("answering that fast is a mistake"), and the learner
+agreed with it outright and explained his own position. The row stayed
+untouched, correctly: he conceded the point, so there was nothing to leave open.
+
+For an `act` row the position has to be one he actually disagrees with; otherwise
+the session only tests whether he can say "you're right", which he can.
+
+## catch up on, second stretch
+
+Day 50 used `catch up on` correctly for 了解近况, which is what the phrase does:
+its object is information you are behind on. Day 57 pointed it at a cause -
+"to catch up on the reason" - which is 弄清原因 and belongs to `work out` or
+`figure out`.
+
+The mechanism: the learner reads "catch up" as 追赶 and fills the object with
+whatever he is short of, including a cause. It is the same slot logic as 分工
+-> the division on Day 54: a verb borrowed for the wrong noun.
+
+## 具体活动会挡住社交动词
+
+`C100` "hang out" was pulled at a people-shaped question and lost twice in two
+days, both times to a concrete activity: "round friends up for a basketball
+game", "asked me out to eat". When the answer can be a specific event, the
+abstract social verb has no slot - it is the word for meeting with no activity
+planned.
+
+To pull `C100`, the question has to exclude activities: "who do you see when
+there is nothing planned".

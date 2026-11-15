@@ -17,13 +17,14 @@ directories (see [Skills](#skills)).
 | `chat/` | Daily small-talk sessions: `index.md`, `errors.md`, `chunks.md`, `sessions/`, `summaries/` |
 | `patterns/` | Sentence-structure pattern inventory and drills |
 | `form/` | Form-accuracy drills (tense, article, verb form) under content pressure |
+| `grammar/` | Daily grammar + chunk drills: one grammar focus, three chunks, short production rounds |
 | `raw/` | Unpublished source material (subtitles, transcripts) - gitignored |
 | `tools/` | Build-time importers that generate the Hexo source tree |
 | `source/`, `themes/`, `_config*.yml` | Hexo site |
 
 ## Skills
 
-Four skills are developed in this repo. Each is a normal Codex skill
+These skills are developed in this repo. Each is a normal Codex skill
 directory (`SKILL.md`, `agents/openai.yaml`, `references/`, `scripts/`).
 
 | Skill | Use it for | Writes to |
@@ -34,11 +35,14 @@ directory (`SKILL.md`, `agents/openai.yaml`, `references/`, `scripts/`).
 | `language-notes` | One-off translate / define / parse / compare lookups | `notes/` |
 | `pattern-drills` | Sentence-structure drills for patterns that are absent or avoided | `patterns/` |
 | `form-drills` | Form-accuracy drills for errors that are correct under attention, wrong under production | `form/` |
+| `grammar-chunk-coach` | 15-20 min drills pairing one grammar focus with one anchor and two stretch chunks from the personal chunk bank | `grammar/` |
 
 `english-level-up-coach` and `english-daily-chat` share error data: the chat
 skill's `chat_log.py` can read and update `coach/errors.md` using qualified
 IDs (`coach:E012` vs `chat:E003`), so a mistake logged in a lesson can
 resurface in a chat session.
+
+`grammar-chunk-coach` reads the shared chunk and error banks but never changes chunk ownership; only unprompted use in a real chat does that.
 
 ### Installing the skills
 
@@ -48,7 +52,7 @@ copy there, link each one:
 ```powershell
 # Windows (junction, no admin rights needed)
 $repo = "D:\project\personal\English-Notebook"
-foreach ($n in "english-daily-chat","english-level-up-coach","english-rephrase-practice","language-notes") {
+foreach ($n in "english-daily-chat","english-level-up-coach","english-rephrase-practice","language-notes","grammar-chunk-coach") {
   New-Item -ItemType Junction -Path "$env:USERPROFILE\.codex\skills\$n" -Target "$repo\$n"
 }
 ```
@@ -56,7 +60,7 @@ foreach ($n in "english-daily-chat","english-level-up-coach","english-rephrase-p
 ```bash
 # macOS / Linux
 repo=~/project/personal/English-Notebook
-for n in english-daily-chat english-level-up-coach english-rephrase-practice language-notes; do
+for n in english-daily-chat english-level-up-coach english-rephrase-practice language-notes grammar-chunk-coach; do
   ln -s "$repo/$n" ~/.codex/skills/"$n"
 done
 ```
@@ -162,3 +166,4 @@ order; `build`, `preview`, and the CI workflow all call it rather than listing
 the importers again.
 
 - [Update theme](UPDATE_THEME.md)
+
