@@ -21,8 +21,8 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 5 | 1 | open | 2026-11-22 |
-| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 6 | 1 | open | 2026-11-13 |
+| C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 6 | 1 | open | 2026-11-19 |
+| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 8 | 1 | open | 2026-11-19 |
 | C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 7 | 1 | open | 2026-11-18 |
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 6 | 6 | pending | 2026-12-14 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 4 | 3 | pending | 2026-12-08 |

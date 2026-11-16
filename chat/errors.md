@@ -82,6 +82,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E112 | so far takes the perfect continuous | grammar | We are playing it twice a week so far | We've been playing twice a week so far | 57 | 1 | open | 2026-11-18 |  |
 | E113 | especially (尤其) where mostly (主要是) is meant | other | especially expressing how big a deal it is | mostly to explain how big a deal it was | 57 | 1 | open | 2026-11-18 |  |
 | E114 | plenty takes no article (a plenty of) | grammar | There are a plenty of messages worth answering | There are plenty of messages worth answering | 57 | 1 | open | 2026-11-18 |  |
+| E115 | 配环境 is set up the environment, not install the environment | calque | install the environment on day one | set up their environment on day one | 58 | 1 | open | 2026-11-19 |  |
+| E116 | tell takes a person (say so about a thing) | collocation | If there is something unclear, I'll tell it | If something's unclear, I'll say so | 58 | 1 | open | 2026-11-19 |  |
+| E117 | read too much INTO, never to | preposition | don't read too much to my answer | don't read too much into my answer | 58 | 1 | open | 2026-11-19 |  |
+| E118 | a condition takes the plain present, not the perfect | grammar | if he's known the business process | once they know the business process | 58 | 1 | open | 2026-11-19 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |

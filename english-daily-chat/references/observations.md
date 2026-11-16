@@ -474,3 +474,49 @@ planned.
 
 To pull `C100`, the question has to exclude activities: "who do you see when
 there is nothing planned".
+## One-line days change what can be tested, not whether it is worth running
+
+Day 58 ran on eight minutes and one-line answers. `P012` and `P013` were left
+unopened on purpose - both need a continuous narration, and a one-line answer
+cannot supply one, so opening them would have logged a miss that says nothing
+about the structure.
+
+What one-line answers are good at: a **decision question** (`coach:E049` closed
+in one sentence) and a **condition question**. What they cannot do: carry a
+chunk whose pull needs a mechanism explained, which is what went wrong with
+`C058`.
+
+## C058 lost because the question came after the exchange count
+
+The session was built around `C058` ("in a way that sticks"), the topic was
+right, and the row still missed - because the question that calls for it ("what
+do you do so it stays in their head") was placed in the closing line rather than
+inside the five exchanges. A chunk's pull has to sit inside the counted
+exchanges, or it never had a slot and the miss measures the schedule, not the
+learner.
+
+Rule for scaffolding: when the session is short, put the hardest chunk in
+exchange 1 or 2, not in the last question you get to.
+
+## Same chunk, next day, wrong particle
+
+`C036` "read something into it" was produced on Day 57 as "read something into
+it" (credited) and on Day 58 as "read too much **to** my answer" (missed). One
+day apart, the same learner, the fixed word gone.
+
+This is the recognition-to-assembly step being visible across a day boundary:
+the phrase is available as a whole, but the preposition is being rebuilt each
+time from 对. `E117` now holds the particle on its own so it can be scheduled
+separately from the phrase.
+
+## Two halves of one answer stay split
+
+`coach:E028` wants the mechanism and the timeline in the same breath. Day 58
+asked for both in one question and got them in two separate exchanges - "a week"
+in one, "environment on day one, then a ticket" in the next. The learner has
+both halves; what he does not have is the habit of delivering them together,
+which is exactly what makes an estimate sound like an estimate.
+
+The follow-up question has to be one sentence that forces both: "how many days,
+and what happens in them". Asking "how long" and then "what happens" rewards
+splitting.
