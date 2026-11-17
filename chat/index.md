@@ -64,3 +64,4 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | 56 | 2026-11-14 | The writing that sold you something | daily | 5 | 10 | done | [summary](summaries/day-56-20261114.md) |
 | 57 | 2026-11-15 | The message you read wrong | culture | 5 | 11 | done | [summary](summaries/day-57-20261115.md) |
 | 58 | 2026-11-16 | Teaching the new hire | work | 5 | 9 | done | [summary](summaries/day-58-20261116.md) |
+| 59 | 2026-11-17 | A month with nothing scheduled | hypothetical | 5 | 17 | done | [summary](summaries/day-59-20261117.md) |

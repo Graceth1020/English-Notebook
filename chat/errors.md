@@ -86,6 +86,10 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | E116 | tell takes a person (say so about a thing) | collocation | If there is something unclear, I'll tell it | If something's unclear, I'll say so | 58 | 1 | open | 2026-11-19 |  |
 | E117 | read too much INTO, never to | preposition | don't read too much to my answer | don't read too much into my answer | 58 | 1 | open | 2026-11-19 |  |
 | E118 | a condition takes the plain present, not the perfect | grammar | if he's known the business process | once they know the business process | 58 | 1 | open | 2026-11-19 |  |
+| E119 | travel does not take a place as its object (been to a lot of places) | collocation | We've travelled a lot of places in China | We've been to a lot of places in China | 59 | 1 | open | 2026-11-20 |  |
+| E120 | everywhere takes no preposition (go everywhere, not go to everywhere) | preposition | You can go to everywhere you want to go | You can get to every place you want to go | 59 | 1 | open | 2026-11-20 |  |
+| E121 | tickets FOR something sell out fast (a flight does not go fast) | collocation | The flights are going fast / the tickets of some scenic spots | The tickets for some sights sell out fast | 59 | 1 | open | 2026-11-20 |  |
+| E122 | a clause needs its verb (since nothing scheduled) | grammar | Since nothing scheduled | Since nothing's scheduled | 59 | 1 | open | 2026-11-20 |  |
 | E053 | with + X + finite verb instead of participle | grammar | With the change touched the core logic | With the change touching the core logic | 10 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E047 | the frontier technology | calque | look for the frontier technology | keep an eye on where the tech is going | 09 | 1 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |
 | E029 | reply + missing to | collocation | reply the message | reply to the message | 06 | 3 | claimed | - | claimed 2026-11-01: self-closed by learner request; no live-chat verification recorded |

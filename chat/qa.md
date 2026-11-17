@@ -659,3 +659,22 @@ pay off 这个词组有三个常见意思，都要靠上下文判断：
 区别在于：完成时说的是"某件事到目前有没有发生"，所以谓语得是个能"发生"的动作；halfway through 是个状态，它不发生，它是持续着的，所以用一般现在。同理：be tired / be ready / be late 都用一般现在 + yet：I'm not ready yet. / He isn't here yet.
 
 补一句：I haven't been ready 不是错句，但它意思是"我一直没准备好"（强调持续），不是"我到目前还没准备好"的那个 yet。
+## Day 59 - 2026-11-17
+
+**Q:** tickets for something sell out fast - 为什么用 for，还有其他类似的场景也用 for 吗
+
+**A:** `for` marks the thing the ticket gets you into, so it answers "a ticket for what?" - a ticket for the museum, a ticket for Saturday's show. `of` would mean ownership: the tickets of the tour group are the group's tickets, not tickets to an event. The same `for` shows up whenever a noun names something held, granted or set aside for a target: a pass for the museum, a reservation for two, a booking for Friday night, a visa for China, a permit for the site, an appointment for Monday, a slot for 3 pm, a receipt for the purchase. Quick test: if the noun would be useless without knowing what it is for, the target takes `for`.
+---
+
+**Q:** `figured out if` → `figured out whether`，为什么要用 whether？
+
+**A:** 不是绝对必须改：口语里 `figure out if` 也常能接受。这里改成 `whether` 是为了让句子结构更清楚。原句里有两个 `if`：第一个问的是“是否可能”，属于 embedded yes/no question；第二个才是条件“如果……”。`whether` 明确表示“是否 / 二选一”，能把它和条件句的 `if` 分开。
+
+改写：We figured out whether booking a hotel offline was possible if it had been booked up online.
+
+更自然的版本：We figured out whether we could still book a hotel offline after it had been booked up online.
+
+判断方法：
+- “是否”优先用 `whether`；口语里的宾语从句有时也能用 `if`
+- “如果”用 `if`
+- `whether or not`、`whether to do`、介词后、以及整个从句作主语时，用 `whether`

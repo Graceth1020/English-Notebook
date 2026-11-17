@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T02:53:57.157Z",
+  "generated": "2026-11-17T09:53:45.230Z",
   "drills": [
     {
       "drill": "25",
@@ -340,9 +340,9 @@
       "example": "The alert fired at 9:40 on Monday night, and by midnight last Saturday we had rolled it back.",
       "found": "16",
       "drills": "4",
-      "used": "0",
+      "used": "1",
       "status": "drilled",
-      "next": "2026-11-27"
+      "next": "2026-12-03"
     },
     {
       "id": "P001",

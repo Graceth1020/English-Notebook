@@ -22,18 +22,18 @@ Maintained by scripts/chat_log.py - do not hand-edit.
 | ID | Chunk | Kind | Scene | Means | Example | Day | Tried | Used | Status | Next review |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | C036 | read something into (it) | phrase | reading | infer a meaning that may not be there | Don't read too much into it. | 06 | 6 | 1 | open | 2026-11-19 |
-| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 8 | 1 | open | 2026-11-19 |
-| C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 7 | 1 | open | 2026-11-18 |
 | C018 | sold out | phrase | shopping | no stock left - always with 'be', always plural for shorts etc. | I went back for them but they were sold out. | 03 | 6 | 6 | pending | 2026-12-14 |
 | C030 | still hasn't (done X) by then | phrase | reading | the negative-already: English uses still + perfect, never already + didn't | By then the customer still hasn't got their code. | 05 | 4 | 3 | pending | 2026-12-08 |
 | C033 | company culture | phrase | work | fixed compound - never 'the company's culture' | That comes down to company culture. | 06 | 5 | 5 | pending | 2026-12-09 |
 | C037 | how big a deal it is | phrase | work | gauge importance - the spoken alternative to 'how difficult/serious' | It depends on how big a deal it is. | 06 | 6 | 3 | pending | 2026-12-11 |
 | C039 | be up to the job | phrase | work | have the ability the role needs - usually used in the negative | Am I just not up to the job? | 06 | 8 | 8 | pending | 2026-12-15 |
+| C058 | in a way that sticks | phrase | study | presented so it stays in memory - 'stick' is the verb for staying learned | You have to present it in a way that sticks. | 09 | 8 | 2 | pending | 2026-12-03 |
 | C073 | the worst bug I've ever shipped | phrase | work | the most serious one you ever pushed to production - 'ship' carries the blame naturally | That's the worst bug I've ever shipped. | 17 | 3 | 3 | pending | 2026-12-08 |
 | C083 | catch up on (what happened / the news) | phrase | general | fill the gap since you last talked or checked - the dedicated phrase for 补上错过的 | It helped me catch up on what had happened. | 27 | 3 | 3 | pending | 2026-12-08 |
 | C088 | speak up | phrase | work | say your view out loud, especially when it takes nerve - already contains 'your view', so no 'with their own views' | We encourage them to think for themselves and speak up. | 28 | 6 | 3 | pending | 2026-12-14 |
 | C092 | push back on (a design / an idea) | phrase | work | challenge a proposal with reasons - the pronoun goes to the end: pushed back on it, never 'pushed it back on' | I've built features like this more than once, so I pushed back on it. | 29 | 5 | 5 | pending | 2026-12-11 |
 | C097 | round people up (for a game) | phrase | games | gather people for something casual - 摇人/召集; 'call people' means phoning them | It's a group chat where we can round people up for a game. | 30 | 2 | 2 | pending | 2026-11-21 |
+| C100 | hang out | phrase | general | spend relaxed time together with no agenda - the social verb; 'an entertainment way' is translated | It doubles as a way for us to hang out. | 30 | 7 | 2 | pending | 2026-12-03 |
 | C101 | The clearest change is (that)... | frame | general | open a self-assessment with the biggest visible difference - 比较明显的变化; 'relatively obvious' is a calque | The clearest change is that I can express myself more naturally. | 30 | 2 | 2 | pending | 2026-11-24 |
 | C102 | broaden your horizons | phrase | general | expand what you know and have seen - the fixed phrase for 开阔眼界; 'expand your scope of knowledge' is translated | Talking with people outside your field broadens your horizons. | 31 | 3 | 3 | pending | 2026-12-08 |
 | C110 | push things forward | phrase | work | keep work moving ahead - the spoken replacement for 推进进度; you push the work, not the progress | My job is to push things forward when they stall. | - | 4 | 4 | pending | 2026-12-15 |

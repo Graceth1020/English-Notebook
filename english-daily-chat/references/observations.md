@@ -520,3 +520,48 @@ which is exactly what makes an estimate sound like an estimate.
 The follow-up question has to be one sentence that forces both: "how many days,
 and what happens in them". Asking "how long" and then "what happens" rewards
 splitting.
+## A month off is what finally pulled the two stuck rows
+
+`C100` "hang out" and `C058` "in a way that sticks" both sat at used 1/2 for a
+week, and both moved on Day 59 - in a hypothetical about a day off and a trip.
+Neither opening named the phrase; one asked who is with him when nothing is
+scheduled, the other came while he defended making a plan.
+
+The mechanism for `C100` is worth keeping: it appeared exactly when the answer
+had no activity attached. Asked about a free evening he produced basketball,
+dinner and 王者荣耀; asked who is with him when nothing is scheduled he produced
+"we can hang out". The absence of an activity is what creates the slot.
+
+## Task wording, not language, derailed two turns
+
+Two Chinese turns on Day 59 were both about the question itself: "what does your
+question mean" and "answer it for me". The question asked for two things in one
+sentence ("how many hours it runs, and what you cut"), and the two-part shape
+read as ambiguous.
+
+Rule: when a task needs two parts, say the parts as separate clauses with
+`and` made explicit - "tell me two things: the hours, and the sacrifice". A
+compound question in one breath gets read as one question.
+
+## A modelled answer is not evidence, and the ledger has to say so
+
+Exchange 5 produced exactly the `coach:E028` shape - a duration plus a fallback
+in one sentence - but only after the previous message had supplied that shape as
+a template. The row stayed untouched and the summary says why.
+
+The general principle: scaffolding is legitimate teaching, but a row's
+resolution gate has to read the answer against what was on screen one message
+earlier. Same-session modelling also matters for chunks - a phrase produced
+inside the exchange where it was named cannot be credited.
+
+## List-shaped answers are where the prepositions fail
+
+Day 59 produced 17 repairs, the highest count so far, almost all from list
+answers: four days, four stops, several flights. The recurring mechanism is a
+preposition chosen by the Chinese noun rather than the English verb - 去每个地方
+became "go to everywhere", 景点的票 became "the tickets of some sights", 在北京待
+四天 became "spend four days on Beijing".
+
+So an itinerary or a schedule question is a high-yield test for preposition and
+collocation rows, and one is worth running every few weeks - but it should not
+carry the whole session, because the fixes crowd out the chunk work.
